@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+import random
 class Personagem:
     #Constructor
     def __init__(self, nome, classe):
@@ -47,6 +49,8 @@ class Personagem:
     def AtualizaStatus(self):
         self.HP = 10*self.skills["vit"]
         self.MP = 10*self.skills["int"] 
+        self.HPmax = 10*self.skills["vit"]
+        self.MPmax = 10*self.skills["int"] 
 
     def LvlUP(self):
         skill =input("Selecione onde alocar seu ponto (força, vitalidade, agilidade ou inteligencia): ")
@@ -70,8 +74,8 @@ class Personagem:
         skillPoints = self.lvl-lvl_old
         self.AutoLvlUpSKills(skillPoints)
     def AutoLvlUpSKills(self, sPoints):
-        vet = []
-        if(self.classe == "guerreiro"):
+        vet = [0,0,0,0]
+        if(self.classe.lower() == "guerreiro"):
             vet[0] = int(sPoints*0.4)
             vet[3] = int(sPoints*0.3)
             vet[2] = int(sPoints*0.1)
@@ -83,7 +87,7 @@ class Personagem:
             soma = sum(vet)
             extraPoints = lambda soma,sPoints : sPoints - soma
             self.skills["str"] += extraPoints
-        elif(self.classe == "arqueiro"):
+        elif(self.classe.lower() == "arqueiro"):
             vet[0] = int(sPoints*0.2)
             vet[3] = int(sPoints*0.4)
             vet[2] = int(sPoints*0.2)
@@ -96,7 +100,7 @@ class Personagem:
             extraPoints = lambda soma,sPoints : sPoints - soma
             self.skills["agi"] += extraPoints
             
-        elif(self.classe == "mago"):
+        elif(self.classe.lower() == "mago"):
             vet[0] = int(sPoints*0.1)
             vet[3] = int(sPoints*0.2)
             vet[2] = int(sPoints*0.4)
@@ -110,3 +114,98 @@ class Personagem:
             self.skills["int"] += extraPoints
         else:
             print("Erro na distribuição de skill points")
+
+    def Atk(self, atkType, target):
+        if(self.classe.lower() == "guerreiro"):
+            if(atkType == 1):
+                dano = 3*self.skills["str"] + 2*self.skills["agi"]
+                dano = self.AcertoCritico(dano)
+                print(self.name+ " causou "+str(dano)+ " de dano!")
+                target.HP -= dano
+            elif(atkType == 2):
+                dano = 5*self.skills["str"] + self.skills["vit"]
+                dano = self.AcertoCritico(dano)
+                print(self.name+ " causou "+str(dano)+ " de dano!")
+                target.HP -= dano
+                self.HP -= 0.2*self.HPmax
+            elif(atkType == 3):
+                dano = 2*self.skills["int"]+ self.skills["str"]
+                dano = self.AcertoCritico(dano)
+                print(self.name+ " causou "+str(dano)+ " de dano!")
+                target.HP -= dano 
+                self.MP -= 0.2*self.MPmax
+            elif(atkType == 4):
+                self.HP += 0.25*self.HPmax
+                self.MP += 0.25*self.MPmax
+                if(self.HP > self.HPmax):
+                    self.HP = self.HPmax
+                if(self.MP > self.MPmax):
+                    self.MP = self.MPmax
+            else:
+                print("Erro no ataque de guerreiro")
+        elif(self.classe.lower() == "arqueiro"):
+            if(atkType == 1):
+                dano =  2*self.skills["str"] + 3*self.skills["agi"]
+                dano = self.AcertoCritico(dano)
+                print(self.name+ " causou "+str(dano)+ " de dano!")
+                target.HP -= dano 
+            elif(atkType == 2):
+                dano =6*self.skills["agi"]
+                dano = self.AcertoCritico(dano)
+                print(self.name+ " causou "+str(dano)+ " de dano!")
+                target.HP -= dano 
+                self.MP -= 0.2*self.MPmax
+            elif(atkType == 3):
+                dano = 2*self.skills["int"]+ self.skills["agi"] #CHAMAR FUNCAO DE MAGIAS
+                dano = self.AcertoCritico(dano)
+                print(self.name+ " causou "+str(dano)+ " de dano!")
+                target.HP -= dano
+            elif(atkType == 4):
+                self.HP += 0.25*self.HPmax
+                self.MP += 0.25*self.MPmax
+                if(self.HP > self.HPmax):
+                    self.HP = self.HPmax
+                if(self.MP > self.MPmax):
+                    self.MP = self.MPmax
+            else:
+                print("Erro no ataque de arqueiro")
+        elif(self.classe.lower() == "arqueiro"):
+            if(atkType == 1):
+                dano = 2*self.skills["int"] + 1*self.skills["str"]
+                dano = self.AcertoCritico(dano)
+                print(self.name+ " causou "+str(dano)+ " de dano!")
+                target.HP -= dano
+            elif(atkType == 2):
+                dano = 6*self.skills["int"]
+                dano = self.AcertoCritico(dano)
+                print(self.name+ " causou "+str(dano)+ " de dano!")
+                target.HP -= dano
+                self.MP -= 0.5*self.MPmax
+            elif(atkType == 3):
+                dano = 4*self.skills["int"] #CHAMAR FUNCAO DE MAGIAS
+                dano = self.AcertoCritico(dano)
+                print(self.name+" causou "+str(dano)+ " de dano!")
+                target.HP -= dano
+                self.MP -= 0.1*self.MPmax
+            elif(atkType == 4):
+                self.HP += 0.25*self.HPmax
+                self.MP += 0.25*self.MPmax
+                if(self.HP > self.HPmax):
+                    self.HP = self.HPmax
+                if(self.MP > self.MPmax):
+                    self.MP = self.MPmax
+            else:
+                print("Erro no ataque de mago")
+        else:
+            print("Erro no ataque, classe inválida")
+
+
+
+    
+    def AcertoCritico(self, dano):
+        crit = random.randint(1,5)
+        if(crit == 1):
+            return (2*dano)
+            print("VOCÊ ACERTOU UM DANO CRÍTICO!!!")    
+        else:
+            return(dano)
