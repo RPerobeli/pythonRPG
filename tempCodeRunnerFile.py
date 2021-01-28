@@ -1,1 +1,1 @@
-GetMonstro
+AtualizaStatus(self):

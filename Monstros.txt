@@ -1,13 +1,13 @@
-Cao infernal,Guerreiro,
-Orc Guerreiro,Guerreiro,
-Orc Besteiro,Arqueiro,
-Orc Bruxo,Mago,
-Elfo Bandido,Guerreiro,
-Elfo Larapio,Arqueiro,
-Elfo Acalito,Mago,
-Bandido,Guerreiro,
-Bandido Atirador,Arqueiro,
-Mago Negro,Mago,
-Dragao negro de olhos vermelhos,Mago,
-Dragao Branco de Olhos Azuis,Mago,
-Dragao Armado,Guerreiro,
+Cao infernal,Guerreiro
+Orc Guerreiro,Guerreiro
+Orc Besteiro,Arqueiro
+Orc Bruxo,Mago
+Elfo Bandido,Guerreiro
+Elfo Larapio,Arqueiro
+Elfo Acalito,Mago
+Bandido,Guerreiro
+Bandido Atirador,Arqueiro
+Mago Negro,Mago
+Dragao negro de olhos vermelhos,Mago
+Dragao Branco de Olhos Azuis,Mago
+Dragao Armado,Guerreiro

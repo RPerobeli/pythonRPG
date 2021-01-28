@@ -3,6 +3,7 @@ import classes
 import sys
 import random as rnd
 
+
 def ConfereClasses(listaDeClasses, classeDesejada):
     for var in listaDeClasses:
         if classeDesejada.lower() == var.lower():
@@ -14,8 +15,8 @@ def CriaMonstros():
     listaMonstros = [classes.Personagem("erro", "Guerreiro")]
     for linha in arq:
         valores = linha.split(',')
-        print(valores)
-        listaMonstros.append(classes.Personagem(valores[0],valores[1]))
+        #print(valores)
+        listaMonstros.append(classes.Personagem(valores[0],valores[1].strip()))
     return listaMonstros
 
 def GetMonstro(listaMonstros, nome):
@@ -42,23 +43,18 @@ def TipoAtkMontro(monstro):
 def Combate(Personagem, Monster):
     Monster.AutoLvl(Personagem.lvl)
     turnCounter = rnd.randrange(1, 2)
-    # print("Sua vida: "+ Personagem.HP/Personagem.HPmax)
-    # print("Sua mana: "+ Personagem.MP/Personagem.MPmax)
-    # print("Vida do inimigo: "+ Monster.HP/Monster.HPmax)
-    # print("Mana do inimigo: "+ Monster.MP/Monster.MPmax) 
-    while(Personagem.HP > 0) or (Monster.HP > 0):
-        print("Sua vida: "+ Personagem.HP/Personagem.HPmax)
-        print("Sua mana: "+ Personagem.MP/Personagem.MPmax)
-        print("Vida do inimigo: "+ Monster.HP/Monster.HPmax)
-        print("Mana do inimigo: "+ Monster.MP/Monster.MPmax)
+    while(Personagem.HP > 0) and (Monster.HP > 0):
+        print(Personagem.name +".HP: "+ str(Personagem.HP)+"/"+str(Personagem.HPmax)+"     "+Monster.name +".HP: "+ str(Monster.HP)+"/"+str(Monster.HPmax))
+        print(Personagem.name +".MP: "+ str(Personagem.MP)+"/"+str(Personagem.MPmax)+"     "+Monster.name +".MP: "+ str(Monster.MP)+"/"+str(Monster.MPmax))
         if(turnCounter == 1):
+            input("[enter]")
             print("Sua vez de atacar, escolha qual ataque utilizar seu pedaço de bosta perfumada")
-            atkType = int(input("1 - Ataque Físico \n 2 - Ataque especial  \n 3 - Ataque mágico \n 4 - Passar turno (Recupera parte de HP e MP)"))
+            atkType = int(input("1 - Ataque Físico \n 2 - Ataque especial  \n 3 - Ataque mágico \n 4 - Passar turno (Recupera parte de HP e MP)\n"))
             Personagem.Atk(atkType, Monster)
             turnCounter += 1
         elif(turnCounter == 2):
             print("Vez do monstro atacar, segura na mão de Eru e vai!")
-
+            input("[enter]")
             Monster.Atk(TipoAtkMontro(Monster), Personagem)
             turnCounter -= 1
         

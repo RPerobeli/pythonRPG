@@ -13,14 +13,12 @@ class Personagem:
             self.skills['agi'] = 2
             self.skills['vit'] = 3
             self.skills["int"] = 1
-            self.AtualizaStatus()
             
         elif(self.classe.lower() == "arqueiro"):
             self.skills['str'] = 2
             self.skills['agi'] = 4
             self.skills['vit'] = 2
             self.skills["int"] = 2
-            self.AtualizaStatus()
             
             
         elif(self.classe.lower() == "mago"):
@@ -31,6 +29,8 @@ class Personagem:
             
         else:
             print("Erro no construtor")
+
+        self.AtualizaStatus()
     #########################################################################################
     def GetClasse(self):
         return self.classe
@@ -53,8 +53,9 @@ class Personagem:
         self.MPmax = 10*self.skills["int"] 
 
     def LvlUP(self):
-        skill =input("Selecione onde alocar seu ponto (força, vitalidade, agilidade ou inteligencia): ")
         self.lvl += 1
+        print("Você chegou ao NIVEL " + str(self.lvl)+ "!")
+        skill =input("Selecione onde alocar seu ponto (força, vitalidade, agilidade ou inteligencia): ")
         if(skill.lower() == "forca" or skill.lower() == "força"):
             self.skills["str"] += 1
         elif(skill.lower() == "agilidade"):
@@ -85,7 +86,7 @@ class Personagem:
             self.skills["int"] += vet[2]
             self.skills["agi"] += vet[1]
             soma = sum(vet)
-            extraPoints = lambda soma,sPoints : sPoints - soma
+            extraPoints = sPoints -soma
             self.skills["str"] += extraPoints
         elif(self.classe.lower() == "arqueiro"):
             vet[0] = int(sPoints*0.2)
@@ -97,7 +98,7 @@ class Personagem:
             self.skills["int"] += vet[2]
             self.skills["agi"] += vet[1]
             soma = sum(vet)
-            extraPoints = lambda soma,sPoints : sPoints - soma
+            extraPoints = sPoints -soma
             self.skills["agi"] += extraPoints
             
         elif(self.classe.lower() == "mago"):
@@ -110,7 +111,7 @@ class Personagem:
             self.skills["int"] += vet[2]
             self.skills["agi"] += vet[1]
             soma = sum(vet)
-            extraPoints = lambda soma,sPoints : sPoints - soma
+            extraPoints = sPoints -soma
             self.skills["int"] += extraPoints
         else:
             print("Erro na distribuição de skill points")
@@ -169,7 +170,7 @@ class Personagem:
                     self.MP = self.MPmax
             else:
                 print("Erro no ataque de arqueiro")
-        elif(self.classe.lower() == "arqueiro"):
+        elif(self.classe.lower() == "mago"):
             if(atkType == 1):
                 dano = 2*self.skills["int"] + 1*self.skills["str"]
                 dano = self.AcertoCritico(dano)
