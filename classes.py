@@ -115,6 +115,7 @@ class Personagem:
             self.skills["int"] += extraPoints
         else:
             print("Erro na distribuição de skill points")
+        self.AtualizaStatus()
 
     def Atk(self, atkType, target):
         if(self.classe.lower() == "guerreiro"):
@@ -201,7 +202,12 @@ class Personagem:
             print("Erro no ataque, classe inválida")
 
 
-
+    def DoubleHP(self):
+        #dobra o hp dos monstros pra ficar mais interessante
+        self.HP = 2*self.HP
+        self.MP = 2*self.MP
+        self.HPmax = 2*self.HPmax
+        self.MPmax = 2*self.MPmax
     
     def AcertoCritico(self, dano):
         crit = random.randint(1,5)
