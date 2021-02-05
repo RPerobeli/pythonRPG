@@ -1,4 +1,5 @@
 Cao infernal,Guerreiro
+Javali,Guerreiro
 Orc Guerreiro,Guerreiro
 Orc Besteiro,Arqueiro
 Orc Bruxo,Mago

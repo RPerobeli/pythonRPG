@@ -69,7 +69,8 @@ def Intro(Heroi):
 
 
 def IntroMago(Heroi):
-    print("A missão descrita no anúncio pede que você vá até a capital da magia, Xand'ora, entregar uma carta ao professor Willhelm, na universidade da cidade.")
+    #print("A missão descrita no anúncio pede que você vá até a capital da magia, Arianthe, entregar uma carta ao professor Willhelm, na universidade da cidade.")
+    print("A missão descrita no anúncio pede que você vá até a capital da magia, Florianópolis, entregar uma carta ao professor Willhelm, na universidade da cidade.")
     print("Você suspeita da recompensa, um pouco alta para uma simples entrega, mas aceita de qualquer maneira.")
     input("[enter]")
     print("Após guardar a carta na sua bolsa, você se dirige à saída.")
@@ -77,7 +78,55 @@ def IntroMago(Heroi):
     print("Você sorri, diz seu nome, e parte para sua viagem.")
     print("[Jessie]: Volte sempre, "+Heroi.name+".")
     input("[enter]")
-
+    print("Enquanto saía de Asas da Liberdade, você notou uma caravana que estava de partida, o líder da caravana te oferece uma carona até Florianópolis, você:")
+    print("1 - Você aceita acompanhar a caravana.")
+    print("2 - Você prefere seguir sozinho sua viagem.")
+    print("3 - Você rouba um cavalo da caravana e sai correndo.")
+    resp = input()
+    if(int(resp) == 1):
+        print("Após alguns dias, ao cair da noite, a caravana monta o último acampamento antes de chegarem em Florianópolis.")
+        print("Enquanto comiam em volta da fogueira, você escuta murmúrios advindos da floresta... ")
+        input("[enter]")
+        print("Um dos guardas da caravana adentra nos arbustos. Ouve-se um grito, e o ataque começa.")
+        print("Um grupo de bandidos ataca a caravana, os guardas já se encontram em combate, e 2 dos bandidos vêm em sua direção.")
+        lib.Combate(Heroi,lib.GetMonstro(monstros, "Bandido"))
+        input("[enter]")
+        lib.Combate(Heroi,lib.GetMonstro(monstros, "Bandido Atirador"))
+        input("[enter]")
+        print("Ao olhar em volta, percebe-se que todos os guardas pereceram em batalha, levando consigo seus adversários.")
+        print("Os únicos restantes são o líder da caravana e os mercadores. Nesse momento, o líder se aproxima de você, agradece seus grandes feitos e te presenteia com um elixir revigorante.")
+        Heroi.MP = Heroi.MPmax
+        print("[Aviso]: Seus pontos de mana foram restaurados")
+    elif(int(resp) == 2):
+        print("Já está anoitecendo e a fome volta a te assombrar, olhando à volta, no meio da neve, você vê um pequeno filhote de javali.")
+        print("Antes mesmo que você mate o pequeno filhote, a javali mãe te ataca rapidamente.")
+        lib.Combate(Heroi,lib.GetMonstro(monstros,"Javali"))
+        print("Após matar a família suína, você nota que terá refeições para alguns dias.")
+        input("[enter]")
+        print("Alguns dias depois, você encontra a mesma caravana que encontrara anteriormente, eles parecem em apuros, lutando com um grupo de ladrões")
+        print("Você escolhe ajudá-los e parte para cima dos inimigos mais próximos")
+        lib.Combate(Heroi,lib.GetMonstro(monstros, "Bandido"))
+        input("[enter]")
+        lib.Combate(Heroi,lib.GetMonstro(monstros, "Bandido Atirador"))
+        print("Ao olhar em volta, percebe-se que todos os guardas pereceram em batalha, levando consigo seus adversários.")
+        print("Os únicos restantes são o líder da caravana e os mercadores. Nesse momento, o líder se aproxima de você, agradece seus grandes feitos e te presenteia com um elixir revigorante.")
+        Heroi.MP = Heroi.MPmax
+        print("[Aviso]: Seus pontos de mana foram restaurados")        
+    elif(int(resp) == 3):
+        print("Já está anoitecendo e a fome volta a te assombrar, olhando à volta, você percebe uma fogueira ao longe")
+        print("Após se aproximar, percebe que há um ensopado sendo cozinhado, sem ninguém por perto, você se aproxima do caldeirão e escuta um zumbido.")
+        input("[enter]")
+        print("Por puro reflexo, você desvia de uma flecha, e em sua direção ver o Orc o qual atirou.")
+        lib.Combate(Heroi,lib.GetMonstro(monstros, "Orc Besteiro"))
+        print("Olhando o corpo à sua frente, você decide que comerá carne de orc nos próximos dias.")
+        input("[enter]")
+        print("Alguns dias depois, você encontra a mesma caravana que encontrara anteriormente, eles parecem em apuros, lutando com um grupo de ladrões")
+        print("Você decide ficar de fora da ação, e acaba presenciando uma chacina, de onde ninguém saíra vivo.")
+        input("[enter]")
+        print("No meio dos corpos, estava o cadáver do líder da caravana")
+        print("Você vasculha o corpo e encontra um elixir, após tomá-lo, se sente revigorado")
+        Heroi.MP = Heroi.MPmax
+        print("[Aviso]: Seus pontos de mana foram restaurados")  
 def IntroGuerreiro(Heroi):
     print("")
 
