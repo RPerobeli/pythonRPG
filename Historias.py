@@ -48,11 +48,11 @@ def Intro(Heroi):
         input("[enter]")
         print("[Taverneira]: Você tem que pagar pela refeição, imbecil. Se não pode pagar, pegue uma missão no mural ali e faça dinheiro!")
         print("Com as costelas doendo, você vai até  o mural e pega a única missão restante.")
-    if(int(resp) == 2):
+    elif(int(resp) == 2):
         print("[Taverneira] Pois bem, "+Heroi.classe+", há uma certa tarefa que acabou de chegar até mim, ainda não pus no mural,")
         print(" se tiver interesse, como forma de pagamento, dou-lhe a refeição, você não parece má pessoa.")
         print("Seus olhos brilham ao ver tamanha gentileza, que você pensa ter sido ajudado por um anjo. De prontidão você aceita a tarefa, enquanto saboreia o pagamento adiantado.")
-    if(int(resp) == 3):
+    elif(int(resp) == 3):
         print("ROOOOOOONC...")
         print("Ao escutar o som de seu estômago faminto, você desmaia...")
         input("[enter]")
@@ -60,11 +60,12 @@ def Intro(Heroi):
         print("Você come sobras de comida, e sente que foi a melhor refeição da sua vida.")
         print("A taverneira, olhando para sua situação precária, te oferece uma missão, para que você possa pelo menos viver dignamente.")
         input("[enter]")
-    if(Heroi.classe.lower == 'mago'):
+
+    if(Heroi.classe.lower() == 'mago'):
         IntroMago(Heroi)
-    elif(Heroi.classe.lower == 'guerreiro'):
+    elif(Heroi.classe.lower() == 'guerreiro'):
         IntroGuerreiro(Heroi)
-    elif(Heroi.classe.lower == 'arqueiro'):
+    elif(Heroi.classe.lower() == 'arqueiro'):
         IntroLegolas(Heroi)
 
 
@@ -114,9 +115,9 @@ def IntroMago(Heroi):
         print("[Aviso]: Seus pontos de mana foram restaurados")        
     elif(int(resp) == 3):
         print("Já está anoitecendo e a fome volta a te assombrar, olhando à volta, você percebe uma fogueira ao longe")
-        print("Após se aproximar, percebe que há um ensopado sendo cozinhado, sem ninguém por perto, você se aproxima do caldeirão e escuta um zumbido.")
+        print("Após se aproximar, percebe que há um ensopado sendo cozido, sem ninguém por perto, você se aproxima do caldeirão e escuta um zumbido.")
         input("[enter]")
-        print("Por puro reflexo, você desvia de uma flecha, e em sua direção ver o Orc o qual atirou.")
+        print("Por puro reflexo, você desvia de uma flecha, e em sua direção vem o Orc o qual atirou.")
         lib.Combate(Heroi,lib.GetMonstro(monstros, "Orc Besteiro"))
         print("Olhando o corpo à sua frente, você decide que comerá carne de orc nos próximos dias.")
         input("[enter]")
@@ -124,9 +125,13 @@ def IntroMago(Heroi):
         print("Você decide ficar de fora da ação, e acaba presenciando uma chacina, de onde ninguém saíra vivo.")
         input("[enter]")
         print("No meio dos corpos, estava o cadáver do líder da caravana")
-        print("Você vasculha o corpo e encontra um elixir, após tomá-lo, se sente revigorado")
+        print("Você vasculha o corpo e encontra um elixir, após tomá-lo, se sente revigorado.")
         Heroi.MP = Heroi.MPmax
-        print("[Aviso]: Seus pontos de mana foram restaurados")  
+        print("[Aviso]: Seus pontos de mana foram restaurados")
+        CapituloFloripaMago(Heroi)
+
+def CapituloFloripaMago(Heroi):
+
 def IntroGuerreiro(Heroi):
     print("")
 

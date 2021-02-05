@@ -41,7 +41,7 @@ def TipoAtkMontro(monstro):
 
 def Combate(Personagem, Monster):
     Monster.AutoLvl(Personagem.lvl)
-    Monster.DoubleHP()
+    #Monster.DoubleHP()
     turnCounter = rnd.randrange(1, 3)
     while(Personagem.HP > 0) and (Monster.HP > 0):
         print(Personagem.name +".HP: "+ str(Personagem.HP)+"/"+str(Personagem.HPmax)+"     "+Monster.name +".HP: "+ str(Monster.HP)+"/"+str(Monster.HPmax))
