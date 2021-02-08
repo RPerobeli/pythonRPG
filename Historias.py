@@ -131,7 +131,8 @@ def IntroMago(Heroi):
         CapituloFloripaMago(Heroi)
 
 def CapituloFloripaMago(Heroi):
-
+    sys.exit()
+    
 def IntroGuerreiro(Heroi):
     print("")
 

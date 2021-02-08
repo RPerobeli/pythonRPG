@@ -48,7 +48,7 @@ def Combate(Personagem, Monster):
         print(Personagem.name +".MP: "+ str(Personagem.MP)+"/"+str(Personagem.MPmax)+"     "+Monster.name +".MP: "+ str(Monster.MP)+"/"+str(Monster.MPmax))
         if(turnCounter == 1):
             input("[enter]")
-            print("Sua vez de atacar, escolha qual ataque utilizar seu pedaço de bosta perfumada")
+            print("[Narrador] Sua vez de atacar, escolha qual ataque utilizar.")
             atkType = int(input("1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n"))
             Personagem.Atk(atkType, Monster)
             turnCounter += 1

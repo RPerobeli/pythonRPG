@@ -66,6 +66,7 @@ class Personagem:
             self.skills["vit"] += 1       
         else:
             print("Atributo inválido, digite novamente")
+            self.lvl -= 1
             self.LvlUP()
         self.AtualizaStatus()
 
