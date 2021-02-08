@@ -16,6 +16,7 @@ def Intro(Heroi):
     if(int(resp) == 1):
         print("[Narrador]: Ao acarariciar a cachorra, ela põe os dentes à mostra e morde sua mão, revelando ser um cão infernal.")
         print("Você rola para o lado e saca a sua arma.")
+        print("[Aviso]: Você sofreu 2 de dano.")
         Heroi.HP -= 2
         lib.Combate(Heroi,lib.GetMonstro(monstros, "Cao infernal"))
         print("[Narrador]: Após a luta com o cão dos demônios, você desce as escadas em direção à guilda.")

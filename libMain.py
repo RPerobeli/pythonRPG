@@ -38,7 +38,6 @@ def Combate(Personagem, Monster):
     Monster.AutoLvl(Personagem.lvl)
     Monster.AdequaHP()
     turnCounter = rnd.randrange(1, 3)
-    print(Personagem.skills)
     while(Personagem.HP > 0) and (Monster.HP > 0):
         print(Personagem.name +".HP: "+ str(Personagem.HP)+"/"+str(Personagem.HPmax)+"     "+Monster.name +".HP: "+ str(Monster.HP)+"/"+str(Monster.HPmax))
         print(Personagem.name +".MP: "+ str(Personagem.MP)+"/"+str(Personagem.MPmax)+"     "+Monster.name +".MP: "+ str(Monster.MP)+"/"+str(Monster.MPmax))

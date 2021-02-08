@@ -213,13 +213,14 @@ class Personagem:
     def VerificaAtk(self):
         input("[enter]")
         print("[Narrador]: Sua vez de atacar, escolha qual ataque utilizar.")
-        atkType = int(input("1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status"))
+        atkType = int(input("1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status\n"))
         if(atkType != 1 and atkType != 2 and atkType != 3 and atkType != 4 and atkType != 5):
             print("Ataque inválido, você tem demência? Tente de novo,taokey.")
             self.VerificaAtk()
         elif(atkType == 5):
-            print(self.GetSkills())
-            print("Atk: "+self.atk+"        Xp: "+self.XP)
+            print("Status de "+self.name+": "+str(self.GetSkills()))
+            print("Atk: "+str(self.atk)+"        Xp: "+str(self.XP))
+            self.VerificaAtk()
         else:
             return atkType
      
