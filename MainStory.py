@@ -8,7 +8,7 @@ import Historias as h
 classesDisponiveis = ("Guerreiro", "Arqueiro", "Mago")
 print("Bem vindo ao D&D da Deepweb, aqui você vai encontrar diversas aventuras(nem todas vão ser divertidas).")
 nome = input("Digite o nome do seu personagem: ")
-print("Perfeito, "+nome+", agora escolha a classe com a qual voce vai se foder!")
+print("Perfeito, "+nome+", agora escolha a classe com a qual voce vai se ferrar!")
 print("As classes disponíveis são: "+ str(classesDisponiveis) + ".")
 classe = input("E então, qual será a sua?")
 while(lib.ConfereClasses(classesDisponiveis, classe)==False):
