@@ -150,10 +150,7 @@ class Personagem:
                 if(self.HP > self.HPmax):
                     self.HP = self.HPmax
                 if(self.MP > self.MPmax):
-                    self.MP = self.MPmax
-            elif(atkType == 5):
-                print(self.GetSkills())
-                print("Atk: "+self.atk+"        Xp: "+self.XP)
+                    self.MP = self.MPmax                
             else:
                 print("Erro no ataque de guerreiro")
         elif(self.classe.lower() == "arqueiro"):
@@ -212,7 +209,20 @@ class Personagem:
         else:
             print("Erro no ataque, classe inválida")
 
-
+    
+    def VerificaAtk(self):
+        input("[enter]")
+        print("[Narrador]: Sua vez de atacar, escolha qual ataque utilizar.")
+        atkType = int(input("1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status"))
+        if(atkType != 1 and atkType != 2 and atkType != 3 and atkType != 4 and atkType != 5):
+            print("Ataque inválido, você tem demência? Tente de novo,taokey.")
+            self.VerificaAtk()
+        elif(atkType == 5):
+            print(self.GetSkills())
+            print("Atk: "+self.atk+"        Xp: "+self.XP)
+        else:
+            return atkType
+     
     def AdequaHP(self):
         #dobra o hp dos monstros pra ficar mais interessante
         self.HP = (0.25*self.lvl+0.75)*self.HP
