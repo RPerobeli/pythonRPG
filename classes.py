@@ -4,9 +4,12 @@ class Personagem:
     #Constructor
     def __init__(self, nome, classe):
         self.name = nome
+        self.XP = 0
         self.lvl = 1
         self.classe = classe
         self.skills = {"str" : 0,"agi": 0, "int" : 0,"vit": 0}
+        self.atk = 3 
+        
 
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
@@ -20,12 +23,12 @@ class Personagem:
             self.skills['vit'] = 2
             self.skills["int"] = 2
             
-            
         elif(self.classe.lower() == "mago"):
             self.skills['str'] = 1
             self.skills['agi'] = 2
             self.skills['vit'] = 3
             self.skills["int"] = 4
+            self.atk = 4
             
         else:
             print("Erro no construtor")
@@ -44,7 +47,9 @@ class Personagem:
         self.classe = input("Digite sua classe:")
     def SetNome(self):
         self.nome = input("Digite o nome do seu personagem:")    
-    #########################################################################################     
+    #########################################################################################    
+    def SetAtk(self, WeaponAtk):
+        self.atk = WeaponAtk  
     
     def AtualizaStatus(self):
         self.HP = 10*self.skills["vit"]
@@ -53,6 +58,7 @@ class Personagem:
         self.MPmax = 10*self.skills["int"] 
 
     def LvlUP(self):
+        
         self.lvl += 1
         print("Você chegou ao NIVEL " + str(self.lvl)+ "!")
         skill =input("Selecione onde alocar seu ponto (força, vitalidade, agilidade ou inteligencia): ")
@@ -68,6 +74,7 @@ class Personagem:
             print("Atributo inválido, digite novamente")
             self.lvl -= 1
             self.LvlUP()
+        self.XP -= 100
         self.AtualizaStatus()
 
     def AutoLvl(self, level):
@@ -121,12 +128,12 @@ class Personagem:
     def Atk(self, atkType, target):
         if(self.classe.lower() == "guerreiro"):
             if(atkType == 1):
-                dano = 3*self.skills["str"] + 2*self.skills["agi"]
+                dano = self.atk*self.skills["str"] + 2*self.skills["agi"]
                 dano = self.AcertoCritico(dano)
                 print(self.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano
             elif(atkType == 2):
-                dano = 5*self.skills["str"] + self.skills["vit"]
+                dano = 2*self.atk*self.skills["str"] + self.skills["vit"]
                 dano = self.AcertoCritico(dano)
                 print(self.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano
@@ -148,12 +155,12 @@ class Personagem:
                 print("Erro no ataque de guerreiro")
         elif(self.classe.lower() == "arqueiro"):
             if(atkType == 1):
-                dano =  2*self.skills["str"] + 3*self.skills["agi"]
+                dano =  2*self.skills["str"] + self.atk*self.skills["agi"]
                 dano = self.AcertoCritico(dano)
                 print(self.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano 
             elif(atkType == 2):
-                dano =6*self.skills["agi"]
+                dano =2*self.atk*self.skills["agi"]
                 dano = self.AcertoCritico(dano)
                 print(self.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano 
@@ -179,13 +186,13 @@ class Personagem:
                 print(self.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano
             elif(atkType == 2):
-                dano = 6*self.skills["int"]
+                dano = 2*self.atk*self.skills["int"]
                 dano = self.AcertoCritico(dano)
                 print(self.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano
                 self.MP -= 0.5*self.MPmax
             elif(atkType == 3):
-                dano = 4*self.skills["int"] #CHAMAR FUNCAO DE MAGIAS
+                dano = self.atk*self.skills["int"] #CHAMAR FUNCAO DE MAGIAS
                 dano = self.AcertoCritico(dano)
                 print(self.name+" causou "+str(dano)+ " de dano!")
                 target.HP -= dano
@@ -203,12 +210,12 @@ class Personagem:
             print("Erro no ataque, classe inválida")
 
 
-    def DoubleHP(self):
+    def AdequaHP(self):
         #dobra o hp dos monstros pra ficar mais interessante
-        self.HP = 2*self.HP
-        self.MP = 2*self.MP
-        self.HPmax = 2*self.HPmax
-        self.MPmax = 2*self.MPmax
+        self.HP = (0.25*self.lvl+0.75)*self.HP
+        self.MP = (0.25*self.lvl+0.75)*self.MP
+        self.HPmax = (0.25*self.lvl+0.75)*self.HPmax
+        self.MPmax = (0.25*self.lvl+0.75)*self.MPmax
     
     def AcertoCritico(self, dano):
         crit = random.randint(1,5)
