@@ -213,7 +213,7 @@ class Personagem:
     def AcertoCritico(self, dano):
         crit = random.randint(1,5)
         if(crit == 1):
+            print("ACERTO CRÍTICO!!!")  
             return (2*dano)
-            print("VOCÊ ACERTOU UM DANO CRÍTICO!!!")    
         else:
             return(dano)
