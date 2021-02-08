@@ -44,14 +44,11 @@ def Combate(Personagem, Monster):
     Monster.AdequaHP()
     turnCounter = rnd.randrange(1, 3)
     print(Personagem.skills)
-    print(Monster.skills)
     while(Personagem.HP > 0) and (Monster.HP > 0):
         print(Personagem.name +".HP: "+ str(Personagem.HP)+"/"+str(Personagem.HPmax)+"     "+Monster.name +".HP: "+ str(Monster.HP)+"/"+str(Monster.HPmax))
         print(Personagem.name +".MP: "+ str(Personagem.MP)+"/"+str(Personagem.MPmax)+"     "+Monster.name +".MP: "+ str(Monster.MP)+"/"+str(Monster.MPmax))
         if(turnCounter == 1):
-            input("[enter]")
-            print("[Narrador] Sua vez de atacar, escolha qual ataque utilizar.")
-            atkType = int(input("1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status"))
+            atkType = VerificaAtk()
             Personagem.Atk(atkType, Monster)
             turnCounter += 1
         elif(turnCounter == 2):
@@ -78,5 +75,14 @@ def Combate(Personagem, Monster):
 def XP(MonsterLevel):
     XP = 100 * 1/MonsterLevel
     return XP
-
+    
+def VerificaAtk():
+    input("[enter]")
+    print("[Narrador]: Sua vez de atacar, escolha qual ataque utilizar.")
+    atkType = int(input("1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status"))
+    if(atkType != 1 and atkType != 2 and atkType != 3 and atkType != 4 and atkType != 5):
+        print("Ataque inválido, você tem demência? Tente de novo.")
+        VerificaAtk()
+    else:
+        return atkType
      

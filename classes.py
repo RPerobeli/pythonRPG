@@ -151,6 +151,9 @@ class Personagem:
                     self.HP = self.HPmax
                 if(self.MP > self.MPmax):
                     self.MP = self.MPmax
+            elif(atkType == 5):
+                print(self.GetSkills())
+                print("Atk: "+self.atk+"        Xp: "+self.XP)
             else:
                 print("Erro no ataque de guerreiro")
         elif(self.classe.lower() == "arqueiro"):
