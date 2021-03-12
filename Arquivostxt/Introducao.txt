@@ -1,0 +1,57 @@
+Q1-ini
+[Narrador]: Você acorda pela manha, com uma roupa cheia de lama e a cachorra na cama, qual é a primeira coisa a fazer?
+1 - Você acaricia a cachorra.
+2 - Você dá um tapa na cachorra.
+3 - Imediatamente rola para o lado e saca sua arma e se prepara para matá-la.
+Q1-fim
+R1-1-ini
+[Narrador]: Ao acarariciar a cachorra, ela põe os dentes à mostra e morde sua mão, revelando ser um cão infernal.
+Você rola para o lado e saca a sua arma.
+[Aviso]: Você sofreu 2 de dano.
+R1-1-p1
+[Narrador]: Após a luta com o cão dos demônios, você desce as escadas em direção à guilda.
+R1-1-fim
+R1-2-ini
+A cachorra vazou,e deixou um cheiro infernal na cama...
+[Narrador]: Aparentemente, você não curte cachorras, então se levanta, mexe com as piranhas no corredor, e se digire à guilda.
+R1-2-fim
+R1-3-ini
+[Narrador]: A cachorra mostra sua verdadeira face, com os dentes à mostra, percebe-se que é um cão infernal que se prepara para combate!
+R1-3-p1
+[Narrador]: Após a luta com o cão dos demônios, você desce as escadas em direção à guilda.
+R1-3-fim
+Q2-ini
+[Narrador]: Indo em direção a praça da cidade, você avista, em meio à nevasca, o prédio da guilda Asas da Liberdade,
+uma guilda famosa em todo o continente. Após sentar-se em uma mesa na taverna da guilda, a taverneira vem ao seu encontro.
+Q2-p1
+[Taverneira]: Bom dia, senhor, aceita uma bebida e uma boa refeição da casa?
+1 - Oh, uma oferta irrecusável, pode trazer a melhor cerveja da casa por favor.
+2 - Então, senhorita, no momento estou duro, não tenho 1 prata sequer...
+3 - Ficar calado e deixar seu corpo falar por ti.")
+Q2-fim
+R2-1-ini
+[Narrador]: A taverneira traz uma grande refeição para você, com a melhor cerveja. Você se sente saciado.
+[Taverneira]: São apenas 30 peças de prata, senhor.
+R2-1-p1
+[Heroi] Ué, você me ofereceu comida, eu aceitei, agora tenho que pagar?
+[Narrador]: Indignada com sua resposta, a taverneira te chuta no peito, causando muita dor, e talvez quebrando uma costela...
+R2-1-p2
+[Aviso]: Heroi perdeu 10 de HP
+[Taverneira]: Você tem que pagar pela refeição, imbecil. Se não pode pagar, pegue uma missão no mural ali e faça dinheiro!
+[Narrador]: Com as costelas doendo, você vai até  o mural e pega a única missão restante.
+R2-1-fim
+R2-2-ini
+[Taverneira] Pois bem, Heroi, há uma certa tarefa que acabou de chegar até mim, ainda não pus no mural,
+se tiver interesse, como forma de pagamento, dou-lhe a refeição, você não parece má pessoa.
+[Narrador]: Seus olhos brilham ao ver tamanha gentileza, que você pensa ter sido ajudado por um anjo. De prontidão você aceita a tarefa, enquanto saboreia o pagamento adiantado.
+R2-2-fim
+R2-3-ini
+ROOOOOOONC...
+[Narrador]: Ao escutar o som de seu estômago faminto, você desmaia...
+R2-3-p1
+[Taverneira]: Moço, pude notar que você está sem comer há algum tempo, trouxe algo para ti.
+[Narrador]: Você come sobras de comida, e sente que foi a melhor refeição da sua vida.
+R2-3-p2
+[Narrador]: A taverneira, olhando para sua situação precária, te oferece uma missão, para que você possa pelo menos viver dignamente.
+R2-3-fim
+

@@ -1,1 +1,1 @@
-atkType
+arq

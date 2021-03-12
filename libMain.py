@@ -2,6 +2,7 @@
 import classes
 import sys
 import random as rnd
+import io
 
 
 def ConfereClasses(listaDeClasses, classeDesejada):
@@ -11,7 +12,7 @@ def ConfereClasses(listaDeClasses, classeDesejada):
     return False
 
 def CriaMonstros():
-    arq = open("Monstros.txt", 'r')
+    arq = open("Arquivostxt/Monstros.txt", 'r')
     listaMonstros = [classes.Personagem("erro", "Guerreiro")]
     for linha in arq:
         valores = linha.split(',')
@@ -69,3 +70,37 @@ def Combate(Personagem, Monster):
 def XP(MonsterLevel):
     XP = 100 * 1/MonsterLevel
     return XP
+
+def ProcuraTexto(ChaveInicio, ChaveFim, arquivoNome, nome):
+    vetor = []
+    with io.open(arquivoNome,"r",encoding="utf8") as file:
+        for i, linha in enumerate(file):
+            if(linha.strip() == ChaveInicio):
+                vetor.append(i)
+            #endif
+            if(linha.strip() == ChaveFim):
+                vetor.append(i)
+            #endif
+        #endfor
+        PrintTexto(vetor[0], vetor[1], arquivoNome,nome)
+    #endwith
+#endfunc
+        
+
+def PrintTexto(li, lf, arquivoNome,nome):
+    cont = 0
+    with io.open(arquivoNome,"r",encoding="utf8") as file:
+        for i, linha in enumerate(file):
+            if(i > li and i < lf):
+                linha= linha.replace("Heroi", nome)
+                print(linha.strip())
+            #endif
+        #endfor
+    #endwith       
+#endfunc
+
+def SubstituiNomeHeroiNoArquivo(fileName,nome):
+    file = io.open(fileName,"r",encoding="utf8")
+    texto = file.read()
+    texto.replace("Heroi", nome)
+#endfunc
