@@ -1,7 +1,7 @@
 #encoding: utf-8
 import sys
-import classes
-import libMain as lib
+from Domain import Personagem
+import Interacoes as lib
 import io
 
 

@@ -1,8 +1,7 @@
 #-*- coding: utf-8 -*-
-import random
-import Acao
-import Arma
-import Bag
+import Domain.Acao as Acao
+import Domain.Arma as A
+import Domain.Bag as B
 class Personagem:
     #Constructor
     def __init__(self, nome, classe):
@@ -11,9 +10,10 @@ class Personagem:
         self.lvl = 1
         self.classe = classe
         self.skills = {"str" : 0,"agi": 0, "int" : 0,"vit": 0}
-        self.arma = Arma("Arma desgastada", 3)
-        self.bag = Bag() 
-        self.acoes = Acao()
+        self.arma = A.Arma("Arma desgastada", 3)
+        self.bag = B.Bag() 
+        self.acoes = Acao.Acao()
+        self.bag.InserirArma(self.arma)
         
 
         if(self.classe.lower() == "guerreiro"):

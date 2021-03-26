@@ -1,7 +1,7 @@
 #encoding: utf-8
 import sys
-import classes
-import libMain as lib
+from Domain import Personagem as bnc
+import Interacoes as lib
 import Historias as h
 
 ###############INTRODUCAO ###############################################################################
@@ -15,7 +15,7 @@ while(lib.ConfereClasses(classesDisponiveis, classe)==False):
     classe = input("Classe invalida, digite novamente:")
 
 print("Beleza, então você se chama "+nome+ " e é um "+classe+".")
-Heroi = classes.Personagem(nome, classe)
+Heroi = bnc.Personagem(nome, classe)
 print("status de "+str(Heroi.name)+": "+ str(Heroi.skills))
 
 resp = input("Deseja iniciar sua jornada? (s/n)")

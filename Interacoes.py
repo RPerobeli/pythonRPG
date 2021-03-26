@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-import Domain.classes as classes
+from Domain import Personagem as bnc
 import sys
 import random as rnd
 import io
@@ -13,10 +13,10 @@ def ConfereClasses(listaDeClasses, classeDesejada):
 
 def CriaMonstros():
     arq = open("Arquivostxt/Monstros.txt", 'r')
-    listaMonstros = [classes.Personagem("erro", "Guerreiro")]
+    listaMonstros = [bnc.Personagem("erro", "Guerreiro")]
     for linha in arq:
         valores = linha.split(',')
-        listaMonstros.append(classes.Personagem(valores[0],valores[1].strip()))
+        listaMonstros.append(bnc.Personagem(valores[0],valores[1].strip()))
     return listaMonstros
 
 def GetMonstro(listaMonstros, nome):
@@ -34,13 +34,13 @@ def Combate(Personagem, Monster):
         print(Personagem.name +".HP: "+ str(Personagem.HP)+"/"+str(Personagem.HPmax)+"     "+Monster.name +".HP: "+ str(Monster.HP)+"/"+str(Monster.HPmax))
         print(Personagem.name +".MP: "+ str(Personagem.MP)+"/"+str(Personagem.MPmax)+"     "+Monster.name +".MP: "+ str(Monster.MP)+"/"+str(Monster.MPmax))
         if(turnCounter == 1):
-            atkType = Personagem.Acoes.VerificaAtk()
-            Personagem.Atk(atkType, Monster)
+            atkType = Personagem.acoes.Opcoes(Personagem)
+            Personagem.Atk(Personagem, atkType, Monster)
             turnCounter += 1
         elif(turnCounter == 2):
             print("Vez do monstro atacar, segura na mão de Eru e vai!")
             input("[enter]")
-            Monster.acoes.Atk(Monster.acoes.TipoAtk(Monster), Personagem)
+            Monster.acoes.Atk(Monster, Monster.acoes.TipoAtk(Monster), Personagem)
             turnCounter -= 1
         
 

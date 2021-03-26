@@ -4,12 +4,12 @@ class Acao:
     def Atk(self, personagem, atkType, target):
         if(personagem.classe.lower() == "guerreiro"):
             if(atkType == 1):
-                dano = personagem.atk*personagem.skills["str"] + 2*personagem.skills["agi"]
+                dano = personagem.arma.danoBase*personagem.skills["str"] + 2*personagem.skills["agi"]
                 dano = self.AcertoCritico(dano)
                 print(personagem.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano
             elif(atkType == 2):
-                dano = 2*personagem.atk*personagem.skills["str"] + personagem.skills["vit"]
+                dano = 2*personagem.arma.danoBase*personagem.skills["str"] + personagem.skills["vit"]
                 dano = self.AcertoCritico(dano)
                 print(personagem.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano
@@ -27,12 +27,12 @@ class Acao:
             #endif
         elif(personagem.classe.lower() == "arqueiro"):
             if(atkType == 1):
-                dano =  2*personagem.skills["str"] + personagem.atk*personagem.skills["agi"]
+                dano =  2*personagem.skills["str"] + personagem.arma.danoBase*personagem.skills["agi"]
                 dano = self.AcertoCritico(dano)
                 print(personagem.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano 
             elif(atkType == 2):
-                dano =2*personagem.atk*personagem.skills["agi"]
+                dano =2*personagem.arma.danoBase*personagem.skills["agi"]
                 dano = self.AcertoCritico(dano)
                 print(personagem.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano 
@@ -54,13 +54,13 @@ class Acao:
                 print(personagem.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano
             elif(atkType == 2):
-                dano = 2*personagem.atk*personagem.skills["int"]
+                dano = 2*personagem.arma.danoBase*personagem.skills["int"]
                 dano = self.AcertoCritico(dano)
                 print(personagem.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano
                 personagem.MP -= 0.5*personagem.MPmax
             elif(atkType == 3):
-                dano = personagem.atk*personagem.skills["int"] #CHAMAR FUNCAO DE MAGIAS
+                dano = personagem.arma.danoBase*personagem.skills["int"] #CHAMAR FUNCAO DE MAGIAS
                 dano = self.AcertoCritico(dano)
                 print(personagem.name+" causou "+str(dano)+ " de dano!")
                 target.HP -= dano
@@ -75,7 +75,7 @@ class Acao:
         #endif
     #endfunc
 
-    def Curar(personagem):
+    def Curar(self, personagem):
         personagem.HP += 0.25*personagem.HPmax
         personagem.MP += 0.25*personagem.MPmax
         if(personagem.HP > personagem.HPmax):
@@ -85,17 +85,20 @@ class Acao:
         #endif
     #endfunc
 
-    def VerificaAtk(self, Personagem):
+    def Opcoes(self, Personagem):
         input("[enter]")
-        print("[Narrador]: Sua vez de atacar, escolha qual ataque utilizar.")
-        atkType = int(input("1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status\n"))
-        if(atkType != 1 and atkType != 2 and atkType != 3 and atkType != 4 and atkType != 5):
+        print("[Narrador]: Sua vez de atacar, escolha uma das opções.")
+        atkType = int(input("1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status\n6 - Olhar Inventário"))
+        if(atkType != 1 and atkType != 2 and atkType != 3 and atkType != 4 and atkType != 5 and atkType != 6):
             print("Ataque inválido, você tem demência? Tente de novo.")
-            self.VerificaAtk()
+            self.Opcoes(Personagem)
         elif(atkType == 5):
             print("Status de "+Personagem.name+": "+str(Personagem.GetSkills()))
-            print("Atk: "+str(Personagem.atk)+"        Xp: "+str(Personagem.XP))
-            self.VerificaAtk()
+            print("Atk arma: "+str(Personagem.arma.danoBase)+"   Xp: "+str(Personagem.XP))
+            self.Opcoes(Personagem)
+        elif(atkType == 6):
+            Personagem.bag.ShowBag()
+            self.Opcoes(Personagem)
         else:
             return atkType
         #endif
@@ -109,7 +112,7 @@ class Acao:
             return(dano)
         #endif
     #endfunc
-    def TipoAtk(monstro):
+    def TipoAtk(self, monstro):
         if(monstro.HP < 0.5*monstro.HPmax):
             monster_atkType = rnd.randint(1,5)
         else:
