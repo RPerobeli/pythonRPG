@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-import classes
+import Domain.classes as classes
 import sys
 import random as rnd
 import io
@@ -26,15 +26,6 @@ def GetMonstro(listaMonstros, nome):
     print("Monstro não encontrado")
     return listaMonstros[0]
 
-def TipoAtkMontro(monstro):
-    if(monstro.HP < 0.5*monstro.HPmax):
-        monster_atkType = rnd.randint(1,5)
-    else:
-        monster_atkType = rnd.randint(1,4)      
-    return monster_atkType    
-
-
-
 def Combate(Personagem, Monster):
     Monster.AutoLvl(Personagem.lvl)
     Monster.AdequaHP()
@@ -43,13 +34,13 @@ def Combate(Personagem, Monster):
         print(Personagem.name +".HP: "+ str(Personagem.HP)+"/"+str(Personagem.HPmax)+"     "+Monster.name +".HP: "+ str(Monster.HP)+"/"+str(Monster.HPmax))
         print(Personagem.name +".MP: "+ str(Personagem.MP)+"/"+str(Personagem.MPmax)+"     "+Monster.name +".MP: "+ str(Monster.MP)+"/"+str(Monster.MPmax))
         if(turnCounter == 1):
-            atkType = Personagem.VerificaAtk()
+            atkType = Personagem.Acoes.VerificaAtk()
             Personagem.Atk(atkType, Monster)
             turnCounter += 1
         elif(turnCounter == 2):
             print("Vez do monstro atacar, segura na mão de Eru e vai!")
             input("[enter]")
-            Monster.Atk(TipoAtkMontro(Monster), Personagem)
+            Monster.acoes.Atk(Monster.acoes.TipoAtk(Monster), Personagem)
             turnCounter -= 1
         
 
