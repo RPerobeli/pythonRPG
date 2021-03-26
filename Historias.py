@@ -97,6 +97,7 @@ def IntroMago(Heroi):
         CapituloFloripaMago(Heroi)
 
 def CapituloFloripaMago(Heroi):
+    arq = "Arquivostxt/SoltosEmFloripa.txt"
     sys.exit()
     
 def IntroGuerreiro(Heroi):

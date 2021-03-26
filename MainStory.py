@@ -16,7 +16,6 @@ while(lib.ConfereClasses(classesDisponiveis, classe)==False):
 
 print("Beleza, então você se chama "+nome+ " e é um "+classe+".")
 Heroi = classes.Personagem(nome, classe)
-
 print("status de "+str(Heroi.name)+": "+ str(Heroi.skills))
 
 resp = input("Deseja iniciar sua jornada? (s/n)")
@@ -27,5 +26,4 @@ for i in range(0,20):
     print(".")
 
 #começa a contar a historia
-#monstros = lib.CriaMonstros()
 h.Intro(Heroi)
