@@ -1,5 +1,6 @@
 import Domain.Arma as A
 import Domain.Pocao as P
+import os
 class Bag:
     def __init__(self):
         self.items = []
@@ -50,7 +51,7 @@ class Bag:
             print(item[0].name)
         #endfor
         resp = input("Deseja a descrição de um item específico? (s/n)")
-        if(resp == 's'):
+        if(resp != 'n'):
             self.SearchItem()
         #endif
     #endfunc
@@ -61,5 +62,6 @@ class Bag:
             print("item desejado não existe")
         else:
             print(item[0].name + " --> dano:" + str(item[0].danoBase) + "  Qtd:" + str(item[1]))
+        #endif
     #endfunc
 #endclass

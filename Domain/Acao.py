@@ -1,4 +1,5 @@
 import random as rnd
+
 class Acao:
     
     def Atk(self, personagem, atkType, target):
@@ -88,20 +89,21 @@ class Acao:
     def Opcoes(self, Personagem):
         input("[enter]")
         print("[Narrador]: Sua vez de atacar, escolha uma das opções.")
-        atkType = int(input("1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status\n6 - Olhar Inventário"))
+        atkType = int(input("1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status\n6 - Olhar Inventário\n"))
         if(atkType != 1 and atkType != 2 and atkType != 3 and atkType != 4 and atkType != 5 and atkType != 6):
             print("Ataque inválido, você tem demência? Tente de novo.")
-            self.Opcoes(Personagem)
+            atkType = self.Opcoes(Personagem)
         elif(atkType == 5):
             print("Status de "+Personagem.name+": "+str(Personagem.GetSkills()))
             print("Atk arma: "+str(Personagem.arma.danoBase)+"   Xp: "+str(Personagem.XP))
-            self.Opcoes(Personagem)
+            atkType = self.Opcoes(Personagem)
         elif(atkType == 6):
             Personagem.bag.ShowBag()
-            self.Opcoes(Personagem)
+            atkType = self.Opcoes(Personagem)
         else:
             return atkType
         #endif
+        return atkType
     #endfunc
     def AcertoCritico(self, dano):
         crit = rnd.randint(1,5)

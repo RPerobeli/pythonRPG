@@ -35,7 +35,12 @@ def Combate(Personagem, Monster):
         print(Personagem.name +".MP: "+ str(Personagem.MP)+"/"+str(Personagem.MPmax)+"     "+Monster.name +".MP: "+ str(Monster.MP)+"/"+str(Monster.MPmax))
         if(turnCounter == 1):
             atkType = Personagem.acoes.Opcoes(Personagem)
-            Personagem.Atk(Personagem, atkType, Monster)
+            while(atkType == None):
+                sys.stdout.flush()
+                print("limpou o buffer")
+                atkType = Personagem.acoes.Opcoes(Personagem)
+            #endwhile
+            Personagem.acoes.Atk(Personagem, atkType, Monster)
             turnCounter += 1
         elif(turnCounter == 2):
             print("Vez do monstro atacar, segura na mão de Eru e vai!")
@@ -53,7 +58,7 @@ def Combate(Personagem, Monster):
         if(Personagem.XP >= 100):
             Personagem.LvlUP()
         else:
-            print(str(Personagem.XP)+ '/'+ str(100))    
+            print(str(Personagem.XP)+'/'+ str(100))    
     else:
         print("Saiu da batalha antes do esperado.")
 
@@ -79,7 +84,6 @@ def ProcuraTexto(ChaveInicio, ChaveFim, arquivoNome, nome):
         
 
 def PrintTexto(li, lf, arquivoNome,nome):
-    cont = 0
     with io.open(arquivoNome,"r",encoding="utf8") as file:
         for i, linha in enumerate(file):
             if(i > li and i < lf):
