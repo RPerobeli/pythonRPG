@@ -5,7 +5,7 @@ Orc Besteiro,Arqueiro
 Orc Bruxo,Mago
 Elfo Bandido,Guerreiro
 Elfo Larapio,Arqueiro
-Elfo Acalito,Mago
+Elfo Acolito,Mago
 Bandido,Guerreiro
 Bandido Atirador,Arqueiro
 Mago Negro,Mago

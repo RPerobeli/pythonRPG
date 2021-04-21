@@ -1,0 +1,3 @@
+Jarrada,12,5,1   
+Avanco,8,3,2
+Concetrar e ataque bonus,10,3,3

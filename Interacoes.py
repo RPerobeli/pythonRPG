@@ -37,7 +37,6 @@ def Combate(Personagem, Monster):
             atkType = Personagem.acoes.Opcoes(Personagem)
             while(atkType == None):
                 sys.stdout.flush()
-                print("limpou o buffer")
                 atkType = Personagem.acoes.Opcoes(Personagem)
             #endwhile
             Personagem.acoes.Atk(Personagem, atkType, Monster)

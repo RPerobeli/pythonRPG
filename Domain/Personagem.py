@@ -14,6 +14,7 @@ class Personagem:
         self.bag = B.Bag() 
         self.acoes = Acao.Acao()
         self.bag.InserirArma(self.arma)
+        self.magias = self.acoes.CriaMagias(self)
         
 
         if(self.classe.lower() == "guerreiro"):

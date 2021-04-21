@@ -7,6 +7,7 @@ import io
 
 monstros = lib.CriaMonstros()
 
+
 def Intro(Heroi):
     arq = "Arquivostxt/Introducao.txt"
     #lib.SubstituiNomeHeroiNoArquivo(arq, Heroi.name)
