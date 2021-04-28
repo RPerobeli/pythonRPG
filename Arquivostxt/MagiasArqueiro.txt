@@ -1,2 +1,4 @@
 Flecha de fogo,8,12,1
-Multi flecha,12,7,1
+Suruba de flecha,12,7,2
+Flecha Arcana,15,8,4
+Bem no buraco,20,20,5

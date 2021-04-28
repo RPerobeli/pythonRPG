@@ -39,12 +39,12 @@ def Combate(Personagem, Monster):
                 sys.stdout.flush()
                 atkType = Personagem.acoes.Opcoes(Personagem)
             #endwhile
-            Personagem.acoes.Atk(Personagem, atkType, Monster)
+            Personagem.acoes.Atk(Personagem, atkType, Monster, turnCounter)
             turnCounter += 1
         elif(turnCounter == 2):
             print("Vez do monstro atacar, segura na mão de Eru e vai!")
             input("[enter]")
-            Monster.acoes.Atk(Monster, Monster.acoes.TipoAtk(Monster), Personagem)
+            Monster.acoes.Atk(Monster, Monster.acoes.TipoAtk(Monster), Personagem, turnCounter)
             turnCounter -= 1
         
 

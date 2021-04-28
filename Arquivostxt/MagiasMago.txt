@@ -1,2 +1,4 @@
 SOU EU BOLA DE FOGO,10,10,1
-AGUA MOLHADA,13,10,2
+Agua Molhada,13,10,2
+Brisa,15,12,4
+Fio Desencapado,15,10,6

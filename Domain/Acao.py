@@ -2,7 +2,7 @@ import random as rnd
 from Domain import Magia as m
 class Acao:
     
-    def Atk(self, personagem, atkType, target):
+    def Atk(self, personagem, atkType, target, Ribamar): #Ribamar == turnCounter
         if(personagem.classe.lower() == "guerreiro"):
             if(atkType == 1):
                 dano = personagem.arma.danoBase*personagem.skills["str"] + 2*personagem.skills["agi"]
@@ -16,7 +16,11 @@ class Acao:
                 target.HP -= dano
                 personagem.HP -= 0.2*personagem.HPmax
             elif(atkType == 3):
-                magiaEscolhida = personagem.acoes.SelectMagia(personagem)
+                if(Ribamar == 1):
+                    magiaEscolhida = personagem.acoes.SelectMagia(personagem)
+                elif(Ribamar == 2):
+                    magiaEscolhida = personagem.acoes.SelectMagiaMonstro(personagem)
+                #endif
                 dano = 2*personagem.skills["int"]+ personagem.skills["str"]+ magiaEscolhida.danoBase
                 dano = self.AcertoCritico(dano)
                 print(personagem.name+ " causou "+str(dano)+ " de dano!")
@@ -38,7 +42,7 @@ class Acao:
                 dano = self.AcertoCritico(dano)
                 print(personagem.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano 
-                personagem.MP -= 0.2*personagem.MPmax
+                personagem.MP -= 0.3*personagem.MPmax
             elif(atkType == 3):
                 magiaEscolhida = personagem.acoes.SelectMagia(personagem)
                 dano = 2*personagem.skills["int"]+ personagem.skills["agi"] + magiaEscolhida.danoBase#BALANCEAR FUNCAO DE MAGIAS
@@ -123,13 +127,15 @@ class Acao:
         #endif
     #endfunc
     def TipoAtk(self, monstro):
+        monster_atkType = 1
+        if(monstro.classe == "mago"):
+            monster_atkType = 3
+        #endif
         if(monstro.HP < 0.5*monstro.HPmax):
-            monster_atkType = rnd.randint(1,2)
             if(rnd.randint(0,2) == 1):
                 monster_atkType = 4
-            #endif
-        else:
-            monster_atkType = rnd.randint(1,2)      
+            #endif 
+        #endif
         return monster_atkType
     #endfunc
     def SelectMagia(self, personagem):
@@ -141,11 +147,27 @@ class Acao:
             #endif
             if(magia.lvl <= personagem.lvl):
                 cont += 1
-                print(str(cont)+ ": "+ magia.name+ "\n")
+                print(str(cont)+ ": "+ magia.name)
             #endif
         #endfor
         resp = int(input("Qual magia deseja usar?\n"))
         return personagem.magias[resp-1]
+    #endfunc
+    def SelectMagiaMonstro(self, personagem):
+        cont = 0
+        magiasSelecionaveis = []
+        for magia in personagem.magias:
+            if(magia.name == "erro"):
+                continue
+            #endif
+            if(magia.lvl <= personagem.lvl):
+                cont += 1
+                print(str(cont)+ ": "+ magia.name+ "\n")
+                magiasSelecionaveis.append(magia)
+            #endif
+        #endfor
+        resp = rnd.randint(0,len(magiasSelecionaveis))
+        return magiasSelecionaveis[resp]
     #endfunc
     def CriaMagias(self, Personagem):
         if(Personagem.classe.lower() == 'guerreiro'):

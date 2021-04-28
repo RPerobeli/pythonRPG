@@ -3,6 +3,7 @@ import sys
 from Domain import Personagem as bnc
 import Interacoes as lib
 import Historias as h
+import os
 
 ###############INTRODUCAO ###############################################################################
 classesDisponiveis = ("Guerreiro", "Arqueiro", "Mago")
@@ -16,14 +17,13 @@ while(lib.ConfereClasses(classesDisponiveis, classe)==False):
 
 print("Beleza, então você se chama "+nome+ " e é um "+classe+".")
 Heroi = bnc.Personagem(nome, classe)
+Heroi.arma.danoBase = 3
 print("status de "+str(Heroi.name)+": "+ str(Heroi.skills))
 
 resp = input("Deseja iniciar sua jornada? (s/n)")
 if(resp == "n"):
     sys.exit()
 ###############INICIO DA HISTORIA###############################################################################
-for i in range(0,20):
-    print(".")
-
+os.system("cls")
 #começa a contar a historia
 h.Intro(Heroi)

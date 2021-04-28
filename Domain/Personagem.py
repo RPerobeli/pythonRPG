@@ -10,7 +10,7 @@ class Personagem:
         self.lvl = 1
         self.classe = classe
         self.skills = {"str" : 0,"agi": 0, "int" : 0,"vit": 0}
-        self.arma = A.Arma("Arma desgastada", 3)
+        self.arma = A.Arma("Arma desgastada", 2)
         self.bag = B.Bag() 
         self.acoes = Acao.Acao()
         self.bag.InserirArma(self.arma)
@@ -20,21 +20,21 @@ class Personagem:
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
             self.skills['agi'] = 2
-            self.skills['vit'] = 3
-            self.skills["int"] = 1
+            self.skills['vit'] = 5
+            self.skills["int"] = 2
             
         elif(self.classe.lower() == "arqueiro"):
             self.skills['str'] = 2
             self.skills['agi'] = 4
-            self.skills['vit'] = 2
-            self.skills["int"] = 2
+            self.skills['vit'] = 4
+            self.skills["int"] = 3
             
         elif(self.classe.lower() == "mago"):
             self.skills['str'] = 1
             self.skills['agi'] = 2
             self.skills['vit'] = 3
             self.skills["int"] = 4
-            self.atk = 4
+            #self.atk = 4
             
         else:
             print("Erro no construtor")
