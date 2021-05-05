@@ -1,5 +1,7 @@
 import random as rnd
 from Domain import Magia as m
+import Interacoes as lib
+import os
 class Acao:
     
     def Atk(self, personagem, atkType, target, Ribamar): #Ribamar == turnCounter
@@ -68,6 +70,7 @@ class Acao:
                 personagem.MP -= 0.5*personagem.MPmax
             elif(atkType == 3):
                 magiaEscolhida = personagem.acoes.SelectMagia(personagem)
+                os.system("cls")
                 dano = personagem.arma.danoBase*personagem.skills["int"]  + magiaEscolhida.danoBase#BALANCEAR FUNCAO DE MAGIAS
                 dano = self.AcertoCritico(dano)
                 print(personagem.name+" causou "+str(dano)+ " de dano!")
@@ -86,6 +89,7 @@ class Acao:
     def Curar(self, personagem):
         personagem.HP += 0.25*personagem.HPmax
         personagem.MP += 0.25*personagem.MPmax
+        print("Regenerou vida e mana")
         if(personagem.HP > personagem.HPmax):
             personagem.HP = personagem.HPmax
         if(personagem.MP > personagem.MPmax):
@@ -94,7 +98,7 @@ class Acao:
     #endfunc
 
     def Opcoes(self, Personagem):
-        input("[enter]")
+        lib.LimpaConsole()
         print("[Narrador]: Sua vez de atacar, escolha uma das opções.")
         atkType = input("1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status\n6 - Olhar Inventário\n")
         if(atkType == ''):
@@ -152,6 +156,7 @@ class Acao:
         #endfor
         resp = int(input("Qual magia deseja usar?\n"))
         return personagem.magias[resp-1]
+        #endif
     #endfunc
     def SelectMagiaMonstro(self, personagem):
         cont = 0

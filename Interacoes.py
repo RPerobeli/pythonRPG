@@ -3,6 +3,8 @@ from Domain import Personagem as bnc
 import sys
 import random as rnd
 import io
+import os
+import Interacoes as lib
 
 
 def ConfereClasses(listaDeClasses, classeDesejada):
@@ -39,11 +41,12 @@ def Combate(Personagem, Monster):
                 sys.stdout.flush()
                 atkType = Personagem.acoes.Opcoes(Personagem)
             #endwhile
+            os.system("cls")
             Personagem.acoes.Atk(Personagem, atkType, Monster, turnCounter)
             turnCounter += 1
         elif(turnCounter == 2):
             print("Vez do monstro atacar, segura na mão de Eru e vai!")
-            input("[enter]")
+            lib.LimpaConsole()
             Monster.acoes.Atk(Monster, Monster.acoes.TipoAtk(Monster), Personagem, turnCounter)
             turnCounter -= 1
         
@@ -57,7 +60,7 @@ def Combate(Personagem, Monster):
         if(Personagem.XP >= 100):
             Personagem.LvlUP()
         else:
-            print(str(Personagem.XP)+'/'+ str(100))    
+            print("XP: " + str(Personagem.XP)+'/'+ str(100))    
     else:
         print("Saiu da batalha antes do esperado.")
 
@@ -97,4 +100,9 @@ def SubstituiNomeHeroiNoArquivo(fileName,nome):
     file = io.open(fileName,"r",encoding="utf8")
     texto = file.read()
     texto.replace("Heroi", nome)
+#endfunc
+
+def LimpaConsole():
+    input("[enter]")
+    os.system("cls")
 #endfunc

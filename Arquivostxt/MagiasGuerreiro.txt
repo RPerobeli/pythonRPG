@@ -2,3 +2,4 @@ Jarrada,12,5,1
 Avanco,8,3,2
 Soco do Feng Shui,10,3,4
 Surra de Espada Mole,10,4,5
+Tem muita mulher que ja viu essa cena,20,6,6
