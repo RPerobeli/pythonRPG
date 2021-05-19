@@ -1,0 +1,113 @@
+Q1-ini
+[Narrador]: Depois de alguns dias de caminhada, finalmente ao longe você vê os
+portões de Florianópolis, ao se aproximar é parado por um guarda.
+Q1-p1
+[Guarda]: Alto lá, jovem mago, para adentrar Florianópolis, você precisa de uma identificação qualificando-te.
+1 - Ignorar o aviso e tentar forçar passagem.
+2 - Dizer que está em uma missão de alta importância e que deve entrar na cidade.
+3 - Mostrar a carta da missão, com o selo de Florianópolis.
+Q1-fim
+R1-1-ini
+[Heroi]: Um mago é implacável! Ele entra aonde ele quiser!
+R1-1-fim
+R1-2-ini
+[Guarda]: Não me interessa se a sua missão é importante ou urgente, mostre a identificação!
+[Narrador]: O guarda usa uma magia que o joga para longe.
+R1-2-p1
+[Narrador]: Você deixa cair a carta da missão e o guarda vê o selo de Florianópolis, autorizando sua entrada na cidade.
+R1-2-fim
+R1-3-ini
+[Narrador]: O guarda valida sua identificação, e o deixa entrar sem mais problemas.
+R1-3-fim
+Q2-ini
+[Narrador]: Após adentrar em Florianópolis, você corre rumo a universidade de magia, para entregar a carta ao destinatário.
+[Narrador]: As ruas da cidade são repletas de pessoas usando itens mágicos, fontes de água rica em mana em vários pontos da cidade.
+[Narrador]: Os cidadãos de Florianópolis usam magia como parte de suas vidas.
+Q2-p1
+[Narrador]: Ao se aproximar da universidade da magia, você nota uma alta torre ao norte do exuberante castelo que é a universidade.
+[Narrador]: Você anda pelo local, em busca do professor Willhelm, os alunos te guiam com informações e você finalmente chega na sala do mago.
+Q2-p2
+[Heroi]: Você é Willhelm? Minha missão exige que eu te entegue essa carta, aparenta ter grande importância.
+[Willhelm]: Não sei, talvez eu seja, quem pergunta?
+1- Sou Heroi, vim da guilda Asas da Liberdade para te entregar uma mensagem mega, hiper, ultra, blaster, harecrshima, importante.
+2- Sou sua mãe disfarçada, te trouxe um almoço envelopado.
+3- Sou um mensageiro qualquer, pega essa carta logo e me dê o pagamento.
+Q2-fim
+R2-1-ini
+[Willheilm]: Eu estava a sua espera, chegou rápido não?! Tive tempo de aprender
+mais 8 feitiços até sua chegada. - Você irritado pela falta de educação o
+entrega a carta e ele pede pra segui-lo.
+R2-1-fim
+R2-2-ini
+[Willhelm]– Nossa, não sabia que minha mãe era tão feia assim, pra mim ela era
+mais bonita que um pedaço de merda que nem você. 
+R2-2-p2
+[Narrador]Ele então entoa um feitiço que te transforma em um pequeno e indefeso rato e lhe dá de alimento para uma
+serpente mística que ele mante no armário. - GAME OVER!
+R2-3-p1
+[Heroi]Obrigado senhor “um qualquer” sem educação. 
+R2-4-p1
+[Narrador]Ele pega a carta de suas mãos e te chama para um duelo de magias e diz que se você o derrotar, ele lhe ensinará um pouco de educação e requintes dos “engomadinhos” (ao vencer a batalha, você ganha uma nova habilidade ou mais pontos de mana máximo). 
+R2-fim
+Q3-ini
+[   ]Depois de seguir o professor/derrotar ele na batalha, você adentra em
+uma das principais torres da cidade mágica, ao fundo se escuta um som
+forte e maligno, parece ser um demónio inferior acorrentado nas
+catacumbas da torre. Chegando na sala de Willhelm, ele abre a carta e
+pede que você o espere na porta enquanto ele comunica o conteúdo da
+carta com o resto conselho.
+Q3-1-p1
+[   ]Você se questiona o motivo pela qual precisa esperar para entrar na
+sala e ele fica irritado.
+Q3-1-p2
+[Willheilm]Fedelho insolente, estou tentando manter você longe das garras do
+conselho, se te virem sem uma identificação de aluno ou formando
+de mago da escola, irão dar-lhe de alimento ao demônio no fundo da
+masmorra.
+R3-ini
+[Narrador]Você insiste em entrar com ele na sala e diz que possui uma
+identificação de outra escola de bruxaria.
+R3-1-p1
+[Narrador]o conselho recusa e te manda como comido pro demônio
+R3-2-p1
+iniciar uma batalha (jogar terá vantagem se escolheu a batalha contra Willheilm por ter uma habilidade nova que
+facilita na derrota do bicho)
+R3-2-p1
+[Narrador]Você se mante inerte e resolve não entrar, esperando pacientemente
+ao lado de fora da sala do conselho. 
+R3-3-p1
+[Narrador]A reunião do conselho termina e você entra na sala, lá dentro te desafiam a batalhar contra o demônio para 
+provar seu valor (jogador tem vantagem de habilidade caso tenha
+batalhado e vencido Willhelm).
+R3-3-p1
+[Narrador]á irritado ele o empurra sala a dentro e quando menos percebe, você está imobilizado olhando nos olhos de um ser mítico que faz parte do conselho da magia e que drena aos poucos sua vitalidade até que você morra. - GAME OVER!
+R3-fim
+Q4-ini
+[Narrador]:-Após a  batalha, sua alma é drenada por um ser mítico que é a mandachuva do conselho de magia.
+[Chefe do Conselho]:Você é um aluno promissor,quem sabe não chega no conselho,se não morrer antes de chegar na idade mínima. 
+Q4-P1-INI
+[Willhelm]:Não é a melhor das ideias,mas vou ensinar o necessário,se você não for imprestável a ponto de morrer na primeira missão
+[Narrador]: Ele não parece gostar da ideia.
+[Chefe do Conselho]:-Me chamo Draiade-diz a chefe do conselho se apresentando-a última de uma antiga raça aniquilada pelos humanos séculos atrás.
+[Draiade]: A aniquilação foi incitada por um bruxo que prometeu dons divinos à uma linhagem especifica desses seres mortais.
+1-Você chocado com o que foi dito pergunta mais sobre o bruxo e é imediatamente recrutado para a missão que estava descrita na carta.
+2- Você não liga e decide por apenas seguir com sua vida e ignorar tudo o que aconteceu,qualquer esporte mais dificil que levantar copos não é pra você.
+Um dos bruxos do conselho te considera um risco e olhando em sua mente com magia,pressente o perigo e o caos,e manda te prenderem,pois isso o amedrontou.FIM!
+3-Draiade pressentindo um futuro perturbador para você te desafia para um duelo:se você vencer não será obrigado a seguir na missão;
+R1-1-INI
+[Herói]: Aceito a missão,a cerveja não se paga sozinha!
+R1-1-FIM
+R1-2-INI
+[Bruxo desconhecido]: Pega o safado,pega desgraçaaa!
+Você foi preso,SE FODEU.GAME OVER!
+R1-2-FIM
+R1-3-INI
+Draiade começa o combate.
+[Herói]: ETA PORRA!TÁ SAINDO DA JAULA O MONSTRO!
+R1-3-FIM
+Q4-P2-INI
+[Narrador]:Depois do combate Draiade sente uma força amaldiçoada que provém dos seus ataques,e pensa se você não pode ser um daqueles beneficiados pelo massacre de seu povo.
+[Herói]: CORRE,BERG!
+[Draiade]:Se correr é pior,agora é um soldado na guerra!
+Q4-P2-FIM
+Q4-fim
