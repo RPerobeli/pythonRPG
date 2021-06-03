@@ -29,7 +29,11 @@ class Acao:
                 target.HP -= dano 
                 personagem.MP -= magiaEscolhida.cost
             elif(atkType == 4):  
-                self.Curar(personagem)              
+                self.Curar(personagem)
+            elif(atkType == 69):
+                self.Hack(personagem)
+                dano = 696969
+                target.HP -= dano            
             else:
                 print("Erro no ataque de guerreiro")
             #endif
@@ -53,6 +57,10 @@ class Acao:
                 target.HP -= dano
             elif(atkType == 4):
                 self.Curar(personagem)
+            elif(atkType == 69):
+                self.Hack(personagem)
+                dano = 696969
+                target.HP -= dano
             else:
                 print("Erro no ataque de arqueiro")
             #endif
@@ -78,6 +86,10 @@ class Acao:
                 personagem.MP -= 0.1*personagem.MPmax
             elif(atkType == 4):
                 self.Curar(personagem)
+            elif(atkType == 69):
+                self.Hack(personagem)
+                dano = 696969
+                target.HP -= dano
             else:
                 print("Erro no ataque de mago")
             #endif
@@ -97,6 +109,12 @@ class Acao:
         #endif
     #endfunc
 
+    def Hack(self, personagem):
+        personagem.HP = personagem.HPmax
+        personagem.MP = personagem.MPmax
+        
+
+
     def Opcoes(self, Personagem):
         lib.LimpaConsole()
         print("[Narrador]: Sua vez de atacar, escolha uma das opções.")
@@ -106,7 +124,7 @@ class Acao:
             atkType = self.Opcoes(Personagem)
         #endif
         atkType = int(atkType)
-        if(atkType != 1 and atkType != 2 and atkType != 3 and atkType != 4 and atkType != 5 and atkType != 6):
+        if(atkType != 1 and atkType != 2 and atkType != 3 and atkType != 4 and atkType != 5 and atkType != 6 and atkType != 69):
             print("Ataque inválido, você tem demência? Tente de novo.")
             atkType = self.Opcoes(Personagem)
         elif(atkType == 5):

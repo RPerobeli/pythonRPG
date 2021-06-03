@@ -26,4 +26,5 @@ if(resp == "n"):
 ###############INICIO DA HISTORIA###############################################################################
 os.system("cls")
 #começa a contar a historia
-h.Intro(Heroi)
+# h.Intro(Heroi)
+h.CapituloFloripaMago(Heroi)
