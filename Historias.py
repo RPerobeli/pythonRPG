@@ -28,7 +28,7 @@ def Intro(Heroi):
         lib.LimpaConsole()
         lib.Combate(Heroi,lib.GetMonstro(monstros, "Cao infernal"))
         lib.ProcuraTexto("R1-3-p1","R1-3-fim",arq, Heroi.name)
-
+    
 
     lib.LimpaConsole()
     lib.ProcuraTexto("Q2-ini", "Q2-p1",arq, Heroi.name)
@@ -113,7 +113,46 @@ def IntroMago(Heroi):
 
 def CapituloFloripaMago(Heroi):
     arq = "Arquivostxt/SoltosEmFloripa.txt"
-    sys.exit()
+    lib.ProcuraTexto("Q1-ini","Q1-p1",arq,Heroi.name)
+    lib.LimpaConsole()
+    lib.ProcuraTexto("Q1-p1","Q1-fim",arq,Heroi.name)
+    resp = input()
+    os.system("cls")
+    if(int(resp) == 1):
+        lib.ProcuraTexto("R1-1-ini", "R1-1-fim", arq,Heroi.name)
+        lib.Combate(Heroi,lib.GetMonstro(monstros, "Guarda Magico"))
+    elif(int(resp) == 2):
+        lib.ProcuraTexto("R1-2-ini", "R1-2-p1", arq,Heroi.name)
+        lib.LimpaConsole()
+        lib.ProcuraTexto( "R1-2-p1", "R1-2-fim",arq,Heroi.name)
+    elif(int(resp) == 3):
+        lib.ProcuraTexto( "R1-3-ini", "R1-3-fim",arq,Heroi.name)
+        lib.LimpaConsole()
+    #endif
+    lib.ProcuraTexto("Q2-ini", "Q2-p1", arq,Heroi.name)
+    lib.LimpaConsole()
+    lib.ProcuraTexto("Q2-p1", "Q2-p2", arq,Heroi.name)
+    lib.LimpaConsole()
+    lib.ProcuraTexto("Q2-p2", "Q2-fim", arq,Heroi.name)
+    resp = input()
+    os.system("cls")
+    if(int(resp) == 1):
+        lib.ProcuraTexto("R2-1-ini", "R2-1-fim", arq, Heroi.name)
+        lib.LimpaConsole()
+    elif(int(resp) == 2):
+        lib.ProcuraTexto("R2-2-ini","R2-2-p1",arq, Heroi.name)
+        lib.LimpaConsole()
+        lib.ProcuraTexto("R2-2-p1","R2-2-fim",arq, Heroi.name)
+        lib.LimpaConsole()
+        print("Literalmente lanchado.")
+        sys.exit()
+    elif(int(resp) == 3):
+        lib.ProcuraTexto("R2-3-ini", "R2-3-p1", arq, Heroi.name)
+    #endif
+    lib.ProcuraTexto("Q3-ini", "Q2-p1", arq,Heroi.name)
+    lib.LimpaConsole()
+    lib.ProcuraTexto("Q2-p1", "Q2-p2", arq,Heroi.name)
+    
     
 def IntroGuerreiro(Heroi):
     print("")

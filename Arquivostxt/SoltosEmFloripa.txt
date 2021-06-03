@@ -21,7 +21,7 @@ R1-3-ini
 R1-3-fim
 Q2-ini
 [Narrador]: Após adentrar em Florianópolis, você corre rumo a universidade de magia, para entregar a carta ao destinatário.
-[Narrador]: As ruas da cidade são repletas de pessoas usando itens mágicos, fontes de água rica em mana em vários pontos da cidade.
+[Narrador]: As ruas da cidade são repletas de pessoas usando itens mágicos, com fontes de água rica em mana em vários pontos da cidade.
 [Narrador]: Os cidadãos de Florianópolis usam magia como parte de suas vidas.
 Q2-p1
 [Narrador]: Ao se aproximar da universidade da magia, você nota uma alta torre ao norte do exuberante castelo que é a universidade.
@@ -35,52 +35,65 @@ Q2-p2
 Q2-fim
 R2-1-ini
 [Willheilm]: Eu estava a sua espera, chegou rápido não?! Tive tempo de aprender
-mais 8 feitiços até sua chegada. - Você irritado pela falta de educação o
-entrega a carta e ele pede pra segui-lo.
+mais 8 feitiços até sua chegada.
+[Willhelm]: Me dê a carta que está em sua posse e me siga, rápido!  
 R2-1-fim
 R2-2-ini
-[Willhelm]– Nossa, não sabia que minha mãe era tão feia assim, pra mim ela era
+[Willhelm]: Nossa, não sabia que minha mãe era tão feia assim, pra mim ela era
 mais bonita que um pedaço de merda que nem você. 
-R2-2-p2
-[Narrador]Ele então entoa um feitiço que te transforma em um pequeno e indefeso rato e lhe dá de alimento para uma
-serpente mística que ele mante no armário. - GAME OVER!
+R2-2-p1
+[Narrador]: Ele então entoa um feitiço que te transforma em um pequeno e indefeso rato e lhe dá de alimento para uma
+serpente mística que ele mantém no armário.
+R2-2-fim
+R2-3-ini
+[Heroi]: Obrigado senhor “um qualquer” sem educação. 
 R2-3-p1
-[Heroi]Obrigado senhor “um qualquer” sem educação. 
-R2-4-p1
-[Narrador]Ele pega a carta de suas mãos e te chama para um duelo de magias e diz que se você o derrotar, ele lhe ensinará um pouco de educação e requintes dos “engomadinhos” (ao vencer a batalha, você ganha uma nova habilidade ou mais pontos de mana máximo). 
+[Narrador]: Ele pega a carta de suas mãos, te lança um olhar de bolado e puto e te evoca para um duelo mágico.
+[Narrador]: Para te compensar ele diz que se o derrotar, ele lhe ensinará uns paranaue novo dos almofadinhas de Mossunguê. 
 R2-fim
 Q3-ini
-[   ]Depois de seguir o professor/derrotar ele na batalha, você adentra em
-uma das principais torres da cidade mágica, ao fundo se escuta um som
-forte e maligno, parece ser um demónio inferior acorrentado nas
-catacumbas da torre. Chegando na sala de Willhelm, ele abre a carta e
-pede que você o espere na porta enquanto ele comunica o conteúdo da
-carta com o resto conselho.
-Q3-1-p1
-[   ]Você se questiona o motivo pela qual precisa esperar para entrar na
-sala e ele fica irritado.
+[Narrador]: Após seguir você adentra em
+uma das principais torres da universidade mágica, ao fundo se escuta um som
+forte e maligno, advindo das catacumbas da torre. 
+Q3-p1
+[Narrador]: Chegando no alto da torre, em frente a uma grande porta, o professor abre a carta e
+pede que você o espere.
 Q3-1-p2
-[Willheilm]Fedelho insolente, estou tentando manter você longe das garras do
-conselho, se te virem sem uma identificação de aluno ou formando
-de mago da escola, irão dar-lhe de alimento ao demônio no fundo da
-masmorra.
-R3-ini
-[Narrador]Você insiste em entrar com ele na sala e diz que possui uma
-identificação de outra escola de bruxaria.
-R3-1-p1
-[Narrador]o conselho recusa e te manda como comido pro demônio
-R3-2-p1
-iniciar uma batalha (jogar terá vantagem se escolheu a batalha contra Willheilm por ter uma habilidade nova que
+[Willheilm]: Fedelho insolente, atrás desta porta se encontra o conselho de magia desta universidade, o Bonde da Magia.
+Q3-1-p3
+[Willhelm]: Estou tentando manter você longe das garras deles, se te pegarem sem uma identificação de aluno ou graduado
+como mago, irão te jogar ao demônio, você escutou ele lá embaixo, não?
+1- Insistir em entrar com ele na sala e diz que possui uma identificação de outra escola de magia.
+2- Você se mantém paradão na balada e resolve não entrar, esperando pacientemente.
+ao lado de fora da sala do conselho.
+3- Professor, você ainda não me pagou pelo meu trabalho, até eu receber meu pagamento, aonde voce for, eu vou varrendo.
+R3-1-ini
+[Narrador]: Você força sua entrada na sala, O local é escuro, com um objeto luminoso no centro do ambiente, 5 cadeiras se encontram dispostas na sala sendo 4 ocupadas.
+[Narrador]: Willhelm entra atrás de você e senta na única cadeira vazia. 
+[Narrador]: A atenção dos senhores na sala se volta para você, o mais velho dos homens começa a falar:
+[Mago Ancião]: Jovem, não sei se percebeu, mas esta sala é o local de reunião dos maiores magos de Florianópolis, o que pensa que está fazendo entrando dessa forma?
+[Mago Ancião]: Apresente sua identificação de aluno, agora!
+[Heroi]: Então... Eu sou um pacato aventureiro, da guilda Asas da Liberdade, vim apenas entregar uma carta, desejo apenas meu pagamento!
+[Mago Ancião]: Moleque, Você adentra na reunião mais importante do Bonde da Magia apenas para pedir dinheiro? 
+[Mago Ancião]: Guardas! Levem-no para o Demônio!
+R3-1-fim
+R3-2-ini
+[Narrador]:Você entra na sala, O local é escuro, com um objeto luminoso no centro do ambiente, 5 cadeiras se encontram dispostas na sala sendo 4 ocupadas.
+[Narrador]: Willhelm entra atrás de você e senta na única cadeira vazia.
+[Narrador]: A atenção dos senhores na sala se volta para você, o mais velho dos homens começa a falar:
+[Mago Ancião]:Durante nossa reunião, Willhelm recomendou-o fortemente, e você juntar-se-á à mais nova missão designada pelo Bonde.
+[Mago Ancião]:Para provar sua capacidade você precisa se provar digno: enfrente o demônio que se encontra nas catacumbas abaixo do castelo.
+[Mago Ancião]:Caso não sobreviva à esse teste, não vai aguentar a missão.
+
+------iniciar uma batalha (jogar terá vantagem se escolheu a batalha contra Willheilm por ter uma habilidade nova que
 facilita na derrota do bicho)
-R3-2-p1
-[Narrador]Você se mante inerte e resolve não entrar, esperando pacientemente
-ao lado de fora da sala do conselho. 
+R3-2-fim 
 R3-3-p1
 [Narrador]A reunião do conselho termina e você entra na sala, lá dentro te desafiam a batalhar contra o demônio para 
 provar seu valor (jogador tem vantagem de habilidade caso tenha
 batalhado e vencido Willhelm).
 R3-3-p1
-[Narrador]á irritado ele o empurra sala a dentro e quando menos percebe, você está imobilizado olhando nos olhos de um ser mítico que faz parte do conselho da magia e que drena aos poucos sua vitalidade até que você morra. - GAME OVER!
+[Narrador]: Já irritado ele o empurra sala a dentro e quando menos percebe, você está imobilizado olhando nos olhos de um ser mítico que faz parte do conselho da magia e que drena aos poucos sua vitalidade até que você morra. - GAME OVER!
 R3-fim
 Q4-ini
 [Narrador]:-Após a  batalha, sua alma é drenada por um ser mítico que é a mandachuva do conselho de magia.
@@ -108,6 +121,6 @@ R1-3-FIM
 Q4-P2-INI
 [Narrador]:Depois do combate Draiade sente uma força amaldiçoada que provém dos seus ataques,e pensa se você não pode ser um daqueles beneficiados pelo massacre de seu povo.
 [Herói]: CORRE,BERG!
-[Draiade]:Se correr é pior,agora é um soldado na guerra!
+[Draiade]:Se correr é pior, agora é um soldado na guerra!
 Q4-P2-FIM
 Q4-fim
