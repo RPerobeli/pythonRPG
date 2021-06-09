@@ -73,32 +73,58 @@ R3-1-ini
 [Narrador]: A atenção dos senhores na sala se volta para você, o mais velho dos homens começa a falar:
 [Mago Ancião]: Jovem, não sei se percebeu, mas esta sala é o local de reunião dos maiores magos de Florianópolis, o que pensa que está fazendo entrando dessa forma?
 [Mago Ancião]: Apresente sua identificação de aluno, agora!
-[Heroi]: Então... Eu sou um pacato aventureiro, da guilda Asas da Liberdade, vim apenas entregar uma carta, desejo apenas meu pagamento!
+[Heroi]: Então... Eu sou um pacato aventureiro, da guilda Asas da Liberdade, vim apenas entregar uma carta e desejo meu pagamento!
 [Mago Ancião]: Moleque, Você adentra na reunião mais importante do Bonde da Magia apenas para pedir dinheiro? 
 [Mago Ancião]: Guardas! Levem-no para o Demônio!
+R3-1-p1
+[Narrador]: Após derrotar o demônio você sobe novamente para a sala do conselho.
+[Heroi]: ME DÁ MEU DINHEIRO!!!
+[Narrador]: Os guardas imediatamente tentam impedí-lo.
+[Mago Ancião]: PAREM!
+[Mago Ancião]: Vejo que é mais forte que o esperado, pequeno mago. Se batalhaste contra tal criatura e sobreviveste, talvez realmente mereça o dinheiro da sua missão.
+[Narrador]: O velho ao balançar a mão, utiliza um encantamento e um saco com dinheiro surge nos seus pés. Finalmente você pode sorrir um pouco.
+[Mago Ancião]: Porém, jovem mago, posso te dar um pouco mais, se decidir ficar e ouvir o que este conselho tem a dizer.
 R3-1-fim
 R3-2-ini
-[Narrador]:Você entra na sala, O local é escuro, com um objeto luminoso no centro do ambiente, 5 cadeiras se encontram dispostas na sala sendo 4 ocupadas.
+[Narrador]: De longe se escuta estrondos de correntes, seguidos de um grande tremor em toda a torre. 
+[Narrador]: Os sons de correntes se aproximam cada vez mais, você fica apreensivo e bate na porta, porém não te respondem.
+[Narrador]: Você olha para o fim do corredor, e percebe que não há saída.
+[Narrador]: Com isso você se prepara para o pior e fica a postos.
+[Narrador]: A wild demônio inferior appears na sua frente, destruindo tudo em seu caminho.
+[Demônio]: S-Saaiaaaa... M-Mataarr... C-Conselhooo!!!
+R3-2-p1
+[Narrador]: Após a derrota, o demônio se torna cinzas.
+[Narrador]: Devido aos estrondos no corredor, a porta se abre e os conselheiros aparecem.
+[Mago Ancião]: Que barulheira é essa? O que está acontecendo aqui?
+[Narrador]: O mago observa as cinzas no chão, sente a aura malígna ao redor e te encara.
+[Willhelm]: Parece que de alguma forma o demônio escapou das catacumbas, e o guri conseguiu derrotá-lo, como eu disse, ele é digno.
+[Mago Ancião]: Assim o parece... Entre.
+[Narrador]: Você entra na sala, o local é escuro, com um objeto luminoso no centro do ambiente. 
+[Narrador]: O mago mais velho vai até uma mesa, retira um objeto e vai em sua direção.
+[Mago Ancião]: Tua bravura é louvável, jovem mago, aquele demônio não era algo qualquer, como agradecimento pelo seu esforço, daremos a ti, este presente.
+R3-2-fim 
+R3-3-ini
+[Narrador]: Wilhelm, relutante, esboça uma face azeda e acata a sua afirmação.
+[Narrador]: Você entra na sala, O local é escuro, com um objeto luminoso no centro do ambiente, 5 cadeiras se encontram dispostas na sala sendo 4 ocupadas.
 [Narrador]: Willhelm entra atrás de você e senta na única cadeira vazia.
 [Narrador]: A atenção dos senhores na sala se volta para você, o mais velho dos homens começa a falar:
-[Mago Ancião]:Durante nossa reunião, Willhelm recomendou-o fortemente, e você juntar-se-á à mais nova missão designada pelo Bonde.
-[Mago Ancião]:Para provar sua capacidade você precisa se provar digno: enfrente o demônio que se encontra nas catacumbas abaixo do castelo.
-[Mago Ancião]:Caso não sobreviva à esse teste, não vai aguentar a missão.
-
-------iniciar uma batalha (jogar terá vantagem se escolheu a batalha contra Willheilm por ter uma habilidade nova que
-facilita na derrota do bicho)
-R3-2-fim 
+[Mago Ancião]: Durante nossa reunião, Willhelm recomendou-o fortemente, e você juntar-se-á à mais nova missão designada pelo Bonde.
+[Mago Ancião]: Para provar sua capacidade você precisa se provar digno: enfrente o demônio que se encontra nas catacumbas abaixo do castelo.
+[Mago Ancião]: Caso não sobreviva à esse teste, não vai aguentar a missão.
 R3-3-p1
-[Narrador]A reunião do conselho termina e você entra na sala, lá dentro te desafiam a batalhar contra o demônio para 
-provar seu valor (jogador tem vantagem de habilidade caso tenha
-batalhado e vencido Willhelm).
-R3-3-p1
-[Narrador]: Já irritado ele o empurra sala a dentro e quando menos percebe, você está imobilizado olhando nos olhos de um ser mítico que faz parte do conselho da magia e que drena aos poucos sua vitalidade até que você morra. - GAME OVER!
-R3-fim
+[Narrador]: Os magos esboçam uma felicidade ao ver seu potencial, e, contigo, retornam ao alto da torre, na sala do conselho.
+R3-3-fim
 Q4-ini
-[Narrador]:-Após a  batalha, sua alma é drenada por um ser mítico que é a mandachuva do conselho de magia.
-[Chefe do Conselho]:Você é um aluno promissor,quem sabe não chega no conselho,se não morrer antes de chegar na idade mínima. 
-Q4-P1-INI
+[Ser Misterioso]: Sente-se, humano.
+[Narrador]: Ramos e galhos são invocados do chão, se retorcem e formam algo parecido com uma cadeira para você se assentar.
+[Narrador]: Do objeto luminoso na sala, surge uma manifestação mágica, um ser mítico, se põe à sua frente.
+[Dryad]: Me chamo Dryad, uma serva das florestas de Krambeck.
+[Dryad]: Devido a aprovação do conselho,  você foi considerado digno de receber minhas bençãos, para ajudar em nossa situação.
+[Dryad]: Recentemente, um culto de bruxaria chegou no meu antigo lar. Seus acólitos detinham grande poder, e arrasaram parte da floresta.
+[Dryad]: Meu povo tentou defender nossas matas, lutou bravamente, mas nós, assim como os elfos com quem vivíamos em harmonia, fomos derrotados.
+[Dryad]: Exceto eu, todos de minha raça foram mortos. O bruxo que coordena o culto deseja destruir nossa floresta mágica para fortalecer a presença maléfica a qual ele serve.
+[Dryad]: Desejo que você vá até a floresta de Krambeck e elimine os acólitos desse maldito culto.
+Q4-p1
 [Willhelm]:Não é a melhor das ideias,mas vou ensinar o necessário,se você não for imprestável a ponto de morrer na primeira missão
 [Narrador]: Ele não parece gostar da ideia.
 [Chefe do Conselho]:-Me chamo Draiade-diz a chefe do conselho se apresentando-a última de uma antiga raça aniquilada pelos humanos séculos atrás.
@@ -107,20 +133,20 @@ Q4-P1-INI
 2- Você não liga e decide por apenas seguir com sua vida e ignorar tudo o que aconteceu,qualquer esporte mais dificil que levantar copos não é pra você.
 Um dos bruxos do conselho te considera um risco e olhando em sua mente com magia,pressente o perigo e o caos,e manda te prenderem,pois isso o amedrontou.FIM!
 3-Draiade pressentindo um futuro perturbador para você te desafia para um duelo:se você vencer não será obrigado a seguir na missão;
-R1-1-INI
-[Herói]: Aceito a missão,a cerveja não se paga sozinha!
-R1-1-FIM
-R1-2-INI
+R1-1-ini
+[Herói]: Aceito a missão, a cerveja não se paga sozinha!
+R1-1-fim
+R1-2-ini
 [Bruxo desconhecido]: Pega o safado,pega desgraçaaa!
 Você foi preso,SE FODEU.GAME OVER!
-R1-2-FIM
-R1-3-INI
+R1-2-fim
+R1-3-ini
 Draiade começa o combate.
 [Herói]: ETA PORRA!TÁ SAINDO DA JAULA O MONSTRO!
-R1-3-FIM
-Q4-P2-INI
+R1-3-fim
+Q4-p2
 [Narrador]:Depois do combate Draiade sente uma força amaldiçoada que provém dos seus ataques,e pensa se você não pode ser um daqueles beneficiados pelo massacre de seu povo.
 [Herói]: CORRE,BERG!
 [Draiade]:Se correr é pior, agora é um soldado na guerra!
-Q4-P2-FIM
+Q4-p3
 Q4-fim
