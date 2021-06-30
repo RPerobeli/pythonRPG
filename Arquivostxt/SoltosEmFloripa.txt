@@ -125,28 +125,33 @@ Q4-ini
 [Dryad]: Exceto eu, todos de minha raça foram mortos. O bruxo que coordena o culto deseja destruir nossa floresta mágica para fortalecer a presença maléfica a qual ele serve.
 [Dryad]: Desejo que você vá até a floresta de Krambeck e elimine os acólitos desse maldito culto.
 Q4-p1
-[Willhelm]:Não é a melhor das ideias,mas vou ensinar o necessário,se você não for imprestável a ponto de morrer na primeira missão
-[Narrador]: Ele não parece gostar da ideia.
-[Chefe do Conselho]:-Me chamo Draiade-diz a chefe do conselho se apresentando-a última de uma antiga raça aniquilada pelos humanos séculos atrás.
-[Draiade]: A aniquilação foi incitada por um bruxo que prometeu dons divinos à uma linhagem especifica desses seres mortais.
 1-Você chocado com o que foi dito pergunta mais sobre o bruxo e é imediatamente recrutado para a missão que estava descrita na carta.
+1- Fiquei comovido com sua história, deixe-me ajudá-la, no entanto, preciso saber mais desse culto.
 2- Você não liga e decide por apenas seguir com sua vida e ignorar tudo o que aconteceu,qualquer esporte mais dificil que levantar copos não é pra você.
 Um dos bruxos do conselho te considera um risco e olhando em sua mente com magia,pressente o perigo e o caos,e manda te prenderem,pois isso o amedrontou.FIM!
 3-Draiade pressentindo um futuro perturbador para você te desafia para um duelo:se você vencer não será obrigado a seguir na missão;
-R1-1-ini
-[Herói]: Aceito a missão, a cerveja não se paga sozinha!
-R1-1-fim
-R1-2-ini
-[Bruxo desconhecido]: Pega o safado,pega desgraçaaa!
-Você foi preso,SE FODEU.GAME OVER!
-R1-2-fim
-R1-3-ini
-Draiade começa o combate.
-[Herói]: ETA PORRA!TÁ SAINDO DA JAULA O MONSTRO!
-R1-3-fim
-Q4-p2
-[Narrador]:Depois do combate Draiade sente uma força amaldiçoada que provém dos seus ataques,e pensa se você não pode ser um daqueles beneficiados pelo massacre de seu povo.
-[Herói]: CORRE,BERG!
-[Draiade]:Se correr é pior, agora é um soldado na guerra!
-Q4-p3
 Q4-fim
+R4-1-ini
+[Heroi]: Fiquei comovido com sua história, deixe-me ajudá-la. Afinal, a cerveja não se paga sozinha!
+[Heroi]: No entanto, preciso saber mais desse culto.
+[Dryad]: Esse culto serve a um deus maligno chamado Atalzhad, e é composto por bruxos, que são mestres de demônios.
+[Dryad]: Seus números não são tão extensos, porém cada um invoca lacaios demoníacos e isso os tornam numerosos.
+[Willhelm]: Nossos estudiosos da Universidade vasculharam na nossa biblioteca sobre tal culto, e não encontramos nada sobre.
+[Mago Ancião]: Mas o nome de Atazhad não é novo, lendas antigas já citaram tal nome, mas sua influência nunca fora tão importante.
+[Dryad]: Apesar de pouca informação, o perigo é real e precisa ser eliminado.
+[Heroi]: Certo, não dispomos de muita informação, terei que ir até o lá e fazer minha própria pesquisa.
+[Dryad]: A Floresta de Krambeck fica ao sul daqui, seguindo pelas planícies.
+[Dryad]: Por favor, Heroi, contamos com seu poder.
+R4-1-fim
+R4-2-ini
+[Heroi]: Admiro sua luta, mas como eu disse, sou apenas um aventureiro, não tenho interesse em problemas dos outros.
+[Heroi]: Se o seu povo, guardião da floresta, junto com seus elfos protegidos não conseguiram fazer nada, quem sou eu para tentar alguma coisa?
+[Narrador]: O conselho reprova claramente sua conduta.
+[Mago Ancião]: Mesmo após tudo o que aconteceu, ainda assim se comporta como um moleque diante do Bonde?
+[Willhelm]: Parece que eu estava errado sobre você, herói.
+[Dryad]: Então, mago, não podemos deixar que meu pedido de ajuda saia deste recinto, você sabe demais.
+[Mago Ancião]: Prendam-no!
+R4-2-p1
+[Dryad]: Você realmente tinha muito potencial.
+[Narrador]: Aproveitando-se do seu cansaço, Dryad utiliza um encanto e lentamente você sente sua mente se esvaindo.
+R4-2-fim
