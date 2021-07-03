@@ -8,9 +8,11 @@ Elfo Larapio,Arqueiro
 Elfo Acolito,Mago
 Bandido,Guerreiro
 Bandido Atirador,Arqueiro
-Guarda Magico, Mago
+Guarda Magico,Mago
+Guarda Mágico de Elite,Mago
 Mago Negro,Mago
 Dragao negro de olhos vermelhos,Mago
 Dragao Branco de Olhos Azuis,Mago
 Dragao Armado,Guerreiro
 Demonio Inferior, Guerreiro
+Willhelm,Mago

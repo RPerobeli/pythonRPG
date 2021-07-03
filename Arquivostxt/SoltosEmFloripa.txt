@@ -27,7 +27,7 @@ Q2-p1
 [Narrador]: Ao se aproximar da universidade da magia, você nota uma alta torre ao norte do exuberante castelo que é a universidade.
 [Narrador]: Você anda pelo local, em busca do professor Willhelm, os alunos te guiam com informações e você finalmente chega na sala do mago.
 Q2-p2
-[Heroi]: Você é Willhelm? Minha missão exige que eu te entegue essa carta, aparenta ter grande importância.
+[Heroi]: Você é Willhelm? Minha missão exige que eu te entregue essa carta, aparenta ter grande importância.
 [Willhelm]: Não sei, talvez eu seja, quem pergunta?
 1- Sou Heroi, vim da guilda Asas da Liberdade para te entregar uma mensagem mega, hiper, ultra, blaster, harecrshima, importante.
 2- Sou sua mãe disfarçada, te trouxe um almoço envelopado.
@@ -50,108 +50,131 @@ R2-3-ini
 R2-3-p1
 [Narrador]: Ele pega a carta de suas mãos, te lança um olhar de bolado e puto e te evoca para um duelo mágico.
 [Narrador]: Para te compensar ele diz que se o derrotar, ele lhe ensinará uns paranaue novo dos almofadinhas de Mossunguê. 
-R2-fim
+R2-3-p2
+[Willhelm]: Você é bom mesmo, jovem. Infelizmente, os paranauê dos almofadinhas de Mossunguê é uma magia secreta da universidade
+[Willhelm]: Se contente comigo restaurando seu vigor com esse encanto e me siga.
+R2-3-fim
 Q3-ini
-[Narrador]: Após seguir você adentra em
-uma das principais torres da universidade mágica, ao fundo se escuta um som
+[Narrador]: Após seguir você adentra em uma das principais torres da universidade mágica, ao fundo se escuta um som
 forte e maligno, advindo das catacumbas da torre. 
 Q3-p1
 [Narrador]: Chegando no alto da torre, em frente a uma grande porta, o professor abre a carta e
 pede que você o espere.
-Q3-1-p2
-[Willheilm]: Fedelho insolente, atrás desta porta se encontra o conselho de magia desta universidade, o Bonde da Magia.
-Q3-1-p3
-[Willhelm]: Estou tentando manter você longe das garras deles, se te pegarem sem uma identificação de aluno ou graduado
-como mago, irão te jogar ao demônio, você escutou ele lá embaixo, não?
-1- Insistir em entrar com ele na sala e diz que possui uma identificação de outra escola de magia.
+1- Insistir em entrar com ele na sala e dizer que possui uma identificação de outra escola de magia.
 2- Você se mantém paradão na balada e resolve não entrar, esperando pacientemente.
 ao lado de fora da sala do conselho.
 3- Professor, você ainda não me pagou pelo meu trabalho, até eu receber meu pagamento, aonde voce for, eu vou varrendo.
+Q3-fim
 R3-1-ini
+[Willhelm]: Fedelho insolente, atrás desta porta se encontra o conselho de magia desta universidade, o Bonde da Magia.
+R3-1-p1
+[Willhelm]: Estou tentando manter você longe das garras deles, se te pegarem sem uma identificação de aluno ou graduado
+como mago, irão te jogar ao demônio, você escutou ele lá embaixo, não?
+R3-1-p2
 [Narrador]: Você força sua entrada na sala, O local é escuro, com um objeto luminoso no centro do ambiente, 5 cadeiras se encontram dispostas na sala sendo 4 ocupadas.
 [Narrador]: Willhelm entra atrás de você e senta na única cadeira vazia. 
+R3-1-p3
 [Narrador]: A atenção dos senhores na sala se volta para você, o mais velho dos homens começa a falar:
 [Mago Ancião]: Jovem, não sei se percebeu, mas esta sala é o local de reunião dos maiores magos de Florianópolis, o que pensa que está fazendo entrando dessa forma?
 [Mago Ancião]: Apresente sua identificação de aluno, agora!
+R3-1-p4
 [Heroi]: Então... Eu sou um pacato aventureiro, da guilda Asas da Liberdade, vim apenas entregar uma carta e desejo meu pagamento!
+R3-1-p5
 [Mago Ancião]: Moleque, Você adentra na reunião mais importante do Bonde da Magia apenas para pedir dinheiro? 
 [Mago Ancião]: Guardas! Levem-no para o Demônio!
-R3-1-p1
+R3-1-p6
 [Narrador]: Após derrotar o demônio você sobe novamente para a sala do conselho.
+R3-1-p7
 [Heroi]: ME DÁ MEU DINHEIRO!!!
+R3-1-p8
 [Narrador]: Os guardas imediatamente tentam impedí-lo.
 [Mago Ancião]: PAREM!
 [Mago Ancião]: Vejo que é mais forte que o esperado, pequeno mago. Se batalhaste contra tal criatura e sobreviveste, talvez realmente mereça o dinheiro da sua missão.
+R3-1-p9
 [Narrador]: O velho ao balançar a mão, utiliza um encantamento e um saco com dinheiro surge nos seus pés. Finalmente você pode sorrir um pouco.
 [Mago Ancião]: Porém, jovem mago, posso te dar um pouco mais, se decidir ficar e ouvir o que este conselho tem a dizer.
 R3-1-fim
 R3-2-ini
 [Narrador]: De longe se escuta estrondos de correntes, seguidos de um grande tremor em toda a torre. 
 [Narrador]: Os sons de correntes se aproximam cada vez mais, você fica apreensivo e bate na porta, porém não te respondem.
+R3-2-p1
 [Narrador]: Você olha para o fim do corredor, e percebe que não há saída.
 [Narrador]: Com isso você se prepara para o pior e fica a postos.
+R3-2-p2
 [Narrador]: A wild demônio inferior appears na sua frente, destruindo tudo em seu caminho.
 [Demônio]: S-Saaiaaaa... M-Mataarr... C-Conselhooo!!!
-R3-2-p1
+R3-2-p3
 [Narrador]: Após a derrota, o demônio se torna cinzas.
 [Narrador]: Devido aos estrondos no corredor, a porta se abre e os conselheiros aparecem.
 [Mago Ancião]: Que barulheira é essa? O que está acontecendo aqui?
+R3-2-p4
 [Narrador]: O mago observa as cinzas no chão, sente a aura malígna ao redor e te encara.
 [Willhelm]: Parece que de alguma forma o demônio escapou das catacumbas, e o guri conseguiu derrotá-lo, como eu disse, ele é digno.
 [Mago Ancião]: Assim o parece... Entre.
+R3-2-p5
 [Narrador]: Você entra na sala, o local é escuro, com um objeto luminoso no centro do ambiente. 
 [Narrador]: O mago mais velho vai até uma mesa, retira um objeto e vai em sua direção.
 [Mago Ancião]: Tua bravura é louvável, jovem mago, aquele demônio não era algo qualquer, como agradecimento pelo seu esforço, daremos a ti, este presente.
 R3-2-fim 
 R3-3-ini
-[Narrador]: Wilhelm, relutante, esboça uma face azeda e acata a sua afirmação.
+[Narrador]: Willhelm, relutante, esboça uma face azeda e acata a sua afirmação.
 [Narrador]: Você entra na sala, O local é escuro, com um objeto luminoso no centro do ambiente, 5 cadeiras se encontram dispostas na sala sendo 4 ocupadas.
 [Narrador]: Willhelm entra atrás de você e senta na única cadeira vazia.
-[Narrador]: A atenção dos senhores na sala se volta para você, o mais velho dos homens começa a falar:
-[Mago Ancião]: Durante nossa reunião, Willhelm recomendou-o fortemente, e você juntar-se-á à mais nova missão designada pelo Bonde.
-[Mago Ancião]: Para provar sua capacidade você precisa se provar digno: enfrente o demônio que se encontra nas catacumbas abaixo do castelo.
-[Mago Ancião]: Caso não sobreviva à esse teste, não vai aguentar a missão.
 R3-3-p1
+[Narrador]: A atenção dos senhores na sala se volta para você, o mais velho dos homens começa a falar:
+[Mago Ancião]: Willhelm, este é o aventureiro o qual você disse que contrataria?
+R3-3-p2
+[Willhelm]: Exatamente, senhor, ele veio da Asas da Liberdade, uma guilda de renome, acredito que ele é capaz.
+[Mago Ancião]: A força de uma guilda não define a força de um homem. Jovem mgo, você juntar-se-á à mais nova missão designada pelo Bonde.
+[Mago Ancião]: No entanto, você precisa se provar digno: enfrente o demônio que se encontra nas catacumbas abaixo do castelo.
+[Mago Ancião]: Caso não sobreviva à esse teste, não vai aguentar a missão.
+R3-3-p3
 [Narrador]: Os magos esboçam uma felicidade ao ver seu potencial, e, contigo, retornam ao alto da torre, na sala do conselho.
 R3-3-fim
 Q4-ini
 [Ser Misterioso]: Sente-se, humano.
 [Narrador]: Ramos e galhos são invocados do chão, se retorcem e formam algo parecido com uma cadeira para você se assentar.
-[Narrador]: Do objeto luminoso na sala, surge uma manifestação mágica, um ser mítico, se põe à sua frente.
+Q4-p1
+[Narrador]: Do objeto luminoso na sala, surge uma manifestação mágica, um ser mítico se põe à sua frente.
 [Dryad]: Me chamo Dryad, uma serva das florestas de Krambeck.
-[Dryad]: Devido a aprovação do conselho,  você foi considerado digno de receber minhas bençãos, para ajudar em nossa situação.
+Q4-p2
+[Dryad]: Devido a aprovação do conselho,  você foi considerado digno de receber minhas bençãos, para ajudar em minha situação.
 [Dryad]: Recentemente, um culto de bruxaria chegou no meu antigo lar. Seus acólitos detinham grande poder, e arrasaram parte da floresta.
 [Dryad]: Meu povo tentou defender nossas matas, lutou bravamente, mas nós, assim como os elfos com quem vivíamos em harmonia, fomos derrotados.
+Q4-p3
 [Dryad]: Exceto eu, todos de minha raça foram mortos. O bruxo que coordena o culto deseja destruir nossa floresta mágica para fortalecer a presença maléfica a qual ele serve.
 [Dryad]: Desejo que você vá até a floresta de Krambeck e elimine os acólitos desse maldito culto.
-Q4-p1
-1-Você chocado com o que foi dito pergunta mais sobre o bruxo e é imediatamente recrutado para a missão que estava descrita na carta.
-1- Fiquei comovido com sua história, deixe-me ajudá-la, no entanto, preciso saber mais desse culto.
-2- Você não liga e decide por apenas seguir com sua vida e ignorar tudo o que aconteceu,qualquer esporte mais dificil que levantar copos não é pra você.
-Um dos bruxos do conselho te considera um risco e olhando em sua mente com magia,pressente o perigo e o caos,e manda te prenderem,pois isso o amedrontou.FIM!
-3-Draiade pressentindo um futuro perturbador para você te desafia para um duelo:se você vencer não será obrigado a seguir na missão;
+Q4-p4
+1- Ajudar a mítica Dryad.
+2- Recusar e decidir por apenas seguir com sua vida.
 Q4-fim
 R4-1-ini
 [Heroi]: Fiquei comovido com sua história, deixe-me ajudá-la. Afinal, a cerveja não se paga sozinha!
 [Heroi]: No entanto, preciso saber mais desse culto.
-[Dryad]: Esse culto serve a um deus maligno chamado Atalzhad, e é composto por bruxos, que são mestres de demônios.
+R4-1-p1
+[Dryad]: Esse culto é chamado de Crepúsculo Gélido, e é composto por bruxos, que são mestres de demônios.
 [Dryad]: Seus números não são tão extensos, porém cada um invoca lacaios demoníacos e isso os tornam numerosos.
+R4-1-p2
 [Willhelm]: Nossos estudiosos da Universidade vasculharam na nossa biblioteca sobre tal culto, e não encontramos nada sobre.
-[Mago Ancião]: Mas o nome de Atazhad não é novo, lendas antigas já citaram tal nome, mas sua influência nunca fora tão importante.
+R4-1-p3
 [Dryad]: Apesar de pouca informação, o perigo é real e precisa ser eliminado.
+R4-1-p4
 [Heroi]: Certo, não dispomos de muita informação, terei que ir até o lá e fazer minha própria pesquisa.
+R4-1-p5
 [Dryad]: A Floresta de Krambeck fica ao sul daqui, seguindo pelas planícies.
 [Dryad]: Por favor, Heroi, contamos com seu poder.
 R4-1-fim
 R4-2-ini
 [Heroi]: Admiro sua luta, mas como eu disse, sou apenas um aventureiro, não tenho interesse em problemas dos outros.
 [Heroi]: Se o seu povo, guardião da floresta, junto com seus elfos protegidos não conseguiram fazer nada, quem sou eu para tentar alguma coisa?
+R4-2-p1
 [Narrador]: O conselho reprova claramente sua conduta.
 [Mago Ancião]: Mesmo após tudo o que aconteceu, ainda assim se comporta como um moleque diante do Bonde?
 [Willhelm]: Parece que eu estava errado sobre você, herói.
+R4-2-p2
 [Dryad]: Então, mago, não podemos deixar que meu pedido de ajuda saia deste recinto, você sabe demais.
 [Mago Ancião]: Prendam-no!
-R4-2-p1
+R4-2-p3
 [Dryad]: Você realmente tinha muito potencial.
-[Narrador]: Aproveitando-se do seu cansaço, Dryad utiliza um encanto e lentamente você sente sua mente se esvaindo.
+[Narrador]: Aproveitando-se do seu cansaço, Dryad utiliza um encanto e lentamente você sente sua mente se esvaindo, até perder a consciência.
 R4-2-fim
