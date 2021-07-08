@@ -8,12 +8,14 @@ class Acao:
         if(personagem.classe.lower() == "guerreiro"):
             if(atkType == 1):
                 dano = personagem.arma.danoBase*personagem.skills["str"] + 2*personagem.skills["agi"]
-                dano = self.AcertoCritico(dano)
+                dano = self.AcertoCritico(dano,personagem)
                 print(personagem.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano
             elif(atkType == 2):
                 dano = 2*personagem.arma.danoBase*personagem.skills["str"] + personagem.skills["vit"]
-                dano = self.AcertoCritico(dano)
+                dano = self.AcertoCritico(dano, personagem)
+                print(personagem.arma.textoAtkEspecial)
+                print()
                 print(personagem.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano
                 personagem.HP -= 0.2*personagem.HPmax
@@ -23,11 +25,15 @@ class Acao:
                 elif(Ribamar == 2):
                     magiaEscolhida = personagem.acoes.SelectMagiaMonstro(personagem)
                 #endif
-                dano = 2*personagem.skills["int"]+ personagem.skills["str"]+ magiaEscolhida.danoBase
-                dano = self.AcertoCritico(dano)
-                print(personagem.name+ " causou "+str(dano)+ " de dano!")
-                target.HP -= dano 
-                personagem.MP -= magiaEscolhida.cost
+                if (lib.NaoTemMana(personagem, magiaEscolhida.cost)):
+                    print("Mana insuficiente.")
+                else:
+                    dano = 2*personagem.skills["int"]+ personagem.skills["str"]+ magiaEscolhida.danoBase
+                    dano = self.AcertoCritico(dano,personagem)
+                    print(personagem.name+ " causou "+str(dano)+ " de dano!")
+                    target.HP -= dano 
+                    personagem.MP -= magiaEscolhida.cost
+                #endif
             elif(atkType == 4):  
                 self.Curar(personagem)
             elif(atkType == 69):
@@ -40,21 +46,31 @@ class Acao:
         elif(personagem.classe.lower() == "arqueiro"):
             if(atkType == 1):
                 dano =  2*personagem.skills["str"] + personagem.arma.danoBase*personagem.skills["agi"]
-                dano = self.AcertoCritico(dano)
+                dano = self.AcertoCritico(dano,personagem)
                 print(personagem.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano 
             elif(atkType == 2):
-                dano =2*personagem.arma.danoBase*personagem.skills["agi"]
-                dano = self.AcertoCritico(dano)
-                print(personagem.name+ " causou "+str(dano)+ " de dano!")
-                target.HP -= dano 
-                personagem.MP -= 0.3*personagem.MPmax
+                if(lib.NaoTemMana(personagem, 0.3*personagem.MPmax)):
+                    print("Mana insuficiente.")
+                else:
+                    dano =2*personagem.arma.danoBase*personagem.skills["agi"]
+                    dano = self.AcertoCritico(dano,personagem)
+                    print(personagem.arma.textoAtkEspecial)
+                    print()
+                    print(personagem.name+ " causou "+str(dano)+ " de dano!")
+                    target.HP -= dano 
+                    personagem.MP -= 0.3*personagem.MPmax
+                #endif
             elif(atkType == 3):
                 magiaEscolhida = personagem.acoes.SelectMagia(personagem)
-                dano = 2*personagem.skills["int"]+ personagem.skills["agi"] + magiaEscolhida.danoBase#BALANCEAR FUNCAO DE MAGIAS
-                dano = self.AcertoCritico(dano)
-                print(personagem.name+ " causou "+str(dano)+ " de dano!")
-                target.HP -= dano
+                if (lib.NaoTemMana(personagem, magiaEscolhida.cost)):
+                    print("Mana insuficiente.")
+                else:
+                    dano = 2*personagem.skills["int"]+ personagem.skills["agi"] + magiaEscolhida.danoBase#BALANCEAR FUNCAO DE MAGIAS
+                    dano = self.AcertoCritico(dano,personagem)
+                    print(personagem.name+ " causou "+str(dano)+ " de dano!")
+                    target.HP -= dano
+                #endif
             elif(atkType == 4):
                 self.Curar(personagem)
             elif(atkType == 69):
@@ -67,23 +83,33 @@ class Acao:
         elif(personagem.classe.lower() == "mago"):
             if(atkType == 1):
                 dano = 2*personagem.skills["int"] + 1*personagem.skills["str"]
-                dano = self.AcertoCritico(dano)
+                dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name+ " causou "+str(dano)+ " de dano!")
                 target.HP -= dano
             elif(atkType == 2):
-                dano = 2*personagem.arma.danoBase*personagem.skills["int"]
-                dano = self.AcertoCritico(dano)
-                print(personagem.name+ " causou "+str(dano)+ " de dano!")
-                target.HP -= dano
-                personagem.MP -= 0.5*personagem.MPmax
+                if(lib.NaoTemMana(personagem, 0.5*personagem.MPmax)):
+                    print("Mana insuficiente.")
+                else:
+                    dano = 2*personagem.arma.danoBase*personagem.skills["int"]
+                    dano = self.AcertoCritico(dano, personagem)
+                    print(personagem.arma.textoAtkEspecial)
+                    print()
+                    print(personagem.name+ " causou "+str(dano)+ " de dano!")
+                    target.HP -= dano
+                    personagem.MP -= 0.5*personagem.MPmax
+                #endif
             elif(atkType == 3):
                 magiaEscolhida = personagem.acoes.SelectMagia(personagem)
                 os.system("cls")
-                dano = personagem.arma.danoBase*personagem.skills["int"]  + magiaEscolhida.danoBase#BALANCEAR FUNCAO DE MAGIAS
-                dano = self.AcertoCritico(dano)
-                print(personagem.name+" causou "+str(dano)+ " de dano!")
-                target.HP -= dano
-                personagem.MP -= 0.1*personagem.MPmax
+                if (lib.NaoTemMana(personagem, magiaEscolhida.cost)):
+                    print("Mana insuficiente.")
+                else:
+                    dano = personagem.arma.danoBase*personagem.skills["int"]  + magiaEscolhida.danoBase#BALANCEAR FUNCAO DE MAGIAS
+                    dano = self.AcertoCritico(dano, personagem)
+                    print(personagem.name+" causou "+str(dano)+ " de dano!")
+                    target.HP -= dano
+                    personagem.MP -= magiaEscolhida.cost
+                #endif
             elif(atkType == 4):
                 self.Curar(personagem)
             elif(atkType == 69):
@@ -99,8 +125,8 @@ class Acao:
     #endfunc
 
     def Curar(self, personagem):
-        personagem.HP += 0.25*personagem.HPmax
-        personagem.MP += 0.25*personagem.MPmax
+        personagem.HP += 0.4*personagem.HPmax
+        personagem.MP += 0.4*personagem.MPmax
         print("Regenerou vida e mana")
         if(personagem.HP > personagem.HPmax):
             personagem.HP = personagem.HPmax
@@ -139,10 +165,13 @@ class Acao:
         #endif
         return atkType
     #endfunc
-    def AcertoCritico(self, dano):
+    def AcertoCritico(self, dano, personagem):
         crit = rnd.randint(1,5)
         if(crit == 1):
-            print("ACERTO CRÍTICO!!!")  
+            print("ACERTO CRÍTICO!!!")
+            if(personagem.isMonstro):
+                return (int((1.1+(0.1*personagem.lvl))*dano))
+            #endif  
             return (2*dano)
         else:
             return(dano)
@@ -172,8 +201,20 @@ class Acao:
                 print(str(cont)+ ": "+ magia.name)
             #endif
         #endfor
-        resp = int(input("Qual magia deseja usar?\n"))
-        return personagem.magias[resp-1]
+        try:
+            resp = int(input("Qual magia deseja usar?\n"))
+        except:
+            resp = 0
+        #endtry
+        if(resp <=0 or resp > cont):
+            print("vai se fuder QA")
+            lib.LimpaConsole()
+            magiaSelecionada = self.SelectMagia(personagem)
+            if(magiaSelecionada != None):
+                return magiaSelecionada
+            #endif
+        else:    
+            return personagem.magias[resp-1]
         #endif
     #endfunc
     def SelectMagiaMonstro(self, personagem):

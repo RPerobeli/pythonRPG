@@ -10,11 +10,12 @@ class Personagem:
         self.lvl = 1
         self.classe = classe
         self.skills = {"str" : 0,"agi": 0, "int" : 0,"vit": 0}
-        self.arma = A.Arma("Arma desgastada", 2)
+        self.arma = A.Arma("Arma desgastada", 2, "Ataque Especial da Arma Mais Fraca Do Jogo!!!", "arma0")
         self.bag = B.Bag() 
         self.acoes = Acao.Acao()
         self.bag.InserirArma(self.arma)
         self.magias = self.acoes.CriaMagias(self)
+        self.isMonstro = False
         
 
         if(self.classe.lower() == "guerreiro"):
@@ -140,3 +141,11 @@ class Personagem:
         self.MP = (0.25*self.lvl+0.75)*self.MP
         self.HPmax = (0.25*self.lvl+0.75)*self.HPmax
         self.MPmax = (0.25*self.lvl+0.75)*self.MPmax
+    #endfunc
+
+    def Turn2Boss(self): #TO DO: VERIFICAR BALANCEAMENTO DO BOSS 
+        self.HP = 2*self.HP
+        self.MP = 2*self.MP
+        self.HPmax = 2*self.HPmax
+        self.MPmax = 2*self.MPmax
+    #endfunc

@@ -1,1 +1,1 @@
-arma1mago,Cajado do Bonde,5,texto atk especial
+arma1mago,Cajado do Bonde,5,Ataque do Passinho do Ritmo Envolvente!!!

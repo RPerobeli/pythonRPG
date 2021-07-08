@@ -1,5 +1,6 @@
 #-*- coding: utf-8 -*-
 from Domain import Personagem as bnc
+from Domain import Arma as a
 import sys
 import random as rnd
 import io
@@ -18,8 +19,19 @@ def CriaMonstros():
     listaMonstros = [bnc.Personagem("erro", "Guerreiro")]
     for linha in arq:
         valores = linha.split(',')
-        listaMonstros.append(bnc.Personagem(valores[0],valores[1].strip()))
+        monstro = bnc.Personagem(valores[0],valores[1].strip())
+        monstro.isMonstro = True
+        listaMonstros.append(monstro)
     return listaMonstros
+#endfunc
+def CriaArmas():
+    arq = open("Arquivostxt/Armas.txt", 'r')
+    listaArmas = [a.Arma("erro", 0, "erro especial", "armaErro")]
+    for linha in arq:
+        valores = linha.split(',')
+        listaArmas.append(a.Arma(valores[1],valores[2],valores[3].strip(),valores[0]))
+    return listaArmas
+#endfunc
 
 def GetMonstro(listaMonstros, nome):
     for monstro in listaMonstros:
@@ -27,6 +39,14 @@ def GetMonstro(listaMonstros, nome):
             return monstro
     print("Monstro não encontrado")
     return listaMonstros[0]
+#endfunc
+def GetArma(listaArmas, tag):
+    for arma in listaArmas:
+        if(arma.Tag.lower() == tag.lower()):
+            return arma
+    print("arma não encontrada")
+    return listaArmas[0]
+#endfunc
 
 def Combate(Personagem, Monster):
     Monster.AutoLvl(Personagem.lvl)
@@ -105,4 +125,11 @@ def SubstituiNomeHeroiNoArquivo(fileName,nome):
 def LimpaConsole():
     input("[enter]")
     os.system("cls")
+#endfunc
+
+def NaoTemMana(Heroi, mpNecessario):
+    if(Heroi.MP < mpNecessario):
+        return True
+    else:
+        return False
 #endfunc

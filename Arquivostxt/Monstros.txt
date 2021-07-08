@@ -9,7 +9,7 @@ Elfo Acolito,Mago
 Bandido,Guerreiro
 Bandido Atirador,Arqueiro
 Guarda Magico,Mago
-Guarda Mágico de Elite,Mago
+Guarda Magico de Elite,Mago
 Mago Negro,Mago
 Dragao negro de olhos vermelhos,Mago
 Dragao Branco de Olhos Azuis,Mago

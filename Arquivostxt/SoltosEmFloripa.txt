@@ -46,7 +46,7 @@ R2-2-p1
 serpente mística que ele mantém no armário.
 R2-2-fim
 R2-3-ini
-[Heroi]: Obrigado senhor “um qualquer” sem educação. 
+[Willhelm]: Obrigado senhor “um qualquer” sem educação. 
 R2-3-p1
 [Narrador]: Ele pega a carta de suas mãos, te lança um olhar de bolado e puto e te evoca para um duelo mágico.
 [Narrador]: Para te compensar ele diz que se o derrotar, ele lhe ensinará uns paranaue novo dos almofadinhas de Mossunguê. 

@@ -6,11 +6,11 @@ import os
 
 
 monstros = lib.CriaMonstros()
-#armas = lib.CriaArmas()
+armas = lib.CriaArmas()
 
 def Intro(Heroi):
     arq = "Arquivostxt/Introducao.txt"
-    #lib.SubstituiNomeHeroiNoArquivo(arq, Heroi.name)
+    lib.SubstituiNomeHeroiNoArquivo(arq, Heroi.name)
     lib.LimpaConsole()
     lib.ProcuraTexto("Q1-ini","Q1-fim",arq, Heroi.name)
     resp = input()
@@ -66,6 +66,7 @@ def Intro(Heroi):
 
 def IntroMago(Heroi):
     arq = "Arquivostxt/IntroMago.txt"
+    lib.SubstituiNomeHeroiNoArquivo(arq, Heroi.name)
     #print("A missão descrita no anúncio pede que você vá até a capital da magia, Arianthe, entregar uma carta ao professor Willhelm, na universidade da cidade.")
     lib.ProcuraTexto("Q1-ini","Q1-p1",arq, Heroi.name)
     lib.LimpaConsole()
@@ -114,6 +115,7 @@ def IntroMago(Heroi):
 
 def CapituloFloripaMago(Heroi):
     arq = "Arquivostxt/SoltosEmFloripa.txt"
+    lib.SubstituiNomeHeroiNoArquivo(arq, Heroi.name)
     lib.ProcuraTexto("Q1-ini","Q1-p1",arq,Heroi.name)
     lib.LimpaConsole()
     lib.ProcuraTexto("Q1-p1","Q1-fim",arq,Heroi.name)
@@ -199,8 +201,8 @@ def CapituloFloripaMago(Heroi):
         lib.LimpaConsole()
         lib.ProcuraTexto("R3-2-p5", "R3-2-fim", arq,Heroi.name)
         lib.LimpaConsole()
-        #Heroi.arma = lib.GetArma(armas,"arma1mago")
-        #print("Voce recebeu uma nova arma: ", Heroi.arma)
+        Heroi.arma = lib.GetArma(armas,"arma1mago")
+        print("Voce recebeu uma nova arma: ", Heroi.arma.name)
     elif(int(resp) == 3):
         lib.ProcuraTexto("R3-3-ini", "R3-3-p1", arq,Heroi.name)
         lib.LimpaConsole()
