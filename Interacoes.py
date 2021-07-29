@@ -1,5 +1,6 @@
-#-*- coding: utf-8 -*-
-from Domain import Personagem as bnc
+# -*- coding: utf-8 -*-
+from Domain import Heroi as bnc
+from Domain import Monstro as mstr
 from Domain import Arma as a
 import sys
 import random as rnd
@@ -14,24 +15,28 @@ def ConfereClasses(listaDeClasses, classeDesejada):
             return True
     return False
 
+
 def CriaMonstros():
     arq = open("Arquivostxt/Monstros.txt", 'r')
-    listaMonstros = [bnc.Personagem("erro", "Guerreiro")]
+    listaMonstros = [mstr.Monstro("erro", "Guerreiro")]
     for linha in arq:
         valores = linha.split(',')
-        monstro = bnc.Personagem(valores[0],valores[1].strip())
-        monstro.isMonstro = True
+        monstro = mstr.Monstro(valores[0], valores[1].strip())
         listaMonstros.append(monstro)
     return listaMonstros
-#endfunc
+# endfunc
+
+
 def CriaArmas():
     arq = open("Arquivostxt/Armas.txt", 'r')
     listaArmas = [a.Arma("erro", 0, "erro especial", "armaErro")]
     for linha in arq:
         valores = linha.split(',')
-        listaArmas.append(a.Arma(valores[1],valores[2],valores[3].strip(),valores[0]))
+        listaArmas.append(
+            a.Arma(valores[1], valores[2], valores[3].strip(), valores[0]))
     return listaArmas
-#endfunc
+# endfunc
+
 
 def GetMonstro(listaMonstros, nome):
     for monstro in listaMonstros:
@@ -39,48 +44,53 @@ def GetMonstro(listaMonstros, nome):
             return monstro
     print("Monstro não encontrado")
     return listaMonstros[0]
-#endfunc
+# endfunc
+
+
 def GetArma(listaArmas, tag):
     for arma in listaArmas:
         if(arma.Tag.lower() == tag.lower()):
             return arma
     print("arma não encontrada")
     return listaArmas[0]
-#endfunc
+# endfunc
+
 
 def Combate(Personagem, Monster):
     Monster.AutoLvl(Personagem.lvl)
     Monster.AdequaHP()
     turnCounter = rnd.randrange(1, 3)
     while(Personagem.HP > 0) and (Monster.HP > 0):
-        print(Personagem.name +".HP: "+ str(Personagem.HP)+"/"+str(Personagem.HPmax)+"     "+Monster.name +".HP: "+ str(Monster.HP)+"/"+str(Monster.HPmax))
-        print(Personagem.name +".MP: "+ str(Personagem.MP)+"/"+str(Personagem.MPmax)+"     "+Monster.name +".MP: "+ str(Monster.MP)+"/"+str(Monster.MPmax))
+        print(Personagem.name + ".HP: " + str(Personagem.HP)+"/"+str(Personagem.HPmax) +
+              "     "+Monster.name + ".HP: " + str(Monster.HP)+"/"+str(Monster.HPmax))
+        print(Personagem.name + ".MP: " + str(Personagem.MP)+"/"+str(Personagem.MPmax) +
+              "     "+Monster.name + ".MP: " + str(Monster.MP)+"/"+str(Monster.MPmax))
         if(turnCounter == 1):
             atkType = Personagem.acoes.Opcoes(Personagem)
             while(atkType == None):
                 sys.stdout.flush()
                 atkType = Personagem.acoes.Opcoes(Personagem)
-            #endwhile
+            # endwhile
             os.system("cls")
             Personagem.acoes.Atk(Personagem, atkType, Monster, turnCounter)
             turnCounter += 1
         elif(turnCounter == 2):
             print("Vez do monstro atacar, segura na mão de Eru e vai!")
             lib.LimpaConsole()
-            Monster.acoes.Atk(Monster, Monster.acoes.TipoAtk(Monster), Personagem, turnCounter)
+            Monster.acoes.Atk(Monster, Monster.acoes.TipoAtk(
+                Monster), Personagem, turnCounter)
             turnCounter -= 1
-        
 
-    if(Personagem.HP <=0):
+    if(Personagem.HP <= 0):
         print("Lanchado, se fodeu.")
         sys.exit()
-    elif(Monster.HP <=0):
+    elif(Monster.HP <= 0):
         print("O "+Monster.name+" foi capinado.")
-        Personagem.XP=XP(Monster.lvl)
+        Personagem.XP = XP(Monster.lvl)
         if(Personagem.XP >= 100):
             Personagem.LvlUP()
         else:
-            print("XP: " + str(Personagem.XP)+'/'+ str(100))    
+            print("XP: " + str(Personagem.XP)+'/' + str(100))
     else:
         print("Saiu da batalha antes do esperado.")
 
@@ -89,47 +99,51 @@ def XP(MonsterLevel):
     XP = 100 * 1/MonsterLevel
     return XP
 
+
 def ProcuraTexto(ChaveInicio, ChaveFim, arquivoNome, nome):
     vetor = []
-    with io.open(arquivoNome,"r",encoding="utf8") as file:
+    with io.open(arquivoNome, "r", encoding="utf8") as file:
         for i, linha in enumerate(file):
             if(linha.strip() == ChaveInicio):
                 vetor.append(i)
-            #endif
+            # endif
             if(linha.strip() == ChaveFim):
                 vetor.append(i)
-            #endif
-        #endfor
-        PrintTexto(vetor[0], vetor[1], arquivoNome,nome)
-    #endwith
-#endfunc
-        
+            # endif
+        # endfor
+        PrintTexto(vetor[0], vetor[1], arquivoNome, nome)
+    # endwith
+# endfunc
 
-def PrintTexto(li, lf, arquivoNome,nome):
-    with io.open(arquivoNome,"r",encoding="utf8") as file:
+
+def PrintTexto(li, lf, arquivoNome, nome):
+    with io.open(arquivoNome, "r", encoding="utf8") as file:
         for i, linha in enumerate(file):
             if(i > li and i < lf):
-                linha= linha.replace("Heroi", nome)
+                linha = linha.replace("Heroi", nome)
                 print(linha.strip())
-            #endif
-        #endfor
-    #endwith       
-#endfunc
+            # endif
+        # endfor
+    # endwith
+# endfunc
 
-def SubstituiNomeHeroiNoArquivo(fileName,nome):
-    file = io.open(fileName,"r",encoding="utf8")
+
+def SubstituiNomeHeroiNoArquivo(fileName, nome):
+    file = io.open(fileName, "r", encoding="utf8")
     texto = file.read()
     texto.replace("Heroi", nome)
-#endfunc
+# endfunc
+
 
 def LimpaConsole():
     input("[enter]")
     os.system("cls")
-#endfunc
+# endfunc
 
-def NaoTemMana(Heroi, mpNecessario):
-    if(Heroi.MP < mpNecessario):
+
+def NaoTemMana(Personagem, mpNecessario):
+    if(Personagem.MP < mpNecessario):
         return True
     else:
         return False
-#endfunc
+# endfunc
