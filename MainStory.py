@@ -24,7 +24,7 @@ resp = input("Deseja iniciar sua jornada? (s/n)")
 if(resp == "n"):
     sys.exit()
 ###############INICIO DA HISTORIA###############################################################################
-os.system("cls")
+lib.LimpaConsole()
 # começa a contar a historia
-# h.Intro(Heroi)
-h.CapituloFloripaMago(Heroi)
+h.Intro(Heroi)
+#h.CapituloFloripaMago(Heroi)

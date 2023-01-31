@@ -6,6 +6,7 @@ import sys
 import random as rnd
 import io
 import os
+import platform
 import Interacoes as lib
 
 
@@ -137,7 +138,13 @@ def SubstituiNomeHeroiNoArquivo(fileName, nome):
 
 def LimpaConsole():
     input("[enter]")
-    os.system("cls")
+    sistema = platform.system()
+    if(sistema  == "Windows"):
+        os.system("cls")
+    else:
+        os.system("clear")
+    #endif
+        
 # endfunc
 
 
