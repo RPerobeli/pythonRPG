@@ -15,7 +15,7 @@ def Intro(Heroi):
     lib.LimpaConsole()
     lib.ProcuraTexto("Q1-ini", "Q1-fim", arq, Heroi.name)
     resp = input()
-    while(resp != "1" or resp != "2" or resp == "3"):
+    while(resp != "1" and resp != "2" and resp != "3"):
         print("Ta com pressa irmao? para de pular os dialogos.")
         lib.ProcuraTexto("Q1-ini", "Q1-fim", arq, Heroi.name)
         resp = input()
@@ -42,7 +42,7 @@ def Intro(Heroi):
     lib.LimpaConsole()
     lib.ProcuraTexto("Q2-p1", "Q2-fim", arq, Heroi.name)
     resp = input()
-    while(resp != "1" or resp != "2" or resp == "3"):
+    while(resp != "1" and resp != "2" and resp != "3"):
         print("Ta com pressa irmao? para de pular os dialogos.")
         lib.ProcuraTexto("Q2-p1", "Q2-fim", arq, Heroi.name)
         resp = input()
@@ -84,7 +84,7 @@ def IntroMago(Heroi):
     lib.LimpaConsole()
     lib.ProcuraTexto("Q1-p2", "Q1-fim", arq, Heroi.name)
     resp = input()
-    while(resp != "1" or resp != "2" or resp == "3"):
+    while(resp != "1" and resp != "2" and resp != "3"):
         print("Ta com pressa irmao? para de pular os dialogos.")
         lib.ProcuraTexto("Q1-p2", "Q1-fim", arq, Heroi.name)
         resp = input()
@@ -136,7 +136,7 @@ def CapituloFloripaMago(Heroi):
     lib.LimpaConsole()
     lib.ProcuraTexto("Q1-p1", "Q1-fim", arq, Heroi.name)
     resp = input()
-    while(resp != "1" or resp != "2" or resp == "3"):
+    while(resp != "1" and resp != "2" and resp != "3"):
         print("Ta com pressa irmao? para de pular os dialogos.")
         lib.ProcuraTexto("Q1-p1", "Q1-fim", arq, Heroi.name)
         resp = input()
@@ -159,7 +159,7 @@ def CapituloFloripaMago(Heroi):
     lib.LimpaConsole()
     lib.ProcuraTexto("Q2-p2", "Q2-fim", arq, Heroi.name)
     resp = input()
-    while(resp != "1" or resp != "2" or resp == "3"):
+    while(resp != "1" and resp != "2" and resp != "3"):
         print("Ta com pressa irmao? para de pular os dialogos.")
         lib.ProcuraTexto("Q2-p2", "Q2-fim", arq, Heroi.name)
         resp = input()
@@ -190,7 +190,7 @@ def CapituloFloripaMago(Heroi):
     lib.LimpaConsole()
     lib.ProcuraTexto("Q3-p1", "Q3-fim", arq, Heroi.name)
     resp = input()
-    while(resp != "1" or resp != "2" or resp == "3"):
+    while(resp != "1" and resp != "2" and resp != "3"):
         print("Ta com pressa irmao? para de pular os dialogos.")
         lib.ProcuraTexto("Q3-p1", "Q3-fim", arq, Heroi.name)
         resp = input()
@@ -255,7 +255,7 @@ def CapituloFloripaMago(Heroi):
     lib.LimpaConsole()
     lib.ProcuraTexto("Q4-p4", "Q4-fim", arq, Heroi.name)
     resp = input()
-    while(resp != "1" or resp != "2" or resp == "3"):
+    while(resp != "1" and resp != "2" and resp != "3"):
         print("Ta com pressa irmao? para de pular os dialogos.")
         lib.ProcuraTexto("Q4-p4", "Q4-fim", arq, Heroi.name)
         resp = input()
