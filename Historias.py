@@ -8,7 +8,6 @@ import os
 monstros = lib.CriaMonstros()
 armas = lib.CriaArmas()
 
-
 def Intro(Heroi):
     arq = "Arquivostxt/Introducao.txt"
     lib.SubstituiNomeHeroiNoArquivo(arq, Heroi.name)
@@ -308,7 +307,8 @@ def CapituloKrambeckMago(Heroi):
 
 
 def IntroGuerreiro(Heroi):
-    print("")
+    arq = "Arquivostxt/IntroGuerreiro.txt"
+    lib.SubstituiNomeHeroiNoArquivo(arq, Heroi.name)
 
 
 def IntroLegolas(Heroi):

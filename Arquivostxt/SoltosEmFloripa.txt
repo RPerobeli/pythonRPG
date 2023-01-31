@@ -125,7 +125,7 @@ R3-3-p1
 [Mago Ancião]: Willhelm, este é o aventureiro o qual você disse que contrataria?
 R3-3-p2
 [Willhelm]: Exatamente, senhor, ele veio da Asas da Liberdade, uma guilda de renome, acredito que ele é capaz.
-[Mago Ancião]: A força de uma guilda não define a força de um homem. Jovem mgo, você juntar-se-á à mais nova missão designada pelo Bonde.
+[Mago Ancião]: A força de uma guilda não define a força de um homem. Jovem mago, você juntar-se-á à mais nova missão designada pelo Bonde.
 [Mago Ancião]: No entanto, você precisa se provar digno: enfrente o demônio que se encontra nas catacumbas abaixo do castelo.
 [Mago Ancião]: Caso não sobreviva à esse teste, não vai aguentar a missão.
 R3-3-p3

@@ -13,7 +13,7 @@ R1-1-p1
 R1-1-fim
 R1-2-ini
 A cachorra vazou,e deixou um cheiro infernal na cama...
-[Narrador]: Aparentemente, você não curte cachorras, então se levanta, mexe com as piranhas no corredor, e se digire à guilda.
+[Narrador]: Aparentemente, você não curte cachorras, então se levanta, mexe com as piranhas no corredor, e se dirige à guilda.
 R1-2-fim
 R1-3-ini
 [Narrador]: A cachorra mostra sua verdadeira face, com os dentes à mostra, percebe-se que é um cão infernal que se prepara para combate!
@@ -41,7 +41,7 @@ R2-1-p2
 [Narrador]: Com as costelas doendo, você vai até  o mural e pega a única missão restante.
 R2-1-fim
 R2-2-ini
-[Taverneira] Pois bem, Heroi, há uma certa tarefa que acabou de chegar até mim, ainda não pus no mural,
+[Taverneira] Pois bem, viajante, há uma certa tarefa que acabou de chegar até mim, ainda não pus no mural,
 se tiver interesse, como forma de pagamento, dou-lhe a refeição, você não parece má pessoa.
 [Narrador]: Seus olhos brilham ao ver tamanha gentileza, que você pensa ter sido ajudado por um anjo. De prontidão você aceita a tarefa, enquanto saboreia o pagamento adiantado.
 R2-2-fim
