@@ -161,7 +161,7 @@ class Acao:
         personagem.MP = personagem.MPmax
 
     def Opcoes(self, Personagem):
-        lib.LimpaConsole()
+        #lib.LimpaConsole()
         print("[Narrador]: Sua vez de atacar, escolha uma das opções.")
         atkType = input(
             "1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status\n6 - Olhar Inventário\n")
