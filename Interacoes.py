@@ -19,10 +19,10 @@ def ConfereClasses(listaDeClasses, classeDesejada):
 
 def CriaMonstros():
     arq = open("Arquivostxt/Monstros.txt", 'r')
-    listaMonstros = [mstr.Monstro("erro", "Guerreiro")]
+    listaMonstros = [mstr.Monstro("erro", "Guerreiro",False)]
     for linha in arq:
         valores = linha.split(',')
-        monstro = mstr.Monstro(valores[0], valores[1].strip())
+        monstro = mstr.Monstro(valores[0], valores[1], valores[2].strip())
         listaMonstros.append(monstro)
     return listaMonstros
 # endfunc
@@ -87,7 +87,7 @@ def Combate(Personagem, Monster):
         sys.exit()
     elif(Monster.HP <= 0):
         print("O "+Monster.name+" foi capinado.")
-        Personagem.XP = XP(Monster.lvl)
+        Personagem.XP += XP(Monster.lvl)
         if(Personagem.XP >= 100):
             Personagem.LvlUP()
         else:

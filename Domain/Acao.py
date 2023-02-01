@@ -140,11 +140,12 @@ class Acao:
     # endfunc
 
     def Curar(self, personagem):
+        multiplicadorCura = rnd.randint(4,7)/10.0
         if(personagem.isMonstro):
             personagem.HP += 0.2*personagem.HPmax
             personagem.MP += 0.2*personagem.MPmax
         else:
-            personagem.HP += 0.6*personagem.HPmax
+            personagem.HP += multiplicadorCura*personagem.HPmax
             personagem.MP += 0.4*personagem.MPmax
         # endif
         print("Regenerou vida e mana")
@@ -238,7 +239,7 @@ class Acao:
                 return magiaSelecionada
             # endif
         else:
-            return personagem.magias[resp-1]
+            return personagem.magias[resp]
         # endif
     # endfunc
 

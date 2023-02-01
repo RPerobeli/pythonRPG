@@ -1,18 +1,18 @@
-Cao infernal,Guerreiro
-Javali,Guerreiro
-Orc Guerreiro,Guerreiro
-Orc Besteiro,Arqueiro
-Orc Bruxo,Mago
-Elfo Bandido,Guerreiro
-Elfo Larapio,Arqueiro
-Elfo Acolito,Mago
-Bandido,Guerreiro
-Bandido Atirador,Arqueiro
-Guarda Magico,Mago
-Guarda Magico de Elite,Mago
-Mago Negro,Mago
-Dragao negro de olhos vermelhos,Mago
-Dragao Branco de Olhos Azuis,Mago
-Dragao Armado,Guerreiro
-Demonio Inferior, Guerreiro
-Willhelm,Mago
+Cao infernal,Guerreiro,False
+Javali,Guerreiro,False
+Orc Guerreiro,Guerreiro,False
+Orc Besteiro,Arqueiro,False
+Orc Bruxo,Mago,False
+Elfo Bandido,Guerreiro,False
+Elfo Larapio,Arqueiro,False
+Elfo Acolito,Mago,False
+Bandido,Guerreiro,False
+Bandido Atirador,Arqueiro,False
+Guarda Magico,Mago,False
+Guarda Magico de Elite,Mago,False
+Mago Negro,Mago,False
+Dragao negro de olhos vermelhos,Mago,False
+Dragao Branco de Olhos Azuis,Mago,False
+Dragao Armado,Guerreiro,False
+Demonio Inferior,Guerreiro,True
+Willhelm,Mago,False

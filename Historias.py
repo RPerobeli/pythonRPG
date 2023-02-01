@@ -100,7 +100,7 @@ def IntroMago(Heroi):
         lib.LimpaConsole()
         lib.ProcuraTexto("R1-1-p2", "R1-1-p3", arq, Heroi.name)
         Heroi.MP = Heroi.MPmax
-        lib.ProcuraTexto("R1-1-p3", "R1,1-fim", arq, Heroi.name)
+        lib.ProcuraTexto("R1-1-p3", "R1-1-fim", arq, Heroi.name)
     elif(int(resp) == 2):
         lib.ProcuraTexto("R1-2-ini", "R1-2-p1", arq, Heroi.name)
         lib.LimpaConsole()

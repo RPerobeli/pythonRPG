@@ -5,7 +5,7 @@ import Domain.Arma as A
 
 class Monstro():
     # Constructor
-    def __init__(self, nome, classe):
+    def __init__(self, nome, classe, isBoss):
         self.name = nome
         self.XP = 0
         self.lvl = 1
@@ -16,6 +16,7 @@ class Monstro():
             "Arma desgastada", 2, "Ataque Especial da Arma Mais Fraca Do Jogo!!!", "arma0")
         self.magias = self.acoes.CriaMagias(self)
         self.isMonstro = True
+        self.isBoss = isBoss
 
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
@@ -121,9 +122,16 @@ class Monstro():
 
     def AdequaHP(self):
         # dobra o hp dos monstros pra ficar mais interessante
-        self.HP = (0.25*self.lvl+0.75)*self.HP
-        self.MP = (0.25*self.lvl+0.75)*self.MP
-        self.HPmax = (0.25*self.lvl+0.75)*self.HPmax
-        self.MPmax = (0.25*self.lvl+0.75)*self.MPmax
+        if(self.isBoss):
+            self.HP = (0.5*self.lvl+0.75)*self.HP
+            self.MP = (0.5*self.lvl+0.75)*self.MP
+            self.HPmax = (0.5*self.lvl+0.75)*self.HPmax
+            self.MPmax = (0.5*self.lvl+0.75)*self.MPmax
+        else:
+            self.HP = (0.25*self.lvl+0.75)*self.HP
+            self.MP = (0.25*self.lvl+0.75)*self.MP
+            self.HPmax = (0.25*self.lvl+0.75)*self.HPmax
+            self.MPmax = (0.25*self.lvl+0.75)*self.MPmax
+        #endif
     # endfunc
 # endclass
