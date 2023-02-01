@@ -113,7 +113,7 @@ class Acao:
                 # endif
             elif(atkType == 3):
                 magiaEscolhida = personagem.acoes.SelectMagia(personagem)
-                os.system("cls")
+                lib.Limpa()
                 if (lib.NaoTemMana(personagem, magiaEscolhida.cost)):
                     print("Mana insuficiente.")
                 else:
@@ -144,7 +144,7 @@ class Acao:
             personagem.HP += 0.2*personagem.HPmax
             personagem.MP += 0.2*personagem.MPmax
         else:
-            personagem.HP += 0.4*personagem.HPmax
+            personagem.HP += 0.6*personagem.HPmax
             personagem.MP += 0.4*personagem.MPmax
         # endif
         print("Regenerou vida e mana")
@@ -222,7 +222,7 @@ class Acao:
             # endif
             if(magia.lvl <= personagem.lvl):
                 cont += 1
-                print(str(cont) + ": " + magia.name)
+                print(str(cont) + ": " + magia.name + " - " + str(magia.cost) + "MP" )
             # endif
         # endfor
         try:

@@ -60,7 +60,7 @@ def GetArma(listaArmas, tag):
 def Combate(Personagem, Monster):
     Monster.AutoLvl(Personagem.lvl)
     Monster.AdequaHP()
-    turnCounter = rnd.randrange(1, 3)
+    turnCounter = 1 #rnd.randrange(1, 3)
     while(Personagem.HP > 0) and (Monster.HP > 0):
         print(Personagem.name + ".HP: " + str(Personagem.HP)+"/"+str(Personagem.HPmax) +
               "     "+Monster.name + ".HP: " + str(Monster.HP)+"/"+str(Monster.HPmax))
@@ -72,7 +72,7 @@ def Combate(Personagem, Monster):
                 sys.stdout.flush()
                 atkType = Personagem.acoes.Opcoes(Personagem)
             # endwhile
-            os.system("cls")
+            lib.Limpa()
             Personagem.acoes.Atk(Personagem, atkType, Monster, turnCounter)
             turnCounter += 1
         elif(turnCounter == 2):
@@ -143,8 +143,16 @@ def LimpaConsole():
         os.system("cls")
     else:
         os.system("clear")
-    #endif
-        
+    #endif     
+# endfunc
+
+def Limpa():
+    sistema = platform.system()
+    if(sistema  == "Windows"):
+        os.system("cls")
+    else:
+        os.system("clear")
+    #endif     
 # endfunc
 
 

@@ -1,4 +1,5 @@
-import Domain.Acao as Acao
+#import Domain.Acao as Acao
+from Domain import Acao as Acao
 import Domain.Arma as A
 
 

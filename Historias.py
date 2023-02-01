@@ -19,7 +19,7 @@ def Intro(Heroi):
         lib.ProcuraTexto("Q1-ini", "Q1-fim", arq, Heroi.name)
         resp = input()
     # endwhile
-    os.system("cls")
+    lib.Limpa()
     if(int(resp) == 1):
         lib.ProcuraTexto("R1-1-ini", "R1-1-p1", arq, Heroi.name)
         lib.LimpaConsole()
@@ -46,7 +46,7 @@ def Intro(Heroi):
         lib.ProcuraTexto("Q2-p1", "Q2-fim", arq, Heroi.name)
         resp = input()
     # endwhile
-    os.system("cls")
+    lib.Limpa()
     if(int(resp) == 1):
         lib.ProcuraTexto("R2-1-ini", "R2-1-p1", arq, Heroi.name)
         lib.LimpaConsole()
@@ -88,7 +88,7 @@ def IntroMago(Heroi):
         lib.ProcuraTexto("Q1-p2", "Q1-fim", arq, Heroi.name)
         resp = input()
     # endwhile
-    os.system("cls")
+    lib.Limpa()
     if(int(resp) == 1):
         lib.ProcuraTexto("R1-1-ini", "R1-1-p1", arq, Heroi.name)
         lib.LimpaConsole()
@@ -98,7 +98,7 @@ def IntroMago(Heroi):
         lib.LimpaConsole()
         lib.Combate(Heroi, lib.GetMonstro(monstros, "Bandido Atirador"))
         lib.LimpaConsole()
-        lib.ProcuraTexto("R1-1-p2", "R2-1-p3", arq, Heroi.name)
+        lib.ProcuraTexto("R1-1-p2", "R1-1-p3", arq, Heroi.name)
         Heroi.MP = Heroi.MPmax
         lib.ProcuraTexto("R1-1-p3", "R1,1-fim", arq, Heroi.name)
     elif(int(resp) == 2):
@@ -140,7 +140,7 @@ def CapituloFloripaMago(Heroi):
         lib.ProcuraTexto("Q1-p1", "Q1-fim", arq, Heroi.name)
         resp = input()
     # endwhile
-    os.system("cls")
+    lib.Limpa()
     if(int(resp) == 1):
         lib.ProcuraTexto("R1-1-ini", "R1-1-fim", arq, Heroi.name)
         lib.Combate(Heroi, lib.GetMonstro(monstros, "Guarda Magico"))
@@ -163,7 +163,7 @@ def CapituloFloripaMago(Heroi):
         lib.ProcuraTexto("Q2-p2", "Q2-fim", arq, Heroi.name)
         resp = input()
     # endwhile
-    os.system("cls")
+    lib.Limpa()
     if(int(resp) == 1):
         lib.ProcuraTexto("R2-1-ini", "R2-1-fim", arq, Heroi.name)
         lib.LimpaConsole()
@@ -194,7 +194,7 @@ def CapituloFloripaMago(Heroi):
         lib.ProcuraTexto("Q3-p1", "Q3-fim", arq, Heroi.name)
         resp = input()
     # endwhile
-    os.system("cls")
+    lib.Limpa()
     if(int(resp) == 1):
         lib.ProcuraTexto("R3-1-ini", "R3-1-p1", arq, Heroi.name)
         lib.LimpaConsole()
@@ -259,7 +259,7 @@ def CapituloFloripaMago(Heroi):
         lib.ProcuraTexto("Q4-p4", "Q4-fim", arq, Heroi.name)
         resp = input()
     # endwhile
-    os.system("cls")
+    lib.Limpa()
     if(int(resp) == 1):
         lib.ProcuraTexto("R4-1-ini", "R4-1-p1", arq, Heroi.name)
         lib.LimpaConsole()
