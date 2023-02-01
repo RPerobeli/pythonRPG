@@ -1,5 +1,5 @@
 Q1-ini
-[Narrador]:  A missão descrita no anúncio pede que você escolte um cliente à cidade enânica de Tófilotoni.
+[Narrador]:  A missão descrita no anúncio pede que você escolte um cliente à cidade enânica de Teófilotoni.
 [Narrador]:  Na descrição da missão dizia para encontrar o cliente na praça da cidade. Ao chegar no local você avista uma aglomeração.
 Q1-p1
 [Narrador]: Um anão no meio da multidão anunciava, com sua voz sobrepujando os murmúrios das pessoas:
@@ -16,8 +16,10 @@ R1-1-p1
 [Narrador]: Você avança por entre as pessoas.
 [Heroi]: EU ACEITO O DESAFIO!
 R1-1-p2
-[Narrador]: Após o término da batalha, 
-[Narrador]: Os únicos restantes são o líder da caravana e os mercadores. Nesse momento, o líder se aproxima de você, agradece seus grandes feitos e te presenteia com um elixir revigorante.
+[Narrador]: Após o término da batalha, o anão busca a pedra na mesa, porém a safira não está na mesa.
+[Anão]: Roubaram a minha pedra! ladrões! Guardas!!!
+[Narrador]: Após a comoção, você percebe que ficará sem seu prêmio, senta-se na praça e uma elfa vem ao seu encontro.
+[Narrador]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?
 R1-1-p3
 [Aviso]: Seus pontos de mana foram restaurados
 R1-1-fim

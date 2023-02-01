@@ -1,6 +1,6 @@
 SOU EU BOLA DE FOGO,10,10,1
-Agua Molhada,13,10,2
-Desconjuntar,20,10,2
-Brisa,15,12,4
-Fio Desencapado,15,10,6
-Mil flagelos de Emme White,20,6,6
+Agua Molhada,13,12,2
+Desconjuntar,20,15,2
+Brisa,15,8,4
+Fio Desencapado,25,15,6
+Mil flagelos de Emme White,30,45,6
