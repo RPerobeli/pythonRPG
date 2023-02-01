@@ -16,10 +16,26 @@ R1-1-p1
 [Narrador]: Você avança por entre as pessoas.
 [Heroi]: EU ACEITO O DESAFIO!
 R1-1-p2
-[Narrador]: Após o término da batalha, o anão busca a pedra na mesa, porém a safira não está na mesa.
+[Narrador]: Após o término da batalha, o anão busca a pedra, porém a safira não está mais na mesa.
 [Anão]: Roubaram a minha pedra! ladrões! Guardas!!!
-[Narrador]: Após a comoção, você percebe que ficará sem seu prêmio, senta-se na praça e uma elfa vem ao seu encontro.
-[Narrador]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?
-R1-1-p3
-[Aviso]: Seus pontos de mana foram restaurados
+[Narrador]: Após a comoção, você percebe que ficará sem seu prêmio, senta-se, puto, na praça e uma elfa vem ao seu encontro.
+[Elfa]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?
 R1-1-fim
+R1-2-p1
+[Narrador]: Você senta ao longe e observa a comoção.
+[Narrador]: Pouco tempo depois você escuta um alvoroço, guardas correndo, e a multidão pouco depois se dispersa.
+R1-2-p2
+[Narrador]: Após a situação se acalmar, uma elfa vem em sua direção.
+[Elfa]: Muito tempo esperando?
+[Elfa]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?
+R1-2-fim
+R1-3-p1
+[Narrador]: Você avança por entre as pessoas. Chega próximo a mesa onde se encontra a safira. Calmamente estica sua mão para roubá-la.
+[Anão]: EI SEU DESGRAÇADO, O QUE PENSA QUE ESTÁ FAZENDO?
+[Narrador]: Quando você se dá conta, o anão já se encontra perto desferindo um soco em sua direção.
+R1-3-p2
+[Narrador]: Após o término da batalha, você fita a mesa novamente, buscando a safira cósmica, porém a pedra não está mais na mesa.
+[Narrador]: Você procura
+[Narrador]: Após a comoção, você percebe que ficará sem seu prêmio, senta-se, puto, na praça e uma elfa vem ao seu encontro.
+[Elfa]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?
+R1-3-fim

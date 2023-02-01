@@ -1,4 +1,4 @@
-Cao infernal,Guerreiro,False
+Cao infernal,Guerreiro,True
 Javali,Guerreiro,False
 Orc Guerreiro,Guerreiro,False
 Orc Besteiro,Arqueiro,False
