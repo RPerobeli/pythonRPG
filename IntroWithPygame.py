@@ -1,9 +1,20 @@
 #encoding: utf-8
+import pygame
+from Interface import Inn
+from Interface import DialogBox
+import pygame
 import sys
 from Domain import Heroi as heroi
 import Interacoes as lib
-import Historias as h
-import os
+import HistoriasPyGame as hpg
+
+
+pygame.init()
+
+screen_width = 800
+screen_height = 550
+screen= pygame.display.set_mode((screen_width,screen_height))
+dialogBox = DialogBox.DialogBox(screen)
 
 
 ###############INTRODUCAO ###############################################################################
@@ -27,5 +38,6 @@ if(resp == "n"):
 ###############INICIO DA HISTORIA###############################################################################
 lib.LimpaConsole()
 # começa a contar a historia
-h.Intro(Heroi)
-#h.CapituloFloripaMago(Heroi)
+hpg.HistoriaIntro(screen,dialogBox,Heroi)
+
+pygame.quit()

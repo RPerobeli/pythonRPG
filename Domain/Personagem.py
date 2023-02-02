@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
+import pygame
 import Domain.Acao as Acao
 import Domain.Arma as A
+import Utils.JsonLoader as jsonL
+import Interface.Img.Image as img
 
 
 class Personagem:
@@ -15,6 +18,7 @@ class Personagem:
         self.arma = A.Arma(
             "Arma desgastada", 2, "Ataque Especial da Arma Mais Fraca Do Jogo!!!", "arma0")
         self.magias = self.acoes.CriaMagias(self)
+        self.Image = img.Image(self.GetImage(),300,450)
 
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
@@ -33,13 +37,15 @@ class Personagem:
             self.skills['agi'] = 2
             self.skills['vit'] = 3
             self.skills["int"] = 4
-            #self.atk = 4
-
         else:
             print("Erro no construtor")
         # endif
         self.AtualizaStatus()
     # endfunc
+
+    def GetImage(self):
+        imagePath = jsonL.GetImagePath()
+        return pygame.image.load(f'{imagePath}/Personagens/{self.classe.lower()}.png').convert_alpha() 
 
     def GetClasse(self):
         return self.classe

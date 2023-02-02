@@ -1,6 +1,9 @@
 #import Domain.Acao as Acao
+import pygame
+import Utils.JsonLoader as jsonL
 from Domain import Acao as Acao
 import Domain.Arma as A
+import Interface.Img.Image as img
 
 
 class Monstro():
@@ -17,6 +20,7 @@ class Monstro():
         self.magias = self.acoes.CriaMagias(self)
         self.isMonstro = True
         self.isBoss = isBoss
+        self.Image = img.Image(self.GetImageByMonsterName(),300,450)
 
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
@@ -43,6 +47,9 @@ class Monstro():
         self.AtualizaStatus()
     # endfunc
 
+    def GetImageByMonsterName(self):
+        imagePath = jsonL.GetImagePath
+        return pygame.image.load(f'{imagePath}/Monstros/{self.name()}.png').convert_alpha() 
     def GetClasse(self):
         return self.classe
 
