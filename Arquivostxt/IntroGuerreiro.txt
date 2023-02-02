@@ -35,7 +35,31 @@ R1-3-p1
 [Narrador]: Quando você se dá conta, o anão já se encontra perto desferindo um soco em sua direção.
 R1-3-p2
 [Narrador]: Após o término da batalha, você fita a mesa novamente, buscando a safira cósmica, porém a pedra não está mais na mesa.
-[Narrador]: Você procura
+[Narrador]: Você procura ao redor, mas não a encontra, você perdeu o seu prêmio.
 [Narrador]: Após a comoção, você percebe que ficará sem seu prêmio, senta-se, puto, na praça e uma elfa vem ao seu encontro.
 [Elfa]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?
 R1-3-fim
+Q2-ini
+[Narrador]: Já na estrada, a elfa se apresenta como The'té e você, curioso, pergunta mais sobre a misteriosa companheira.
+[Heroi]: Então The'té, o que uma elfa tem a tratar com anões, que demanda até uma escolta?
+[The'té]: A escolta por mim era desnecessária, mas dada a importância da missão, fui obrigada por meus superiores a contratá-lo.
+[The'té]: Os anões estão numa situação ruim o suficiente para pedirem ajuda pra gente.
+Q2-p1
+[Heroi]: O que está acontecendo em Teófilotoni?
+[The'té]: Você não precisa saber, escolta...
+Q2-p2
+[Narrador]: A conversa é interrompida ao verem um anão caído no chão aparentemente ferido.
+[Anão Ferido]: Não quero morrer assim, peguem a minha pica... reta.
+1- Descer do cavalo e ajudar o anão.
+2- Seguir em frente e deixar o anão para morrer.
+3- Acabar com o sofrimento do anão retirando sua vida.
+Q2-fim
+R2-1-p1
+[Narrador]: Você avança por entre as pessoas.
+[Heroi]: EU ACEITO O DESAFIO!
+R2-1-p2
+[Narrador]: Após o término da batalha, o anão busca a pedra, porém a safira não está mais na mesa.
+[Anão]: Roubaram a minha pedra! ladrões! Guardas!!!
+[Narrador]: Após a comoção, você percebe que ficará sem seu prêmio, senta-se, puto, na praça e uma elfa vem ao seu encontro.
+[Elfa]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?
+R2-1-fim

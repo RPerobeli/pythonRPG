@@ -27,7 +27,7 @@ Q2-p1
 [Taverneira]: Bom dia, senhor, aceita uma bebida e uma boa refeição da casa?
 1 - Oh, uma oferta irrecusável, pode trazer a melhor cerveja da casa por favor.
 2 - Então, senhorita, no momento estou duro, não tenho 1 prata sequer...
-3 - Ficar calado e deixar seu corpo falar por ti.
+3 - Ficar calado e deixar seu shape falar por ti.
 Q2-fim
 R2-1-ini
 [Narrador]: A taverneira traz uma grande refeição para você, com a melhor cerveja. Você se sente saciado.
