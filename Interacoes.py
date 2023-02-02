@@ -8,6 +8,8 @@ import io
 import os
 import platform
 import Interacoes as lib
+import Utils.JsonLoader as jsonL
+import Interface.Utils as ut
 
 
 def ConfereClasses(listaDeClasses, classeDesejada):
@@ -101,7 +103,7 @@ def XP(MonsterLevel):
     return XP
 
 
-def ProcuraTexto(ChaveInicio, ChaveFim, arquivoNome, nome):
+def ProcuraTexto(ChaveInicio, ChaveFim, arquivoNome, nome, screen):
     vetor = []
     with io.open(arquivoNome, "r", encoding="utf8") as file:
         for i, linha in enumerate(file):
@@ -112,20 +114,26 @@ def ProcuraTexto(ChaveInicio, ChaveFim, arquivoNome, nome):
                 vetor.append(i)
             # endif
         # endfor
-        PrintTexto(vetor[0], vetor[1], arquivoNome, nome)
+        PrintTexto(vetor[0], vetor[1], arquivoNome, nome, screen)
     # endwith
 # endfunc
 
+def DrawText(text, screen, x,y):
+        text_color = jsonL.GetSpeakerTextColor()
+        ut.InsertText(text,text_color, x, y, screen)
+        #endfunc
 
-def PrintTexto(li, lf, arquivoNome, nome):
+def PrintTexto(li, lf, arquivoNome, nome, screen):
+    (x,y) = jsonL.GetSpeakerTextPosition()
     with io.open(arquivoNome, "r", encoding="utf8") as file:
         for i, linha in enumerate(file):
             if(i > li and i < lf):
                 linha = linha.replace("Heroi", nome)
-                print(linha.strip())
+                DrawText(linha.strip(), screen ,x,y)
+                y += jsonL.GetVerticalSpace()
             # endif
         # endfor
-    # endwith
+    # endwith 
 # endfunc
 
 

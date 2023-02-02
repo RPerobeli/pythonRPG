@@ -1,5 +1,10 @@
 {
     "frameRate":60,
-    "ImagePath":"Interface/Img"
-
+    "ImagePath":"Interface/Img",
+    "Font": "CMU Serif",
+    "TextSize": 26,
+    "Speaker_x": 40,
+    "Speaker_y": 550,
+    "Speaker_textcolor" : "255,255,255",
+    "TextVerticalSpace" : 15
 }
