@@ -19,6 +19,9 @@ class Title(GameState.GameState):
         self.HeroName = ""
         self.NumberOfBtn = 3
         self.Boundary = jsonL.GetBoundaryThickness()
+        self.CreateButtons()
+        self.CreateEditBoxes()
+        
     #endfunc
 
     def LoadImages(self, alpha = 255):
@@ -34,25 +37,30 @@ class Title(GameState.GameState):
         #endif
     #endfunc
 
-    def LoadButtons(self):
-        buttonList = []
+    def CreateButtons(self):
+        self.ButtonList = []
         for i in range(1,self.NumberOfBtn + 1):
-            buttonList.append(btn.Button(i,i, self.Screen))
+            self.ButtonList.append(btn.Button(i,i, self.Screen))
         #endfor
-        for button in buttonList:
+    #endfunc
+
+    def LoadButtons(self):
+        for button in self.ButtonList:
             button.Draw()
         #endfor
     #endfunc
 
+    def CreateEditBoxes(self):
+        self.editboxAtributes = jsonL.GetEditBox()
+        self.EditBox = pygame.Rect(self.editboxAtributes['x'],self.editboxAtributes['y'],self.editboxAtributes['width'],self.editboxAtributes['height'])
+        self.EditboxSurface = pygame.Surface((self.editboxAtributes['width']-10,self.editboxAtributes['height']-10))
+        self.EditBoxBoundaryColor = tuple(map(int,self.editboxAtributes['color'].split(',')))
+        self.EditboxSurface.fill((20,20,20))
+    #endfunc
     def LoadEditBox(self):
-        editbox = jsonL.GetEditBox()
-        self.EditBox = pygame.Rect(editbox['x'],editbox['y'],editbox['width'],editbox['height'])
-        editboxSurface = pygame.Surface((editbox['width']-10,editbox['height']-10))
-        editboxSurface.fill((20,20,20))
-        self.Screen.blit(editboxSurface, (editbox['x']+5,editbox['y']+5))
-        color = tuple(map(int,editbox['color'].split(',')))
-        pygame.draw.rect(self.Screen,color, self.EditBox, self.Boundary)
-        ut.InsertText(self.HeroName,jsonL.GetTitleTextColor(),editbox['x']+5,editbox['y']+5,self.Screen,textSize = jsonL.GetTextSize()*2)
+        self.Screen.blit(self.EditboxSurface, (self.editboxAtributes['x']+5,self.editboxAtributes['y']+5))
+        pygame.draw.rect(self.Screen,self.EditBoxBoundaryColor, self.EditBox, self.Boundary)
+        ut.InsertText(self.HeroName,jsonL.GetTitleTextColor(),self.editboxAtributes['x']+5,self.editboxAtributes['y']+5,self.Screen,textSize = jsonL.GetTextSize()*2)
     #endfunc
 
     def LoadTitle(self, text):
@@ -85,6 +93,44 @@ class Title(GameState.GameState):
                 else:
                     self.Active = False
                 #endif
+                hero = None
+                if self.ButtonList[0].Button.collidepoint(event.pos):
+                    # Turn button boundary White
+                    self.ButtonList[0].SetBoundaryColor(255,255,255)
+                elif self.ButtonList[1].Button.collidepoint(event.pos):
+                    # Turn button boundary White
+                    self.ButtonList[1].SetBoundaryColor(255,255,255)
+                elif self.ButtonList[2].Button.collidepoint(event.pos):
+                    # Turn button boundary White
+                    self.ButtonList[2].SetBoundaryColor(255,255,255)
+                #endif
+            #endif
+            if event.type == pygame.MOUSEBUTTONUP:
+                # If the user clicked on the input_box rect.
+                if self.EditBox.collidepoint(event.pos):
+                    # Toggle the active variable.
+                    self.Active = not self.Active
+                else:
+                    self.Active = False
+                #endif
+                hero = None
+                if self.ButtonList[0].Button.collidepoint(event.pos):
+                    # Turn button boundary White
+                    self.ButtonList[0].SetBoundaryColor(255,255,255)
+                    hero =  self.CreateHero("Guerreiro")
+                elif self.ButtonList[1].Button.collidepoint(event.pos):
+                    # Turn button boundary White
+                    self.ButtonList[1].SetBoundaryColor(255,255,255)
+                    hero =  self.CreateHero("Arqueiro")
+                elif self.ButtonList[2].Button.collidepoint(event.pos):
+                    # Turn button boundary White
+                    self.ButtonList[2].SetBoundaryColor(255,255,255)
+                    hero =  self.CreateHero("Mago")
+                #endif
+                if (hero != None):
+                    return hero
+                #endif
+            #endif
             if event.type == pygame.KEYDOWN:
                 if self.Active:
                     if event.key == pygame.K_RETURN:
@@ -98,4 +144,13 @@ class Title(GameState.GameState):
         #endfor
     #endFunction
 
+    def CreateHero(self, heroClass):
+        hero = None
+        if(self.HeroName == ""):
+            self.EditBoxBoundaryColor = (255,0,0)
+        else:
+            hero = Personagem.Personagem(self.HeroName,heroClass)
+        #endif
+        return hero
+    #endfunc
 #endclass

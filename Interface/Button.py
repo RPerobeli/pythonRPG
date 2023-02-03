@@ -18,4 +18,7 @@ class Button:
         self.Image = pygame.transform.scale(self.Image, (self.Boundary['width']-10, self.Boundary['height']-10))
         self.Screen.blit(self.Image, (self.Boundary['x']+5,self.Boundary['y']+5))
     #endfunc
+    def SetBoundaryColor(self, r,g,b):
+        self.BoundaryColor = (r,g,b)
+    #endfunc
 #endclass

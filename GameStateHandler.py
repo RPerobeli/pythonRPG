@@ -10,25 +10,27 @@ class GameStateHandler:
     def __init__(self, screen):
         self.State = 'intro_title'
         self.Screen = screen
-        self.title = t.Title(self.Screen)
+        self.Title = t.Title(self.Screen)
+        self.Hero = None
+        
     #endfunc
 
     def ManageState(self):
         if(self.State == "intro_title"):
             self.IntroTitle()
-        if(self.State == "title"):
-            self.Title()
+        if(self.State == "inn"):
+            self.Inn()
         #endif
     #endfunc
 
-    def Title(self):
-        print("title")
     #endfunc
     def IntroTitle(self):
         print("intro_title")
-        self.title.RedrawWindow()
-        self.title.Update()
-        return 
+        self.Title.RedrawWindow()
+        self.Hero = self.Title.Update()
+        if(self.Hero!=None):
+            self.inn = Inn.Inn(self.Screen,self.Hero)
+            self.State = "inn"
     #endfunc
     def Inn(self):
         print("inn")
