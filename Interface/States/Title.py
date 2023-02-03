@@ -18,7 +18,7 @@ class Title(GameState.GameState):
         self.Active = False
         self.HeroName = ""
         self.NumberOfBtn = 3
-        
+        self.Boundary = jsonL.GetBoundaryThickness()
     #endfunc
 
     def LoadImages(self, alpha = 255):
