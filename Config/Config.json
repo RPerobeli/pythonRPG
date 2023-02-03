@@ -1,4 +1,5 @@
 {
     "frameRate":60,
-    "ImagePath":"Interface/Img"
+    "ImagePath":"Interface/Img",
+    "BoundaryThickness": 2
 }

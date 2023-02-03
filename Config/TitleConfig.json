@@ -10,33 +10,38 @@
         "y" : 300
     },
 
+    "ClasseTextPosition":{
+        "x" : 460,
+        "y" : 400
+    },
+
     "EditBoxHeroName":{
         "x" : 330,
         "y" : 340,
         "width" : 400,
         "height" : 50,
-        "color" : "20,20,20"
+        "color" : "200,200,200"
     },
 
     "Button1":{
         "x" : 330,
-        "y" : 340,
-        "width" : 400,
-        "height" : 50,
+        "y" : 450,
+        "width" : 100,
+        "height" : 100,
         "color" : "20,20,20"
     },
     "Button2":{
-        "x" : 330,
-        "y" : 340,
-        "width" : 400,
-        "height" : 50,
+        "x" : 480,
+        "y" : 450,
+        "width" : 100,
+        "height" : 100,
         "color" : "20,20,20"
     },
     "Button3":{
-        "x" : 330,
-        "y" : 340,
-        "width" : 400,
-        "height" : 50,
+        "x" : 630,
+        "y" : 450,
+        "width" : 100,
+        "height" : 100,
         "color" : "20,20,20"
     }
 }

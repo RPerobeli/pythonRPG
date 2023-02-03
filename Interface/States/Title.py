@@ -3,6 +3,7 @@ import sys
 import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
 import Interface.BattleWindow as bw
+import Interface.Button as btn
 import Interacoes as lib
 import Interface.States.GameState as GameState
 import Domain.Personagem as Personagem
@@ -16,6 +17,8 @@ class Title(GameState.GameState):
         self.count = 0
         self.Active = False
         self.HeroName = ""
+        self.NumberOfBtn = 3
+        
     #endfunc
 
     def LoadImages(self, alpha = 255):
@@ -24,14 +27,32 @@ class Title(GameState.GameState):
             self.LoadTitle("D&D DA DEEPWEP")
             pos = jsonL.GetNameTextPosition()
             ut.InsertText("Nome:", jsonL.GetTitleTextColor(),pos['x'], pos['y'],self.Screen,textSize = jsonL.GetTextSize()*2)
-            editbox = jsonL.GetEditBox()
-            self.EditBox = pygame.Rect(editbox['x'],editbox['y'],editbox['width'],editbox['height'])
-            color = tuple(map(int,editbox['color'].split(',')))
-            pygame.draw.rect(self.Screen,color, self.EditBox, 2)
-            ut.InsertText(self.HeroName,jsonL.GetTitleTextColor(),editbox['x']+5,editbox['y']+5,self.Screen,textSize = jsonL.GetTextSize()*2)
-            
+            self.LoadEditBox()
+            pos = jsonL.GetClassePosition()
+            ut.InsertText("Classes:", jsonL.GetTitleTextColor(),pos['x'], pos['y'],self.Screen,textSize = jsonL.GetTextSize()*2)
+            self.LoadButtons()
         #endif
-        
+    #endfunc
+
+    def LoadButtons(self):
+        buttonList = []
+        for i in range(1,self.NumberOfBtn + 1):
+            buttonList.append(btn.Button(i,i, self.Screen))
+        #endfor
+        for button in buttonList:
+            button.Draw()
+        #endfor
+    #endfunc
+
+    def LoadEditBox(self):
+        editbox = jsonL.GetEditBox()
+        self.EditBox = pygame.Rect(editbox['x'],editbox['y'],editbox['width'],editbox['height'])
+        editboxSurface = pygame.Surface((editbox['width']-10,editbox['height']-10))
+        editboxSurface.fill((20,20,20))
+        self.Screen.blit(editboxSurface, (editbox['x']+5,editbox['y']+5))
+        color = tuple(map(int,editbox['color'].split(',')))
+        pygame.draw.rect(self.Screen,color, self.EditBox, self.Boundary)
+        ut.InsertText(self.HeroName,jsonL.GetTitleTextColor(),editbox['x']+5,editbox['y']+5,self.Screen,textSize = jsonL.GetTextSize()*2)
     #endfunc
 
     def LoadTitle(self, text):
@@ -46,7 +67,7 @@ class Title(GameState.GameState):
 
         pygame.display.set_caption("Título")
         for event in pygame.event.get():
-            if(pygame.time.get_ticks()>400 and self.count == 0):
+            if(pygame.time.get_ticks()>=400 and self.count == 0):
                 self.BackgroundImage = pygame.Surface((self.Screen.get_width(), self.Screen.get_height()))
                 self.BackgroundImage.fill((45,45,45))
                 self.BackgroundImage.set_alpha(255)
@@ -63,6 +84,7 @@ class Title(GameState.GameState):
                     self.Active = not self.Active
                 else:
                     self.Active = False
+                #endif
             if event.type == pygame.KEYDOWN:
                 if self.Active:
                     if event.key == pygame.K_RETURN:

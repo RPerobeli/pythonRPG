@@ -112,3 +112,25 @@ def GetEditBox():
     eb = data['EditBoxHeroName']
     return eb
 #endfunc
+
+def GetButton(id):
+    f = open("Config/TitleConfig.json")
+    data = json.load(f)
+    f.close()
+    btn = data[f'Button{id}']
+    return btn
+#endfunc
+
+def GetClassePosition():
+    f = open("Config/TitleConfig.json")
+    data = json.load(f)
+    f.close()
+    pos = data['ClasseTextPosition']
+    return pos
+#endfunc
+def GetBoundaryThickness():
+    f = open("Config/Config.json")
+    data = json.load(f)
+    f.close()
+    return data['BoundaryThickness']
+#endfunc
