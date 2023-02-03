@@ -15,21 +15,21 @@ def GetFrameRate():
 #endfunc
 
 def GetFont():
-    f = open("Config/config.json")
+    f = open("Config/TextConfig.json")
     data = json.load(f)
     f.close()
-    return data['Font']
+    return data['SpeakerFont']
 #endfunc
 
 def GetTextSize():
-    f = open("Config/config.json")
+    f = open("Config/TextConfig.json")
     data = json.load(f)
     f.close()
     return data['TextSize']
 #endfunc
 
 def GetSpeakerTextPosition():
-    f = open("Config/config.json")
+    f = open("Config/TextConfig.json")
     data = json.load(f)
     f.close()
     x = data['Speaker_x']
@@ -38,7 +38,7 @@ def GetSpeakerTextPosition():
 #endfunc
 
 def GetSpeakerTextColor():
-    f = open("Config/config.json")
+    f = open("Config/TextConfig.json")
     data = json.load(f)
     f.close()
     finalTuple = tuple(map(int, data['Speaker_textcolor'].split(',')))
@@ -46,8 +46,69 @@ def GetSpeakerTextColor():
 #endfunc
 
 def GetVerticalSpace():
-    f = open("Config/config.json")
+    f = open("Config/TextConfig.json")
     data = json.load(f)
     f.close()
     return data['TextVerticalSpace']
+#endfunc
+
+def GetClassesDisponiveis():
+    f = open("Config/ClassesConfig.json")
+    data = json.load(f)
+    f.close()
+    return data['ClassesDisponiveis']
+#endfunc
+
+def GetTitleTextSize():
+    f = open("Config/TitleConfig.json")
+    data = json.load(f)
+    f.close()
+    return data['TitleTextSize']
+#endfunc
+
+def GetTitleTextPosition():
+    f = open("Config/TitleConfig.json")
+    data = json.load(f)
+    f.close()
+    x = data['Title_x']
+    y = data['Title_y']
+    return (x,y)
+#endfunc
+
+def GetTitleTextColor():
+    f = open("Config/TitleConfig.json")
+    data = json.load(f)
+    f.close()
+    finalTuple = tuple(map(int, data['Title_textcolor'].split(',')))
+    return finalTuple
+#endfunc
+
+def GetTitleFont():
+    f = open("Config/TitleConfig.json")
+    data = json.load(f)
+    f.close()
+    return data['TitleFont']
+#endfunc
+
+def GetTitleTextSize():
+    f = open("Config/TitleConfig.json")
+    data = json.load(f)
+    f.close()
+    return data['TitleTextSize']
+#endfunc
+
+def GetNameTextPosition():
+    f = open("Config/TitleConfig.json")
+    data = json.load(f)
+    f.close()
+    pos = data['NomeTextPosition']
+    return pos
+#endfunc
+
+def GetEditBox():
+    f = open("Config/TitleConfig.json")
+    data = json.load(f)
+    f.close()
+    eb = data['EditBoxHeroName']
+    return eb
 #endfunc

@@ -25,7 +25,7 @@ class Inn:
         text_color = jsonL.GetSpeakerTextColor()
         (x,y) = jsonL.GetSpeakerTextPosition()
         ut.InsertText(text,text_color, x, y, self.Screen)
-        #endfunc
+    #endfunc
 
 
     def InnDialog1(self):
@@ -35,11 +35,13 @@ class Inn:
         pygame.display.set_caption("Hospedagem")
         run = True
         while run:
-            self.Clock.tick(self.FrameRate)
             self.LoadImages()
             self.LoadText(lib.ProcuraTexto("Q1-ini", "Q1-fim", arq, self.Actors.name,self.Screen))
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
+                    run = False
+                #endif
+                if (event.type == pygame.KEYDOWN and event.key == pygame.K_KP_ENTER):
                     run = False
                 #endif
             #endfor

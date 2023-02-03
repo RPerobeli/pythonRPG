@@ -1,0 +1,42 @@
+{
+    "TitleTextSize": 70,
+    "TitleFont": "inkfree",
+    "Title_x": 240,
+    "Title_y": 125,
+    "Title_textcolor" : "255,255,255",
+
+    "NomeTextPosition":{
+        "x" : 480,
+        "y" : 300
+    },
+
+    "EditBoxHeroName":{
+        "x" : 330,
+        "y" : 340,
+        "width" : 400,
+        "height" : 50,
+        "color" : "20,20,20"
+    },
+
+    "Button1":{
+        "x" : 330,
+        "y" : 340,
+        "width" : 400,
+        "height" : 50,
+        "color" : "20,20,20"
+    },
+    "Button2":{
+        "x" : 330,
+        "y" : 340,
+        "width" : 400,
+        "height" : 50,
+        "color" : "20,20,20"
+    },
+    "Button3":{
+        "x" : 330,
+        "y" : 340,
+        "width" : 400,
+        "height" : 50,
+        "color" : "20,20,20"
+    }
+}

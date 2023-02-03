@@ -8,7 +8,7 @@ class DialogBox:
     def __init__(self, screen):
         self.Width = screen.get_width()
         self.Height = 150
-        self.alpha = 128
+        self.alpha = 200
         self.image = None
         self.x= 0
         self.y = screen.get_height()-self.Height
