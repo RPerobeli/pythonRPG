@@ -10,9 +10,5 @@ Bandido,Guerreiro,False
 Bandido Atirador,Arqueiro,False
 Guarda Magico,Mago,False
 Guarda Magico de Elite,Mago,False
-Mago Negro,Mago,False
-Dragao negro de olhos vermelhos,Mago,False
-Dragao Branco de Olhos Azuis,Mago,False
-Dragao Armado,Guerreiro,False
 Demonio Inferior,Guerreiro,True
 Willhelm,Mago,False

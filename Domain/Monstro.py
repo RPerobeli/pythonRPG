@@ -49,7 +49,12 @@ class Monstro():
 
     def GetImageByMonsterName(self):
         imagePath = jsonL.GetImagePath
-        return pygame.image.load(f'{imagePath}/Monstros/{self.name()}.png').convert_alpha() 
+        image =  pygame.image.load(f'{imagePath}/Monstros/{self.name()}.png').convert_alpha() 
+        if(image != None):
+            return image
+        else:
+            return None
+        #endif
     def GetClasse(self):
         return self.classe
 

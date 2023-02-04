@@ -106,26 +106,26 @@ class Title(GameState.GameState):
                 #endif
             #endif
             if event.type == pygame.MOUSEBUTTONUP:
-                # If the user clicked on the input_box rect.
-                if self.EditBox.collidepoint(event.pos):
-                    # Toggle the active variable.
-                    self.Active = not self.Active
-                else:
-                    self.Active = False
-                #endif
                 hero = None
+                r = 20
+                g = 20
+                b = 20
                 if self.ButtonList[0].Button.collidepoint(event.pos):
-                    # Turn button boundary White
-                    self.ButtonList[0].SetBoundaryColor(255,255,255)
+                    # Turn button boundary Black
+                    self.ButtonList[0].SetBoundaryColor(r,g,b)
                     hero =  self.CreateHero("Guerreiro")
                 elif self.ButtonList[1].Button.collidepoint(event.pos):
-                    # Turn button boundary White
-                    self.ButtonList[1].SetBoundaryColor(255,255,255)
+                    # Turn button boundary Black
+                    self.ButtonList[1].SetBoundaryColor(r,g,b)
                     hero =  self.CreateHero("Arqueiro")
                 elif self.ButtonList[2].Button.collidepoint(event.pos):
-                    # Turn button boundary White
-                    self.ButtonList[2].SetBoundaryColor(255,255,255)
+                    # Turn button boundary Black
+                    self.ButtonList[2].SetBoundaryColor(r,g,b)
                     hero =  self.CreateHero("Mago")
+                else:
+                    for button in self.ButtonList:
+                        button.SetBoundaryColor(r,g,b)
+                    #endfor
                 #endif
                 if (hero != None):
                     return hero

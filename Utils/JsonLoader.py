@@ -134,3 +134,11 @@ def GetBoundaryThickness():
     f.close()
     return data['BoundaryThickness']
 #endfunc
+
+def GetActorPosition(id):
+    f = open("Config/CharacterConfig.json")
+    data = json.load(f)
+    f.close()
+    actor = data[f'Actor{id}']
+    return actor
+#endfunc

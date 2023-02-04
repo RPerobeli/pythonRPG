@@ -11,7 +11,10 @@ class GameStateHandler:
         self.State = 'intro_title'
         self.Screen = screen
         self.Title = t.Title(self.Screen)
+        self.DialogBox = DialogBox.DialogBox(self.Screen)
         self.Hero = None
+        self.Monstros = lib.CriaMonstros()
+        self.Armas = lib.CriaArmas()
         
     #endfunc
 
@@ -29,7 +32,7 @@ class GameStateHandler:
         self.Title.RedrawWindow()
         self.Hero = self.Title.Update()
         if(self.Hero!=None):
-            self.inn = Inn.Inn(self.Screen,self.Hero)
+            self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros)
             self.State = "inn"
     #endfunc
     def Inn(self):
