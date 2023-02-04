@@ -23,3 +23,9 @@ def InsertText(text, text_color, x, y, screen, fontName = None, textSize = None)
     img = font.render(text, True, text_color)
     screen.blit(img, (x, y))
 #endfunction
+
+def TransformCenterCoordIntoBorder(img, x,y):
+    x = x - img.Width/2
+    y = y - img.Height/2
+    return (x,y)
+#endfunc

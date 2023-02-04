@@ -1,0 +1,22 @@
+[
+    {
+        "Nome": "Jessie",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Dryad",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Guarda Mágico",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Willhelm",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    }
+]

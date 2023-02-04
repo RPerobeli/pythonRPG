@@ -1,0 +1,108 @@
+
+[
+    {
+        "Nome": "Cao infernal",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Javali",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Orc Guerreiro",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Orc Besteiro",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Orc Bruxo",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo Bandido",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo Larapio",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo Acolito",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo Acolito",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Bandido",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Bandido Atirador",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Guarda Magico",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Guarda Magico de Elite",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Demonio Inferior",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Willhelm",
+        "Classe": "Mago",
+        "isBoss": "True",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    }
+]

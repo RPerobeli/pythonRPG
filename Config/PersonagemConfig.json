@@ -1,0 +1,17 @@
+[
+    {
+        "Classe": "guerreiro",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Classe": "arqueiro",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Classe": "mago",
+        "ImageMultiplier" : 1.3,
+        "needFlip" : "False"
+    }
+]

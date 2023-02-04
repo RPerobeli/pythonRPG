@@ -9,20 +9,42 @@ import Interface.States.GameState as GameState
 class Inn(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None):
         super().__init__(screen)
-        self.BackgroundImage = pygame.image.load(f'{imagePath}/Background/quarto.jpg').convert_alpha()
         imagePath =  jsonL.GetImagePath()
+        self.BackgroundImage = pygame.image.load(f'{imagePath}/Background/quarto.jpg').convert_alpha()
         self.DialogBox = dialogBox
         self.Personagem = personagem
         self.Monstros = monstros
+        self.Actors = []
+        self.Actors.append(personagem)
         self.Npcs = npcs
+        self.Alpha = 0
+        self.Scene = 1
         arq = "Arquivostxt/Introducao.txt"
         lib.SubstituiNomeHeroiNoArquivo(arq, self.Personagem.name)
     #endfunc
 
     def LoadImages(self):
-        ut.InsertBackground(self.BackgroundImage, self.Screen)
-        ut.InsertImage(self.Personagem.Image.File, self.Personagem.Image.Width, self.Personagem.Image.Height, 0,200, self.Screen)
-        ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen)
+        if (self.Scene == 2):
+            actorPos = self.PlaceActors()
+            ut.InsertBackground(self.BackgroundImage, self.Screen)
+            ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen)
+            ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen)
+        elif ((self.Scene == 1)):
+            actorPos = self.PlaceActors()
+            if (self.Alpha <= 255):
+                ut.InsertBackground(self.BackgroundImage, self.Screen,255)
+                ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen,self.Alpha)
+                ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen, self.Alpha)
+                self.Alpha+=1
+            else:    
+                ut.InsertBackground(self.BackgroundImage, self.Screen)
+                ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen)
+                ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen)
+                self.Scene += 1
+            #endif
+        else:
+            print("else")
+        #endif
     #endfunc
 
     def LoadText(self, text):

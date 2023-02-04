@@ -142,3 +142,27 @@ def GetActorPosition(id):
     actor = data[f'Actor{id}']
     return actor
 #endfunc
+
+def GetAllMonsters():
+    f = open("Config/MonsterConfig.json")
+    monster = json.load(f)
+    f.close()
+    return monster
+#endif
+
+def GetAllNpcs():
+    f = open("Config/NpcConfig.json")
+    npc = json.load(f)
+    f.close()
+    return npc
+#endif
+def GetPersonagem(heroClass):
+    f = open("Config/PersonagemConfig.json")
+    data = json.load(f)
+    f.close()
+    for char in data:
+        if char['Classe'] == heroClass.lower():
+            return char
+        #endif
+    #endfor
+#endif

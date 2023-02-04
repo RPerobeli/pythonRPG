@@ -11,10 +11,11 @@ class GameState():
         self.imagePath =  jsonL.GetImagePath()
         self.Screen = screen
         self.NumberOfBtn = 0
+        self.Actors = []
     #endfunc
 
-    def RedrawWindow(self,alpha = 255):
-        self.LoadImages(alpha)
+    def RedrawWindow(self):
+        self.LoadImages()
     #endfunc
 
     def LoadImages(self, alpha = 255):
@@ -23,7 +24,14 @@ class GameState():
 
     def FadeOut(self):
         for alpha in range (255,-1,-5):
+            self.Alpha = alpha
+            self.RedrawWindow(self.Alpha)
+    #endfunc
+
+    def FadeIn(self):
+        for alpha in range (0,256,5):
             self.RedrawWindow(alpha)
+        #endfor
     #endfunc
 
     def CreateButtons(self):
@@ -37,6 +45,15 @@ class GameState():
         for button in self.ButtonList:
             button.Draw()
         #endfor
+    #endfunc
+
+    def PlaceActors(self):
+        returningActPos = {}
+        for i in range (0,len(self.Actors)):
+            actorPos = jsonL.GetActorPosition(i+1)
+            returningActPos[f'x{i}'],returningActPos[f'y{i}'] = ut.TransformCenterCoordIntoBorder(self.Actors[i].Image, actorPos['x'],actorPos['y'])
+        #endfor
+        return returningActPos
     #endfunc
 
 #endclass

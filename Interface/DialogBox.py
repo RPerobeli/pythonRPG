@@ -9,7 +9,7 @@ class DialogBox:
         self.Width = screen.get_width()
         self.Height = 150
         self.alpha = 200
-        self.image = None
+        self.LoadImage()
         self.x= 0
         self.y = screen.get_height()-self.Height
     #endfunc

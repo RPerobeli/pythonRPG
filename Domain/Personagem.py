@@ -18,7 +18,11 @@ class Personagem:
         self.arma = A.Arma(
             "Arma desgastada", 2, "Ataque Especial da Arma Mais Fraca Do Jogo!!!", "arma0")
         self.magias = self.acoes.CriaMagias(self)
-        self.Image = img.Image(self.GetImage(),300,450)
+        imageConfig = jsonL.GetPersonagem(self.classe)
+        self.ImageMultiplier = imageConfig['ImageMultiplier']
+        self.NeedFlip = bool(imageConfig['needFlip'])
+        auxImg = self.GetImage()
+        self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
 
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
