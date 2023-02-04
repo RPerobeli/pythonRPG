@@ -12,6 +12,10 @@ class GameState():
         self.Screen = screen
         self.NumberOfBtn = 0
         self.Actors = []
+        self.Filename = ""
+        self.StoryIndex = 1
+        self.StoryListId = 0
+        self.StoryTextList =[]
     #endfunc
 
     def RedrawWindow(self):
@@ -54,6 +58,12 @@ class GameState():
             returningActPos[f'x{i}'],returningActPos[f'y{i}'] = ut.TransformCenterCoordIntoBorder(self.Actors[i].Image, actorPos['x'],actorPos['y'])
         #endfor
         return returningActPos
+    #endfunc
+
+    def LoadText(self, text):
+        text_color = jsonL.GetSpeakerTextColor()
+        (x,y) = jsonL.GetSpeakerTextPosition()
+        ut.InsertText(text,text_color, x, y, self.Screen)
     #endfunc
 
 #endclass

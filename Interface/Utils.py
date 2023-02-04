@@ -29,3 +29,29 @@ def TransformCenterCoordIntoBorder(img, x,y):
     y = y - img.Height/2
     return (x,y)
 #endfunc
+
+def TransformCenterCoordIntoBorder(img, x,y):
+    x = x - img.Width/2
+    y = y - img.Height/2
+    return (x,y)
+#endfunc
+
+def WrapText(text, wrappedText):
+    substring1,substring2 = get_substring(text, '\n')
+    wrappedText.append(substring1)
+    if(substring2 != ''):
+        wrappedText = WrapText(substring2,wrappedText)
+        return wrappedText
+    else:
+        return wrappedText
+    #endfunc
+#endfunc
+
+def get_substring(text, character):
+    index = text.find(character)
+    if index != -1:
+        return text[:index], text[index+1:]
+    else:
+        return -1,-1
+    #endif
+#endfunc

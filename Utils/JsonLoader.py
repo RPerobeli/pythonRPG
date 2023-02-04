@@ -166,3 +166,19 @@ def GetPersonagem(heroClass):
         #endif
     #endfor
 #endif
+
+def GetStoryQuestion(storyIndex, filename):
+    f = open(f"ArquivoTextoHistorias/{filename}.json",encoding="utf-8")
+    data = json.load(f)
+    f.close()
+    storyTextList = data[f'Q{storyIndex}']
+    return storyTextList
+#endfunc
+
+def GetStoryAnswer(storyIndex, filename, userInput):
+    f = open(f"ArquivoTextoHistorias/{filename}.json",encoding="utf-8")
+    data = json.load(f)
+    f.close()
+    storyTextList = data[f'R{storyIndex}-{userInput}']
+    return storyTextList
+#endfunc

@@ -118,6 +118,14 @@ def ProcuraTexto(ChaveInicio, ChaveFim, arquivoNome, nome, screen):
     # endwith
 # endfunc
 
+def SearchText(fileName, storyIndex, userInput = None):
+    if(userInput != None):
+        return jsonL.GetStoryAnswer(storyIndex,fileName)
+    else:
+        return jsonL.GetStoryQuestion(storyIndex,fileName)
+    # endwith
+# endfunc
+
 def DrawText(text, screen, x,y):
         text_color = jsonL.GetSpeakerTextColor()
         ut.InsertText(text,text_color, x, y, screen)
@@ -141,6 +149,13 @@ def SubstituiNomeHeroiNoArquivo(fileName, nome):
     file = io.open(fileName, "r", encoding="utf8")
     texto = file.read()
     texto.replace("Heroi", nome)
+# endfunc
+
+def ReplaceHeroNameInTextList(storyTextList, heroName):
+    for text in storyTextList:
+        text.replace("Heroi", heroName)
+    #endfor
+    return storyTextList
 # endfunc
 
 

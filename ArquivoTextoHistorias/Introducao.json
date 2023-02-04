@@ -1,0 +1,32 @@
+{
+    "Q1" : [
+        {
+            "txt" : "[Narrador]: Você acorda pela manha, com uma roupa cheia de lama e a cachorra na cama,\n qual é a primeira coisa a fazer?\n1 - Você acaricia a cachorra.\n2 - Você dá um tapa na cachorra.\n3 - Imediatamente rola para o lado e saca sua arma e se prepara para matá-la.\n"
+        }
+    ],
+
+    "R1-1":[
+        {
+            "txt" : "[Narrador]: Ao acarariciar a cachorra, ela põe os dentes à mostra e morde sua mão, revelando ser um cão infernal.\nVocê rola para o lado e saca a sua arma.\n[Aviso]: Você sofreu 2 de dano.\n"
+        },
+        {
+            "txt" : "[Narrador]: Após a luta com o cão dos demônios, você desce as escadas em direção à guilda.\n"
+        }
+    ],
+    "R1-2":[
+        {
+            "txt" : "[Narrador]: A cachorra vazou,e deixou um cheiro infernal na cama...\n"
+        },
+        {
+            "txt" : "[Narrador]: Aparentemente, você não curte cachorras, então se levanta, mexe com as piranhas no corredor, e se dirige à guilda.\n"
+        }
+    ],
+    "R1-3":[
+        {
+            "txt" : "[Narrador]: A cachorra mostra sua verdadeira face, com os dentes à mostra, percebe-se que é um cão infernal que se prepara para combate!\n"
+        },
+        {
+            "txt" : "[Narrador]: Após a luta com o cão dos demônios, você desce as escadas em direção à guilda.\n"
+        }
+    ]
+}

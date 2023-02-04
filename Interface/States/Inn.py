@@ -19,8 +19,7 @@ class Inn(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 0
         self.Scene = 1
-        arq = "Arquivostxt/Introducao.txt"
-        lib.SubstituiNomeHeroiNoArquivo(arq, self.Personagem.name)
+        self.Filename = "Introducao"
     #endfunc
 
     def LoadImages(self):
@@ -29,6 +28,7 @@ class Inn(GameState.GameState):
             ut.InsertBackground(self.BackgroundImage, self.Screen)
             ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen)
             ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen)
+            self.LoadTextWithList(self.StoryTextList[self.StoryListId])
         elif ((self.Scene == 1)):
             actorPos = self.PlaceActors()
             if (self.Alpha <= 255):
@@ -43,7 +43,7 @@ class Inn(GameState.GameState):
                 self.Scene += 1
             #endif
         else:
-            print("else")
+            print("erro ao entrar nas Cenas -> inn.LoadImages()")
         #endif
     #endfunc
 
@@ -53,10 +53,23 @@ class Inn(GameState.GameState):
         ut.InsertText(text,text_color, x, y, self.Screen)
     #endfunc
 
+    def LoadTextWithList(self, textDict):
+        textList = []
+        textList = ut.WrapText(textDict['txt'], textList)
+        text_color = jsonL.GetSpeakerTextColor()
+        (x,y) = jsonL.GetSpeakerTextPosition()
+        vspace = jsonL.GetVerticalSpace()
+        for text in textList:
+            ut.InsertText(text,text_color, x, y, self.Screen)
+            y += vspace
+        #endfor
+    #endfunc
+
 
     def Update(self):
         #Cena tapa na cachorra
         pygame.display.set_caption("Hospedagem")
+        self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
         self.LoadImages()
         #self.LoadText(lib.ProcuraTexto("Q1-ini", "Q1-fim", arq, self.Actors.name,self.Screen))
         for event in pygame.event.get():
