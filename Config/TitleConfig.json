@@ -1,13 +1,13 @@
 {
     "TitleTextSize": 70,
-    "TitleFont": "inkfree",
-    "Title_x": 240,
+    "TitleFont": "Interface/Fonts/Enchanted Land.otf",
+    "Title_x": 280,
     "Title_y": 125,
     "Title_textcolor" : "255,255,255",
 
     "NomeTextPosition":{
         "x" : 480,
-        "y" : 300
+        "y" : 230
     },
 
     "ClasseTextPosition":{
@@ -17,29 +17,29 @@
 
     "EditBoxHeroName":{
         "x" : 330,
-        "y" : 340,
+        "y" : 280,
         "width" : 400,
-        "height" : 50,
+        "height" : 65,
         "color" : "200,200,200"
     },
 
     "Button1":{
         "x" : 330,
-        "y" : 450,
+        "y" : 460,
         "width" : 100,
         "height" : 100,
         "color" : "20,20,20"
     },
     "Button2":{
         "x" : 480,
-        "y" : 450,
+        "y" : 460,
         "width" : 100,
         "height" : 100,
         "color" : "20,20,20"
     },
     "Button3":{
         "x" : 630,
-        "y" : 450,
+        "y" : 460,
         "width" : 100,
         "height" : 100,
         "color" : "20,20,20"

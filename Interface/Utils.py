@@ -19,7 +19,7 @@ def InsertText(text, text_color, x, y, screen, fontName = None, textSize = None)
     if(textSize == None):
         textSize = jsonL.GetTextSize()
     #endif
-    font = pygame.font.SysFont(fontName, textSize)
+    font = pygame.font.Font(fontName, textSize)
     img = font.render(text, True, text_color)
     screen.blit(img, (x, y))
 #endfunction
@@ -52,6 +52,6 @@ def get_substring(text, character):
     if index != -1:
         return text[:index], text[index+1:]
     else:
-        return -1,-1
+        return '',''
     #endif
 #endfunc
