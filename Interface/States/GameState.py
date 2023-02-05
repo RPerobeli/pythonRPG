@@ -16,26 +16,48 @@ class GameState():
         self.StoryIndex = 1
         self.StoryListId = 0
         self.StoryTextList =[]
+        self.DialogBox = None
+        self.isQuestion = True
     #endfunc
 
     def RedrawWindow(self):
-        self.LoadImages()
+        self.ScenesManager()
     #endfunc
 
-    def LoadImages(self, alpha = 255):
+    def ScenesManager(self, alpha = 255):
         print("não há imagens - método virtual")
     #endfunc
 
-    def FadeOut(self):
-        for alpha in range (255,-1,-5):
-            self.Alpha = alpha
-            self.RedrawWindow(self.Alpha)
+    def LoadImages(self, actorPos):
+        ut.InsertBackground(self.BackgroundImage, self.Screen)
+        ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen)
+        if(len(self.Actors) > 1):
+            ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen,self.Alpha)
+        #endif
+        ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen)
+        #endif
     #endfunc
 
-    def FadeIn(self):
-        for alpha in range (0,256,5):
-            self.RedrawWindow(alpha)
-        #endfor
+    def FadeOut(self, actorPos):
+        ut.InsertBackground(self.BackgroundImage, self.Screen,255)
+        ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen,self.Alpha)
+        if(self.Actors[1] != None):
+            ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen,self.Alpha)
+        #endif
+        ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen, self.Alpha)
+        self.Alpha-=1
+        #endif
+    #endfunc
+
+    def FadeIn(self, actorPos):
+        ut.InsertBackground(self.BackgroundImage, self.Screen,255)
+        ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen,self.Alpha)
+        if(len(self.Actors) > 1):
+            ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen,self.Alpha)
+        #endif
+        ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen, self.Alpha)
+        self.Alpha+=1
+        #endif
     #endfunc
 
     def CreateButtons(self):
@@ -64,6 +86,34 @@ class GameState():
         text_color = jsonL.GetSpeakerTextColor()
         (x,y) = jsonL.GetSpeakerTextPosition()
         ut.InsertText(text,text_color, x, y, self.Screen)
+    #endfunc
+
+    def LoadTextWithList(self, textDict):
+        textList = []
+        textList = ut.WrapText(textDict['txt'], textList)
+        text_color = jsonL.GetSpeakerTextColor()
+        (x,y) = jsonL.GetSpeakerTextPosition()
+        vspace = jsonL.GetVerticalSpace()
+        for text in textList:
+            ut.InsertText(text,text_color, x, y, self.Screen)
+            y += vspace
+        #endfor
+    #endfunc
+
+    def VerifyBattle(self):
+        if(self.StoryTextList[self.StoryListId]['txt'].lower() == "battle1"):
+            print("criar tela de batalha")
+        #endif
+    #endif
+
+    def SearchAnswerByUserInput(self, userInput):
+        if(self.StoryListId == len(self.StoryTextList)-1 and self.isQuestion):
+            self.isQuestion = False
+            self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex,userInput)
+            self.StoryListId = 0
+        else:
+            print("vc tem demencia?")
+        #endif
     #endfunc
 
 #endclass

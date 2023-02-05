@@ -7,7 +7,10 @@
 
     "R1-1":[
         {
-            "txt" : "[Narrador]: Ao acarariciar a cachorra, ela põe os dentes à mostra e morde sua mão, revelando ser um cão infernal.\nVocê rola para o lado e saca a sua arma.\n[Aviso]: Você sofreu 2 de dano.\n"
+            "txt" : "[Narrador]: Ao acarariciar a cachorra, ela põe os dentes à mostra e morde sua mão,\nrevelando ser um cão infernal.Você rola para o lado e saca a sua arma.\n[Aviso]: Você sofreu 2 de dano.\n"
+        },
+        {
+            "txt" : "battle1\n"
         },
         {
             "txt" : "[Narrador]: Após a luta com o cão dos demônios, você desce as escadas em direção à guilda.\n"
@@ -18,7 +21,7 @@
             "txt" : "[Narrador]: A cachorra vazou,e deixou um cheiro infernal na cama...\n"
         },
         {
-            "txt" : "[Narrador]: Aparentemente, você não curte cachorras, então se levanta, mexe com as piranhas no corredor, e se dirige à guilda.\n"
+            "txt" : "[Narrador]: Aparentemente, você não curte cachorras, então se levanta, mexe com as piranhas no corredor,\ne se dirige à guilda.\n"
         }
     ],
     "R1-3":[
@@ -26,7 +29,18 @@
             "txt" : "[Narrador]: A cachorra mostra sua verdadeira face, com os dentes à mostra, percebe-se que é um cão infernal que se prepara para combate!\n"
         },
         {
+            "txt" : "battle1\n"
+        },
+        {
             "txt" : "[Narrador]: Após a luta com o cão dos demônios, você desce as escadas em direção à guilda.\n"
+        }
+    ],
+    "Q2" : [
+        {
+            "txt" : "[Narrador]: Indo em direção a praça da cidade, você avista, em meio à nevasca,\n o prédio da guilda Asas da Liberdade, uma guilda famosa em todo o continente.\n Após sentar-se em uma mesa na taverna da guilda, a taverneira vem ao seu encontro.\n"
+        },
+        {
+            "txt" : "[Taverneira]: Bom dia, senhor, aceita uma bebida e uma boa refeição da casa?\n1 - Oh, uma oferta irrecusável, pode trazer a melhor cerveja da casa por favor.\n2 - Então, senhorita, no momento estou duro, não tenho 1 prata sequer...\n3 - Ficar calado e deixar seu shape falar por ti.\n"
         }
     ]
 }

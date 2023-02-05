@@ -22,68 +22,77 @@ class Inn(GameState.GameState):
         self.Filename = "Introducao"
     #endfunc
 
-    def LoadImages(self):
+    def ScenesManager(self):
         if (self.Scene == 2):
             actorPos = self.PlaceActors()
-            ut.InsertBackground(self.BackgroundImage, self.Screen)
-            ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen)
-            ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen)
+            self.LoadImages(actorPos)
             self.LoadTextWithList(self.StoryTextList[self.StoryListId])
         elif ((self.Scene == 1)):
             actorPos = self.PlaceActors()
             if (self.Alpha <= 255):
-                ut.InsertBackground(self.BackgroundImage, self.Screen,255)
-                ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen,self.Alpha)
-                ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen, self.Alpha)
-                self.Alpha+=1
+                self.FadeIn(actorPos)
             else:    
-                ut.InsertBackground(self.BackgroundImage, self.Screen)
-                ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen)
-                ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen)
+                self.LoadImages(actorPos)
                 self.Scene += 1
             #endif
         else:
-            print("erro ao entrar nas Cenas -> inn.LoadImages()")
+            print("erro ao entrar nas Cenas -> inn.ScenesManager()")
+
+    def LoadImages(self, actorPos):
+        ut.InsertBackground(self.BackgroundImage, self.Screen)
+        ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen)
+        if(len(self.Actors) > 1):
+            ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen,self.Alpha)
+                #endif
+        ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen)
         #endif
     #endfunc
 
-    def LoadText(self, text):
-        text_color = jsonL.GetSpeakerTextColor()
-        (x,y) = jsonL.GetSpeakerTextPosition()
-        ut.InsertText(text,text_color, x, y, self.Screen)
-    #endfunc
-
-    def LoadTextWithList(self, textDict):
-        textList = []
-        textList = ut.WrapText(textDict['txt'], textList)
-        text_color = jsonL.GetSpeakerTextColor()
-        (x,y) = jsonL.GetSpeakerTextPosition()
-        vspace = jsonL.GetVerticalSpace()
-        for text in textList:
-            ut.InsertText(text,text_color, x, y, self.Screen)
-            y += vspace
-        #endfor
-    #endfunc
-
+    
 
     def Update(self):
         #Cena tapa na cachorra
         pygame.display.set_caption("Hospedagem")
-        self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
-        self.LoadImages()
-        #self.LoadText(lib.ProcuraTexto("Q1-ini", "Q1-fim", arq, self.Actors.name,self.Screen))
+        if(self.Scene == 1):
+            self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
+        #endif
+        self.ScenesManager()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
             #endif
             if (event.type == pygame.KEYDOWN and event.key == pygame.K_KP_ENTER):
-                pygame.quit()
-                sys.exit()
+                if(self.StoryListId == len(self.StoryTextList)-1):
+                    if(self.isQuestion):
+                        print("Ta com pressa irmao? para de pular os dialogos.")
+                    else:
+                        self.isQuestion = True
+                        self.StoryIndex += 1 
+                        self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
+                        self.StoryListId = 0 
+                else:
+                    self.StoryListId += 1
+                    self.VerifyBattle()
+                #endif
+            #endif
+            if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
+                self.SearchAnswerByUserInput(1)
+                if(self.StoryIndex == 1):
+                    self.Actors.append(lib.GetMonstro(self.Monstros,"Cao Infernal"))
+                #endif
+            #endif
+            if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
+                self.SearchAnswerByUserInput(2)
+            #endif
+            if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
+                self.SearchAnswerByUserInput(3)
+                if(self.StoryIndex == 1):
+                    self.Actors.append(lib.GetMonstro(self.Monstros,"Cao Infernal"))
+                #endif
             #endif
         #endfor
         pygame.display.update()
-
     #endFunction
 
 #endclass

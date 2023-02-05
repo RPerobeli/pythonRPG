@@ -24,7 +24,7 @@ class Title(GameState.GameState):
         
     #endfunc
 
-    def LoadImages(self, alpha = 255):
+    def ScenesManager(self, alpha = 255):
         ut.InsertBackground(self.BackgroundImage, self.Screen, alpha)
         if(self.count==1):
             self.LoadTitle("D&D DA DEEPWEP")

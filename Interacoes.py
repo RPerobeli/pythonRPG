@@ -120,7 +120,7 @@ def ProcuraTexto(ChaveInicio, ChaveFim, arquivoNome, nome, screen):
 
 def SearchText(fileName, storyIndex, userInput = None):
     if(userInput != None):
-        return jsonL.GetStoryAnswer(storyIndex,fileName)
+        return jsonL.GetStoryAnswer(storyIndex,fileName, userInput)
     else:
         return jsonL.GetStoryQuestion(storyIndex,fileName)
     # endwith

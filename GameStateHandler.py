@@ -38,6 +38,9 @@ class GameStateHandler:
     def Inn(self):
         print("inn")
         self.inn.RedrawWindow()
-        self.inn.Update()
+        state =self.inn.Update()
+        if(state != None):
+            self.State = state
+        #endif
     #endfunc
 #endclass
