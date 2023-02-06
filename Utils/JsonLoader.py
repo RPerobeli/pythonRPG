@@ -182,3 +182,12 @@ def GetStoryAnswer(storyIndex, filename, userInput):
     storyTextList = data[f'R{storyIndex}-{userInput}']
     return storyTextList
 #endfunc
+
+
+def GetSoundFXOrMusic(filename):
+    f = open(f"Sound/{filename}.json",encoding="utf-8")
+    data = json.load(f)
+    f.close()
+    return data
+#endfunc
+

@@ -5,6 +5,7 @@ import Utils.JsonLoader as jsonL
 import Interface.BattleWindow as bw
 import Interacoes as lib
 import Interface.Button as btn
+import Sound
 
 class GameState():
     def __init__(self, screen):
@@ -18,6 +19,8 @@ class GameState():
         self.StoryTextList =[]
         self.DialogBox = None
         self.isQuestion = True
+        self.FX = Sound.fxCreator()
+        self.Music = Sound.musicCreator()
     #endfunc
 
     def RedrawWindow(self):
