@@ -2,7 +2,6 @@
 import pygame
 from Interface.States import Inn
 from Interface import DialogBox
-import pygame
 import sys
 from Domain import Heroi as heroi
 import Interacoes as lib

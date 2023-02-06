@@ -100,11 +100,6 @@ class GameState():
         #endfor
     #endfunc
 
-    def VerifyBattle(self):
-        if(self.StoryTextList[self.StoryListId]['txt'].lower() == "battle1"):
-            print("criar tela de batalha")
-        #endif
-    #endif
 
     def SearchAnswerByUserInput(self, userInput):
         if(self.StoryListId == len(self.StoryTextList)-1 and self.isQuestion):

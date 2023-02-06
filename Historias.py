@@ -24,7 +24,7 @@ def Intro(Heroi):
         lib.ProcuraTexto("R1-1-ini", "R1-1-p1", arq, Heroi.name)
         lib.LimpaConsole()
         Heroi.HP -= 2
-        lib.Combate(Heroi, lib.GetMonstro(monstros, "Cao infernal"))
+        lib.Combate(Heroi, lib.GetMonstro(monstros, "Cao Infernal"))
         lib.ProcuraTexto("R1-1-p1", "R1-1-fim", arq, Heroi.name)
     elif(int(resp) == 2):
         lib.ProcuraTexto("R1-2-ini", "R1-2-fim", arq, Heroi.name)
@@ -32,7 +32,7 @@ def Intro(Heroi):
     elif(int(resp) == 3):
         lib.ProcuraTexto("R1-3-ini", "R1-3-p1", arq, Heroi.name)
         lib.LimpaConsole()
-        lib.Combate(Heroi, lib.GetMonstro(monstros, "Cao infernal"))
+        lib.Combate(Heroi, lib.GetMonstro(monstros, "Cao Infernal"))
         lib.ProcuraTexto("R1-3-p1", "R1-3-fim", arq, Heroi.name)
 
     lib.LimpaConsole()

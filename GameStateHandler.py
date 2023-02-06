@@ -23,6 +23,10 @@ class GameStateHandler:
             self.IntroTitle()
         if(self.State == "inn"):
             self.Inn()
+        if(self.State == "caminhoTeofilo"):
+            self.ViagemTeofilotoni()
+        if(self.State == "caravana"):
+            self.Caravana()
         #endif
     #endfunc
 
@@ -38,9 +42,16 @@ class GameStateHandler:
     def Inn(self):
         print("inn")
         self.inn.RedrawWindow()
-        state =self.inn.Update()
+        self.Hero,state = self.inn.Update()
         if(state != None):
             self.State = state
         #endif
+    #endfunc
+
+    def Caravana(self):
+        print('caravana')
+    #endfunc
+    def ViagemTeofilotoni(self):
+        print('caminhoTeofilo')
     #endfunc
 #endclass

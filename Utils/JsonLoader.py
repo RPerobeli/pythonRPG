@@ -129,7 +129,7 @@ def GetClassePosition():
     return pos
 #endfunc
 def GetBoundaryThickness():
-    f = open("Config/Config.json")
+    f = open("Config/config.json")
     data = json.load(f)
     f.close()
     return data['BoundaryThickness']
