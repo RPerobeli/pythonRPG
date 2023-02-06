@@ -1,13 +1,13 @@
 import pygame
 import sys
-import Interface.Utils as ut
+import Interface.InterfaceUtils as ut
 import Utils.JsonLoader as jsonL
 import Interface.BattleWindow as bw
 import Interface.Button as btn
 import Interacoes as lib
 import Interface.States.GameState as GameState
 import Domain.Personagem as Personagem
-import Sound 
+import Interface.Sound as Sound 
 
 
 
@@ -77,12 +77,10 @@ class Title(GameState.GameState):
         pygame.display.set_caption("Título")
         for event in pygame.event.get():
             #NAO MEXER NO VALOR DO TICKS -> XGH: FUNCIONA NAO RELA
-            pygame.time.wait(int(musicOpening.get_length() * 1000))
             if(pygame.time.get_ticks()>=500 and self.count == 0):
-                music = Sound.musicCreator()
-                musicOpening = music["opening"]
-                musicOpening.play()
-                pygame.time.wait(int(musicOpening.get_length() * 1000))
+                musicOpening = self.Sound.MusicDict["opening"]
+                if(not musicOpening.get_busy()):
+                    musicOpening.play()
                 self.BackgroundImage = pygame.Surface((self.Screen.get_width(), self.Screen.get_height()))
                 self.BackgroundImage.fill((45,45,45))
                 self.BackgroundImage.set_alpha(255)

@@ -9,7 +9,7 @@ import os
 import platform
 import Interacoes as lib
 import Utils.JsonLoader as jsonL
-import Interface.Utils as ut
+import Interface.InterfaceUtils as ut
 
 
 def ConfereClasses(listaDeClasses, classeDesejada):

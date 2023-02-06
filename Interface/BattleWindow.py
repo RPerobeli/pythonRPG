@@ -1,5 +1,5 @@
 import pygame
-import Interface.Utils as ut
+import Interface.InterfaceUtils as ut
 import Utils.JsonLoader as jsonL
 
 class BattleWindow:

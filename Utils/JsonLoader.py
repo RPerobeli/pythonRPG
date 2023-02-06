@@ -185,9 +185,16 @@ def GetStoryAnswer(storyIndex, filename, userInput):
 
 
 def GetSoundFXOrMusic(filename):
-    f = open(f"Sound/{filename}.json",encoding="utf-8")
+    f = open(f"Interface/Sound/{filename}.json",encoding="utf-8")
     data = json.load(f)
     f.close()
     return data
+#endfunc
+
+def GetSoundPath():
+    f = open("Config/Config.json")
+    data = json.load(f)
+    f.close()
+    return data['SoundPath']
 #endfunc
 
