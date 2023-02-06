@@ -79,8 +79,7 @@ class Title(GameState.GameState):
             #NAO MEXER NO VALOR DO TICKS -> XGH: FUNCIONA NAO RELA
             if(pygame.time.get_ticks()>=500 and self.count == 0):
                 musicOpening = self.Sound.MusicDict["opening"]
-                if(not musicOpening.get_busy()):
-                    musicOpening.play()
+                musicOpening.play()
                 self.BackgroundImage = pygame.Surface((self.Screen.get_width(), self.Screen.get_height()))
                 self.BackgroundImage.fill((45,45,45))
                 self.BackgroundImage.set_alpha(255)
