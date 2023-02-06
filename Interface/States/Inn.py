@@ -72,7 +72,7 @@ class Inn(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "perde 2 de hp\n"):
             self.Personagem.HP -= 2
-            self.StoryListId += 2
+            self.StoryListId += 1
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "removerCachorra\n"):
@@ -84,7 +84,7 @@ class Inn(GameState.GameState):
         if(self.StoryTextList[self.StoryListId]['txt'] == "inserirCachorra\n"):
             print("inseriu a cachorra")
             self.Actors.append(lib.GetMonstro(self.Monstros,"Cao Infernal"))
-            self.StoryListId += 2
+            self.StoryListId += 1
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundCidade\n"):
@@ -94,8 +94,9 @@ class Inn(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneira\n"):
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/guild.png').convert_alpha()
             print('inserir taverneira')
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/guild.png').convert_alpha()
+            self.Actors.append(lib.GetNpc(self.Npcs,"Jessie"))
             self.StoryListId += 1
             return
         #endif
@@ -126,6 +127,7 @@ class Inn(GameState.GameState):
                         #endif
                         self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
                         self.StoryListId = 0 
+                        self.VerifyEvent()
                 else:
                     self.StoryListId += 1
                     self.VerifyEvent()

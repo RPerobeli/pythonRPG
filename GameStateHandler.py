@@ -3,6 +3,7 @@ from Interface.States import Inn
 from Interface.States import Title as t
 from Interface import DialogBox
 from Interface import BattleWindow as bw
+from Utils import JsonLoader as jsonL
 import copy as cp
 import Interacoes as lib
 
@@ -13,8 +14,9 @@ class GameStateHandler:
         self.Title = t.Title(self.Screen)
         self.DialogBox = DialogBox.DialogBox(self.Screen)
         self.Hero = None
-        self.Monstros = lib.CriaMonstros()
+        self.Monstros = lib.CreateMonsters()
         self.Armas = lib.CriaArmas()
+        self.Npcs = lib.CreateNpcs()
         
     #endfunc
 
@@ -36,7 +38,7 @@ class GameStateHandler:
         self.Title.RedrawWindow()
         self.Hero = self.Title.Update()
         if(self.Hero!=None):
-            self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros)
+            self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
             self.State = "inn"
     #endfunc
     def Inn(self):

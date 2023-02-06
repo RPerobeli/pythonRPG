@@ -1,6 +1,13 @@
 
 [
     {
+        "Nome": "erro",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
         "Nome": "Cao Infernal",
         "Classe": "Guerreiro",
         "isBoss": "True",

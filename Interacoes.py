@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from Domain import Heroi as bnc
 from Domain import Monstro as mstr
+from Domain import Npc
 from Domain import Arma as a
 import sys
 import random as rnd
@@ -28,6 +29,15 @@ def CriaMonstros():
         listaMonstros.append(monstro)
     return listaMonstros
 # endfunc
+def CreateMonsters():
+    monsterConfig  = jsonL.GetAllMonstersConfig()
+    listMonsters = []
+    for monster in monsterConfig:
+        monsterObj = mstr.Monstro(monster["Nome"],monster["Classe"],monster["isBoss"])
+        listMonsters.append(monsterObj)
+    #endfor
+    return listMonsters
+# endfunc
 
 
 def CriaArmas():
@@ -39,6 +49,17 @@ def CriaArmas():
             a.Arma(valores[1], valores[2], valores[3].strip(), valores[0]))
     return listaArmas
 # endfunc
+
+def CreateNpcs():
+    npcs  = jsonL.GetAllNpcs()
+    listNpcs = []
+    for npc in npcs:
+        npcObject = Npc.Npc(npc["Nome"])
+        listNpcs.append(npcObject)
+    #endfor
+    return listNpcs
+# endfunc
+
 
 
 def GetMonstro(listaMonstros, nome):
@@ -56,6 +77,14 @@ def GetArma(listaArmas, tag):
             return arma
     print("arma não encontrada")
     return listaArmas[0]
+# endfunc
+
+def GetNpc(listNpc, npcName):
+    for npc in listNpc:
+        if(npc.name.lower() == npcName.lower()):
+            return npc
+    print("npc nao encontrado")
+    return listNpc[0]
 # endfunc
 
 

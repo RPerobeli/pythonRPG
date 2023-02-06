@@ -1,7 +1,12 @@
 [
     {
+        "Nome": "erro",
+        "ImageMultiplier" : 0,
+        "needFlip" : "False"
+    },
+    {
         "Nome": "Jessie",
-        "ImageMultiplier" : 1,
+        "ImageMultiplier" : 0.8,
         "needFlip" : "False"
     },
     {
@@ -10,12 +15,17 @@
         "needFlip" : "False"
     },
     {
-        "Nome": "Guarda Mágico",
+        "Nome": "Guarda Magico",
         "ImageMultiplier" : 1,
         "needFlip" : "False"
     },
     {
         "Nome": "Willhelm",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Mago Anciao",
         "ImageMultiplier" : 1,
         "needFlip" : "False"
     }

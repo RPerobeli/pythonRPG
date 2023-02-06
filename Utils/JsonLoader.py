@@ -143,7 +143,7 @@ def GetActorPosition(id):
     return actor
 #endfunc
 
-def GetAllMonsters():
+def GetAllMonstersConfig():
     f = open("Config/MonsterConfig.json")
     monster = json.load(f)
     f.close()

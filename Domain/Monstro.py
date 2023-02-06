@@ -20,7 +20,10 @@ class Monstro():
         self.magias = self.acoes.CriaMagias(self)
         self.isMonstro = True
         self.isBoss = isBoss
-        self.Image = img.Image(self.GetImageByMonsterName(),300,450)
+        config = self.GetConfigFromList(nome)
+        self.ImageMultiplier = config["ImageMultiplier"]
+        auxImg =  self.GetImageByMonsterName()
+        self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
 
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
@@ -45,6 +48,12 @@ class Monstro():
             print("Erro no construtor")
         # endif
         self.AtualizaStatus()
+
+    def GetConfigFromList(self, name):
+        monsterConfig = jsonL.GetAllMonstersConfig()
+        for config in monsterConfig:
+            if(config["Nome"] == name):
+                return config
     # endfunc
 
     def GetImageByMonsterName(self):
