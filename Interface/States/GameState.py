@@ -24,7 +24,7 @@ class GameState():
         self.ScenesManager()
     #endfunc
 
-    def ScenesManager(self, alpha = 255):
+    def ScenesManager(self):
         print("não há imagens - método virtual")
     #endfunc
 
@@ -37,6 +37,7 @@ class GameState():
         ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen)
         #endif
     #endfunc
+
 
     def FadeOut(self, actorPos):
         ut.InsertBackground(self.BackgroundImage, self.Screen,255)

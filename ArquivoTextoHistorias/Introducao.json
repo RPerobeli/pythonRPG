@@ -38,7 +38,7 @@
             "txt" : "inserirCachorra\n"
         },
         {
-            "txt" : "[Narrador]: A cachorra mostra sua verdadeira face, com os dentes à mostra, percebe-se que é um cão infernal que se prepara para combate!\n"
+            "txt" : "[Narrador]: A cachorra mostra sua verdadeira face, com os dentes à mostra,\npercebe-se que é um cão infernal que se prepara para combate!\n"
         },
         {
             "txt" : "battleCachorra\n"

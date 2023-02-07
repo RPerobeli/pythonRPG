@@ -39,18 +39,8 @@ class Inn(GameState.GameState):
             #endif
         else:
             print("erro ao entrar nas Cenas -> inn.ScenesManager()")
-
-    def LoadImages(self, actorPos):
-        ut.InsertBackground(self.BackgroundImage, self.Screen)
-        ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen)
-        if(len(self.Actors) > 1):
-            ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen,self.Alpha)
-                #endif
-        ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen)
         #endif
     #endfunc
-
-
 
     def SelectNextStory(self):
         if(self.Personagem.classe.lower() == 'guerreiro'):
@@ -67,30 +57,40 @@ class Inn(GameState.GameState):
     def VerifyEvent(self):
         print('verificou possiveis eventos')
         if(self.StoryTextList[self.StoryListId]['txt'] == "battleCachorra\n"):
-            print("criar tela de batalha")
-            return
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Cao Infernal"), "quarto")
+            self.Personagem, isFinished = battleWindow.Battle()
+            if(isFinished):
+                self.StoryListId += 1
+                self.VerifyEvent()
+                return
+            else:
+                print("DEU RUIM NA BATALHA")
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "perde 2 de hp\n"):
             self.Personagem.HP -= 2
             self.StoryListId += 1
+            self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "removerCachorra\n"):
             print("removeu a cachorra")
             self.Actors.pop(1)
             self.StoryListId += 1
+            self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "inserirCachorra\n"):
             print("inseriu a cachorra")
             self.Actors.append(lib.GetMonstro(self.Monstros,"Cao Infernal"))
             self.StoryListId += 1
+            self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundCidade\n"):
             print('inseriu background')
             self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/SnowyCity.png').convert_alpha()
             self.StoryListId += 1
+            self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneira\n"):
@@ -98,6 +98,13 @@ class Inn(GameState.GameState):
             self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/guild.png').convert_alpha()
             self.Actors.append(lib.GetNpc(self.Npcs,"Jessie"))
             self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "perder10hp\n"):
+            self.Personagem.HP -= 10
+            self.StoryListId += 1
+            self.VerifyEvent()
             return
         #endif
         

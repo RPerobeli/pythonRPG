@@ -3,7 +3,6 @@ import pygame
 import Utils.JsonLoader as jsonL
 import Interface.Img.Image as img
 
-
 class Npc():
     # Constructor
     def __init__(self, nome):
@@ -11,6 +10,9 @@ class Npc():
         config = self.GetConfigFromList(nome)
         self.ImageMultiplier = config["ImageMultiplier"]
         auxImg =  self.GetImageByNpcName()
+        if(config["needFlip"] == "True"):
+            auxImg = pygame.transform.flip(auxImg, True, False)
+        #endif
         self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
     #endfunc
 

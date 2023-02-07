@@ -5,7 +5,6 @@ from Domain import Acao as Acao
 import Domain.Arma as A
 import Interface.Img.Image as img
 
-
 class Monstro():
     # Constructor
     def __init__(self, nome, classe, isBoss):
@@ -23,6 +22,9 @@ class Monstro():
         config = self.GetConfigFromList(nome)
         self.ImageMultiplier = config["ImageMultiplier"]
         auxImg =  self.GetImageByMonsterName()
+        if(config["needFlip"] == "True"):
+            auxImg = pygame.transform.flip(auxImg, True, False)
+        #endif
         self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
 
         if(self.classe.lower() == "guerreiro"):
