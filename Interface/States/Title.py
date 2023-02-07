@@ -76,6 +76,7 @@ class Title(GameState.GameState):
 
         pygame.display.set_caption("Título")
         for event in pygame.event.get():
+            musicOpening = self.Sound.MusicDict["opening"]
             #NAO MEXER NO VALOR DO TICKS -> XGH: FUNCIONA NAO RELA
             if(pygame.time.get_ticks()>=500 and self.count == 0):
                 musicOpening = self.Sound.MusicDict["opening"]
@@ -132,6 +133,7 @@ class Title(GameState.GameState):
                     #endfor
                 #endif
                 if (hero != None):
+                    musicOpening.stop()
                     return hero
                 #endif
             #endif
