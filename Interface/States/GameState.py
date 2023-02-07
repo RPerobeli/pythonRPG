@@ -89,11 +89,13 @@ class GameState():
         ut.InsertText(text,text_color, x, y, self.Screen)
     #endfunc
 
-    def LoadTextWithList(self, textDict):
+    def LoadTextWithList(self, textDict, x = None, y = None):
         textList = []
         textList = ut.WrapText(textDict['txt'], textList)
         text_color = jsonL.GetSpeakerTextColor()
-        (x,y) = jsonL.GetSpeakerTextPosition()
+        if(x == None or y == None):
+            (x,y) = jsonL.GetSpeakerTextPosition()
+        #endif
         vspace = jsonL.GetVerticalSpace()
         for text in textList:
             ut.InsertText(text,text_color, x, y, self.Screen)

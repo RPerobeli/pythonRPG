@@ -182,3 +182,10 @@ def GetStoryAnswer(storyIndex, filename, userInput):
     storyTextList = data[f'R{storyIndex}-{userInput}']
     return storyTextList
 #endfunc
+
+def GetOptions():
+    f = open(f"Config/BattleTextConfig.json",encoding="utf-8")
+    data = json.load(f)
+    f.close()
+    return data
+#endfunc
