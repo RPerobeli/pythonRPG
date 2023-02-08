@@ -2,6 +2,7 @@ import pygame
 import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
 import Interface.States.GameState as GameState
+from Interface import BattleWindowSpells as bws
 import Interacoes as lib
 class BattleWindow(GameState.GameState):
     def __init__(self,screen, dialogBox,personagem, monster, bgName):
@@ -19,6 +20,7 @@ class BattleWindow(GameState.GameState):
         self.isOptions = True
         self.isSelectingSpell = False
         self.SpellsList = jsonL.GetSpells(self.Personagem.classe)
+        self.SpellsWindow = bws.BattleWindowSpells()
     #endfunc
 
 

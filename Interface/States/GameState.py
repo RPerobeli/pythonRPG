@@ -2,7 +2,7 @@ import pygame
 import sys
 import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
-import Interface.BattleWindow as bw
+from Interface import BattleWindow as bw
 import Interacoes as lib
 import Interface.Button as btn
 
