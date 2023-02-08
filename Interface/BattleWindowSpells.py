@@ -4,12 +4,15 @@ import Utils.JsonLoader as jsonL
 import Interface.States.GameState as GameState
 import Interacoes as lib
 class BattleWindow(GameState.GameState):
-    def __init__(self,screen, dialogBox,actors, bgName):
+    def __init__(self,screen, dialogBox,personagem, monster, bgName):
         super().__init__(screen)
         imagePath =  jsonL.GetImagePath()
         self.DialogBox = dialogBox
         self.BackgroundImage = pygame.image.load(f'{imagePath}/Background/{bgName}.jpg').convert_alpha()
-        self.Actors = actors
+        self.Actors.append(personagem)
+        self.Personagem = personagem
+        self.Monster = monster
+        self.Actors.append(monster)
         self.Scene = 1
         self.Alpha = 255
         self.BattleText = {}
@@ -51,10 +54,7 @@ class BattleWindow(GameState.GameState):
                     inBattle = False
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
-                    self.isOptions = False
-                    atkType = 1
-                    dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster,turnCounter)
-                    self.PrintDmg(dano, self.Personagem)
+                    return self.Personagem.magias['Key']
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
                     self.isOptions = False
@@ -66,24 +66,9 @@ class BattleWindow(GameState.GameState):
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
                     if(self.isOptions):
                         self.isSelectingSpell = True
-                        self.LoadUsableSpells()
-
-
-
-                    
+                        self.LoadUsableSpells() 
                 #endif
             #endfor
-            if(self.Personagem.HP <= 0):
-                self.Scene = 2
-            elif(self.Monster.HP <= 0):
-                print(f"O {self.Monster.name} foi capinado.\n")
-                self.Personagem.XP += lib.XP(self.Monster.lvl)
-                if(self.Personagem.XP >= 100):
-                    self.Personagem.LvlUP()
-                else:
-                    print("XP: " + str(self.Personagem.XP)+'/' + str(100)+"\n")
-                #endif
-            #endif
             pygame.display.update()
         #endwhile
     #endFunction
