@@ -189,3 +189,10 @@ def GetOptions():
     f.close()
     return data
 #endfunc
+
+def GetSpells(classe):
+    f = open(f"Config/Spells.json",encoding="utf-8")
+    data = json.load(f)
+    f.close()
+    return data[classe.lower()]
+#endfunc

@@ -7,6 +7,7 @@ import os
 class Acao:
 
     def Atk(self, personagem, atkType, target, Ribamar):  # Ribamar == turnCounter
+        self.isCrit = False
         if(personagem.classe.lower() == "guerreiro"):
             if(atkType == 1):
                 dano = personagem.arma.danoBase * \
@@ -14,17 +15,18 @@ class Acao:
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
+                return dano
             elif(atkType == 2):
                 dano = 2*personagem.arma.danoBase * \
                     personagem.skills["str"] + personagem.skills["vit"]
                 dano = self.AcertoCritico(dano, personagem)
                 if(not personagem.isMonstro):
                     print(personagem.arma.textoAtkEspecial)
-                    print()
                 # endif
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
                 personagem.HP -= 0.2*personagem.HPmax
+                return dano
             elif(atkType == 3):
                 if(Ribamar == 1):
                     magiaEscolhida = personagem.acoes.SelectMagia(personagem)
@@ -42,6 +44,7 @@ class Acao:
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
                     personagem.MP -= magiaEscolhida.cost
+                    return dano
                 # endif
             elif(atkType == 4):
                 self.Curar(personagem)
@@ -59,6 +62,7 @@ class Acao:
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
+                return dano
             elif(atkType == 2):
                 if(lib.NaoTemMana(personagem, 0.3*personagem.MPmax)):
                     print("Mana insuficiente.")
@@ -70,6 +74,7 @@ class Acao:
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
                     personagem.MP -= 0.3*personagem.MPmax
+                    return dano
                 # endif
             elif(atkType == 3):
                 magiaEscolhida = personagem.acoes.SelectMagia(personagem)
@@ -83,6 +88,7 @@ class Acao:
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
+                    return dano
                 # endif
             elif(atkType == 4):
                 self.Curar(personagem)
@@ -99,6 +105,7 @@ class Acao:
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
+                return dano
             elif(atkType == 2):
                 if(lib.NaoTemMana(personagem, 0.5*personagem.MPmax)):
                     print("Mana insuficiente.")
@@ -110,6 +117,7 @@ class Acao:
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
                     personagem.MP -= 0.5*personagem.MPmax
+                    return dano
                 # endif
             elif(atkType == 3):
                 magiaEscolhida = personagem.acoes.SelectMagia(personagem)
@@ -124,6 +132,7 @@ class Acao:
                     print(personagem.name+" causou "+str(dano) + " de dano!")
                     target.HP -= dano
                     personagem.MP -= magiaEscolhida.cost
+                    return dano
                 # endif
             elif(atkType == 4):
                 self.Curar(personagem)
@@ -191,6 +200,7 @@ class Acao:
     def AcertoCritico(self, dano, personagem):
         crit = rnd.randint(1, 5)
         if(crit == 1):
+            self.isCrit = True
             print("ACERTO CRÍTICO!!!")
             if(personagem.isMonstro):
                 return (int((1.1+(0.1*personagem.lvl))*dano))

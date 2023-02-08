@@ -147,9 +147,7 @@ def ProcuraTexto(ChaveInicio, ChaveFim, arquivoNome, nome, screen):
     # endwith
 # endfunc
 
-def SearchText(fileName, storyIndex, userInput = None, inBattle = False):
-    if(inBattle):
-        return jsonL.GetBattleText(fileName, userInput)
+def SearchText(fileName, storyIndex, userInput = None):
     if(userInput != None):
         return jsonL.GetStoryAnswer(storyIndex,fileName, userInput)
     else:

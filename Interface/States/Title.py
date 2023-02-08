@@ -6,7 +6,7 @@ import Interface.BattleWindow as bw
 import Interface.Button as btn
 import Interacoes as lib
 import Interface.States.GameState as GameState
-import Domain.Personagem as Personagem
+import Domain.Heroi as Heroi
 
 
 
@@ -150,7 +150,7 @@ class Title(GameState.GameState):
         if(self.HeroName == ""):
             self.EditBoxBoundaryColor = (255,0,0)
         else:
-            hero = Personagem.Personagem(self.HeroName,heroClass)
+            hero = Heroi.Heroi(self.HeroName,heroClass)
         #endif
         return hero
     #endfunc

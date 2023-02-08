@@ -17,6 +17,4 @@
             "txt" : "1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status\n6 - Olhar Inventário\n"
         }
     }
-
-
 }

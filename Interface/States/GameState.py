@@ -83,9 +83,11 @@ class GameState():
         return returningActPos
     #endfunc
 
-    def LoadText(self, text):
+    def LoadText(self, text, x = None, y = None):
         text_color = jsonL.GetSpeakerTextColor()
-        (x,y) = jsonL.GetSpeakerTextPosition()
+        if(x == None or y == None):
+            (x,y) = jsonL.GetSpeakerTextPosition()
+        #endif
         ut.InsertText(text,text_color, x, y, self.Screen)
     #endfunc
 

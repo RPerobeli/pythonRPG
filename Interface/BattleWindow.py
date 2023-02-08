@@ -17,6 +17,8 @@ class BattleWindow(GameState.GameState):
         self.Alpha = 255
         self.BattleText = {}
         self.isOptions = True
+        self.isSelectingSpell = False
+        self.SpellsList = jsonL.GetSpells(self.Personagem.classe)
     #endfunc
 
 
@@ -25,7 +27,11 @@ class BattleWindow(GameState.GameState):
             actorPos = self.PlaceActors()
             self.LoadImages(actorPos)
             if(self.isOptions):
-                self.LoadBattleOptions()
+                if(self.isSelectingSpell):
+                    self.LoadUsableSpells()
+                else:
+                    self.LoadBattleOptions()
+                #endif
             else:
                 self.LoadTextWithList(self.BattleText)
             #endif
@@ -46,6 +52,26 @@ class BattleWindow(GameState.GameState):
         self.LoadTextWithList(self.OptionsDict["Options"]["OptionsText"], self.OptionsDict["Options"]["PositionOptions"]["x"],self.OptionsDict["Options"]["PositionOptions"]["y"])
     #endfunc
 
+    def LoadUsableSpells(self):
+        vspace  = jsonL.GetVerticalSpace()
+        x,y = jsonL.GetSpeakerTextPosition()
+        for spell in self.SpellsList:
+            if spell["Lvl"] <= self.Personagem.lvl:
+                self.LoadText(f"{spell['Key']}: {spell['Nome']} - {spell['Cost']}MP", x, y)
+                y += vspace
+            #endif
+        #endfor
+
+    #endfunc
+
+    def PrintDmg(self, dano, personagem):
+        if(personagem.acoes.isCrit):
+            self.BattleText = {"txt": f"ACERTO CRÍTICO!!!\n{personagem.name} causou {dano} de dano!\n"}
+        else:
+            self.BattleText = {"txt": f"{personagem.name} causou {dano} de dano!\n"}
+        #endif
+    #endfunc
+
     def Battle(self):
         self.Monster.AutoLvl(self.Personagem.lvl)
         self.Monster.AdequaHP()
@@ -62,28 +88,57 @@ class BattleWindow(GameState.GameState):
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_KP_ENTER):
                     if(turnCounter == 1):
                         turnCounter += 1
+                        self.isOptions = False
+                        self.MonsterAtkd = False
+                    #endif
+
+                    if(turnCounter == 2 and not self.MonsterAtkd):
+                        atkType = self.Monster.acoes.TipoAtk(self.Monster)
+                        if(atkType == 4):
+                            self.Monster.acoes.Atk(self.Monster,atkType,self.Personagem, turnCounter)
+                            self.BattleText = {"txt":"Regenerou vida e mana"}
+                        else:
+                            dano = self.Monster.acoes.Atk(self.Monster,atkType,self.Personagem, turnCounter)
+                            self.PrintDmg(dano, self.Monster)
+                        #endif
+                        self.MonsterAtkd = True
+                    elif(turnCounter == 2 and self.MonsterAtkd):
+                        turnCounter -= 1
                         self.isOptions = True
                     #endif
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
                     self.isOptions = False
+                    atkType = 1
+                    dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster,turnCounter)
+                    self.PrintDmg(dano, self.Personagem)
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
-
+                    self.isOptions = False
+                    atkType = 2
+                    self.BattleText = self.Personagem.arma.textoAtkEspecial
+                    dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster,turnCounter)
+                    self.PrintDmg(dano,self.Personagem)
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
+                    if(self.isOptions):
+                        self.isSelectingSpell = True
+                        self.LoadUsableSpells()
 
+
+
+                    
                 #endif
             #endfor
             if(self.Personagem.HP <= 0):
                 self.Scene = 2
             elif(self.Monster.HP <= 0):
-                print(f"O {self.Monster.name} foi capinado.")
+                print(f"O {self.Monster.name} foi capinado.\n")
                 self.Personagem.XP += lib.XP(self.Monster.lvl)
                 if(self.Personagem.XP >= 100):
                     self.Personagem.LvlUP()
                 else:
-                    print("XP: " + str(self.Personagem.XP)+'/' + str(100))
+                    print("XP: " + str(self.Personagem.XP)+'/' + str(100)+"\n")
                 #endif
             #endif
             pygame.display.update()
