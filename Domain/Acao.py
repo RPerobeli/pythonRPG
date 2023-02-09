@@ -81,6 +81,7 @@ class Acao:
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
+                    personagem.MP -= magiaEscolhida["Cost"]
                     return dano
                 # endif
             elif(atkType == 4):

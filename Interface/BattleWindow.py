@@ -147,7 +147,7 @@ class BattleWindow(GameState.GameState):
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_4):
                     if(self.isOptions):
                         atkType = 4
-                        self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster, spell)
+                        self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster)
                         self.isOptions = False
                         self.BattleText = {"txt": f"{self.Personagem.name} regenerou vida e mana.\n"}
                         turnCounter += 1

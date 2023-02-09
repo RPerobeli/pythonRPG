@@ -1,5 +1,6 @@
 import pygame
 from Interface.States import Inn
+from Interface.States import Caravan
 from Interface.States import Title as t
 from Interface import DialogBox
 from Interface import BattleWindow as bw
@@ -28,7 +29,7 @@ class GameStateHandler:
         if(self.State == "caminhoTeofilo"):
             self.ViagemTeofilotoni()
         if(self.State == "caravana"):
-            self.Caravana()
+            self.Caravan()
         #endif
     #endfunc
 
@@ -47,11 +48,16 @@ class GameStateHandler:
         self.Hero,state = self.inn.Update()
         if(state != None):
             self.State = state
+            self.caravan = Caravan.Caravan(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs)
         #endif
     #endfunc
 
-    def Caravana(self):
+    def Caravan(self):
         print('caravana')
+        self.Hero,state = self.caravan.Update()
+        if(state != None):
+            self.State = state
+        #endif
     #endfunc
     def ViagemTeofilotoni(self):
         print('caminhoTeofilo')
