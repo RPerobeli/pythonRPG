@@ -3,5 +3,5 @@ import Interacoes as lib
 import Interface.Utils as ut
 import pygame
 
-data = jsonL.GetOptionsPosition()
-print(data["Options"]["PositionHealthBars"]["x"])
+data = jsonL.GetSpells("mago")
+print(data)

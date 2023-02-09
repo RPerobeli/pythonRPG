@@ -17,7 +17,7 @@ class Personagem:
         self.acoes = Acao.Acao()
         self.arma = A.Arma(
             "Arma desgastada", 2, "Ataque Especial da Arma Mais Fraca Do Jogo!!!", "arma0")
-        self.magias = self.acoes.CriaMagias(self)
+        self.magias = jsonL.GetSpells(self.classe)
         imageConfig = jsonL.GetPersonagem(self.classe)
         self.ImageMultiplier = imageConfig['ImageMultiplier']
         self.NeedFlip = bool(imageConfig['needFlip'])

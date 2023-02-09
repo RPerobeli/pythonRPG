@@ -6,7 +6,7 @@ import os
 
 class Acao:
 
-    def Atk(self, personagem, atkType, target, Ribamar):  # Ribamar == turnCounter
+    def Atk(self, personagem, atkType, target, magiaEscolhida = None):  # Ribamar == turnCounter
         self.isCrit = False
         if(personagem.classe.lower() == "guerreiro"):
             if(atkType == 1):
@@ -28,22 +28,16 @@ class Acao:
                 personagem.HP -= 0.2*personagem.HPmax
                 return dano
             elif(atkType == 3):
-                if(Ribamar == 1):
-                    magiaEscolhida = personagem.acoes.SelectMagia(personagem)
-                elif(Ribamar == 2):
-                    magiaEscolhida = personagem.acoes.SelectMagiaMonstro(
-                        personagem)
-                # endif
-                if (lib.NaoTemMana(personagem, magiaEscolhida.cost)):
+                if (lib.NaoTemMana(personagem, magiaEscolhida["Cost"])):
                     print("Mana insuficiente.")
                 else:
                     dano = 2 * \
                         personagem.skills["int"] + \
-                        personagem.skills["str"] + magiaEscolhida.danoBase
+                        personagem.skills["str"] + magiaEscolhida["BaseDamage"]
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
-                    personagem.MP -= magiaEscolhida.cost
+                    personagem.MP -= magiaEscolhida["Cost"]
                     return dano
                 # endif
             elif(atkType == 4):
@@ -77,14 +71,13 @@ class Acao:
                     return dano
                 # endif
             elif(atkType == 3):
-                magiaEscolhida = personagem.acoes.SelectMagia(personagem)
-                if (lib.NaoTemMana(personagem, magiaEscolhida.cost)):
+                if (lib.NaoTemMana(personagem, magiaEscolhida["Cost"])):
                     print("Mana insuficiente.")
                 else:
                     # BALANCEAR FUNCAO DE MAGIAS
                     dano = 2 * \
                         personagem.skills["int"] + \
-                        personagem.skills["agi"] + magiaEscolhida.danoBase
+                        personagem.skills["agi"] + magiaEscolhida["BaseDamage"]
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
@@ -120,18 +113,16 @@ class Acao:
                     return dano
                 # endif
             elif(atkType == 3):
-                magiaEscolhida = personagem.acoes.SelectMagia(personagem)
-                lib.Limpa()
-                if (lib.NaoTemMana(personagem, magiaEscolhida.cost)):
+                if (lib.NaoTemMana(personagem, magiaEscolhida["Cost"])):
                     print("Mana insuficiente.")
                 else:
                     dano = personagem.arma.danoBase * \
                         personagem.skills["int"] + \
-                        magiaEscolhida.danoBase  # BALANCEAR FUNCAO DE MAGIAS
+                        magiaEscolhida["BaseDamage"]  
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.name+" causou "+str(dano) + " de dano!")
                     target.HP -= dano
-                    personagem.MP -= magiaEscolhida.cost
+                    personagem.MP -= magiaEscolhida["Cost"]
                     return dano
                 # endif
             elif(atkType == 4):
@@ -263,6 +254,19 @@ class Acao:
             if(magia.lvl <= personagem.lvl):
                 cont += 1
                 print(str(cont) + ": " + magia.name + "\n")
+                magiasSelecionaveis.append(magia)
+            # endif
+        # endfor
+        resp = rnd.randint(0, len(magiasSelecionaveis))
+        return magiasSelecionaveis[resp]
+    # endfunc
+
+    def SelectMonsterSpell(self, personagem):
+        cont = 0
+        magiasSelecionaveis = []
+        for magia in personagem.magias:
+            if(magia["Lvl"] <= personagem.lvl):
+                cont += 1
                 magiasSelecionaveis.append(magia)
             # endif
         # endfor

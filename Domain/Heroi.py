@@ -1,5 +1,6 @@
 import Domain.Personagem as personagem
 import Domain.Bag as B
+import Utils.JsonLoader as jsonL
 
 
 class Heroi(personagem.Personagem):
@@ -8,7 +9,7 @@ class Heroi(personagem.Personagem):
         super().__init__(nome, classe)
         self.bag = B.Bag()
         self.bag.InserirArma(self.arma)
-        self.magias = self.acoes.CriaMagias(self)
+        self.magias = jsonL.GetSpells(self.classe)
         self.isMonstro = False
     # endFunc
 

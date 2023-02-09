@@ -3,7 +3,7 @@ import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
 import Interface.States.GameState as GameState
 import Interacoes as lib
-class BattleWindow(GameState.GameState):
+class BattleWindowSpells(GameState.GameState):
     def __init__(self,screen, dialogBox,personagem, monster, bgName):
         super().__init__(screen)
         imagePath =  jsonL.GetImagePath()
@@ -42,8 +42,15 @@ class BattleWindow(GameState.GameState):
 
     #endfunc
 
+    def GetSpellByUserInput(self,input):
+        for spell in self.Personagem.magias :
+            if spell["Key"] == input:
+                return spell
+            #endif
+        #endfor
+    #endfunc
 
-    def Battle(self):
+    def SelectSpell(self):
         pygame.display.set_caption("Selecao de Magias")
         inBattle = True
         while inBattle:
@@ -54,19 +61,28 @@ class BattleWindow(GameState.GameState):
                     inBattle = False
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
-                    return self.Personagem.magias['Key']
+                    input = 1
+                    return self.GetSpellByUserInput(input)
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
-                    self.isOptions = False
-                    atkType = 2
-                    self.BattleText = self.Personagem.arma.textoAtkEspecial
-                    dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster,turnCounter)
-                    self.PrintDmg(dano,self.Personagem)
+                    input = 2
+                    return self.GetSpellByUserInput(input)
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
-                    if(self.isOptions):
-                        self.isSelectingSpell = True
-                        self.LoadUsableSpells() 
+                    input = 3
+                    return self.GetSpellByUserInput(input)
+                #endif
+                if (event.type == pygame.KEYDOWN and event.key == pygame.K_4):
+                    input = 4
+                    return self.GetSpellByUserInput(input)
+                #endif
+                if (event.type == pygame.KEYDOWN and event.key == pygame.K_5):
+                    input = 5
+                    return self.GetSpellByUserInput(input)
+                #endif
+                if (event.type == pygame.KEYDOWN and event.key == pygame.K_6):
+                    input = 6
+                    return self.GetSpellByUserInput(input)
                 #endif
             #endfor
             pygame.display.update()
