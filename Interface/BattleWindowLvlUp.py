@@ -74,6 +74,18 @@ class BattleWindowLvlUp(GameState.GameState):
                 if event.type == pygame.QUIT:
                      pygame.quit()
                 #endif
+                if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
+                    self.Personagem.skills["str"] += 1
+                #endif
+                if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
+                    self.Personagem.skills["agi"] += 1
+                #endif
+                if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
+                    self.Personagem.skills["int"] += 1
+                #endif
+                if (event.type == pygame.KEYDOWN and event.key == pygame.K_4):
+                    self.Personagem.skills["vit"] += 1
+                #endif
             #endfor
             pygame.display.update()
         #endwhile
