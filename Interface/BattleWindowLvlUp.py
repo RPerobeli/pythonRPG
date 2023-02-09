@@ -55,7 +55,7 @@ class BattleWindowLvlUp(GameState.GameState):
         self.Personagem.XP += lib.XP(self.Monster.lvl)
         if(self.Personagem.XP >= 100):
             self.Personagem.lvl += 1
-            self.XP -= 100
+            self.Personagem.XP -= 100
             self.Scene = 1
         else:
             self.BattleText = {"txt": f"O {self.Monster.name} foi capinado.\nXP: {self.Personagem.XP}/100\n"}
