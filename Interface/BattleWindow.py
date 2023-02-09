@@ -111,19 +111,23 @@ class BattleWindow(GameState.GameState):
 
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
-                    self.isOptions = False
-                    atkType = 1
-                    dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster)
-                    self.PrintDmg(dano, self.Personagem)
-                    turnCounter += 1
+                    if(self.isOptions):
+                        self.isOptions = False
+                        atkType = 1
+                        dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster)
+                        self.PrintDmg(dano, self.Personagem)
+                        turnCounter += 1
+                    #endif
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
-                    self.isOptions = False
-                    atkType = 2
-                    self.BattleText = self.Personagem.arma.textoAtkEspecial
-                    dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster)
-                    self.PrintDmg(dano,self.Personagem)
-                    turnCounter += 1
+                    if(self.isOptions):
+                        self.isOptions = False
+                        atkType = 2
+                        self.BattleText = self.Personagem.arma.textoAtkEspecial
+                        dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster)
+                        self.PrintDmg(dano,self.Personagem)
+                        turnCounter += 1
+                    #endif
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
                     if(self.isOptions):
@@ -135,6 +139,7 @@ class BattleWindow(GameState.GameState):
                         else:
                             dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster, spell)
                             self.PrintDmg(dano,self.Personagem)
+                        #endif
                         self.isOptions = False
                         turnCounter += 1
                     #endif  
