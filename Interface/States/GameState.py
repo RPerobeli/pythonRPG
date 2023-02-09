@@ -40,7 +40,7 @@ class GameState():
 
 
     def FadeOut(self, actorPos):
-        ut.InsertBackground(self.BackgroundImage, self.Screen,255)
+        ut.InsertBackground(self.BackgroundImage, self.Screen,self.Alpha)
         ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen,self.Alpha)
         if(self.Actors[1] != None):
             ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen,self.Alpha)
@@ -50,8 +50,12 @@ class GameState():
         #endif
     #endfunc
 
-    def FadeIn(self, actorPos):
-        ut.InsertBackground(self.BackgroundImage, self.Screen,255)
+    def FadeIn(self, actorPos, varyAlpha = False):
+        if(varyAlpha):
+            ut.InsertBackground(self.BackgroundImage, self.Screen,self.Alpha)
+        else:
+            ut.InsertBackground(self.BackgroundImage, self.Screen,255)
+        #endif
         ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen,self.Alpha)
         if(len(self.Actors) > 1):
             ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen,self.Alpha)

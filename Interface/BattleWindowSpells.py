@@ -39,7 +39,6 @@ class BattleWindowSpells(GameState.GameState):
                 y += vspace
             #endif
         #endfor
-
     #endfunc
 
     def GetSpellByUserInput(self,input):

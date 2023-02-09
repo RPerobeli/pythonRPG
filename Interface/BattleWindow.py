@@ -5,7 +5,9 @@ import Interface.States.GameState as GameState
 from Interface import BattleWindowSpells as bws
 from Interface import BattleWindowMonsterTurn as bwmt
 from Interface import BattleWindowLvlUp as bwlvl
+from Interface import GameOverWindow as gow
 import Interacoes as lib
+
 class BattleWindow(GameState.GameState):
     def __init__(self,screen, dialogBox,personagem, monster, bgName):
         super().__init__(screen)
@@ -25,7 +27,7 @@ class BattleWindow(GameState.GameState):
         self.SpellsWindow = bws.BattleWindowSpells(self.Screen, self.DialogBox, self.Personagem, self.Monster, bgName)
         self.MonsterTurnWindow = bwmt.BattleWindowMonsterTurn(self.Screen, self.DialogBox, self.Personagem, self.Monster, bgName)
         self.LvlUpWindow = bwlvl.BattleWindowLvlUp(self.Screen, self.DialogBox, self.Personagem, self.Monster, bgName)
-
+        self.GameOverWindow = gow.GameOverWindow(self.Screen)
     #endfunc
 
 
@@ -65,7 +67,7 @@ class BattleWindow(GameState.GameState):
 
     def VerifyIfBattleIsFinished(self):
         if(self.Personagem.HP <= 0):
-            self.Scene = 2
+            self.GameOverWindow.GameOver()
         elif(self.Monster.HP <= 0):
             self.Personagem = self.LvlUpWindow.LvlUp(self.Personagem)
             return True
@@ -104,6 +106,7 @@ class BattleWindow(GameState.GameState):
                         self.MonsterTurnWindow.MonsterTurn()
                         turnCounter -= 1
                         self.isOptions = True
+                        self.VerifyIfBattleIsFinished()
                     #endif
 
                 #endif

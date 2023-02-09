@@ -68,7 +68,7 @@ class BattleWindowMonsterTurn(GameState.GameState):
                     atkType = self.Monster.acoes.TipoAtk(self.Monster)
                     if(atkType == 4):
                         self.Monster.acoes.Atk(self.Monster,atkType,self.Personagem)
-                        self.BattleText = {"txt":"Regenerou vida e mana"}
+                        self.BattleText = {"txt":"Regenerou vida e mana\n"}
                         self.Scene = 2
                     elif(atkType == 3):
                         spell = self.Monster.acoes.SelectMonsterSpell(self.Monster)
