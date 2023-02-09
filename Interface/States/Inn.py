@@ -58,13 +58,10 @@ class Inn(GameState.GameState):
         print('verificou possiveis eventos')
         if(self.StoryTextList[self.StoryListId]['txt'] == "battleCachorra\n"):
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Cao Infernal"), "quarto")
-            self.Personagem, isFinished = battleWindow.Battle()
-            if(isFinished):
-                self.StoryListId += 1
-                self.VerifyEvent()
-                return
-            else:
-                print("DEU RUIM NA BATALHA")
+            self.Personagem = battleWindow.Battle()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "perde 2 de hp\n"):
             self.Personagem.HP -= 2

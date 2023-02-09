@@ -37,7 +37,7 @@ class BattleWindowLvlUp(GameState.GameState):
         self.OptionsDict = jsonL.GetOptions()
         self.CapinadoDict = {"txt": f"O {self.Monster.name} foi capinado.\n"}
         self.LoadTextWithList(self.CapinadoDict)
-        self.LoadTextWithList({"txt":f"Você chegou ao NIVEL {self.Personagem.lvl}!"}, self.OptionsDict["Options"]["PositionStatus"]["x"],self.OptionsDict["Options"]["PositionStatus"]["y"])
+        self.LoadTextWithList({"txt":f"Você chegou ao NIVEL {self.Personagem.lvl}!\n"}, self.OptionsDict["Options"]["PositionStatus"]["x"],self.OptionsDict["Options"]["PositionStatus"]["y"])
         self.LoadTextWithList({"txt": "Consuma seu ponto de habilidade\n1 - Força\n2 - Agilidade\n3 - Inteligência\n4 - Vitalidade"}, \
             self.OptionsDict["Options"]["PositionOptions"]["x"],self.OptionsDict["Options"]["PositionOptions"]["y"])
     #endfunc
@@ -76,15 +76,23 @@ class BattleWindowLvlUp(GameState.GameState):
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
                     self.Personagem.skills["str"] += 1
+                    self.Personagem.AtualizaStatus()
+                    return self.Personagem
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
                     self.Personagem.skills["agi"] += 1
+                    self.Personagem.AtualizaStatus()
+                    return self.Personagem
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
                     self.Personagem.skills["int"] += 1
+                    self.Personagem.AtualizaStatus()
+                    return self.Personagem
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_4):
                     self.Personagem.skills["vit"] += 1
+                    self.Personagem.AtualizaStatus()
+                    return self.Personagem
                 #endif
             #endfor
             pygame.display.update()

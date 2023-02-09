@@ -68,8 +68,18 @@ class BattleWindow(GameState.GameState):
             self.Scene = 2
         elif(self.Monster.HP <= 0):
             self.Personagem = self.LvlUpWindow.LvlUp(self.Personagem)
+            return True
         #endif
     #endfunc
+
+    def VerifyMana(self, spell):
+        if(self.Personagem.MP < spell["Cost"]):
+            return True
+        else:
+            return False
+        #endif
+    #endfunc
+
     def Battle(self):
         self.Monster.AutoLvl(self.Personagem.lvl)
         self.Monster.AdequaHP()
@@ -85,7 +95,10 @@ class BattleWindow(GameState.GameState):
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_KP_ENTER):
                     #confere se a luta acabou
-                    self.VerifyIfBattleIsFinished()
+                    isFinished = self.VerifyIfBattleIsFinished()
+                    if(isFinished):
+                        return self.Personagem
+                    #endif
 
                     if(turnCounter == 2):
                         self.MonsterTurnWindow.MonsterTurn()
@@ -114,9 +127,12 @@ class BattleWindow(GameState.GameState):
                         self.isSelectingSpell = True
                         atkType = 3
                         spell = self.SpellsWindow.SelectSpell()
-                        dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster, spell)
+                        if(self.VerifyMana(spell)== True):
+                            self.BattleText = {"txt": "TA SEM MANA, OTARIO!\n"}
+                        else:
+                            dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster, spell)
+                            self.PrintDmg(dano,self.Personagem)
                         self.isOptions = False
-                        self.PrintDmg(dano,self.Personagem)
                         turnCounter += 1
                     #endif  
                 #endif
