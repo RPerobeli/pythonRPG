@@ -115,13 +115,13 @@
             "txt": "InserirAnaoFerido\n"
         },
         {
-            "txt": "[Anão Ferido]: Não quero morrer assim, peguem a minha pica...\n1- Descer do cavalo e ajudar o anão.\n2- Seguir em frente e deixar o anão para morrer.\n3- Acabar com o sofrimento do anão retirando sua vida.\n"
+            "txt": "[Anão Ferido]: Não quero morrer assim, peguem a minha pica...\napontando para um objeto ao lado.\n1- Descer do cavalo e ajudar o anão.\n2- Seguir em frente e deixar o anão para morrer.\n3- Acabar com o sofrimento do anão retirando sua vida.\n"
         }
     ],
 
     "R2-1":[
         {
-            "txt" : "[Narrador]: Você rapidamente desce do cavalo, e se move para pegar a picareta,\nque estava ao lado, para entregar ao anão.\n[Anão Ferido]: Morra!!!\n[Narrador]: A situação se revela uma emboscada, o companheiro do bandido sai de trás de um conjunto de rochas e inicia uma batalha com The'té.\nVocê é obrigado a lutar sozinho.\n"
+            "txt" : "[Narrador]: Você rapidamente desce do cavalo, e se move para pegar a picareta,\npara entregar ao anão.\n[Anão Ferido]: Morra!!!\n[Narrador]: A situação se revela uma emboscada, o companheiro do bandido sai de trás de um conjunto de rochas e inicia uma batalha com The'té.\nVocê é obrigado a lutar sozinho.\n"
         },
         {
             "txt" : "battleAnaoFerido\n"
