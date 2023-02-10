@@ -1,6 +1,7 @@
 import pygame
 from Interface.States import Inn
 from Interface.States import Caravan
+from Interface.States import ViagemTeofilotoni
 from Interface.States import Title as t
 from Interface import DialogBox
 from Interface import BattleWindow as bw
@@ -33,6 +34,9 @@ class GameStateHandler:
         if(self.State == "Florianopolis"):
             self.Florianopolis()
         #endif
+        if(self.State == "Teofilotoni"):
+            self.Teofilotoni()
+        #endif
     #endfunc
 
     #endfunc
@@ -50,7 +54,13 @@ class GameStateHandler:
         self.Hero,state, continueStory = self.inn.Update()
         self.State = state
         if(continueStory):
-            self.caravan = Caravan.Caravan(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs)
+            if(self.Hero.classe.lower() == "mago"):
+                self.caravan = Caravan.Caravan(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs)
+            elif(self.Hero.classe.lower() == "guerreiro"):
+                self.caminhoTeofilo = ViagemTeofilotoni.ViagemTeofilotoni(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs)
+            elif(self.Hero.classe.lower() == "arqueiro"):
+                self.caravan = Caravan.Caravan(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs)
+            #endif
         #endif
     #endfunc
 
@@ -65,14 +75,18 @@ class GameStateHandler:
 
     def ViagemTeofilotoni(self):
         print('caminhoTeofilo')
-        self.Hero,state, continueStory = self.caravan.Update()
+        self.Hero,state, continueStory = self.caminhoTeofilo.Update()
         self.State = state
         if(continueStory):
-            print("partiu teofilotoni")
+            print("partiu teofilo")
         #endif
     #endfunc
 
     def Florianopolis(self):
-        print('florianopolis')
+        print('Florianopolis')
+    #endfunc
+
+    def Teofilotoni(self):
+        print('Teofilotoni')
     #endfunc
 #endclass

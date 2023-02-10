@@ -28,5 +28,10 @@
         "Nome": "Mago Anciao",
         "ImageMultiplier" : 1,
         "needFlip" : "False"
+    },
+    {
+        "Nome": "Thete",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
     }
 ]

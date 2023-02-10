@@ -111,5 +111,26 @@
         "isBoss": "True",
         "ImageMultiplier" : 1,
         "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Falastrao",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 0.7,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Bandido",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Ana Bandida",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
     }
 ]

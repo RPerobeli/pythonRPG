@@ -49,17 +49,47 @@ Q2-p1
 [The'té]: Você não precisa saber, escolta...
 Q2-p2
 [Narrador]: A conversa é interrompida ao verem um anão caído no chão aparentemente ferido.
-[Anão Ferido]: Não quero morrer assim, peguem a minha pica... reta.
+[Anão Ferido]: Não quero morrer assim, peguem a minha pica...
 1- Descer do cavalo e ajudar o anão.
 2- Seguir em frente e deixar o anão para morrer.
 3- Acabar com o sofrimento do anão retirando sua vida.
 Q2-fim
+
+R2-1-ini
+[Narrador]: Você rapidamente desce do cavalo, e se move para pegar a picareta, que estava ao lado,para entregar ao anão.
+[Anão Ferido]: Morra!!!
+[Narrador]: A situação se revela uma emboscada, o companheiro do bandido sai de trás de um conjunto de rochas e inicia uma batalha com The'té.
+Você é obrigado a lutar sozinho.
 R2-1-p1
-[Narrador]: Você avança por entre as pessoas.
-[Heroi]: EU ACEITO O DESAFIO!
-R2-1-p2
-[Narrador]: Após o término da batalha, o anão busca a pedra, porém a safira não está mais na mesa.
-[Anão]: Roubaram a minha pedra! ladrões! Guardas!!!
-[Narrador]: Após a comoção, você percebe que ficará sem seu prêmio, senta-se, puto, na praça e uma elfa vem ao seu encontro.
-[Elfa]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?
+[Narrador]: Com os anões derrotados, os saqueadores acabam saqueados.
+[The'té]: Quase morremos por sua culpa! fica querendo ajudar qualquer um que aparece na sua frente!
+[Heroi]: Um guerreiro tem o direito de morrer com sua arma em punho, você não tem honra, elfa?
+[The'té]: Não tem honra que custe a minha vida.
 R2-1-fim
+
+R2-2-ini
+[Narrador]: Com sua arma em mãos, vocês cruzam pelo anão enquanto ele agoniza.
+[Anão Ferido]: Ajuda... por favor...
+[Narrador]: Vocês seguem sua viagem.
+R2-2-p1
+[The'té]: Porque não ajudou o pobre anão?
+[Heroi]: O mundo é cheio de surpresas, não estou disposto a me arriscar por tão pouco.
+[The'té]: Então também notou a anã escondida atrás das rochas?
+[Heroi]: Você me subestima, elfa.
+R2-2-fim
+
+R2-3-ini
+[Narrador]: Você desce do cavalo, saca sua espada e antes que o anão pudesse se mover, desfere um golpe letal.
+[Heroi]: Uma morte rápida e indolor para você, meu caro anão.
+[Narrador]: Gritando em fúria, uma anã sai por detrás das rochas e desfere um golpe surpresa em você.
+R2-3-p1
+[Aviso]: você sofre 20 de dano.
+R2-3-p2
+[Narrador]: The'té em um movimento rápido consegue desferir dano na anã, em reposta ao ataque.
+[Anã Bandida]: Meu marido!!! Seus desgraçados!
+R2-3-p3
+[Narrador]: Após a batalha, você trata seus ferimentos, se recuperando com os itens encontrados dos recém mortos adversários.
+[The'té]: Você poderia simplesmente ter ignorado esses bandidos de baixa categoria.
+[Heroi]: E qual seria a graça? Não viu o desespero da bandida depois que matei o desgraçado? 
+Meu ferimento foi um preço baixo a se pagar pra acabar com esses charlatões.
+R2-3-fim
