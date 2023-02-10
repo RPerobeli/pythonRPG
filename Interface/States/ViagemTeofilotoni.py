@@ -66,34 +66,6 @@ class Caravan(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "BattleJavali\n"):
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Javali"), "NightForest")
-            self.Personagem = battleWindow.Battle()
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "battleBandido2\n"):
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Bandido Atirador"), "NightForest")
-            self.Personagem = battleWindow.Battle()
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "BattleOrcBesteiro\n"):
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Orc Besteiro"), "NightForest")
-            self.Personagem = battleWindow.Battle()
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "RestoreMP\n"):
-            self.Personagem.MP = self.Personagem.MPmax
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        
     #endif
 
     def Update(self):
