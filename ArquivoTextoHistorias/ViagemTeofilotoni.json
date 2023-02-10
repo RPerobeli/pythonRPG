@@ -44,7 +44,7 @@
             "txt" : "InserirThete\n"
         },
         {
-            "txt" : "[Narrador]: Após a comoção, você percebe que ficará sem seu prêmio,\nsenta-se, puto, na praça e uma elfa vem ao seu encontro.\n[Elfa]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?\n"
+            "txt" : "[Narrador]: Após a comoção, você percebe que ficará sem seu prêmio,\nsenta-se, puto, na praça e uma elfa vem ao seu encontro.\n"
         },
         {
             "txt": "[Elfa]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?\n"  
@@ -97,7 +97,7 @@
             "txt": "InserirLandscape\n"
         },
         {
-            "txt" : "[Narrador]: Já na estrada, a elfa se apresenta como The'té e você, curioso,\npergunta mais sobre a misteriosa companheira.\n[Heroi]: Então The'té, o que uma elfa tem a tratar com anões, que demanda até uma escolta?\n[The'té]: A escolta por mim era desnecessária, mas dada a importância da missão,\nfui obrigada por meus superiores a contratá-lo.\n[The'té]: Os anões estão numa situação ruim o suficiente para pedirem ajuda pra gente.\n"
+            "txt" : "[Narrador]: Já na estrada, a elfa se apresenta como The'té e você, curioso,\npergunta mais sobre a misteriosa companheira.\n[Heroi]: Então The'té, o que uma elfa tem a tratar com anões, que demanda até uma escolta?\n[The'té]: A escolta por mim era desnecessária, mas dada a importância da missão,\nfui obrigada por meus superiores a contratá-lo.\n[The'té]: Os anões estão numa situação ruim o suficiente para pedirem ajuda para nós, elfos.\n"
         },
         {
             "txt" : "[Heroi]: O que está acontecendo em Teófilotoni?\n[The'té]: Você não precisa saber, escolta...\n"

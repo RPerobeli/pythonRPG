@@ -116,7 +116,7 @@
         "Nome": "Anao Falastrao",
         "Classe": "Guerreiro",
         "isBoss": "False",
-        "ImageMultiplier" : 0.7,
+        "ImageMultiplier" : 0.6,
         "needFlip" : "False"
     },
     {
@@ -130,7 +130,7 @@
         "Nome": "Ana Bandida",
         "Classe": "Guerreiro",
         "isBoss": "False",
-        "ImageMultiplier" : 1,
+        "ImageMultiplier" : 0.7,
         "needFlip" : "False"
     }
 ]
