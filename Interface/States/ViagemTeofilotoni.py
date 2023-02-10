@@ -19,7 +19,7 @@ class Caravan(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
-        self.Filename = "Caravana"
+        self.Filename = "ViagemTeofilotoni"
         self.MaxStoryIndex = 2
         self.Count = 0
         
@@ -36,7 +36,7 @@ class Caravan(GameState.GameState):
     #endfunc
 
     def SelectNextStory(self):
-        return (self.Personagem, 'Florianopolis', True)
+        return (self.Personagem, 'Teofilotoni', True)
     #endfunc
     
     def VerifyEvent(self):
@@ -98,7 +98,7 @@ class Caravan(GameState.GameState):
 
     def Update(self):
         #Cena tapa na cachorra
-        pygame.display.set_caption("Caravana")
+        pygame.display.set_caption("Caminho para Teofilotoni")
         if(self.Count == 0):
             self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
             self.Count+=1
@@ -141,7 +141,7 @@ class Caravan(GameState.GameState):
             #endif
         #endfor
         pygame.display.update()
-        return self.Personagem,'caravana',False
+        return self.Personagem,'caminhoTeofilo',False
     #endFunction
 
 #endclass

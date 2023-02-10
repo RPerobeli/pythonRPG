@@ -1,0 +1,117 @@
+{
+    "Q1" : [
+        {
+            "txt" : "[Narrador]:  A missão descrita no anúncio pede que você escolte um cliente à cidade enânica de Teófilotoni.\n[Narrador]:  Na descrição da missão dizia para encontrar o cliente na praça da cidade.\n"
+        },
+        {
+            "txt" : "InserirTaverneira\n"
+        },
+        {
+            "txt" : "[Narrador]: Após guardar a carta na sua bolsa, você se dirige à saída.\n[Taverneira]: Ei, mago, você não disse o seu nome, aliás, me chamo Jessie.\n[Narrador]: Você sorri, diz seu nome, e parte para sua viagem.\n[Jessie]: Volte sempre, Heroi.\n"
+        },
+        {
+            "txt" : "RemoverTaverneira\n"
+        },
+        {
+            "txt" : "[Narrador]: Ao chegar no local você avista uma aglomeração.\n[Narrador]: Um anão no meio da multidão anunciava, com sua voz sobrepujando os murmúrios das pessoas:\n"
+        },
+        {
+            "txt" : "InserirAnaoFalastrao\n"
+        },
+        {
+            "txt" : "[Anão]: Esta é uma safira cósmica! Notem os padrões estrelados nessa pedra maravilhosa!\nVejam! Ela pode ser SUA!\n[Anão]: O que é necessário para conquistá-la?\nUm duelo, aquele que me derrotar poderá receber essa valiosíssima pedra.\n[Anão]: Caso perca, deverá deixar apenas 10 moedas de ouro!\nAqueles confiantes de si se aproximem! Façamos uma luta lendária!.\n"
+        },
+        {
+            "txt" : "[Narrador]: Após o anúncio, o anão pôs a pedra sobre uma mesa. O público aguardava o desafiante:\n1 - Visando uma boa oportunidade de fazer um dinheiro, realizar o desafio.\n2 - Ignorar o anão e procurar pelo cliente.\n3 - Esgueirar pelo público e roubar a valiosa safira.\n"
+        }
+    ],
+
+    "R1-1":[
+        {
+            "txt" : "[Narrador]: Você avança por entre as pessoas.\n[Heroi]: EU ACEITO O DESAFIO!\n"
+        },
+        {
+            "txt" : "battleAnaoFalastrao\n"
+        },
+        {
+            "txt" : "[Narrador]: Após o término da batalha, o anão busca a pedra, porém a safira não está mais na mesa.\n[Anão]: Roubaram a minha pedra! ladrões! Guardas!!!\n"
+            
+        },
+        {
+            "txt" : "InserirThete\n"
+        },
+        {
+            "txt": "[Elfa]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?\n"  
+        }
+    ],  
+    "R1-2":[
+        {
+            "txt" : "[Narrador]: Você senta ao longe e observa a comoção.\n[Narrador]: Pouco tempo depois você escuta um alvoroço, guardas correndo e a multidão pouco depois se dispersa.\n"   
+        },
+        {
+            "txt" : "[Narrador]: Após a situação se acalmar, uma elfa vem em sua direção.\n"            
+        },
+        {
+            "txt" : "InserirThete\n"
+        },
+        {
+            "txt" : "[Elfa]: Muito tempo esperando?\n[Elfa]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?\n"
+        }
+    ],
+
+    "R1-3":[
+        {
+            "txt" : "[Narrador]: Você avança por entre as pessoas. Chega próximo a mesa onde se encontra a safira.\nCalmamente estica sua mão para roubá-la.\n"
+        },
+        {
+            "txt" : "[Anão]: EI SEU DESGRAÇADO, O QUE PENSA QUE ESTÁ FAZENDO?\n[Narrador]: Quando você se dá conta, o anão já se encontra perto desferindo um soco em sua direção.\n"
+        },
+        {
+            "txt" : "battleAnaoFalastrao\n"
+        },
+        {
+            "txt" : "[Narrador]: Após o término da batalha, você fita a mesa novamente, buscando a safira cósmica,\nporém a pedra não está mais na mesa.\n[Narrador]: Você procura ao redor, mas não a encontra, você perdeu o seu prêmio.\n[Narrador]: Após a comoção, você percebe que ficará sem seu prêmio,\nsenta-se, puto, na praça e uma elfa vem ao seu encontro.\n"
+        },
+        {
+            "txt" : "InserirThete\n"
+        },
+        {
+            "txt" : "[Elfa]: Notei o papel em sua mão, você é quem fará minha escolta até Teófilotoni?\n"
+        }
+    ],
+
+    "Q2" : [
+        {
+            "txt": "InserirWasteland\n"
+        },
+        {
+            "txt" : "[Narrador]: Já na estrada, a elfa se apresenta como The'té e você, curioso,\npergunta mais sobre a misteriosa companheira.\n[Heroi]: Então The'té, o que uma elfa tem a tratar com anões, que demanda até uma escolta?\n[The'té]: A escolta por mim era desnecessária, mas dada a importância da missão, fui obrigada por meus superiores a contratá-lo.\n[The'té]: Os anões estão numa situação ruim o suficiente para pedirem ajuda pra gente.\n"
+        },
+        {
+            "txt" : "[Heroi]: O que está acontecendo em Teófilotoni?\n[The'té]: Você não precisa saber, escolta...\n"
+        },
+        {
+            "txt" : "[Heroi]: Bom, e um pouco difícil defendê-la quando não sei nem o que estamos enfrentando.\n[The'té]: Anões, guerreiro, vamos matar anões.\n"
+        },
+        {
+            "txt" : "[Narrador]: A conversa é interrompida ao verem um anão caído no chão, ferido.\n[Anão Ferido]: Não quero morrer assim, peguem a minha pica... reta.\n1- Descer do cavalo e ajudar o anão.\n2- Seguir em frente e deixar o anão para morrer.\n3- Acabar com o sofrimento do anão retirando sua vida."
+        }
+    ],
+
+    "R2-1":[
+        {
+            "txt" : "[Narrador]: Você avança por entre as pessoas.\n[Heroi]: EU ACEITO O DESAFIO!\n"
+        }
+    ],  
+    "R2-2":[
+        {
+            "txt" : "[Narrador]: Você senta ao longe e observa a comoção.\n[Narrador]: Pouco tempo depois você escuta um alvoroço, guardas correndo e a multidão pouco depois se dispersa.\n"   
+        }
+    ],
+
+    "R2-3":[
+        {
+            "txt" : "[Narrador]: Você avança por entre as pessoas. Chega próximo a mesa onde se encontra a safira.\nCalmamente estica sua mão para roubá-la.\n"
+        }
+    ]
+}

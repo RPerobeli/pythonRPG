@@ -44,11 +44,11 @@ class Inn(GameState.GameState):
 
     def SelectNextStory(self):
         if(self.Personagem.classe.lower() == 'guerreiro'):
-            return (self.Personagem, 'caminhoTeofilo')
+            return (self.Personagem, 'caminhoTeofilo',True)
         elif(self.Personagem.classe.lower() == 'mago'):
-            return (self.Personagem, 'caravana')
+            return (self.Personagem, 'caravana',True)
         elif(self.Personagem.classe.lower() == 'arqueiro'):
-            return (self.Personagem, 'caravana')
+            return (self.Personagem, 'caravana',True)
         else:
             print('erro ao selecionar proxima historia')
         #endif
@@ -151,7 +151,7 @@ class Inn(GameState.GameState):
             #endif
         #endfor
         pygame.display.update()
-        return self.Personagem,'inn'
+        return self.Personagem,'inn', False
     #endFunction
 
 #endclass

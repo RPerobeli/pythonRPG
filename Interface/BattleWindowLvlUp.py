@@ -57,8 +57,10 @@ class BattleWindowLvlUp(GameState.GameState):
             self.Personagem.lvl += 1
             self.Personagem.XP -= 100
             self.Scene = 1
+            self.Upou = True
         else:
             self.BattleText = {"txt": f"O {self.Monster.name} foi capinado.\nXP: {self.Personagem.XP}/100\n"}
+            self.Upou = False
             self.Scene = 2
         #endif
     #endfunc
@@ -73,6 +75,11 @@ class BattleWindowLvlUp(GameState.GameState):
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                      pygame.quit()
+                #endif
+                if (event.type == pygame.KEYDOWN and event.key == pygame.K_KP_ENTER):
+                    if(not self.Upou):
+                        return self.Personagem
+                    #endif
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
                     self.Personagem.skills["str"] += 1

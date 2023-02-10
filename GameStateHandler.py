@@ -30,6 +30,8 @@ class GameStateHandler:
             self.ViagemTeofilotoni()
         if(self.State == "caravana"):
             self.Caravan()
+        if(self.State == "Florianopolis"):
+            self.Florianopolis()
         #endif
     #endfunc
 
@@ -45,21 +47,32 @@ class GameStateHandler:
     def Inn(self):
         print("inn")
         self.inn.RedrawWindow()
-        self.Hero,state = self.inn.Update()
-        if(state != None):
-            self.State = state
+        self.Hero,state, continueStory = self.inn.Update()
+        self.State = state
+        if(continueStory):
             self.caravan = Caravan.Caravan(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs)
         #endif
     #endfunc
 
     def Caravan(self):
         print('caravana')
-        self.Hero,state = self.caravan.Update()
-        if(state != None):
-            self.State = state
+        self.Hero,state, continueStory = self.caravan.Update()
+        self.State = state
+        if(continueStory):
+            print("partiu floripa")
         #endif
     #endfunc
+
     def ViagemTeofilotoni(self):
         print('caminhoTeofilo')
+        self.Hero,state, continueStory = self.caravan.Update()
+        self.State = state
+        if(continueStory):
+            print("partiu teofilotoni")
+        #endif
+    #endfunc
+
+    def Florianopolis(self):
+        print('florianopolis')
     #endfunc
 #endclass

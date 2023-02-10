@@ -1,4 +1,5 @@
 import pygame
+import sys
 import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
 import Interface.States.GameState as GameState
@@ -93,7 +94,8 @@ class BattleWindow(GameState.GameState):
             self.ScenesManager()
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    run = False
+                    pygame.quit()
+                    sys.exit()
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_KP_ENTER):
                     #confere se a luta acabou

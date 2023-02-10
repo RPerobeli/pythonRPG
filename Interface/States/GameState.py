@@ -18,6 +18,7 @@ class GameState():
         self.StoryTextList =[]
         self.DialogBox = None
         self.isQuestion = True
+        self.Alpha = 255
     #endfunc
 
     def RedrawWindow(self):
@@ -95,8 +96,9 @@ class GameState():
         ut.InsertText(text,text_color, x, y, self.Screen)
     #endfunc
 
-    def LoadTextWithList(self, textDict, x = None, y = None):
+    def LoadTextWithList(self, textDict, x = None, y = None, heroName = "Heroi"):
         textList = []
+        textDict["txt"] = textDict["txt"].replace("Heroi", heroName)
         textList = ut.WrapText(textDict['txt'], textList)
         text_color = jsonL.GetSpeakerTextColor()
         if(x == None or y == None):
