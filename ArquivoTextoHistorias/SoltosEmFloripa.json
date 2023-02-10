@@ -1,102 +1,242 @@
 {
     "Q1" : [
         {
-            "txt" : "[Narrador]:  A missão descrita no anúncio pede que você vá até a capital da magia, Florianópolis,\nentregar uma carta ao professor Willhelm, na universidade da cidade.\n[Narrador]:  Você suspeita da recompensa, um pouco alta para uma simples entrega,\nmas aceita de qualquer maneira.\n"
+            "txt" : "InserirFlorianopolis\n"
         },
         {
-            "txt" : "InserirTaverneira\n"
+            "txt" : "[Narrador]: Depois de alguns dias de caminhada, finalmente ao longe você vê os\nportões de Florianópolis, ao se aproximar é parado por um guarda.\n"
         },
         {
-            "txt" : "[Narrador]: Após guardar a carta na sua bolsa, você se dirige à saída.\n[Taverneira]: Ei, mago, você não disse o seu nome, aliás, me chamo Jessie.\n[Narrador]: Você sorri, diz seu nome, e parte para sua viagem.\n[Jessie]: Volte sempre, Heroi.\n"
+            "txt" : "InserirGuardaMagico\n"
         },
         {
-            "txt" : "RemoverTaverneira\n"
-        },
-        {
-            "txt" : "[Narrador]: Enquanto saía de Asas da Liberdade, você notou uma caravana que estava de partida,\no líder da caravana te oferece uma carona até Florianópolis, você:\n1 - Aceita acompanhar a caravana.\n2 - Prefere seguir sozinho sua viagem.\n3 - Rouba um cavalo da caravana e sai correndo.\n"
+            "txt" : "[Guarda]: Alto lá, jovem mago, para adentrar Florianópolis, você precisa de uma identificação qualificando-te.\n1 - Ignorar o aviso e tentar forçar passagem.\n2 - Dizer que está em uma missão de alta importância e que deve entrar na cidade.\n3 - Mostrar a carta da missão, com o selo de Florianópolis.\n"
         }
     ],
 
     "R1-1":[
         {
-            "txt" : "InserirFloresta\n"
+            "txt" : "[Heroi]: Um mago é implacável! Ele entra aonde ele quiser!\n"
         },
         {
-            "txt" : "[Narrador]: Após alguns dias, ao cair da noite, a caravana monta o último acampamento antes de chegarem em Florianópolis.\n[Narrador]: Enquanto comiam em volta da fogueira, você escuta murmúrios advindos da floresta...\n"
+            "txt" : "battleGuardaMagico\n"
         },
         {
-            "txt" : "[Narrador]: Um dos guardas da caravana adentra nos arbustos. Ouve-se um grito, e o ataque começa.\n[Narrador]: Um grupo de bandidos ataca a caravana, os guardas já se encontram em combate, e 2 dos bandidos vêm em sua direção.\n"
-        },
-        {
-            "txt" : "battleBandido1\n"
-        },
-        {
-            "txt" : "battleBandido2\n"
-        },
-        {
-            "txt" : "[Narrador]: Ao olhar em volta, percebe-se que todos os guardas pereceram em batalha,\nlevando consigo seus adversários.\n[Narrador]: Os únicos restantes são o líder da caravana e os mercadores. Nesse momento, o líder se aproxima de você, agradece seus grandes feitos e te presenteia com um elixir revigorante.\n"
-        },
-        {
-            "txt" : "RestoreMP\n"
-        },
-        {
-            "txt" : "[Aviso]: Seus pontos de mana foram restaurados\n"
+            "txt": "RemoveAtor1\n"
         }
     ],  
     "R1-2":[
         {
-            "txt" : "InserirFloresta\n"
+            "txt" : "[Guarda]: Não me interessa se a sua missão é importante ou urgente, mostre a identificação!\n[Narrador]: O guarda usa uma magia que o joga para longe.\n"
         },
         {
-            "txt" : "[Narrador]: Já está anoitecendo e a fome volta a te assombrar,\nolhando à volta, você vê um pequeno filhote de javali.\n[Narrador]: Antes mesmo que você mate o pequeno filhote, a javali mãe te ataca rapidamente.\n"            
+            "txt" : "[Narrador]: Você deixa cair a carta da missão e o guarda vê o selo de Florianópolis, autorizando sua entrada na cidade.\n"            
         },
         {
-            "txt" : "BattleJavali\n"
-        },
-        {
-            "txt" : "[Narrador]: Após matar a família suína, você nota que terá refeições para alguns dias.\n"
-        },
-        {
-            "txt" : "[Narrador]: Alguns dias depois, você encontra a mesma caravana que encontrara anteriormente,\neles parecem em apuros, lutando com um grupo de ladrões,\nvocê escolhe ajudá-los e parte para cima do inimigo mais próximo.\n"
-        },
-        {
-            "txt" : "battleBandido1\n"
-        },
-        {
-            "txt" : "[Narrador]: Ao olhar em volta, percebe-se que todos os guardas pereceram em batalha,\n levando consigo seus adversários.\n[Narrador]: Os únicos restantes são o líder da caravana e os mercadores.\nNesse momento, o líder se aproxima de você, agradece seus grandes feitos e te presenteia com um elixir revigorante.\n"
-        },
-        {
-            "txt" : "RestoreMP"
-        },
-        {
-            "txt" : "[Aviso]: Seus pontos de mana foram restaurados\n"
+            "txt": "RemoveAtor1\n"
         }
     ],
 
     "R1-3":[
         {
-            "txt" : "InserirFloresta\n"
+            "txt" : "[Narrador]: O guarda valida sua identificação, e o deixa entrar sem mais problemas.\n"
         },
         {
-            "txt" : "[Narrador]: Já está anoitecendo e a fome volta a te assombrar,\nolhando à volta, você percebe uma fogueira ao longe.\n[Narrador]: Após se aproximar, percebe que há um ensopado sendo cozido, sem ninguém por perto,\nvocê se aproxima do caldeirão e escuta um zumbido.\n[Narrador]: Por puro reflexo, você desvia de uma flecha, e em sua direção vem o Orc o qual atirou.\n"
+            "txt": "RemoveAtor1\n"
+        }
+    ],
+    "Q2" : [
+        {
+            "txt" : "[Narrador]: Após adentrar em Florianópolis, você corre rumo a universidade de magia, para entregar a carta ao destinatário.\n[Narrador]: As ruas da cidade são repletas de pessoas usando itens mágicos,\ncom fontes de água rica em mana em vários pontos da cidade.\n[Narrador]: Os cidadãos de Florianópolis usam magia como parte de suas vidas.\n"
         },
         {
-            "txt" : "BattleOrcBesteiro\n"
+            "txt" : "InserirUniversidade\n"
         },
         {
-            "txt" : "[Narrador]: Olhando o corpo à sua frente, você decide que comerá carne de orc nos próximos dias.\n"
+            "txt" : "[Narrador]: Ao se aproximar da universidade da magia,\n você nota uma alta torre ao norte do exuberante castelo que é a universidade.\n[Narrador]: Você anda pelo local, em busca do professor Willhelm, os alunos te guiam com informações e você finalmente chega na sala do mago.\n"
         },
         {
-            "txt" : "[Narrador]: Alguns dias depois, você encontra a mesma caravana que encontrara anteriormente,\neles parecem em apuros, lutando com um grupo de ladrões, \nvocê decide ficar de fora da ação, e acaba presenciando uma chacina, de onde ninguém saíra vivo.\n"
+            "txt" : "InserirWillhelm\n"
         },
         {
-            "txt" : "[Narrador]: No meio dos corpos, estava o cadáver do líder da caravana.\n[Narrador]: Você vasculha o corpo e encontra um elixir, após tomá-lo, se sente revigorado.\n"
+            "txt" : "[Heroi]: Você é Willhelm? Minha missão exige que eu te entregue essa carta,\naparenta ter grande importância.\n[Willhelm]: Não sei, talvez eu seja, quem pergunta?\n1- Sou Heroi, vim da guilda Asas da Liberdade para te entregar uma mensagem mega, hiper, ultra, blaster, harecrshima, importante.\n2- Sou sua mãe disfarçada, te trouxe um almoço envelopado.\n3- Sou um mensageiro qualquer, pega essa carta logo e me dê o pagamento.\n"
+        }
+    ],
+
+    "R2-1":[
+        {
+            "txt" : "[Willheilm]: Eu estava a sua espera, chegou rápido não?!\nTive tempo de aprendermais 8 feitiços até sua chegada.\n[Willhelm]: Me dê a carta que está em sua posse e me siga, rápido!\n"
+        }
+    ],  
+    "R2-2":[
+        {
+            "txt" : "[Willhelm]: Nossa, não sabia que minha mãe era tão feia assim,\npra mim ela era mais bonita que um pedaço de merda que nem você. \n"
         },
         {
-            "txt" : "RestoreMP\n"
+            "txt": "[Narrador]: Ele então entoa um feitiço que te transforma em um pequeno e indefeso rato\ne lhe dá de alimento para uma serpente mística que ele mantém no armário.\n"
         },
         {
-            "txt" : "[Aviso]: Seus pontos de mana foram restaurados.\n"
+            "txt": "RemoveAtor1\n"
+        },
+        {
+            "txt": "InsereCobra\n"
+        },
+        {
+            "txt": "[Heroi]: *Guinchos de rato*\n"
+        },
+        {
+            "txt": "GameOverEvent\n"
+        }
+    ],
+
+    "R2-3":[
+        {
+            "txt" : "[Willhelm]: Obrigado senhor “um qualquer” sem educação.\n"
+        },
+        {
+            "txt" : "[Narrador]: Ele pega a carta de suas mãos, te lança um olhar de bolado e puto e te evoca para um duelo mágico.\n[Narrador]: Para te compensar ele diz que se o derrotar,\nele lhe ensinará uns paranaue novo dos almofadinhas de Mossunguê.\n"
+        },
+        {
+            "txt": "[Willhelm]: Você é bom mesmo, jovem. Infelizmente, os paranauê dos almofadinhas de Mossunguê\né uma magia secreta da universidade\n[Willhelm]: Se contente comigo restaurando seu vigor com esse encanto e me siga.\n"
+        },
+        {
+            "txt": "RestoreHP\n"
+        }
+    ],
+    "Q3" : [
+        {
+            "txt" : "InsereCorredor\n"
+        },
+        {
+            "txt" : "[Narrador]: Chegando no alto da torre, em frente a uma grande porta, o professor abre a carta e\npede que você o espere.\n1- Insistir em entrar com ele na sala e dizer que possui uma identificação de outra escola de magia.\n2- Você se mantém paradão na balada e resolve não entrar, esperando pacientemente.\nao lado de fora da sala do conselho.\n3- Professor, você ainda não me pagou pelo meu trabalho, até eu receber meu pagamento, aonde voce for, eu vou varrendo.\n"
+        }
+    ],
+
+    "R3-1":[
+        {
+            "txt" : "[Willhelm]: Fedelho insolente, atrás desta porta se encontra o conselho de magia desta universidade, o Bonde da Magia.\n"
+        },
+        {
+            "txt" : "[Willhelm]: Se agir de forma desordeira, irão te jogar ao demônio. Você escutou ele lá embaixo, não?\n"
+        },
+        {
+            "txt" : "RemoveAtor1\n"
+        },
+        {
+            "txt" : "InserirCouncilRoom\n"
+        },
+        {
+            "txt" : "[Narrador]: A atenção dos senhores na sala se volta para você,\no mais velho dos homens começa a falar:\n"
+        },
+        {
+            "txt" : "InserirMagoAnciao\n"
+        },
+        {
+            "txt" : "[Mago Ancião]: Jovem, não sei se percebeu, mas esta sala é o local de reunião dos maiores magos de Florianópolis, o que pensa que está fazendo entrando dessa forma?\n[Mago Ancião]: Apresente sua identificação de aluno. Agora!\n"
+        },
+        {
+            "txt" : "[Heroi]: Então... Eu sou um pacato aventureiro, da guilda Asas da Liberdade,\nvim apenas entregar uma carta e desejo meu pagamento!\n"
+        },
+        {
+            "txt" : "[Mago Ancião]: Moleque, Você adentra na reunião mais importante do Bonde da Magia\napenas para pedir dinheiro? \n[Mago Ancião]: Guardas! Levem-no para o Demônio!\n"
+        },
+        {
+            "txt" : "RemoveAtor1\n"
+        },
+        {
+            "txt" : "battleDemonioInferior\n"
+        },
+        {
+            "txt" : "[Narrador]: Após derrotar o demônio você sobe novamente para a sala do conselho.\n"
+        },
+        {
+            "txt" : "[Heroi]: ME DÁ MEU DINHEIRO!!!\n"
+        },
+        {
+            "txt" : "[Narrador]: Os guardas imediatamente tentam impedí-lo.\n"
+        },
+        {
+            "txt" : "InserirMagoAnciao\n"
+        },
+        {
+            "txt" : "[Mago Ancião]: PAREM!\n[Mago Ancião]: Vejo que é mais forte que o esperado, pequeno mago. Se batalhaste contra tal criatura e sobreviveste,\ntalvez realmente mereça o dinheiro da sua missão.\n"
+        },
+        {
+            "txt" : "[Narrador]: O velho ao balançar a mão, utiliza um encantamento e um saco com dinheiro surge nos seus pés.\nFinalmente você pode sorrir um pouco.\n[Mago Ancião]: Porém, jovem mago, posso te dar um pouco mais,\nse decidir ficar e ouvir o que este conselho tem a dizer.\n"
+        },
+        {
+            "txt" : "RemoveAtor1\n"
+        }
+    ],  
+    "R3-2":[
+        {
+            "txt" : "[Narrador]: Você olha para o fim do corredor, e percebe que não há saída.\n[Narrador]: Com isso você se prepara para o pior e fica a postos.\n"
+        },
+        {
+            "txt" : "InserirDemonioInferior\n"
+        },
+        {
+            "txt": "[Narrador]: A wild demônio inferior appears na sua frente, destruindo tudo em seu caminho.\n[Demônio]: S-Saaiaaaa... M-Mataarr... B-Bonde!!!\n"
+        },
+        {
+            "txt" : "battleDemonioInferior\n"
+        },
+        {
+            "txt": "RemoveAtor1\n"
+        },
+        {
+            "txt": "[Narrador]: Após a derrota, o demônio se torna cinzas.\n[Narrador]: Devido aos estrondos no corredor, a porta se abre e os conselheiros aparecem.\n"
+        },
+        {
+            "txt" : "InserirMagoAnciao\n"
+        },
+        {
+            "txt": "[Mago Ancião]: Que barulheira é essa? O que está acontecendo aqui?\n"
+        },
+        {
+            "txt": "RemoveAtor1\n"
+        },
+        {
+            "txt" : "InserirWillhelm\n"
+        },
+        {
+            "txt": "[Narrador]: O mago observa as cinzas no chão, sente a aura malígna ao redor e te encara.\n[Willhelm]: Parece que de alguma forma o demônio escapou das catacumbas,\ne o guri conseguiu derrotá-lo, como eu disse, ele é digno.\n[Mago Ancião]: Assim o parece... Entre.\n"
+        },
+        {
+            "txt" : "InserirCouncilRoom\n"
+        },
+        {
+            "txt" : "InserirCouncilRoom\n"
+        },
+        {
+            "txt": "RemoveAtor1\n"
+        },
+        {
+            "txt" : "InserirMagoAnciao\n"
+        },
+        {
+            "txt" : "[Narrador]: Você entra na sala, o local é escuro,\ncom um objeto luminoso no centro do ambiente. \n[Narrador]: O mago mais velho vai até uma mesa, retira um objeto e vai em sua direção.\n[Mago Ancião]: Tua bravura é louvável, jovem mago, aquele demônio não era algo qualquer,\ncomo agradecimento pelo seu esforço, daremos a ti, este presente.\n"
+        },
+        {
+            "txt" : "AdquirirCajadoDoBonde\n"
+        },
+        {
+            "txt" : "[Aviso]: Você obteve o poderoso Cajado do Bonde da Magia\n"
+        }
+    ],
+
+    "R3-3":[
+        {
+            "txt" : "[Willhelm]: Obrigado senhor “um qualquer” sem educação.\n"
+        },
+        {
+            "txt" : "[Narrador]: Ele pega a carta de suas mãos, te lança um olhar de bolado e puto e te evoca para um duelo mágico.\n[Narrador]: Para te compensar ele diz que se o derrotar,\nele lhe ensinará uns paranaue novo dos almofadinhas de Mossunguê.\n"
+        },
+        {
+            "txt": "[Willhelm]: Você é bom mesmo, jovem. Infelizmente, os paranauê dos almofadinhas de Mossunguê\né uma magia secreta da universidade\n[Willhelm]: Se contente comigo restaurando seu vigor com esse encanto e me siga.\n"
+        },
+        {
+            "txt": "RestoreHP\n"
         }
     ]
 }
