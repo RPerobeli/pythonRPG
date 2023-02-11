@@ -1,0 +1,68 @@
+[Narrador]: Após alguns dias, vocês chegam aos portões de Teofilotoni.
+[Narrador]: A cidade, altamente fortificada mostra as preocupações de seu rei com a defesa dessa terra.
+
+[Guarda]: Parados aí! A entrada em Teofilotoni de estrangeiros está proibida por ordens do nosso rei!
+[Heroi]: Nós temos um contrado de guilda, guarda.
+[Guardda]: Sinto muito, aventureiro, mas não há exceções
+
+[The'té]: Deixe-me cuidar disso.
+[The'té]: Sabemos de suas obrigações, nobre soldado! Jamais pediríamos para ir contra seu rei.
+Mas acredito que isso possa servir como compensação pela nossa entrada.
+
+[Narrador]: A elfa retira de sua bolsa uma safira cósmica e entrega ao guarda. 
+[Narrador]: Os olhos do guarda brilham com o vislumbre de tal pedra estrelada.
+
+[Guarda]: Dada a casualidade, acredito que com essa generosidade, possamos chegar a um acordo benéfico para ambas as partes.
+[The'té]: Tenho certeza que sim, meu caro amigo anão.
+
+[Narrador]: O guarda libera a entrada na cidade.
+
+[Narrador]: Teofilotoni é uma cidade dividida em superior e inferior. 
+[Narrador]: A parte superior da cidade é voltada para os campos de agricultura,
+já a parte inferior é onde a verdadeira cidade se encontra.
+[Narrador]: Campos de mineração, comércio... a grandeza da cidade ficava embaixo da terra.
+
+[The'té]: Devemos seguir até a taverna Recanto do Opala encontrar com o meu contato aqui da cidade.
+[Heroi]: Uma taverna em uma cidade de anões... Parece promissor...
+
+[Narrador]: A dupla vai até o subúrbio de Teofilotoni, e buscam pelo Recanto do Opala.
+[Narrador]: Ao chegarem na taverna, o taverneiro apresenta uma promoção da casa.
+
+[Taverneiro]: Meus camaradas! Vejo que são novos por aqui, são de outro distrito? 
+[Taverneiro]: A reputação da minha humilde taverna está chegando longe!
+[Taverneiro]: Vieram pelo desafio do Opala?
+
+[Narrador]: O interesse na face do guerreiro era nítido.
+[Heroi]: Do que se trata o desafio, meu caro?
+
+[Taverneiro]: Meu pai, Opala Barbarruiva, ao fundar esse bar, 
+foi o primeiro a beber 6 canecos do rum mais forte que vendemos aqui!
+[Taverneiro]: Todos aqueles que conseguem alcançar ou superar meu pai recebem não precisam pagar a conta da noite,
+além de receberem a honra de serem conhecidos como Opala Seis Canecos por todo o distrito!
+
+[The'té]: Heroi, não deveríamos chamar atenção até terminarmos nossa tarefa aqui.
+[Taverneiro]: O que me diz, nobre aventureiro?
+1 - Buscar o título de Opala Seis Canecos.
+2 - Agir com discrição e recusar a oferta.
+3 - Ir ao banheiro primeiro para esvaziar antes de realizar o desafio.
+
+
+
+1 - Aceitar beber
+{
+[Heroi]: Devo dizer que sempre fui bom com bebida!
+[Taverneiro]: É o que veremos!
+
+[Narrador]: Depois de alguns goles, você sente que o álcool sobe à sua cabeça.
+[Narrador]: Você força mais alguns goles da forte bebida mas é segurado por The'té.
+[The'té]: Nós viemos aqui com outro objetivo.
+
+[Heroi]: Uma ótima bebida anão! Mas não será hoje que vencerei o desafio. Voltarei outro dia!
+[Taverneiro]: Pelo visto temos mais um que fala mais do que bebe senhores! Hahahahaha Alguém mais quer tentar?
+
+[Narrador]: Você se afasta e assenta ao fundo com The'té para esperar o contato.
+[Narrador]: Após um tempo de espera, um anão armadurado
+}
+
+
+

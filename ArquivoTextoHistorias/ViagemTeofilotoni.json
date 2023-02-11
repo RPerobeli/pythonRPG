@@ -121,7 +121,7 @@
 
     "R2-1":[
         {
-            "txt" : "[Narrador]: Você rapidamente desce do cavalo, e se move para pegar a picareta,\npara entregar ao anão.\n[Anão Ferido]: Morra!!!\n[Narrador]: A situação se revela uma emboscada, o companheiro do bandido sai de trás de um conjunto de rochas e inicia uma batalha com The'té.\nVocê é obrigado a lutar sozinho.\n"
+            "txt" : "[Narrador]: Você rapidamente desce do cavalo, e se move para pegar a picareta,\npara entregar ao anão.\n[Anão Ferido]: Morra!!!\n[Narrador]: A situação se revela uma emboscada, \no companheiro do bandido sai de trás de um conjunto de rochas e inicia uma batalha com The'té.\nVocê é obrigado a lutar sozinho.\n"
         },
         {
             "txt" : "battleAnaoFerido\n"
