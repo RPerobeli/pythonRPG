@@ -135,7 +135,7 @@ class Florianopolis(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "RestoreHP\n"):
-            self.Personagem.HP -= self.Personagem.HPmax
+            self.Personagem.HP = self.Personagem.HPmax
             self.StoryListId += 1
             self.VerifyEvent()
             return

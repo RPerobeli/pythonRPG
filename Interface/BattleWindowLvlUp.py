@@ -59,7 +59,7 @@ class BattleWindowLvlUp(GameState.GameState):
             self.Scene = 1
             self.Upou = True
         else:
-            self.BattleText = {"txt": f"O {self.Monster.name} foi capinado.\nXP: {self.Personagem.XP}/100\n"}
+            self.BattleText = {"txt": f"O {self.Monster.name} foi capinado.\nXP: {round(self.Personagem.XP,2)}/100\n"}
             self.Upou = False
             self.Scene = 2
         #endif

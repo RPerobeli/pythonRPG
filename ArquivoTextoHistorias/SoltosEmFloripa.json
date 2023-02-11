@@ -260,7 +260,7 @@
             "txt" : "InserirMagoAnciao\n"
         },
         {
-            "txt" : "[Mago Ancião]: A força de uma guilda não define a força de um homem. Jovem mago, você juntar-se-á à mais nova missão designada pelo Bonde da Magia.\n[Mago Ancião]: No entanto, você precisa se provar digno: enfrente o demônio\nque se encontra nas catacumbas abaixo do castelo.\n[Mago Ancião]: Caso não sobreviva à esse teste, não vai aguentar a missão.\n"
+            "txt" : "[Mago Ancião]: A força de uma guilda não define a força de um homem. \nJovem mago, você juntar-se-á à mais nova missão designada pelo Bonde da Magia.\n[Mago Ancião]: No entanto, você precisa se provar digno: enfrente o demônio\nque se encontra nas catacumbas abaixo do castelo.\n[Mago Ancião]: Caso não sobreviva à esse teste, não vai aguentar a missão.\n"
         },
         {
             "txt" : "battleDemonioInferior\n"
