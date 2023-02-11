@@ -34,7 +34,7 @@
             "txt" : "battleBandido2\n"
         },
         {
-            "txt" : "[Narrador]: Ao olhar em volta, percebe-se que todos os guardas pereceram em batalha,\nlevando consigo seus adversários.\n[Narrador]: Os únicos restantes são o líder da caravana e os mercadores. Nesse momento, o líder se aproxima de você, agradece seus grandes feitos e te presenteia com um elixir revigorante.\n"
+            "txt" : "[Narrador]: Ao olhar em volta, percebe-se que todos os guardas pereceram em batalha,\nlevando consigo seus adversários.\n[Narrador]: Os únicos restantes são o líder da caravana e os mercadores. Nesse momento, \no líder se aproxima de você, agradece seus grandes feitos e \nte presenteia com um elixir revigorante.\n"
         },
         {
             "txt" : "RestoreMP\n"
@@ -63,10 +63,10 @@
             "txt" : "battleBandido1\n"
         },
         {
-            "txt" : "[Narrador]: Ao olhar em volta, percebe-se que todos os guardas pereceram em batalha,\n levando consigo seus adversários.\n[Narrador]: Os únicos restantes são o líder da caravana e os mercadores.\nNesse momento, o líder se aproxima de você, agradece seus grandes feitos e te presenteia com um elixir revigorante.\n"
+            "txt" : "[Narrador]: Ao olhar em volta, percebe-se que todos os guardas pereceram em batalha,\n levando consigo seus adversários.\n[Narrador]: Os únicos restantes são o líder da caravana e os mercadores.\nNesse momento, o líder se aproxima de você, \nagradece seus grandes feitos e te presenteia com um elixir revigorante.\n"
         },
         {
-            "txt" : "RestoreMP"
+            "txt" : "RestoreMP\n"
         },
         {
             "txt" : "[Aviso]: Seus pontos de mana foram restaurados\n"

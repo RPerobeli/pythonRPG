@@ -11,8 +11,8 @@
     },
     {
         "Nome": "Dryad",
-        "ImageMultiplier" : 1,
-        "needFlip" : "False"
+        "ImageMultiplier" : 1.3,
+        "needFlip" : "True"
     },
     {
         "Nome": "Guarda Magico",
@@ -26,7 +26,7 @@
     },
     {
         "Nome": "Mago Anciao",
-        "ImageMultiplier" : 1,
+        "ImageMultiplier" : 1.2,
         "needFlip" : "False"
     },
     {

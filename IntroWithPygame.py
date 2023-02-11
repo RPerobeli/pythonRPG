@@ -25,7 +25,4 @@ while run:
     Clock.tick(FrameRate)
     pygame.display.update()
 #endwhile
-#gsh.Title(screen)
-# começa a contar a historia
-#gsh.HistoriaIntro(screen,dialogBox,Heroi)
 pygame.quit()

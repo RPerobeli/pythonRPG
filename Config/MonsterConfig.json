@@ -74,14 +74,14 @@
         "Nome": "Bandido",
         "Classe": "Guerreiro",
         "isBoss": "False",
-        "ImageMultiplier" : 1,
+        "ImageMultiplier" : 1.6,
         "needFlip" : "True"
     },
     {
         "Nome": "Bandido Atirador",
         "Classe": "Arqueiro",
         "isBoss": "False",
-        "ImageMultiplier" : 1,
+        "ImageMultiplier" : 1.6,
         "needFlip" : "True"
     },
     {
@@ -102,7 +102,7 @@
         "Nome": "Demonio Inferior",
         "Classe": "Guerreiro",
         "isBoss": "True",
-        "ImageMultiplier" : 1,
+        "ImageMultiplier" : 2,
         "needFlip" : "False"
     },
     {

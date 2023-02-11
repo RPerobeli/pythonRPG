@@ -1,6 +1,7 @@
 import pygame
 from Interface.States import Inn
 from Interface.States import Caravan
+from Interface.States import Florianopolis
 from Interface.States import ViagemTeofilotoni
 from Interface.States import Title as t
 from Interface import DialogBox
@@ -47,6 +48,8 @@ class GameStateHandler:
         if(self.Hero!=None):
             self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
             self.State = "inn"
+            # self.floripa = Florianopolis.Florianopolis(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+            # self.State = "Florianopolis"
     #endfunc
     def Inn(self):
         print("inn")
@@ -69,7 +72,7 @@ class GameStateHandler:
         self.Hero,state, continueStory = self.caravan.Update()
         self.State = state
         if(continueStory):
-            print("partiu floripa")
+            self.floripa = Florianopolis.Florianopolis(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
         #endif
     #endfunc
 
@@ -84,6 +87,11 @@ class GameStateHandler:
 
     def Florianopolis(self):
         print('Florianopolis')
+        self.Hero,state, continueStory = self.floripa.Update()
+        self.State = state
+        if(continueStory):
+            print("partiu krambeck ou coliseu")
+        #endif
     #endfunc
 
     def Teofilotoni(self):

@@ -1,16 +1,13 @@
 {
     "Q1" : [
         {
-            "txt" : "InserirFlorianopolis\n"
-        },
-        {
             "txt" : "[Narrador]: Depois de alguns dias de caminhada, finalmente ao longe você vê os\nportões de Florianópolis, ao se aproximar é parado por um guarda.\n"
         },
         {
             "txt" : "InserirGuardaMagico\n"
         },
         {
-            "txt" : "[Guarda]: Alto lá, jovem mago, para adentrar Florianópolis, você precisa de uma identificação qualificando-te.\n1 - Ignorar o aviso e tentar forçar passagem.\n2 - Dizer que está em uma missão de alta importância e que deve entrar na cidade.\n3 - Mostrar a carta da missão, com o selo de Florianópolis.\n"
+            "txt" : "[Guarda]: Alto lá, jovem mago, para adentrar Florianópolis, você precisa de uma identificação \nqualificando-te.\n1 - Ignorar o aviso e tentar forçar passagem.\n2 - Dizer que está em uma missão de alta importância e que deve entrar na cidade.\n3 - Mostrar a carta da missão, com o selo de Florianópolis.\n"
         }
     ],
 
@@ -22,7 +19,10 @@
             "txt" : "battleGuardaMagico\n"
         },
         {
-            "txt": "RemoveAtor1\n"
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt" : "[Narrador]: O guarda cai desacordado e você rapidamente sai de cena,\nantes que outros guardas apareçam.\n"
         }
     ],  
     "R1-2":[
@@ -30,10 +30,13 @@
             "txt" : "[Guarda]: Não me interessa se a sua missão é importante ou urgente, mostre a identificação!\n[Narrador]: O guarda usa uma magia que o joga para longe.\n"
         },
         {
-            "txt" : "[Narrador]: Você deixa cair a carta da missão e o guarda vê o selo de Florianópolis, autorizando sua entrada na cidade.\n"            
+            "txt" : "[Narrador]: Você deixa cair a carta da missão e o guarda vê o selo de Florianópolis, \nautorizando sua entrada na cidade.\n"            
         },
         {
-            "txt": "RemoveAtor1\n"
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt" : "[Guarda]: Peço desculpas pelo infortúnio, pode seguir, jovem.\n"
         }
     ],
 
@@ -42,24 +45,27 @@
             "txt" : "[Narrador]: O guarda valida sua identificação, e o deixa entrar sem mais problemas.\n"
         },
         {
-            "txt": "RemoveAtor1\n"
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt" : "[Guarda]: Vá em paz.\n"
         }
     ],
     "Q2" : [
         {
-            "txt" : "[Narrador]: Após adentrar em Florianópolis, você corre rumo a universidade de magia, para entregar a carta ao destinatário.\n[Narrador]: As ruas da cidade são repletas de pessoas usando itens mágicos,\ncom fontes de água rica em mana em vários pontos da cidade.\n[Narrador]: Os cidadãos de Florianópolis usam magia como parte de suas vidas.\n"
+            "txt" : "[Narrador]: Após adentrar em Florianópolis, você corre rumo a universidade de magia, \npara entregar a carta ao destinatário.\n[Narrador]: As ruas da cidade são repletas de pessoas usando itens mágicos,\ncom fontes de água rica em mana em vários pontos da cidade.\n[Narrador]: Os cidadãos de Florianópolis usam magia como parte de suas vidas.\n"
         },
         {
             "txt" : "InserirUniversidade\n"
         },
         {
-            "txt" : "[Narrador]: Ao se aproximar da universidade da magia,\n você nota uma alta torre ao norte do exuberante castelo que é a universidade.\n[Narrador]: Você anda pelo local, em busca do professor Willhelm, os alunos te guiam com informações e você finalmente chega na sala do mago.\n"
+            "txt" : "[Narrador]: Ao se aproximar da universidade da magia,\n você nota uma alta torre ao norte do exuberante castelo que é a universidade.\n[Narrador]: Você anda pelo local, em busca do professor Willhelm, \nos alunos te guiam com informações e você finalmente chega na sala do mago.\n"
         },
         {
             "txt" : "InserirWillhelm\n"
         },
         {
-            "txt" : "[Heroi]: Você é Willhelm? Minha missão exige que eu te entregue essa carta,\naparenta ter grande importância.\n[Willhelm]: Não sei, talvez eu seja, quem pergunta?\n1- Sou Heroi, vim da guilda Asas da Liberdade para te entregar uma mensagem mega, hiper, ultra, blaster, harecrshima, importante.\n2- Sou sua mãe disfarçada, te trouxe um almoço envelopado.\n3- Sou um mensageiro qualquer, pega essa carta logo e me dê o pagamento.\n"
+            "txt" : "[Heroi]: Você é Willhelm? Minha missão exige que eu te entregue essa carta,\naparenta ter grande importância.\n[Willhelm]: Não sei, talvez eu seja, quem pergunta?\n1- Sou Heroi, vim para te entregar uma mensagem mega, hiper, ultra, blaster, harecrshima, importante.\n2- Sou sua mãe disfarçada, te trouxe um almoço envelopado.\n3- Sou um mensageiro qualquer, pega essa carta logo e me dê o pagamento.\n"
         }
     ],
 
@@ -76,15 +82,6 @@
             "txt": "[Narrador]: Ele então entoa um feitiço que te transforma em um pequeno e indefeso rato\ne lhe dá de alimento para uma serpente mística que ele mantém no armário.\n"
         },
         {
-            "txt": "RemoveAtor1\n"
-        },
-        {
-            "txt": "InsereCobra\n"
-        },
-        {
-            "txt": "[Heroi]: *Guinchos de rato*\n"
-        },
-        {
             "txt": "GameOverEvent\n"
         }
     ],
@@ -94,13 +91,19 @@
             "txt" : "[Willhelm]: Obrigado senhor “um qualquer” sem educação.\n"
         },
         {
-            "txt" : "[Narrador]: Ele pega a carta de suas mãos, te lança um olhar de bolado e puto e te evoca para um duelo mágico.\n[Narrador]: Para te compensar ele diz que se o derrotar,\nele lhe ensinará uns paranaue novo dos almofadinhas de Mossunguê.\n"
+            "txt" : "[Narrador]: Ele pega a carta de suas mãos, \nte lança um olhar de bolado e puto e te evoca para um duelo mágico.\n[Narrador]: Para te compensar ele diz que se o derrotar,\nele lhe ensinará uns paranaue novo dos almofadinhas de Mossunguê.\n"
+        },
+        {
+            "txt": "battleWillhelm\n"
         },
         {
             "txt": "[Willhelm]: Você é bom mesmo, jovem. Infelizmente, os paranauê dos almofadinhas de Mossunguê\né uma magia secreta da universidade\n[Willhelm]: Se contente comigo restaurando seu vigor com esse encanto e me siga.\n"
         },
         {
             "txt": "RestoreHP\n"
+        },
+        {
+            "txt": "[Aviso]: Seus pontos de vida foram restaurados.\n"
         }
     ],
     "Q3" : [
@@ -108,7 +111,7 @@
             "txt" : "InsereCorredor\n"
         },
         {
-            "txt" : "[Narrador]: Chegando no alto da torre, em frente a uma grande porta, o professor abre a carta e\npede que você o espere.\n1- Insistir em entrar com ele na sala e dizer que possui uma identificação de outra escola de magia.\n2- Você se mantém paradão na balada e resolve não entrar, esperando pacientemente.\nao lado de fora da sala do conselho.\n3- Professor, você ainda não me pagou pelo meu trabalho, até eu receber meu pagamento, aonde voce for, eu vou varrendo.\n"
+            "txt" : "[Narrador]: Chegando no alto da torre, em frente a uma grande porta, o professor abre a carta e\npede que você o espere.\n1- Insistir em entrar com ele na sala e dizer que possui uma identificação de outra escola de magia.\n2- Você se mantém paradão na balada e resolve não entrar, esperando pacientemente.\n3- Professor, até eu receber meu pagamento, aonde voce for, eu vou varrendo.\n"
         }
     ],
 
@@ -120,7 +123,7 @@
             "txt" : "[Willhelm]: Se agir de forma desordeira, irão te jogar ao demônio. Você escutou ele lá embaixo, não?\n"
         },
         {
-            "txt" : "RemoveAtor1\n"
+            "txt" : "RemoverAtor1\n"
         },
         {
             "txt" : "InserirCouncilRoom\n"
@@ -141,7 +144,7 @@
             "txt" : "[Mago Ancião]: Moleque, Você adentra na reunião mais importante do Bonde da Magia\napenas para pedir dinheiro? \n[Mago Ancião]: Guardas! Levem-no para o Demônio!\n"
         },
         {
-            "txt" : "RemoveAtor1\n"
+            "txt" : "RemoverAtor1\n"
         },
         {
             "txt" : "battleDemonioInferior\n"
@@ -163,14 +166,14 @@
         },
         {
             "txt" : "[Narrador]: O velho ao balançar a mão, utiliza um encantamento e um saco com dinheiro surge nos seus pés.\nFinalmente você pode sorrir um pouco.\n[Mago Ancião]: Porém, jovem mago, posso te dar um pouco mais,\nse decidir ficar e ouvir o que este conselho tem a dizer.\n"
-        },
-        {
-            "txt" : "RemoveAtor1\n"
         }
     ],  
     "R3-2":[
         {
             "txt" : "[Narrador]: Você olha para o fim do corredor, e percebe que não há saída.\n[Narrador]: Com isso você se prepara para o pior e fica a postos.\n"
+        },
+        {
+            "txt" : "RemoverAtor1\n"
         },
         {
             "txt" : "InserirDemonioInferior\n"
@@ -182,7 +185,7 @@
             "txt" : "battleDemonioInferior\n"
         },
         {
-            "txt": "RemoveAtor1\n"
+            "txt": "RemoverAtor1\n"
         },
         {
             "txt": "[Narrador]: Após a derrota, o demônio se torna cinzas.\n[Narrador]: Devido aos estrondos no corredor, a porta se abre e os conselheiros aparecem.\n"
@@ -194,7 +197,7 @@
             "txt": "[Mago Ancião]: Que barulheira é essa? O que está acontecendo aqui?\n"
         },
         {
-            "txt": "RemoveAtor1\n"
+            "txt": "RemoverAtor1\n"
         },
         {
             "txt" : "InserirWillhelm\n"
@@ -209,7 +212,7 @@
             "txt" : "InserirCouncilRoom\n"
         },
         {
-            "txt": "RemoveAtor1\n"
+            "txt": "RemoverAtor1\n"
         },
         {
             "txt" : "InserirMagoAnciao\n"
@@ -227,16 +230,156 @@
 
     "R3-3":[
         {
-            "txt" : "[Willhelm]: Obrigado senhor “um qualquer” sem educação.\n"
+            "txt" : "InserirCouncilRoom\n"
         },
         {
-            "txt" : "[Narrador]: Ele pega a carta de suas mãos, te lança um olhar de bolado e puto e te evoca para um duelo mágico.\n[Narrador]: Para te compensar ele diz que se o derrotar,\nele lhe ensinará uns paranaue novo dos almofadinhas de Mossunguê.\n"
+            "txt" : "[Narrador]: Willhelm, relutante, esboça uma face azeda e acata a sua afirmação.\n[Narrador]: Você entra na sala, O local é escuro, com um objeto luminoso no centro do ambiente,\n5 cadeiras se encontram dispostas na sala sendo 4 ocupadas.\n[Narrador]: Willhelm entra atrás de você e senta na única cadeira vazia.\n"
         },
         {
-            "txt": "[Willhelm]: Você é bom mesmo, jovem. Infelizmente, os paranauê dos almofadinhas de Mossunguê\né uma magia secreta da universidade\n[Willhelm]: Se contente comigo restaurando seu vigor com esse encanto e me siga.\n"
+            "txt": "RemoverAtor1\n"
         },
         {
-            "txt": "RestoreHP\n"
+            "txt" : "InserirMagoAnciao\n"
+        },
+        {
+            "txt" : "[Narrador]: A atenção dos senhores na sala se volta para você, o mais velho dos homens começa a falar:\n[Mago Ancião]: Willhelm, este é o aventureiro o qual você disse que contrataria?\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt" : "InserirWillhelm\n"
+        },
+        {
+            "txt": "[Willhelm]: Exatamente, senhor, ele veio da Asas da Liberdade,\numa guilda de renome, acredito que ele é capaz.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt" : "InserirMagoAnciao\n"
+        },
+        {
+            "txt" : "[Mago Ancião]: A força de uma guilda não define a força de um homem. Jovem mago, você juntar-se-á à mais nova missão designada pelo Bonde da Magia.\n[Mago Ancião]: No entanto, você precisa se provar digno: enfrente o demônio\nque se encontra nas catacumbas abaixo do castelo.\n[Mago Ancião]: Caso não sobreviva à esse teste, não vai aguentar a missão.\n"
+        },
+        {
+            "txt" : "battleDemonioInferior\n"
+        },
+        {
+            "txt" : "[Narrador]: Os magos esboçam uma felicidade ao ver seu potencial,\ne, contigo, retornam ao alto da torre, na sala do conselho.\n"
+        }
+    ],
+    "Q4" : [
+        {
+            "txt" : "RemoverAtor1\n"
+        },
+        {
+            "txt" : "[Ser Misterioso]: Sente-se, humano.\n[Narrador]: Ramos e galhos são invocados do chão,\nse retorcem e formam algo parecido com uma cadeira para você se assentar.\n"
+        },
+        {
+            "txt" : "InserirDryad\n"
+        },
+        {
+            "txt" : "[Narrador]: Do objeto luminoso na sala, surge uma manifestação mágica, um ser mítico se põe à sua frente.\n[Dryad]: Me chamo Dryad, uma serva das florestas de Krambeck.\n"
+        },
+        {
+            "txt" : "[Dryad]: Devido a aprovação do Bonde,\nvocê foi considerado digno de receber minhas bençãos, para ajudar em minha situação.\n[Dryad]: Recentemente, um culto de bruxaria chegou no meu antigo lar.\nSeus acólitos detinham grande poder, e arrasaram parte da floresta.\n[Dryad]: Meu povo tentou defender nossas matas, lutou bravamente, mas nós,\nassim como os elfos com quem vivíamos em harmonia, fomos derrotados.\n"
+        },
+        {
+            "txt" : "[Dryad]: Exceto eu, todos de minha raça foram mortos.\nO bruxo que coordena o culto deseja destruir nossa floresta mágica para fortalecer \na presença maléfica a qual ele serve.\n[Dryad]: Desejo que você vá até a floresta de Krambeck e elimine os acólitos desse maldito culto.\n"
+        },
+        {
+            "txt" : "1- Ajudar a mítica Dryad.\n2- Recusar e decidir por apenas seguir com sua vida.\n"
+        }
+    ],
+
+    "R4-1":[
+        
+        {
+            "txt" : "[Heroi]: Fiquei comovido com sua história, deixe-me ajudá-la. Afinal, a cerveja não se paga sozinha!\n[Heroi]: No entanto, preciso saber mais desse culto.\n"
+        },
+        {
+            "txt" : "[Dryad]: Esse culto é chamado de Crepúsculo Gélido, e é composto por bruxos, \nque são mestres de demônios.\n[Dryad]: Seus números não são tão extensos,porém cada um invoca lacaios demoníacos \ne isso os tornam numerosos.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt" : "InserirWillhelm\n"
+        },
+        {
+            "txt" : "[Willhelm]: Nossos estudiosos da Universidade vasculharam na nossa biblioteca sobre tal culto,\ne não encontramos nada sobre.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt" : "InserirDryad\n"
+        },
+        {
+            "txt" : "[Dryad]: Apesar de pouca informação, o perigo é real e precisa ser eliminado.\n"
+        },
+        {
+            "txt" : "[Heroi]: Certo, terei que ir até o lá e fazer minha própria pesquisa.\n"
+        },
+        {
+            "txt" : "[Dryad]: A Floresta de Krambeck fica ao sul daqui, seguindo pelas planícies.\n[Dryad]: Por favor, Heroi, contamos com seu poder.\n"
+        }  
+    ],  
+    "R4-2":[
+        {
+            "txt" : "[Heroi]: Admiro sua luta, mas como eu disse, sou apenas um aventureiro, não tenho interesse em problemas dos outros.\n[Heroi]: Se o seu povo, guardião da floresta,\njunto com seus elfos protegidos não conseguiram fazer nada, quem sou eu para tentar alguma coisa?\n"
+        },
+        {
+            "txt" : "[Narrador]: O conselho reprova claramente sua conduta.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt" : "InserirMagoAnciao\n"
+        },
+        {
+            "txt" : "[Mago Ancião]: Mesmo após tudo o que aconteceu, ainda assim se comporta como um moleque diante do Bonde?\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt" : "InserirWillhelm\n"
+        },
+        {
+            "txt" : "[Willhelm]: Parece que eu estava errado sobre você, herói.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt" : "InserirDryad\n"
+        },
+        {
+            "txt" : "[Dryad]: Então, mago, não podemos deixar que meu pedido de ajuda saia deste recinto, você sabe demais.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt" : "InserirMagoAnciao\n"
+        },
+        {
+            "txt" : "[Mago Ancião]: PRENDAM-NO!\n"
+        },
+        {
+            "txt" : "battleGuardaMagicoElite\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt" : "InserirDryad\n"
+        },
+        {
+            "txt" : "[Dryad]: Você realmente tinha muito potencial.\n[Narrador]: Aproveitando-se do seu cansaço,\nDryad utiliza um encanto e lentamente você sente sua mente se esvaindo, até perder a consciência.\n"
         }
     ]
 }
