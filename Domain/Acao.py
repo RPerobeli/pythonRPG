@@ -58,8 +58,9 @@ class Acao:
                 target.HP -= dano
                 return dano
             elif(atkType == 2):
-                if(lib.NaoTemMana(personagem, 0.3*personagem.MPmax)):
-                    print("Mana insuficiente.")
+                custo = 0.05*personagem.MPmax + 2*personagem.skills["agi"] + personagem.skills["int"] + personagem.skills["str"]
+                if(lib.NaoTemMana(personagem, custo)):
+                    return -1
                 else:
                     dano = 2*personagem.arma.danoBase*personagem.skills["agi"]
                     dano = self.AcertoCritico(dano, personagem)
@@ -67,7 +68,7 @@ class Acao:
                     print()
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
-                    personagem.MP -= 0.3*personagem.MPmax
+                    personagem.MP -= custo
                     return dano
                 # endif
             elif(atkType == 3):
@@ -75,9 +76,8 @@ class Acao:
                     print("Mana insuficiente.")
                 else:
                     # BALANCEAR FUNCAO DE MAGIAS
-                    dano = 2 * \
-                        personagem.skills["int"] + \
-                        personagem.skills["agi"] + magiaEscolhida["BaseDamage"]
+                    dano = personagem.skills["int"] + \
+                        2*personagem.skills["agi"] + magiaEscolhida["BaseDamage"]
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
@@ -101,8 +101,9 @@ class Acao:
                 target.HP -= dano
                 return dano
             elif(atkType == 2):
-                if(lib.NaoTemMana(personagem, 0.5*personagem.MPmax)):
-                    print("Mana insuficiente.")
+                custo = 0.05*personagem.MPmax + personagem.skills["agi"] + 2*personagem.skills["int"] + personagem.skills["str"]
+                if(lib.NaoTemMana(personagem, custo)):
+                    return -1
                 else:
                     dano = 2*personagem.arma.danoBase*personagem.skills["int"]
                     dano = self.AcertoCritico(dano, personagem)
@@ -110,7 +111,7 @@ class Acao:
                     print()
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
-                    personagem.MP -= 0.5*personagem.MPmax
+                    personagem.MP -= custo
                     return dano
                 # endif
             elif(atkType == 3):
@@ -141,12 +142,14 @@ class Acao:
     # endfunc
 
     def Curar(self, personagem):
-        multiplicadorCura = rnd.randint(4,7)/10.0
+        baseHeal = 5
+        multiplicadorCura = rnd.randint(1,2)/10.0
         if(personagem.isMonstro):
             personagem.HP += 0.2*personagem.HPmax
             personagem.MP += 0.2*personagem.MPmax
         else:
-            personagem.HP += multiplicadorCura*personagem.HPmax
+            personagem.HP += baseHeal + multiplicadorCura*personagem.HPmax + \
+                personagem.skills["str"] + personagem.skills["agi"] + personagem.skills["int"]
             personagem.MP += 0.4*personagem.MPmax
         # endif
         print("Regenerou vida e mana")

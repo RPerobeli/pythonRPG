@@ -59,6 +59,8 @@ class BattleWindow(GameState.GameState):
     #endfunc 
 
     def PrintDmg(self, dano, personagem, isCrit = None):
+        if(dano == -1):
+            self.BattleText = {"txt": "Ta sem mana, OTARIO!!"}
         if(personagem.acoes.isCrit or isCrit == True):
             self.BattleText = {"txt": f"ACERTO CRÍTICO!!!\n{personagem.name} causou {dano} de dano!\n"}
         else:
@@ -75,8 +77,8 @@ class BattleWindow(GameState.GameState):
         #endif
     #endfunc
 
-    def VerifyMana(self, spell):
-        if(self.Personagem.MP < spell["Cost"]):
+    def VerifyMana(self, spellcost):
+        if(self.Personagem.MP < spellcost):
             return True
         else:
             return False
@@ -136,7 +138,7 @@ class BattleWindow(GameState.GameState):
                         self.isSelectingSpell = True
                         atkType = 3
                         spell = self.SpellsWindow.SelectSpell()
-                        if(self.VerifyMana(spell)== True):
+                        if(self.VerifyMana(spell["cost"])== True):
                             self.BattleText = {"txt": "TA SEM MANA, OTARIO!\n"}
                         else:
                             dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster, spell)

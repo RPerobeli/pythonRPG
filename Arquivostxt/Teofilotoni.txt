@@ -28,16 +28,16 @@ já a parte inferior é onde a verdadeira cidade se encontra.
 [Narrador]: A dupla vai até o subúrbio de Teofilotoni, e buscam pelo Recanto do Opala.
 [Narrador]: Ao chegarem na taverna, o taverneiro apresenta uma promoção da casa.
 
-[Taverneiro]: Meus camaradas! Vejo que são novos por aqui, são de outro distrito? 
+[Taverneiro]: Aôba, meus camaradas! Vejo que são novos por aqui, são de outro distrito? 
 [Taverneiro]: A reputação da minha humilde taverna está chegando longe!
 [Taverneiro]: Vieram pelo desafio do Opala?
 
-[Narrador]: O interesse na face do guerreiro era nítido.
+[Narrador]: O interesse presente na face do guerreiro era nítido.
 [Heroi]: Do que se trata o desafio, meu caro?
 
 [Taverneiro]: Meu pai, Opala Barbarruiva, ao fundar esse bar, 
-foi o primeiro a beber 6 canecos do rum mais forte que vendemos aqui!
-[Taverneiro]: Todos aqueles que conseguem alcançar ou superar meu pai recebem não precisam pagar a conta da noite,
+foi o primeiro a beber 6 canecos da cachaça mais forte que temos aqui!
+[Taverneiro]: Todos aqueles que conseguem alcançar ou superar meu pai não precisam pagar a conta da noite,
 além de receberem a honra de serem conhecidos como Opala Seis Canecos por todo o distrito!
 
 [The'té]: Heroi, não deveríamos chamar atenção até terminarmos nossa tarefa aqui.
