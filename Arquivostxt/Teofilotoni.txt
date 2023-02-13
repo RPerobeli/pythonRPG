@@ -26,6 +26,10 @@ já a parte inferior é onde a verdadeira cidade se encontra.
 [Heroi]: Uma taverna em uma cidade de anões... Parece promissor...
 
 [Narrador]: A dupla vai até o subúrbio de Teofilotoni, e buscam pelo Recanto do Opala.
+[Narrador]: Enquanto caminhavam, viam muitos cidadãos miseráveis pelas ruas,
+com guardas constantemente os abordando.
+[Narrador]: Ao longe era visível a construção que parecia ser o castelo do rei enânico.
+
 [Narrador]: Ao chegarem na taverna, o taverneiro apresenta uma promoção da casa.
 
 [Taverneiro]: Aôba, meus camaradas! Vejo que são novos por aqui, são de outro distrito? 
@@ -36,7 +40,7 @@ já a parte inferior é onde a verdadeira cidade se encontra.
 [Heroi]: Do que se trata o desafio, meu caro?
 
 [Taverneiro]: Meu pai, Opala Barbarruiva, ao fundar esse bar, 
-foi o primeiro a beber 6 canecos da cachaça mais forte que temos aqui!
+foi o primeiro a beber 6 canecos da 51 mais forte que temos aqui!
 [Taverneiro]: Todos aqueles que conseguem alcançar ou superar meu pai não precisam pagar a conta da noite,
 além de receberem a honra de serem conhecidos como Opala Seis Canecos por todo o distrito!
 
@@ -61,7 +65,38 @@ além de receberem a honra de serem conhecidos como Opala Seis Canecos por todo 
 [Taverneiro]: Pelo visto temos mais um que fala mais do que bebe senhores! Hahahahaha Alguém mais quer tentar?
 
 [Narrador]: Você se afasta e assenta ao fundo com The'té para esperar o contato.
-[Narrador]: Após um tempo de espera, um anão armadurado
+[Narrador]: Após um tempo de espera, um anão armadurado adentra o recinto.
+
+[Narrador]: The'té faz um sinal com a cabeça e o anão vem até vocês.
+[Contato]: Noite! Percebo que conseguiu chegar aqui sem muitos problemas.
+
+[The'té]: Teremos tropas para nos ajudar vindos daqui algumas semanas,
+os preparativos estão sendo feitos. A revolução terá o nosso apoio.
+
+[Contato]: O desgraçado do rei Zé Dassilva IV será morto por nós. 
+[Contato]: Temos seguidores o suficiente para causar um alvoroço dentro de Teofilotoni.
+[Contato]: Enquanto o exército real estiver ocupado com a distração élfica, seremos capazes
+de assassinar o rei e atingir os suprimentos do inimigo.
+
+[The'té]: Os detalhes estão nesse envelope.
+
+[Narrador]: Enquanto conversavam, guardas entram na taverna:
+[Guarda]: Recebemos uma denúncia de um humano e uma elfa suspeitos entrando na cidade, eles foram vistos entrando nessa taverna.
+[Guarda]: Solicito calma a todos enquanto revistamos o local.
+
+[Narrador]: Rapidamente, aproveitando que os clientes ainda estavam digerindo a informação, 
+The'té agarra o seu braço e o do anão e vocês tentam escapar pelos fundos.
+[Narrador]: Um dos guardas capta a movimentação.
+
+[Guarda]: ALI ESTÃO ELES!!
+
+[Narrador]: Vocês tentam fugir pela janela do bar, conseguem correr por algumas quadras com flechas ao seu encalço,
+porém, o cerco dos guardas acaba por alcançá-los. 
+
+[Narrador]: Após conseguir abrir um cerco nos guardas, vocês tentam fugir por um beco,
+enquanto os guardas continuam na perseguição.
+[Narrador]:
+
 }
 
 
