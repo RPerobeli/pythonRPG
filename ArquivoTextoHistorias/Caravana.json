@@ -25,7 +25,7 @@
             "txt" : "[Narrador]: Após alguns dias, ao cair da noite, a caravana monta o último acampamento antes de chegarem em Florianópolis.\n[Narrador]: Enquanto comiam em volta da fogueira, você escuta murmúrios advindos da floresta...\n"
         },
         {
-            "txt" : "[Narrador]: Um dos guardas da caravana adentra nos arbustos. Ouve-se um grito, e o ataque começa.\n[Narrador]: Um grupo de bandidos ataca a caravana, os guardas já se encontram em combate, e 2 dos bandidos vêm em sua direção.\n"
+            "txt" : "[Narrador]: Um dos guardas da caravana adentra nos arbustos. Ouve-se um grito, e o ataque começa.\n[Narrador]: Um grupo de bandidos ataca a caravana, os guardas já se encontram em combate, \n2 dos bandidos vêm em sua direção.\n"
         },
         {
             "txt" : "battleBandido1\n"

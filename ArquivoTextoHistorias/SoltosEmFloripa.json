@@ -117,7 +117,7 @@
 
     "R3-1":[
         {
-            "txt" : "[Willhelm]: Fedelho insolente, atrás desta porta se encontra o conselho de magia desta universidade, o Bonde da Magia.\n"
+            "txt" : "[Willhelm]: Fedelho insolente, atrás desta porta se encontra o conselho de magia desta universidade, \no Bonde da Magia.\n"
         },
         {
             "txt" : "[Willhelm]: Se agir de forma desordeira, irão te jogar ao demônio. Você escutou ele lá embaixo, não?\n"
@@ -135,7 +135,7 @@
             "txt" : "InserirMagoAnciao\n"
         },
         {
-            "txt" : "[Mago Ancião]: Jovem, não sei se percebeu, mas esta sala é o local de reunião dos maiores magos de Florianópolis, o que pensa que está fazendo entrando dessa forma?\n[Mago Ancião]: Apresente sua identificação de aluno. Agora!\n"
+            "txt" : "[Mago Ancião]: Jovem, não sei se percebeu, mas esta sala é o local de reunião dos maiores magos de \nFlorianópolis, o que pensa que está fazendo entrando dessa forma?\n[Mago Ancião]: Apresente sua identificação de aluno. Agora!\n"
         },
         {
             "txt" : "[Heroi]: Então... Eu sou um pacato aventureiro, da guilda Asas da Liberdade,\nvim apenas entregar uma carta e desejo meu pagamento!\n"
@@ -162,7 +162,7 @@
             "txt" : "InserirMagoAnciao\n"
         },
         {
-            "txt" : "[Mago Ancião]: PAREM!\n[Mago Ancião]: Vejo que é mais forte que o esperado, pequeno mago. Se batalhaste contra tal criatura e sobreviveste,\ntalvez realmente mereça o dinheiro da sua missão.\n"
+            "txt" : "[Mago Ancião]: PAREM!\n[Mago Ancião]: Vejo que é mais forte que o esperado, pequeno mago. \nSe batalhaste contra tal criatura e sobreviveste,\ntalvez realmente mereça o dinheiro da sua missão.\n"
         },
         {
             "txt" : "[Narrador]: O velho ao balançar a mão, utiliza um encantamento e um saco com dinheiro surge nos seus pés.\nFinalmente você pode sorrir um pouco.\n[Mago Ancião]: Porém, jovem mago, posso te dar um pouco mais,\nse decidir ficar e ouvir o que este conselho tem a dizer.\n"

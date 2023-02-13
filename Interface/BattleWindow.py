@@ -138,7 +138,7 @@ class BattleWindow(GameState.GameState):
                         self.isSelectingSpell = True
                         atkType = 3
                         spell = self.SpellsWindow.SelectSpell()
-                        if(self.VerifyMana(spell["cost"])== True):
+                        if(self.VerifyMana(spell["Cost"])== True):
                             self.BattleText = {"txt": "TA SEM MANA, OTARIO!\n"}
                         else:
                             dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster, spell)
