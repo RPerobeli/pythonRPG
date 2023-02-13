@@ -95,9 +95,23 @@ porém, o cerco dos guardas acaba por alcançá-los.
 
 [Narrador]: Após conseguir abrir um cerco nos guardas, vocês tentam fugir por um beco,
 enquanto os guardas continuam na perseguição.
-[Narrador]:
+[Anão Desconhecido]: Rápido, por aqui!
+
+[Narrador]: Vocês, no desespero, acompanham para dentro da casa do anão enquato ele fecha a porta.
+[Contato]: Por Deus Tik! Era para você ter vigiado o lado de fora para nos avisar se alguém aparecesse.
+[Tik]: Uai Tok, me bateu uma fome então vim em casa pegar um docinho de leite, sô.
+[Tok]: Uai nada Tik! 
 
 }
+
+
+[Heroi]: Poderiam discutir outra hora? Estamos sendo procurados pelos oficiais.
+[Heroi]: The'té, a situação está resolvida, sua mensagem já foi entregue.
+Poderia me pagar pelo meu serviço, para eu ir embora?
+[The'té]: Aqui está, mas acredito que uma vez que já foi visto conosco,
+você também é um procurado. Não saírá com tranquilidade dessa cidade.
+
+[Tik]: Pode ficar escondido o quanto precisar, "cês" aceitam um cafézim?
 
 
 
