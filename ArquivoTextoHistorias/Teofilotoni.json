@@ -1,0 +1,238 @@
+{
+    "Q1":
+    [
+        {
+            "txt": "[Narrador]: Após alguns dias, vocês chegam aos portões de Teofilotoni.\n[Narrador]: A cidade, altamente fortificada mostra as preocupações de seu rei com a defesa dessa terra.\n"
+        },
+        {
+            "txt": "InserirGuardaExterno\n"
+        },
+        {
+            "txt": "[Guarda]: Parados aí! A entrada em Teofilotoni de estrangeiros está proibida por ordens do nosso rei!\n[Heroi]: Nós temos um contrado de guilda, guarda.\n[Guardda]: Sinto muito, aventureiro, mas não há exceções.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
+        },
+        {
+            "txt": "[The'té]: Deixe-me cuidar disso.\n[The'té]: Sabemos de suas obrigações, nobre soldado! Jamais pediríamos para ir contra seu rei.\nMas acredito que isso possa servir como compensação pela nossa entrada.\n"
+        },
+        {
+            "txt": "[Narrador]: A elfa retira de sua bolsa uma safira cósmica e entrega ao guarda.\n[Narrador]: Os olhos do guarda brilham com o vislumbre de tal pedra estrelada.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirGuardaExterno\n"
+        },
+        {
+            "txt": "[Guarda]: Dada a casualidade, acredito que com essa generosidade, \npossamos chegar a um acordo benéfico para ambas as partes.\n"
+            
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
+        },
+        {
+            "txt": "[The'té]: Tenho certeza que sim, meu caro amigo anão.\n[Narrador]: O guarda libera a entrada na cidade.\n"
+        },
+        {
+            "txt": "InserirBackgroundTeofilotoniStreets\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "[Narrador]: Teofilotoni é uma cidade dividida em superior e inferior.\n[Narrador]: A parte superior da cidade é voltada para os campos de agricultura,\njá a parte inferior é onde a verdadeira cidade se encontra.\n[Narrador]: Campos de mineração, comércio... a grandeza da cidade ficava embaixo da terra.\n"
+        },
+        {
+            "txt": "InserirThete\n"
+        },
+        {
+            "txt": "[The'té]: Devemos seguir até a taverna Recanto do Opala encontrar com o meu contato aqui da cidade.\n[Heroi]: Uma taverna em uma cidade de anões... Parece promissor...\n"
+        },
+        {
+            "txt": "[Narrador]: A dupla vai até o subúrbio de Teofilotoni, e buscam pelo Recanto do Opala.\n[Narrador]: Enquanto caminhavam, viam muitos cidadãos miseráveis pelas ruas,\ncom guardas por todos os lados.\n[Narrador]: Ao longe era visível a construção que parecia ser o castelo do rei enânico.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "[Narrador]: Ao chegarem na taverna, o taverneiro apresenta uma promoção da casa.\n"
+        },
+        {
+            "txt": "InserirTaverneiro\n"
+        },
+        {
+            "txt": "[Taverneiro]: Aôba, meus camaradas! Vejo que são novos por aqui, são de outro distrito?\n[Taverneiro]: A reputação da minha humilde taverna está chegando longe!\n[Taverneiro]: Vieram pelo desafio do Opala?\n"
+        },
+        {
+            "txt": "[Narrador]: O interesse presente na face do guerreiro era nítido.\n[Heroi]: Do que se trata o desafio, meu caro?\n"
+        },
+        {
+            "txt": "[Taverneiro]: Meu pai, Opala Barbarruiva, ao fundar esse bar, \nfoi o primeiro a beber 6 canecos da 51 mais forte que temos aqui!\n[Taverneiro]: Todos aqueles que conseguem alcançar ou superar meu pai não precisam pagar a conta da noite,\nalém de receberem a honra de serem conhecidos como Opala Seis Canecos por todo o distrito!\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
+        },
+        {
+            "txt": "[The'té]: Heroi, não deveríamos chamar atenção até terminarmos nossa tarefa aqui.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirTaverneiro\n"
+        },
+        {
+            "txt": "[Taverneiro]: O que me diz, nobre aventureiro?\n1 - Um desafio suspeito, fingir aceitar mas agir com cautela.\n2 - Agir com discrição e recusar a oferta.\n3 - Buscar o título de Opala Seis Canecos.\n"
+        }
+    ],
+
+    "R1-1":
+    [
+        {
+            "txt": "[Heroi]: Devo dizer que sempre fui bom com bebida!\n[Taverneiro]: É o que veremos!\n"
+        },
+        {
+            "txt": "[Narrador]: Depois de alguns goles, você sente que o álcool sobe à sua cabeça.\n[Narrador]: Você força mais alguns goles da forte bebida mas é segurado por The'té.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
+        },
+        {
+            "txt": "[The'té]: Nós viemos aqui com outro objetivo.\n\n"
+        },
+        {
+            "txt": "[Heroi]: Uma ótima bebida anão! Mas não será hoje que vencerei o desafio. Voltarei outro dia!\n"  
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirTaverneiro\n"
+        },
+        {
+            "txt": "[Taverneiro]: Pelo visto temos mais um que fala mais do que bebe senhores! Hahahahaha Alguém mais quer tentar?\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "[Narrador]: Você se afasta e assenta ao fundo com The'té para esperar o contato.\n[Narrador]: Após um tempo de espera, um anão armadurado adentra o recinto.\n"
+        },
+        {
+            "txt": "InserirTok\n"
+        },
+        {
+            "txt": "[Narrador]: The'té faz um sinal com a cabeça e o anão vem até vocês.\n[Contato]: Noite! Percebo que conseguiu chegar aqui sem muitos problemas.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
+        },
+        {
+            "txt": "[The'té]: Teremos tropas para nos ajudar vindos daqui algumas semanas,\nos preparativos estão sendo feitos. A revolução terá o nosso apoio.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirTok\n"
+        },
+        {
+            "txt": "[Contato]: O desgraçado do rei Zé Dassilva IV será morto por nós. \n[Contato]: Temos seguidores o suficiente para causar um alvoroço dentro de Teofilotoni.\n[Contato]: Enquanto o exército real estiver ocupado com a distração élfica, seremos capazes\nde assassinar o rei e atingir os suprimentos do inimigo.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
+        },
+        {
+            "txt": "[The'té]: Os detalhes estão nesse envelope.\n"
+        },
+        {
+            "txt": "[Narrador]: Enquanto conversavam, guardas entram na taverna:\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirGuarda\n"
+        },
+        {
+            "txt": "[Guarda]: Recebemos uma denúncia de um humano e uma elfa suspeitos entrando na cidade, eles foram vistos entrando nessa taverna.\n[Guarda]: Solicito calma a todos enquanto revistamos o local.\n"
+        },
+        {
+            "txt": "[Narrador]: Rapidamente, aproveitando que os clientes ainda estavam digerindo a informação, \nThe'té agarra o seu braço e o do anão e vocês tentam escapar pelos fundos.\n[Narrador]: Um dos guardas capta a movimentação.\n"
+        },
+        {
+            "txt": "[Guarda]: ALI ESTÃO ELES!!\n"
+        },
+        {
+            "txt": "InserirBackgroundTeofilotoniStreets\n"
+        },
+        {
+            "txt": "[Narrador]: Vocês tentam fugir pela janela do bar, conseguem correr por algumas quadras com flechas ao seu encalço,\nporém, o cerco dos guardas acaba por alcançá-los. \n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "BattleGuardaBesteiro\n"
+        },
+        {
+            "txt": "BattleGuardaMago\n"
+        },
+        {
+            "txt": "[Narrador]: Após conseguir uma abertura no cerco nos guardas, vocês tentam fugir por um beco,\nenquanto os guardas continuam na perseguição.\n"
+        },
+        {
+            "txt": "InserirTik\n"
+        },
+        {
+            "txt": "[Anão Desconhecido]: Rápido, por aqui!\n\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirTok\n"
+        },
+        {
+            "txt": "[Narrador]: Vocês, no desespero, acompanham para dentro da casa do anão enquanto ele fecha a porta.\n[Contato]: Por Deus Tik! Era para você ter vigiado o lado de fora para nos avisar se alguém aparecesse.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirTik\n"
+        },
+        {
+            "txt": "[Tik]: Uai Tok, me bateu uma fome então vim em casa pegar um docinho de leite, sô.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirTok\n"
+        },
+        {
+            "txt": "[Tok]: Uai nada, Tik!\n[Narrador]: A dupla de anões discute mais um pouco, até serem interrompidos.\n"
+        }
+    ],
+}

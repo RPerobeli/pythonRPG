@@ -27,7 +27,7 @@ já a parte inferior é onde a verdadeira cidade se encontra.
 
 [Narrador]: A dupla vai até o subúrbio de Teofilotoni, e buscam pelo Recanto do Opala.
 [Narrador]: Enquanto caminhavam, viam muitos cidadãos miseráveis pelas ruas,
-com guardas constantemente os abordando.
+com guardas por todos os lados.
 [Narrador]: Ao longe era visível a construção que parecia ser o castelo do rei enânico.
 
 [Narrador]: Ao chegarem na taverna, o taverneiro apresenta uma promoção da casa.
@@ -46,13 +46,12 @@ além de receberem a honra de serem conhecidos como Opala Seis Canecos por todo 
 
 [The'té]: Heroi, não deveríamos chamar atenção até terminarmos nossa tarefa aqui.
 [Taverneiro]: O que me diz, nobre aventureiro?
-1 - Buscar o título de Opala Seis Canecos.
+1 - Um desafio suspeito, fingir aceitar mas agir com cautela.
 2 - Agir com discrição e recusar a oferta.
-3 - Ir ao banheiro primeiro para esvaziar antes de realizar o desafio.
+3 - Buscar o título de Opala Seis Canecos.
 
 
-
-1 - Aceitar beber
+1 - Aceitar beber com cautela
 {
 [Heroi]: Devo dizer que sempre fui bom com bebida!
 [Taverneiro]: É o que veremos!
@@ -93,17 +92,119 @@ The'té agarra o seu braço e o do anão e vocês tentam escapar pelos fundos.
 [Narrador]: Vocês tentam fugir pela janela do bar, conseguem correr por algumas quadras com flechas ao seu encalço,
 porém, o cerco dos guardas acaba por alcançá-los. 
 
-[Narrador]: Após conseguir abrir um cerco nos guardas, vocês tentam fugir por um beco,
+[Narrador]: Após conseguir uma abertura no cerco nos guardas, vocês tentam fugir por um beco,
 enquanto os guardas continuam na perseguição.
+[Anão Desconhecido]: Rápido, por aqui!
+
+[Narrador]: Vocês, no desespero, acompanham para dentro da casa do anão enquanto ele fecha a porta.
+[Contato]: Por Deus Tik! Era para você ter vigiado o lado de fora para nos avisar se alguém aparecesse.
+[Tik]: Uai Tok, me bateu uma fome então vim em casa pegar um docinho de leite, sô.
+[Tok]: Uai nada, Tik! 
+
+[Narrador]: A dupla de anões discute mais um pouco, até serem interrompidos.
+}
+
+2 - Agir com discrição e recusar a oferta.
+{
+[Narrador]: Vocês buscam uma mesa ao fundo, de onde dava pra olhar todo o bar,
+sem ficarem expostos.
+[The'té]: Vê esse anões felizes? A cerveja é a única coisa que põe sorrisos em seus rostos.
+
+[The'té]: Pessoalmente, é um desperdício ajudar esses caras, mas os poderosos vêem nessa revolução
+uma possibilidade de comércio.
+[Heroi]: Revolução?
+
+[The'té]: Sim... Há décadas os anões se trancaram em Teofilotoni, e como pôde ver,
+eles conseguiram muitas riquezas. Mas ninguém além deles tem acesso a tudo isso.
+[The'té]: Porém, isso fica apenas para as casas nobres deles. No fim, a maioria dos anões
+tem como maior esperança de diversão, vir para tavernas como essa.
+
+[Narrador]: The'té faz um sinal com a cabeça para um anão que acabara de entrar na taverna.
+[Contato]: Noite! Percebo que conseguiu chegar aqui sem muitos problemas.
+
+[The'té]: Teremos tropas para nos ajudar vindos daqui algumas semanas,
+os preparativos estão sendo feitos. A revolução terá o nosso apoio.
+
+[Contato]: O desgraçado do rei Zé Dassilva IV será morto por nós. 
+[Contato]: Temos seguidores o suficiente para causar um alvoroço dentro de Teofilotoni.
+[Contato]: Enquanto o exército real estiver ocupado com a distração élfica, seremos capazes
+de assassinar o rei e atingir os suprimentos do exército real.
+
+[The'té]: Os detalhes estão nesse envelope.
+
+[Narrador]: Após conversarem mais detalhes sobre o plano da revolução vocês saem do Recando do Opala.
+[Contato]: Iremos à minha casa, ficaremos escondidos lá até o dia da ação.
+
+[Narrador]: Enquanto caminhavam, flechas atingem o anão, rapidamente The'té lança uma adaga em resposta,
+matando um dos inimigos.
+[Narrador]: Uma emboscada feita pelos oficiais aparece e vocês são atacados por diversos lados.
+[Narrador]: Você se prepara para o combate.
+
+[Narrador]: São muitos soldados, a situação fica complicada, ainda mais com o anão ferido.
+[Narrador]: Uma bomba de fumaça cai e os encobre.
+[Anão Desconhecido]: RÁPIDO, POR AQUI! 
+
+[Narrador]: Com ajuda, os 3 conseguem fugir para uma casa em um beco.
+[Anão Desconhecido]: Tok! Cê ta bem? vamo cuidar desse machucado aí.
+
+[Tok]: Uai, tô ótimo, Tik! Nem parece que tem duas flechas no meu corpo!
+[Tok]: Aproveita e me ajuda aqui a parar o sangramento.
+
+[Tik]: Salvo vocês e cê ainda reclama? Não vou deixar pão de queijo procê essa noite!
+}
+
+3 - Buscar o título de Opala Seis Canecos.
+{
+[Heroi]: Devo dizer que sempre fui bom com bebida!
+[Heroi]: SEREI UM OPALA 6 CANECOS!!!
+[Taverneiro]: É o que veremos!
+
+[Narrador]: Já no segundo caneco, você sente que o álcool começa a subir.
+[Heroi]: O que é isso, taverneiro? Essa 51 está muito leve!
+[Narrador]: Você continua bebendo como se não houvesse amanhã.
+
+[Narrador]: Enquanto você bebe, The'té sinaliza a anão que entra no bar 
+e ambos iniciam a preparação para a revolução.
+
+[The'té]: Teremos tropas para nos ajudar vindos daqui algumas semanas,
+os preparativos estão sendo feitos. A revolução terá o nosso apoio.
+
+[Contato]: O desgraçado do rei Zé Dassilva IV será morto por nós. 
+[Contato]: Temos seguidores o suficiente para causar um alvoroço dentro de Teofilotoni.
+[Contato]: Enquanto o exército real estiver ocupado com a distração élfica, seremos capazes
+de assassinar o rei e atingir os suprimentos do exército real.
+
+[The'té]: Os detalhes estão nesse envelope.
+
+[Taverneiro]: Senhores! Temos mais um a conquistar o nosso desafio!
+[Taverneiro]: Apresento a todos! Heroi, o Opala 6 Canecos!
+
+[Narrador]: A taverna vai à loucura enquanto festejam a sua conquista, no entanto,
+você não entende muito bem, visto que estava muito alcolizado.
+
+[Narrador]: Enquanto festejavam, alguns soldados entraram no bar.
+
+[Guarda]: Ficamos sabendo que temos um novo opala 6 canecos no distrito, e que ele é um HUMANO!
+[Taverneiro]: Sim! Cumprimentem o nosso vencedor! 
+
+[Narrador]: Uma adaga acerta um dos guardas. The'té rapidamente saca suas espadas enquanto você ainda está cambaleante.
+[The'te]: Anão, segure este maldito alcólatra.
+
+[Narrador]: O anão te joga para o lado, e saca seu martelo para ajudar a elfa.
+[Narrador]: Você ainda cambaleante saca sua arma enquanto um guarda vêm em sua direção.
+
+[Narrador]: Com toda a confusão, vocês conseguem sair do bar.
+[Narrador]: Ao final da rua, um anão desconhecido acenava para vocês.
+
 [Anão Desconhecido]: Rápido, por aqui!
 
 [Narrador]: Vocês, no desespero, acompanham para dentro da casa do anão enquato ele fecha a porta.
 [Contato]: Por Deus Tik! Era para você ter vigiado o lado de fora para nos avisar se alguém aparecesse.
 [Tik]: Uai Tok, me bateu uma fome então vim em casa pegar um docinho de leite, sô.
-[Tok]: Uai nada Tik! 
+[Tok]: Uai nada, Tik! 
 
+[Narrador]: A dupla de anões discute mais um pouco, até serem interrompidos.
 }
-
 
 [Heroi]: Poderiam discutir outra hora? Estamos sendo procurados pelos oficiais.
 [Heroi]: The'té, a situação está resolvida, sua mensagem já foi entregue.
@@ -111,7 +212,10 @@ Poderia me pagar pelo meu serviço, para eu ir embora?
 [The'té]: Aqui está, mas acredito que uma vez que já foi visto conosco,
 você também é um procurado. Não saírá com tranquilidade dessa cidade.
 
-[Tik]: Pode ficar escondido o quanto precisar, "cês" aceitam um cafézim?
+[Tik]: Podem ficar aqui escondidos o quanto precisarem, "cês" aceitam um cafézim?
+[Tok]: Tem broa de fubá também.
+
+
 
 
 
