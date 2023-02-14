@@ -11,7 +11,7 @@
     },
     {
         "Classe": "mago",
-        "ImageMultiplier" : 1.3,
+        "ImageMultiplier" : 0.8,
         "needFlip" : "False"
     }
 ]

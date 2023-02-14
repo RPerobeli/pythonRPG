@@ -3,6 +3,7 @@ from Interface.States import Inn
 from Interface.States import Caravan
 from Interface.States import Florianopolis
 from Interface.States import ViagemTeofilotoni
+from Interface.States import Teofilotoni
 from Interface.States import Title as t
 from Interface import DialogBox
 from Interface import BattleWindow as bw
@@ -48,8 +49,8 @@ class GameStateHandler:
         if(self.Hero!=None):
             self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
             self.State = "inn"
-            # self.floripa = Florianopolis.Florianopolis(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
-            # self.State = "Florianopolis"
+            # self.teofilotoni = Teofilotoni.Teofilotoni(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+            # self.State = "Teofilotoni"
     #endfunc
     def Inn(self):
         print("inn")
@@ -81,7 +82,7 @@ class GameStateHandler:
         self.Hero,state, continueStory = self.caminhoTeofilo.Update()
         self.State = state
         if(continueStory):
-            print("partiu teofilo")
+            self.teofilotoni = Teofilotoni.Teofilotoni(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
         #endif
     #endfunc
 
@@ -96,5 +97,10 @@ class GameStateHandler:
 
     def Teofilotoni(self):
         print('Teofilotoni')
+        self.Hero,state, continueStory = self.teofilotoni.Update()
+        self.State = state
+        if(continueStory):
+            print("partiu coliseu ou acre")
+        #endif
     #endfunc
 #endclass

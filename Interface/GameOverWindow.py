@@ -1,3 +1,4 @@
+import sys
 import pygame
 import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
@@ -46,9 +47,11 @@ class GameOverWindow(GameState.GameState):
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
+                    sys.exit()
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_KP_ENTER):
                     pygame.quit()
+                    sys.exit()
                 #endif
             #endfor
             pygame.display.update()

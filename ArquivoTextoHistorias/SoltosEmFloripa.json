@@ -331,7 +331,7 @@
     ],  
     "R4-2":[
         {
-            "txt" : "[Heroi]: Admiro sua luta, mas como eu disse, sou apenas um aventureiro, não tenho interesse em problemas dos outros.\n[Heroi]: Se o seu povo, guardião da floresta,\njunto com seus elfos protegidos não conseguiram fazer nada, quem sou eu para tentar alguma coisa?\n"
+            "txt" : "[Heroi]: Admiro sua luta, mas como eu disse, sou apenas um aventureiro, \nnão tenho interesse em problemas dos outros.\n[Heroi]: Se o seu povo, guardião da floresta,\njunto com seus elfos protegidos não conseguiram fazer nada, quem sou eu para tentar alguma coisa?\n"
         },
         {
             "txt" : "[Narrador]: O conselho reprova claramente sua conduta.\n"

@@ -7,11 +7,11 @@ import Interface.GameOverWindow as gow
 import Interacoes as lib
 import Interface.States.GameState as GameState
 
-class Florianopolis(GameState.GameState):
+class Teofilotoni(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None, armas= None):
         super().__init__(screen)
         self.ImagePath =  jsonL.GetImagePath()
-        self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Florianopolis.jpg').convert_alpha()
+        self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/TeofilotoniGates.jpg').convert_alpha()
         self.DialogBox = dialogBox
         self.Personagem = personagem
         self.Monstros = monstros
@@ -20,7 +20,7 @@ class Florianopolis(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
-        self.Filename = "SoltosEmFloripa"
+        self.Filename = "Teofilotoni"
         self.MaxStoryIndex = 5
         self.Count = 0
         self.Armas = armas
@@ -49,32 +49,73 @@ class Florianopolis(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMagoAnciao\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Mago Anciao"))
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirThete\n"):
+            self.Actors.append(lib.GetNpc(self.Npcs,"Thete"))
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirDryad\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Dryad"))
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTok\n"):
+            self.Actors.append(lib.GetNpc(self.Npcs,"Tok"))
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirGuardaMagico\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Guarda Magico"))
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTik\n"):
+            self.Actors.append(lib.GetNpc(self.Npcs,"Tik"))
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirWillhelm\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Willhelm"))
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BattleAnaoAtiradorInn\n"):
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Atirador"), "TeofilotoniInn")
+            self.Personagem = battleWindow.Battle()
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirDemonioInferior\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Demonio Inferior"))
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BattleAnaoAtiradorStreet\n"):
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Atirador"), "TeofilotoniStreets")
+            self.Personagem = battleWindow.Battle()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BattleAnaoPolicialStreet\n"):
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Policial"), "TeofilotoniStreets")
+            self.Personagem = battleWindow.Battle()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BattleAnaoPolicialInn\n"):
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Policial"), "TeofilotoniInn")
+            self.Personagem = battleWindow.Battle()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BattleAnaoMagoStreet\n"):
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Mago"), "TeofilotoniStreets")
+            self.Personagem = battleWindow.Battle()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneiro\n"):
+            self.Actors.append(lib.GetNpc(self.Npcs,"Taverneiro"))
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirGuardaExterno\n"):
+            self.Actors.append(lib.GetNpc(self.Npcs,"Guarda Anao"))
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirGuarda\n"):
+            self.Actors.append(lib.GetMonstro(self.Monstros,"Anao Policial"))
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -83,66 +124,26 @@ class Florianopolis(GameState.GameState):
             self.GameOver = gow.GameOverWindow(self.Screen)
             self.GameOver.GameOver()
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirFlorianopolis\n"):
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Florianopolis.jpg').convert_alpha()
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundTeofilotoniInn\n"):
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/TeofilotoniInn.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InsereCorredor\n"):
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/TowerCorridor.jpg').convert_alpha()
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundTeofilotoniStreets\n"):
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/TeofilotoniStreets.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirCouncilRoom\n"):
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/CouncilRoom.jpg').convert_alpha()
+        if(self.StoryTextList[self.StoryListId]['txt'] == "LoseMPTotal\n"):
+            self.Personagem.MP = 0
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirUniversidade\n"):
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/MagicUniversity.jpg').convert_alpha()
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "battleGuardaMagico\n"):
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Guarda Magico"), "Florianopolis")
-            self.Personagem = battleWindow.Battle()
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "battleGuardaMagicoElite\n"):
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Guarda de Elite"), "CouncilRoom")
-            self.Personagem = battleWindow.Battle()
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "battleWillhelm\n"):
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Willhelm"), "MagicUniversity")
-            self.Personagem = battleWindow.Battle()
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "battleDemonioInferior\n"):
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Demonio Inferior"), "TowerCorridor")
-            self.Personagem = battleWindow.Battle()
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "RestoreHP\n"):
-            self.Personagem.HP = self.Personagem.HPmax
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "AdquirirCajadoDoBonde\n"):
-            self.Personagem.arma = lib.GetArma(self.Armas,"arma1mago")
+        if(self.StoryTextList[self.StoryListId]['txt'] == "LoseMPMetade\n"):
+            self.Personagem.MP = self.Personagem.MP/2
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -150,7 +151,7 @@ class Florianopolis(GameState.GameState):
     #endif
 
     def Update(self):
-        pygame.display.set_caption("Florianopolis")
+        pygame.display.set_caption("Teofilotoni")
         if(self.Count == 0):
             self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
             self.Count+=1
@@ -193,7 +194,7 @@ class Florianopolis(GameState.GameState):
             #endif
         #endfor
         pygame.display.update()
-        return self.Personagem,'Florianopolis',False
+        return self.Personagem,'Teofilotoni',False
     #endFunction
 
 #endclass

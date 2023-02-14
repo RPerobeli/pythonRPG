@@ -92,11 +92,11 @@
         "needFlip" : "True"
     },
     {
-        "Nome": "Guarda Magico de Elite",
+        "Nome": "Guarda de Elite",
         "Classe": "Mago",
         "isBoss": "False",
         "ImageMultiplier" : 1,
-        "needFlip" : "True"
+        "needFlip" : "False"
     },
     {
         "Nome": "Demonio Inferior",
@@ -123,14 +123,35 @@
         "Nome": "Anao Bandido",
         "Classe": "Guerreiro",
         "isBoss": "False",
-        "ImageMultiplier" : 1,
-        "needFlip" : "True"
+        "ImageMultiplier" : 0.5,
+        "needFlip" : "False"
     },
     {
         "Nome": "Ana Bandida",
         "Classe": "Guerreiro",
         "isBoss": "False",
         "ImageMultiplier" : 0.7,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Policial",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Anao Atirador",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Mago",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
         "needFlip" : "False"
     }
 ]

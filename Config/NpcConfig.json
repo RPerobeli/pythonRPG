@@ -33,5 +33,25 @@
         "Nome": "Thete",
         "ImageMultiplier" : 1,
         "needFlip" : "True"
+    },
+    {
+        "Nome": "Guarda Anao",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Taverneiro",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Tik",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Tok",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
     }
 ]
