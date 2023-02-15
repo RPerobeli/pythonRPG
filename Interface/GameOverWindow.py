@@ -49,7 +49,7 @@ class GameOverWindow(GameState.GameState):
                     pygame.quit()
                     sys.exit()
                 #endif
-                if (event.type == pygame.KEYDOWN and event.key == pygame.K_KP_ENTER):
+                if (event.type == pygame.KEYDOWN and event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE):
                     pygame.quit()
                     sys.exit()
                 #endif

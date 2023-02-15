@@ -76,7 +76,7 @@ class BattleWindowLvlUp(GameState.GameState):
                 if event.type == pygame.QUIT:
                      pygame.quit()
                 #endif
-                if (event.type == pygame.KEYDOWN and event.key == pygame.K_KP_ENTER):
+                if (event.type == pygame.KEYDOWN and (event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE)):
                     if(not self.Upou):
                         return self.Personagem
                     #endif
