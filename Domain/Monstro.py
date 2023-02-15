@@ -10,6 +10,8 @@ class Monstro():
     def __init__(self, nome, classe, isBoss):
         self.name = nome
         self.XP = 0
+        self.SP = 0
+        self.SPmax = 100
         self.lvl = 1
         self.classe = classe
         self.skills = {"str": 0, "agi": 0, "int": 0, "vit": 0}
@@ -157,4 +159,10 @@ class Monstro():
             self.MPmax = (0.25*self.lvl+0.75)*self.MPmax
         #endif
     # endfunc
+    def AtualizaSpecialPoints(self, value):
+        self.SP += value
+        if(self.SP > self.SPmax):
+            self.SP = self.SPmax
+        #endif
+    #endfunc
 # endclass

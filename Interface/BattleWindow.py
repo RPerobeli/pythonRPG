@@ -41,9 +41,6 @@ class BattleWindow(GameState.GameState):
             else:
                 self.LoadTextWithList(self.BattleText)
             #endif
-        elif(self.Scene == 2):
-            print("Lanchado, se fodeu.")
-            print("criar a tela de game over")
         else:
             print("erro ao entrar nas Cenas -> inn.ScenesManager()")
         #endif
@@ -51,18 +48,22 @@ class BattleWindow(GameState.GameState):
 
     def LoadBattleOptions(self):
         self.OptionsDict = jsonL.GetOptions()
-        self.HealthDict = {"txt": f"{self.Personagem.name}.HP: {self.Personagem.HP}/{self.Personagem.HPmax}    {self.Monster.name}.HP:  {self.Monster.HP}/{self.Monster.HPmax}\n{self.Personagem.name}.MP: {self.Personagem.MP}/{self.Personagem.MPmax}    {self.Monster.name}.MP:  {self.Monster.MP}/{self.Monster.MPmax}\n"}
+        self.HealthDict = {"txt": f"{self.Personagem.name}.HP: {self.Personagem.HP}/{self.Personagem.HPmax}    {self.Monster.name}.HP:  {self.Monster.HP}/{self.Monster.HPmax}\n{self.Personagem.name}.MP: {self.Personagem.MP}/{self.Personagem.MPmax}    {self.Monster.name}.MP:  {self.Monster.MP}/{self.Monster.MPmax}\n{self.Personagem.name}.SP: {self.Personagem.SP}/{self.Personagem.SPmax}\n"}
         self.StatusDict = {"txt": f"Força:        {self.Personagem.skills['str']}\nAgilidade:    {self.Personagem.skills['agi']}\nVitalidade:   {self.Personagem.skills['vit']}\nInteligência: {self.Personagem.skills['int']}\n"}
         self.LoadTextWithList(self.HealthDict)
-        self.LoadTextWithList(self.StatusDict, self.OptionsDict["Options"]["PositionStatus"]["x"],self.OptionsDict["Options"]["PositionStatus"]["y"])
+        self.LoadTextWithList(self.StatusDict, self.OptionsDict["Options"]["PositionStatus"]["x"]+250,self.OptionsDict["Options"]["PositionStatus"]["y"])
         self.LoadTextWithList(self.OptionsDict["Options"]["OptionsText"], self.OptionsDict["Options"]["PositionOptions"]["x"],self.OptionsDict["Options"]["PositionOptions"]["y"])
     #endfunc 
 
-    def PrintDmg(self, dano, personagem, isCrit = None):
+    def PrintDmg(self, dano, personagem, isCrit = None, isSpecial = False):
         if(dano == -1):
-            self.BattleText = {"txt": "Ta sem mana, OTARIO!!"}
-        if(personagem.acoes.isCrit or isCrit == True):
+            self.BattleText = {"txt": "Ta sem mana, OTARIO!!\n"}
+        elif(dano == -2):
+            self.BattleText = {"txt": "Você não está preparado! Falta-lhe Special Points\n"}
+        elif(personagem.acoes.isCrit or isCrit == True):
             self.BattleText = {"txt": f"ACERTO CRÍTICO!!!\n{personagem.name} causou {dano} de dano!\n"}
+        elif(isSpecial):
+            self.BattleText = {"txt": f"{personagem.arma.textoAtkEspecial}\n{personagem.name} causou {dano} de dano!\n"}
         else:
             self.BattleText = {"txt": f"{personagem.name} causou {dano} de dano!\n"}
         #endif
@@ -129,7 +130,7 @@ class BattleWindow(GameState.GameState):
                         atkType = 2
                         self.BattleText = self.Personagem.arma.textoAtkEspecial
                         dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster)
-                        self.PrintDmg(dano,self.Personagem)
+                        self.PrintDmg(dano,self.Personagem, isSpecial = True)
                         turnCounter += 1
                     #endif
                 #endif

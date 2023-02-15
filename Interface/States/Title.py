@@ -87,7 +87,7 @@ class Title(GameState.GameState):
                 sys.exit()
             #endif
             if event.type == pygame.MOUSEBUTTONDOWN:
-                # If the user clicked on the input_box rect.
+                # If the user clicked on the input_box rectangle.
                 if self.EditBox.collidepoint(event.pos):
                     # Toggle the active variable.
                     self.Active = not self.Active
@@ -140,7 +140,9 @@ class Title(GameState.GameState):
                     elif event.key == pygame.K_BACKSPACE:
                         self.HeroName = self.HeroName[:-1]
                     else:
-                        self.HeroName += event.unicode
+                        if(len(self.HeroName)<8):
+                            self.HeroName += event.unicode
+                        #endif
             pygame.display.update()
         #endfor
     #endFunction
