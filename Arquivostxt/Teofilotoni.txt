@@ -9,7 +9,13 @@ você também é um procurado. Não saírá com tranquilidade dessa cidade.
 [Tik]: Podem ficar aqui escondidos o quanto precisarem, "cês" aceitam um cafézim?
 [Tok]: Tem broa de fubá também.
 
-[Narrador]: Algumas semanas depois, 
+[Narrador]: Algumas semanas depois, o dia derradeiro se aprovimava.
+[The'té]: O exército élfico deve estar em vias de se aproximar da cidade.
+
+[Tok]: Logo começará.
+
+[Tik]: Do nosso lado também ja estamos prontos.
+[Tik]: Todos os esquadrões já tem suas ordens
 
 
 
