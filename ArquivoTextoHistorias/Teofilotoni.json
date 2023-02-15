@@ -217,6 +217,9 @@
             "txt": "InserirTok\n"
         },
         {
+            "txt": "InserirBattlegroundTikTokHouse\n"
+        },
+        {
             "txt": "[Narrador]: Vocês, no desespero, acompanham para dentro da casa do anão enquanto ele fecha a porta.\n[Contato]: Por Deus Tik! Era para você ter vigiado o lado de fora para nos avisar se alguém aparecesse.\n"
         },
         {
@@ -235,7 +238,7 @@
             "txt": "InserirTok\n"
         },
         {
-            "txt": "[Tok]: Uai nada, Tik!\n[Narrador]: A dupla de anões discute mais um pouco, até serem interrompidos.\n"
+            "txt": "[Tok]: Uai... Uai nada! Você pôs tudo a perder, Tik! \n[Narrador]: A dupla de anões discute mais um pouco, até serem interrompidos.\n"
         }
     ],
     "R1-2":
@@ -326,6 +329,9 @@
         },
         {
             "txt": "[Anão Desconhecido]: RÁPIDO, POR AQUI! \n"
+        },
+        {
+            "txt": "InserirBattlegroundTikTokHouse\n"
         },
         {
             "txt": "[Narrador]: Com ajuda, os 3 conseguem fugir para uma casa em um beco.\n[Anão Desconhecido]: Tok! Cê ta bem? vamo cuidar desse machucado aí.\n"
@@ -460,7 +466,10 @@
             "txt": "InserirTok\n"
         },
         {
-            "txt": "[Narrador]: Vocês, no desespero, acompanham para dentro da casa do anão enquanto ele fecha a porta.\n[Contato]: Por Deus Tik! Era para você ter vigiado o lado de fora para nos avisar se alguém aparecesse.\n"
+            "txt": "InserirBattlegroundTikTokHouse\n"
+        },
+        {
+            "txt": "[Narrador]: Vocês, no desespero, acompanham para dentro da casa do anão enquanto ele fecha a porta.\n[Contato]: Por Deus Tik! Era para você ter vigiado o 'trem' para nos avisar se alguém aparecesse.\n"
         },
         {
             "txt": "RemoverAtor1\n"
@@ -478,7 +487,7 @@
             "txt": "InserirTok\n"
         },
         {
-            "txt": "[Tok]: Uai nada, Tik! \n"
+            "txt": "[Tok]: Uai... Uai nada! Você pôs tudo a perder, Tik! \n"
         },
         {
             "txt": "[Narrador]: A dupla de anões discute mais um pouco, até serem interrompidos.\n"

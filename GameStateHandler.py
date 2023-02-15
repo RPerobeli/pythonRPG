@@ -47,10 +47,10 @@ class GameStateHandler:
         self.Title.RedrawWindow()
         self.Hero = self.Title.Update()
         if(self.Hero!=None):
-            self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
-            self.State = "inn"
-            # self.teofilotoni = Teofilotoni.Teofilotoni(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
-            # self.State = "Teofilotoni"
+            # self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
+            # self.State = "inn"
+            self.teofilotoni = Teofilotoni.Teofilotoni(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+            self.State = "Teofilotoni"
     #endfunc
     def Inn(self):
         print("inn")

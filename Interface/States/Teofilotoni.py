@@ -136,8 +136,20 @@ class Teofilotoni(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBattlegroundTikTokHouse\n"):
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/TikTokHouse.jpg').convert_alpha()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "LoseMPTotal\n"):
             self.Personagem.MP = 0
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "LoseMPMetade\n"):
+            self.Personagem.MP = self.Personagem.MP/2
             self.StoryListId += 1
             self.VerifyEvent()
             return
