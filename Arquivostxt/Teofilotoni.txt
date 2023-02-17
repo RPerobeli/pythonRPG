@@ -106,7 +106,7 @@ enquanto ela batalhava contra 2 soldados.
 
 
 
-[Guarda]: Ei, acorda!
+[Campeão de Teofilotoni]: Ei, acorda!
 
 [Narrador]: Você acorda, acorrentado, e percebe que o local em que está não é uma prisão.
 
@@ -114,18 +114,17 @@ enquanto ela batalhava contra 2 soldados.
 
 [Narrador]: Ainda confuso, você não responde.
 
-[Guarda]: O rei demanda uma resposta, escória!
-1 - Sou um aventureiro, fui contratado para uma escolta e acabei envolvido nisso tudo.
-2 - Ah, morre! Diabo!
-3 - Sou Heroi.
-
-
-{1 - Sou um aventureiro, fui contratado para uma escolta e acabei envolvido nisso tudo.
+[Campeão de Teofilotoni]: O rei demanda uma resposta, escória!
+[Heroi]: Sou um aventureiro, fui contratado para uma escolta e acabei envolvido nisso tudo.
 
 [Zé Dassilva IV]: Entendo, aventureiro, então acredito que, como você acabou envolvido nisso por acidente,
-fará um favor a essa nação e dirá 
+fará um favor a essa nação e dirá quais são os planos dos golpistas.
+1 - Trair a revolução e entregar os planos.
+2 - Manter-se firme e não ajudar o ditador.
+
+{ 1 - Trair a revolução e entregar os planos.
+
+[Heroi]: 
 }
-{ 2 - Ah, morre! Diabo!
- [Narrador]: Imediatamente o guarda real corta sua cabeça na frente do rei.    
-}
+
 
