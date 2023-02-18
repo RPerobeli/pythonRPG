@@ -87,10 +87,54 @@ enquanto ela batalhava contra 2 soldados.
 
 [The'té]: SAI DAQUI!!
 
-[Narrador]: Com The'té caindo em suas costas, vocÊ tenta escapar, mas são muitos soldados.
+[Narrador]: Com The'té caindo em suas costas, você tenta escapar, mas são muitos soldados.
 [Narrador]: A perda de sangue faz com que você sinta tonto.
 [Narrador]: Você sente um golpe nas sua cabeça e fica desacordado.
 }
 
+{3- Sair do prédio e tentar matar o máximo de guardas possível para impedir a possível emboscada.
+
+[The'té]: ATAQUE INIMIGO!!
+
+[Tik]: Arreda que lá vai bomba!
+[Narrador]: Tik arremessa algumas granadas pela janela.
+[Narrador]: Você desce as escadas para sair do prédio mas encontra Tok ateando fogo na casa.
+
+[Narrador]: O andar debaixo está em chamas.
+[Tok]: Sinto muito, Heroi, mas tem ofertas que não se pode recusar.
+[Tok]: A vida de vocês será uma oferenda para meu propósito maior!
+[Tok]: O rei me dará uma fortuna pra sair dessa maldita cidade! Recomeçarei em outro lugar!
+
+[Narrador]: Ao sair da casa, o prédio desaba devido às chamas, com todos dentro.
+[Narrador]: Soldados se encontram por todos os lados.
+[Narrador]: Uma flecha acerta sua perna, impedindo que você corra com velocidade
+
+[Anão Nobre]: Capturem-no com vida.
+
+[Narrador]: Cansado e com ferimentos, você desaba desacordado.
+}
+
+
+
+[Campeão de Teofilotoni]: Ei, acorda!
+
+[Narrador]: Você acorda, acorrentado, e percebe que o local em que está não é uma prisão.
+
+[Zé Dassilva IV]: Então você é um dos apoiadores dessa tentativa de golpe em cima de mim?
+
+[Narrador]: Ainda confuso, você não responde.
+
+[Campeão de Teofilotoni]: O rei demanda uma resposta, escória!
+[Heroi]: Sou um aventureiro, fui contratado para uma escolta e acabei envolvido nisso tudo.
+
+[Zé Dassilva IV]: Entendo, aventureiro, então acredito que, como você acabou envolvido nisso por acidente,
+fará um favor a essa nação e dirá quais são os planos dos golpistas.
+1 - Trair a revolução e entregar os planos.
+2 - Manter-se firme e não ajudar o ditador.
+
+{ 1 - Trair a revolução e entregar os planos.
+
+[Heroi]: 
+}
 
 
