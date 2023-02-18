@@ -33,7 +33,17 @@ você também é um procurado. Não saírá com tranquilidade dessa cidade.
 {1- Manterem-se escondidos, e esperar mais um dia, como planejado.
 
 [Narrador]: Vocês aguardam o dia seguinte.
-[Narrador]: Durante a noite, você acorda
+[Narrador]: Durante a noite, você acorda com um barulho, lentamente olha para o lado e vê um anão no quarto.
+[Narrador]: Um assassino, se digirindo para matar The'té.
+
+[Narrador]: Você se levanta para chamar a elfa mas no mesmo instante ela, em um ataque muito rápido,
+mata o assassino.
+
+[The'té]: Nos descobriram... Nossa posição está comprometida.
+[The'té]: Avisarei o Tik e o Tok.
+
+[Narrador]: Após a elfa descer as escadas, outro assassino entra pela janela.
+[Narrador]: Você saca sua arma e se prepara para combate
 }
 
 { 2- Tentar mandar uma mensagem para o exército sulista, avisando que foram notados
