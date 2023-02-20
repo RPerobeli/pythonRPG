@@ -43,7 +43,18 @@ mata o assassino.
 [The'té]: Avisarei o Tik e o Tok.
 
 [Narrador]: Após a elfa descer as escadas, outro assassino entra pela janela.
-[Narrador]: Você saca sua arma e se prepara para combate
+[Narrador]: Você saca sua arma e se prepara para combate.
+
+[Narrador]: Ao descer as escadas, seus aliados já haviam levado a luta para o lado de fora da casa.
+[Narrador]: Tik jazia no chão enquanto The'té e Tok continuavam a ceifar vidas de soldados em uma luta desesperada.
+
+[Anão Nobre]: Você será por minha conta.
+
+[Heroi]: Um ótimo martelo, anão, ficarei com ele.
+
+[Narrador]: A luta com o anão nobre tinha sido dura, a tontura da perda de sangue começa a aparecer.
+[Narrador]: Mais a frente você percebe The'té cair perante os soldados anões do rei.
+[Narrador]: Você desmaia devido aos ferimentos.
 }
 
 { 2- Tentar mandar uma mensagem para o exército sulista, avisando que foram notados
@@ -134,7 +145,54 @@ fará um favor a essa nação e dirá quais são os planos dos golpistas.
 
 { 1 - Trair a revolução e entregar os planos.
 
-[Heroi]: 
+[Heroi]: Agrdeço a misericórdia meu bom rei.
+
+[Narrador]: Você revela tudo que sabe sobre os planos da revolução.
+Desde objetivos logísticos ao assassinado do rei, bem como a distração do exército élfico.
+
+[Zé Dassilva IV]: Muito obrigado nobre aventureiro. Sua sábia decisão será recompensada.
+[Zé Dassilva IV]: Despachem as ordens, acabaremos com a resistência hoje!
+
+[Narrador]: Os oficiais presentes no salão saem em disparada.
+[Narrador]: Os sinos de alerta das muralhas externas começa a tocar. O exército dos elfos haia chegado.
+
+[Zé Dassilva IV]: Para você, aventureiro, tenho um pequeno presente. Gel'ssu, meu campeão, mate-o.
+
+[Gel'ssu]: Com prazer, meu rei.
+
+[Heroi]: O que? Não, calma aí!
+
+[Zé Dassilva IV]: Muito bom, Heroi. Acredito que tendo demonstrado tamanha força, possa realizar uma tarefa para mim.
+[Zé Dassilva IV]: Ao sul, há uma selva que há rumores de um artefato mágico, cujo poderes me farão um soberano acima de qualquer outro!
+[Zé Dassilva IV]: Desejo que você se junte à minha força expedicionária no Acre, e que me traga tal artefato.
+
+[Heroi]: Acredito que eu não tenha escolha, estou certo?
+
+[Zé Dassilva IV]: Muito perspicaz da sua parte.
+[Zé Dassilva IV]: A força expedicionária partirá em agora mesmo. Vá, e lembre-se da minha misericórdia em não matá-lo.
 }
 
+{2 - Manter-se firme e não ajudar o ditador.
+
+[Heroi]: De fato eu não tenho nada relacionado à essa revoluçao, mas me pedir para ajudar um rei tiranico como você...
+[Heroi]: Está longe do meu limite.
+
+[Narrador]: Você cospe no rei, enquanto continua ajoelhado.
+
+[Zé Dassilva IV]: Vejo que não tens desejo pelo diálogo, uma pena.
+[Zé Dassilva IV]: Gel'ssu. Mate-o.
+
+[Gel'ssu]: Com prazer, meu rei.
+
+[Narrador]: O armadurado anão vem em sua direção. Com sua destreza você é capaz de aparar o golpe e assim cortar suas algemas.
+
+[Heroi]: Agora é a sua vez, maldito rei.
+
+[Narrador]: Ainda calmo, o rei nem esboçava medo, mesmo tendo perdido o seu campeão.
+[Narrador]: Você sofre um choque vindo das suas algemas.
+
+[Zé Dassilva IV]: A tecnologia mágica enânica é demais para vocẽ? Achou mesmo que eu não tomaria precauções?
+[Zé Dassilva IV]: Quanta petulância... Ainda assim, farei dinheiro com você.
+
+}
 
