@@ -529,19 +529,53 @@
             "txt": "[Tok]: Tem broa de fubá também.\n"
         },
         {
-            "txt": "[Narrador]: Algumas semanas depois, o dia derradeiro se aprovimava.\n[The'té]: O exército élfico deve estar em vias de se aproximar da cidade.\n"
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "[Narrador]: Algumas semanas depois, o dia derradeiro se aprovimava.\n"
+        },
+        {
+            "txt": "InserirThete\n"
+        },
+        {
+            "txt": "[The'té]: O exército élfico deve estar em vias de se aproximar da cidade.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+
+        {
+            "txt": "InserirTok\n"
         },
         {
             "txt": "[Tok]: Amanhã é o dia combinado. O 'trem' vai começar.\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirTik\n"
+        },
+        {
             "txt": "[Tik]: Do nosso lado também ja estamos prontos.\n[Tik]: Todos os esquadrões já tem suas ordens.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
         },
         {
             "txt": "[Narrador]: Enquanto conversavam, o alarme do distrito tocou.\n[Narrador]: Após Tok observar pela janela, alguns guardas foram vistos em movimentação.\n"
         },
         {
+            "txt": "InserirTik\n"
+        },
+        {
             "txt": "[Tik]: Se os soldados tão em movimentação, eles podem ter noção do exército élfico.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
         },
         {
             "txt": "[The'té]: Os desgraçados devem ter notado a movimentação do exército para o norte.\n"
@@ -557,6 +591,9 @@
             "txt": "[Narrador]: Vocês aguardam o dia seguinte.\n[Narrador]: Durante a noite, você acorda com um barulho, lentamente olha para o lado e vê um anão no quarto.\n[Narrador]: Um assassino, se digirindo para matar The'té.\n"
         },
         {
+            "txt": "InserirThete\n"
+        },
+        {
             "txt": "[Narrador]: Você se levanta para chamar a elfa mas no mesmo instante ela,\nem um ataque muito rápido,mata o assassino.\n"
         },
         {
@@ -566,13 +603,28 @@
             "txt": "[Narrador]: Após a elfa descer as escadas, outro assassino entra pela janela.\n[Narrador]: Você saca sua arma e se prepara para combate.\n"
         },
         {
+            "txt": "battleAssassino\n"
+        },
+        {
             "txt": "[Narrador]: Ao descer as escadas, seus aliados já haviam levado a luta para o lado de fora da casa.[Narrador]: Tik jazia no chão enquanto The'té e Tok continuavam a ceifar vidas de soldados em uma luta desesperada.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirNobreAnao\n"
         },
         {
             "txt": "[Anão Nobre]: Você será por minha conta.\n"
         },
         {
+            "txt": "battleAnaoNobre\n"
+        },
+        {
             "txt": "[Heroi]: Um ótimo martelo, anão, ficarei com ele.\n"
+        },
+        {
+            "txt": "InserirMartelodoNobre\n"
         },
         {
             "txt": "[Narrador]: A luta com o anão nobre tinha sido dura, a tontura da perda de sangue começa a aparecer.\n[Narrador]: Mais a frente você percebe The'té cair perante os soldados anões do rei.\n[Narrador]: Você desmaia devido aos ferimentos.\n"
