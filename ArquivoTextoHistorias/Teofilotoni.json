@@ -609,6 +609,9 @@
             "txt": "[Narrador]: Ao descer as escadas, seus aliados já haviam levado a luta para o lado de fora da casa.[Narrador]: Tik jazia no chão enquanto The'té e Tok continuavam a ceifar vidas de soldados em uma luta desesperada.\n"
         },
         {
+            "txt": "InserirBackgroundTeofilotoniStreets\n"
+        },
+        {
             "txt": "RemoverAtor1\n"
         },
         {
@@ -633,10 +636,25 @@
     "R2-2":
     [
         {
+            "txt": "InserirNobreAnao\n"
+        },
+        {
             "txt": "[The'té]: Eles devem planejar acabar com o exército sulista antes de lidarem conosco...\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirTok\n"
+        },
+        {
             "txt": "[Tok]: Uma emboscada, talvez?\n[Tok]: Precisamos notificar nossos aliados, rápido.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
         },
         {
             "txt": "[The'té]: Farei uma mensagem. Tik, prepare um pombo correio.\n"
@@ -654,10 +672,25 @@
             "txt": "[Narrador]: Enquanto saíam, um anão, no alto da rua aparece.\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirNobreAnao\n"
+        },
+        {
             "txt": "[Anão Nobre]: É muito fácil fazê-los sair de seus esconderijos.\nFoi necessário apenas um alarme falso hahahaha!\n"
         },
         {
             "txt": "[Narrador]: Você olha a volta e percebe que estão cercados,\nTik já estava no chão enquanto Tok lutava, contra uns soldados.\n[Narrador]: The'té por sua vez tentava chegar no anão nobre para matá-lo.\n"
+        },
+        {
+            "txt": "battleGuarda\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
         },
         {
             "txt": "[Narrador]: Após sair do sufoco, você tenta ajudar a The'té a tentar chegar no nobre,\nenquanto ela batalhava contra 2 soldados.\n"
@@ -666,13 +699,34 @@
             "txt": "[Anão Nobre]: Tenente, acabe com esse humano!\n"
         },
         {
+            "txt": "battleTenente\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
+        },
+        {
             "txt": "[Narrador]: Você desvia de um golpe do nobre, enquanto rola para o lado.\n[The'té]: Heroi! Cuidado!\n"
         },
         {
             "txt": "[Narrador]: 2 atiradores em cima do prédio visam a sua vida. The'té atira 2 adagas e conseque matar um dos inimigos.\n[The'té]: Saia daqui! Alguém precisa avisar os outros núcleos!\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirNobreAnao\n"
+        },
+        {
             "txt": "[Anão Nobre]: Vocês não sairão daqui com vida!\n[Narrador]: Você defende um golpe do martelo do anão, mais uma flecha vem em sua direção.\n[Narrador]: The'té entra na frente da flecha.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
         },
         {
             "txt": "[The'té]: SAI DAQUI!!\n"
@@ -684,10 +738,28 @@
     "R2-3":
     [
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
+        },
+        {
             "txt": "[The'té]: ATAQUE INIMIGO!!\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirTik\n"
+        },
+        {
             "txt": "[Tik]: Arreda que lá vai bomba!\n[Narrador]: Tik arremessa algumas granadas pela janela.\n[Narrador]: Você desce as escadas para sair do prédio mas encontra Tok ateando fogo na casa.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirTok\n"
         },
         {
             "txt": "[Narrador]: O andar debaixo está em chamas.\n[Tok]: Sinto muito, Heroi, mas tem ofertas que não se pode recusar.\n[Tok]: A vida de vocês será uma oferenda para meu propósito maior!\n[Tok]: O rei me dará uma fortuna pra sair dessa maldita cidade! Recomeçarei em outro lugar!\n"
@@ -696,7 +768,19 @@
             "txt": "[Narrador]: Ao sair da casa, o prédio desaba devido às chamas, com todos dentro.\n[Narrador]: Soldados se encontram por todos os lados.\n[Narrador]: Uma flecha acerta sua perna, impedindo que você corra com velocidade\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirNobreAnao\n"
+        },
+        {
             "txt": "[Anão Nobre]: Capturem-no com vida.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirThete\n"
         },
         {
             "txt": "[The'té]: Para fora! Rápido!\n"
@@ -708,16 +792,40 @@
     "Q3":
     [
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirCampeao\n"
+        },
+        {
             "txt": "[Campeão de Teofilotoni]: Ei, acorda!\n"
         },
         {
             "txt": "[Narrador]: Você acorda, acorrentado, e percebe que o local em que está não é uma prisão.\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirReiAnao\n"
+        },
+        {
             "txt": "[Zé Dassilva IV]: Então você é um dos apoiadores dessa tentativa de golpe em cima de mim?\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirCampeao\n"
+        },
+        {
             "txt": "[Campeão de Teofilotoni]: O rei demanda uma resposta, escória!\n[Heroi]: Sou um aventureiro, fui contratado para uma escolta e acabei envolvido nisso tudo.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirReiAnao\n"
         },
         {
             "txt": "[Zé Dassilva IV]: Entendo, aventureiro, então acredito que, como você acabou envolvido nisso por acidente,\nfará um favor a essa nação e dirá quais são os planos dos golpistas.\n1 - Trair a revolução e entregar os planos.\n2 - Manter-se firme e não ajudar o ditador.\n"
@@ -726,7 +834,13 @@
     "R3-1":
     [
         {
-            "txt": "[Heroi]: Agrdeço a misericórdia meu bom rei.\n"
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirReiAnao\n"
+        },
+        {
+            "txt": "[Heroi]: Agradeço a misericórdia meu bom rei.\n"
         },
         {
             "txt": "[Narrador]: Você revela tudo que sabe sobre os planos da revolução.\nDesde objetivos logísticos ao assassinado do rei, bem como a distração do exército élfico.\n"
@@ -741,10 +855,22 @@
             "txt": "[Zé Dassilva IV]: Para você, aventureiro, tenho um pequeno presente. Gel'ssu, meu campeão, mate-o.\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirCampeao\n"
+        },
+        {
             "txt": "[Gel'ssu]: Com prazer, meu rei.\n"
         },
         {
             "txt": "[Heroi]: O que? Não, calma aí!\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirReiAnao\n"
         },
         {
             "txt": "[Zé Dassilva IV]: Muito bom, Heroi. Acredito que tendo demonstrado tamanha força, possa realizar uma tarefa para mim.\n[Zé Dassilva IV]: Ao sul, há uma selva que há rumores de um artefato mágico, cujo poderes me farão um soberano acima de qualquer outro!\n[Zé Dassilva IV]: Desejo que você se junte à minha força expedicionária no Acre, e que me traga tal artefato.\n"
@@ -765,13 +891,31 @@
             "txt": "[Narrador]: Você cospe no rei, enquanto continua ajoelhado.\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirReiAnao\n"
+        },
+        {
             "txt": "[Zé Dassilva IV]: Vejo que não tens desejo pelo diálogo, uma pena.\n[Zé Dassilva IV]: Gel'ssu. Mate-o.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirCampeao\n"
         },
         {
             "txt": "[Gel'ssu]: Com prazer, meu rei.\n"
         },
         {
             "txt": "[Narrador]: O armadurado anão vem em sua direção.\n[Narrador]: Com sua destreza você é capaz de aparar o golpe e assim cortar suas algemas.\n"
+        },
+        {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirReiAnao\n"
         },
         {
             "txt": "[Heroi]: Agora é a sua vez, maldito rei.\n"
