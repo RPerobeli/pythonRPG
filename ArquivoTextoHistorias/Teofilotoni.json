@@ -527,6 +527,208 @@
         },
         {
             "txt": "[Tok]: Tem broa de fubá também.\n"
+        },
+        {
+            "txt": "[Narrador]: Algumas semanas depois, o dia derradeiro se aprovimava.\n[The'té]: O exército élfico deve estar em vias de se aproximar da cidade.\n"
+        },
+        {
+            "txt": "[Tok]: Amanhã é o dia combinado. O 'trem' vai começar.\n"
+        },
+        {
+            "txt": "[Tik]: Do nosso lado também ja estamos prontos.\n[Tik]: Todos os esquadrões já tem suas ordens.\n"
+        },
+        {
+            "txt": "[Narrador]: Enquanto conversavam, o alarme do distrito tocou.\n[Narrador]: Após Tok observar pela janela, alguns guardas foram vistos em movimentação.\n"
+        },
+        {
+            "txt": "[Tik]: Se os soldados tão em movimentação, eles podem ter noção do exército élfico.\n"
+        },
+        {
+            "txt": "[The'té]: Os desgraçados devem ter notado a movimentação do exército para o norte.\n"
+        },
+        {
+            "txt": "[Heroi]: Se todos os esforços da cidade forem para as muralhas, ficaremos ainda mais livres.\n[Heroi]: Mas é um pouco suspeito, estamos escondidos pois eles sabem da existência de oposição interna.\n1- Manterem-se escondidos, e esperar mais um dia, como planejado.\n2- Tentar mandar uma mensagem para o exército sulista, avisando que foram notados\n3- Sair do prédio e tentar matar o máximo de guardas possível para impedir a possível emboscada.\n"
+        }
+    ],
+
+    "R2-1":
+    [
+        {
+            "txt": "[Narrador]: Vocês aguardam o dia seguinte.\n[Narrador]: Durante a noite, você acorda com um barulho, lentamente olha para o lado e vê um anão no quarto.\n[Narrador]: Um assassino, se digirindo para matar The'té.\n"
+        },
+        {
+            "txt": "[Narrador]: Você se levanta para chamar a elfa mas no mesmo instante ela,\nem um ataque muito rápido,mata o assassino.\n"
+        },
+        {
+            "txt": "[The'té]: Nos descobriram... Nossa posição está comprometida.\n[The'té]: Avisarei o Tik e o Tok.\n"
+        },
+        {
+            "txt": "[Narrador]: Após a elfa descer as escadas, outro assassino entra pela janela.\n[Narrador]: Você saca sua arma e se prepara para combate.\n"
+        },
+        {
+            "txt": "[Narrador]: Ao descer as escadas, seus aliados já haviam levado a luta para o lado de fora da casa.[Narrador]: Tik jazia no chão enquanto The'té e Tok continuavam a ceifar vidas de soldados em uma luta desesperada.\n"
+        },
+        {
+            "txt": "[Anão Nobre]: Você será por minha conta.\n"
+        },
+        {
+            "txt": "[Heroi]: Um ótimo martelo, anão, ficarei com ele.\n"
+        },
+        {
+            "txt": "[Narrador]: A luta com o anão nobre tinha sido dura, a tontura da perda de sangue começa a aparecer.\n[Narrador]: Mais a frente você percebe The'té cair perante os soldados anões do rei.\n[Narrador]: Você desmaia devido aos ferimentos.\n"
+        }
+    ],
+    "R2-2":
+    [
+        {
+            "txt": "[The'té]: Eles devem planejar acabar com o exército sulista antes de lidarem conosco...\n"
+        },
+        {
+            "txt": "[Tok]: Uma emboscada, talvez?\n[Tok]: Precisamos notificar nossos aliados, rápido.\n"
+        },
+        {
+            "txt": "[The'té]: Farei uma mensagem. Tik, prepare um pombo correio.\n"
+        },
+        {
+            "txt": "[Narrador]: Enquanto Tik e Tok saíam para fazer as preparações para avisar o exército élfico,\numa granada de fumaça entra pela janela.\n[Heroi]: ATAQUE INIMIGO!\n"
+        },
+        {
+            "txt": "[Narrador]: Enquanto buscavam se proteger, The'te corta a cabeça de um anão que entrara pela janela.\n"
+        },
+        {
+            "txt": "[The'té]: Para fora! Rápido!\n"
+        },
+        {
+            "txt": "[Narrador]: Enquanto saíam, um anão, no alto da rua aparece.\n"
+        },
+        {
+            "txt": "[Anão Nobre]: É muito fácil fazê-los sair de seus esconderijos.\nFoi necessário apenas um alarme falso hahahaha!\n"
+        },
+        {
+            "txt": "[Narrador]: Você olha a volta e percebe que estão cercados,\nTik já estava no chão enquanto Tok lutava, contra uns soldados.\n[Narrador]: The'té por sua vez tentava chegar no anão nobre para matá-lo.\n"
+        },
+        {
+            "txt": "[Narrador]: Após sair do sufoco, você tenta ajudar a The'té a tentar chegar no nobre,\nenquanto ela batalhava contra 2 soldados.\n"
+        },
+        {
+            "txt": "[Anão Nobre]: Tenente, acabe com esse humano!\n"
+        },
+        {
+            "txt": "[Narrador]: Você desvia de um golpe do nobre, enquanto rola para o lado.\n[The'té]: Heroi! Cuidado!\n"
+        },
+        {
+            "txt": "[Narrador]: 2 atiradores em cima do prédio visam a sua vida. The'té atira 2 adagas e conseque matar um dos inimigos.\n[The'té]: Saia daqui! Alguém precisa avisar os outros núcleos!\n"
+        },
+        {
+            "txt": "[Anão Nobre]: Vocês não sairão daqui com vida!\n[Narrador]: Você defende um golpe do martelo do anão, mais uma flecha vem em sua direção.\n[Narrador]: The'té entra na frente da flecha.\n"
+        },
+        {
+            "txt": "[The'té]: SAI DAQUI!!\n"
+        },
+        {
+            "txt": "[Narrador]: Com The'té caindo em suas costas, você tenta escapar, mas são muitos soldados.\n[Narrador]: A perda de sangue faz com que você sinta tonto.\n[Narrador]: Você sente um golpe nas sua cabeça e fica desacordado.\n"
+        }
+    ],
+    "R2-3":
+    [
+        {
+            "txt": "[The'té]: ATAQUE INIMIGO!!\n"
+        },
+        {
+            "txt": "[Tik]: Arreda que lá vai bomba!\n[Narrador]: Tik arremessa algumas granadas pela janela.\n[Narrador]: Você desce as escadas para sair do prédio mas encontra Tok ateando fogo na casa.\n"
+        },
+        {
+            "txt": "[Narrador]: O andar debaixo está em chamas.\n[Tok]: Sinto muito, Heroi, mas tem ofertas que não se pode recusar.\n[Tok]: A vida de vocês será uma oferenda para meu propósito maior!\n[Tok]: O rei me dará uma fortuna pra sair dessa maldita cidade! Recomeçarei em outro lugar!\n"
+        },
+        {
+            "txt": "[Narrador]: Ao sair da casa, o prédio desaba devido às chamas, com todos dentro.\n[Narrador]: Soldados se encontram por todos os lados.\n[Narrador]: Uma flecha acerta sua perna, impedindo que você corra com velocidade\n"
+        },
+        {
+            "txt": "[Anão Nobre]: Capturem-no com vida.\n"
+        },
+        {
+            "txt": "[The'té]: Para fora! Rápido!\n"
+        },
+        {
+            "txt": "[Narrador]: Cansado e com ferimentos, você desaba desacordado.\n"
+        }
+    ],
+    "Q3":
+    [
+        {
+            "txt": "[Campeão de Teofilotoni]: Ei, acorda!\n"
+        },
+        {
+            "txt": "[Narrador]: Você acorda, acorrentado, e percebe que o local em que está não é uma prisão.\n"
+        },
+        {
+            "txt": "[Zé Dassilva IV]: Então você é um dos apoiadores dessa tentativa de golpe em cima de mim?\n"
+        },
+        {
+            "txt": "[Campeão de Teofilotoni]: O rei demanda uma resposta, escória!\n[Heroi]: Sou um aventureiro, fui contratado para uma escolta e acabei envolvido nisso tudo.\n"
+        },
+        {
+            "txt": "[Zé Dassilva IV]: Entendo, aventureiro, então acredito que, como você acabou envolvido nisso por acidente,\nfará um favor a essa nação e dirá quais são os planos dos golpistas.\n1 - Trair a revolução e entregar os planos.\n2 - Manter-se firme e não ajudar o ditador.\n"
+        }
+    ],
+    "R3-1":
+    [
+        {
+            "txt": "[Heroi]: Agrdeço a misericórdia meu bom rei.\n"
+        },
+        {
+            "txt": "[Narrador]: Você revela tudo que sabe sobre os planos da revolução.\nDesde objetivos logísticos ao assassinado do rei, bem como a distração do exército élfico.\n"
+        },
+        {
+            "txt": "[Zé Dassilva IV]: Muito obrigado nobre aventureiro. Sua sábia decisão será recompensada.\n[Zé Dassilva IV]: Despachem as ordens, acabaremos com a resistência hoje!\n"
+        },
+        {
+            "txt": "[Narrador]: Os oficiais presentes no salão saem em disparada.\n[Narrador]: Os sinos de alerta das muralhas externas começa a tocar. O exército dos elfos haia chegado.\n"
+        },
+        {
+            "txt": "[Zé Dassilva IV]: Para você, aventureiro, tenho um pequeno presente. Gel'ssu, meu campeão, mate-o.\n"
+        },
+        {
+            "txt": "[Gel'ssu]: Com prazer, meu rei.\n"
+        },
+        {
+            "txt": "[Heroi]: O que? Não, calma aí!\n"
+        },
+        {
+            "txt": "[Zé Dassilva IV]: Muito bom, Heroi. Acredito que tendo demonstrado tamanha força, possa realizar uma tarefa para mim.\n[Zé Dassilva IV]: Ao sul, há uma selva que há rumores de um artefato mágico, cujo poderes me farão um soberano acima de qualquer outro!\n[Zé Dassilva IV]: Desejo que você se junte à minha força expedicionária no Acre, e que me traga tal artefato.\n"
+        },
+        {
+            "txt": "[Heroi]: Acredito que eu não tenha escolha, estou certo?\n"
+        },
+        {
+            "txt": "[Zé Dassilva IV]: Muito perspicaz da sua parte.\n[Zé Dassilva IV]: A força expedicionária partirá em agora mesmo. Vá, e lembre-se da minha misericórdia em não matá-lo.\n"
+        }
+    ],
+    "R3-2":
+    [
+        {
+            "txt": "[Heroi]: De fato eu não tenho nada relacionado à essa revoluçao, mas me pedir para ajudar um rei tiranico como você...\n[Heroi]: Está além do meu limite.\n"
+        },
+        {
+            "txt": "[Narrador]: Você cospe no rei, enquanto continua ajoelhado.\n"
+        },
+        {
+            "txt": "[Zé Dassilva IV]: Vejo que não tens desejo pelo diálogo, uma pena.\n[Zé Dassilva IV]: Gel'ssu. Mate-o.\n"
+        },
+        {
+            "txt": "[Gel'ssu]: Com prazer, meu rei.\n"
+        },
+        {
+            "txt": "[Narrador]: O armadurado anão vem em sua direção.\n[Narrador]: Com sua destreza você é capaz de aparar o golpe e assim cortar suas algemas.\n"
+        },
+        {
+            "txt": "[Heroi]: Agora é a sua vez, maldito rei.\n"
+        },
+        {
+            "txt": "[Narrador]: Ainda calmo, o rei nem esboçava medo, mesmo tendo perdido o seu campeão.\n[Narrador]: Você sofre um choque vindo das suas algemas.\n"
+        },
+        {
+            "txt": "[Zé Dassilva IV]: A tecnologia mágica enânica é demais para vocẽ? Achou mesmo que eu não tomaria precauções?\n[Zé Dassilva IV]: Quanta petulância... Ainda assim, farei dinheiro com você.\n"
         }
     ]
 }
