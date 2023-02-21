@@ -591,6 +591,9 @@
             "txt": "[Narrador]: Vocês aguardam o dia seguinte.\n[Narrador]: Durante a noite, você acorda com um barulho, lentamente olha para o lado e vê um anão no quarto.\n[Narrador]: Um assassino, se digirindo para matar The'té.\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
             "txt": "InserirThete\n"
         },
         {
@@ -667,6 +670,9 @@
         },
         {
             "txt": "[The'té]: Para fora! Rápido!\n"
+        },
+        {
+            "txt": "InserirBackgroundTeofilotoniStreets\n"
         },
         {
             "txt": "[Narrador]: Enquanto saíam, um anão, no alto da rua aparece.\n"
@@ -765,6 +771,9 @@
             "txt": "[Narrador]: O andar debaixo está em chamas.\n[Tok]: Sinto muito, Heroi, mas tem ofertas que não se pode recusar.\n[Tok]: A vida de vocês será uma oferenda para meu propósito maior!\n[Tok]: O rei me dará uma fortuna pra sair dessa maldita cidade! Recomeçarei em outro lugar!\n"
         },
         {
+            "txt": "InserirBackgroundTeofilotoniStreets\n"
+        },
+        {
             "txt": "[Narrador]: Ao sair da casa, o prédio desaba devido às chamas, com todos dentro.\n[Narrador]: Soldados se encontram por todos os lados.\n[Narrador]: Uma flecha acerta sua perna, impedindo que você corra com velocidade\n"
         },
         {
@@ -791,6 +800,9 @@
     ],
     "Q3":
     [
+        {
+            "txt": "InserirBackgroundDwarvenPalace\n"
+        },
         {
             "txt": "RemoverAtor1\n"
         },

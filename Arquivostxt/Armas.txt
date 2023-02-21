@@ -1,1 +1,2 @@
 arma1mago,Cajado do Bonde,5,Ataque do Passinho do Ritmo Envolvente!!!
+arma1Guerreiro,Marreta de Playboy,5,Peso da Árvore Genealóǵica!

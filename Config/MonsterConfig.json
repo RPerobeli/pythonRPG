@@ -153,5 +153,42 @@
         "isBoss": "False",
         "ImageMultiplier" : 1,
         "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Tenente",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Nobre",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Tok",
+        "Classe": "Arqueiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Assassino",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.5,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Gel'ssu",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
     }
+
+
 ]

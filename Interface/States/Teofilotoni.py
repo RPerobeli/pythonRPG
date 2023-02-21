@@ -102,6 +102,20 @@ class Teofilotoni(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "battleAnaoNobre\n"):
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Nobre"), "TeofilotoniStreets")
+            self.Personagem = battleWindow.Battle()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "battleAssassino\n"):
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Assassino"), "TikTokHouse")
+            self.Personagem = battleWindow.Battle()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneiro\n"):
             self.Actors.append(lib.GetNpc(self.Npcs,"Taverneiro"))
             self.StoryListId += 1
@@ -114,12 +128,25 @@ class Teofilotoni(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirNobreAnao\n"):
+            self.Actors.append(lib.GetMonstro(self.Monstros,"Anao Nobre"))
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirGuarda\n"):
             self.Actors.append(lib.GetMonstro(self.Monstros,"Anao Policial"))
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirCampeao\n"):
+            self.Actors.append(lib.GetMonstro(self.Monstros,"Gel'ssu"))
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        
         if(self.StoryTextList[self.StoryListId]['txt'] == "GameOverEvent\n"):
             self.GameOver = gow.GameOverWindow(self.Screen)
             self.GameOver.GameOver()
@@ -142,6 +169,12 @@ class Teofilotoni(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundDwarvenPalace\n"):
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/DwarvenPalace.jpg').convert_alpha()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "LoseMPTotal\n"):
             self.Personagem.MP = 0
             self.StoryListId += 1
@@ -156,6 +189,12 @@ class Teofilotoni(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "LoseMPMetade\n"):
             self.Personagem.MP = self.Personagem.MP/2
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMartelodoNobre\n"):
+            self.Personagem.arma = lib.GetArma(self.Armas,"arma2Guerreiro")
             self.StoryListId += 1
             self.VerifyEvent()
             return
