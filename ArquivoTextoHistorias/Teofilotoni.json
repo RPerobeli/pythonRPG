@@ -439,6 +439,9 @@
             "txt": "RemoverAtor1\n"
         },
         {
+            "txt": "InserirTok\n"
+        },
+        {
             "txt": "[Narrador]: O anão te joga para o lado, e saca sua adaga para ajudar a elfa.\n[Narrador]: Você ainda cambaleante saca sua arma enquanto um guarda vêm em sua direção.\n"
         },
         {
@@ -693,7 +696,7 @@
             "txt": "[Narrador]: Você olha a volta e percebe que estão cercados,\nTik já estava no chão enquanto Tok lutava, contra uns soldados.\n[Narrador]: The'té por sua vez tentava chegar no anão nobre para matá-lo.\n"
         },
         {
-            "txt": "battleGuarda\n"
+            "txt": "BattleAnaoPolicialStreet\n"
         },
         {
             "txt": "RemoverAtor1\n"
@@ -705,10 +708,16 @@
             "txt": "[Narrador]: Após sair do sufoco, você tenta ajudar a The'té a tentar chegar no nobre,\nenquanto ela batalhava contra 2 soldados.\n"
         },
         {
-            "txt": "[Anão Nobre]: Tenente, acabe com esse humano!\n"
+            "txt": "RemoverAtor1\n"
         },
         {
-            "txt": "battleTenente\n"
+            "txt": "InserirNobreAnao\n"
+        },
+        {
+            "txt": "[Anão Nobre]: Você fica por minha conta!\n"
+        },
+        {
+            "txt": "[Narrador]: Você desvia de um golpe do nobre, enquanto rola para o lado.\n"
         },
         {
             "txt": "RemoverAtor1\n"
@@ -717,7 +726,7 @@
             "txt": "InserirThete\n"
         },
         {
-            "txt": "[Narrador]: Você desvia de um golpe do nobre, enquanto rola para o lado.\n[The'té]: Heroi! Cuidado!\n"
+            "txt": "[The'té]: Heroi! Cuidado!\n"
         },
         {
             "txt": "[Narrador]: 2 atiradores em cima do prédio visam a sua vida. The'té atira 2 adagas e conseque matar um dos inimigos.\n[The'té]: Saia daqui! Alguém precisa avisar os outros núcleos!\n"

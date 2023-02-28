@@ -41,7 +41,7 @@ def CreateMonsters():
 
 
 def CriaArmas():
-    arq = open("Arquivostxt/Armas.txt", 'r')
+    arq = open("Arquivostxt/Armas.txt", 'r', encoding="utf8")
     listaArmas = [a.Arma("erro", 0, "erro especial", "armaErro")]
     for linha in arq:
         valores = linha.split(',')
