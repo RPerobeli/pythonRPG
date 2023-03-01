@@ -37,7 +37,7 @@ class BattleWindowLvlUp(GameState.GameState):
         self.OptionsDict = jsonL.GetOptions()
         self.CapinadoDict = {"txt": f"O {self.Monster.name} foi capinado.\n"}
         self.LoadTextWithList(self.CapinadoDict)
-        self.LoadTextWithList({"txt":f"Você chegou ao NIVEL {self.Personagem.lvl}!\n"}, (self.OptionsDict["Options"]["PositionStatus"]["x"]),self.OptionsDict["Options"]["PositionStatus"]["y"])
+        self.LoadTextWithList({"txt":f"Você chegou ao NIVEL {self.Personagem.lvl}!\n"}, (self.OptionsDict["Options"]["PositionStatus1"]["x"]),self.OptionsDict["Options"]["PositionStatus1"]["y"])
         self.LoadTextWithList({"txt": "Consuma seu ponto de habilidade\n1 - Força\n2 - Agilidade\n3 - Inteligência\n4 - Vitalidade\n"}, \
             self.OptionsDict["Options"]["PositionOptions"]["x"],self.OptionsDict["Options"]["PositionOptions"]["y"])
     #endfunc

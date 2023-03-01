@@ -11,6 +11,9 @@ class Heroi(personagem.Personagem):
         self.bag.InserirArma(self.arma)
         self.magias = jsonL.GetSpells(self.classe)
         self.isMonstro = False
+        self.Good = 0
+        self.Neutral = 0
+        self.Evil = 0
     # endFunc
 
     def SetArma(self, WeaponAtk, WeaponName):

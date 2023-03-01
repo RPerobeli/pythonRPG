@@ -144,14 +144,17 @@ class ViagemTeofilotoni(GameState.GameState):
                 #endif
             #endif
             if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
+                self.Personagem.Good += 1
                 self.SearchAnswerByUserInput(1)
                 self.VerifyEvent()
             #endif
             if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
+                self.Personagem.Neutral += 1
                 self.SearchAnswerByUserInput(2)
                 self.VerifyEvent()
             #endif
             if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
+                self.Personagem.Evil += 1
                 self.SearchAnswerByUserInput(3)
                 self.VerifyEvent()
             #endif
