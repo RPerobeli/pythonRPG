@@ -19,6 +19,7 @@ class GameState():
         self.DialogBox = None
         self.isQuestion = True
         self.Alpha = 255
+        self.NextStory = "Title"
     #endfunc
 
     def RedrawWindow(self):

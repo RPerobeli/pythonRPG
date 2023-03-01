@@ -39,6 +39,15 @@ class GameStateHandler:
         if(self.State == "Teofilotoni"):
             self.Teofilotoni()
         #endif
+        if(self.State == "Krambeck"):
+            self.Krambeck()
+        #endif
+        if(self.State == "Felastus"):
+            self.Felastus()
+        #endif
+        if(self.State == "Acre"):
+            self.Acre()
+        #endif
     #endfunc
 
     #endfunc
@@ -103,4 +112,31 @@ class GameStateHandler:
             print("partiu coliseu ou acre")
         #endif
     #endfunc
+
+    def Krambeck(self):
+        print('Krambeck')
+        self.Hero,state, continueStory = self.teofilotoni.Update()
+        self.State = state
+        if(continueStory):
+            print("...")
+        #endif
+    #endfunc
+
+    def Felastus(self):
+        print('Felastus')
+        self.Hero,state, continueStory = self.teofilotoni.Update()
+        self.State = state
+        if(continueStory):
+            print("...")
+        #endif
+    #endfunc
+    def Acre(self):
+        print('Acre')
+        self.Hero,state, continueStory = self.teofilotoni.Update()
+        self.State = state
+        if(continueStory):
+            print("...")
+        #endif
+    #endfunc
+    
 #endclass

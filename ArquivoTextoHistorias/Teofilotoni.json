@@ -457,6 +457,9 @@
             "txt": "InserirBackgroundTeofilotoniStreets\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
             "txt": "InserirTik\n"
         },
         {
@@ -729,7 +732,7 @@
             "txt": "[The'té]: Heroi! Cuidado!\n"
         },
         {
-            "txt": "[Narrador]: 2 atiradores em cima do prédio visam a sua vida. The'té atira 2 adagas e conseque matar um dos inimigos.\n[The'té]: Saia daqui! Alguém precisa avisar os outros núcleos!\n"
+            "txt": "[Narrador]: 2 atiradores em cima do prédio visam a sua vida. \nThe'té atira duas adagas e conseque matar um dos inimigos.[The'té]: Saia daqui! Alguém precisa avisar os outros núcleos!\n"
         },
         {
             "txt": "RemoverAtor1\n"
@@ -858,6 +861,9 @@
     "R3-1":
     [
         {
+            "txt": "goAcre\n"
+        },
+        {
             "txt": "RemoverAtor1\n"
         },
         {
@@ -909,6 +915,9 @@
     "R3-2":
     [
         {
+            "txt": "goFelastus\n"
+        },
+        {
             "txt": "[Heroi]: De fato eu não tenho nada relacionado à essa revoluçao, mas me pedir para ajudar um rei tiranico como você...\n[Heroi]: Está além do meu limite.\n"
         },
         {
@@ -934,6 +943,9 @@
         },
         {
             "txt": "[Narrador]: O armadurado anão vem em sua direção.\n[Narrador]: Com sua destreza você é capaz de aparar o golpe e assim cortar suas algemas.\n"
+        },
+        {
+            "txt": "battleCampeao\n"
         },
         {
             "txt": "RemoverAtor1\n"

@@ -53,5 +53,10 @@
         "Nome": "Tok",
         "ImageMultiplier" : 0.8,
         "needFlip" : "False"
+    },
+    {
+        "Nome": "Rei dos Anoes",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
     }
 ]

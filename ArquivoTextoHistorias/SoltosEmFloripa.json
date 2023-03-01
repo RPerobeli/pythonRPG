@@ -297,7 +297,9 @@
     ],
 
     "R4-1":[
-        
+        {
+            "txt": "goKrambeck\n"
+        },
         {
             "txt" : "[Heroi]: Fiquei comovido com sua história, deixe-me ajudá-la. Afinal, a cerveja não se paga sozinha!\n[Heroi]: No entanto, preciso saber mais desse culto.\n"
         },
@@ -330,6 +332,9 @@
         }  
     ],  
     "R4-2":[
+        {
+            "txt": "goFelastus\n"
+        },
         {
             "txt" : "[Heroi]: Admiro sua luta, mas como eu disse, sou apenas um aventureiro, \nnão tenho interesse em problemas dos outros.\n[Heroi]: Se o seu povo, guardião da floresta,\njunto com seus elfos protegidos não conseguiram fazer nada, quem sou eu para tentar alguma coisa?\n"
         },

@@ -21,7 +21,7 @@ class Teofilotoni(GameState.GameState):
         self.Alpha = 255
         self.Scene = 1
         self.Filename = "Teofilotoni"
-        self.MaxStoryIndex = 5
+        self.MaxStoryIndex = 4
         self.Count = 0
         self.Armas = armas
         
@@ -38,7 +38,7 @@ class Teofilotoni(GameState.GameState):
     #endfunc
 
     def SelectNextStory(self):
-        return (self.Personagem, 'Teofilotoni', True)
+        return (self.Personagem, self.NextStory, True)
     #endfunc
     
     def VerifyEvent(self):
@@ -116,6 +116,13 @@ class Teofilotoni(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "battleCampeao\n"):
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Gel'ssu"), "DwarvenPalace")
+            self.Personagem = battleWindow.Battle()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneiro\n"):
             self.Actors.append(lib.GetNpc(self.Npcs,"Taverneiro"))
             self.StoryListId += 1
@@ -142,6 +149,12 @@ class Teofilotoni(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirCampeao\n"):
             self.Actors.append(lib.GetMonstro(self.Monstros,"Gel'ssu"))
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirReiAnao\n"):
+            self.Actors.append(lib.GetNpc(self.Npcs,"Rei dos Anoes"))
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -195,6 +208,18 @@ class Teofilotoni(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMartelodoNobre\n"):
             self.Personagem.arma = lib.GetArma(self.Armas,"arma2Guerreiro")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "goAcre\n"):
+            self.IndexNextStoryChoice = 1
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "goFelastus\n"):
+            self.IndexNextStoryChoice = 2
             self.StoryListId += 1
             self.VerifyEvent()
             return
