@@ -48,10 +48,14 @@ class BattleWindow(GameState.GameState):
 
     def LoadBattleOptions(self):
         self.OptionsDict = jsonL.GetOptions()
-        self.HealthDict = {"txt": f"{self.Personagem.name}.HP: {self.Personagem.HP}/{self.Personagem.HPmax}    {self.Monster.name}.HP:  {self.Monster.HP}/{self.Monster.HPmax}\n{self.Personagem.name}.MP: {self.Personagem.MP}/{self.Personagem.MPmax}    {self.Monster.name}.MP:  {self.Monster.MP}/{self.Monster.MPmax}\n{self.Personagem.name}.SP: {self.Personagem.SP}/{self.Personagem.SPmax}\n"}
-        self.StatusDict = {"txt": f"Força:        {self.Personagem.skills['str']}\nAgilidade:    {self.Personagem.skills['agi']}\nVitalidade:   {self.Personagem.skills['vit']}\nInteligência: {self.Personagem.skills['int']}\n"}
-        self.LoadTextWithList(self.HealthDict)
-        self.LoadTextWithList(self.StatusDict, self.OptionsDict["Options"]["PositionStatus"]["x"]+250,self.OptionsDict["Options"]["PositionStatus"]["y"])
+        self.CharHealthDict = {"txt": f"{self.Personagem.name}.HP: {self.Personagem.HP}/{self.Personagem.HPmax}\n{self.Personagem.name}.MP: {self.Personagem.MP}/{self.Personagem.MPmax}\n{self.Personagem.name}.SP: {self.Personagem.SP}/{self.Personagem.SPmax}\n"}
+        self.MonsterHealthDict = {"txt": f"{self.Monster.name}.HP:  {self.Monster.HP}/{self.Monster.HPmax}\n{self.Monster.name}.MP:  {self.Monster.MP}/{self.Monster.MPmax}\n"}
+        self.StatusDict1 = {"txt": f"Força:        {self.Personagem.skills['str']}\nAgilidade:    {self.Personagem.skills['agi']}\n"}
+        self.StatusDict2 = {"txt": f"Vitalidade:   {self.Personagem.skills['vit']}\nInteligência: {self.Personagem.skills['int']}\n"}
+        self.LoadTextWithList(self.CharHealthDict)
+        self.LoadTextWithList(self.MonsterHealthDict,self.OptionsDict["Options"]["PositionHealthBarsMonster"]["x"],self.OptionsDict["Options"]["PositionHealthBarsMonster"]["y"])
+        self.LoadTextWithList(self.StatusDict1, self.OptionsDict["Options"]["PositionStatus1"]["x"],self.OptionsDict["Options"]["PositionStatus1"]["y"])
+        self.LoadTextWithList(self.StatusDict2, self.OptionsDict["Options"]["PositionStatus2"]["x"],self.OptionsDict["Options"]["PositionStatus2"]["y"])
         self.LoadTextWithList(self.OptionsDict["Options"]["OptionsText"], self.OptionsDict["Options"]["PositionOptions"]["x"],self.OptionsDict["Options"]["PositionOptions"]["y"])
     #endfunc 
 

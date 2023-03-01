@@ -1,13 +1,21 @@
 {
     "Options":
     {
-        "PositionHealthBars":{
+        "PositionHealthBarsChar":{
             "x": 40,
             "y": 510
         },
-        "PositionStatus":{
+        "PositionHealthBarsMonster":{
+            "x": 250,
+            "y": 510
+        },
+        "PositionStatus1":{
             "x": 40,
-            "y": 555
+            "y": 570
+        },
+        "PositionStatus2":{
+            "x": 210,
+            "y": 570
         },
         "PositionOptions":{
             "x": 600,

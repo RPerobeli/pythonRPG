@@ -36,9 +36,11 @@ class BattleWindowMonsterTurn(GameState.GameState):
 
     def LoadMonsterTurnOptions(self):
         self.OptionsDict = jsonL.GetOptions()
-        self.HealthDict = {"txt": f"{self.Personagem.name}.HP: {self.Personagem.HP}/{self.Personagem.HPmax}       {self.Monster.name}.HP:  {self.Monster.HP}/{self.Monster.HPmax}\n{self.Personagem.name}.MP: {self.Personagem.MP}/{self.Personagem.MPmax}       {self.Monster.name}.MP:  {self.Monster.MP}/{self.Monster.MPmax}\n"}
-        self.LoadTextWithList(self.HealthDict)
-        self.LoadTextWithList({"txt":"Vez do monstro atacar, segura na mão de Eru e vai!\n"}, self.OptionsDict["Options"]["PositionStatus"]["x"],self.OptionsDict["Options"]["PositionStatus"]["y"])
+        self.CharHealthDict = {"txt": f"{self.Personagem.name}.HP: {self.Personagem.HP}/{self.Personagem.HPmax}\n{self.Personagem.name}.MP: {self.Personagem.MP}/{self.Personagem.MPmax}\n{self.Personagem.name}.SP: {self.Personagem.SP}/{self.Personagem.SPmax}\n"}
+        self.MonsterHealthDict = {"txt": f"{self.Monster.name}.HP:  {self.Monster.HP}/{self.Monster.HPmax}\n{self.Monster.name}.MP:  {self.Monster.MP}/{self.Monster.MPmax}\n"}
+        self.LoadTextWithList(self.MonsterHealthDict,self.OptionsDict["Options"]["PositionHealthBarsMonster"]["x"],self.OptionsDict["Options"]["PositionHealthBarsMonster"]["y"])
+        self.LoadTextWithList(self.CharHealthDict)
+        self.LoadTextWithList({"txt":"Vez do monstro atacar, segura na mão de Eru e vai!\n"}, self.OptionsDict["Options"]["PositionStatus1"]["x"],self.OptionsDict["Options"]["PositionStatus1"]["y"])
     #endfunc
 
 

@@ -29,19 +29,19 @@ class Personagem:
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
             self.skills['agi'] = 2
-            self.skills['vit'] = 5
+            self.skills['vit'] = 4
             self.skills["int"] = 2
 
         elif(self.classe.lower() == "arqueiro"):
-            self.skills['str'] = 2
+            self.skills['str'] = 1
             self.skills['agi'] = 4
             self.skills['vit'] = 4
             self.skills["int"] = 3
 
         elif(self.classe.lower() == "mago"):
-            self.skills['str'] = 1
+            self.skills['str'] = 2
             self.skills['agi'] = 2
-            self.skills['vit'] = 3
+            self.skills['vit'] = 4
             self.skills["int"] = 4
         else:
             print("Erro no construtor")
