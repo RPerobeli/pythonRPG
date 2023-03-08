@@ -1,14 +1,14 @@
 import json
 
 def GetImagePath():
-    f = open("Config/config.json")
+    f = open("Config/Config.json")
     data = json.load(f)
     f.close()
     return data['ImagePath']
 #endfunc
 
 def GetFrameRate():
-    f = open("Config/config.json")
+    f = open("Config/Config.json")
     data = json.load(f)
     f.close()
     return data['frameRate']
@@ -182,6 +182,23 @@ def GetStoryAnswer(storyIndex, filename, userInput):
     storyTextList = data[f'R{storyIndex}-{userInput}']
     return storyTextList
 #endfunc
+
+
+def GetSoundFXOrMusic(filename):
+    f = open(f"Interface/Sound/{filename}.json",encoding="utf-8")
+    data = json.load(f)
+    f.close()
+    return data
+#endfunc
+
+def GetSoundPath():
+    f = open("Config/Config.json")
+    data = json.load(f)
+    f.close()
+    return data['SoundPath']
+#endfunc
+
+
 
 def GetOptions():
     f = open(f"Config/BattleTextConfig.json",encoding="utf-8")

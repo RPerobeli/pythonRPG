@@ -1,10 +1,11 @@
 import pygame
 import sys
-import Interface.Utils as ut
+import Interface.InterfaceUtils as ut
 import Utils.JsonLoader as jsonL
 from Interface import BattleWindow as bw
 import Interacoes as lib
 import Interface.Button as btn
+import Interface.Sound as Sound
 
 class GameState():
     def __init__(self, screen):
@@ -20,6 +21,7 @@ class GameState():
         self.isQuestion = True
         self.Alpha = 255
         self.NextStory = "Title"
+        self.Sound = Sound.Sound()
     #endfunc
 
     def RedrawWindow(self):
