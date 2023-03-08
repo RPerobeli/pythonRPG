@@ -1,6 +1,6 @@
 import pygame
 import sys
-import Interface.Utils as ut
+#import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
 import Interface.BattleWindow as bw
 import Interface.GameOverWindow as gow

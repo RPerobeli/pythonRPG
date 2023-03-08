@@ -1,6 +1,6 @@
 import sys
 import pygame
-import Interface.Utils as ut
+#import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
 import Interface.States.GameState as GameState
 import Interacoes as lib

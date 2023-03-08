@@ -1,7 +1,7 @@
 #encoding: utf-8
 import pygame
-from Interface.States import Inn
-from Interface import DialogBox
+import Interface.States.Inn as Inn
+import Interface.DialogBox as DialogBox
 import sys
 from Domain import Heroi as heroi
 import Interacoes as lib
