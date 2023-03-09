@@ -23,7 +23,14 @@ class Sound:
         musicDictCreate ={}
         musicDictOpen = jsonL.GetSoundFXOrMusic("Music")
         for key,values in musicDictOpen.items():
-            MusicAux = {key : pygame.mixer.Sound(f'{self.SoundPath}/{values}')}
+            values = dict(values)
+            MusicAux = {key : pygame.mixer.Sound(f'{self.SoundPath}/{values["file"]}')}
             musicDictCreate.update(MusicAux)
         return musicDictCreate
+
+    def Play(self, filename):
+        music = self.MusicDict[f"{filename}"]
+        music.set_volume(self.MusicDict[f"{filename}"]["volume"])
+        music.play()
+    #endfunc
 #endclass
