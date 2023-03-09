@@ -207,7 +207,7 @@ class Teofilotoni(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMartelodoNobre\n"):
-            self.Personagem.arma = lib.GetArma(self.Armas,"arma2Guerreiro")
+            self.Personagem.arma = lib.GetArma(self.Armas,"arma1Guerreiro")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -253,6 +253,7 @@ class Teofilotoni(GameState.GameState):
                         self.VerifyEvent()
                 else:
                     self.StoryListId += 1
+                    self.Done = False
                     self.VerifyEvent()
                 #endif
             #endif

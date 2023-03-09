@@ -213,3 +213,10 @@ def GetSpells(classe):
     f.close()
     return data[classe.lower()]
 #endfunc
+
+def GetTypewritterDelay():
+    f = open(f"Config/config.json",encoding="utf-8")
+    data = json.load(f)
+    f.close()
+    return data["TypewritterDelay"]
+#endfunc

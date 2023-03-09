@@ -17,6 +17,7 @@ class BattleWindowMonsterTurn(GameState.GameState):
         self.Alpha = 255
         self.BattleText = {}
         self.SpellsList = jsonL.GetSpells(self.Personagem.classe)
+        self.Done = True
     #endfunc
 
 

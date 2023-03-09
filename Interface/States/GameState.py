@@ -22,6 +22,7 @@ class GameState():
         self.Alpha = 255
         self.NextStory = "Title"
         self.Sound = Sound.Sound()
+        self.Done = False
     #endfunc
 
     def RedrawWindow(self):
@@ -108,14 +109,20 @@ class GameState():
             (x,y) = jsonL.GetSpeakerTextPosition()
         #endif
         vspace = jsonL.GetVerticalSpace()
+        
         for text in textList:
-            ut.InsertText(text,text_color, x, y, self.Screen)
+            if(not self.Done):
+                self.Done = ut.InsertTextTypewrite(text,text_color, x, y, self.Screen)
+            else:
+                ut.InsertText(text,text_color, x, y, self.Screen)
+            #endif
             y += vspace
         #endfor
     #endfunc
 
 
     def SearchAnswerByUserInput(self, userInput):
+        self.Done = False
         if(self.StoryListId == len(self.StoryTextList)-1 and self.isQuestion):
             self.isQuestion = False
             self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex,userInput)

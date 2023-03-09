@@ -176,6 +176,7 @@ class Florianopolis(GameState.GameState):
                         self.VerifyEvent()
                 else:
                     self.StoryListId += 1
+                    self.Done = False
                     self.VerifyEvent()
                 #endif
             #endif

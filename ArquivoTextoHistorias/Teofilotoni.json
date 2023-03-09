@@ -855,7 +855,7 @@
             "txt": "InserirReiAnao\n"
         },
         {
-            "txt": "[Zé Dassilva IV]: Entendo, aventureiro, então acredito que, como você acabou envolvido nisso por acidente,\nfará um favor a essa nação e dirá quais são os planos dos golpistas.\n1 - Trair a revolução e entregar os planos.\n2 - Manter-se firme e não ajudar o ditador.\n"
+            "txt": "[Zé Dassilva IV]: Entendo, aventureiro, então acredito que, \ncomo você acabou envolvido nisso por acidente,fará um favor a essa nação\ne dirá quais são os planos dos golpistas.\n1 - Trair a revolução e entregar os planos.\n2 - Manter-se firme e não ajudar o ditador.\n"
         }
     ],
     "R3-1":
@@ -903,13 +903,13 @@
             "txt": "InserirReiAnao\n"
         },
         {
-            "txt": "[Zé Dassilva IV]: Muito bom, Heroi. Acredito que tendo demonstrado tamanha força, possa realizar uma tarefa para mim.\n[Zé Dassilva IV]: Ao sul, há uma selva que há rumores de um artefato mágico, cujo poderes me farão um soberano acima de qualquer outro!\n[Zé Dassilva IV]: Desejo que você se junte à minha força expedicionária no Acre, e que me traga tal artefato.\n"
+            "txt": "[Zé Dassilva IV]: Muito bom, Heroi. Acredito que tendo demonstrado tamanha força, \npossa realizar uma tarefa para mim.\n[Zé Dassilva IV]: Ao sul, há uma selva que há rumores de um artefato mágico, \ncujo poderes me farão um soberano acima de qualquer outro!\n[Zé Dassilva IV]: Desejo que você se junte à minha força expedicionária no Acre, \ne que me traga tal artefato.\n"
         },
         {
             "txt": "[Heroi]: Acredito que eu não tenha escolha, estou certo?\n"
         },
         {
-            "txt": "[Zé Dassilva IV]: Muito perspicaz da sua parte.\n[Zé Dassilva IV]: A força expedicionária partirá em agora mesmo. Vá, e lembre-se da minha misericórdia em não matá-lo.\n"
+            "txt": "[Zé Dassilva IV]: Muito perspicaz da sua parte.\n[Zé Dassilva IV]: A força expedicionária partirá em agora mesmo. \nVá, e lembre-se da minha misericórdia em não matá-lo.\n"
         }
     ],
     "R3-2":

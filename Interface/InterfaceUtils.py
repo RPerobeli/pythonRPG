@@ -1,5 +1,8 @@
 import pygame
 import Utils.JsonLoader as jsonL
+import time
+import sys
+
 def InsertBackground(background, screen, alpha = 255):
     background = pygame.transform.scale(background, (screen.get_width(), screen.get_height()))
     background.set_alpha(alpha)
@@ -22,6 +25,40 @@ def InsertText(text, text_color, x, y, screen, fontName = None, textSize = None)
     font = pygame.font.Font(fontName, textSize)
     img = font.render(text, True, text_color)
     screen.blit(img, (x, y))
+#endfunction
+
+def InsertTextTypewrite(text, text_color, x, y, screen, fontName = None, textSize = None):
+    if(fontName == None):
+        fontName = jsonL.GetFont()
+    #endif
+    if(textSize == None):
+        textSize = jsonL.GetTextSize()
+    #endif
+    delay = jsonL.GetTypewritterDelay()
+    font = pygame.font.Font(fontName, textSize)
+
+    for i in range(len(text)):
+        img = font.render(text[:i+1], True, text_color)
+        time.sleep(delay / 1000)
+        screen.blit(img, (x, y))
+        pygame.display.update()
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            #endif
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    # Display the rest of the text and return
+                    img = font.render(text, True, text_color)
+                    screen.blit(img, (x, y))
+                    pygame.display.flip()
+                    return True
+                #endif
+            #endif
+        #endfor
+    #endfor
+    return True
 #endfunction
 
 def TransformCenterCoordIntoBorder(img, x,y):

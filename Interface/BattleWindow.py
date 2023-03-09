@@ -29,6 +29,7 @@ class BattleWindow(GameState.GameState):
         self.MonsterTurnWindow = bwmt.BattleWindowMonsterTurn(self.Screen, self.DialogBox, self.Personagem, self.Monster, bgName)
         self.LvlUpWindow = bwlvl.BattleWindowLvlUp(self.Screen, self.DialogBox, self.Personagem, self.Monster, bgName)
         self.GameOverWindow = gow.GameOverWindow(self.Screen)
+        self.Done = True
     #endfunc
 
 
@@ -100,6 +101,10 @@ class BattleWindow(GameState.GameState):
             print("in battle")
             self.ScenesManager()
             for event in pygame.event.get():
+                isFinished = self.VerifyIfBattleIsFinished()
+                if(isFinished):
+                    return self.Personagem
+                #endif
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
@@ -119,7 +124,7 @@ class BattleWindow(GameState.GameState):
                     #endif
 
                 #endif
-                if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
+                if (event.type == pygame.KEYDOWN and (event.key == pygame.K_1 or event.key == pygame.K_KP_1)):
                     if(self.isOptions):
                         self.isOptions = False
                         atkType = 1
@@ -128,7 +133,7 @@ class BattleWindow(GameState.GameState):
                         turnCounter += 1
                     #endif
                 #endif
-                if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
+                if (event.type == pygame.KEYDOWN and (event.key == pygame.K_2 or event.key == pygame.K_KP_2)):
                     if(self.isOptions):
                         self.isOptions = False
                         atkType = 2
@@ -138,7 +143,7 @@ class BattleWindow(GameState.GameState):
                         turnCounter += 1
                     #endif
                 #endif
-                if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
+                if (event.type == pygame.KEYDOWN and (event.key == pygame.K_3 or event.key == pygame.K_KP_3)):
                     if(self.isOptions):
                         self.isSelectingSpell = True
                         atkType = 3
@@ -153,7 +158,7 @@ class BattleWindow(GameState.GameState):
                         turnCounter += 1
                     #endif  
                 #endif
-                if (event.type == pygame.KEYDOWN and event.key == pygame.K_4):
+                if (event.type == pygame.KEYDOWN and (event.key == pygame.K_4 or event.key == pygame.K_KP_4)):
                     if(self.isOptions):
                         atkType = 4
                         self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster)
@@ -162,7 +167,7 @@ class BattleWindow(GameState.GameState):
                         turnCounter += 1
                     #endif  
                 #endif
-                if (event.type == pygame.KEYDOWN and event.key == pygame.K_9):
+                if (event.type == pygame.KEYDOWN and (event.key == pygame.K_9 or event.key == pygame.K_KP_9)):
                     if(self.isOptions):
                         atkType = 69
                         dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster)
