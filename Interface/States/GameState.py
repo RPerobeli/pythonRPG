@@ -111,13 +111,15 @@ class GameState():
         vspace = jsonL.GetVerticalSpace()
         
         for text in textList:
-            if(not self.Done):
-                self.Done = ut.InsertTextTypewrite(text,text_color, x, y, self.Screen)
+            done = False
+            if(not self.Done and not done):
+                done = ut.InsertTextTypewrite(text,text_color, x, y, self.Screen)
             else:
                 ut.InsertText(text,text_color, x, y, self.Screen)
             #endif
             y += vspace
         #endfor
+        self.Done = True
     #endfunc
 
 

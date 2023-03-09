@@ -1,3 +1,6 @@
 {
-    "temer": "maicol Temer.wav"
+    "temer": {
+        "file":"maicol Temer.wav",
+        "volume" : 1
+    }
 }

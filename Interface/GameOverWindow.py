@@ -19,6 +19,7 @@ class GameOverWindow(GameState.GameState):
     def ScenesManager(self):
         if (self.Scene == 1):
             self.LoadGameOver()
+            self.Sound.PlayMusic("gameover")
         else:
             print("erro ao entrar nas Cenas")
         #endif
@@ -49,10 +50,10 @@ class GameOverWindow(GameState.GameState):
                     pygame.quit()
                     sys.exit()
                 #endif
-                if (event.type == pygame.KEYDOWN and event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE):
-                    pygame.quit()
-                    sys.exit()
-                #endif
+                # if (event.type == pygame.KEYDOWN and event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE):
+                #     pygame.quit()
+                #     sys.exit()
+                # #endif
             #endfor
             pygame.display.update()
         #endwhile

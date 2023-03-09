@@ -3,5 +3,17 @@
     "opening": {
         "file": "South America Memes - Chatuba LP Edition.wav",
         "volume": 0.5
+    },
+    "night": {
+        "file": "Night.wav",
+        "volume": 0.5
+    },
+    "inn": {
+        "file": "Inn.wav",
+        "volume": 0.5
+    },
+    "gameover": {
+        "file": "Gameover1.wav",
+        "volume": 0.2
     }
 }

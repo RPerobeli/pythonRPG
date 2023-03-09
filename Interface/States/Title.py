@@ -78,7 +78,7 @@ class Title(GameState.GameState):
         for event in pygame.event.get():
             #NAO MEXER NO VALOR DO TICKS -> XGH: FUNCIONA NAO RELA
             if(pygame.time.get_ticks()>=300 and self.count == 0):
-                self.Sound.Play("opening")
+                self.Sound.PlayMusic("opening")
                 self.BackgroundImage = pygame.Surface((self.Screen.get_width(), self.Screen.get_height()))
                 self.BackgroundImage.fill((45,45,45))
                 self.BackgroundImage.set_alpha(255)
@@ -131,7 +131,7 @@ class Title(GameState.GameState):
                     #endfor
                 #endif
                 if (hero != None):
-                    musicOpening.stop()
+                    self.Sound.StopMusic()
                     return hero
                 #endif
             #endif
