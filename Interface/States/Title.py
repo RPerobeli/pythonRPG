@@ -7,9 +7,6 @@ import Interface.Button as btn
 import Interacoes as lib
 import Interface.States.GameState as GameState
 import Domain.Heroi as Heroi
-import Interface.Sound as Sound 
-
-
 
 class Title(GameState.GameState):
     def __init__(self, screen):
@@ -55,7 +52,7 @@ class Title(GameState.GameState):
         self.editboxAtributes = jsonL.GetEditBox()
         self.EditBox = pygame.Rect(self.editboxAtributes['x'],self.editboxAtributes['y'],self.editboxAtributes['width'],self.editboxAtributes['height'])
         self.EditboxSurface = pygame.Surface((self.editboxAtributes['width']-10,self.editboxAtributes['height']-10))
-        self.EditBoxBoundaryColor = tuple(map(int,self.editboxAtributes['color'].split(',')))
+        self.EditBoxBoundaryColor = tuple(map(int,self.editboxAtributes['color_passive'].split(',')))
         self.EditboxSurface.fill((20,20,20))
     #endfunc
     def LoadEditBox(self):
@@ -92,19 +89,18 @@ class Title(GameState.GameState):
                 # If the user clicked on the input_box rectangle.
                 if self.EditBox.collidepoint(event.pos):
                     # Toggle the active variable.
-                    self.Active = not self.Active
+                    self.Active = True
+                    self.EditBoxBoundaryColor = tuple(map(int,self.editboxAtributes['color_active'].split(',')))
                 else:
                     self.Active = False
+                    self.EditBoxBoundaryColor = tuple(map(int,self.editboxAtributes['color_passive'].split(',')))
                 #endif
                 hero = None
                 if self.ButtonList[0].Button.collidepoint(event.pos):
-                    # Turn button boundary White
                     self.ButtonList[0].SetBoundaryColor(255,255,255)
                 elif self.ButtonList[1].Button.collidepoint(event.pos):
-                    # Turn button boundary White
                     self.ButtonList[1].SetBoundaryColor(255,255,255)
                 elif self.ButtonList[2].Button.collidepoint(event.pos):
-                    # Turn button boundary White
                     self.ButtonList[2].SetBoundaryColor(255,255,255)
                 #endif
             #endif
@@ -114,15 +110,12 @@ class Title(GameState.GameState):
                 g = 20
                 b = 20
                 if self.ButtonList[0].Button.collidepoint(event.pos):
-                    # Turn button boundary Black
                     self.ButtonList[0].SetBoundaryColor(r,g,b)
                     hero =  self.CreateHero("Guerreiro")
                 elif self.ButtonList[1].Button.collidepoint(event.pos):
-                    # Turn button boundary Black
                     self.ButtonList[1].SetBoundaryColor(r,g,b)
                     hero =  self.CreateHero("Arqueiro")
                 elif self.ButtonList[2].Button.collidepoint(event.pos):
-                    # Turn button boundary Black
                     self.ButtonList[2].SetBoundaryColor(r,g,b)
                     hero =  self.CreateHero("Mago")
                 else:
@@ -146,8 +139,8 @@ class Title(GameState.GameState):
                         if(len(self.HeroName)<8):
                             self.HeroName += event.unicode
                         #endif
-            pygame.display.update()
         #endfor
+        pygame.display.update()
     #endFunction
 
     def CreateHero(self, heroClass):

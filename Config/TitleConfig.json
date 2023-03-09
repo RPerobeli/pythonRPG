@@ -20,7 +20,8 @@
         "y" : 280,
         "width" : 400,
         "height" : 65,
-        "color" : "200,200,200"
+        "color_passive" : "100,100,100",
+        "color_active" : "200,200,200"
     },
 
     "Button1":{

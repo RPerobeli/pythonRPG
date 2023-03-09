@@ -639,6 +639,9 @@
             "txt": "InserirMartelodoNobre\n"
         },
         {
+            "txt": "[Heroi]: Martelo de Playboy adquirido.\n"
+        },
+        {
             "txt": "[Narrador]: A luta com o anão nobre tinha sido dura, a tontura da perda de sangue começa a aparecer.\n[Narrador]: Mais a frente você percebe The'té cair perante os soldados anões do rei.\n[Narrador]: Você desmaia devido aos ferimentos.\n"
         }
     ],
@@ -957,7 +960,10 @@
             "txt": "[Heroi]: Agora é a sua vez, maldito rei.\n"
         },
         {
-            "txt": "[Narrador]: Ainda calmo, o rei nem esboçava medo, mesmo tendo perdido o seu campeão.\n[Narrador]: Você sofre um choque vindo das suas algemas.\n"
+            "txt": "[Narrador]: Ainda calmo, o rei nem esboçava medo, mesmo tendo perdido o seu campeão.\n[Narrador]: Você sofre um choque vindo da algema em seu pescoço.\n"
+        },
+        {
+            "txt": "[Narrador]: Devido ao choque, você perde suas forças.\n"
         },
         {
             "txt": "[Zé Dassilva IV]: A tecnologia mágica enânica é demais para vocẽ? Achou mesmo que eu não tomaria precauções?\n[Zé Dassilva IV]: Quanta petulância... Ainda assim, farei dinheiro com você.\n"

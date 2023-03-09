@@ -40,7 +40,7 @@ class Sound:
     def PlayMusic(self, filename):
         self.CurrentMusic = self.MusicDict[f"{filename}"]
         self.CurrentMusic.set_volume(self.MusicVolumeDict[f"{filename}"])
-        self.CurrentMusic.play()
+        self.CurrentMusic.play(-1)
     #endfunc
     def StopMusic(self):
         self.CurrentMusic.stop()

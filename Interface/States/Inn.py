@@ -1,5 +1,6 @@
 import pygame
 import sys
+import random as rnd
 import Interface.InterfaceUtils as ut
 import Utils.JsonLoader as jsonL
 import Interface.BattleWindow as bw
@@ -30,6 +31,7 @@ class Inn(GameState.GameState):
             self.LoadImages(actorPos)
             self.LoadTextWithList(self.StoryTextList[self.StoryListId])
         elif ((self.Scene == 1)):
+            self.Sound.PlayMusic("inn")
             actorPos = self.PlaceActors()
             if (self.Alpha <= 255):
                 self.FadeIn(actorPos)
@@ -57,8 +59,10 @@ class Inn(GameState.GameState):
     def VerifyEvent(self):
         print('verificou possiveis eventos')
         if(self.StoryTextList[self.StoryListId]['txt'] == "battleCachorra\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Cao Infernal"), "quarto")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("inn")
             self.StoryListId += 1
             self.VerifyEvent()
             return

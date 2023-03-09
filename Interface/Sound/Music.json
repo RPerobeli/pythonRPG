@@ -2,18 +2,34 @@
 {
     "opening": {
         "file": "South America Memes - Chatuba LP Edition.wav",
-        "volume": 0.5
+        "volume": 0.2
     },
     "night": {
         "file": "Night.wav",
-        "volume": 0.5
+        "volume": 0.2
     },
     "inn": {
         "file": "Inn.wav",
-        "volume": 0.5
+        "volume": 0.2
     },
     "gameover": {
         "file": "Gameover1.wav",
+        "volume": 0.2
+    },
+    "Battle1": {
+        "file": "Battle1.wav",
+        "volume": 0.2
+    },
+    "Battle2": {
+        "file": "Battle2.wav",
+        "volume": 0.2
+    },
+    "Battle3": {
+        "file": "Battle3.wav",
+        "volume": 0.2
+    },
+    "Victory1": {
+        "file": "Victory1.wav",
         "volume": 0.2
     }
 }

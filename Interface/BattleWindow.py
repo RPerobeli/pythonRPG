@@ -1,5 +1,6 @@
 import pygame
 import sys
+import random as rnd
 #import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
 import Interface.States.GameState as GameState
@@ -76,8 +77,10 @@ class BattleWindow(GameState.GameState):
 
     def VerifyIfBattleIsFinished(self):
         if(self.Personagem.HP <= 0):
+            self.Sound.StopMusic()
             self.GameOverWindow.GameOver()
         elif(self.Monster.HP <= 0):
+            self.Sound.StopMusic()
             self.Personagem = self.LvlUpWindow.LvlUp(self.Personagem)
             return True
         #endif
@@ -92,6 +95,8 @@ class BattleWindow(GameState.GameState):
     #endfunc
 
     def Battle(self):
+        val = rnd.randint(1,3)
+        self.Sound.PlayMusic(f"Battle{val}")
         self.Monster.AutoLvl(self.Personagem.lvl)
         self.Monster.AdequaHP()
         turnCounter = 1

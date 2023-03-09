@@ -1,77 +1,65 @@
 import pygame
+import pygame_gui
 import time
 
 pygame.init()
 
-# Define colors
-BLACK = (0, 0, 0)
+# Definindo as cores
 WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
 
-# Set the dimensions of the screen
-size = (800, 600)
-screen = pygame.display.set_mode(size)
+# Definindo a janela do pygame
+WINDOW_SIZE = (500, 500)
+screen = pygame.display.set_mode(WINDOW_SIZE)
 
-# Set the font and font size
-font = pygame.font.Font(None, 32)
+# Criando um gerenciador de eventos pygame_gui
+manager = pygame_gui.UIManager(WINDOW_SIZE)
 
-# Define the text to be displayed
-text = "Hello, this is a dialog box with typewriter effect."
+# Criando uma instância de pygame_gui.TextEntryLine
+text_entry_line = pygame_gui.elements.UITextEntryLine(relative_rect=pygame.Rect((100, 100), (200, 50)), manager=manager)
 
-# Define the position of the dialog box
-x = 50
-y = 50
+# Criando um botão para aumentar o tamanho do texto
+increase_font_button = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((350, 100), (50, 50)), text='+', manager=manager)
 
-# Define the delay time between each character display
-delay = 50
+# Criando um botão para diminuir o tamanho do texto
+decrease_font_button = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((400, 100), (50, 50)), text='-', manager=manager)
 
-# Loop until the user clicks the close button
-done = False
+# Definindo o tamanho inicial da fonte
+font_size = 20
+text_entry_line.font_size = font_size
+
+# Loop principal
 clock = pygame.time.Clock()
+running = True
 
-# Function to display text with typewriter effect
-def text_effect(text, x, y, delay):
-    # Loop through each character in the text
-    for i in range(len(text)):
-        # Render the text up to the current character
-        rendered_text = font.render(text[:i+1], True, BLACK)
-        # Get the dimensions of the rendered text
-        text_rect = rendered_text.get_rect()
-        # Set the position of the text
-        text_rect.x = x
-        text_rect.y = y
-        # Blit the text to the screen
-        screen.blit(rendered_text, text_rect)
-        pygame.display.flip()
-        # Wait for a short time before displaying the next character
-        time.sleep(delay / 1000)
+while running:
+    time_delta = clock.tick(60) / 1000.0
 
-        # Check if the user has pressed the spacebar
-        for event in pygame.event.get():
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_SPACE:
-                    # Display the rest of the text and return
-                    rendered_text = font.render(text[i+1:], True, BLACK)
-                    text_rect = rendered_text.get_rect()
-                    text_rect.x = x + text_rect.width
-                    text_rect.y = y
-                    screen.blit(rendered_text, text_rect)
-                    pygame.display.flip()
-                    return
-
-# Main game loop
-while not done:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            done = True
-    
-    # Fill the background with white
-    screen.fill(WHITE)
-    
-    # Display the text with typewriter effect
-    text_effect(text, x, y, delay)
-    
-    pygame.display.flip()
-    clock.tick(60)
+            running = False
 
-# Quit the program
+        # Passando eventos para o gerenciador de eventos pygame_gui
+        manager.process_events(event)
+
+        # Aumentando o tamanho da fonte ao clicar no botão '+'
+        if event.type == pygame.USEREVENT and event.user_type == pygame_gui.UI_BUTTON_PRESSED:
+            if event.ui_element == increase_font_button:
+                font_size += 5
+                text_entry_line.font_size = font_size
+
+        # Diminuindo o tamanho da fonte ao clicar no botão '-'
+        if event.type == pygame.USEREVENT and event.user_type == pygame_gui.UI_BUTTON_PRESSED:
+            if event.ui_element == decrease_font_button:
+                font_size -= 5
+                text_entry_line.font_size = font_size
+
+    # Atualizando a interface pygame_gui
+    manager.update(time_delta)
+
+    # Desenhando na tela
+    screen.fill(WHITE)
+    manager.draw_ui(screen)
+    pygame.display.update()
+
 pygame.quit()

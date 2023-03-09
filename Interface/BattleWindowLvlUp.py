@@ -65,6 +65,7 @@ class BattleWindowLvlUp(GameState.GameState):
         #endif
     #endfunc
     def LvlUp(self, hero):
+        self.Sound.PlayMusic("Victory1")
         self.Personagem = hero
         self.LvlUpPersonagem()
         pygame.display.set_caption("Xp")
@@ -84,21 +85,25 @@ class BattleWindowLvlUp(GameState.GameState):
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
                     self.Personagem.skills["str"] += 1
                     self.Personagem.AtualizaStatus()
+                    self.Sound.StopMusic()
                     return self.Personagem
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
                     self.Personagem.skills["agi"] += 1
                     self.Personagem.AtualizaStatus()
+                    self.Sound.StopMusic()
                     return self.Personagem
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
                     self.Personagem.skills["int"] += 1
                     self.Personagem.AtualizaStatus()
+                    self.Sound.StopMusic()
                     return self.Personagem
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_4):
                     self.Personagem.skills["vit"] += 1
                     self.Personagem.AtualizaStatus()
+                    self.Sound.StopMusic()
                     return self.Personagem
                 #endif
             #endfor
