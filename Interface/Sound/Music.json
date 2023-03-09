@@ -1,4 +1,7 @@
 
 {
-    "opening": "South America Memes - Chatuba LP Edition.wav"
+    "opening": {
+        "file": "South America Memes - Chatuba LP Edition.wav",
+        "volume": 0.5
+    }
 }
