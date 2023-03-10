@@ -45,6 +45,7 @@ class Inn(GameState.GameState):
     #endfunc
 
     def SelectNextStory(self):
+        self.Sound.StopMusic()
         if(self.Personagem.classe.lower() == 'guerreiro'):
             return (self.Personagem, 'caminhoTeofilo',True)
         elif(self.Personagem.classe.lower() == 'mago'):

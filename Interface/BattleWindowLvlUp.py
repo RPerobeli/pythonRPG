@@ -79,6 +79,7 @@ class BattleWindowLvlUp(GameState.GameState):
                 #endif
                 if (event.type == pygame.KEYDOWN and (event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE)):
                     if(not self.Upou):
+                        self.Sound.StopMusic()
                         return self.Personagem
                     #endif
                 #endif

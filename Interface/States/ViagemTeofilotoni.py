@@ -37,6 +37,7 @@ class ViagemTeofilotoni(GameState.GameState):
     #endfunc
 
     def SelectNextStory(self):
+        self.Sound.StopMusic()
         return (self.Personagem, 'Teofilotoni', True)
     #endfunc
     
@@ -79,28 +80,36 @@ class ViagemTeofilotoni(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirLandscape\n"):
+            self.Sound.StopMusic()
+            self.Sound.PlayMusic("viagemTeofilo")
             self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Landscape.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "battleAnaoFalastrao\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Falastrao"), "SnowyCity")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("inn")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "battleAnaoFerido\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Bandido"), "Landscape")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("viagemTeofilo")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "battleAnaBandida\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Ana Bandida"), "Landscape")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("viagemTeofilo")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -113,8 +122,9 @@ class ViagemTeofilotoni(GameState.GameState):
         #endif
     #endif
 
+    
     def Update(self):
-        #Cena tapa na cachorra
+        self.VerifyFirstTimeInWindowToPlayMusic("inn")
         pygame.display.set_caption("Caminho para Teofilotoni")
         if(self.Count == 0):
             self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)

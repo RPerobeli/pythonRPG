@@ -31,5 +31,21 @@
     "Victory1": {
         "file": "Victory1.wav",
         "volume": 0.2
+    },
+    "florianopolis": {
+        "file": "FlorianopolisCity.wav",
+        "volume": 0.2
+    },
+    "viagemTeofilo": {
+        "file": "ViagemTeofilo.wav",
+        "volume": 0.2
+    },
+    "BattleBoss": {
+        "file": "BattleBossCut.wav",
+        "volume": 0.2
+    },
+    "dwarf": {
+        "file": "DwarfCut.wav",
+        "volume": 0.1
     }
 }

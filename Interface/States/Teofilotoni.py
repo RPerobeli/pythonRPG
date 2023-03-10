@@ -68,57 +68,73 @@ class Teofilotoni(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BattleAnaoAtiradorInn\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Atirador"), "TeofilotoniInn")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("dwarf")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BattleAnaoAtiradorStreet\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Atirador"), "TeofilotoniStreets")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("dwarf")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BattleAnaoPolicialStreet\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Policial"), "TeofilotoniStreets")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("dwarf")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BattleAnaoPolicialInn\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Policial"), "TeofilotoniInn")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("dwarf")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BattleAnaoMagoStreet\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Mago"), "TeofilotoniStreets")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("dwarf")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "battleAnaoNobre\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Nobre"), "TeofilotoniStreets")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("dwarf")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "battleAssassino\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Assassino"), "TikTokHouse")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("dwarf")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "battleCampeao\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Gel'ssu"), "DwarvenPalace")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("dwarf")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -162,6 +178,7 @@ class Teofilotoni(GameState.GameState):
         
         if(self.StoryTextList[self.StoryListId]['txt'] == "GameOverEvent\n"):
             self.GameOver = gow.GameOverWindow(self.Screen)
+            self.Sound.StopMusic()
             self.GameOver.GameOver()
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundTeofilotoniInn\n"):
@@ -227,6 +244,7 @@ class Teofilotoni(GameState.GameState):
     #endif
 
     def Update(self):
+        self.VerifyFirstTimeInWindowToPlayMusic("dwarf")
         pygame.display.set_caption("Teofilotoni")
         if(self.Count == 0):
             self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)

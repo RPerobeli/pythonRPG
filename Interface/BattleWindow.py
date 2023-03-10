@@ -95,8 +95,7 @@ class BattleWindow(GameState.GameState):
     #endfunc
 
     def Battle(self):
-        val = rnd.randint(1,3)
-        self.Sound.PlayMusic(f"Battle{val}")
+        self.GetBattleMusic()
         self.Monster.AutoLvl(self.Personagem.lvl)
         self.Monster.AdequaHP()
         turnCounter = 1
@@ -184,4 +183,13 @@ class BattleWindow(GameState.GameState):
             pygame.display.update()
         #endwhile
     #endFunction
+    def GetBattleMusic(self):
+        if(self.Monster.isBoss == "True" and self.Monster.name != "Cao Infernal"):
+            self.Sound.PlayMusic("BattleBoss")
+        else:
+            val = rnd.randint(1,3)
+            self.Sound.PlayMusic(f"Battle{val}")
+        #endif
+    #endfunc
+
 #endclass

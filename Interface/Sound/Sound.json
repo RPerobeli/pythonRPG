@@ -1,14 +1,14 @@
 {
     "temer": {
         "file":"maicol Temer.wav",
-        "volume" : 1
+        "volume" : 0.5
     },
     "cursorError": {
         "file":"Cursor1.wav",
-        "volume" : 1
+        "volume" : 0.5
     },
     "cursorForward": {
         "file":"Cursor3.wav",
-        "volume" : 1
+        "volume" : 0.5
     }
 }

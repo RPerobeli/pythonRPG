@@ -80,6 +80,7 @@ class Florianopolis(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "GameOverEvent\n"):
+            self.Sound.StopMusic()
             self.GameOver = gow.GameOverWindow(self.Screen)
             self.GameOver.GameOver()
         #endif
@@ -151,6 +152,7 @@ class Florianopolis(GameState.GameState):
 
     def Update(self):
         pygame.display.set_caption("Florianopolis")
+        self.VerifyFirstTimeInWindowToPlayMusic("inn")
         if(self.Count == 0):
             self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
             self.Count+=1

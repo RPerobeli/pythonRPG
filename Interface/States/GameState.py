@@ -23,6 +23,7 @@ class GameState():
         self.NextStory = "Title"
         self.Sound = Sound.Sound()
         self.Done = False
+        self.Count = 0
     #endfunc
 
     def RedrawWindow(self):
@@ -134,4 +135,9 @@ class GameState():
         #endif
     #endfunc
 
+    def VerifyFirstTimeInWindowToPlayMusic(self, music):
+        if(self.Count == 0):
+            self.Sound.PlayMusic(f"{music}")
+        #endif
+    #endfunction
 #endclass

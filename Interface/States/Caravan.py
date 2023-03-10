@@ -54,35 +54,45 @@ class Caravan(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirFloresta\n"):
+            self.Sound.StopMusic()
+            self.Sound.PlayMusic("night")
             self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/NightForest.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "battleBandido1\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Bandido"), "NightForest")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("night")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BattleJavali\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Javali"), "NightForest")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("night")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "battleBandido2\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Bandido Atirador"), "NightForest")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("night")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BattleOrcBesteiro\n"):
+            self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Orc Besteiro"), "NightForest")
             self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("night")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -98,6 +108,7 @@ class Caravan(GameState.GameState):
 
     def Update(self):
         #Cena tapa na cachorra
+        self.VerifyFirstTimeInWindowToPlayMusic("inn")
         pygame.display.set_caption("Caravana")
         if(self.Count == 0):
             self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
