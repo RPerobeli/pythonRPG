@@ -146,8 +146,10 @@ class Title(GameState.GameState):
     def CreateHero(self, heroClass):
         hero = None
         if(self.HeroName == ""):
+            self.Sound.PlaySFX("cursorError")
             self.EditBoxBoundaryColor = (255,0,0)
         else:
+            self.Sound.PlaySFX("cursorForward")
             hero = Heroi.Heroi(self.HeroName,heroClass)
         #endif
         return hero

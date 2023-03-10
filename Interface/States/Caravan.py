@@ -112,8 +112,10 @@ class Caravan(GameState.GameState):
             if (event.type == pygame.KEYDOWN and (event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE)):
                 if(self.StoryListId == len(self.StoryTextList)-1):
                     if(self.isQuestion):
+                        self.Sound.PlaySFX("cursorError")
                         print("Ta com pressa irmao? para de pular os dialogos.")
                     else:
+                        self.Sound.PlaySFX("cursorForward")
                         self.isQuestion = True
                         self.StoryIndex += 1 
                         if(self.StoryIndex == self.MaxStoryIndex):
@@ -123,22 +125,26 @@ class Caravan(GameState.GameState):
                         self.StoryListId = 0 
                         self.VerifyEvent()
                 else:
+                    self.Sound.PlaySFX("cursorForward")
                     self.StoryListId += 1
                     self.Done = False
                     self.VerifyEvent()
                 #endif
             #endif
             if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
+                self.Sound.PlaySFX("cursorForward")
                 self.Personagem.Good += 1
                 self.SearchAnswerByUserInput(1)
                 self.VerifyEvent()
             #endif
             if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
+                self.Sound.PlaySFX("cursorForward")
                 self.Personagem.Neutral += 1
                 self.SearchAnswerByUserInput(2)
                 self.VerifyEvent()
             #endif
             if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
+                self.Sound.PlaySFX("cursorForward")
                 self.Personagem.Evil += 1
                 self.SearchAnswerByUserInput(3)
                 self.VerifyEvent()
