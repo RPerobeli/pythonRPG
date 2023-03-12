@@ -94,7 +94,7 @@ Cena 3: Infiltrando-se no Esconderijo dos Bandidos
 
 [Guarda]: Por favor, aguarde, uma atendente logo virá.
 
-[Atendente]: Boa noite senhor. O que faremos hoje? Temos bebidas e outros serviços especiais para você.
+[Elfa]: Boa noite senhor. O que faremos hoje? Temos bebidas e outros serviços especiais para você.
 
 [Narrador]: A moça senta-se ao seu lado na cama, e começa e acariciar seus músculos.
 
@@ -105,53 +105,30 @@ Cena 3: Infiltrando-se no Esconderijo dos Bandidos
 
 [Herói]: Serão os melhores 2 minutos da sua vida.
 
-[Atendente]: Tenho certeza que sim, querido.
+[Elfa]: Tenho certeza que sim, querido.
 
 [Aviso]: Devido ao cansaço, você perde 10 de HP.
 
 [Heroi]: Foi maravilhoso, senhorita, mas preciso ir ao banheiro, poderia me esperar para mais uma rodada?
 
-[Atendente]: Claro.
+[Elfa]: Claro.
 
-[Narrador]: Você sai do quarto e segue pelo corredor com naturalidade, e observa que há mais um andar no bordel.
-[Narrador]: Nota-se que  
-[Narrador]: O herói caminhou pelo corredor até chegar ao banheiro, mas em vez de usá-lo, ele começou a se mover furtivamente pelos corredores do bordel, procurando pelo líder dos bandidos.
+[Narrador]: Você sai do quarto e segue pelo corredor com naturalidade, 
+[Narrador]: Passa por diversas portas, ouvindo gemidos e risos vindos das salas e observa que há mais um andar no bordel.
+[Narrador]: Nota-se que há menos guardas.
 
-[Narrador]: Ele passou por diversas portas, ouvindo gemidos e risos vindos das salas. Até que finalmente encontrou uma sala trancada. Ao se aproximar, ouviu vozes do outro lado.
+[Guarda]: Quem é você? O  que faz aqui? As garotas ficam lá em baixo!
 
-[Narrador]: O herói caminha pelo bordel, procurando por pistas sobre a localização dos bandidos. Ele consegue ouvir vozes em um cômodo próximo.
+[Heroi]: Perdão amigo, eu gostaria de ir ao banheiro mas acabei me perdendo.
 
-[Bandido 1]: Temos que tomar cuidado com os elfos da floresta. Eles estão cada vez mais agressivos.
+[Narrador]: Enquanto dizia isso, se aproveita para se aproximar do guarda e rapidamente saca uma flecha de sua aljava e penetra a garganta do guarda.
+[Narrador]: Você abre a porta e há 3 elfos em uma reunião.
 
-[Bandido 2]: Não se preocupe, o bruxo já lidou com eles. Agora eles trabalham para nós.
+[Líder dos Bandidos]: O que você quer? Não é autorizado ninguém a entrar aqui. Matem-no!
 
-[Narrador]: O herói percebe que algo estava errado. Ele decide investigar a situação e segue as vozes até o quarto dos bandidos.
+[Narrador]: Após eliminar seus aliados, o elfo abaixa sua arma e inicia uma conversa:
 
-[Capanga 1]: O que você está fazendo aqui?
-
-Heroi: Vim ver como vocês trabalham. Mas eu acho que tem algo estranho acontecendo aqui.
-
-[Capanga 2]: O que você quer dizer com isso?
-
-Heroi: Eu ouvi vocês falando sobre elfos da floresta trabalhando para vocês. Isso não é normal.
-
-[Narrador]: Os capangas trocam um olhar, desconfiados.
-
-[Capanga 1]: Quem é você? O que você sabe sobre isso?
-
-Heroi: Eu sou um aliado. Estou aqui para ajudar.
-
-[Narrador]: Os capangas parecem ponderar sobre o que o herói disse.
-
-[Capanga 2]: Tudo bem. O chefe está lá em cima. Vou te levar até ele.
-
-[Narrador]: O capanga leva o herói até o líder dos bandidos.
-
-[Líder dos Bandidos]: O que você quer?
-
-Heroi: Eu ouvi falar que vocês estão com problemas. Talvez eu possa ajudar.
-
-[Líder dos Bandidos]: Nós não precisamos da ajuda de ninguém.
+[Líder dos Bandidos]: Percebo sua força, estranho. O que quer de mim?
 
 [Narrador]: O líder dos bandidos tenta expulsar o herói, mas o herói insiste em ajudar.
 
