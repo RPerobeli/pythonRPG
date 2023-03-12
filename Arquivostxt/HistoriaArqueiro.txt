@@ -1,0 +1,187 @@
+Cena 1: Chegando em Curitiba
+[Narrador]: Após alguns dias de viagem finalmente chegou à cidade élfica de Curitiba, carregando os recursos que deveriam ser entregues ao quartel local. 
+[Narrador]: A cidade era belíssima, digna das histórias as quais tinha ouvido falar.
+[Narrador]: Você caminha pelas ruas da cidade, observando a arquitetura elegante e as magníficas paisagens ao seu redor.
+
+[Narrador]: Com a ajuda dos guardas, é guiado até o quartel, onde foi apresentado ao General élfico Liriel, que o aguardava no pátio de treinamento.
+
+[Liriel]: Seja bem-vindo, Heroi!
+[Liriel]: Fico feliz que tenha conseguido trazer esses recursos. Eles são muito importantes para nós.
+
+[Heroi]: Obrigado, general. Foi uma longa viagem, mas valeu a pena. Onde devo entregar os recursos?
+
+[Mensageira]: General Liriel!!! Uma mensagem urgente para o senhor!
+
+[Liriel]: Para o depósito! Vá na frente, te encontro lá em alguns instantes.
+
+[Narrador]: O general apontou o caminho para você e foi conversar com a mensageira.
+
+[Narrador]:Chegando no depósito da entrega, ao se aproximar, você ouve gritos de dois elfos que pareciam estar brigando.
+
+[Soldado 1]: Devolve minha seda, você sempre me pede, tu tem que arranjar a sua própria seda!!
+
+[Soldado 2]: Qual é, você tem um monte, eu vou pegar só uma, pra fumar apenas UM!
+
+[Heroi]: Com licença, senhores, eu vim entregar esses recursos, poderiam parar de discutir e me auxiliar a descarregá-los?
+
+[Narrador]: Os soldados o fitam com desprezo.
+
+[Soldado 1]:Quem é você para nos dizer o que fazer?
+1 - Ninguém não, podem continuar a resolver seus assuntos. Descarregarei sozinho.
+2 - Me chamo Heroi. E estou fazendo uma entrega para o general Liriel vão me ajudar?.
+3 - Olha aqui, seus soldados de baixa patente, vou ensinar uma lição a vocês.
+
+
+[Narrador]: Com os soldados no chão, ouve-se o general Liriel entrando no depósito.
+
+[Liriel]: Estão se divertindo aqui?? Parece que o dia está bem alegre.
+
+[Narrador]: Rapidamente os soldados se levantam.
+
+[Soldados]: NÃO SENHOR!
+
+[Liriel]: Descarreguem os suprimentos da carroça de Heroi. Tenho assuntos a tratar com ele.
+
+[Soldados]: SIM SENHOR!
+
+[Narrador]: Se dirigindo a você, o general faz um sinal para que o acompanhe.
+
+[Liriel]: Eu gostaria de falar com você sobre uma outra questão.
+
+
+Cena 2: A missão
+[Narrador]: O general leva o herói para uma sala privada, onde ambos podem conversar sem interrupções.
+
+[Liriel]: Obrigado por tudo, Heroi. Mas gostaria de pedir mais um auxílio seu.
+
+[Heroi]: O que seria?
+
+[Liriel]: Há algum tempo, um grupo de bandidos vem causando problemas em Curitiba. Eles são muito astutos e têm habilidades de luta excepcionais. Acredito que eles estejam planejando um grande ataque à cidade.
+
+[Liriel]: Como você pode ver, devido a uma guerra contra os anões, estamos com poucos soldados em Curitiba. Não temos forças suficientes para lidar com esses bandidos. Por isso, quero que você os elimine.
+
+[Heroi]: Entendi. E qual é a recompensa?
+
+[Liriel]: Você será muito bem recompensado. Além de uma quantia em ouro, terá a gratidão de todo o povo élfico. Além disso, eu mesmo lhe darei meu melhor arco.
+
+[Heroi]: Se me der parte do ouro adiantado... Estou pronto para aceitar a missão, general.
+
+[Narrador]: Liriel entrega ao herói um mapa detalhado da cidade e informações sobre os bandidos, bem como um punhado de moedas.
+
+[Liriel]: Esses bandidos são muito perigosos, tenha cuidado.
+
+
+Cena 3: Infiltrando-se no Esconderijo dos Bandidos
+
+[Narrador]: Com o plano em mente, o herói se dirige ao esconderijo dos bandidos. Ele sabia que precisava ser furtivo para não chamar a atenção.
+[Narrador]: Ao se aproximar do local indicado por Liriel, você percebe que o esconderijo se trata de um bordel.
+[Narrador]: Você se aproxima de um dos guardas do local, um elfo da floresta.
+
+[Guarda]: Ei, quem é você? O que faz aqui?
+
+[Heroi]: Eu estou procurando um lugar para me divertir. Ouvi dizer que aqui é um bom bordel.
+
+[Guarda]: É, aqui é um bom bordel, mas você não parece ter dinheiro para gastar.
+
+[Narrador]: Você tira algumas moedas e mostra para o guarda.
+[Heroi]: Ah, eu tenho sim. Posso pagar com algumas moedas de ouro.
+
+[Guarda]: Interessante... Seja bem vindo.
+
+[Narrador]: O herói segue o capanga, fingindo interesse pelo local.
+[Narrador]: Vocês passam por alguns poucos guardas, e você nota que todos são elfos da floresta.
+[Narrador]: O guarda te leva até uma sala.
+
+[Guarda]: Por favor, aguarde, uma atendente logo virá.
+
+[Atendente]: Boa noite senhor. O que faremos hoje? Temos bebidas e outros serviços especiais para você.
+
+[Narrador]: A moça senta-se ao seu lado na cama, e começa e acariciar seus músculos.
+
+[Narrador]: Estonteado com a beleza da elfa. Você serve uma taça de vinho para você e serve outra para a dama.
+1 - Após beber o vinho arrumar uma desculpa e seguir com a missão.
+2 - Aproveitar a noite com essa companhia sublime.
+3 - Senhorita, sinto-lhe informar mas estou fazendo algo muito importante e não posso deixar você me atrapalhar.
+
+[Herói]: Serão os melhores 2 minutos da sua vida.
+
+[Atendente]: Tenho certeza que sim, querido.
+
+[Aviso]: Devido ao cansaço, você perde 10 de HP.
+
+[Heroi]: Foi maravilhoso, senhorita, mas preciso ir ao banheiro, poderia me esperar para mais uma rodada?
+
+[Atendente]: Claro.
+
+[Narrador]: Você sai do quarto e segue pelo corredor com naturalidade, e observa que há mais um andar no bordel.
+[Narrador]: Nota-se que  
+[Narrador]: O herói caminhou pelo corredor até chegar ao banheiro, mas em vez de usá-lo, ele começou a se mover furtivamente pelos corredores do bordel, procurando pelo líder dos bandidos.
+
+[Narrador]: Ele passou por diversas portas, ouvindo gemidos e risos vindos das salas. Até que finalmente encontrou uma sala trancada. Ao se aproximar, ouviu vozes do outro lado.
+
+[Narrador]: O herói caminha pelo bordel, procurando por pistas sobre a localização dos bandidos. Ele consegue ouvir vozes em um cômodo próximo.
+
+[Bandido 1]: Temos que tomar cuidado com os elfos da floresta. Eles estão cada vez mais agressivos.
+
+[Bandido 2]: Não se preocupe, o bruxo já lidou com eles. Agora eles trabalham para nós.
+
+[Narrador]: O herói percebe que algo estava errado. Ele decide investigar a situação e segue as vozes até o quarto dos bandidos.
+
+[Capanga 1]: O que você está fazendo aqui?
+
+Heroi: Vim ver como vocês trabalham. Mas eu acho que tem algo estranho acontecendo aqui.
+
+[Capanga 2]: O que você quer dizer com isso?
+
+Heroi: Eu ouvi vocês falando sobre elfos da floresta trabalhando para vocês. Isso não é normal.
+
+[Narrador]: Os capangas trocam um olhar, desconfiados.
+
+[Capanga 1]: Quem é você? O que você sabe sobre isso?
+
+Heroi: Eu sou um aliado. Estou aqui para ajudar.
+
+[Narrador]: Os capangas parecem ponderar sobre o que o herói disse.
+
+[Capanga 2]: Tudo bem. O chefe está lá em cima. Vou te levar até ele.
+
+[Narrador]: O capanga leva o herói até o líder dos bandidos.
+
+[Líder dos Bandidos]: O que você quer?
+
+Heroi: Eu ouvi falar que vocês estão com problemas. Talvez eu possa ajudar.
+
+[Líder dos Bandidos]: Nós não precisamos da ajuda de ninguém.
+
+[Narrador]: O líder dos bandidos tenta expulsar o herói, mas o herói insiste em ajudar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cena 4: Descoberta da origem dos bandidos
+Após eliminar os bandidos, Aiden começou a investigar a origem deles. Ele conversou com algumas pessoas na cidade e descobriu que eles eram, na verdade, elfos da floresta. Aiden ficou surpreso com a informação, afinal, os elfos da floresta e os elfos da cidade eram aliados há séculos.
+
+"Mas por que eles estariam trabalhando para um bruxo?", questionou Aiden, perplexo.
+
+Ele continuou a investigação e descobriu que as famílias dos elfos da floresta haviam sido feitas reféns pelo bruxo. Eles foram obrigados a trabalhar para ele sob ameaças de morte.
+
+Aiden ficou chocado ao descobrir a verdade. Ele sabia que tinha que ajudar os elfos da floresta a se libertarem do controle do bruxo. Ele decidiu que precisava ir até a Floresta do Krambeck para encontrar os elfos e oferecer sua ajuda.
+
+Cena 5: Preparando-se para a viagem
+Aiden voltou ao quartel para falar com o General élfico sobre a sua descoberta. Ele contou tudo sobre os elfos da floresta e o bruxo, e pediu permissão para ir até a Floresta do Krambeck para ajudá-los.
+
+O General élfico ficou impressionado com a coragem de Aiden e concordou em deixá-lo partir. Ele ofereceu ajuda em tudo o que fosse necessário e pediu que Aiden tomasse cuidado.
+
+Aiden agradeceu e começou a se preparar para a viagem. Ele pegou suprimentos, armas e armaduras e colocou tudo em sua mochila. Ele sabia que a viagem seria longa e perigosa, mas estava determinado a ajudar os elfos da floresta.
+
+"Vou precisar de muita sorte", pensou Aiden consigo mesmo. "Mas estou pronto para enfrentar qualquer desafio."
