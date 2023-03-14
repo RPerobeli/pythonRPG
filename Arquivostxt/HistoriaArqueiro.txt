@@ -10,7 +10,7 @@ Cena 1: Chegando em Curitiba
 
 [Heroi]: Obrigado, general. Foi uma longa viagem, mas valeu a pena. Onde devo entregar os recursos?
 
-[Mensageira]: General Liriel!!! Uma mensagem urgente para o senhor!
+[Mensageiro]: General Liriel!!! Uma mensagem urgente para o senhor!
 
 [Liriel]: Para o depósito! Vá na frente, te encontro lá em alguns instantes.
 
@@ -56,11 +56,12 @@ Cena 2: A missão
 
 [Heroi]: O que seria?
 
-[Liriel]: Há algum tempo, um grupo de bandidos vem causando problemas em Curitiba. Eles são muito astutos e têm habilidades de luta excepcionais. Acredito que eles estejam planejando um grande ataque à cidade.
+[Liriel]: Há algum tempo, um grupo de bandidos vem causando problemas em Curitiba. Nossa inteligência acredita que eles estão planejando uma sabotagem à cidade.
+[Liriel]: Há alguns dias, perdemos 2 oficiais que andavam pelo subúrbio. Assaltos em linhas de suprimentos e também roubos de cargas valiosas do comércio élfico.
 
 [Liriel]: Como você pode ver, devido a uma guerra contra os anões, estamos com poucos soldados em Curitiba. Não temos forças suficientes para lidar com esses bandidos. Por isso, quero que você os elimine.
 
-[Heroi]: Entendi. E qual é a recompensa?
+[Heroi]: Entendo. E qual é a recompensa?
 
 [Liriel]: Você será muito bem recompensado. Além de uma quantia em ouro, terá a gratidão de todo o povo élfico. Além disso, eu mesmo lhe darei meu melhor arco.
 
@@ -122,43 +123,74 @@ Cena 3: Infiltrando-se no Esconderijo dos Bandidos
 [Heroi]: Perdão amigo, eu gostaria de ir ao banheiro mas acabei me perdendo.
 
 [Narrador]: Enquanto dizia isso, se aproveita para se aproximar do guarda e rapidamente saca uma flecha de sua aljava e penetra a garganta do guarda.
-[Narrador]: Você abre a porta e há 3 elfos em uma reunião.
-
-[Líder dos Bandidos]: O que você quer? Não é autorizado ninguém a entrar aqui. Matem-no!
-
-[Narrador]: Após eliminar seus aliados, o elfo abaixa sua arma e inicia uma conversa:
-
-[Líder dos Bandidos]: Percebo sua força, estranho. O que quer de mim?
-
-[Narrador]: O líder dos bandidos tenta expulsar o herói, mas o herói insiste em ajudar.
+[Narrador]: Você abre a porta e 3 elfos armadurados se destacam por estarem em uma reunião.
+[Narrador]: Várias elfas lindas na sala rodeiam os 3 elfos armadurados para serví-los.
 
 
 
+[Criminoso Atirador]: Deixe conosco, Sylathor.
+
+[Heroi]: Acredito que agora esteja disposto a me ouvir, senhor?
+
+[Sylathor]: Hahahahaha, Você aparece no meu bordel, mata meus homens, e quer conversar? Mys'tral, acabe com ele.
+
+[Mys'tral]: Com prazer, meu querido, vou acabar com ele para podermos continuar de onde paramos.
+
+[Sylathor]: Devo fazer tudo sozinho mesmo... Imprestáveis!
+
+[Sylathor]: Mi... Misericórdia, humano! O qu... o que quer de mim?
+
+[Narrador]: Você põe sua adaga no pescoço do elfo.
+
+[Heroi]: Primeiramente, desejo saber o que elfos da floresta fazem aqui em Curitiba causando problemas.
+[Heroi]: Porque saíram de suas florestas para se tornarem criminosos aqui?
+
+[Sylathor]: Foi o Bruxo Rhon'aldyn! 
+[Sylathor]: Ele e seu exército invadiram as Florestas de Krambeck, o desgraçado acabou com meu tráfico de maconha na floresta...
+[Sylathor]: Porém, ele me disse que se eu trabalhasse para ele, me daria poder para criar um império ainda maior aqui em Curitiba.
+
+[Heroi]: Entendo... Obrigado pelas informações, mas não sairá ileso. Você cometeu muitos crimes.
+
+1 - Levar Sylathor preso de volta para Liriel, no quartel.
+2 - Matar Sylathor e retornar a Liriel.
+3 - Manter Sylathor vivo e se tornar o novo chefe dele.
+
+[Narrador]: Com a missão concluída, o herói retorna ao quartel para relatar suas descobertas a Liriel.
+
+[Heroi]: General Liriel, os bandidos foram derrotados, porém o líder deles, Sylathor, era apenas um peão nas mãos de um bruxo que domina a Floresta de Krambeck.
+[Heroi]: Seu nome é Rhon'aldyn e invadiu a floresta dos elfos e agora comanda aquele lugar.
+
+[Liriel]: Rhon'aldyn? Conheço esse nome. Ele já foi um grande mago de nossa cidade, mas sua ambição o cegou e ele se voltou contra nós.
+
+[Heroi]: Ele está reunindo um grande exército de demônios na floresta.
+
+[Liriel]: Não podemos agir sem um plano.
+
+[Liriel]: Na verdade, já estamos um passo à frente. Fiquei sabendo de crimes menores cometidos por Rhon'aldyn, então enviei um de nossos melhores Rangers, Pelégolas, para investigar a origem de seus novos poderes.
+
+[Heroi]: E o que Pelégolas descobriu?
+
+[Liriel]: No Acre, há um artefato que possui o mesmo tipo de poder adquirido por Rhon'aldyn. E o pior, o Rei anão Ze Dassilva está em busca desse poder. 
+[Liriel]: Precisamos agir rápido antes que ele caia nas mãos dos anões.
+
+[Heroi]: Então, qual é o plano, general?
+
+[Liriel]: Não dispomos de muitos homens e ainda precisaremos dividir nossas forças. Precisamos nos preparar para uma batalha difícil contra Rhon'aldyn e seus lacaios.
+
+[Heroi]: Entendido. Mas, e o artefato no Acre? Como vamos impedir que o rei anão o encontre?
+
+[Liriel]: Um grupo irá enfrentar Rhon'aldyn na Floresta de Krambeck, enquanto um segundo batalhão expedicionário irá até o Acre buscar o artefato antes dos anões.
+
+[Liriel]: Para onde você deseja ir?
+1 - Acompanhar a força expedicionária do Acre.
+2 - Seguir para a Floresta de Krambeck.
+
+[Heroi]: Vou me preparar e partir o mais rápido possível.
+
+[Liriel]: Muito bem, mas antes, como prometido,  que os deuses nos protejam.
 
 
 
 
 
 
-
-
-
-
-
-Cena 4: Descoberta da origem dos bandidos
-Após eliminar os bandidos, Aiden começou a investigar a origem deles. Ele conversou com algumas pessoas na cidade e descobriu que eles eram, na verdade, elfos da floresta. Aiden ficou surpreso com a informação, afinal, os elfos da floresta e os elfos da cidade eram aliados há séculos.
-
-"Mas por que eles estariam trabalhando para um bruxo?", questionou Aiden, perplexo.
-
-Ele continuou a investigação e descobriu que as famílias dos elfos da floresta haviam sido feitas reféns pelo bruxo. Eles foram obrigados a trabalhar para ele sob ameaças de morte.
-
-Aiden ficou chocado ao descobrir a verdade. Ele sabia que tinha que ajudar os elfos da floresta a se libertarem do controle do bruxo. Ele decidiu que precisava ir até a Floresta do Krambeck para encontrar os elfos e oferecer sua ajuda.
-
-Cena 5: Preparando-se para a viagem
-Aiden voltou ao quartel para falar com o General élfico sobre a sua descoberta. Ele contou tudo sobre os elfos da floresta e o bruxo, e pediu permissão para ir até a Floresta do Krambeck para ajudá-los.
-
-O General élfico ficou impressionado com a coragem de Aiden e concordou em deixá-lo partir. Ele ofereceu ajuda em tudo o que fosse necessário e pediu que Aiden tomasse cuidado.
-
-Aiden agradeceu e começou a se preparar para a viagem. Ele pegou suprimentos, armas e armaduras e colocou tudo em sua mochila. Ele sabia que a viagem seria longa e perigosa, mas estava determinado a ajudar os elfos da floresta.
-
-"Vou precisar de muita sorte", pensou Aiden consigo mesmo. "Mas estou pronto para enfrentar qualquer desafio."
