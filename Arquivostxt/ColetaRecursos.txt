@@ -1,0 +1,55 @@
+[Narrador]:  A missão descrita no anúncio pede que colete recursos e os leva à cidade élfica de Curitiba.
+
+[Narrador]: Após guardar a carta na sua bolsa, você se dirige à saída.
+[Taverneira]: Ei, arqueiro, você não disse o seu nome, aliás, me chamo Jessie.
+[Heroi]: Me chamo Heroi!
+[Jessie]: Volte sempre, Heroi.
+
+[Narrador]: Ao sair da guilda, você percebe que há os membros de uma caravana correndo atrás de um jovem em um cavalo.
+[Narrador]: Olhando para o que restou da caravana, vocÊ lembra que vai precisar transportar os recursos e que está sem dinheiro para comprar uma carroça.
+
+[Narrador]: ...
+
+[Narrador]: Após algumas horas de viagem, você desvia da estrada e entra em uma floresta, desce da sua carroça e amarra o cavalo em uma árvore.
+
+[Heroi]: Será mais fácil se eu focar em um tipo de recurso para levar para Curitiba.
+1 - Coletar minérios para a produção de armas élficas.
+2 - Coletar ervas medicinais para primeiros socorros.
+3 - Caçar animais para aumentar o estoque de comida
+-----------------------------------------------------------------------------------------
+[Narrador]: Ao entrar na floresta, você vê diversos tipos de vegetação.
+[Narrador]: Mas uma clareira rochosa, com vários cristais à mostra chama a sua atenção.
+
+[Heroi]: Bom, minérios garantidos.
+
+[Narrador]: Chegando perto, você nota várias estátuas, dentro do perímetro da pedreira.
+
+[Narrador]: No entanto, quando chega ainda mais perto, um dos cristais no centro da mina começa a brilhar;
+[Narrador]: as estátuas começam a ganhar vida e vem para cima de você.
+
+[Narrador]: Após abrir caminho, você consegue destruir o cristal e as estátuas restantes ficam imóveis novamente.
+[Narrador]: Você consegue minerar com tranquilidade agora.
+
+[Narrador]: Após alguns dias, com a carroça cheia, você parte para entregar sua missão.
+
+-----------------------------------------------------------------------------------
+
+[Narrador]: Ao entrar na floresta, você vê diversos tipos de vegetação.
+[Narrador]: Você começa a coletar ervas que encontrava pelo caminho, que pudessem servir para cura.
+
+[Narrador]: Enquanto colhia, como um chicote um galho acerta sua lateral
+
+[Aviso]: Você perde 10 de Vida.
+
+[Narrador]: Após a luta, você consegue pegar o restante das ervas e seguir para Curitiba.
+
+-------------------------------------------------------------------------------------------------
+[Narrador]: Você adentra uma caverna que encontrara.
+
+[Narrador]: No momento em que saca sua tocha, um lobo selvagem o ataca, você desvia por pouco.
+
+[Narrador]: Após a luta, o lobo é carregado para a carroça. 
+[Narrador]: Como o predador havia sido derrotado, outros animais começaram a sair das tocas nos dias que se seguiram,
+possibilitando uma caça bem abundante de comida.
+
+[Narrador]: Após alguns dias de coleta, você segue viagem para Curitiba para entregar sua missão.
