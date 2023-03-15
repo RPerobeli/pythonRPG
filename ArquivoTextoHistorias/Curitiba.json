@@ -1,10 +1,10 @@
 {
     "Q1": [
         {
-            "txt" : "[Narrador]: Após alguns dias de viagem finalmente chegou à cidade élfica de Curitiba, carregando os recursos que deveriam ser entregues ao quartel local. \n[Narrador]: A cidade era belíssima, digna das histórias as quais tinha ouvido falar.\n[Narrador]: Você caminha pelas ruas da cidade, observando a arquitetura elegante e as magníficas paisagens ao seu redor.\n"
+            "txt" : "[Narrador]: Após alguns dias de viagem finalmente chegou à cidade élfica de Curitiba,\ncarregando os recursos que deveriam ser entregues ao quartel local. \n[Narrador]: A cidade era belíssima, digna das histórias as quais tinha ouvido falar.\n[Narrador]: Você caminha pelas ruas da cidade, observando a arquitetura elegante\ne as magníficas paisagens ao seu redor.\n"
         },
         {
-            "txt" : "[Narrador]: Com a ajuda dos guardas, é guiado até o quartel, onde foi apresentado à General élfica Liriel, que o aguardava no pátio de treinamento.\n"
+            "txt" : "[Narrador]: Com a ajuda dos guardas, é guiado até o quartel,\nonde foi apresentado à General élfica Liriel, que o aguardava no pátio de treinamento.\n"
         },
         {
             "txt" : "InserirLiriel\n"
@@ -28,13 +28,19 @@
             "txt" : "[Narrador]: A general apontou o caminho para você e foi conversar com o mensageiro\n"
         },
         {
-            "txt" : "[Narrador]:Chegando no depósito da entrega, ao se aproximar, você ouve gritos de dois elfos que pareciam estar brigando.\n"
+            "txt" : "[Narrador]:Chegando no depósito da entrega, ao se aproximar,\nvocê ouve gritos de dois elfos que pareciam estar brigando.\n"
+        },
+        {
+            "txt" : "InserirSoldadoElfo\n"
         },
         {
             "txt" : "[Soldado 1]: Devolve minha seda, você sempre me pede, tu tem que arranjar a sua própria seda!!\n"
         },
         {
             "txt" : "RemoverAtor1\n"
+        },
+        {
+            "txt" : "InserirSoldadoElfo2\n"
         },
         {
             "txt" : "[Soldado 2]: Qual é, você tem um monte, eu vou pegar só uma, pra fumar apenas UM!\n"
@@ -115,6 +121,9 @@
             "txt" : "[Narrador]: Com os soldados no chão, ouve-se o general Liriel entrando no depósito.\n"
         },
         {
+            "txt": "InserirLiriel\n"
+        },
+        {
             "txt":"[Liriel]: Estão se divertindo aqui?? Parece que o dia está bem alegre.\n"
         },
         {
@@ -171,31 +180,34 @@
             "txt": "[Heroi]: O que seria?\n"
         },
         {
-            "txt": "[Liriel]: Há algum tempo, um grupo de bandidos vem causando problemas em Curitiba. Nossa inteligência acredita que eles estão planejando uma sabotagem à cidade.\n[Liriel]: Há alguns dias, perdemos 2 oficiais que andavam pelo subúrbio. Assaltos em linhas de suprimentos e também roubos de cargas valiosas do comércio élfico.\n"
+            "txt": "[Liriel]: Há algum tempo, um grupo de bandidos vem causando problemas em Curitiba.\nNossa inteligência acredita que eles estão planejando uma sabotagem à cidade.\n[Liriel]: Há alguns dias, perdemos 2 oficiais que andavam pelo subúrbio.\nAssaltos em linhas de suprimentos e também roubos de cargas valiosas do comércio élfico.\n"
         },
         {
             "txt": "[Heroi]: Entendo. E qual é a recompensa?\n"
         },
         {
-            "txt": "[Liriel]: Você será muito bem recompensado. Além de uma quantia em ouro, terá a gratidão de todo o povo élfico.\n"
+            "txt": "[Liriel]: Você será muito bem recompensado. Além de uma quantia em ouro,\nterá a gratidão de todo o povo élfico.\n"
         },
         {
             "txt": "[Heroi]: Se me der parte do ouro adiantado... Estou pronto para aceitar a missão, general.\n"
         },
         {
-            "txt": "[Narrador]: Liriel entrega ao herói um mapa detalhado da cidade e informações sobre os bandidos, bem como um punhado de moedas.\n"
+            "txt": "[Narrador]: Liriel entrega ao herói um mapa detalhado da cidade e informações sobre os bandidos,\nbem como um punhado de moedas.\n"
         },
         {
             "txt": "[Liriel]: Esses bandidos são muito perigosos, tenha cuidado.\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
             "txt": "InserirMusicaSuspense\n"
         },
         {
-            "txt": "[Narrador]: Com o plano em mente, o herói se dirige ao esconderijo dos bandidos. Ele sabia que precisava ser furtivo para não chamar a atenção.\n[Narrador]: Ao se aproximar do local indicado por Liriel, você percebe que o esconderijo se trata de um bordel.\n[Narrador]: Você se aproxima de um dos guardas do local, um elfo da floresta.\n"
+            "txt": "[Narrador]: Com o plano em mente, o herói se dirige ao esconderijo dos bandidos.\nEle sabia que precisava ser furtivo para não chamar a atenção.\n[Narrador]: Ao se aproximar do local indicado por Liriel,\nvocê percebe que o esconderijo se trata de um bordel.\n[Narrador]: Você se aproxima de um dos guardas do local, um elfo da floresta.\n"
         },
         {
-            "txt": "InserirGuarda\n"
+            "txt": "InserirElfoBandido\n"
         },
         {
             "txt": "[Guarda]: Ei, quem é você? O que faz aqui?\n"
@@ -228,7 +240,7 @@
             "txt": "InserirBackgroundBrothelRoom\n"
         },
         {
-            "txt": "InserirGuarda\n"
+            "txt": "InserirElfoBandido\n"
         },
         {
             "txt": "[Guarda]: Por favor, aguarde, uma atendente logo virá.\n"
@@ -246,7 +258,7 @@
             "txt": "[Narrador]: A moça senta-se ao seu lado na cama, e começa e acariciar seus músculos.\n"
         },
         {
-            "txt": "[Narrador]: Estonteado com a beleza da elfa. Você serve uma taça de vinho para você e serve outra para a dama.\n1 - Após beber o vinho arrumar uma desculpa e seguir com a missão.\n2 - Aproveitar a noite com essa companhia sublime.\n3 - Senhorita, sinto-lhe informar mas estou fazendo algo muito importante e não posso deixar você me atrapalhar.\n"
+            "txt": "[Narrador]: Estonteado com a beleza da elfa.\nVocê serve uma taça de vinho para você e serve outra para a dama.\n1 - Após beber o vinho arrumar uma desculpa e seguir com a missão.\n2 - Aproveitar a noite com essa companhia sublime.\n3 - Senhorita, sinto-lhe informar mas estou fazendo algo muito importante\ne não posso deixar você me atrapalhar.\n"
         }
     ],
     "R2-1": [
@@ -260,10 +272,10 @@
             "txt": "[Elfa]: E ao tamanho da sua... generosidade.\n"
         },
         {
-            "txt": "[Narrador]: Após beberem umas taças de vinho você se levante.\n"
+            "txt": "[Narrador]: Após beberem umas taças de vinho você se levanta.\n"
         },
         {
-            "txt": "[Heroi]: senhorita, preciso ir ao banheiro, já retorno.\n"
+            "txt": "[Heroi]: Senhorita, preciso ir ao banheiro, já retorno.\n"
         },
         {
             "txt": "[Elfa]: Claro. Volte rápido, está ficando quente aqui.\n"
@@ -277,7 +289,10 @@
             "txt": "[Elfa]: Tenho certeza que sim, querido.\n"
         },
         {
-            "txt": "[Aviso]: Devido ao cansaço, você perde 10 de HP.\n"
+            "txt": "Perder10HP\n"
+        },
+        {
+            "txt": "[Aviso]: Devido ao cansaço, você perde metade do seu HP.\n"
         },
         {
             "txt": "[Heroi]: Foi maravilhoso, senhorita, mas preciso ir ao banheiro, poderia me esperar para mais uma rodada?\n"
@@ -296,13 +311,16 @@
     ],
     "Q3": [
         {
-            "txt": "[Narrador]: Você sai do quarto e segue pelo corredor com naturalidade.\n[Narrador]: Passa por diversas portas, ouvindo gemidos e risos vindos das salas e observa que há mais um andar no bordel.\n[Narrador]: Nota-se que há menos guardas.\n"
+            "txt": "RemoverAtor1\n"
         },
         {
             "txt": "InserirBackgroundBordel\n"
         },
         {
-            "txt": "InserirGuarda\n"
+            "txt": "[Narrador]: Você sai do quarto e segue pelo corredor com naturalidade.\n[Narrador]: Passa por diversas portas, ouvindo gemidos e risos vindos das salas\ne observa que há mais um andar no bordel.\n[Narrador]: Nota-se que há menos guardas.\n"
+        },
+        {
+            "txt": "InserirElfoLarapio\n"
         },
         {
             "txt": "[Guarda]: Quem é você? O  que faz aqui? As garotas ficam lá em baixo!\n"
@@ -329,13 +347,13 @@
             "txt": "RemoverAtor1\n"
         },
         {
-            "txt": "InserirCriminosoAtirador.\n"
+            "txt": "InserirCriminosoAtirador\n"
         },
         {
             "txt": "[Criminoso Atirador]: Deixe conosco, Sylathor.\n"
         },
         {
-            "txt": "BattleCriminosoAtirador.\n"
+            "txt": "BattleCriminosoAtirador\n"
         },
         {
             "txt": "BattleCriminoso\n"
@@ -344,13 +362,13 @@
             "txt": "RemoverAtor1\n"
         },
         {
-            "txt": "InserirSylathor\n"
-        },
-        {
             "txt": "[Heroi]: Acredito que agora esteja disposto a me ouvir, senhor?\n"
         },
         {
-            "txt": "[Sylathor]: Hahahahaha, Você aparece no meu bordel, mata meus homens, e quer conversar? Mys'tral, acabe com ele.\n"
+            "txt": "InserirSylathor\n"
+        },
+        {
+            "txt": "[Sylathor]: Hahahahaha, Você aparece no meu bordel, mata meus homens, e quer conversar?\n[Sylathor]:Mys'tral, acabe com ele.\n"
         },
         {
             "txt": "RemoverAtor1\n"
@@ -386,7 +404,7 @@
             "txt": "[Heroi]: Primeiramente, desejo saber o que elfos da floresta fazem aqui em Curitiba causando problemas.\n[Heroi]: Porque saíram de suas florestas para se tornarem criminosos aqui?\n"
         },
         {
-            "txt": "[Sylathor]: Foi o Bruxo Rhon'aldyn!\n[Sylathor]: Ele e seu exército invadiram as Florestas de Krambeck, o desgraçado acabou com meu tráfico de maconha na floresta...\n[Sylathor]: Porém, ele me disse que se eu trabalhasse para ele, me daria poder para criar um império ainda maior aqui em Curitiba.\n"
+            "txt": "[Sylathor]: Foi o Bruxo Rhon'aldyn!\n[Sylathor]: Ele e seu exército invadiram as Florestas de Krambeck,\no desgraçado acabou com meu tráfico de maconha na floresta...\n[Sylathor]: Porém, ele me disse que se eu trabalhasse para ele,\nme daria poder para criar um império ainda maior aqui em Curitiba.\n"
         },
         {
             "txt": "[Heroi]: Entendo... Obrigado pelas informações, mas não sairá ileso. Você cometeu muitos crimes.\n1 - Levar Sylathor preso de volta para Liriel, no quartel.\n2 - Matar Sylathor e retornar a Liriel.\n3 - Manter Sylathor vivo e se tornar o novo chefe dele.\n"
@@ -397,13 +415,13 @@
             "txt": "[Heroi]:Ficará na cadeia por um bom tempo.\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
             "txt": "InserirCuritibaComMusica\n"
         },
         {
             "txt": "[Narrador]: De volta ao quartel, encontras com Liriel.\n"
-        },
-        {
-            "txt": "RemoverAtor1\n"
         },
         {
             "txt": "InserirLiriel\n"
@@ -420,7 +438,19 @@
             "txt": "[Narrador]: Silenciosamente, você finaliza o trabalho matando o meliante.\n"
         },
         {
+            "txt": "RemoverAtor1\n"
+        },
+        {
+            "txt": "InserirCuritibaComMusica\n"
+        },
+        {
             "txt": "[Narrador]: Com a missão concluída, o herói retorna ao quartel para relatar suas descobertas a Liriel.\n"
+        },
+        {
+            "txt": "InserirLiriel\n"
+        },
+        {
+            "txt": "[Liriel]: Vejo que foi bem sucedido Heroi.\n"
         }
     ],
     "R3-3": [
@@ -443,7 +473,7 @@
             "txt": "[Narrador]: Ao se virar você sente uma estocada nas costas.\n"
         },
         {
-            "txt": "[Sylathor]: Achou mesmo que eu simplesmente ia largar mão do meu império e ia colocá-lo no seu colo?.\n"
+            "txt": "[Sylathor]: Achou mesmo que eu simplesmente iria largar mão do meu império e o colocaria-lo no seu colo?.\n"
         },
         {
             "txt": "[Sylathor]: Patético.\n"
@@ -454,7 +484,7 @@
     ],
     "Q4": [
         {
-            "txt": "[Heroi]: General Liriel, os bandidos foram derrotados, porém o líder deles, Sylathor, era apenas um peão nas mãos de um bruxo que domina a Floresta de Krambeck.\n[Heroi]: Seu nome é Rhon'aldyn e invadiu a floresta dos elfos e agora comanda aquele lugar.\n"
+            "txt": "[Heroi]: General Liriel, os bandidos foram derrotados, porém o líder deles,\nSylathor, era apenas um peão nas mãos de um bruxo que domina a Floresta de Krambeck.\n[Heroi]: Seu nome é Rhon'aldyn e invadiu a floresta dos elfos e agora comanda aquele lugar.\n"
         },
         {
             "txt": "[Liriel]: Rhon'aldyn? Conheço esse nome.\nEle já foi um grande mago de nossa cidade, mas sua ambição o cegou e ele se voltou contra nós.\n"
@@ -463,7 +493,7 @@
             "txt": "[Heroi]: Ele está reunindo um grande exército de demônios na floresta.\n"
         },
         {
-            "txt": "[Liriel]: Não podemos agir sem um plano.\n[Liriel]: Na verdade, já estamos um passo à frente. Fiquei sabendo de crimes menores cometidos por Rhon'aldyn, então enviei um de nossos melhores Rangers, Pelégolas, para investigar a origem de seus novos poderes.\n"
+            "txt": "[Liriel]: Não podemos agir sem um plano.\n[Liriel]: Na verdade, já estamos um passo à frente.\nFiquei sabendo de crimes menores cometidos por Rhon'aldyn,\nentão enviei um de nossos melhores Rangers, Pelégolas,\npara investigar a origem de seus novos poderes.\n"
         },
         {
             "txt": "[Heroi]: E o que Pelégolas descobriu?\n"
@@ -475,7 +505,7 @@
             "txt": "[Heroi]: Então, qual é o plano, general?\n"
         },
         {
-            "txt": "[Liriel]: Não dispomos de muitos homens e ainda precisaremos dividir nossas forças. Precisamos nos preparar para uma batalha difícil contra Rhon'aldyn e seus lacaios.\n"
+            "txt": "[Liriel]: Não dispomos de muitos homens e ainda precisaremos dividir nossas forças.\nPrecisamos nos preparar para uma batalha difícil contra Rhon'aldyn e seus lacaios.\n"
         },
         {
             "txt": "[Heroi]: Entendido, mas, e o artefato no Acre? Como vamos impedir que o rei anão o encontre?\n"
@@ -485,43 +515,37 @@
         },
         {
             "txt": "[Liriel]: Para onde você deseja ir?\n1 - Acompanhar a força expedicionária do Acre.\n2 - Seguir para a Floresta de Krambeck.\n"
-        },
-        {
-            "txt": "[Heroi]: Vou me preparar e partir o mais rápido possível.\n"
-        },
-        {
-            "txt": "[Liriel]: Muito bem, mas antes, você vai precisar disso. Aqui está meu arco. Com ele, poderá derrotar qualquer inimigo que o traidor enviar.\n"
-        },
-        {
-            "txt": "InserirArcoLiriel\n"
-        },
-        {
-            "txt": "[Liriel]: Que os deuses nos protejam\n"
-        }
-    ],
-    "R4-1": [
-        {
-            "txt": "[Heroi]: Vou me preparar e partir o mais rápido possível.\n"
-        },
-        {
-            "txt": "[Liriel]: Muito bem, mas antes, você vai precisar disso. Aqui está meu arco. Com ele, poderá derrotar qualquer inimigo que o traidor enviar.\n"
-        },
-        {
-            "txt": "InserirArcoLiriel\n"
-        },
-        {
-            "txt": "[Liriel]: Que os deuses nos protejam\n"
         }
     ],
     "R4-2": [
         {
+            "txt": "goKrambeck\n"
+        },
+        {
             "txt": "[Heroi]: Vou me preparar e partir o mais rápido possível.\n"
         },
         {
-            "txt": "[Liriel]: Segundo Pelégolas, uma espiã nossa foi enviada para a cidade dos anões para adquirir informações sobre esse artefato.\n[Narrador]:Ela foi instruída a encontrar com a nossa força expedicionária no Acre.\n"
+            "txt": "[Liriel]: Muito bem, mas antes, você vai precisar disso. Aqui está meu arco.\nCom ele, poderá derrotar qualquer inimigo que o traidor enviar.\n"
         },
         {
-            "txt": "[Liriel]: Que os deuses nos protejam\n"
+            "txt": "InserirArcoLiriel\n"
+        },
+        {
+            "txt": "[Liriel]: Que os deuses nos protejam.\n"
+        }
+    ],
+    "R4-1": [
+        {
+            "txt": "[Liriel]: Eu gostaria de falar com você sobre uma outra questão.\n"
+        },
+        {
+            "txt": "[Heroi]: Vou me preparar e partir o mais rápido possível.\n"
+        },
+        {
+            "txt": "[Liriel]: Segundo Pelégolas, uma espiã nossa foi enviada para a cidade dos anões\npara adquirir informações sobre esse artefato.\n[Narrador]:Ela foi instruída a encontrar com a nossa força expedicionária no Acre.\n"
+        },
+        {
+            "txt": "[Liriel]: Que os deuses nos protejam.\n"
         }
     ]
 }

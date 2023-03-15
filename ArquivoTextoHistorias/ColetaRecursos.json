@@ -1,7 +1,7 @@
 {
     "Q1" : [
         {
-            "txt" : "[Narrador]:  A missão descrita no anúncio pede que colete recursos e os leva à cidade élfica de Curitiba.\n"
+            "txt" : "[Narrador]:  A missão descrita no anúncio pede que colete recursos e \nos leve à cidade élfica de Curitiba.\n"
         },
         {
             "txt" : "InserirTaverneira\n"
@@ -10,10 +10,13 @@
             "txt" : "[Narrador]: Após guardar a carta na sua bolsa, você se dirige à saída.\n[Taverneira]: Ei, arqueiro, você não disse o seu nome, aliás, me chamo Jessie.\n[Heroi]: Me chamo Heroi!\n[Jessie]: Volte sempre, Heroi.\n"
         },
         {
-            "txt" : "RemoverTaverneira\n"
+            "txt" : "RemoverAtor1\n"
         },
         {
-            "txt" : "[Narrador]: Ao sair da guilda, você percebe que há os membros de uma caravana correndo atrás de um jovem em um cavalo.\n[Narrador]: Olhando para o que restou da caravana, você lembra que vai precisar transportar os recursos e que está sem dinheiro para comprar uma carroça.\n"
+            "txt" : "InserirBackgroundCidade\n"
+        },
+        {
+            "txt" : "[Narrador]: Ao sair da guilda, você percebe que há os membros de uma caravana \ncorrendo atrás de um jovem em um cavalo.\n[Narrador]: Olhando para o que restou da caravana, você lembra que vai precisar transportar os recursos\ne que está sem dinheiro para comprar uma carroça.\n"
         },
         {
             "txt" : "[Narrador]: ...\n"
@@ -22,10 +25,10 @@
             "txt" : "InserirFloresta\n"
         },
         {
-            "txt" : "[Narrador]: Após algumas horas de viagem, você desvia da estrada e entra em uma floresta, desce da sua nova carroça e amarra o cavalo em uma árvore.\n"
+            "txt" : "[Narrador]: Após algumas horas de viagem, você desvia da estrada e entra em uma floresta,\ndesce da sua nova carroça e amarra o cavalo em uma árvore.\n"
         },
         {
-            "txt" : "[Heroi]: Será mais fácil se eu focar em um tipo de recurso para levar para Curitiba.\n1 - Coletar minérios para a produção de armas élficas.\n2 - Coletar ervas medicinais para primeiros socorros.\n3 - Caçar animais para aumentar o estoque de comida\n"
+            "txt" : "[Heroi]: Será mais fácil se eu focar em um tipo de recurso para levar para Curitiba.\n1 - Coletar minérios para a produção de armas élficas.\n2 - Coletar ervas medicinais para primeiros socorros.\n3 - Caçar animais para aumentar o estoque de comida.\n"
         }
     ],
 
@@ -40,13 +43,16 @@
             "txt" : "[Narrador]: Chegando perto, você nota várias estátuas, dentro do perímetro da pedreira.\n"
         },
         {
-            "txt" : "[Narrador]: No entanto, quando chega ainda mais perto, um dos cristais no centro da mina começa a brilhar;\n[Narrador]: as estátuas começam a ganhar vida e vem para cima de você.\n"
+            "txt" : "[Narrador]: No entanto, quando chega ainda mais perto, \num dos cristais no centro da mina começa a brilhar;\n[Narrador]: as estátuas começam a ganhar vida e vem para cima de você.\n"
         },
         {
-            "txt" : "battleEstatua1\n"
+            "txt" : "BattleEstatua\n"
         },
         {
-            "txt" : "battleEstatua2\n"
+            "txt" : "[Narrador]: Após se livrar do primeiro inimigo o próximo vem em sua direção.\n"
+        },
+        {
+            "txt" : "BattleEstatua\n"
         },
         {
             "txt" : "[Narrador]: Após abrir caminho, você consegue destruir o cristal e as estátuas restantes ficam imóveis novamente.\n[Narrador]: Você consegue minerar com tranquilidade agora.\n"
@@ -87,7 +93,7 @@
             "txt" : "BattleLobo\n"
         },
         {
-            "txt" : "[Narrador]: Após a luta, o lobo é carregado para a carroça.\n[Narrador]: Como o predador havia sido derrotado, outros animais começaram a sair das tocas nos dias que se seguiram,\npossibilitando uma caça bem abundante de comida.\n"
+            "txt" : "[Narrador]: Após a luta, o lobo é carregado para a carroça.\n[Narrador]: Como o predador havia sido derrotado,\noutros animais começaram a sair das tocas nos dias que se seguiram,\npossibilitando uma caça bem abundante de comida.\n"
         },
         {
             "txt" : "[Narrador]: Após alguns dias de coleta, você segue viagem para Curitiba para entregar sua missão.\n"

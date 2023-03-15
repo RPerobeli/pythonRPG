@@ -47,5 +47,21 @@
     "dwarf": {
         "file": "DwarfCut.wav",
         "volume": 0.1
+    },
+    "curitiba": {
+        "file": "Curitiba.wav",
+        "volume": 0.2
+    },
+    "curitibaNight": {
+        "file": "CuritibaNight.wav",
+        "volume": 0.2
+    },
+    "brothel": {
+        "file": "Brothel.wav",
+        "volume": 0.2
+    },
+    "forest": {
+        "file": "Forest.wav",
+        "volume": 0.2
     }
 }

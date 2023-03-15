@@ -38,7 +38,8 @@ class Florianopolis(GameState.GameState):
     #endfunc
 
     def SelectNextStory(self):
-        return (self.Personagem, 'Teofilotoni', True)
+        # return (self.Personagem, self.NextStory, True)
+        return (self.Personagem, "ToBeContinued", True)
     #endfunc
     
     def VerifyEvent(self):
@@ -144,6 +145,18 @@ class Florianopolis(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "AdquirirCajadoDoBonde\n"):
             self.Personagem.arma = lib.GetArma(self.Armas,"arma1mago")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "goFelastus\n"):
+            self.NextStory = "Felastus"
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "goKrambeck\n"):
+            self.NextStory = "Krambeck"
             self.StoryListId += 1
             self.VerifyEvent()
             return

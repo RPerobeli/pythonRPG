@@ -51,7 +51,7 @@ class Inn(GameState.GameState):
         elif(self.Personagem.classe.lower() == 'mago'):
             return (self.Personagem, 'caravana',True)
         elif(self.Personagem.classe.lower() == 'arqueiro'):
-            return (self.Personagem, 'caravana',True)
+            return (self.Personagem, 'Recursos',True)
         else:
             print('erro ao selecionar proxima historia')
         #endif
@@ -70,6 +70,12 @@ class Inn(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "perde 2 de hp\n"):
             self.Personagem.HP -= 2
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "Temer\n"):
+            self.Sound.PlaySFX("temer")
             self.StoryListId += 1
             self.VerifyEvent()
             return

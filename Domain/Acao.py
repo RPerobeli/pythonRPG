@@ -82,7 +82,7 @@ class Acao:
                     return -1
                 else:
                     dano = personagem.skills["int"] + \
-                        4*personagem.skills["agi"] + magiaEscolhida["BaseDamage"]
+                        2*personagem.skills["agi"] + magiaEscolhida["BaseDamage"]
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano

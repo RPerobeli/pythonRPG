@@ -230,13 +230,13 @@ class Teofilotoni(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "goAcre\n"):
-            self.IndexNextStoryChoice = 1
+            self.NextStory = "Acre"
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "goFelastus\n"):
-            self.IndexNextStoryChoice = 2
+            self.NextStory = "Felastus"
             self.StoryListId += 1
             self.VerifyEvent()
             return

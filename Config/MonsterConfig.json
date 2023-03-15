@@ -53,14 +53,7 @@
         "Nome": "Elfo Larapio",
         "Classe": "Arqueiro",
         "isBoss": "False",
-        "ImageMultiplier" : 1,
-        "needFlip" : "True"
-    },
-    {
-        "Nome": "Elfo Acolito",
-        "Classe": "Mago",
-        "isBoss": "False",
-        "ImageMultiplier" : 1,
+        "ImageMultiplier" : 1.2,
         "needFlip" : "True"
     },
     {
@@ -188,7 +181,68 @@
         "isBoss": "True",
         "ImageMultiplier" : 1,
         "needFlip" : "False"
+    },
+    {
+        "Nome": "Lobo",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.4,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Criminoso Atirador",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Criminoso Lanceiro",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Mystral",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Sylathor",
+        "Classe": "Arqueiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Soldado Elfo 1",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Soldado Elfo 2",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Cavaleiro Estatua",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.4,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Treant",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.4,
+        "needFlip" : "True"
     }
-
-
 ]
