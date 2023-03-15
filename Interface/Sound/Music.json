@@ -62,6 +62,10 @@
     },
     "forest": {
         "file": "Forest.wav",
+        "volume": 0.1
+    },
+    "continue": {
+        "file": "To-Be-Continued.wav",
         "volume": 0.2
     }
 }

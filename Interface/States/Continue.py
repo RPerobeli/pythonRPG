@@ -24,6 +24,7 @@ class Continue(GameState.GameState):
     def Update(self):
         #Cena tapa na cachorra
         ut.InsertBackground(self.BackgroundImage, self.Screen)
+        self.Sound.PlayMusic("continue")
         pygame.display.set_caption("Continua")
         for event in pygame.event.get():
             if event.type == pygame.QUIT:

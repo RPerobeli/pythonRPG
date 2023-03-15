@@ -71,6 +71,7 @@ class GameStateHandler:
             self.State = "inn"
             # self.curitiba = Curitiba.Curitiba(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs,self.Armas)
             # self.State = "Curitiba"
+
     #endfunc
     def Inn(self):
         print("inn")
