@@ -110,6 +110,13 @@ class Recursos(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "Ladrao\n"):
+            self.Sound.PlaySFX("ladrao")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        
     #endif
 
     def Update(self):

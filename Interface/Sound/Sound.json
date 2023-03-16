@@ -1,6 +1,14 @@
 {
     "temer": {
         "file":"maicol Temer.wav",
+        "volume" : 1
+    },
+    "ladrao": {
+        "file":"Ladrao.wav",
+        "volume" : 0.5
+    },
+    "umaMaquina": {
+        "file":"UmaMaquina.wav",
         "volume" : 0.5
     },
     "cursorError": {

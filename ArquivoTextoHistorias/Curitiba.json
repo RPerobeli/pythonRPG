@@ -174,7 +174,7 @@
             "txt": "[Narrador]: A general o leva para uma sala privada, onde ambos podem conversar sem interrupções.\n"
         },
         {
-            "txt": "[Liriel]: Obrigado por tudo, Heroi. Mas gostaria de pedir mais um auxílio seu.\n"
+            "txt": "[Liriel]: Obrigada por tudo, Heroi. Mas gostaria de pedir mais um auxílio seu.\n"
         },
         {
             "txt": "[Heroi]: O que seria?\n"
@@ -284,6 +284,9 @@
     "R2-2": [
         {
             "txt": "[Herói]: Serão os melhores 2 minutos da sua vida.\n"
+        },
+        {
+            "txt": "UmaMaquina\n"
         },
         {
             "txt": "[Elfa]: Tenho certeza que sim, querido.\n"
@@ -536,7 +539,7 @@
     ],
     "R4-1": [
         {
-            "txt": "[Liriel]: Eu gostaria de falar com você sobre uma outra questão.\n"
+            "txt": "goAcre\n"
         },
         {
             "txt": "[Heroi]: Vou me preparar e partir o mais rápido possível.\n"

@@ -210,6 +210,12 @@ class Curitiba(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "UmaMaquina\n"):
+            self.Sound.PlaySFX("umaMaquina")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "goAcre\n"):
             self.NextStory = "Acre"
             self.StoryListId += 1

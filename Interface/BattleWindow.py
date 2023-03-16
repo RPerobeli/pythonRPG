@@ -105,9 +105,9 @@ class BattleWindow(GameState.GameState):
             print("in battle")
             self.ScenesManager()
             for event in pygame.event.get():
-                isFinished = self.VerifyIfBattleIsFinished()
-                if(isFinished):
-                    return self.Personagem
+                #isFinished = self.VerifyIfBattleIsFinished()
+                # if(isFinished):
+                #     return self.Personagem
                 #endif
                 if event.type == pygame.QUIT:
                     pygame.quit()

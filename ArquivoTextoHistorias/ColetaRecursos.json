@@ -22,6 +22,9 @@
             "txt" : "[Narrador]: ...\n"
         },
         {
+            "txt" : "Ladrao\n"
+        },
+        {
             "txt" : "InserirFloresta\n"
         },
         {
@@ -66,10 +69,13 @@
             "txt" : "[Narrador]: Ao entrar mais na floresta, você vê diversos tipos de vegetação.\n[Narrador]: Você começa a coletar ervas que encontrava pelo caminho, que pudessem servir para cura.\n"
         },
         {
-            "txt" : "[Narrador]: Enquanto colhia, como um chicote, um galho acerta sua lateral\n"            
+            "txt" : "[Narrador]: Enquanto colhia, como um chicote, um galho acerta sua lateral.\n"            
         },
         {
             "txt" : "[Aviso]: Você perde 10 de Vida.\n"            
+        },
+        {
+            "txt" : "Lose10HP\n"
         },
         {
             "txt" : "BattleTreant\n"

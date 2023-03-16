@@ -6,6 +6,7 @@ import Utils.JsonLoader as jsonL
 import Interface.BattleWindow as bw
 import Interacoes as lib
 import Interface.States.GameState as GameState
+import Interface.Sound as Sound
 
 class Inn(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None):
@@ -22,6 +23,7 @@ class Inn(GameState.GameState):
         self.Scene = 1
         self.Filename = "Introducao"
         self.MaxStoryIndex = 3
+        self.Sound2 = Sound.Sound()
         
     #endfunc
 

@@ -75,11 +75,14 @@
             "txt" : "perder10hp\n"
         },
         {
+            "txt" : "[Aviso]: Heroi perdeu 10 de HP\n[Taverneira]: Você tem que pagar pela refeição, imbecil.\nSe não pode pagar, pegue uma missão no mural ali e faça dinheiro!\n"
+        },
+        {
             "txt" : "Temer\n"
         },
         {
-            "txt" : "[Aviso]: Heroi perdeu 10 de HP\n[Taverneira]: Você tem que pagar pela refeição, imbecil.\nSe não pode pagar, pegue uma missão no mural ali e faça dinheiro!\n[Narrador]: Com as costelas doendo, você vai até  o mural e pega a única missão restante.\n"
-        }
+            "txt" : "[Narrador]: Com as costelas doendo, você vai até  o mural e pega a única missão restante.\n\n"
+        } 
     ],
     "R2-2":[
         {
@@ -95,9 +98,6 @@
         },
         {
             "txt" : "[Taverneira]: Moço, pude notar que você está sem comer há algum tempo, trouxe algo para ti.\n[Narrador]: Você come sobras de comida, e sente que foi a melhor refeição da sua vida.\n"
-        },
-        {
-            "txt" : "Temer\n"
         },
         {
             "txt" : "[Narrador]: A taverneira, olhando para sua situação precária,\nte oferece uma missão, para que você possa pelo menos viver dignamente.\n"
