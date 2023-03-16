@@ -25,10 +25,10 @@
             "txt" : "RemoverAtor1\n"
         },
         {
-            "txt" : "[Narrador]: A general apontou o caminho para você e foi conversar com o mensageiro\n"
+            "txt" : "[Narrador]: A general apontou o caminho para você e foi conversar com o mensageiro.\n"
         },
         {
-            "txt" : "[Narrador]:Chegando no depósito da entrega, ao se aproximar,\nvocê ouve gritos de dois elfos que pareciam estar brigando.\n"
+            "txt" : "[Narrador]: Chegando no depósito da entrega, ao se aproximar,\nvocê ouve gritos de dois elfos que pareciam estar brigando.\n"
         },
         {
             "txt" : "InserirSoldadoElfo\n"
@@ -69,7 +69,7 @@
             "txt" : "[Narrador]: Os elfos continuam brigando entre eles enquanto você descarrega a carroça.\n"
         },
         {
-            "txt" : "[Narrador]: Apos um tempo, Liriel entra no recinto.\n"
+            "txt" : "[Narrador]: Após um tempo, Liriel entra no recinto.\n"
         },
         {
             "txt": "InserirLiriel\n"
@@ -306,7 +306,7 @@
     ],
     "R2-3": [
         {
-            "txt": "[Narrador]:Você saca uma adaga e perfura o peito da elfa.\n"
+            "txt": "[Narrador]: Você saca uma adaga e perfura o peito da elfa.\n"
         },
         {
             "txt": "[Heroi]: Você estava na hora errada, no lugar errado...\n"
@@ -371,7 +371,7 @@
             "txt": "InserirSylathor\n"
         },
         {
-            "txt": "[Sylathor]: Hahahahaha, Você aparece no meu bordel, mata meus homens, e quer conversar?\n[Sylathor]:Mys'tral, acabe com ele.\n"
+            "txt": "[Sylathor]: Hahahahaha, Você aparece no meu bordel, mata meus homens, e quer conversar?\n[Sylathor]: Mys'tral, acabe com ele.\n"
         },
         {
             "txt": "RemoverAtor1\n"
@@ -415,7 +415,7 @@
     ],
     "R3-1": [
         {
-            "txt": "[Heroi]:Ficará na cadeia por um bom tempo.\n"
+            "txt": "[Heroi]: Ficará na cadeia por um bom tempo.\n"
         },
         {
             "txt": "RemoverAtor1\n"
@@ -435,7 +435,7 @@
     ],
     "R3-2": [
         {
-            "txt": "[Heroi]:Você não merece viver.\n"
+            "txt": "[Heroi]: Você não merece viver.\n"
         },
         {
             "txt": "[Narrador]: Silenciosamente, você finaliza o trabalho matando o meliante.\n"
@@ -458,7 +458,7 @@
     ],
     "R3-3": [
         {
-            "txt": "[Heroi]:Você não merece ser escravo de um maligno.\n"
+            "txt": "[Heroi]: Você não merece ser escravo de um bruxo maligno.\n"
         },
         {
             "txt": "[Heroi]: Se trabalhar para mim, deixo você viver, e ainda podemos repartir os lucros desse bordel.\n"
@@ -545,7 +545,7 @@
             "txt": "[Heroi]: Vou me preparar e partir o mais rápido possível.\n"
         },
         {
-            "txt": "[Liriel]: Segundo Pelégolas, uma espiã nossa foi enviada para a cidade dos anões\npara adquirir informações sobre esse artefato.\n[Narrador]:Ela foi instruída a encontrar com a nossa força expedicionária no Acre.\n"
+            "txt": "[Liriel]: Segundo Pelégolas, uma espiã nossa foi enviada para a cidade dos anões\npara adquirir informações sobre esse artefato.\n[Narrador]: Ela foi instruída a encontrar com a nossa força expedicionária no Acre.\n"
         },
         {
             "txt": "[Liriel]: Que os deuses nos protejam.\n"
