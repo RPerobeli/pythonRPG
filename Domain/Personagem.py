@@ -52,8 +52,12 @@ class Personagem:
 
     def GetImage(self):
         imagePath = jsonL.GetImagePath()
-        return pygame.image.load(f'{imagePath}/Personagens/{self.classe.lower()}.png').convert_alpha() 
-
+        if(self.Subclass == None):
+            return pygame.image.load(f'{imagePath}/Personagens/{self.classe.lower()}.png').convert_alpha() 
+        else:
+            return pygame.image.load(f'{imagePath}/Personagens/{self.Subclass.lower()}.png').convert_alpha() 
+        #endif
+    #endfunc
     def GetClasse(self):
         return self.classe
 

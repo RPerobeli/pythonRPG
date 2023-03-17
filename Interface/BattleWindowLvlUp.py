@@ -43,15 +43,6 @@ class BattleWindowLvlUp(GameState.GameState):
         self.LoadTextWithList({"txt": "Consuma seu ponto de habilidade\n1 - Força\n2 - Agilidade\n3 - Inteligência\n4 - Vitalidade\n"}, \
             self.OptionsDict["Options"]["PositionOptions"]["x"],self.OptionsDict["Options"]["PositionOptions"]["y"])
     #endfunc
-    def LoadLvlUpText(self):
-        self.OptionsDict = jsonL.GetOptions()
-        self.SpecializationDict = {"txt": f"Escolha uma espacialização.\n"}
-        self.LoadTextWithList(self.CapinadoDict)
-        self.LoadTextWithList({"txt":f"Você chegou ao NIVEL {self.Personagem.lvl}!\n"}, (self.OptionsDict["Options"]["PositionStatus1"]["x"]),self.OptionsDict["Options"]["PositionStatus1"]["y"])
-        self.LoadTextWithList({"txt": "Consuma seu ponto de habilidade\n1 - Força\n2 - Agilidade\n3 - Inteligência\n4 - Vitalidade\n"}, \
-            self.OptionsDict["Options"]["PositionOptions"]["x"],self.OptionsDict["Options"]["PositionOptions"]["y"])
-    #endfunc
-
 
     def PrintDmg(self, dano, personagem):
         if(personagem.acoes.isCrit):
@@ -64,7 +55,8 @@ class BattleWindowLvlUp(GameState.GameState):
     def LvlUpPersonagem(self):
         self.Personagem.XP += lib.XP(self.Monster.lvl)
         if(self.Personagem.XP >= 100):
-            self.Personagem.lvl += 1
+            #self.Personagem.lvl += 1
+            self.Personagem.lvl = 5
             self.Personagem.XP -= 100
             self.Scene = 1
             self.Upou = True
