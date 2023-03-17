@@ -220,3 +220,9 @@ def GetTypewritterDelay():
     f.close()
     return data["TypewritterDelay"]
 #endfunc
+def GetSpecializationOptions(classe):
+    f = open(f"Config/ClassesConfig.json",encoding="utf-8")
+    data = json.load(f)
+    f.close()
+    return data[f"{classe.lower()}"]
+#endfunc

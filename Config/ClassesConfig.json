@@ -1,3 +1,5 @@
 {
-    "ClassesDisponiveis" : ["Guerreiro", "Arqueiro", "Mago"]
+    "guerreiro" : ["Paladino", "Necromante", "Clerigo"],
+    "arqueiro" : ["Ranger", "Atirador", "Caçador"],
+    "mago" : ["Arquimago", "Necromante", "Clerigo"]
 }

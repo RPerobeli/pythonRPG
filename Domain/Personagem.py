@@ -20,6 +20,7 @@ class Personagem:
         self.arma = A.Arma(
             "Arma desgastada", 2, "Ataque Especial da Arma Mais Fraca Do Jogo!!!", "arma0")
         self.magias = jsonL.GetSpells(self.classe)
+        self.Subclass = None
         imageConfig = jsonL.GetPersonagem(self.classe)
         self.ImageMultiplier = imageConfig['ImageMultiplier']
         self.NeedFlip = bool(imageConfig['needFlip'])
@@ -82,5 +83,15 @@ class Personagem:
         self.SP += value
         if(self.SP > self.SPmax):
             self.SP = self.SPmax
+        #endif
+    #endfunc
+
+    def UpdateHeroImage(self):
+        if(self.Subclass != None):
+            imageConfig = jsonL.GetPersonagem(self.Subclass)
+            self.ImageMultiplier = imageConfig['ImageMultiplier']
+            self.NeedFlip = bool(imageConfig['needFlip'])
+            auxImg = self.GetImage()
+            self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
         #endif
     #endfunc
