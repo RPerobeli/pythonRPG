@@ -298,7 +298,7 @@
             "txt": "[Aviso]: Devido ao cansaço, você perde metade do seu HP.\n"
         },
         {
-            "txt": "[Heroi]: Foi maravilhoso, senhorita, mas preciso ir ao banheiro, poderia me esperar para mais uma rodada?\n"
+            "txt": "[Heroi]: Foi maravilhoso, senhorita, mas preciso ir ao banheiro,\npoderia me esperar para mais uma rodada?\n"
         },
         {
             "txt": "[Elfa]: Claro.\n"
