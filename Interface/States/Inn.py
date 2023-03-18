@@ -6,7 +6,7 @@ import Utils.JsonLoader as jsonL
 import Interface.BattleWindow as bw
 import Interacoes as lib
 import Interface.States.GameState as GameState
-import Interface.Sound as Sound
+#import Interface.Sound as Sound
 
 class Inn(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None):
@@ -23,7 +23,8 @@ class Inn(GameState.GameState):
         self.Scene = 1
         self.Filename = "Introducao"
         self.MaxStoryIndex = 3
-        self.Sound2 = Sound.Sound()
+        self.tocaUmaPraMimSoUmaVez = True
+        #self.Sound2 = Sound.Sound()
         
     #endfunc
 
@@ -33,7 +34,14 @@ class Inn(GameState.GameState):
             self.LoadImages(actorPos)
             self.LoadTextWithList(self.StoryTextList[self.StoryListId])
         elif ((self.Scene == 1)):
-            self.Sound.PlayMusic("inn")
+            
+            '''self.Sound.PlayMusic("inn")
+            self.Sound.StopMusic()
+            self.Sound.PlayMusic("inn")'''
+            if(self.tocaUmaPraMimSoUmaVez):
+                self.Sound.PlayMusic("inn")
+                self.tocaUmaPraMimSoUmaVez = False
+            
             actorPos = self.PlaceActors()
             if (self.Alpha <= 255):
                 self.FadeIn(actorPos)
@@ -162,6 +170,8 @@ class Inn(GameState.GameState):
             #endif
             if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
                 self.Sound.PlaySFX("cursorForward")
+                #self.Sound.PlaySFX("cursorForward")
+                #self.Sound.PlaySFX("cursorForward")
                 self.Personagem.Neutral += 1
                 self.SearchAnswerByUserInput(2)
                 self.VerifyEvent()
