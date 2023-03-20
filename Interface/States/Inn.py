@@ -23,8 +23,7 @@ class Inn(GameState.GameState):
         self.Scene = 1
         self.Filename = "Introducao"
         self.MaxStoryIndex = 3
-        self.tocaUmaPraMimSoUmaVez = True
-        #self.Sound2 = Sound.Sound()
+        self.Count = 0
         
     #endfunc
 
@@ -33,15 +32,7 @@ class Inn(GameState.GameState):
             actorPos = self.PlaceActors()
             self.LoadImages(actorPos)
             self.LoadTextWithList(self.StoryTextList[self.StoryListId])
-        elif ((self.Scene == 1)):
-            
-            '''self.Sound.PlayMusic("inn")
-            self.Sound.StopMusic()
-            self.Sound.PlayMusic("inn")'''
-            if(self.tocaUmaPraMimSoUmaVez):
-                self.Sound.PlayMusic("inn")
-                self.tocaUmaPraMimSoUmaVez = False
-            
+        elif ((self.Scene == 1)):          
             actorPos = self.PlaceActors()
             if (self.Alpha <= 255):
                 self.FadeIn(actorPos)
@@ -131,8 +122,10 @@ class Inn(GameState.GameState):
     def Update(self):
         #Cena tapa na cachorra
         pygame.display.set_caption("Hospedagem")
+        self.VerifyFirstTimeInWindowToPlayMusic("inn")
         if(self.Scene == 1):
             self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
+            self.Count += 1
         #endif
         self.ScenesManager()
         for event in pygame.event.get():
