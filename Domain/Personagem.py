@@ -96,6 +96,9 @@ class Personagem:
             self.ImageMultiplier = imageConfig['ImageMultiplier']
             self.NeedFlip = bool(imageConfig['needFlip'])
             auxImg = self.GetImage()
+            if(self.NeedFlip):
+                auxImg = pygame.transform.flip(auxImg, True, False)
+            #endif
             self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
         #endif
     #endfunc

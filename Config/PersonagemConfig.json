@@ -16,17 +16,17 @@
     },
     {
         "Classe": "ranger",
-        "ImageMultiplier" : 0.8,
+        "ImageMultiplier" : 0.85,
         "needFlip" : "False"
     },
     {
-        "Classe": "caçador",
+        "Classe": "cacador",
         "ImageMultiplier" : 0.8,
         "needFlip" : "True"
     },
     {
         "Classe": "atirador",
-        "ImageMultiplier" : 0.8,
+        "ImageMultiplier" : 0.9,
         "needFlip" : "True"
     },
     {
@@ -47,16 +47,16 @@
     {
         "Classe": "arquimago",
         "ImageMultiplier" : 0.8,
-        "needFlip" : "True"
+        "needFlip" : "False"
     },
     {
         "Classe": "clerigo",
-        "ImageMultiplier" : 0.8,
-        "needFlip" : "True"
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
     },
     {
         "Classe": "necromante",
-        "ImageMultiplier" : 0.8,
+        "ImageMultiplier" : 1,
         "needFlip" : "True"
     }
 ]
