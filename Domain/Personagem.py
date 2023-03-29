@@ -23,7 +23,7 @@ class Personagem:
         self.Subclass = None
         imageConfig = jsonL.GetPersonagem(self.classe)
         self.ImageMultiplier = imageConfig['ImageMultiplier']
-        self.NeedFlip = bool(imageConfig['needFlip'])
+        self.NeedFlip = imageConfig['needFlip']
         auxImg = self.GetImage()
         self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
 
@@ -94,9 +94,9 @@ class Personagem:
         if(self.Subclass != None):
             imageConfig = jsonL.GetPersonagem(self.Subclass)
             self.ImageMultiplier = imageConfig['ImageMultiplier']
-            self.NeedFlip = bool(imageConfig['needFlip'])
+            self.NeedFlip = imageConfig['needFlip']
             auxImg = self.GetImage()
-            if(self.NeedFlip):
+            if(self.NeedFlip == "True"):
                 auxImg = pygame.transform.flip(auxImg, True, False)
             #endif
             self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)

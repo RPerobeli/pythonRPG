@@ -55,8 +55,7 @@ class BattleWindowLvlUp(GameState.GameState):
     def LvlUpPersonagem(self):
         self.Personagem.XP += lib.XP(self.Monster.lvl)
         if(self.Personagem.XP >= 100):
-            #self.Personagem.lvl += 1
-            self.Personagem.lvl = 5
+            self.Personagem.lvl += 1
             self.Personagem.XP -= 100
             self.Scene = 1
             self.Upou = True

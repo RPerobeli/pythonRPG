@@ -16,7 +16,11 @@ class BattleWindowSpells(GameState.GameState):
         self.Scene = 1
         self.Alpha = 255
         self.BattleText = {}
-        self.SpellsList = jsonL.GetSpells(self.Personagem.classe)
+        if(self.Personagem.Subclass != None):
+            self.SpellsList = jsonL.GetSpells(self.Personagem.Subclass)
+        else:
+            self.SpellsList = jsonL.GetSpells(self.Personagem.classe)
+        #endif
     #endfunc
 
 
