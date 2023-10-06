@@ -20,9 +20,10 @@ class Personagem:
         self.arma = A.Arma(
             "Arma desgastada", 2, "Ataque Especial da Arma Mais Fraca Do Jogo!!!", "arma0")
         self.magias = jsonL.GetSpells(self.classe)
+        self.Subclass = None
         imageConfig = jsonL.GetPersonagem(self.classe)
         self.ImageMultiplier = imageConfig['ImageMultiplier']
-        self.NeedFlip = bool(imageConfig['needFlip'])
+        self.NeedFlip = imageConfig['needFlip']
         auxImg = self.GetImage()
         self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
 
@@ -51,8 +52,12 @@ class Personagem:
 
     def GetImage(self):
         imagePath = jsonL.GetImagePath()
-        return pygame.image.load(f'{imagePath}/Personagens/{self.classe.lower()}.png').convert_alpha() 
-
+        if(self.Subclass == None):
+            return pygame.image.load(f'{imagePath}/Personagens/{self.classe.lower()}.png').convert_alpha() 
+        else:
+            return pygame.image.load(f'{imagePath}/Personagens/{self.Subclass.lower()}.png').convert_alpha() 
+        #endif
+    #endfunc
     def GetClasse(self):
         return self.classe
 
@@ -82,5 +87,18 @@ class Personagem:
         self.SP += value
         if(self.SP > self.SPmax):
             self.SP = self.SPmax
+        #endif
+    #endfunc
+
+    def UpdateHeroImage(self):
+        if(self.Subclass != None):
+            imageConfig = jsonL.GetPersonagem(self.Subclass)
+            self.ImageMultiplier = imageConfig['ImageMultiplier']
+            self.NeedFlip = imageConfig['needFlip']
+            auxImg = self.GetImage()
+            if(self.NeedFlip == "True"):
+                auxImg = pygame.transform.flip(auxImg, True, False)
+            #endif
+            self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
         #endif
     #endfunc
