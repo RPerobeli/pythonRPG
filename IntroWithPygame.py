@@ -23,6 +23,5 @@ while run:
     pos = jsonL.GetNameTextPosition()
     gameStateHandler.ManageState()
     Clock.tick(FrameRate)
-    #pygame.display.update()
 #endwhile
 pygame.quit()
