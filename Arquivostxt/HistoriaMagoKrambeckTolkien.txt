@@ -1,0 +1,153 @@
+Capítulo 1: A Jornada Inicia
+
+Q1
+[Narrador]: Você aproximava-se da Floresta do Krambeck, e o crepúsculo se desenhava no horizonte. Decide, então, pernoitar na aldeia que se erguia à beira da densa mata.
+[Narrador]: Ao adentrar a aldeia, dirigiu-se à acolhedora estalagem que ali se encontrava.
+[Dono da Estalagem]: Boa noite, jovem mago. Deseja um quarto?
+[Heroi]: Boa noite, sim, um quarto para um viajante solitário, por gentileza. Haveria algum lugar para saciar minha fome?
+[Dono da Estalagem]: Temos, de fato, uma cozinha, mas, lamento informar, suspendemos nossas refeições, visto que estamos enfrentando um período de escassez.
+[Heroi]: Escassez? Teria relação com o culto que assola esta floresta?
+[Dono da Estalagem]: Receio que sim. Desde o advento desse culto, que profana a floresta, nossa fonte de sustento se tornou cada vez mais rarefeita.
+[Heroi]: Compreendo. É realmente uma tragédia. Irei então para meu aposento.
+[Dono da Estalagem]: Tenha um bom descanso, viajante.
+[Narrador]: Embora tenha adormecido mais profundamente do que antecipara, ao despertar, se preparou para sua incursão na floresta. Enquanto caminhava pelas casas da vila, uma senhora, aflita, aproximou-se, com lágrimas em seus olhos.
+[Senhora]: Mago! Eu imploro, ajude-me, por favor! Meu esposo e meu cunhado partiram ao amanhecer para caçar nas entranhas da floresta. No entanto, já se passou muito tempo, e eles ainda não retornaram. Por favor, traga-os de volta!
+
+R1
+[Narrador]: Ao entrar na floresta, percebe-se a aura sombria que preenche o ar. Inicialmente, a floresta parece idêntica a uma floresta comum, mas à medida que avança, a paisagem se transforma em clareiras de árvores mortas, evidenciando a corrupção que se espalhou pela floresta.
+[Narrador]: Riachos sinistros atravessam seu caminho, com águas esverdeadas, claramente contaminadas pela magia negra.
+[Narrador]: Enquanto explora a floresta, ouve um tumulto distante e corre para investigar. Lá, depara-se com dois aldeões em combate com uma assombração, um deles ferido na perna. Você se envolve na luta para salvá-los.
+[Aldeão 1]: Obrigado, mago, não sabemos como agradecer sua ajuda. Viemos à floresta em busca de alimento para nossa vila, que não fica longe daqui.
+[Aldeão 1]: Infelizmente, encontramos essas assombrações, e meu irmão acabou ferido na perna.
+[Heroi]: Sim, eu venho da sua vila. A esposa de um de vocês estava preocupada.
+[Aldeão 2]: Haha, é minha esposa. Apesar da minha perna, tenho boas notícias para ela. Conseguimos algumas frutas e até um javali grande.
+[Narrador]: Ele aponta para uma carroça próxima, onde há um javali morto.
+[Narrador]: Ao examinar o javali, percebe que a carne está corrompida devido à água contaminada pelas magias dos bruxos.
+[Heroi]: Lamento, mas essa carne não é mais comestível. Vejam a ferida que fizeram, a carne está verde.
+[Aldeão 1]: Não pode ser... Nos esforçamos muito para capturá-lo.
+[Heroi]: Agradeçam por estarem vivos. Voltem para suas famílias. Estou em busca da fonte desse mal. Com sorte, em breve poderão ter melhores alimentos.
+[Aldeão 1]: De fato, não podemos ajudá-lo nessas condições. Vamos voltar para a vila com meu irmão. Boa sorte em sua jornada, mago.
+
+R2
+[Narrador]: Ao entrar na floresta, você sente a opressão no ar. Inicialmente, a floresta parece idêntica a uma floresta comum, mas à medida que avança, a paisagem se transforma em clareiras de árvores mortas, evidenciando a corrupção que se espalhou pela floresta.
+[Narrador]: Riachos sinistros atravessam seu caminho, com águas esverdeadas, claramente contaminadas pela magia negra.
+[Narrador]: Seguindo pelo riacho, depara-se com dois corpos, provavelmente os familiares da mulher da aldeia.
+[Narrador]: Enquanto se aproxima para investigar, os cadáveres se contorcem e se levantam, transformando-se em assombrações.
+[Heroi]: A senhora ficará ainda mais aflita...
+
+R3
+[Narrador]: Ao entrar na floresta, você sente a opressão no ar. Inicialmente, a floresta parece idêntica a uma floresta comum, mas à medida que avança, a paisagem se transforma em clareiras de árvores mortas, evidenciando a corrupção que se espalhou pela floresta.
+[Narrador]: Riachos sinistros atravessam seu caminho, com águas esverdeadas, claramente contaminadas pela magia negra.
+
+Capítulo 2: O Confronto na Floresta
+
+Q2
+[Narrador]: Você adentra ainda mais na floresta e escuta o som de uma batalha. Ao se aproximar, esconde-se e observa uma escaramuça em uma clareira entre elfos e acólitos do culto. Os elfos lutam ferozmente, mas os bruxos têm a magia negra ao seu lado.
+1 - Ingressar na batalha ao lado dos elfos.
+2 - Continuar escondido e observar o desenrolar da batalha.
+
+R1
+[Narrador]: Você salta na clareira para auxiliar os elfos.
+[Narrador]: Após a batalha, o grupo consegue capturar um dos bruxos do culto. Um alto elfo se aproxima para saudá-lo.
+[Alto Elfo]: Obrigado, mago. Sua ajuda garantiu nossa vitória contra esses decadentes. Meu nome é Pelégolas, e minha missão é auxiliar os elfos da floresta em sua resistência contra esses bruxos malignos.
+[Heroi]: À disposição. Também vim para esta floresta com o objetivo de erradicar esse mal.
+[Pelégolas]: Talvez possamos unir nossas forças, então. Este arqueiro também foi enviado de Curitiba como reforço na missão de eliminar o bruxo Rhon'Aldyn.
+[Narrador]: O arqueiro é o único humano na companhia de elfos, que o respeitam bastante.
+[Heroi]: Vocês já têm informações sobre esse culto?
+[Arqueiro]: O bruxo é um mago renegado da cidade de Curitiba. Voltou-se para a magia negra após encontrar um novo mestre. Parte da nossa missão é adquirir mais informações sobre esses necromantes.
+[Acólito]: Ha Ha Ha Ha, não importa o que eu diga. Os planos do meu mestre já foram bem-sucedidos!
+[Narrador]: Pelégolas dá um chute no acólito, que cai no chão, e ameaça o inimigo com uma adaga em seu pescoço.
+[Pelégolas]: Então, o que vocês pretendem? Quero o prazer de pôr fim aos seus planos.
+[Acólito]: A floresta já é nossa. Destruímos todos os vestígios de seus deuses, elfos inferiores. Aqueles que não abraçam nosso único deus, como o mestre Rhon'Aldyn, não têm lugar no novo mundo.
+[Acólito]: A verdade foi revelada a nós, e nos foi conferido o poder de destruir qualquer um que se oponha a nós.
+[Acólito]: Vocês jamais cruzarão a barreira do santuário!
+[Pelégolas]: E quem é esse deus de vocês?
+[Acólito]: Vocês nunca poderão enfrentar o poderoso...
+[Narrador]: Ao tentar pronunciar o nome do deus, a cabeça do acólito explode instantaneamente.
+[Narrador]: Todos ao redor se assustam.
+[Arqueiro]: Vamos em direção ao santuário, então.
+
+R2
+[Narrador]: Você segue escondido e observa a batalha, quando de repente recebe um golpe na cabeça e fica atordoado.
+[Narrador]: Ao acordar, percebe que está amarrado e de frente para um acólito.
+[Acólito]: Rastejando pela nossa floresta, nos observando... O que veio fazer aqui, mago?
+[Narrador]: Você vê uma oportunidade para obter informações.
+[Heroi]: Estou em busca de um culto. Estou em busca de poder.
+[Acólito]: HeHeHe... entendo... posso lhe conceder poder... se você seguir as nossas regras.
+[Heroi]: Que regras? Quem é você?
+[Acólito]: Aqueles que transcendem este mundo não se preocupam com nomes. Se aceitar nosso deus, entenderá o quão insignificante é sua existência.
+[Heroi]: Por que eu deveria acreditar em você?
+[Acólito]: Porque a nós foi concedido um poder mágico que até magos como você não conseguem compreender.
+[Heroi]: Então me mostre.
+[Narrador]: O acólito utiliza seu poder para impressioná-lo, invocando golens demoníacos que derrubam árvores ao redor com um único soco.
+[Narrador]: Realmente, e como eu poderia obter esse poder?
+[Acólito]: Vou levá-lo até nosso santuário. Há uma barreira para os não iniciados, mas nosso mestre, Rhon'Aldyn, pode removê-la.
+[Narrador]: Um zumbido se aproxima, e o acólito é atingido por uma flecha na cabeça.
+[Alto Elfo]: Você está bem, mago? Ouvi um barulho aqui perto e vim verificar.
+[Heroi]: Bem, eu estava interrogando este sujeito até você chegar.
+[Alto Elfo]: Hahaha! Parecia que você era quem estava sendo interrogado, na verdade.
+[Heroi]: De qualquer forma, obrigado. Consegui algumas informações pelo menos. Sou conhecido como heroi.
+[Pelégolas]: Pelégolas, ao seu dispor. Inclusive, belo tiro, arqueiro, para um humano.
+[Narrador]: Um humano com arco surge das árvores com o resto da companhia.
+[Arqueiro]: Um dia você chegará ao meu nível, haha.
+[Narrador]: Pelégolas olha com desdém para o humano, mas ri, sabendo que se trata de uma brincadeira amigável.
+[Heroi]: O que fazem aqui, Pelégolas?
+[Pelégolas]: Minha companhia e eu estamos aqui para libertar essa floresta de um bruxo.
+[Heroi]: Rhon'Aldyn?
+[Pelégolas]: Exatamente.
+[Heroi]: O acólito ali estava prestes a me levar até ele... mas parece que há uma barreira no caminho.
+[Pelégolas]: Compreendo. Você conseguiu mais informações?
+[Heroi]: Nada muito útil, apenas que eles seguem um deus que lhes promete poder inimaginável.
+[Pelégolas]: Meus companheiros estão indo em direção ao santuário de Rhon'Aldyn. Gostaria de se juntar a nós?
+[Heroi]: Podemos nos ajudar mutuamente.
+[Narrador]: Você se une ao grupo de Pelégolas.
+
+Q3
+[Narrador]: Adentraram a floresta, rumando em direção ao coração sagrado da mata. Até que, em seu caminho, depararam-se com uma barreira inexpugnável, uma barreira que emana uma magia profana e sinistra.
+[Pelégolas]: Aqui estamos, em frente à barreira maligna, que só pode ser mantida por runas arcanas gravadas em um obelisco.
+[Heroi]: Essa é uma barreira comum em rituais profanos, mantida por símbolos mágicos entalhados em pedra.
+[Arqueiro]: Durante nosso reconhecimento, avistei uma construção que poderia ser esse obelisco, coberto de runas negras, uma abominação mágica.
+[Pelégolas]: Precisamos nos dividir, um grupo irá destruir o obelisco oriental, enquanto nós, o ocidental. Outra parte de nossa força ficará para iniciar o ataque assim que a barreira for dissipada.
+[Narrador]: Após busca intensiva, a equipe do herói localiza o obelisco enigmático.
+[Narrador]: No entanto, no instante em que o mago preparava-se para conjurar o feitiço que destruiria o artefato, dois elfos emergem rapidamente, e, num assombro, uma hidra poderosa, acompanhada de acólitos, desfere um ataque violento contra a equipe.
+[Heroi]: CUIDEM DOS ACÓLITOS E DOS DEMÔNIOS!
+[Narrador]: Após uma batalha titânica, o saldo é de muitos feridos e algumas baixas.
+[Heroi]: Destruirei este obelisco agora.
+[Narrador]: Pronunciando palavras de poder, uma explosão de chamas consome o obelisco, e o mago sente a magia da barreira enfraquecer e se dissolver lentamente.
+[Narrador]: Em tempo, a barreira maléfica é desfeita.
+[Heroi]: Vamos adiante!
+[Narrador]: Atravessando a barreira, encontram-se com os outros dois grupos de elfos, diante de um grande altar.
+[Rhon'Aldyn]: Vejo que conseguiram atravessar a barreira, meu nobre Pelégolas.
+[Pelégolas]: Não há prazer em vê-lo, Rhon'Aldyn.
+[Rhon'Aldyn]: Por que tanta hostilidade? Estou trazendo uma evolução para os elfos, um novo mundo, uma salvação.
+[Pelégolas]: Sua mente se distorceu ao longo dos anos. Morra!
+[Narrador]: O elfo saca seu arco, mas, simultaneamente, Rhon'Aldyn conjura uma magia negra, lançando energia sombria pela sala. O herói e o arqueiro conseguem escapar, mas todos os outros perecem instantaneamente, exceto Pelégolas, que fica com o braço ferido.
+[Rhon'Aldyn]: Vocês podem ter me vencido, mas meu dever está cumprido. Seus deuses foram profanados, não os abençoam mais. Seus protetores foram dizimados. Nosso mestre está expandindo seu domínio.
+[Heroi]: A quem você serve!?
+[Rhon'Aldyn]: A um deus, aquele que vislumbra o futuro para todos nós. Vocês, seres inferiores, não compreendem o mundo como eu.
+[Rhon'Aldyn]: O grande Netherus criará um mundo onde seres como nós, que transcendem o caminho da vida, reinarão. Nossos planos já estão em ação em todo o continente!
+[Rhon'Aldyn]: Vocês, tolos, perecerão enquanto eu trarei glória para Netherus!
+[Arqueiro]: Sua influência diminuirá aqui, mas o que já foi corrompido levará muito tempo para ser purificado.
+[Pelégolas]: Vamos voltar ao acampamento. Heroi, sua ajuda foi crucial.
+[Narrador]: Após a partida dos elfos, o herói encontra-se novamente sozinho e é subitamente envolto por uma dor intensa. Seu peito queima, e um círculo de invocação se forma ao seu redor.
+[Narrador]: Usando sua energia mágica, a Dryad é convocada para o altar onde ele se encontra.
+[Dryad]: Vejo que obteve sucesso, jovem mago heroi.
+[Heroi]: O que foi isso? Eu achei que estava prestes a morrer.
+[Dryad]: Foi apenas uma marca que eu coloquei em você, para o momento adequado.
+[Dryad]: Agora que você eliminou esse bruxo, eu posso recuperar nossa floresta.
+[Narrador]: A dríade caminha em torno do altar com olhos tristes.
+[Dryad]: As árvores choram. Muito foi destruído.
+[Heroi]: A corrupção tomou muitas áreas. A recuperação será difícil... Muitas criaturas estão corrompidas, e a floresta está assombrada.
+[Dryad]: Não tema, com meus poderes, eu posso restaurar as florestas. No entanto, eu preciso de alguns artefatos mágicos que pertenceram ao meu povo.
+[Dryad]: Esses artefatos, infundidos com nossa magia, eram capazes de gerar vida.
+[Heroi]: Eu acredito que sei do que está falando. Encontrei esta mensagem no corpo de Rhon'Aldyn.
+[Heroi]: A mensagem diz que muitos objetos valiosos, que possam ter algum significado, foram levados da floresta para a cidade portuária de Santos, com a intenção de vendê-los e contratar mercenários para erradicar o resto dos elfos.
+[Dryad]: Tal ação é blasfêmia...
+[Heroi]: Dryad, o mestre do bruxo mencionou um deus chamado Netherus, que ele servia.
+[Dryad]: Willhelm e outros continuam suas pesquisas, e parece que esse "deus" assume muitas formas e exerce influência em muitos lugares.
+[Heroi]: Por todo o continente, de acordo com Rhon'Aldyn.
+[Heroi]: Não posso permitir que esse autoproclamado deus espalhe sua influência pelo continente.
+[Dryad]: Depois de recuperar meus artefatos, sugiro que investigue mais sobre esse mestre das sombras em Santos. A cidade já é governada por foras da lei; certamente algum deles está ligado a Netherus.
+[Dryad]: A cidade está infestada de criminosos, e sem dúvida, há agentes de nosso inimigo lá.
+[Dryad]: Após isso, retorne para que eu possa começar a restauração deste lugar. Lamento pelas vidas perdidas em uma floresta que já foi tão bela e pacífica.
+[Heroi]: Partirei imediatamente.

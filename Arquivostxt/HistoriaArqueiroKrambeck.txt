@@ -1,0 +1,89 @@
+Arqueiro Krambeck
+
+Diretrizes:
+
+-Chegando no acampamento, os elfos estão se preparando para várias incursões ao longo da floresta.
+Pelegolas o cumprimenta e apresenta o acampamento. Enquanto vocês se preparam, alguns elfos o saem do acampamento para um ritual dos elfos da floresta.
+Enquanto você acompanha Pelegolas vocês conversam sobre Liriel e o arco que ela te deu.
+Após isso você vai no mercador, se preparar, amolar suas adagas e comprar flechas élficas melhores -- criar um diálogo interessante.
+As preparações foram finalizadas mas os elfos que você tinha visto ainda não voltaram, entao vc avisa os guardas que vai procurar eles.
+Os soldados estão na mata usando um tipo de erva que deixa eles focados, eles ficam aparentemente letárgicos e bobões, você fica puto e diz que vai levá-los para o acampamento para realizarmos o ataque.
+Os elfos te ignoram, riem e te convidam para compartilhar da erva.
+Ao usar a erva você consegue uma barra de SP completa. Logo após usar o grupo é atacado por elfos da floresta aliciados pelo bruxo Rhon'aldyn (seguidores de SYLATHOR, antigo submundo da floresta). Um massacre por parte dos elfos chapados.
+Após a batalha, vocês voltam para o acampamento (caso tenha retirado o buff dos elfos, todos morrem só restando você).
+
+-Pelégolas faz o discurso e todos saem para a batalha, e encontra com alguns acólitos em uma clareira, a batalha se desenrola. De repente, um mago aparece na luta. Ocorre o interrogatório e encontram a barreira.
+
+- O seu grupo de arqueiros vai em direção ao obelisco oeste, após derrotar a hydra, vocês pensam em como vão destruir o obelisco.  3 opcoes: flecha explosiva - atrai wraiths nas proximidades. Usar magia da floresta para invocar um treant pra destruir - o Ent se corrompe e ataca o grupo. Aceitar a magia negra e destruir com o poder dos demônios - Sacrificio do heroi.
+
+-Após isso ocorre os eventos da historia do mago, tudo semelhante, batalha com rhon'aldyn e tals.
+Após a batalha, Rhon'Aldyn explica o grande plano do lich, criar um mundo de inverno eterno onde a magia negra predomine, uma utopia para os seus.
+
+- O objetivo do herói passa a ser derrotar o lich. Porém, sabe-se muito pouco sobre ele, Pelégolas informa que na cidade desértica de Juazeiro há magias antigas que podem explicar mais da origem do lich. 
+
+
+Diálogos:
+
+Q1
+[Narrador]: Após alguns dias de viagem você chega na floresta do Krambeck. Seguindo o mapa que a general te deu, você entra na floresta e segue a trilha que leva até o acampamento dos elfos.
+[Narrador]: Você observa as partes ainda esverdeadas da floresta, bem como partes já corrompidas pelos poderes do culto.
+[Heroi]: Segundo o mapa, já devo estar perto do acampamento.
+[Narrador]: Você escuta um zumbido e imediatamente para de se locomover. Uma flecha atinge o chão logo a frente de seus pés.
+[Pelégolas]: Você é o arqueiro o qual Liriel mencionou na carta?
+[Narrador]: Você olha para cima e percebe uma silhueta na copa das arvores mais a frente, quase irreconhecível se não fosse o cabelo avermelhado.
+[Heroi]: Pelégolas? Me chamo heroi, vim de Curitiba.
+[Pelégolas]: Como pode ver, aqui que nós estamos acampados, a força expedicionária dos alto-elfos e a resistência dos nossos irmãos da floresta. Aqui temos cerca de 5 companias de elfos prontos para o combate. Assim como este campo, a resistência também possui outros acampamentos menores por toda a mata.
+[Narrador]: Você observa tudo ao redor junto de Pelégolas. O acampamento é bem grande, no entanto, um odor forte preenche todo o acampamento.
+[Pelégolas]: Incomodado com o odor? É natural para os elfos da florestas. Seu saber da natureza proporciona diversos usos de plantas tanto para cura quanto para o combate.
+[Heroi]: Entendo, a imortalidade dos elfos garante tempo suficiente para adquirir muito conhecimento.
+[Narrador]: Você observa as barracas dos soldados, a presença de ferreiros, a tenda médica. Então você nota um grupo de elfos saindo para a floresta.
+[Pelégolas]: Não pude deixar de notar, esse arco... É de Líriel, não é?
+[Heroi]: Sim, ela o confiou a mim. A general botou sua esperança em que eu seria capaz de auxiliá-los nessa batalha. Pretendo honrá-la.
+[Pelégolas]: Liriel é uma soldado mas também é muito sábia, tenho certeza que se ela confiou em ti, não vais me decepcionar.
+[Pelégolas]: É um belo arco, não? A corda de seda é bastante resistente, e o teixo usado na confecção do arco é dos bosques de Curitiba.
+[Heroi]: De fato, eu sinto como se eu pudesse acertar qualquer disparo.
+[Pelégolas]: Bom, aqui está sua barraca, fique a vontade, se precisar de mim estarei no quartel general, ainda temos tempo, mas certifíque-se de estar pronto no alvorecer.
+[Heroi]: Certo, muito obrigado, Comandante Pelégolas.
+[Narrador]: Após se despedir, você decide que é melhor se preparar para a batalha que se aproxima. O ferreiro se encontrava no outro lado do acampamento.
+[Ferreiro]: Saudações, viajante. O que traz um humano a essas terras élficas?
+[Heroi]: Boa noite, ferreiro, eu poderia usar sua pedra de amolar? Gostaria de estar bem equipado para amanhã.
+[Ferreiro]: Vais participar da ofensiva de amanhã? Os malditos desse culto do Crepúsculo Gélido terão uma grande surpresa. Ainda resistimos! Fique a vontade para usar as pedras ao fundo.
+[Heroi]: Muito obrigado.
+[Narrador]:Enquanto você amola sua adaga, o ferreiro fica concentrado em seus afazeres. Você observa o semblante inspirado do elfo enquanto a luz do fogo iluminavam sua face e as faíscas das batidas do martelo saltam pelo ambiente. A cada descida da ferramente, parecia que parte da alma do ferreiro era posta naquelas espadas.
+[Narrador]: O elfo então entoava uma canção e uma magia élfica era gravada na espada.
+[Heroi]: Um trabalho magnífico.
+[Ferreiro]: É tudo para reaver nossa floresta. Vejo que você tem um excelente arco, gostaria que eu o encantasse também?
+[Heroi]: Por favor.
+[Narrador]: O Sol começa a baixar e você percebe que o grupo de elfos que haviam saído mais cedo não retornou ao acampamento.
+1 - Seguir para a floresta para procurar o grupo de elfos.
+2 - Avisar o grupo de patrulha sobre a falta dos elfos.
+3 - Ignorar e voltar à sua tenda.
+
+R1
+[Narrador]: Ao procurar pelo grupo de elfos, você sente um cheiro parecido com o do acampamento, ao seguir o cheiro vc consegue encontrar o grupo.
+[Elfo da Floresta]: EEEi novato! Está fazendo o que por aqui?
+[Heroi]: Bom, vim procurá-los, vocês estavam sumidos há algum tempo.
+[Elfo da Floresta 2]: Relaxe, nós pegamos algumas ervas extras no quartel, para nos prepararmos para a batalha de amanhã.
+[Elfo da Floresta]: Isso mesmo, essas ervas, quando em contato com fogo, limpam a mente dos guerreiros para o combate. Junte-se a nós novato, que tal?
+[Heroi]: Acredito que não seja adequado, isso.
+[Elfo da Floresta 3]: Hahahaha, olhem só, o humano está com medo de usar da nossa erva! Fique tranquilo, pegamos muita, experimente.
+[Narrador]: O elfo te entrega uma folha queimando e você dá umas tragadas.
+[Elfo da Floresta 2]: Você veio de Curitiba né. O comandante Pelégolas comentou da sua chegada há alguns dias...
+[Narrador]: Após algum tempo a penúmbra da noite começava a cair.
+[Elfo da Floresta]: E então... o javali caiu no rio fazendo um barulho muito engraçado hahahahahahaha.
+[Heroi]: Hahahaha que onda é essa...
+[Elfo da Floresta 3]: Vocês escutaram esse som?
+[Elfo da Floresta 2]: O que?
+[Narrador]: No momento que os elfos perceberam um som vindo das  matas, flechas vem em sua direção.
+[Elfo da Floresta]: Estamos sob ataque! Ás armas.
+[Inimigos]: Por Sylathor!!!
+[Narrador]: Observando a sua volta, os inimigos possuem cerca do dobro de guerreiros em relação a vocês.
+[Narrador]: Você pega o seu arco e aljava, e no momento que você se concentra para o combate, sua mente clareia, a mesma letargia que o atingia há pouco parece se dissipar.
+[Narrador]: Você percebe que nunca sentira tal foco antes.
+[Elfo da Floresta 2]: Essa foi por pouco hahahaha.
+[Narrador]: Você olha a volta, e observa o massacre realizado pelo seu grupo de elgos.
+[Elfo da Floresta]: Parece que eles eram alguns dos remanescentes dos seguidores de Sylathor...
+[Elfo da Floresta 2]: Talvez, se não tivéssemos usado tanto da erva, eles poderiam ter dado trabalho... Se iludiram com seus números.
+[Elfo da Floresta 3]: Vamos retornar ao acampamento, não sabemos se há outros desses criminosos aqui por perto.
+
+
