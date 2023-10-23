@@ -151,7 +151,7 @@ Q3
 [Pelégolas]: É incrível como sua mente se distorceu ao longo dos anos.
 [Rhon'Aldyn]: Meu caro, Pelégolas, sua visão é pouco abrangente. Falta a ti uma perspectiva diferente. A verdadeira imortalidade é uma dádiva.
 [Rhon'Aldyn]: A possibilidade de conhecimento infinito, experiências infinitas. Sua pessoa mais amada e querida, compartilhando momentos com você eternamente. 
-[Narrador]: Pelégolas saca seu arco, mas ao mesmo tempo, Rhon'Aldyn conjura uma magia que estilhaça energia negra por toda a sala. Você o humano arqueiro conseguem desviar. Todos os outros são atingidos e morrem instantâneamente, exceto Pelégolas, que teve seu  braço ferido.
+[Narrador]: Pelégolas saca seu arco, mas ao mesmo tempo, Rhon'Aldyn conjura uma magia que estilhaça energia negra por toda a sala. Você e o arqueiro humano conseguem desviar. Todos os outros são atingidos e morrem instantâneamente, exceto Pelégolas, que teve seu  braço ferido.
 [Rhon'Aldyn]: Tolos!
 [Rhon'Aldyn]: {cuspindo sangue} Vocês podem ter me derrotado, mas meu dever está cumprido. Seus deuses foram profanados, já não os abençoam. Aos poucos nosso mestre expande seu domínio.
 [Heroi]: A quem você serve, Rhon'Aldyn?
@@ -159,7 +159,7 @@ Q3
 [Rhon'Aldyn]: Por que vocês não conseguem enxergar o mundo como eu vejo?
 [Heroi]: Por ser um humano, com uma vida curta, perto de vocês, posso afirmar que por ter um fim que nós, humanos, vivemos cada dia com intensidade, por existir a morte que valorizamos a vida!
 [Arqueiro]: Sua influência diminuirá aqui, mas o que já foi corrompido, demorará muito para ser purificado.
-[Pelégolas]: A deturpação a mente de Rhon'Aldyn causou sofrimento para tanta gente e ele não conseguiu perceber esse erro...
+[Pelégolas]: A deturpação da mente de Rhon'Aldyn causou sofrimento para tanta gente e ele não conseguiu perceber esse erro...
 [Pelégolas]: Vamos retornar ao acampamento. Heroi, obrigado pela sua ajuda, foi fundamental.
 [Narrador]: Após a compania dos elfos ir embora, você se encontra novamente sozinho e sente uma forte dor. Seu peito dói, e um círculo de invocação surge a sua volta.
 [Narrador]: Usando sua mana, a Dryad é invocada no altar onde você se encontra.
@@ -170,19 +170,20 @@ Q3
 [Narrador]: A  dríade caminha em torno do altar com um olhar de tristeza.
 [Dryad]: As árvores choram. Muito foi destruído.
 [Heroi]: A corrupção tomou conta de muitas áreas. Será difícil recuperar... Muitas criaturas estão corrompidas e as matas, assombradas.
-[Dryad]: Não tema, com meus poderes, consigo recuperar as florestas, no entanto, preciso de alguns objetos mágicos que eram usados pelo meu povo.
-[Dryad]: Eles deveriam estar aqui no altar, eram artefatos de grande poder, que ao serem infundidos com nossa magia, eram capazes de gerar vida.
-[Heroi]: Acredito que sei do que se trata, peguei esta mensagem do corpo de Rhon'Aldyn.
-[Heroi]: Nela diz que vários objetos encontrados nessa floresta, que possam ter algum valor, foram levados para a cidade portuária de Santos, para serem vendidos com a finalidade de contratar mercenários para erradicar o restante dos elfos aqui.
-[Dryad]: Tal ato deveria ser considerado uma blasfêmia...
+[Dryad]: Não tema heroi. Com meus poderes, consigo recuperar a floresta.
+[Dryad]: O que me preocupa é a natureza desses poderes concedidos a Rhon'Aldyn.
 [Heroi]: Dryad, sobre o mestre do bruxo, ele se chama Netherus e é cultuado um Deus.
 [Dryad]: Willhelm e os outros continuaram suas pesquisas e parece que esse "Deus" assume diversas formas, bem como possui influência em diversos lugares.
 [Heroi]: Por todo o continente, segundo Rhon'Aldyn.
 [Heroi]: Não posso deixar que esse autoproclamado deus continue a espalhar sua influência pelo continente.
-[Dryad]: Uma vez que preciso dos meus artefatos de volta, considere buscar pistas sobre tal mestre das sombras em Santos. A cidade já é governada por foras da lei, certamente algum deles tem relação com Netherus.
-[Dryad]: A cidade é dominada por foras da lei, certamente há braços de nosso inimigo no local.
-[Dryad]: Depois retorne, para que eu possa começar a reavivar este local. estou de luto estou por todas as vidas perdidas em uma floresta antes tão bela e pacífica.
+[Dryad]: De fato, ele está se provando uma ameaça maior que a esperada.
+[Dryad]: O tipo de magia no ambiente... Eu já senti esse tipo de poder antes.
+[Dryad]: Se me recordo bem é um tipo de magia antiga, usada por sacerdotes em Juazeiro.
+[Heroi]: Juazeiro? A cidade desértica?
+[Dryad]: Sim... Em tempos anteriores, Juazeiro era uma cidade de flora muito rica. No entanto por usar esse tipo de magia, uma catástrofe se abateu sobre o reino.
+[Heroi]: Entendo... Netherus provavelmente está relacionado a Juazeiro... Creio que terei que investigar mais.
 [Heroi]: Partirei imediatamente.
+[Dryad]: Agradeço por tudo, heroi. Desejo-te uma jornada segura.
   
 
 

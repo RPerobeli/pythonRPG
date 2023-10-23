@@ -34,7 +34,7 @@ Q1
 [Heroi]: Pelégolas? Me chamo heroi, vim de Curitiba.
 [Pelégolas]: Como pode ver, aqui que nós estamos acampados, a força expedicionária dos alto-elfos e a resistência dos nossos irmãos da floresta. Aqui temos cerca de 5 companias de elfos prontos para o combate. Assim como este campo, a resistência também possui outros acampamentos menores por toda a mata.
 [Narrador]: Você observa tudo ao redor junto de Pelégolas. O acampamento é bem grande, no entanto, um odor forte preenche todo o acampamento.
-[Pelégolas]: Incomodado com o odor? É natural para os elfos da florestas. Seu saber da natureza proporciona diversos usos de plantas tanto para cura quanto para o combate.
+[Pelégolas]: Incomodado com o odor? É natural para os elfos da floresta. Seu saber da natureza proporciona diversos usos de plantas tanto para cura quanto para o combate.
 [Heroi]: Entendo, a imortalidade dos elfos garante tempo suficiente para adquirir muito conhecimento.
 [Narrador]: Você observa as barracas dos soldados, a presença de ferreiros, a tenda médica. Então você nota um grupo de elfos saindo para a floresta.
 [Pelégolas]: Não pude deixar de notar, esse arco... É de Líriel, não é?
@@ -69,10 +69,11 @@ R1
 [Elfo da Floresta 3]: Hahahaha, olhem só, o humano está com medo de usar da nossa erva! Fique tranquilo, pegamos muita, experimente.
 [Narrador]: O elfo te entrega uma folha queimando e você dá umas tragadas.
 [Elfo da Floresta 2]: Você veio de Curitiba né. O comandante Pelégolas comentou da sua chegada há alguns dias...
-[Narrador]: Após algum tempo a penúmbra da noite começava a cair.
-[Elfo da Floresta]: E então... o javali caiu no rio fazendo um barulho muito engraçado hahahahahahaha.
+[Narrador]: Após algum tempo a penúmbra da noite começa a cair.
+[Elfo da Floresta]: Aí o jacaré foi lá encontrar com o Coala... hehehehe... 
+[Elfo da Floresta]: O Coala, vendo o jacaré, assustado, falou: "Caraaai" lagartixa... tu bebeu água "pra carai"! Hahahahahahaha!
 [Heroi]: Hahahaha que onda é essa...
-[Elfo da Floresta 3]: Vocês escutaram esse som?
+[Elfo da Floresta 3]: Ei, vocês escutaram esse som?
 [Elfo da Floresta 2]: O que?
 [Narrador]: No momento que os elfos perceberam um som vindo das  matas, flechas vem em sua direção.
 [Elfo da Floresta]: Estamos sob ataque! Ás armas.
@@ -86,4 +87,161 @@ R1
 [Elfo da Floresta 2]: Talvez, se não tivéssemos usado tanto da erva, eles poderiam ter dado trabalho... Se iludiram com seus números.
 [Elfo da Floresta 3]: Vamos retornar ao acampamento, não sabemos se há outros desses criminosos aqui por perto.
 
+R2
+[Narrador]: Você se aproxima de uma das torres de vigia para avisar aos guardas.
+[Heroi]: Olá, soldado. Notei que um grupo de elfos há algum tempo saiu e não retornou da floresta. Acredito que não há patrulhas externas sendo feitas durante a noite nessa floresta.
+[Guarda]: O que? Explique-se, forasteiro.
+[Narrador]: Você explica o que observara e detalha como eram os elfos.
+[Guarda]: Certo, Reunirei um grupo de homens para procurá-los.
+[Narrador]: Você observa os homens saindo em busca de seus companheiros e então parte para seus aposentos.
 
+R3
+[Narrador]: Você se dirige aos seus aposentos para descansar.
+[Narrador]: No meio da noite você é acordado gritos.
+[Elfo]: ESTAMOS SOB ATAQUE!
+[Narrador]: Você se levanta as pressas e se prepara para ver o que está ocorrendo.
+[Narrador]: O seu quarto fica próximo ao depósito de suprimentos do acampamento.
+[Narrador]: Quando você olha para o lado o fogo já se espalhou por todo o depósito.
+[Elfo]: POR SYLATHOR!
+[Pelégolas]: Rapido, heroi, busque água para nós!
+[Heroi]: O que ocorreu aqui!?
+[Pelégolas]: Alguns remanescentes do grupo de Sylathor. Eles mataram alguns dos nossos na floresta e com isso descobriram a localização desse acampamento.
+[Elfo]: Comandante! Mais algumas provisões conseguiram ser salvas.
+[Pelégolas]: Levem-nas para o segundo depósito. Ao retornar, tragam mais água!
+[Heroi]: Mesmo sem seu líder, ainda tiveram forças para fazer um estrago desses...
+[Pelégolas]: Os desgraçados acabaram com a maior parte dos nossos suprimentos.
+[Pelégolas]: Teremos que realizar um ataque certeiro em Rhon'Aldyn, uma guerra longa não é uma opção.
+
+Q2
+[Narrador]: Na manhã seguinte todos os oficiais Alto elfos e elfos da floresta se reuniram para a finalização do plano de ataque ao santuário do bruxo.
+[Pelégolas]: Como todos sabem, não possuímos provisões para uma guerra longa, estivemos resistindo nesse local por bastante tempo, mas não conseguiremos continuar aqui por mais tempo.
+[Endílien]: Se esperarmos mais tempo para coletar provisões, mais a floresta sofre. Cada segundo que passa, menos energia eu sinto vindo da terra.
+[Pelégolas]: Endílien está certa, teremos que ir para o tudo ou nada. Por sorte contamos com as nossas forças e com o apoio de heroi, que veio de Curitiba nos auxiliar.
+[Pelégolas]: Dito isso, nossas forças principais seguirão ao meio dia para a clareira ao sul. A segunda brigada de elfos da floresta irão mais cedo pelo oeste como forma de atrair a atençao deles. Endílien, prepare seus melhores soldados, eles provavelmente aguentarão a maior parte das forças de Rhon'Aldyn.
+[Endílien]: Farei de imediato.
+[Heroi]: Pelégolas, acredito que Endílien deva ir conosco na força principal.
+[Pelégolas]: Ela é indispensável para liderar as forças dos elfos da floresta.
+[Heroi]: E também é única druida nesse acampamento, seu poder de reconhecimento nos ajudará a passar com um poderoso grupo de ataque evitando combates desnecessários.
+[Endílien]: Tendo a concordar com o ponto do Heroi. Meus homens conseguem executar a missão sem falhas.
+[Endílien]: O máximo que conseguirmos preservar nossas forças, melhor.
+[Pelégolas]: Podemos seguir com essa ideia. Endílien seguirá conosco então.
+[Pelégolas]: Estão todos entendidos? Vamos partir.
+[Narrador]: Você acompanha o grupo principal na investida.
+[Narrador]: Endílien usa seu formato de águia para sobrevoar as partes da floresta as quais já foram corrompidas pelos cultistas, e frequentemente retorna para o grupo principal repassar o relatório.
+[Endílien]: Tudo limpo à frente, comandante.
+[Pelégolas]: Seguiremos em frente então.
+[Narrador]: Chegando na clareira marcada no plano, o grupo se estacionou.
+[Pelégolas]: Daqui podemos ver a fumaça do embate do oeste. Esperemos que o segundo grupo esteja tendo sucesso.
+[Endílien]: A partir daqui não há mais como desviar das forças cultistas, será uma corrida contra o tempo.
+[Heroi]: Vamos, então.
+[Pelégolas]: A partir de agora será o início da nossa luta pela reconquista de Krambeck! Avante, elfos! Avante para a liberdade!
+[Narrador]: Após iniciada a ofensiva, a vanguarda já encontra alguns imps e demônios inferiores.
+[Endílien]: Formação de flecha, abram caminho para o ataque!
+[Pelégolas]: Nossa força de ataque está minguando! Não conseguiremos prosseguir assim. Eliminem os Adversários!!!
+--2 Batalhas - Wraith e Acolito.
+[Narrador]: Pelégolas está sofrendo com um grupo de demônios.
+[Narrador]: Um raio atinge o entorno de Pelégolas. Um mago aparece da floresta e começa atacar os cultistas.
+-- Batalha Demonio inferior.
+[Narrador]: Após a batalha, o grupo consegue capturar um dos bruxos do culto.
+[Pelégolas]: Obrigado, mago, sua ajuda garantiu nossa vitória em cima desses decrépitos. Me chamo Pelégolas, e tenho a missão de auxiliar os elfos da floresta em sua resistência contra esses bruxos malígnos.
+[Mago]: Disponha, também vim para esta floresta visando eliminar esse mal.
+[Pelégolas]: Talvez, possamos trabalhar juntos, então.
+[Mago]: Vocês já tem informações desse culto?
+[Arqueiro]: O bruxo é um mago renegado da cidade de Curitiba. Se voltou para a magia negra após conseguir um novo mestre. Parte da nossa missão é justamente adquirir mais informação desses necromantes.
+[Acólito]: Hahahaha, não importa o que eu diga, os planos de meu mestre já foram um sucesso!
+[Narrador]: Pelégolas dá um chute no acólito que cai deitado no chão e ameaça o inimigo com uma adaga em seu pescoço.
+[Pelégolas]: Então, o que vocês pretendem? Desejo ter o prazer de acabar com os seus planos.
+[Acólito]: A floresta já é nossa, nós já destruímos cada traço de seus deuses, elfos inferiores. Vocês, que não abraçaram nosso único deus, como o mestre Rhon'Aldyn, nunca terão espaço no novo mundo. 
+[Acólito]: A nós foi revelada a verdade, e conferido poder para destruir qualquer um que ficar no nosso caminho.
+[Acólito]: Vocês nunca atravessarão a barreira do santuário!
+[Pelégolas]: E quem seria esse deus de vocês?
+[Acólito]: Vocês nunca poderão ir contra o poderoso...
+[Narrador]: Ao tentar pronunciar o nome do deus, a cabeça do acólito explode instantaneamente.
+[Narrador]: Todos a volta se assustam.
+[Heroi]: Vamos ao santuário, então.
+[Narrador]: Vocês seguem para o santuário no centro da floresta. Até encontrarem uma barreira que impede vocês de passarem.
+[Endílien]: Dois monumentos são responsáveis por gerar essa barreira. Uma mais a leste e outro mais a oeste.
+[Pelégolas]: Teremos que nos dividir para destruir esses monumentos.
+[Pelégolas]: Mago, pegue metade da minha compania, encontre e destrua o obelisco do leste. Ficaremos com o obelisco oeste, e parte das nossas forças ficará para iniciar o ataque assim que a barreira for desfeita.
+[Heroi]: Endílien, acompanhe o Heroi, suas habilidades o serão úteis.
+[Endílien]: Entendido.
+[Narrador]: Usando os poderes de Endílien, vocês encontram o monumento no meio da floresta.
+[Heroi]: Aqui estamos. Bom, vamos logo destruir essa barreira.
+[Narrador]: No momento que você se vira para trás, 2 elfos passam voando por cima de você. Uma hidra aparece para proteger o monumento.
+--batalha hydra.
+[Endílien]: Devemos destruir esse monumento, como o faremos?
+1 - Usar uma flecha explosiva.
+2 - Pedir a Endílien que utilize uma de suas magias.
+3 - Absorver a magia negra do local, purificando o monumento.
+
+R1
+[Narrador]: Você olha a sua volta e não vê nada de útil que pode ser usado no monumento.
+[Heroi]: Parece que terei usar uma técnica diferente.
+[Narrador]: Você puxa uma flecha com um artefato explosivo na ponta, e utiliza seu arco apontado para o grande monumento à sua frente.
+[Endílien]: Todos, cubram-se!
+[Narrador]: Uma grande explosão ocorre na floresta.
+[Narrador]: Com o barulho, alguns inimigos nas proximidades emergem para matar seu grupo.
+-- batalha aparição e outro monstros
+[Narrador]: Mais cultistas surgem para atacá-los
+[Cultista]: Vejo que conseguiram destruir a barreira, não posso deixar que prossigam mais do que isso.
+[Cultista]: Meus servos, ataquem!
+[Narrador]: Endílien assume sua forma de lobo, e avança sobre os inimigos.
+[Endílien]: Vá, heroi! Eu seguro eles aqui! Certifique-se de fazer com que Rhon'Aldyn pague pelos seus atos!
+
+
+R2
+[Endílien]: Se afaste um pouco.
+[Narrador]: Endílien, usando seu cajado, começa a conjurar um feitiço, usando a energial natural à sua volta.
+[Endílien]: Me desculpem, usarei vocês para isso...
+[Narrador]: Ao colocar o cajado no chão,  toda a vida se esvai ao entorno, a energia se envolve em torno de Endílien.
+[Endílien]: Disparo Natural!
+[Narrador]: Um raio de energia atinge o monumento despedaçando-o.
+[Narrador]: A barreira se dispersa, e Endílien se ajoelha no chão, devido ao cansaço.
+[Endílien]: Vão na frente, precisarei me recuperar um pouco.
+
+R3
+[Endílien]: Posso sentir a magia negra desse local.
+[Heroi]: Poderemos usar essa concentração de magia para destruir a pedra.
+[Heroi]: Vamos canalizar essa magia para um ataque.
+[Heroi]: Endílien, concentre toda a magia à nossa volta em meu corpo
+[Narrador]: Você puxa uma flecha de sua aljava e se prepara para o ataque. Endílien põe a mão nas suas costas e começa o encantamento.
+[Narrador]: Você sente a energia fluir para seu corpo. O poder aumenta... cada vez mais...
+[Narrador]: Seu peito explode com o excesso de poder.
+
+Q3
+[Narrador]: Você adentra o santuário e bem se encontra com os outros dois times. Um grande altar está na frente deles, e nele, se encontra o bruxo.
+[Rhon'Aldyn]: Vejo que conseguiram chegar até aqui. Que agradável vê-lo aqui, meu caro Pelégolas.
+[Pelégolas]: Triste que eu não possa dizer o mesmo. Rhon'Aldyn.
+[Rhon'Aldyn]: Ora, por que tanta hostilidade? Estou trazendo a esses elfos da floresta uma evolução, um caminho para o novo mundo, uma salvação.
+[Rhon'Aldyn]: A morte é apenas um primeiro passo para um mundo maravilhoso.
+[Pelégolas]: É incrível como sua mente se distorceu ao longo dos anos.
+[Rhon'Aldyn]: Meu caro, Pelégolas, sua visão é pouco abrangente. Falta a ti uma perspectiva diferente. A verdadeira imortalidade é uma dádiva.
+[Rhon'Aldyn]: A possibilidade de conhecimento infinito, experiências infinitas. Sua pessoa mais amada e querida, compartilhando momentos com você eternamente. 
+[Narrador]: Pelégolas saca seu arco, mas ao mesmo tempo, Rhon'Aldyn conjura uma magia que estilhaça energia negra por toda a sala. Você o humano arqueiro conseguem desviar. Todos os outros são atingidos e morrem instantâneamente, exceto Pelégolas, que teve seu  braço ferido.
+[Rhon'Aldyn]: Tolos!
+[Rhon'Aldyn]: {cuspindo sangue} Vocês podem ter me derrotado, mas meu dever está cumprido. Seus deuses foram profanados, já não os abençoam. Aos poucos nosso mestre expande seu domínio.
+[Heroi]: A quem você serve, Rhon'Aldyn?
+[Rhon'Aldyn]: O grande Netherus criará um mundo para nós que transcendemos a mortalidade. Nossos planos já estão em ação.
+[Rhon'Aldyn]: Por que vocês não conseguem enxergar o mundo como eu vejo?
+[Heroi]: Por ser um humano, com uma vida curta, perto de vocês, posso afirmar que por ter um fim que nós, humanos, vivemos cada dia com intensidade. Por existir a morte que valorizamos a vida!
+[Heroi]: Sua influência diminuirá aqui, mas o que já foi corrompido, demorará muito para ser purificado.
+[Pelégolas]: A deturpação a mente de Rhon'Aldyn causou sofrimento para tanta gente e ele não conseguiu perceber esse erro...
+[Arqueiro]: Endílien ficou para trás, precisamos ajudá-la ainda.
+[Pelégolas]: Mago, obrigado pela sua ajuda, foi fundamental. Devemos retornar para nossos companheiros, eliminar cada traço desse culto na terra de nossos aliados.
+[Narrador]: Vocês se dirigem até o ponto onde Endílien você se separou de Endílien.
+[Endílien]: Como previ, vocês conseguiram...
+[Narrador]: A elfa se encontrava com a respiração pesada. Bastante ferida, mas nada grave aparentemente.
+[Narrador]: À sua volta, uma grande quantidade de demônios e cultistas jaziam derrotados e já sem vida.
+[Pelégolas]: Endílien, sua casa está a salvo agora.
+[Endílien]: Ainda não... precisamos recuperar tudo o que foi corrompido. Para isso, temos alguns artefatos sagrados que possuem poder para tal.
+[Heroi]: Acredito que sei do que se trata, peguei esta mensagem do corpo de Rhon'Aldyn.
+[Heroi]: Nela diz que vários objetos encontrados nessa floresta, que possam ter algum valor, foram levados para a cidade portuária de Santos, para serem vendidos com a finalidade de contratar mercenários para erradicar o restante dos elfos aqui.
+[Endílien]: Tal ato deveria ser considerado uma blasfêmia...
+[Heroi]: Pelégolas, não podemos deixar que esse autoproclamado deus Netherus continue a espalhar sua influência pelo continente.
+[Endílien]: Uma vez que preciso dos meus artefatos de volta, considere buscar pistas sobre tal mestre das sombras em Santos. A cidade já é governada por foras da lei, certamente algum deles tem relação com Netherus.
+[Pelégolas]: A cidade é dominada por foras da lei, certamente há braços de nosso inimigo no local.
+[Endílien]: Heroi, obrigada por tudo o que você fez aqui. Como Pelégolas disse, Líriel tinha razão em enviá-lo para nós. Por favor, aceite essa benção em seu arco.
+[Narrador]: A magia da elfa percorre o cerne do seu arco, modificando as fibras da madeira. As runas gravadas pelo ferreiro passam a emanar ainda mais energia.
+[Heroi]: Sou muito grato, Endílien. Sinto que com este arco poderei enfrentar qualquer um.  Seu povo poderá ficar em paz aqui novamente.
+[Endílien]: Depois retorne para que eu possa começar a reavivar este local. Tornaremos nossa floresta mais bela do que antes fora.
+[Heroi]: Partirei imediatamente.
