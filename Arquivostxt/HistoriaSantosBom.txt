@@ -24,4 +24,108 @@ Apos initilizarem 2 dos navios vcs pretendem subir na nau capitânia do barba ne
 Roger é  jogado longe e o barba negra invoca o lich netherus para que ele expanda seu dominio e entao conceda ao barba negra o exercito q ele pediu.
 Apos um dialogo onde o lich declara seus objetivos, e desafia o heroi, neve começa  a cair em Santos. Ha o embate final entre o arqueiro e barba negra.
  Roger, ainda q triste deverá assumir o vacuo de poder em Santos, agr sem seu bando os remanescentes dos piratas do barba negra que quiserem desafia-lo q tentem. O heroi decide ir atras do lich em asas da liberdade.
-No desafio do lich, ele diz q vc esta tentando estragar os planos dele, mas será inutil, e q vc sofrerá as consequencias, q eu deveria me preocupar com minha casa
+No desafio do lich, ele diz q vc esta tentando estragar os planos dele, mas será inutil, e q vc sofrerá as consequencias, q eu deveria me preocupar com minha casa.
+
+
+Diálogos:
+
+Q1
+[Narrador]: Ao chegar em Santos, o clima hostil penetra em sua pele. O odor de álcool e urina das ruas pesam sua respiração.
+[Narrador]: Andando pelas ruas, percebem-se as casas mal acabadas, dignas da cidade conhecida por manter os maiores nomes do submundo dos mares.
+[Narrador]: Nas ruas, meretrizes te sinalizam para acompanhá-las, bem como haviam bêbados vomitando.
+[Narrador]: Enquanto isso você percebe um grupo de pessoas te cercando.
+[Pirata Bêbado]: Eeei, posso ver que cê num é um qualquer.
+[Narrador]: O bando do homem se aproxima de você, são cinco marginais.
+[Pirata Bêbado]: Cê deve sabê "qui" que tá acontecendo né,  passa seu ouro que a gente te deixa ir em paz.
+1 - Lutar e interrogá-los.
+2 - Entregar o ouro e perguntar sobre mercenários recém contratados na cidade.
+3 - Entregar o ouro e atacar os ladrões pelas costas.
+
+R1
+[Heroi]: Creio que não será possível.
+--luta pirata bebado
+[Narrador]: Com a derrota do aparentemente líder do grupo, os outros ladrões fogem.
+[Pirata Bêbado]: Desgraçado! Você está desafiando os piratas do Barba Negra! Isso não vai ficar assim!
+[Narrador]: Mais tarde naquele dia...
+[Pirata Bêbado]: Foi isso chefe, o cara não nos deu o ouro e nos desafiou na briga! Uma afronta ao senhor!
+[Barba Negra]: Entendo... Então, Vocês não pegaram o ouro, foram desafiados, estavam em maior número e tomaram um pé na bunda de um único sujeito?
+[Pirata Bêbado]: Olhando por esse lado...
+[Barba Negra]: Não tema, esse sujeito só pode estar junto de Roger, vamos acabar com todos eles ao mesmo tempo!
+[Pirata Bêbado]: Obrigado chefe! Com certeza não vai restá ninguém para desafiá-lo.
+[Barba Negra]: Agora vá.
+--sound Shot
+[Narrador]: Enquanto o pirata se virava para sair do local, Barba negra atira com seu revólver, eliminando a vida do subordinado.
+[Barba Negra]: Não há espaços no meu bando para aqueles que desonram meu nome.
+
+R2
+[Heroi]: Meu caro, posso te dar meu ouro, mas desejo algumas informações antes.
+[Pirata Bêbado]: Nóis que mandamos aqui, arqueiro.
+[Heroi]: Estou vendo, por isso estou inclinado a ajudá-lo. Não desejo atrapalhar seus negócios, mas procuro alguns mercenários, recentemente contratados.
+[Pirata Bêbado]: Mercenários? A cidade está cheia deles. Vai ser difícil encontrar o seu grupo específico... Mas se deseja alguma começar por algum lugar, é melhor ir na taverna do centro.
+[Heroi]: Entendo. Obrigado meu nobre. Fico feliz que pudemos resolver nosso contratempo de forma amigável. Aqui está o ouro.
+[Pirata Bêbado]: Hehehe, cê fala bonito. Haha! Agora vaza, pobre.
+
+R3
+[Heroi]: Aqui está, senhor.
+[Pirata Bêbado]: Cê é esperto, fez a melhor escolha Haha! Agora vaza, pobre.
+[Narrador]: No momento que o pirata e seu grupo dão as costas você ataca.
+--luta pirata bebado
+[Narrador]: Com a derrota do aparentemente líder do grupo, os outros ladrões fogem.
+[Pirata Bêbado]: Desgraçado! Você está desafiando os piratas do Barba Negra! Isso não vai ficar assim!
+[Narrador]: Mais tarde naquele dia...
+[Pirata Bêbado]: Foi isso chefe, o cara não nos deu o ouro e nos desafiou na briga! Uma afronta ao senhor!
+[Barba Negra]: Entendo... Então, Vocês não pegaram o ouro, foram desafiados, estavam em maior número e tomaram um pé na bunda de um único sujeito?
+[Pirata Bêbado]: Olhando por esse lado...
+[Barba Negra]: Não tema. Esse sujeito só pode estar junto de Roger, vamos acabar com todos eles ao mesmo tempo!
+[Pirata Bêbado]: Obrigado chefe! Com certeza não vai restá ninguém para desafiá-lo.
+[Barba Negra]: Agora vá.
+--sound Shot
+[Narrador]: Enquanto o pirata se virava para sair do local, Barba negra atira com seu revólver, eliminando a vida do subordinado.
+[Barba Negra]: Não há espaços no meu bando para aqueles que desonram meu nome.
+
+Q2
+[Narrador]: Avançando pela cidade, você observa a taverna no centro da cidade.
+[Narrador]: Ao se aproximar, a porta é destruída, com um corpo voando em sua direção.
+[Narrador]: Ambos caem no chão, o corpo desacordado jogado ao lado tomba desacordado com o abdômem rasgado.
+[Roger]: Gyahahaha! Avisa o seu chefe que vai precisar muito mais do que isso pra me matar!! Gyahahahaha!
+[Roger]: Opa, me desculpe, rapaz! Está tudo bem?
+[Heroi]: De certa forma...
+[Roger]: Desculpa gyahahaha! Venha, deixe-me te pagar uma cerveja.
+[Narrador]: Ambos entram na taverna enquanto o corpo já sem vida continuava a envermelhar o chão da rua.
+[Taverneiro]: Então, o grande pirata Gold Roger apronta mais uma. Você sabe que vai ter que pagar pela porta ne?
+[Roger]: Gyahahaha! Fique tranquilo. Vou arrumar como nas outras vezes.
+[Roger]: Traga umas cervejas para nós aí! Vou pagar uma para esse camarada.
+[Narrador]: Você se assenta na mesa com o homem. Uma mulher se aproxima e põe uma faca no pescoço de Roger.
+[Mulher]: Aqui seu desgraçado, nossos fundos estão acabando. Trate-se de se segurar quando for espancar os outros.
+[Roger]: Eieiei! Calma, Becca. Basta saquearmos mais que poderemos pagar tudo que estamos devendo.
+[Becca]: Droga... Não adianta, você quer arranjar mais trabalho pra gente.
+[Roger]: Gyahaha! Se acalme, Vice Capitã, sente-se conosco. O que nossos homens e meu convidado vão pensar de você?? Você vai assustá-los, Gyahahaha!
+[Roger]: A propósito, não perguntei seu nome. Me chamo Roger, e comando todos esses vagabundos que estão aqui nesse bar! Gyahahaha!
+[Heroi]: Sou heroi. Estou em busca de alguns artefatos que foram roubados por um bruxo, e algumas pistas me trouxeram a esta cidade.
+[Becca]: Bruxo? Soube que o Barba Negra negociou com alguns representantes desse bruxo há algum tempo.
+[Heroi]: Você sabe onde posso encontrar esse Barba Negra?
+[Roger]: Não é tão simples assim, rapaz. O Barba Negra é quem controla essa cidade. É um babaca!
+[Becca]: Santos não é chamada de cidade sem lei atoa. Há algum tempo esse pirata, Edward Thatch, já era um famoso pirata nessa região.
+[Becca]: Ele juntou uma das tripulações mais fortes antes vistas e tomou o poder do antigo Reino de Santos. Colocou a cabeça do rei em uma estaca.
+[Roger]: Desde a nossa juventude nós lutamos um contra o outro. Ambos desejávamos que Santos fosse uma cidade verdadeiramente livre.
+[Roger]: Mas alguma coisa aconteceu que o Edward mudou... Após tomar a cidade pra si, ele se tornou pior que o antigo rei.
+[Becca]: Desde então a nossa tripulação tem lutado contra o Barba Negra, mas nós não conseguimos ter forças suficientes para destroná-lo.
+[Roger]: Mas hoje será dado o primeiro passo, homens, Gyahahaha!
+[Narrador]: Todos no bar se alegram e gritam para o seu capitão.
+[Heroi]: O que mudará hoje?
+[Becca]: Recentemente descobrimos que o Barba Negra está transportando uma grande quantia de armas e tesouros para os armazens no porto.
+[Becca]: Tais armas e tesouros serão contrabandeadas, gerando mais fundos para Edward. Nós queremos evitar isso.
+[Roger]: Além disso, essas armas serão nossa passagem para a luta que iremos travar com Barba Negra. 
+[Becca]: O povo se juntará a nós e então poderemos equilibrar o jogo para então destroná-lo.
+[Becca]: Se os seus tesouros foram trazidos para cá recentemente, certamente podem estar junto com esse carregamento.
+[Heroi]: Me juntarei a vocês nessa batalha.
+[Roger]: Sábia decisão! Heroi!
+[Becca]: Vamos ao plano, então.
+[Narrador]: Naquela noite, os vários grupos se dividiram e se dirigiram ao porto.
+[Becca]: Bem, capitão, temos três armazens para atacar, alguma sugestão de por onde começamos?
+[Roger]: Por mim, iríamos pelo portão da frente e assim ficaria mais fácil.
+[Becca]: Heroi... Você teria alguma proposta melhor do que esse idiota?
+[Heroi]: Não estou vendo muitos guardas, em nenhum dos três armazens... Parece que não teremos muita resistência.
+1 - Ir para o armazém da esquerda.
+2 - Ir para o armazém do meio.
+3 - Ir para o armazém da direita.
