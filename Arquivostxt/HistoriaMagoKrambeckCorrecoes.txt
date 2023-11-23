@@ -33,7 +33,7 @@ Q1
 [Heroi]: Entendo, realmente é uma lástima. Estou indo para o quarto.
 [Dono da Estalagem]: Bom descanso, viajante.
 [Narrador]: Você acaba dormindo mais que o esperado, mas se levanta e se arruma para ir para a floresta. Enquanto passa pelas casas do vilarejo, uma senhora se aproxima de você.
-[Senhora]: Mago! Por favor! Meu marido e cunhado saíram para caçar na floresta e conseguir alimentos para a vila. Eles foram bem cedo e ainda não voltaram! A vila está com fome! Tragam-nos para nós!
+[Senhora]: Mago! Por favor! Meu marido e cunhado saíram para caçar na floresta e conseguir alimentos para a vila. Eles foram bem cedo e ainda não voltaram! A vila está com fome! Pelas bênçãos da deusa da luz, tragam-nos para nós!
 1 - Certo, também estou indo para a floresta. Procurarei por eles e caso estejam bem, os enviarei para casa.
 2 - Verei o que posso fazer, caso eu os encontre, os trarei de volta.
 3 - Tenho mais o que fazer, senhora, procure outro para atormentar.

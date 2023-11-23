@@ -54,6 +54,8 @@ Q1
 [Heroi]: Um trabalho magnífico.
 [Ferreiro]: É tudo para reaver nossa floresta. Vejo que você tem um excelente arco, gostaria que eu o encantasse também?
 [Heroi]: Por favor.
+[Narrador]: O ferreiro executa sua magia élfica e encanta a madeira e a corda de seu arco.
+[Ferreiro]: Está pronto, arqueiro. Que a sua deusa da luz te guie.
 [Narrador]: O Sol começa a baixar e você percebe que o grupo de elfos que haviam saído mais cedo não retornou ao acampamento.
 1 - Seguir para a floresta para procurar o grupo de elfos.
 2 - Avisar o grupo de patrulha sobre a falta dos elfos.
@@ -221,7 +223,7 @@ Q3
 [Rhon'Aldyn]: Tolos!
 [Rhon'Aldyn]: {cuspindo sangue} Vocês podem ter me derrotado, mas meu dever está cumprido. Seus deuses foram profanados, já não os abençoam. Aos poucos nosso mestre expande seu domínio.
 [Heroi]: A quem você serve, Rhon'Aldyn?
-[Rhon'Aldyn]: O grande Netherus criará um mundo para nós que transcendemos a mortalidade. Nossos planos já estão em ação.
+[Rhon'Aldyn]: O grande Metherax criará um mundo para nós que transcendemos a mortalidade. Nossos planos já estão em ação.
 [Rhon'Aldyn]: Por que vocês não conseguem enxergar o mundo como eu vejo?
 [Heroi]: Por ser um humano, com uma vida curta, perto de vocês, posso afirmar que por ter um fim que nós, humanos, vivemos cada dia com intensidade. Por existir a morte que valorizamos a vida!
 [Heroi]: Sua influência diminuirá aqui, mas o que já foi corrompido, demorará muito para ser purificado.
@@ -237,8 +239,8 @@ Q3
 [Heroi]: Acredito que sei do que se trata, peguei esta mensagem do corpo de Rhon'Aldyn.
 [Heroi]: Nela diz que vários objetos encontrados nessa floresta, que possam ter algum valor, foram levados para a cidade portuária de Santos, para serem vendidos com a finalidade de contratar mercenários para erradicar o restante dos elfos aqui.
 [Endílien]: Tal ato deveria ser considerado uma blasfêmia...
-[Heroi]: Pelégolas, não podemos deixar que esse autoproclamado deus Netherus continue a espalhar sua influência pelo continente.
-[Endílien]: Uma vez que preciso dos meus artefatos de volta, considere buscar pistas sobre tal mestre das sombras em Santos. A cidade já é governada por foras da lei, certamente algum deles tem relação com Netherus.
+[Heroi]: Pelégolas, não podemos deixar que esse autoproclamado deus Metherax continue a espalhar sua influência pelo continente.
+[Endílien]: Uma vez que preciso dos meus artefatos de volta, considere buscar pistas sobre tal mestre das sombras em Santos. A cidade já é governada por foras da lei, certamente algum deles tem relação com Metherax.
 [Pelégolas]: A cidade é dominada por foras da lei, certamente há braços de nosso inimigo no local.
 [Endílien]: Heroi, obrigada por tudo o que você fez aqui. Como Pelégolas disse, Líriel tinha razão em enviá-lo para nós. Por favor, aceite essa benção em seu arco.
 [Narrador]: A magia da elfa percorre o cerne do seu arco, modificando as fibras da madeira. As runas gravadas pelo ferreiro passam a emanar ainda mais energia.

@@ -7,7 +7,7 @@
             "txt" : "InserirTaverneira\n"
         },
         {
-            "txt" : "[Narrador]: Após guardar a carta na sua bolsa, você se dirige à saída.\n[Taverneira]: Ei, arqueiro, você não disse o seu nome, aliás, me chamo Jessie.\n[Heroi]: Me chamo Heroi!\n[Jessie]: Volte sempre, Heroi.\n"
+            "txt" : "[Narrador]: Após guardar a carta na sua bolsa, você se dirige à saída.\n[Taverneira]: Ei, arqueiro, é meu primeiro dia aqui. Você não disse o seu nome, aliás, me chamo Jessie.\n[Heroi]: Me chamo Heroi!\n[Jessie]: Volte sempre, Heroi. Que a Deusa da Luz o abençoe.\n"
         },
         {
             "txt" : "RemoverAtor1\n"

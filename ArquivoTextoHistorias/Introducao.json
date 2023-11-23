@@ -55,7 +55,10 @@
             "txt" : "InserirBackgroundCidade\n"
         },
         {
-            "txt" : "[Narrador]: Indo em direção a praça da cidade, você avista, em meio à nevasca,\n o prédio da guilda Asas da Liberdade, uma guilda famosa em todo o continente.\n Após sentar-se em uma mesa na taverna da guilda, a taverneira vem ao seu encontro.\n"
+            "txt" : "[Narrador]: Você se encontra na Cidade Livre.\n"
+        },
+        {
+            "txt" : "Indo em direção a praça da cidade, você avista, em meio à nevasca,\n o prédio da guilda Asas da Liberdade, uma guilda famosa em todo o continente.\n Após sentar-se em uma mesa na taverna da guilda, a taverneira vem ao seu encontro.\n"
         },
         {
             "txt" : "InserirTaverneira\n"

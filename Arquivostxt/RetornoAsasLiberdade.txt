@@ -1,0 +1,75 @@
+Debaixo da neve, você está voltando para a Floresta do Krambeck. Você está com pressa, visto que tem de retornar para Asas da Liberdade, pois a cidade está ameaçada. Você deve avisar aos outros aventureiros que eles estão correndo perigo.
+Ao chegar em Krambeck, o clima é de neve, você enfrenta alguns mortos vivos e chega ao santuário onde se encontra Endílien, Pelégolas e Dryad, todos estão lutando contra mortos vivos.
+Você acaba reconhecendo os inimigos, zumbis daqueles que antes lutaram ao seu lado contra Rhon'Aldyn. Você explica o que aconteceu em Santos e entrega os artefatos para Endílien.
+Ela executa o encantamento e arvores começam a brotar do solo. Com elas, Ents, que auxiliam a purificar os mortos vivos som o poder da natureza.
+Após a luta, você se junta a Pelégolas, ele está preocupado com Líriel, pois havia recebido uma carta de Líriel sobre neve em Curitiba em uma época fora do esperado.
+
+Vocês decidem retornar juntos para Curitiba. O exército dos alto elfos retornará em seguida. Vocês pegam seus cavalos e partem.
+Chegando em Curitiba, os elfos estão lutando e Pelégolas corre direto para encontrar a General. Líriel diz que mortos vivos começaram a surgir depois algum tempo depois da neve começar a cair. Você diz que vai ajudar os elfos mas Pelégolas insiste que você retorne para Asas da Liberdade.
+
+
+Diálogos:
+
+Q1:
+[Narrador]: Você cavalga em direção à Floresta do Krambeck. Seus arredores são enevados. 
+[Narrador]: A neve carrega a magia de Netherus. Você é capaz de sentir a magia no toque com sua pele.
+[Narrador]: Chegando na floresta, em uma questão de dias, a nevasca de Netherus já havia tomado conta da paisagem.
+[Narrador]: No entanto você nota uma grande quantidade presenças malignas. Evitando-as, você vai até o santuário encontrar com os elfos da floresta.
+[Narrador]: Lá, os elfos lutam contra as forças do mal. Endílien, Pelégolas encontram-se comandando as forças contra mortos vivos.
+[Endílien]: Heroi! Seu regresso é em boa hora! Ajude-nos proteger o santuário!
+-- batalha undead archer
+[Heroi]: Esses inimigos... eram nossos camaradas da nossa luta contra Rhon'Aldyn!
+[Pelégolas]: Sim... eram elfos de outrora.
+[Endílien]: Desde que essa neve começou a cair, depois de alguns dias os mortos começaram a se levantar.
+[Heroi]: Então o povo de Santos corre perigo. Saí de lá logo após Netherus expandir sua magia pelo local.
+[Heroi]: Derrotamos o arauto do lich naquele local. Netherus havia prometido um exército imortal para aquele que controlava a cidade.
+[Heroi]: Após algumas circunstâncias consegui recuperar os seus artefatos do seu povo.
+[Narrador]: Endílien se anima com os objetos, e após recebê-los, começa a canalizar sua energia nas relíquias.
+[Endílien]: Com isso em nossas mãos, poderemos eliminar quaisquer ameaças.
+[Narrador]: Fincando a relíquia no chão e canalizando a energia do objeto, plantas começam a nascer em torno de Endílien.
+[Narrador]: Arvores frondosas crescem mesmo com o clima enevado.
+[Endílien]: Acordem, filhos de Krambeck! Ó mãe terra, proteja-nos do mal!
+[Narrador]: Mais e mais árvores cresciam, e com isso, a corrupção ia deixando o solo.
+[Endílien]: Ents, Acordem!
+[Narrador]: Das novas árvores, algumas começam a crescer mais e suas raízes começam a sair do chão, se comportando como pernas.
+[Narrador]: Os ents começam a eliminar os mortos que antes atacavam os elfos. A moral dos elfos retornava e se engrandecia a cada golpe dado pelos Ents.
+[Pelégolas]: Incrível... Esse era o poder adormecido nos artefatos que você buscava, Endílien.
+[Endílien]: Sim, com isso poderemos erradicar o mal de nossa floresta.
+[Narrador]: Após a batalha, os druidas começaram a operação de limpeza da corrupção da floresta. No entanto, a nevasca não diminuíra.
+[Pelégolas]: O poder do lich continua pairando sobre nós. Mesmo depois de tudo isso. 
+[Heroi]: Sim, a luta continuará até que Netherus seja derrotado.
+[Endílien]: É adequado pressupor que casos semelhantes estão ocorrendo por todo o continente. 
+[Endílien]: Pelégolas, acredito que com a floresta ao nosso lado novamente, poderemos nos cuidar sozinhos contra essas aparições de Metherax.
+[Endílien]: Curitiba também deve estar sofrendo com ataques semelhantes. Seu povo também precisa de você.
+[Heroi]: Netherus disse a seu servo que iria encontrá-lo no oeste, mas não sei o seu paradeiro ao certo.
+[Pelégolas]: Irei retornar imediatamente a Curitiba. Não recebo cartas da general Líriel há alguns dias. Se quiser me acompanhar, heroi. Sua companhia será bem vinda, visto que iremos ao oeste.
+[Heroi]: Suas tropas continuarão aqui na Floresta do Krambeck? Não precisa avisá-los de seu retorno?
+[Endílien]: Vão. Deixem essa questão em minhas mãos. Não tardará até que seus soldados o acompanhem, Pelégolas.
+[Pelégolas]: Obrigado, Endílien. Vamos Heroi, talvez consigamos mais informação com a general.
+
+[Narrador]: Chegando em Curitiba, havia apenas caos. Muitos mortos vivos nas ruas. Você e Pelégolas matavam alguns inimigos, enquanto cavalgavam em direção ao quartel general à procura de Líriel.
+[Pelégolas]: Como pensamos, o domínio de Metherax também chegou aqui.
+[Narrador]: Ao chegar no quartel general, os cavalos desabam ao chão devido ao cansaço.
+[Pelégolas]: General!
+[Líriel]: Pelégolas! Heroi! Vocês voltaram!
+[Pelégolas]: Sim. Finalizamos a corrupção da floresta do Krambeck. Qual é a situação?
+[Líriel]: Suas tropas já retornaram?
+[Pelégolas]: Eu e o Heroi viemos na frente. A infantaria chegará em um ou dois dias.
+[Líriel]: Nossas forças se tornaram tênues aqui na cidade. Nossos exércitos estão ocupados e ainda não retornaram tanto de Krambeck quanto de Teófilo Otoni.
+[Líriel]: E essa nevasca também não facilita nosso trabalho. Desde que ela chegou, o caos se instaurou em Curitiba.
+[Heroi]: General. Essa nevasca foi causada por aquele que corrompeu Rhon'Aldyn, o lich Metherax.
+[Líriel]: Conseguiste confrontar esse lich?
+[Heroi]: Não exatamente. Após derrotarmos Rhon'Aldyn, estive em Santos e pude ver nosso inimigo exercer seu poder com meus olhos, no entanto era apenas uma projeção astral.
+[Heroi]: Eu descobri que ele se encontra a oeste, mas não sei seu paradeiro ao certo. Vim a Curitiba procurando respostas.
+[Líriel]: Chamarei alguém que poderá nos ajudar. Guarda, busque nosso mensageiro.
+[Narrador]: Após alguns minutos, um elfo adentra a sala e Líriel se dirige a ele.
+[Líriel]: Meus homens aqui estão dizendo que sabem quem foi o causador dessa nevasca. Mas não sabem encontrá-lo, a não ser que veio do oeste.
+[Líriel]: Conte-nos a sua mensagem.
+[Mensageiro]: Certo. Nossos espiões lutando na Cidade Livre observaram um grande clarão de magia nos arredores da guilda Asas da Liberdade.
+[Heroi]: O que? a Cidade Livre está em guerra?
+[Mensageiro]: Sim, o mesmo que ocorre aqui está ocorrendo por todo o continente, lá não é exceção. 
+[Mensageiro]: Desde o clarão, a nevasca se espalhou por todo o continente e então os mortos começaram a ressurgir.
+[Pelégolas]: Acho que tens a pista que desejava, heroi.
+[Heroi]: De fato, partirei assim que eliminarmos os inimigos de Curitiba.
+[Líriel]: Não nos subestime, Heroi, daremos conta da situação aqui. Ainda mais com Pelégolas ao meu lado. Vá e elimine a causa raiz desse problema.
+[Heroi]: Entendo... Partirei imediatamente. 
