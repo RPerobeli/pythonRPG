@@ -8,7 +8,7 @@
             "txt": "InserirGuardaExterno\n"
         },
         {
-            "txt": "[Guarda]: Parados aí! A entrada em Teofilotoni de estrangeiros está proibida por ordens do nosso rei!\n[Heroi]: Nós temos um contrado de guilda, guarda.\n[Guardda]: Sinto muito, aventureiro, mas não há exceções.\n"
+            "txt": "[Guarda]: Parados aí! A entrada em Teofilotoni de estrangeiros está proibida por ordens do nosso rei!\n[Heroi]: Nós temos um contrato de guilda, guarda.\n[Guardda]: Sinto muito, aventureiro, mas não há exceções.\n"
         },
         {
             "txt": "RemoverAtor1\n"
@@ -538,7 +538,7 @@
             "txt": "RemoverAtor1\n"
         },
         {
-            "txt": "[Narrador]: Algumas semanas depois, o dia derradeiro se aprovimava.\n"
+            "txt": "[Narrador]: Algumas semanas depois, o dia derradeiro se aproximava.\n"
         },
         {
             "txt": "InserirThete\n"
@@ -921,7 +921,7 @@
             "txt": "goFelastus\n"
         },
         {
-            "txt": "[Heroi]: De fato eu não tenho nada relacionado à essa revoluçao, mas me pedir para ajudar um rei tiranico como você...\n[Heroi]: Está além do meu limite.\n"
+            "txt": "[Heroi]: De fato eu não tenho nada relacionado à essa revoluçao,\n mas me pedir para ajudar um rei tiranico como você...\n[Heroi]: Está além do meu limite.\n"
         },
         {
             "txt": "[Narrador]: Você cospe no rei, enquanto continua ajoelhado.\n"
@@ -966,7 +966,7 @@
             "txt": "[Narrador]: Devido ao choque, você perde suas forças.\n"
         },
         {
-            "txt": "[Zé Dassilva IV]: A tecnologia mágica enânica é demais para vocẽ? Achou mesmo que eu não tomaria precauções?\n[Zé Dassilva IV]: Quanta petulância... Ainda assim, farei dinheiro com você.\n"
+            "txt": "[Zé Dassilva IV]: A tecnologia mágica enânica é demais para vocẽ?\n Achou mesmo que eu não tomaria precauções?\n[Zé Dassilva IV]: Quanta petulância... Ainda assim, farei dinheiro com você.\n"
         }
     ]
 }

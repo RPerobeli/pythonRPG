@@ -72,4 +72,4 @@ Q1:
 [Pelégolas]: Acho que tens a pista que desejava, heroi.
 [Heroi]: De fato, partirei assim que eliminarmos os inimigos de Curitiba.
 [Líriel]: Não nos subestime, Heroi, daremos conta da situação aqui. Ainda mais com Pelégolas ao meu lado. Vá e elimine a causa raiz desse problema.
-[Heroi]: Entendo... Partirei imediatamente. 
+[Heroi]: Entendo... Partirei imediatamente.

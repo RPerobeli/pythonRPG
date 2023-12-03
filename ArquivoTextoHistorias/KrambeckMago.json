@@ -1,0 +1,330 @@
+{
+    "Q1":[
+        {
+            "txt" : "[Narrador]: Você se aproxima da floresta do Krambeck, já está anoitecendo, então decide dormir em uma aldeia próxima a floresta.\n"
+        },
+        {
+            "txt" : "[Narrador]: Ao entrar na aldeia, você se dirige à estalagem.\n"
+        },
+        {"txt" : "InserirDonoEstalagem\n"},
+        {
+            "txt" : "[Dono da Estalagem]: Boa noite, senhor, gostaria de um quarto?\n"
+        },
+        {
+            "txt" : "[Heroi]: Boa noite, sim, para uma pessoa, por favor. Você possui um local para eu comprar uma refeição?\n"
+        },
+        {
+            "txt" : "[Dono da Estalagem]: Bom, até temos, mas, ultimamente, não estamos oferecendo as refeições, porque estamos passando por um período de racionamento.\n"
+        },
+        {
+            "txt" : "[Heroi]: Racionamento? Está relacionado ao culto presente na floresta?\n"
+        },
+        {
+            "txt" : "[Dono da Estalagem]: Infelizmente, sim. Desde que o culto apareceu, destruindo a floresta, nossa fonte de alimento se tornou cada vez mais escassa.\n"
+        },
+        {
+            "txt" : "[Heroi]: Entendo, realmente é uma lástima. Estou indo para o quarto.\n"
+        },
+        {
+            "txt" : "[Dono da Estalagem]: Bom descanso, viajante.\n"
+        },
+        {"txt" : "RemoverAtor1\n"},
+        {
+            "txt" : "[Narrador]: Você acaba dormindo mais que o esperado, mas se levanta e se arruma para ir para a floresta. Enquanto passa pelas casas do vilarejo, uma senhora se aproxima de você.\n"
+        },
+        {"txt" : "InserirSenhora\n"},
+        {
+            "txt" : "[Senhora]: Mago! Por favor! Meu marido e cunhado saíram para caçar na floresta e conseguir alimentos para a vila.\n Eles foram bem cedo e ainda não voltaram! A vila está com fome! Pelas bênçãos da deusa da luz, tragam-nos para nós!\n"
+        },
+        {
+            "txt" : "1 - Certo, também estou indo para a floresta. Procurarei por eles e caso estejam bem, os enviarei para casa.\n2 - Verei o que posso fazer, caso eu os encontre, os trarei de volta.\n3 - Tenho mais o que fazer, senhora, procure outro para atormentar.\n"
+        },
+        {"txt" : "RemoverAtor1\n"}
+    ],
+    
+    "R1-1":[
+        {"txt" : "InserirBackgroundKrambeck\n"},
+        {
+            "txt" : "[Narrador]: Ao entrar na floresta, há uma pressão maligna no ar, no início a floresta não apresenta diferenças de uma floresta normal,\n porém, aos poucos, a paisagem muda para clareiras de arvores mortas e se nota como a floresta está modificada, corrompida e mais aterrorizante.\n"
+        },
+        {
+            "txt" : "[Narrador]: Você observa pequenos riachos com uma água de aspecto esverdeado, aparentemente, contaminada.\n"
+        },
+        {
+            "txt" : "[Narrador]: Enquanto andava pela floresta, você escuta um barulho ao longe, percebendo que é uma luta, você corre para verificar, e se depara com dois aldeões.\n"
+        },
+        {
+            "txt" : "[Narrador]: Ambos estão lutando com uma assombração, porém, um deles está ferido na perna. Vendo a dificuldade dos dois, você engaja na luta para salvá-los.\n"
+        },
+        {"txt" : "BatalhaWraith\n"},
+        {"txt" : "InserirAldeao1\n"},
+        {
+            "txt" : "[Aldeão 1]: Obrigado, mago, não sei o que seria de nós sem sua ajuda, viemos na floresta para tentar caçar algo para nossa aldeia, que não é muito longe daqui.\n"
+        },
+        {
+            "txt" : "[Aldeão 1]: Infelizmente, enfrentamos assombrações e meu irmão fraturou uma das pernas.\n"
+        },
+        {
+            "txt" : "[Heroi]: Sim, estou vindo de sua vila. A esposa de um de vocês está bastante preocupada.\n"
+        },
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirAldeao2\n"},
+        {
+            "txt" : "[Aldeão 2]: Haha, é a minha mulher. Preocupada? Ela só quer a comida.\n Ela deve ficar feliz, conseguimos umas frutas e um javali dos grandes.\n Ela vai odiar ter que cuidar de mim, mas vai ter comida na mesa.\n"
+        },
+        {
+            "txt" : "[Narrador]: Ele aponta para uma carroça perto de onde estão. Nela há um javali morto.\n"
+        },
+        {"txt" : "RemoverAtor1\n"},
+        {
+            "txt" : "[Narrador]: Você observa o javali e percebe que a carne dele já está corrompida, devido à água contaminada pelas magias dos bruxos.\n"
+        },
+        {
+            "txt" : "[Heroi]: Sinto muito, mas esse javali não é mais comestível... Observem a ferida que vocês fizeram, a carne já está esverdeada.\n"
+        },
+        {"txt" : "InserirAldeao1\n"},
+        {
+            "txt" : "[Aldeão 1]: Não pode ser... Tivemos tanto trabalho para capturá-lo.\n"
+        },
+        {
+            "txt" : "[Heroi]: Agradeçam que estão vivos, voltem para suas famílias, eu estou buscando a fonte desse mal. Se tudo der certo, vocês poderão comer melhor em breve.\n"
+        },
+        {
+            "txt" : "[Aldeão 1]: Realmente, não vamos conseguir ajudá-lo nesse estado, vou retornar com meu irmão para a vila... Tenha sorte em sua jornada, mago.\n"
+        },
+        {"txt" : "RemoverAtor1\n"}
+    ],
+    "R1-2":[
+        {"txt" : "InserirBackgroundKrambeck\n"},
+        {
+            "txt" : "[Narrador]: Ao entrar na floresta, há uma pressão maligna no ar, no início a floresta não apresenta diferenças de uma floresta normal,\n porém, aos poucos, a paisagem muda para clareiras de arvores mortas e se nota como a floresta está modificada,\n corrompida e mais aterrorizante.\n"
+        },
+        {
+            "txt" : "[Narrador]: Você observa pequenos riachos com uma água de aspecto esverdeado, aparentemente, contaminada.\n"
+        },
+        {
+            "txt" : "[Narrador]: Seguindo pelo riacho você se depara com 2 corpos. Homens, de meia idade, provavelmente, os familiares da moça da aldeia.\n"
+        },
+        {
+            "txt" : "[Narrador]: Enquanto você se aproxima para remexer nos corpos, os cadáveres se contorcem e se levantam, na forma de assombrações.\n"
+        },
+        {"txt" : "BatalhaWraith\n"},
+        {"txt" : "BatalhaZumbi\n"},
+        {
+            "txt" : "[Heroi]: Aquela senhora ficará triste...\n"
+        },
+        {"txt" : "RemoverAtor1\n"}
+    ],
+    "R1-3":[
+        {"txt" : "InserirBackgroundKrambeck\n"},
+        {
+            "txt" : "[Narrador]: Ao entrar na floresta, há uma pressão maligna no ar, no início a floresta não apresenta diferenças de uma floresta normal,\n porém, aos poucos, a paisagem muda para clareiras de arvores mortas e se nota como a floresta está modificada,\n corrompida e mais aterrorizante.\n"
+        },
+        {
+            "txt" : "[Narrador]: Você observa pequenos riachos com uma água de aspecto esverdeado, aparentemente, contaminada.\n"
+        }
+    ],
+    "Q2":[
+        {
+            "txt" : "[Narrador]: Você adentra ainda mais na floresta e escuta o som de uma batalha.\n Ao se aproximar, você se esconde e observa uma escaramuça, em uma clareira, entre elfos e o que parecem ser acólitos do dito culto.\n Os elfos lutam ferozmente, mas os bruxos tem a magia negra ao seu lado.\n"
+        },
+        {
+            "txt" : "1 - Entrar na batalha ao lado dos elfos.\n 2 - Continuar escondido e esperar o desenrolar da batalha.\n"
+        }
+    ],
+    "R2-1":[
+        {
+            "txt" : "[Narrador]: Você salta na clareira para ajudar os elfos.\n"
+        },
+        {"txt" : "BatalhaImp\n"},
+        {"txt" : "BatalhaAcolito\n"},
+        {
+            "txt" : "[Narrador]: Após a batalha, o grupo consegue capturar um dos bruxos do culto. Um alto elfo se aproxima para saudá-lo.\n"
+        },
+        {"txt" : "InserirPelegolas\n"},
+        {
+            "txt" : "[Alto Elfo]: Obrigado, mago, sua ajuda garantiu nossa vitória em cima desses decrépitos. Me chamo Pelégolas e tenho a missão de auxiliar os elfos da floresta em sua resistência contra esses bruxos malígnos.\n"
+        },
+        {
+            "txt" : "[Heroi]: Disponha, também vim para esta floresta com a finalidade de eliminar esse mal.\n"
+        },
+        {
+            "txt" : "[Pelégolas]: Talvez, possamos trabalhar juntos, então. Este arqueiro também veio enviado de Curitiba como reforço para eliminar o bruxo Rhon'Aldyn.\n"
+        },
+        {
+            "txt" : "[Narrador]: O arqueiro é o único humano da companhia de elfos, eles, aparentemente, o respeitam bastante.\n"
+        },
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirArqueiro\n"},
+        {
+            "txt" : "[Arqueiro]: O bruxo é um mago renegado da cidade de Curitiba.\n Ele se voltou para a magia negra após conseguir um novo mestre.\n Parte da nossa missão é justamente adquirir mais informação destes necromantes.\n"
+        },
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirAcolito\n"},
+        {
+            "txt" : "[Acólito]: Hahahaha, não importa o que eu diga, os planos de meu mestre já foram um sucesso!\n"
+        },
+        {
+            "txt" : "[Narrador]: Pelégolas dá um chute no acólito, que cai deitado no chão, e ameaça o inimigo com uma adaga em seu pescoço.\n"
+        },
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirPelegolas\n"},
+        {
+            "txt" : "[Pelégolas]: Então, o que vocês pretendem? Desejo ter o prazer de acabar com os seus planos.\n"
+        },
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirAcolito\n"},
+        {
+            "txt" : "[Acólito]: A floresta já é nossa, nós já destruímos cada traço de seus deuses, elfos inferiores.\n Suas ervas nunca mais vão crescer aqui seus bardeneiros!\n Vocês, que não abraçaram nosso único deus, como o mestre Rhon'Aldyn, nunca terão espaço no novo mundo.\n"
+        },
+        {
+            "txt" : "[Acólito]: A nós foi revelada a verdade e conferido poder para destruir qualquer um que ficar no nosso caminho.\n"
+        },
+        {
+            "txt" : "[Acólito]: Vocês nunca atravessarão a barreira do santuário! ACABOU A MAMATA!\n"
+        },
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirPelegolas\n"},
+        {
+            "txt" : "[Pelégolas]: E quem seria esse deus de vocês?\n"
+        },
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirAcolito\n"},
+        {
+            "txt" : "[Acólito]: Vocês nunca poderão ir contra o poderoso...\n"
+        },
+        {
+            "txt" : "[Narrador]: Ao tentar pronunciar o nome do deus, a cabeça do acólito explode instantaneamente.\n"
+        },
+        {
+            "txt" : "[Narrador]: Todos a volta se assustam.\n"
+        },
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirArqueiro\n"},
+        {
+            "txt" : "[Arqueiro]: Vamos ao santuário, então.\n"
+        },
+        {"txt" : "RemoverAtor1\n"}
+    ],
+    "R2-2":[
+        {"txt":"[Narrador]: Você segue escondido e observa a batalha, de repente, você sofre uma coronhada na cabeça e fica atordoado.\n"},
+        {"txt":"[Narrador]: Ao acordar você percebe que está amarrado e de frente para um acólito.\n"},
+        {"txt" : "InserirAcolito\n"},
+        {"txt":"[Acólito]: Ficas rastejanto pela nossa floresta, nos observando... O que veio fazer aqui, mago?\n"},
+        {"txt":"[Narrador]: Você percebe uma oportunidade para adquirir informação.\n"},
+        {"txt":"[Heroi]: Estou buscando um culto. Estou em busca de poder.\n"},
+        {"txt":"[Acólito]: HeHeHe... entendo... eu posso te dar poder... se você seguir as nossas regras.\n"},
+        {"txt":"[Heroi]: Que regras? Quem é você?\n"},
+        {"txt":"[Acólito]: Aqueles que transcendem a esse mundo não se importam com nomes, se tomares nosso deus para ti, perceberás quão ínfima é a sua existência.\n"},
+        {"txt":"[Heroi]: E por que eu acreditaria em você?\n"},
+        {"txt":"[Acólito] Porque a nós foi conferido poder de magia que até vocês magos não compreendem.\n"},
+        {"txt":"[Heroi]: Então me mostre.\n"},
+        {"txt":"[Narrador]: O acólito, coloca uma pedra em seu caximbo, usa de seu poder para impressionar você, invocando golens demoníacos. Com socos, os golens derruba árvores no entorno.\n"},
+        {"txt":"[Narrador]: Realmente... como eu poderia obter esse poder?\n"},
+        {"txt":"[Acólito]: Vou te levar ao nosso santuário. Há uma barreira para não convertidos mas nosso mestre, Rhon'Aldyn, pode resolver isso.\n"},
+        {"txt":"[Narrador]: Um zumbido se aproxima e o acólito sofre uma flechada bem na cabeça.\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirPelegolas\n"},
+        {"txt":"[Alto Elfo]: Você está bem, mago? Escutamos um som nas proximidades e encontrei vocês.\n"},
+        {"txt":"[Heroi]: Bom, eu estava interrogando esse desgraçado, até você aparecer.\n"},
+        {"txt":"[Alto Elfo]: Hahaha! Para mim, parecia que você que estava sendo interrogado.  \n"},
+        {"txt":"[Heroi]: De qualquer forma, obrigado. Consegui algumas informações, pelo menos. Me chamo heroi.\n"},
+        {"txt":"[Pelégolas]: Pelégolas, ao seu dispor. Inclusive, belo tiro, arqueiro, para um não elfo.\n"},
+        {"txt":"[Pelégolas]: Impressionante que alguém consiga acertar esse tiro sem a nossa erva.\n"},
+        {"txt":"[Narrador]: Um humano com seu arco surge das árvores, com o restante da compania.\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirArqueiro\n"},
+        {"txt":"[Arqueiro]: Algum dia você chega no meu nível Haha.\n"},
+        {"txt":"[Narrador]: Pelégolas olha com desdém para o humano, mas ri, sabendo que se trata de uma implicância amigável.\n"},
+        {"txt":"[Heroi]: Bom, o que você faz aqui, Pelégolas?\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirPelegolas\n"},
+        {"txt":"[Pelégolas]: Bom, eu minha companhia estamos aqui para libertar essa florestas de um bruxo.\n"},
+        {"txt":"[Heroi]: Rhon'Aldyn?\n"},
+        {"txt":"[Pelégolas]: O próprio.\n"},
+        {"txt":"[Heroi]: O acólito ali ia me levar até ele... mas parece que há uma barreira no caminho.\n"},
+        {"txt":"[Pelégolas]: Entendo... Tu conseguiste mais informação?\n"},
+        {"txt":"[Heroi]: Nada muito útil, apenas que eles seguem a um deus que lhes prometeu poder além da compreensão.E aparentemente a pedra que ele jogou no seu caximbo é a fonte desse poder.\n"},
+        {"txt":"[Pelégolas]: Meus companheiros estão indo em direção ao santuário de Rhon'Aldyn. Vem conosco?\n"},
+        {"txt":"[Heroi]: Podemos nos ajudar.\n"},
+        {"txt":"[Narrador]: Você se junta ao grupo do elfo.\n"},
+        {"txt" : "RemoverAtor1\n"}
+    ],
+    "Q3":[
+        {"txt" : "InserirPelegolas\n"},
+        {"txt":"[Narrador]: Vocês seguem para o santuário no centro da floresta. Até encontrarem uma barreira que impede vocês de passarem.\n"},
+        {"txt":"[Pelégolas]: Bom, chegamos.\n"},
+        {"txt":"[Heroi]: Esse tipo de barreira costuma ser mantida por símbolos mágicos geradores da barreira.\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirArqueiro\n"},
+        {"txt":"[Arqueiro]: Enquanto fazíamos o reconhecimento, eu vi um possível local desses. Um obelisco com runas por toda a sua estrutura emanava magia negra.\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirPelegolas\n"},
+        {"txt":"[Pelégolas]: Teremos que nos dividir para destruir esses obeliscos.\n"},
+        {"txt":"[Pelégolas]: Heroi, pegue metade da minha compania, encontre e destrua o obelisco do leste.\n Ficaremos com o obelisco oeste e parte das nossas forças ficará para iniciar o ataque assim que a barreira for desfeita.\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt":"[Narrador]: Após procurarem, sua equipe encontra o obelisco.\n"},
+        {"txt" : "InserirBackgroundObelisco\n"},
+        {"txt":"[Narrador]: No entanto, no momento em que você iria conjurar a magia para destruí-lo, 2 elfos voam para longe,\n você olha para o lado e uma poderosa hidra, com alguns acólitos,todos eles colocando pedras em seus caximbos, atacam sua equipe.\n"},
+        {"txt":"[Heroi]: CUIDEM DOS ACÓLITOS E DOS DEMÔNIOS!\n"},
+        {"txt" : "BatalhaHidra1\n"},
+        {"txt":"[Narrador]: Após a batalha, há muitos feridos e algumas baixas.\n"},
+        {"txt":"[Heroi]: Vou destruir logo esse lado.\n"},
+        {"txt":"[Narrador]: Após conjurar um grande 'SOU EU BOLA DE FOGO', você destrói o obelisco com um calor que tá de matar.\n Você consegue sentir o poder da magia da barreira caindo e aguarda o outro time para que a barreira se dissipe totalmente.\n"},
+        {"txt":"[Narrador]: Pouco tempo depois a barreira é dissipada.\n"},
+        {"txt":"[Heroi]: Vamos!\n"},
+        {"txt" : "InserirSantuario\n"},
+        {"txt":"[Narrador]: Você adentra o santuário e se encontra com os outros 2 times. Um grande altar está na frente deles e, nele, o bruxo aparece.\n"},
+        {"txt" : "InserirRhonAldyn\n"},
+        {"txt":"[Rhon'Aldyn]: Vejo que conseguiram chegar até aqui. Que agradável vê-lo aqui, meu caro Pelégolas.\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirPelegolas\n"},
+        {"txt":"[Pelégolas]: Triste que eu não possa dizer o mesmo. Rhon'Aldyn.\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirRhonAldyn\n"},
+        {"txt":"[Rhon'Aldyn]: Ora, por que tanta hostilidade? Estou trazendo aos elfos uma evolução, um caminho para o novo mundo, uma salvação.\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirPelegolas\n"},
+        {"txt":"[Pelégolas]: É incrível como sua mente se distorceu ao longo dos anos. Morra!\n"},
+        {"txt":"[Narrador]: Pelégolas saca seu arco, mas ao mesmo tempo, Rhon'Aldyn conjura uma magia que estilhaça energia negra por toda a sala.\n Você e o humano arqueiro conseguem desviar.\n Todos os outros são atingidos e morrem instantâneamente, exceto Pelégolas, que teve seu  braço ferido.\n"},
+        {"txt" : "BatalhaRhonAldyn\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirRhonAldyn\n"},
+        {"txt":"[Rhon'Aldyn]: {cuspindo sangue} Vocês podem ter me derrotado, mas meu dever está cumprido. Seus deuses foram profanados, já não os abençoam. Seus protetores foram exterminados. Aos poucos nosso mestre expande seu domínio.\n"},
+        {"txt":"[Heroi]: Quem é o seu mestre?\n"},
+        {"txt":"[Rhon'Aldyn]: Hehehehe... Por que te contaria, tolo? Apenas esperem e se debatam, pois tudo que fizerem de nada servirá.\n"},
+        {"txt":"[Narrador]: O bruxo morre com suas informações.\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirArqueiro\n"},
+        {"txt":"[Arqueiro]: Sua influência diminuirá aqui, mas o que já foi corrompido, demorará muito para ser purificado.\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt" : "InserirPelegolas\n"},
+        {"txt":"[Pelégolas]: Vamos retornar ao acampamento. Heroi, obrigado pela sua ajuda, foi fundamental.\n"},
+        {"txt" : "RemoverAtor1\n"},
+        {"txt":"[Narrador]: Após os elfos irem embora, você se encontra novamente sozinho e sente uma forte dor.\n Seu peito dói e um círculo de invocação surge a sua volta.\n"},
+        {"txt":"[Narrador]: Usando sua mana, a Dryad é invocada no altar onde você se encontra.\n"},
+        {"txt" : "InserirDryad\n"},
+        {"txt":"[Dryad]: Vejo que conseguiu, jovem mago heroi.\n"},
+        {"txt":"[Heroi]: O que foi isso? Pensei que iria morrer.\n"},
+        {"txt":"[Dryad]: Foi apenas uma marca que deixei em você para quando fosse chegada a hora.\n"},
+        {"txt":"[Dryad]: Uma vez que você eliminou esse bruxo, posso tomar posse da nossa floresta novamente.\n"},
+        {"txt":"[Narrador]: A  dríade caminha em torno do altar com um olhar de tristeza.\n"},
+        {"txt":"[Dryad]: As árvores choram. Muito foi destruído.\n"},
+        {"txt":"[Heroi]: A corrupção tomou conta de muitas áreas. Será difícil recuperar... Muitas criaturas estão corrompidas e as matas, assombradas.\n"},
+        {"txt":"[Dryad]: Não tema heroi. Com meus poderes, consigo recuperar a floresta.\n"},
+        {"txt":"[Dryad]: O que me preocupa é a natureza desses poderes concedidos a Rhon'Aldyn.\n"},
+        {"txt":"[Heroi]: Dryad, sobre o mestre do bruxo, ele se chama Netherus e é cultuado um Deus.\n"},
+        {"txt":"[Dryad]: Willhelm e os outros continuaram suas pesquisas e parece que esse 'Deus' assume diversas formas, bem como possui influência em diversos lugares.\n"},
+        {"txt":"[Heroi]: Por todo o continente, segundo Rhon'Aldyn.\n"},
+        {"txt":"[Heroi]: Não posso deixar que esse autoproclamado deus continue a espalhar sua influência pelo continente.\n"},
+        {"txt":"[Dryad]: De fato, ele está se provando uma ameaça maior que a esperada.\n"},
+        {"txt":"[Dryad]: O tipo de magia no ambiente... Eu já senti esse tipo de poder antes.\n"},
+        {"txt":"[Dryad]: Se me recordo bem é um tipo de magia antiga, usada por sacerdotes em Juazeiro.\n"},
+        {"txt":"[Heroi]: Juazeiro? A cidade desértica?\n"},
+        {"txt":"[Dryad]: Sim... Em tempos anteriores, Juazeiro era uma cidade de flora muito rica.\n No entanto por usar esse tipo de magia, uma catástrofe se abateu sobre o reino.\n"},
+        {"txt":"[Heroi]: Entendo... Netherus provavelmente está relacionado a Juazeiro... Creio que terei que investigar mais.\n"},
+        {"txt":"[Heroi]: Partirei imediatamente.\n"},
+        {"txt":"[Dryad]: Agradeço por tudo, heroi. Desejo-te uma jornada segura.\n"},
+        {"txt" : "RemoverAtor1\n"}
+    ]
+}

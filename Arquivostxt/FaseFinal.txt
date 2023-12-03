@@ -2,17 +2,157 @@
 Ao chegar na cidade Livre, em Asas da Liberdade, a cidade se encontra aparentemente deserta, mas ao adentrar mais as ruas, você percebe a presença de inimigos mortos vivos e demônios. Após eliminá-los você se dirige para a guilda, onde, ao entrar você encontra os cidadãos fazendo o último bastião de sobrevivência. Jessie te recebe. Jessie conta que não há aventureiros na cidade pois todos estão em missões em lugares distantes. Você diz que também estaria se não fosse um problema de um lich e diz que esses mortos são causados por ele. Teve que retornar correndo.
 
 Jessie agradece que você está ali, e que você seguiu o aviso dela. Dessa forma será fácil ela eliminá-lo com as próprias mãos. Ela começa a sugar a energia dos cidadãos restantes e lança um golpe mágico usando essa energia. Os cidadãos caem sem forças, ainda que vivos.
-Jessie se transforma no Lich Netherus e revela todo o seu plano. Criar uma utopia para que todos possam viver eternamente, esteve crescendo e manipulando seres a alinharem seus ideais para que ganhasse mais poder. Você era para ter sido apenas mais um homem que deveria estar longe em uma aventura, mas as circunstâncias te levaram a tentar derrubar o lich. A ideia do lich é, então usar seus poderes para tornar você mais um de seu exército. Assim como o fez com o mestre da guilda. 
+Jessie se transforma no Lich Metherax e revela todo o seu plano. Criar uma utopia para que todos possam viver eternamente, esteve crescendo e manipulando seres a alinharem seus ideais para que ganhasse mais poder. Você era para ter sido apenas mais um homem que deveria estar longe em uma aventura, mas as circunstâncias te levaram a tentar derrubar o lich. A ideia do lich é, então usar seus poderes para tornar você mais um de seu exército. Assim como o fez com o mestre da guilda. 
 Nesse momento o Death Knight (mestre da guilda) aparece.
 O lich vai para sua cidade flutuante, destruindo o telhado de Asas da liberdade. A cidade flutuante são as ruínas do lugar onde fora seu reino.
 
-Ao chegar na cidade há lutas com valquírias negras. Adentrando ao castelo você encontra Netherus. Uma breve conversa se desenrola, o lich luta com você.
+Ao chegar na cidade há lutas com valquírias negras. Adentrando ao castelo você encontra Metherax. Uma breve conversa se desenrola, o lich luta com você.
 
 Você morre. No entanto, na sua consciência a Deusa da Luz se manifesta, e concede a você sua benção, para que você derrote o Lich.
 
 Finais:
 Bom: Após a derrota do lich, a magia negra se dispersa, toda a magia daquele lugar começa a cessar, A benção da deusa se esvai junto. A neve tbm para de cair. Ao voltar para asas da liberdade, o restante dos moradores te agradecem e te exaltam. Você ajudará a reconstruir e cidade e então continuará vivendo a vida de aventureiro.
 
-Neutro: Após a derrota do lich, a benção da deusa se esvai mas a magia negra continua operando. Foram séculos de Netherus condensando todo esse poder para si. Apesar da queda do lich alguém precisa controlar os mortos vivos. Você absorve toda a magia negra, e com isso é capaz de controlar os mortos vivos e a cidade flutuante. Você acaba transformando a cidade flutuante em uma grande prisão dos mortos, controlados por você. E você termina a vida em isolamento.
+Neutro: Após a derrota do lich, a benção da deusa se esvai mas a magia negra continua operando. Foram séculos de Metherax condensando todo esse poder para si. Apesar da queda do lich alguém precisa controlar os mortos vivos. Você absorve toda a magia negra, e com isso é capaz de controlar os mortos vivos e a cidade flutuante. Você acaba transformando a cidade flutuante em uma grande prisão dos mortos, controlados por você. E você termina a vida em isolamento.
 
-Mau: Após a derrota do lich, a benção da deusa se esvai mas a magia negra continua operando. Você sente o quão grande é aquele poder. Lembra de todos aqueles que vocÊ encontrou na sua viagem, mas também pensa no futuro e nas coisas que poderia fazer tendo aquele poder. Com isso em mente você sobe as escadas, senta no trono do lich e absorve toda a magia que ele havia condensado em seu corpo por séculos. Com isso criará um império onde você governará com poder supremo!
+Mau: Após a derrota do lich, a benção da deusa se esvai mas a magia negra continua operando. Você sente o quão grande é aquele poder. Lembra de todos aqueles que você encontrou na sua viagem, mas também pensa no futuro e nas coisas que poderia fazer tendo aquele poder. Com isso em mente você sobe as escadas, senta no trono do lich e absorve toda a magia que ele havia condensado em seu corpo por séculos. Com isso criará um império onde você governará com poder supremo!
+
+
+Diálogos:
+
+Q1
+[Narrador]: Ao chegar na Cidade Livre, você não encontra o embate esperado, apenas mortos vivos pelas ruas.
+[Narrador]: Você segue abrindo caminho entre os inimigos em direção à Asas da Liberdade. Ao se aproximar você escuta o som de batalha.
+[Narrador]: No portão principal da guilda, encontram-se os servos do lich tentando forçar passagem, sendo parados por uma barricada.
+[Aldeão]: Empurrem-nos!!!!
+[Espírito Maldito]: Acabemos logo com isso, quebrem-nos!
+[Narrador]: Você avança para o espírito, vendo que ele comanda os inimigos naquela batalha. O espírito percebe sua aproximação.
+[Espírito Maldito]: Não tolerarei adversidades.
+--batalha Espírito maldito
+[Jessie]: Heroi! Finalmente um aventureiro retornou para cá!!!
+[Heroi]: Jessie, o que está acontecendo? Onde estão todos?
+[Jessie]: Não havia muitos guardas. Todos foram mortos por esses monstros!
+[Jessie]: Fizemos essa barricada e todos os que sobreviveram a essa infestação estão aqui dentro.
+[Heroi]: Onde estão os outros aventureiros?
+[Jessie]: Eles saíram em missões muito longe daqui. Você é o primeiro a retornar.
+[Heroi]: Entendo. Eu voltei pois há um inimigo que precisa ser derrotado. E parece que a fonte de poder dele se originou aqui na Cidade Livre.
+[Jessie]: Que coisa horrível! Agradeço que você está aqui então, Heroi, dessa forma poderemos conversar face a face.
+[Jessie]: O tolo do Edward não foi o suficiente.
+[Narrador]: Jessie começa a sugar a alma das pessoas à sua volta e te atinge com uma poderosa magia.
+[Narrador]: Você se choca com a parede e fica atordoado.
+[Narrador]: Todos à volta caem exaustos, ou inconscientes.
+[Jessie]: Heroi, você já ouviu falar de Brasília? Um reino de outrora, com riquezas infindáveis, recursos abundantes e um povo próspero.
+[Narrador]: Nesse momento Jessie assume sua forma de lich.
+[Metherax]: Eu era o rei de Brasília. Meu povo era feliz, rico, farto.
+[Metherax]: Mas eventualmente eles se entristeciam, caro Heroi. Sabe o porquê? Por que os ventos da mudança chegavam.
+[Metherax]: A mudança é inevitável. O tempo é o maior causado de tristeza desse mundo. 
+[Metherax]: Com ele, entes queridos se vão. A vitalidade se esvai. Grandes monumentos apodrecem. Lâminas perdem o fio e enferrujam.
+[Metherax]: Como rei, meu dever era garantir que meu povo fosse feliz.
+[Metherax]: Paralizar o tempo de uma pessoa, tornando-a imortal. 
+[Metherax]: Pesquisei muito para adquirir a imortalidade para meu povo. Todos deveriam ter a perpetuidade.
+[Metherax]: No entanto... Eu falhei... Ao realizar o ritual, toda Brasília foi consumida pela minha magia.
+[Metherax]: Esposa, filhos, servos... meu povo em sua totalidade deu a vida para garantir a imortalidade somente a mim.
+[Heroi]: Seu louco...
+[Metherax]: Não... estou lúcido. Eles ofertaram a vida para que eu pudesse me aprimorar mais, para garantir a felicidade não somente do meu povo mas como de todo o mundo!
+[Metherax]: Veja bem... Seu dever como aventureiro não é tornar a vida das pessoas melhores? 
+[Metherax]: Imagine garantir que ninguem mais sofra com doenças, fome ou sono? Ninguem mais deverá sofrer ao ver o padecer de um familiar querido.
+[Metherax]: Pense bem. Meu Inverno Eterno é a salvação para todas as raças deste mundo.
+[Metherax]: Junte-se a mim, Heroi. Juntos faremos um mundo melhor para aqueles que abraçarem o pós vida!
+[Narrador]: Após finalmente se levantar, ainda um pouco cambaleante, você saca sua arma e aponta para o lich.
+[Heroi]: Você se esquece que nem todos pensam como você e que esses seres também devem ter a oportunidade de habitarem nosso mundo como mortais.
+[Narrador]: Você tenta acertar um golpe em Metherax, no entanto o golpe é aparado por um guerreiro.
+[Metherax]: Entendo... é mesmo uma pena. Tu pretendes se tornar uma inconveniência até o fim...
+[Metherax]: Eu tive todo o trabalho de garantir que todos os aventureiros mais fortes de Asas da Liberdade fossem para os mais longíquos confins do continente.
+[Metherax]: O único que restou foi ele... O fundador e mestre da guilda Asas da Liberdade e agora meu cavaleiro da morte, Davion Stormfury! 
+[Davion]: ..........
+[Metherax]: Ele foi formidável em sua resistência, mas foi em vão. Atualmente ele tem o prazer de servir a mim e ao meu propósito.
+[Heroi]: Senhor Davion...
+[Metherax]: Acabe com isso, Davion, elimine esta última inconveniência. Estarei na cidadela para canalizar mais de meu poder no ritual.
+[Davion]: ......... Sim, milorde.
+[Heroi]: Senhor Davion, acorde dessa hipnose!
+[Davion]: .........
+[Metherax]: Usando seu poder, Metherax destrói o teto da guilda e acima há uma ilha flutuante, gigantesca. Ele se teleporta para aquele local.
+-- batalha com o DK
+[Narrador]: Após derrotar o arauto do inimigo, você acaba por eliminar o vínculo entre ele e o lich. Dessa forma Davion recobra a consciência. 
+[Davion]: O que está acontecendo aqui... Eu estava lutando contra a Jessie... Minha mente está turva.
+[Narrador]: Nesse momento retornaram à sua mente todas as memórias desde que fora derrotado.
+[Davion]: A Jessie! Ela me matou... Mas como estou vivo? Meu corpo... está frio. Eu lutei, contra você!! 
+[Heroi]: Senhor Davion, a Jessie na verdade se chama Metherax, e eu tenho que ir impedí-la. Por favor, fique aqui e descanse.
+[Davion]: Ele está la em cima, não é?
+[Heroi]: Sim.
+[Davion]: Em minha memórias de quando estava sob o controle do desgraçado, me vi utilizando essa pedra para me teleportar para a fortaleza dele.
+[Davion]: No momento, é a única forma com a qual posso contribuir.
+[Narrador]: O cavaleiro te entrega uma pedra rúnica, com inscrições de uma língua antiga gravadas nela.
+[Heroi]: Obrigado, mestre Davion.
+[Narrador]: Você utiliza o poder da pedra, e com isso uma luz aparece à sua volta e quando você percebe já está no que parece ser a cidadela do lich.
+[Narrador]: O ambiente é uma cidade em ruínas, mas ao fundo se apresenta um grande castelo sinistro. 
+[Heroi]: Ruínas daquilo que fora uma grande cidade, provavelmente isto é o que restou do seu ritual maligno, Metherax...
+[Narrador]: Nos portões do castelo uma silhueta aparece.
+[Narrador]: Ela se revela uma cavaleira. Carregando uma grande alabarda com graciosidade, ela dá alguns passos à frente e te aborda. 
+[Rainha Valquíria]: Este é um local sagrado do grande lich Metherax. Eu, como rainha das valquírias, guardo este local e sua presença não é permitida aqui.
+[Rainha Valquíria]: Aviso-te para que se retire, ou serei obrigada a iniciar combate.
+[Narrador]: Senhora valquíria, vim acabar com Metherax e com todos os que o seguem...
+[Rainha Valquíria]: Entendo. No entanto, não sairá daqui com vida. Morra!
+--combate Rainha Valquíria
+[Narrador]: A alabarda quebrada ao chão, o espírito da rainha valquíria deixa o corpo. Já sem a magia negra do lich, A verdadeira Rainha valquíria é capaz de descansar.
+[Rainha Valquíria]: Devo a ti gratidão, humano... Metherax me envenenou, mas agora posso retornar para o lado de minha deusa. Que a Deusa da Luz o abençoe.
+[Narrador]: O espírito da valquíria ascende aos céus. 
+[Narrador]: Ao entrar nos domínios do castelo, você se sente sendo observado. Você está sendo rodeado por inimigos.
+[Narrador]: Lobos começam a se aproximar de você, rosnando com suas bocas salivando, ansiosos por sua nova presa.
+[Narrador]: Uma figura surge das sombras.
+[Senhor dos Lobisomens]: Não esperávamos que alguém conseguiria chegar até este castelo, heroi. Você me surpreendeu.
+[Senhor dos Lobisomens]: No entanto, agradeço fortemente que essa oportunidade apareceu, assim poderei me vingar de você.
+[Heroi]: Acredito que errou de alvo, elfo, nunca o vi antes. 
+[Senhor dos Lobisomens]: Você pagará por ter matado minha irmã, seu imundo!
+[Narrador]: O elfo à sua frente se transforma em um Lobo Infernal.
+-- batalha Senhor dos Lobisomens
+[Senhor dos Lobisomens]: Seu desgraçado... Você pagará por tudo...
+[Narrador]: Ao perder o seu senhor, os lobos que o rodeavam se debandam.
+[Narrador]: Você segue pelo castelo abandonado e chega em uma sala com um monumento bem no centro. Um moça se encontra ajoelhada em frente ao monumento.
+[Narrador]: Chamas verde-azuladas se acendem e a mulher se levanta. Ao se aproximar, você consegue perceber os chifres e suas características demoníacas.
+[Demônio Superior]: Ora ora, heroi, você quase chegou no nosso mestre Metherax. Ele encontra-se logo à frente.
+[Heroi]: Acredito que você poderia me deixar passar, então?
+[Demônio Superior]: Bem humorado você, espero que divirta-se muito no inferno.
+--batalha Demonio superior
+[Narrador]: Após ser derrotada, a demônio queima até não restarem nem as cinzas.
+[Narrador]: Você segue adiante e entra na sala do trono. Um local profanado, tomado pela magia dos mortos. 
+[Narrador]: Metherax se encontra na sala canalizando sua magia.
+[Metherax]: Heroi, você não desiste de me atrapalhar. Nem com todos os meus subordinados eu consegui pará-lo.
+[Heroi]: Inserir mais obstáculos no meu caminho não vai me impedir de chegar até você.
+[Metherax]: Logo, terei que pará-lo com minhas próprias mãos.
+--batalha Lich 1
+[Metherax]: Tu não deves sentir-se impotente, sua morte aqui será sua salvação, heroi. 
+[Metherax]: Sucumba e retorne como meu servo.
+[Narrador]: Sua visão fica cada vez mais escura e sua mente se esvai.
+--Background tela escura.
+[Narrador]: Uma luz aparece em sua visão. A luz vai aumentando até surgir uma silhueta surgir na sua frente.
+[Deusa da Luz]: Jovem Heroi, venho acompanhando sua jornada. Muitos oram por ti, solicitando que eu o acompanhe.
+[Deusa da Luz]: Tu não és perfeito, mas luta de acordo com suas convicções. Dar-te-ei minha bênção pois esse momento não deve ser o seu fim, muitos ainda hão de solicitar sua ajuda.
+[Narrador]: Metherax encontra-se na tentativa de ressucitá-lo com sua magia, mas uma forte luz surge do seu corpo  interrompendo-o.
+[Narrador]: Seus olhos se abrem e você sente a força dada pela Deusa a você.
+[Metherax]: Sua morte fora confirmada, como tu pudestes voltar?
+[Metherax]: Essa luz... arde.
+[Heroi]: A mim foi dada uma nova oportunidade. E dessa vez resolveremos nossa contenda.
+-- segunda batalha Lich
+[Metherax]: Não, não, não! Eu estava tão perto... Heroi...
+[Narrador]: Metherax emite seu último suspiro.
+
+--Bom
+[Narrador]: O corpo do lich se desintegra, liberando toda a magia condensada dentro dele. 
+[Narrador]: A magia negra de dispersa e a nevasca do Inverno Eterno começa a se dissipar dando lugar à luz do Sol, nascendo pela manhã, rompendo a noite.
+[Narrador]: A luz da bênção da Deusa também se esvai e você cai de joelhos, de cansaço, ofegante.
+[Heroi]: Com isso, acredito que meu dever foi cumprido.
+[Narrador]: A cidade de Brasília começa a cair uma vez que agora não há o poder de Metherax para mantê-la nos céus.
+[Narrador]: Em um grande estrondo, a ilha pousa em uma campina perto da Cidade Livre.
+[Narrador]: Algumas horas depois você retorna para a Cidade Livre.
+[Narrador]: Um dos cidadãos o reconhece.
+[Aldeão]: É o Heroi!!! Ele retornou!!!!
+[Narrador]: Os sobreviventes da Cidade Livre o auxiliam em seu retorno, e o acompanham durante os dias de sua recuperação.
+[Narrador]: Após se recuperar, você vai novamente à Asas da Liberdade.
+[Narrador]: Ao entrar na guilda, um aventureiro avisa de sua chegada.
+[Aventureiro]: Pessoal!!! O Heroi chegou!!!
+[Narrador]: Todos haviam retornado à Cidade Livre após ouvirem as notícias do que ocorrera ali.
+[Aventureira]: Um brinde ao nosso salvador Heroi! Hahahahahaa!
+[Narrador]: E Uma grande festa se deu até que todos perdessem a noção dos dias que se passaram.
+
+
