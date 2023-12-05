@@ -48,7 +48,7 @@ class Sound:
 
     def PlaySFX(self, filename):
         self.CurrentSFX = self.FXDict[f"{filename}"]
-        self.CurrentSFX.set_volume(1)
+        self.CurrentSFX.set_volume(self.SFXVolumeDict[f"{filename}"])
         self.CurrentSFX.play()
     #endfunc
     def StopSFX(self):

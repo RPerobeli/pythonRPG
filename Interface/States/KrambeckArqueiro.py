@@ -182,7 +182,7 @@ class KrambeckArqueiro(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaHidra\n"):
             self.Sound.StopMusic()
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Hydra3"), "ObeliskKrambeck")
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Hydra do Oeste"), "ObeliskKrambeck")
             self.Personagem = battleWindow.Battle()
             self.Sound.PlayMusic("KrambeckArq")
             self.StoryListId += 1

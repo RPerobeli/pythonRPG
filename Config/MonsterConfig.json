@@ -260,17 +260,17 @@
         "needFlip" : "False"
     },
     {
-        "Nome": "Hydra",
+        "Nome": "Hydra do Leste",
         "Classe": "Guerreiro",
         "isBoss": "False",
-        "ImageMultiplier" : 1.0,
+        "ImageMultiplier" : 1.3,
         "needFlip" : "True"
     },
     {
-        "Nome": "Hydra3",
+        "Nome": "Hydra do Oeste",
         "Classe": "Guerreiro",
         "isBoss": "False",
-        "ImageMultiplier" : 1.0,
+        "ImageMultiplier" : 1.3,
         "needFlip" : "True"
     },
     {
