@@ -100,6 +100,12 @@ class KrambeckArqueiro(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirCultista\n"):
+            self.Actors.append(lib.GetNpc(self.Npcs,"Cultista"))
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         #endregion
         
         #region Sound

@@ -297,10 +297,10 @@
         {"txt": "InserirEndilien\n"},
         {"txt":"[Endílien]: Vá, heroi! Eu seguro eles aqui!\n"},
         {"txt":"[Endílien]: Certifique-se de fazer com que Rhon'Aldyn pague pelos seus atos!\n"},
-        {"txt":"[Narrador]: Endílien assume sua forma de lobo, e avança sobre os inimigos.\n"},
-        {"txt": "RemoverAtor1\n"}
+        {"txt":"[Narrador]: Endílien assume sua forma de lobo, e avança sobre os inimigos.\n"}
     ],
     "R2-2" : [
+        {"txt": "InserirEndilien\n"},
         {"txt":"[Endílien]: Se afaste um pouco.\n"},
         {"txt":"[Narrador]: Endílien, usando seu cajado, começa a conjurar um feitiço,\n usando a energial natural à sua volta.\n"},
         {"txt":"[Endílien]: Me desculpem, usarei vocês para isso...\n"},
@@ -325,7 +325,6 @@
     "Q3" : [
         {"txt": "InserirBackgroundSantuario\n"},
         {"txt":"[Narrador]: Você adentra o santuário e bem se encontra com os outros dois times.\n Um grande altar está na frente deles,\n e nele, se encontra o bruxo.\n"},
-        {"txt": "RemoverAtor1\n"},
         {"txt": "InserirRhonAldyn\n"},
         {"txt":"[Rhon'Aldyn]: Vejo que conseguiram chegar até aqui.\n Que agradável vê-lo aqui, meu caro Pelégolas.\n"},
         {"txt": "RemoverAtor1\n"},
