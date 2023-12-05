@@ -7,6 +7,7 @@ from Interface.States import Teofilotoni
 from Interface.States import Recursos
 from Interface.States import Curitiba
 from Interface.States import Continue
+from Interface.States import KrambeckArqueiro
 from Interface.States import Title as t
 from Interface import DialogBox
 from Interface import BattleWindow as bw
@@ -47,8 +48,8 @@ class GameStateHandler:
         if(self.State == "Curitiba"):
             self.Curitiba()
         #endif
-        if(self.State == "Krambeck"):
-            self.Krambeck()
+        if(self.State == "KrambeckArqueiro"):
+            self.KrambeckArqueiro()
         #endif
         if(self.State == "Felastus"):
             self.Felastus()
@@ -67,10 +68,10 @@ class GameStateHandler:
         self.Title.RedrawWindow()
         self.Hero = self.Title.Update()
         if(self.Hero!=None):
-            self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
-            self.State = "inn"
-            # self.curitiba = Curitiba.Curitiba(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs,self.Armas)
-            # self.State = "Curitiba"
+            #self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
+            #self.State = "inn"
+            self.krambeckArqueiro = KrambeckArqueiro.KrambeckArqueiro(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+            self.State = "KrambeckArqueiro"
 
     #endfunc
     def Inn(self):
@@ -130,7 +131,7 @@ class GameStateHandler:
         self.Hero,state, continueStory = self.curitiba.Update()
         self.State = state
         if(continueStory):
-            self.tobecontinued = Continue.Continue(self.Screen)
+            self.krambeckArqueiro = KrambeckArqueiro.KrambeckArqueiro(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
         #endif
     #endfunc
 
@@ -143,9 +144,9 @@ class GameStateHandler:
         #endif
     #endfunc
 
-    def Krambeck(self):
-        print('Krambeck')
-        self.Hero,state, continueStory = self.teofilotoni.Update()
+    def KrambeckArqueiro(self):
+        print('KrambeckArqueiro')
+        self.Hero,state, continueStory = self.krambeckArqueiro.Update()
         self.State = state
         if(continueStory):
             print("...")

@@ -28,6 +28,10 @@
         "file": "Battle3.wav",
         "volume": 0.2
     },
+    "Battle4": {
+        "file": "Battle4.wav",
+        "volume": 0.2
+    },
     "Victory1": {
         "file": "Victory1.wav",
         "volume": 0.2
@@ -63,6 +67,14 @@
     "forest": {
         "file": "Forest.wav",
         "volume": 0.1
+    },
+    "KrambeckArq": {
+        "file": "KrambeckArq.wav",
+        "volume": 0.2
+    },
+    "reggae": {
+        "file": "Reggae.wav",
+        "volume": 0.2
     },
     "continue": {
         "file": "To-Be-Continued.wav",

@@ -187,7 +187,7 @@ class BattleWindow(GameState.GameState):
         if(self.Monster.isBoss == "True" and self.Monster.name != "Cao Infernal"):
             self.Sound.PlayMusic("BattleBoss")
         else:
-            val = rnd.randint(1,3)
+            val = rnd.randint(1,4)
             self.Sound.PlayMusic(f"Battle{val}")
         #endif
     #endfunc

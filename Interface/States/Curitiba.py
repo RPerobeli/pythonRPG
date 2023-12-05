@@ -38,8 +38,7 @@ class Curitiba(GameState.GameState):
     #endfunc
 
     def SelectNextStory(self):
-        # return (self.Personagem, self.NextStory, True)
-        return (self.Personagem, "ToBeContinued", True)
+        return (self.Personagem, "SantosBom", True)
     #endfunc
     
     def VerifyEvent(self):
@@ -50,6 +49,8 @@ class Curitiba(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+
+        #region NPCs
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirLiriel\n"):
             self.Actors.append(lib.GetNpc(self.Npcs,"Liriel"))
             self.StoryListId += 1
@@ -86,14 +87,9 @@ class Curitiba(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        #endregion
         
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMusicaSuspense\n"):
-            self.Sound.StopMusic()
-            self.Sound.PlayMusic("curitibaNight")
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
+        #region Sound
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMusicaBordel\n"):
             self.Sound.StopMusic()
             self.Sound.PlayMusic("brothel")
@@ -101,6 +97,9 @@ class Curitiba(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        #endregion
+
+        #region Battles
         if(self.StoryTextList[self.StoryListId]['txt'] == "BattleSoldadoElfo1\n"):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Soldado Elfo 1"), "Curitiba")
@@ -155,6 +154,9 @@ class Curitiba(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        #endregion
+
+        #region Monsters
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirSylathor\n"):
             self.Actors.append(lib.GetMonstro(self.Monstros,"Sylathor"))
             self.StoryListId += 1
@@ -172,13 +174,11 @@ class Curitiba(GameState.GameState):
             self.StoryListId += 1
             self.VerifyEvent()
             return
-        #endif        
-        if(self.StoryTextList[self.StoryListId]['txt'] == "GameOverEvent\n"):
-            self.GameOver = gow.GameOverWindow(self.Screen)
-            self.Sound.StopMusic()
-            self.GameOver.GameOver()
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundBordel\n"):
+        #endif  
+        #endregion      
+
+        #region Backgrounds
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirKrambeck\n"):
             self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Brothel.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()
@@ -198,6 +198,9 @@ class Curitiba(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        #endregion
+
+        #region Weapons and status
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirArcoLiriel\n"):
             self.Personagem.arma = lib.GetArma(self.Armas,"arma1Arqueiro")
             self.StoryListId += 1
@@ -228,6 +231,12 @@ class Curitiba(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "GameOverEvent\n"):
+            self.GameOver = gow.GameOverWindow(self.Screen)
+            self.Sound.StopMusic()
+            self.GameOver.GameOver()
+        #endif
+        #endregion
     #endif
 
     def Update(self):

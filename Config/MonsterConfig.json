@@ -244,5 +244,83 @@
         "isBoss": "False",
         "ImageMultiplier" : 1.4,
         "needFlip" : "True"
+    },
+    {
+        "Nome": "Rhon'Aldyn",
+        "Classe": "Mago",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Ghoul",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Hydra",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Hydra3",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo Negro",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Senhor Dos Lobisomens",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Wraith",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 2.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Zombie",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Demon",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Espirito Maligno",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Imp",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 2.0,
+        "needFlip" : "True"
     }
+    
 ]
