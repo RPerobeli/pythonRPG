@@ -16,7 +16,7 @@ class KrambeckArqueiro(GameState.GameState):
         self.Personagem = personagem
         self.Monstros = monstros
         self.Actors = []
-        self.Actors.append(personagem)
+        self.Actors[0] = personagem
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
@@ -56,55 +56,55 @@ class KrambeckArqueiro(GameState.GameState):
 
         #region NPCs
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirPelegolas\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Pelegolas"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Pelegolas")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirFerreiro\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Ferreiro"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Ferreiro")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirElfaFloresta\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Elfa da Floresta"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Elfa da Floresta")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirElfoFloresta2\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Elfo da Floresta2"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Elfo da Floresta2")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirElfoFloresta\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Elfo da Floresta"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Elfo da Floresta")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirAltoElfo\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Alto Elfo"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Alto Elfo")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirEndilien\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Endilien"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Endilien")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMago\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Mago"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Mago")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirCultista\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Cultista"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Cultista")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -211,19 +211,19 @@ class KrambeckArqueiro(GameState.GameState):
 
         #region Monsters
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirAcolito\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Elfo Acolito"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Elfo Acolito")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirCriminosoAtirador\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Criminoso Atirador"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Criminoso Atirador")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirRhonAldyn\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Rhon'Aldyn"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Rhon'Aldyn")
             self.StoryListId += 1
             self.VerifyEvent()
             return

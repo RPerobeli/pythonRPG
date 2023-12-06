@@ -17,7 +17,7 @@ class Inn(GameState.GameState):
         self.Personagem = personagem
         self.Monstros = monstros
         self.Actors = []
-        self.Actors.append(personagem)
+        self.Actors[0] = personagem
         self.Npcs = npcs
         self.Alpha = 0
         self.Scene = 1
@@ -90,7 +90,7 @@ class Inn(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "inserirCachorra\n"):
             print("inseriu a cachorra")
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Cao Infernal"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Cao Infernal")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -105,7 +105,7 @@ class Inn(GameState.GameState):
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneira\n"):
             print('inserir taverneira')
             self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/guild.jpg').convert_alpha()
-            self.Actors.append(lib.GetNpc(self.Npcs,"Jessie"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Jessie")
             self.StoryListId += 1
             self.VerifyEvent()
             return

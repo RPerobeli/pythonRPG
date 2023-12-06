@@ -12,7 +12,7 @@ class GameState():
         self.imagePath =  jsonL.GetImagePath()
         self.Screen = screen
         self.NumberOfBtn = 0
-        self.Actors = []
+        self.Actors = [None] * 3
         self.Filename = ""
         self.StoryIndex = 1
         self.StoryListId = 0
@@ -87,6 +87,9 @@ class GameState():
     def PlaceActors(self):
         returningActPos = {}
         for i in range (0,len(self.Actors)):
+            if(self.Actors[i] == None):
+                continue
+            #endif
             actorPos = jsonL.GetActorPosition(i+1)
             returningActPos[f'x{i}'],returningActPos[f'y{i}'] = ut.TransformCenterCoordIntoBorder(self.Actors[i].Image, actorPos['x'],actorPos['y'])
         #endfor

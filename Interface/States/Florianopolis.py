@@ -16,7 +16,7 @@ class Florianopolis(GameState.GameState):
         self.Personagem = personagem
         self.Monstros = monstros
         self.Actors = []
-        self.Actors.append(personagem)
+        self.Actors[0] = personagem
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
@@ -44,38 +44,33 @@ class Florianopolis(GameState.GameState):
     
     def VerifyEvent(self):
         print('verificou possiveis eventos')
-        if(self.StoryTextList[self.StoryListId]['txt'] == "RemoverAtor1\n"):
-            self.Actors.pop(1)
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
+        
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMagoAnciao\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Mago Anciao"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Mago Anciao")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirDryad\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Dryad"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Dryad")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirGuardaMagico\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Guarda Magico"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Guarda Magico")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirWillhelm\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Willhelm"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Willhelm")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirDemonioInferior\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Demonio Inferior"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Demonio Inferior")
             self.StoryListId += 1
             self.VerifyEvent()
             return

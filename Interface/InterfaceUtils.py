@@ -67,12 +67,6 @@ def TransformCenterCoordIntoBorder(img, x,y):
     return (x,y)
 #endfunc
 
-def TransformCenterCoordIntoBorder(img, x,y):
-    x = x - img.Width/2
-    y = y - img.Height/2
-    return (x,y)
-#endfunc
-
 def WrapText(text, wrappedText):
     substring1,substring2 = get_substring(text, '\n')
     wrappedText.append(substring1)

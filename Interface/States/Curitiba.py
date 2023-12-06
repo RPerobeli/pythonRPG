@@ -16,7 +16,7 @@ class Curitiba(GameState.GameState):
         self.Personagem = personagem
         self.Monstros = monstros
         self.Actors = []
-        self.Actors.append(personagem)
+        self.Actors[0] = personagem
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
@@ -44,46 +44,41 @@ class Curitiba(GameState.GameState):
     
     def VerifyEvent(self):
         print('verificou possiveis eventos')
-        if(self.StoryTextList[self.StoryListId]['txt'] == "RemoverAtor1\n"):
-            self.Actors.pop(1)
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
+        
 
         #region NPCs
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirLiriel\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Liriel"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Liriel")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirSoldadoElfo\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Soldado Elfo 1"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Soldado Elfo 1")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirSoldadoElfo2\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Soldado Elfo 2"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Soldado Elfo 2")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirElfoBandido\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Elfo Bandido"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Elfo Bandido")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMeretriz\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"ElfWhore"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"ElfWhore")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirElfoLarapio\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Elfo Larapio"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Elfo Larapio")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -159,19 +154,19 @@ class Curitiba(GameState.GameState):
 
         #region Monsters
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirSylathor\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Sylathor"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Sylathor")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirCriminosoAtirador\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Criminoso Atirador"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Criminoso Atirador")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMystral\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Mystral"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Mystral")
             self.StoryListId += 1
             self.VerifyEvent()
             return

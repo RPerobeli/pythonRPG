@@ -15,7 +15,7 @@ class Caravan(GameState.GameState):
         self.Personagem = personagem
         self.Monstros = monstros
         self.Actors = []
-        self.Actors.append(personagem)
+        self.Actors[1] = personagem
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
@@ -48,7 +48,7 @@ class Caravan(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneira\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Jessie"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Jessie")
             self.StoryListId += 1
             self.VerifyEvent()
             return

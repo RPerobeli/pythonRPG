@@ -16,7 +16,7 @@ class ViagemTeofilotoni(GameState.GameState):
         self.Personagem = personagem
         self.Monstros = monstros
         self.Actors = []
-        self.Actors.append(personagem)
+        self.Actors[0] = personagem
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
@@ -43,38 +43,33 @@ class ViagemTeofilotoni(GameState.GameState):
     
     def VerifyEvent(self):
         print('verificou possiveis eventos')
-        if(self.StoryTextList[self.StoryListId]['txt'] == "RemoverAtor1\n"):
-            self.Actors.pop(1)
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
+        
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneira\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Jessie"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Jessie")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirAnaoFalastrao\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Anao Falastrao"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Anao Falastrao")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirAnaoFerido\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Anao Bandido"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Anao Bandido")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirThete\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Thete"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Thete")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirAnaBandida\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Ana Bandida"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Ana Bandida")
             self.StoryListId += 1
             self.VerifyEvent()
             return
