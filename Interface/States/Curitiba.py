@@ -38,7 +38,8 @@ class Curitiba(GameState.GameState):
     #endfunc
 
     def SelectNextStory(self):
-        return (self.Personagem, "SantosBom", True)
+        self.Sound.StopMusic()
+        return (self.Personagem, self.NextStory, True)
     #endfunc
     
     def VerifyEvent(self):
@@ -190,6 +191,12 @@ class Curitiba(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundBordel\n"):
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Brothel.jpg').convert_alpha()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirCuritibaComMusica\n"):
             self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Curitiba.jpg').convert_alpha()
             self.Sound.StopMusic()
@@ -220,13 +227,13 @@ class Curitiba(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "goAcre\n"):
-            self.NextStory = "Acre"
+            self.NextStory = "AcreArqueiro"
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "goKrambeck\n"):
-            self.NextStory = "Krambeck"
+            self.NextStory = "KrambeckArqueiro"
             self.StoryListId += 1
             self.VerifyEvent()
             return

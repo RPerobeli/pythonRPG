@@ -155,4 +155,5 @@ Q1
 [Aventureira]: Um brinde ao nosso salvador Heroi! Hahahahahaa!
 [Narrador]: E Uma grande festa se deu até que todos perdessem a noção dos dias que se passaram.
 
-
+--Neutro
+--Mau

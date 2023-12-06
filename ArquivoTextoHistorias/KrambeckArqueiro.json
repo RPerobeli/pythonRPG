@@ -8,12 +8,12 @@
         {"txt": "InserirPelegolas\n"},
         {"txt":"[Pelégolas]: Você é o arqueiro o qual Liriel mencionou na carta?\n"},
         {"txt":"[Narrador]: Você olha para cima e percebe uma silhueta na copa das arvores mais a frente,\n quase irreconhecível se não fosse o cabelo avermelhado.\n"},
-        {"txt":"[Heroi]: Pelégolas? Me chamo heroi, vim de Curitiba.\n"},
+        {"txt":"[Heroi]: Pelégolas? Me chamo Heroi, vim de Curitiba.\n"},
         {"txt":"[Narrador]: O elfo abaixa o arco e salta para o seu lado.\n"},
         {"txt":"[Pelégolas]: Venha comigo.\n"},
         {"txt": "InserirBackgroundElfEmcampment\n"},
         {"txt":"[Pelégolas]: Como pode ver, aqui que nós estamos acampados, a força expedicionária dos alto-elfos\n e a resistência dos nossos irmãos da floresta.\n"},
-        {"txt":"[Pelégolas]: Aqui temos cerca de 5 companias de elfos prontos para o combate.\n"},
+        {"txt":"[Pelégolas]: Aqui temos cerca de 5 companhias de elfos prontos para o combate.\n"},
         {"txt":"[Pelégolas]: Assim como este campo, a resistência também possui\n outros acampamentos menores por toda a mata.\n"},
         {"txt":"[Narrador]: Você observa tudo ao redor junto de Pelégolas.\n O acampamento é bem grande, no entanto, um odor forte preenche todo o acampamento.\n"},
         {"txt":"[Pelégolas]: Incomodado com o odor? É natural para os elfos da floresta.\n"},
@@ -40,8 +40,8 @@
         {"txt":"[Ferreiro]: Ainda resistimos! Fique a vontade para usar as pedras ao fundo.\n"},
         {"txt":"[Heroi]: Muito obrigado.\n"},
         {"txt":"[Narrador]: Enquanto você amola sua adaga, o ferreiro fica concentrado em seus afazeres.\n"},
-        {"txt":"[Narrador]: Você observa o semblante inspirado do elfo enquanto a luz do fogo iluminavam sua face\n e as faíscas das batidas do martelo saltam pelo ambiente.\n A cada descida da ferramente, parecia que parte da alma do ferreiro era posta naquelas espadas.\n"},
-        {"txt":"[Narrador]: A cada descida da ferramente,\n parecia que parte da alma do ferreiro era posta naquelas espadas.\n"},
+        {"txt":"[Narrador]: Você observa o semblante inspirado do elfo enquanto a luz do fogo iluminava sua face\n e as faíscas das batidas do martelo saltam pelo ambiente.\n"},
+        {"txt":"[Narrador]: A cada descida da ferramenta,\n parecia que parte da alma do ferreiro era posta naquelas espadas.\n"},
         {"txt":"[Narrador]: O elfo então entoava uma canção e uma magia élfica era gravada na espada.\n"},
         {"txt":"[Heroi]: Um trabalho magnífico.\n"},
         {"txt":"[Ferreiro]: É tudo para reaver nossa floresta. Vejo que você tem um excelente arco,\n gostaria que eu o encantasse também?\n"},
@@ -100,6 +100,7 @@
         {"txt":"[Narrador]: Você percebe que nunca sentira tal foco antes.\n"},
         {"txt": "BatalhaCriminosoAtirador\n"},
         {"txt": "BatalhaElfoLarapio\n"},
+        {"txt": "RemoverAtor1\n"},
         {"txt": "InserirElfoFloresta2\n"},
         {"txt":"[Elfo da Floresta 2]: Essa foi por pouco hahahaha.\n"},
         {"txt":"[Narrador]: Você olha a volta, e observa o massacre realizado pelo seu grupo de elgos.\n"},
@@ -111,8 +112,7 @@
         {"txt":"[Elfo da Floresta 2]: Talvez, se não tivéssemos usado tanto da erva,\n eles poderiam ter dado trabalho... Se iludiram com seus números.\n"},
         {"txt": "RemoverAtor1\n"},
         {"txt": "InserirElfoFloresta\n"},
-        {"txt":"[Elfo da Floresta]: Vamos retornar ao acampamento,\n não sabemos se há outros desses criminosos aqui por perto.\n"},
-        {"txt": "RemoverAtor1\n"}
+        {"txt":"[Elfo da Floresta]: Vamos retornar ao acampamento,\n não sabemos se há outros desses criminosos aqui por perto.\n"}
     ],
     "R1-2" : [
         {"txt":"[Narrador]: Você se aproxima de uma das torres de vigia para avisar aos guardas.\n"},
@@ -120,7 +120,7 @@
         {"txt": "InserirAltoElfo\n"},
         {"txt":"[Guarda]: O que? Explique-se, forasteiro.\n"},
         {"txt":"[Narrador]: Você explica o que observara e detalha como eram os elfos.\n"},
-        {"txt":"[Guarda]: Certo, Reunirei um grupo de homens para procurá-los.\n"},
+        {"txt":"[Guarda]: Certo, reunirei um grupo de homens para procurá-los.\n"},
         {"txt": "RemoverAtor1\n"},
         {"txt":"[Narrador]: Você observa os homens saindo em busca de seus companheiros\n e então parte para seus aposentos.\n"}
     ],
@@ -140,7 +140,7 @@
         {"txt": "RemoverAtor1\n"},
         {"txt": "BatalhaCriminosoAtiradorNoDeposito\n"},
         {"txt": "InserirPelegolas\n"},
-        {"txt":"[Pelégolas]: Rapido, heroi, busque água para nós!\n"},
+        {"txt":"[Pelégolas]: Rapido, Heroi, busque água para nós!\n"},
         {"txt":"[Heroi]: O que ocorreu aqui!?\n"},
         {"txt":"[Pelégolas]: Alguns remanescentes do grupo de Sylathor. Eles mataram alguns dos nossos na floresta e\n com isso descobriram a localização desse acampamento.\n"},
         {"txt": "RemoverAtor1\n"},
@@ -151,22 +151,22 @@
         {"txt":"[Pelégolas]: Levem-nas para o segundo depósito. Ao retornar, tragam mais água!\n"},
         {"txt":"[Heroi]: Mesmo sem seu líder, ainda tiveram forças para fazer um estrago desses...\n"},
         {"txt":"[Pelégolas]: Os desgraçados acabaram com a maior parte dos nossos suprimentos.\n"},
-        {"txt":"[Pelégolas]: Teremos que realizar um ataque certeiro em Rhon'Aldyn, uma guerra longa não é uma opção\n."},
-        {"txt": "RemoverAtor1\n"}
+        {"txt":"[Pelégolas]: Teremos que realizar um ataque certeiro em Rhon'Aldyn, uma guerra longa não é uma opção\n."}
     ],
     "Q2" : [
+        {"txt": "RemoverAtor1\n"},
         {"txt": "InserirBackgroundStrategyRoom\n"},
         {"txt":"[Narrador]: Na manhã seguinte todos os oficiais Alto elfos e elfos da floresta\n se reuniram para a finalização do plano de ataque ao santuário do bruxo.\n"},
         {"txt": "InserirPelegolas\n"},
-        {"txt":"[Pelégolas]: Como todos sabem, não possuímos provisões para uma guerra longa,\n estivemos resistindo nesse local por bastante tempo,\n mas não conseguiremos continuar aqui por mais tempo.\n"},
+        {"txt":"[Pelégolas]: Como todos sabem, não possuímos provisões para uma guerra longa,\n estivemos resistindo nesse local por muitas luas,\n mas não conseguiremos continuar aqui por mais tempo.\n"},
         {"txt": "RemoverAtor1\n"},
         {"txt": "InserirEndilien\n"},
-        {"txt":"[Endílien]: Se esperarmos mais tempo para coletar provisões, mais a floresta sofre.\n"},
+        {"txt":"[Endílien]: Se esperarmos mais para coletar provisões, mais a floresta sofrerá.\n"},
         {"txt":"[Endílien]: Cada segundo que passa, menos energia eu sinto vindo da terra.\n"},
         {"txt": "RemoverAtor1\n"},
         {"txt": "InserirPelegolas\n"},
         {"txt":"[Pelégolas]: Endílien está certa, teremos que ir para o tudo ou nada.\n"},
-        {"txt":"[Pelégolas]: Por sorte contamos com as nossas forças e com o apoio de heroi,\n que veio de Curitiba nos auxiliar.\n"},
+        {"txt":"[Pelégolas]: Por sorte contamos com as nossas forças e com o apoio de Heroi,\n que veio de Curitiba nos auxiliar.\n"},
         {"txt":"[Pelégolas]: Dito isso, nossas forças principais seguirão ao meio dia para a clareira ao sul.\n"},
         {"txt":"[Pelégolas]: A segunda brigada de elfos da floresta irão mais cedo pelo oeste\n como forma de atrair a atençao deles.\n"},
         {"txt":"[Pelégolas]: Endílien, prepare seus melhores soldados,\n eles provavelmente aguentarão a maior parte das forças de Rhon'Aldyn.\n"},
@@ -177,7 +177,7 @@
         {"txt": "RemoverAtor1\n"},
         {"txt": "InserirPelegolas\n"},
         {"txt":"[Pelégolas]: Ela é indispensável para liderar as forças dos elfos da floresta.\n"},
-        {"txt":"[Heroi]: E também é única druida nesse acampamento.\n"},
+        {"txt":"[Heroi]: E também é a única druida nesse acampamento.\n"},
         {"txt":"[Heroi]: Seu poder de reconhecimento nos ajudará a passar com um poderoso grupo de ataque\n evitando combates desnecessários.\n"},
         {"txt": "RemoverAtor1\n"},
         {"txt": "InserirEndilien\n"},
@@ -189,7 +189,7 @@
         {"txt":"[Pelégolas]: Estão todos entendidos? Vamos partir.\n"},
         {"txt": "InserirBackgroundKrambeck2\n"},
         {"txt":"[Narrador]: Você acompanha o grupo principal na investida.\n"},
-        {"txt":"[Narrador]: Endílien usa sua forma de águia para sobrevoar as partes da floresta\n as quais já foram corrompidas pelos cultistas,\n e frequentemente retorna para o grupo principal repassar o relatório.\n"},
+        {"txt":"[Narrador]: Endílien usa sua forma de águia para sobrevoar as partes da floresta\n as quais já foram corrompidas pelos cultistas,\n e frequentemente retorna para o grupo principal a fim de repassar o relatório.\n"},
         {"txt": "RemoverAtor1\n"},
         {"txt": "InserirEndilien\n"},
         {"txt":"[Endílien]: O caminho à frente está livre, comandante.\n"},
@@ -295,7 +295,7 @@
         {"txt":"[Cultista]: Meus servos, ataquem!\n"},
         {"txt": "RemoverAtor1\n"},
         {"txt": "InserirEndilien\n"},
-        {"txt":"[Endílien]: Vá, heroi! Eu seguro eles aqui!\n"},
+        {"txt":"[Endílien]: Vá, Heroi! Eu seguro eles aqui!\n"},
         {"txt":"[Endílien]: Certifique-se de fazer com que Rhon'Aldyn pague pelos seus atos!\n"},
         {"txt":"[Narrador]: Endílien assume sua forma de lobo, e avança sobre os inimigos.\n"}
     ],
@@ -308,8 +308,7 @@
         {"txt":"[Endílien]: Disparo Natural!\n"},
         {"txt":"[Narrador]: Um raio de energia atinge o monumento despedaçando-o.\n"},
         {"txt":"[Narrador]: A barreira se dispersa, e Endílien se ajoelha no chão, devido ao cansaço.\n"},
-        {"txt":"[Endílien]: Vão na frente, precisarei me recuperar um pouco.\n"},
-        {"txt": "RemoverAtor1\n"}
+        {"txt":"[Endílien]: Vão na frente, precisarei me recuperar um pouco.\n"}
     ],
     "R2-3" : [
         {"txt": "InserirEndilien\n"},
@@ -319,8 +318,7 @@
         {"txt":"[Heroi]: Endílien, concentre toda a magia à nossa volta em meu corpo\n"},
         {"txt":"[Narrador]: Você puxa uma flecha de sua aljava e se prepara para o ataque.\n Endílien põe a mão nas suas costas e começa o encantamento.\n"},
         {"txt":"[Narrador]: Você sente a energia fluir para seu corpo. O poder aumenta... cada vez mais...\n"},
-        {"txt":"[Narrador]: Seu peito explode com o excesso de poder.\n"},
-        {"txt": "GameOverEvent\n"}
+        {"txt":"[Narrador]: Seu peito explode com o excesso de poder.\n"}
     ],
     "Q3" : [
         {"txt": "InserirBackgroundSantuario\n"},
@@ -381,10 +379,9 @@
         {"txt": "InserirEndilien\n"},
         {"txt":"[Endílien]: Heroi, obrigada por tudo o que você fez aqui. Como Pelégolas disse,\n Líriel tinha razão em enviá-lo para nós.\n Por favor, aceite essa benção em seu arco.\n"},
         {"txt":"[Narrador]: A magia da elfa percorre o cerne do seu arco, modificando as fibras da madeira.\n As runas gravadas pelo ferreiro passam a emanar ainda mais energia.\n"},
-        {"txt": "InserirArcoMelhoradoDosElfos\n"},
+        {"txt": "InserirArcoAbençoadoDosElfos\n"},
         {"txt":"[Heroi]: Sou muito grato, Endílien. Sinto que com este arco poderei enfrentar qualquer um.\n Seu povo poderá ficar em paz aqui novamente.\n"},
         {"txt":"[Endílien]: Depois retorne para que eu possa começar a reavivar este local.\n Tornaremos nossa floresta mais bela do que antes fora.\n"},
-        {"txt":"[Heroi]: Partirei imediatamente.\n"},
-        {"txt": "RemoverAtor1\n"}
+        {"txt":"[Heroi]: Partirei imediatamente.\n"}
     ]
 }

@@ -10,7 +10,7 @@ class Acao:
         self.isCrit = False
         if(personagem.classe.lower() == "guerreiro"):
             if(atkType == 1):
-                dano = int(personagem.arma.danoBase) * \
+                dano = personagem.arma.danoBase * \
                     personagem.skills["str"] + 2*personagem.skills["agi"]
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")

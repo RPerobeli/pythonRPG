@@ -321,6 +321,61 @@
         "isBoss": "False",
         "ImageMultiplier" : 2.0,
         "needFlip" : "True"
+    },
+    {
+        "Nome": "Becca",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Barba Negra",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Comandante",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Pirata Bebado",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Tripulante 1",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Tripulante 2",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Tripulante 3",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Tripulante 4",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
     }
-    
 ]

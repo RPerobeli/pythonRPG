@@ -38,14 +38,17 @@ class KrambeckArqueiro(GameState.GameState):
     #endfunc
 
     def SelectNextStory(self):
-        return (self.Personagem, self.NextStory, True)
+        self.Sound.StopMusic()
+        return (self.Personagem, "SantosBom", True)
     #endfunc
     
     def VerifyEvent(self):
         print('verificou possiveis eventos')
         if(self.StoryTextList[self.StoryListId]['txt'] == "RemoverAtor1\n"):
-            self.Actors.pop(1)
-            self.StoryListId += 1
+            while(len(self.Actors) >= 2):
+                self.Actors.pop(1)
+                self.StoryListId += 1
+            #endif
             self.VerifyEvent()
             return
         #endif

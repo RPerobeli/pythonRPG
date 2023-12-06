@@ -97,14 +97,14 @@ class Inn(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundCidade\n"):
             print('inseriu background')
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/SnowyCity.png').convert_alpha()
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/SnowyCity.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneira\n"):
             print('inserir taverneira')
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/guild.png').convert_alpha()
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/guild.jpg').convert_alpha()
             self.Actors.append(lib.GetNpc(self.Npcs,"Jessie"))
             self.StoryListId += 1
             self.VerifyEvent()

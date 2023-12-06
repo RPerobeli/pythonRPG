@@ -11,7 +11,7 @@ class Recursos(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None, armas= None):
         super().__init__(screen)
         self.ImagePath =  jsonL.GetImagePath()
-        self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/guild.png').convert_alpha()
+        self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/guild.jpg').convert_alpha()
         self.DialogBox = dialogBox
         self.Personagem = personagem
         self.Monstros = monstros
@@ -85,7 +85,7 @@ class Recursos(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundCidade\n"):
             print('inseriu background')
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/SnowyCity.png').convert_alpha()
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/SnowyCity.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -93,7 +93,7 @@ class Recursos(GameState.GameState):
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirFloresta\n"):
             self.Sound.StopMusic()
             self.Sound.PlayMusic("forest")
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Forest.png').convert_alpha()
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Forest.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()
             return

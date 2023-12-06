@@ -8,6 +8,7 @@ from Interface.States import Recursos
 from Interface.States import Curitiba
 from Interface.States import Continue
 from Interface.States import KrambeckArqueiro
+from Interface.States import SantosBom
 from Interface.States import Title as t
 from Interface import DialogBox
 from Interface import BattleWindow as bw
@@ -51,6 +52,9 @@ class GameStateHandler:
         if(self.State == "KrambeckArqueiro"):
             self.KrambeckArqueiro()
         #endif
+        if(self.State == "SantosBom"):
+            self.SantosBom()
+        #endif
         if(self.State == "Felastus"):
             self.Felastus()
         #endif
@@ -68,8 +72,8 @@ class GameStateHandler:
         self.Title.RedrawWindow()
         self.Hero = self.Title.Update()
         if(self.Hero!=None):
-            #self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
-            #self.State = "inn"
+            # self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
+            # self.State = "inn"
             self.krambeckArqueiro = KrambeckArqueiro.KrambeckArqueiro(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
             self.State = "KrambeckArqueiro"
 
@@ -149,7 +153,16 @@ class GameStateHandler:
         self.Hero,state, continueStory = self.krambeckArqueiro.Update()
         self.State = state
         if(continueStory):
-            print("...")
+            self.santosBom = SantosBom.SantosBom(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+        #endif
+    #endfunc
+    
+    def SantosBom(self):
+        print('SantosBom')
+        self.Hero,state, continueStory = self.santosBom.Update()
+        self.State = state
+        if(continueStory):
+            self.tobecontinued = Continue.Continue(self.Screen)
         #endif
     #endfunc
 

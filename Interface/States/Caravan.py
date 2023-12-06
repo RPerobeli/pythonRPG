@@ -10,7 +10,7 @@ class Caravan(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None):
         super().__init__(screen)
         self.ImagePath =  jsonL.GetImagePath()
-        self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/SnowyCity.png').convert_alpha()
+        self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/SnowyCity.jpg').convert_alpha()
         self.DialogBox = dialogBox
         self.Personagem = personagem
         self.Monstros = monstros

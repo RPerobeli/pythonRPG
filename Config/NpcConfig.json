@@ -115,7 +115,7 @@
         "needFlip" : "False"
     },
     {
-        "Nome": "Taverneiro de Krambeck",
+        "Nome": "Taverneiro2",
         "ImageMultiplier" : 0.8,
         "needFlip" : "True"
     },
@@ -131,6 +131,16 @@
     },
     {
         "Nome": "Arqueiro",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "GolDRoger",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Fendric",
         "ImageMultiplier" : 0.8,
         "needFlip" : "True"
     }
