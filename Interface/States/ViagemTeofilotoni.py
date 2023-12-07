@@ -21,7 +21,7 @@ class ViagemTeofilotoni(GameState.GameState):
         self.Alpha = 255
         self.Scene = 1
         self.Filename = "ViagemTeofilotoni"
-        self.MaxStoryIndex = 3
+        self.MaxStoryIndex = 2
         self.Count = 0
         
     #endfunc

@@ -21,7 +21,7 @@ class Curitiba(GameState.GameState):
         self.Alpha = 255
         self.Scene = 1
         self.Filename = "Curitiba"
-        self.MaxStoryIndex = 5
+        self.MaxStoryIndex = 4
         self.Count = 0
         self.Armas = armas
         

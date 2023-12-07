@@ -21,7 +21,7 @@ class Teofilotoni(GameState.GameState):
         self.Alpha = 255
         self.Scene = 1
         self.Filename = "Teofilotoni"
-        self.MaxStoryIndex = 4
+        self.MaxStoryIndex = 3
         self.Count = 0
         self.Armas = armas
         

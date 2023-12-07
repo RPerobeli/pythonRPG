@@ -20,7 +20,7 @@ class Caravan(GameState.GameState):
         self.Alpha = 255
         self.Scene = 1
         self.Filename = "Caravana"
-        self.MaxStoryIndex = 2
+        self.MaxStoryIndex = 1
         self.Count = 0
         
     #endfunc

@@ -17,6 +17,7 @@ class GameState():
         self.StoryIndex = 1
         self.StoryListId = 0
         self.StoryTextList =[]
+        self.MaxStoryIndex = 0
         self.DialogBox = None
         self.isQuestion = True
         self.Alpha = 255
@@ -127,6 +128,11 @@ class GameState():
         #endif
     #endfunction
 
+
+    def SelectNextStory(self):
+        print(self.NextStory)
+    #endfunc
+
     def Update(self, nomeState):
         #Cena tapa na cachorra
         pygame.display.set_caption(nomeState)
@@ -143,14 +149,15 @@ class GameState():
             #endif
             if (event.type == pygame.KEYDOWN and (event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE)):
                 if(self.StoryListId == len(self.StoryTextList)-1):
-                    if(self.isQuestion):
+                    if(self.isQuestion and self.StoryIndex < self.MaxStoryIndex):
                         self.Sound.PlaySFX("cursorError")
+                        print(self.MaxStoryIndex)
                         print("Ta com pressa irmao? para de pular os dialogos.")
                     else:
                         self.Sound.PlaySFX("cursorForward")
                         self.isQuestion = True
                         self.StoryIndex += 1 
-                        if(self.StoryIndex == self.MaxStoryIndex):
+                        if(self.StoryIndex > self.MaxStoryIndex):
                             return self.SelectNextStory()
                         #endif
                         self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)

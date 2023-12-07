@@ -30,6 +30,7 @@
         {"txt":"[Pelégolas]: Bom, aqui está sua barraca, fique a vontade, se precisar de mim estarei no quartel general.\n"},
         {"txt":"[Pelégolas]: Ainda temos tempo, mas certifique-se de estar pronto no alvorecer.\n"},
         {"txt":"[Heroi]: Certo, muito obrigado, Comandante Pelégolas.\n"},
+        {"txt" : "RemoverAtor1\n"},
         {"txt":"[Narrador]: Após se despedir, você decide que é melhor se preparar para a batalha que se aproxima.\n"},
         {"txt":"[Narrador]: O ferreiro se encontrava no outro lado do acampamento.\n"},
         
@@ -48,8 +49,9 @@
         {"txt":"[Heroi]: Por favor.\n"},
         {"txt":"[Narrador]: O ferreiro executa sua magia élfica e encanta a madeira e a corda de seu arco.\n"},
         {"txt":"[Ferreiro]: Está pronto, arqueiro. Que a sua deusa da luz te guie.\n"},
+        {"txt" :"[Narrador]: Arco Élfico Melhorado adquirido.\n"},
         {"txt":"InserirArcoMelhoradoDosElfos\n"},
-        
+        {"txt" : "RemoverAtor1\n"},
         {"txt":"[Narrador]: O Sol começa a baixar e você percebe que o grupo de elfos que haviam saído mais cedo\n não retornou ao acampamento.\n"},
         {"txt":"1 - Seguir para a floresta para procurar o grupo de elfos.\n2 - Avisar o grupo de patrulha sobre a falta dos elfos.\n3 - Ignorar e voltar à sua tenda.\n"}
     ],
@@ -130,7 +132,7 @@
         {"txt":"[Narrador]: No meio da noite você é acordado gritos.\n"},
         {"txt": "InserirElfoFloresta2\n"},
         {"txt":"[Elfo]: ESTAMOS SOB ATAQUE!\n"},
-        
+        {"txt" : "RemoverAtor1\n"},
         {"txt":"[Narrador]: Você se levanta as pressas e se prepara para ver o que está ocorrendo.\n"},
         {"txt":"[Narrador]: O seu quarto fica próximo ao depósito de suprimentos do acampamento.\n"},
         {"txt": "InserirBackgroundDepositoQueimando\n"},
@@ -154,7 +156,7 @@
         {"txt":"[Pelégolas]: Teremos que realizar um ataque certeiro em Rhon'Aldyn, uma guerra longa não é uma opção\n."}
     ],
     "Q2" : [
-        
+        {"txt" : "RemoverAtor1\n"},
         {"txt": "InserirBackgroundStrategyRoom\n"},
         {"txt":"[Narrador]: Na manhã seguinte todos os oficiais Alto elfos e elfos da floresta\n se reuniram para a finalização do plano de ataque ao santuário do bruxo.\n"},
         {"txt": "InserirPelegolas\n"},
@@ -187,8 +189,10 @@
         {"txt": "InserirPelegolas\n"},
         {"txt":"[Pelégolas]: Podemos seguir com essa ideia. Endílien seguirá conosco então.\n"},
         {"txt":"[Pelégolas]: Estão todos entendidos? Vamos partir.\n"},
+        {"txt" : "RemoverAtor1\n"},
         {"txt": "InserirBackgroundKrambeck2\n"},
         {"txt":"[Narrador]: Você acompanha o grupo principal na investida.\n"},
+        {"txt" : "InserirAguiaSound\n"},
         {"txt":"[Narrador]: Endílien usa sua forma de águia para sobrevoar as partes da floresta\n as quais já foram corrompidas pelos cultistas,\n e frequentemente retorna para o grupo principal a fim de repassar o relatório.\n"},
         
         {"txt": "InserirEndilien\n"},
@@ -281,6 +285,7 @@
         {"txt":"1 - Usar uma flecha explosiva.\n2 - Pedir a Endílien que utilize uma de suas magias.\n3 - Absorver a magia negra do local, purificando o monumento.\n"}
     ],
     "R2-1" : [
+        {"txt" : "RemoverAtor1\n"},
         {"txt":"[Narrador]: Você olha a sua volta e não vê nada de útil que pode ser usado no monumento.\n"},
         {"txt":"[Heroi]: Parece que terei usar uma técnica diferente.\n"},
         {"txt":"[Narrador]: Você puxa uma flecha com um artefato explosivo na ponta,\n e utiliza seu arco apontado para o grande monumento à sua frente.\n"},
@@ -321,6 +326,7 @@
         {"txt":"[Narrador]: Seu peito explode com o excesso de poder.\n"}
     ],
     "Q3" : [
+        {"txt" : "RemoverAtor1\n"},
         {"txt": "InserirBackgroundSantuario\n"},
         {"txt":"[Narrador]: Você adentra o santuário e bem se encontra com os outros dois times.\n Um grande altar está na frente deles,\n e nele, se encontra o bruxo.\n"},
         {"txt": "InserirRhonAldyn\n"},
@@ -343,7 +349,7 @@
         {"txt":"[Narrador]: Pelégolas saca seu arco, mas ao mesmo tempo,\n Rhon'Aldyn conjura uma magia que estilhaça energia negra por toda a sala.\n Você o humano arqueiro conseguem desviar.\n Todos os outros são atingidos e morrem instantâneamente, exceto Pelégolas,\n que teve seu  braço ferido.\n"},
         {"txt":"[Rhon'Aldyn]: Tolos!\n"},
         {"txt": "BatalhaRhonAldyn\n"},
-        {"txt":"[Rhon'Aldyn]: {cuspindo sangue} Vocês podem ter me derrotado\n, mas meu dever está cumprido.\n"},
+        {"txt":"[Rhon'Aldyn]: {cuspindo sangue} Vocês podem ter me derrotado,\n mas meu dever está cumprido.\n"},
         {"txt":"[Rhon'Aldyn]: Seus deuses foram profanados, já não os abençoam.\n Aos poucos nosso mestre expande seu domínio.\n"},
         {"txt":"[Heroi]: A quem você serve, Rhon'Aldyn?\n"},
         {"txt":"[Rhon'Aldyn]: O grande Metherax criará um mundo para nós que transcendemos a mortalidade.\n Nossos planos já estão em ação.\n"},
@@ -380,8 +386,10 @@
         {"txt":"[Endílien]: Heroi, obrigada por tudo o que você fez aqui. Como Pelégolas disse,\n Líriel tinha razão em enviá-lo para nós.\n Por favor, aceite essa benção em seu arco.\n"},
         {"txt":"[Narrador]: A magia da elfa percorre o cerne do seu arco, modificando as fibras da madeira.\n As runas gravadas pelo ferreiro passam a emanar ainda mais energia.\n"},
         {"txt": "InserirArcoAbençoadoDosElfos\n"},
+        {"txt" :"[Narrador]: Arco Élfico Abençoado adquirido.\n"},
         {"txt":"[Heroi]: Sou muito grato, Endílien. Sinto que com este arco poderei enfrentar qualquer um.\n Seu povo poderá ficar em paz aqui novamente.\n"},
         {"txt":"[Endílien]: Depois retorne para que eu possa começar a reavivar este local.\n Tornaremos nossa floresta mais bela do que antes fora.\n"},
+        {"txt":"goSantos\n"},
         {"txt":"[Heroi]: Partirei imediatamente.\n"}
     ]
 }

@@ -21,7 +21,7 @@ class Recursos(GameState.GameState):
         self.Alpha = 255
         self.Scene = 1
         self.Filename = "ColetaRecursos"
-        self.MaxStoryIndex = 2
+        self.MaxStoryIndex = 1
         self.Count = 0
         self.Armas = armas
         

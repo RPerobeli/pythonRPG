@@ -76,7 +76,11 @@
         "file": "Reggae.wav",
         "volume": 0.2
     },
-    "Santos": {
+    "SantosBom": {
+        "file": "Santos.wav",
+        "volume": 0.2
+    },
+    "SantosMau": {
         "file": "Santos.wav",
         "volume": 0.2
     },

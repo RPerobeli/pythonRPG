@@ -21,7 +21,7 @@ class SantosBom(GameState.GameState):
         self.Alpha = 255
         self.Scene = 1
         self.Filename = "SantosBom"
-        self.MaxStoryIndex = 4
+        self.MaxStoryIndex = 3
         self.Count = 0
         self.Armas = armas
         
@@ -102,7 +102,7 @@ class SantosBom(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Pirata Bebado"), "Santos")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Santos")
+            self.Sound.PlayMusic("SantosBom")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -111,7 +111,7 @@ class SantosBom(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Tripulante 1"), "PirateWarehouseNotInFire")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Santos")
+            self.Sound.PlayMusic("SantosBom")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -120,7 +120,7 @@ class SantosBom(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Tripulante 2"), "PirateWarehouseNotInFire")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Santos")
+            self.Sound.PlayMusic("SantosBom")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -129,7 +129,7 @@ class SantosBom(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Tripulante 3"), "PirateWarehouseNotInFire")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Santos")
+            self.Sound.PlayMusic("SantosBom")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -138,7 +138,7 @@ class SantosBom(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Tripulante 1"), "PirateWarehouse")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Santos")
+            self.Sound.PlayMusic("SantosBom")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -147,7 +147,7 @@ class SantosBom(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Tripulante 2"), "PirateWarehouse")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Santos")
+            self.Sound.PlayMusic("SantosBom")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -156,7 +156,7 @@ class SantosBom(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Tripulante 3"), "PirateWarehouse")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Santos")
+            self.Sound.PlayMusic("SantosBom")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -165,7 +165,7 @@ class SantosBom(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Comandante"), "ShipDeck")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Santos")
+            self.Sound.PlayMusic("SantosBom")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -174,7 +174,7 @@ class SantosBom(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Becca"), "PirateWarehouseNotInFire")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Santos")
+            self.Sound.PlayMusic("SantosBom")
             self.StoryListId += 1
             self.VerifyEvent()
             return
