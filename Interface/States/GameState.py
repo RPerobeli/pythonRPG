@@ -42,7 +42,7 @@ class GameState():
 
     def LoadImages(self, actorPos):
         ut.InsertBackground(self.BackgroundImage, self.Screen)
-        if(self.Actors[0].Image != None):
+        if(self.Actors[0] != None):
             ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen)
         if(self.Actors[1] != None):
             ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen)
@@ -119,6 +119,9 @@ class GameState():
     #endfunc
 
     def VerifyFirstTimeInWindowToPlayMusic(self, music):
+        if(music == 'Recuros' or music == 'caminhoTeofilo' or music == 'caravana'):
+            music = 'inn'
+        #endif
         if(self.Count == 0):
             self.Sound.PlayMusic(f"{music}")
         #endif
