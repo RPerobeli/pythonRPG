@@ -25,6 +25,7 @@
         {
             "txt" : "[Narrador]: A general apontou o caminho para você e foi conversar com o mensageiro.\n"
         },
+        {"txt" : "RemoverAtor1\n"},
         {
             "txt" : "[Narrador]: Chegando no depósito da entrega, ao se aproximar,\nvocê ouve gritos de dois elfos que pareciam estar brigando.\n"
         },
@@ -56,7 +57,7 @@
         }
     ],
     "R1-1":[
-        
+        {"txt" : "RemoverAtor1\n"},
         {
             "txt" : "[Narrador]: Os elfos continuam brigando entre eles enquanto você descarrega a carroça.\n"
         },
@@ -81,7 +82,7 @@
         {
             "txt" : "[Soldado 2]: Bom, se é para a general, não temos muita escolha...\n"
         },
-        
+        {"txt" : "RemoverAtor1\n"},
         {
             "txt" : "[Narrador]: Apos um tempo, Liriel entra no recinto.\n"
         },
@@ -103,6 +104,7 @@
         {
             "txt": "BattleSoldadoElfo2\n"
         },
+        {"txt" : "RemoverAtor1\n"},
         {
             "txt" : "[Narrador]: Com os soldados no chão, ouve-se o general Liriel entrando no depósito.\n"
         },
@@ -205,7 +207,7 @@
             "txt": "InserirMusicaBordel\n"
         },
         {
-            "txt": "[Narrador]: O herói segue o capanga, fingindo interesse pelo local.\n[Narrador]: Vocês passam por alguns poucos guardas, e você nota que todos são elfos da floresta.\n[Narrador]: O guarda te leva até uma sala.\n"
+            "txt": "[Narrador]: Você segue o capanga, fingindo interesse pelo local.\n[Narrador]: Vocês passam por alguns poucos guardas, e você nota que todos são elfos da floresta.\n[Narrador]: O guarda te leva até uma sala.\n"
         },
         {
             "txt": "InserirBackgroundBrothelRoom\n"
@@ -282,7 +284,7 @@
         }
     ],
     "Q3": [
-        
+        {"txt" : "RemoverAtor1\n"},
         {
             "txt": "InserirBackgroundBordel\n"
         },
@@ -301,7 +303,7 @@
         {
             "txt": "[Narrador]: Enquanto dizia isso, se aproveita para se aproximar do guarda. \nRapidamente saca uma flecha de sua aljava e penetra a garganta do guarda.\n"
         },
-        
+        {"txt" : "RemoverAtor1\n"},
         {
             "txt": "[Narrador]: Você abre a porta e 3 elfos armadurados se destacam por estarem em uma reunião.\n[Narrador]: Várias elfas lindas na sala rodeiam os 3 elfos armadurados para serví-los.\n"
         },
@@ -324,7 +326,7 @@
         {
             "txt": "BattleCriminoso\n"
         },
-        
+        {"txt" : "RemoverAtor1\n"},
         {
             "txt": "[Heroi]: Acredito que agora esteja disposto a me ouvir, senhor?\n"
         },

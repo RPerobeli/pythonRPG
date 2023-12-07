@@ -450,7 +450,7 @@
         {
             "txt": "[Tok]: Tem broa de fubá também.\n"
         },
-        
+        {"txt":"RemoverAtor1\n"},
         {
             "txt": "[Narrador]: Algumas semanas depois, o dia derradeiro se aproximava.\n"
         },
@@ -499,6 +499,7 @@
 
     "R2-1":
     [
+        {"txt":"RemoverAtor1\n"},
         {
             "txt": "[Narrador]: Vocês aguardam o dia seguinte.\n[Narrador]: Durante a noite, você acorda com um barulho, lentamente olha para o lado e vê um anão no quarto.\n[Narrador]: Um assassino, se digirindo para matar The'té.\n"
         },
@@ -512,6 +513,7 @@
         {
             "txt": "[The'té]: Nos descobriram... Nossa posição está comprometida.\n[The'té]: Avisarei o Tik e o Tok.\n"
         },
+        {"txt":"RemoverAtor1\n"},
         {
             "txt": "[Narrador]: Após a elfa descer as escadas, outro assassino entra pela janela.\n[Narrador]: Você saca sua arma e se prepara para combate.\n"
         },
@@ -519,7 +521,7 @@
             "txt": "battleAssassino\n"
         },
         {
-            "txt": "[Narrador]: Ao descer as escadas, seus aliados já haviam levado a luta para o lado de fora da casa.[Narrador]: Tik jazia no chão enquanto The'té e Tok continuavam a ceifar vidas de soldados em uma luta desesperada.\n"
+            "txt": "[Narrador]: Ao descer as escadas, seus aliados já haviam levado a luta para o lado de fora da casa.\n[Narrador]: Tik jazia no chão enquanto The'té e Tok continuavam a ceifar vidas de soldados em uma luta desesperada.\n"
         },
         {
             "txt": "InserirBackgroundTeofilotoniStreets\n"
@@ -534,6 +536,7 @@
         {
             "txt": "battleAnaoNobre\n"
         },
+        {"txt":"RemoverAtor1\n"},
         {
             "txt": "[Heroi]: Um ótimo martelo, anão, ficarei com ele.\n"
         },

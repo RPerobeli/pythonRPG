@@ -18,7 +18,6 @@
         {
             "txt" : "battleGuardaMagico\n"
         },
-        
         {
             "txt" : "[Narrador]: O guarda cai desacordado e você rapidamente sai de cena,\nantes que outros guardas apareçam.\n"
         }
@@ -46,6 +45,7 @@
         }
     ],
     "Q2" : [
+        {"txt":"RemoverAtor1\n"},
         {
             "txt" : "[Narrador]: Após adentrar em Florianópolis, você corre rumo a universidade de magia, \npara entregar a carta ao destinatário.\n[Narrador]: As ruas da cidade são repletas de pessoas usando itens mágicos,\ncom fontes de água rica em mana em vários pontos da cidade.\n[Narrador]: Os cidadãos de Florianópolis usam magia como parte de suas vidas.\n"
         },
@@ -249,12 +249,12 @@
         }
     ],
     "Q4" : [
-        
-        {
-            "txt" : "[Ser Misterioso]: Sente-se, humano.\n[Narrador]: Ramos e galhos são invocados do chão,\nse retorcem e formam algo parecido com uma cadeira para você se assentar.\n"
-        },
+        {"txt":"RemoverAtor1\n"},
         {
             "txt" : "InserirDryad\n"
+        },
+        {
+            "txt" : "[Ser Misterioso]: Sente-se, humano.\n[Narrador]: Ramos e galhos são invocados do chão,\nse retorcem e formam algo parecido com uma cadeira para você se assentar.\n"
         },
         {
             "txt" : "[Narrador]: Do objeto luminoso na sala, surge uma manifestação mágica, um ser mítico se põe à sua frente.\n[Dryad]: Me chamo Dryad, uma serva das florestas de Krambeck.\n"

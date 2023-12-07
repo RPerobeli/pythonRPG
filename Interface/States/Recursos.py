@@ -50,7 +50,7 @@ class Recursos(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
-        
+
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneira\n"):
             self.Actors[1] = lib.GetNpc(self.Npcs,"Taverneira")
             self.StoryListId += 1
@@ -62,7 +62,7 @@ class Recursos(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Cavaleiro Estatua"), "Forest")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("forest")
+            self.Sound.PlayMusic("Recursos")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -71,7 +71,7 @@ class Recursos(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Lobo"), "Cave")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("forest")
+            self.Sound.PlayMusic("Recursos")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -80,7 +80,7 @@ class Recursos(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Treant"), "Forest")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("forest")
+            self.Sound.PlayMusic("Recursos")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -94,7 +94,7 @@ class Recursos(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirFloresta\n"):
             self.Sound.StopMusic()
-            self.Sound.PlayMusic("forest")
+            self.Sound.PlayMusic("Recursos")
             self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Forest.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()

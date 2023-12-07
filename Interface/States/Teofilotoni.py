@@ -29,7 +29,7 @@ class Teofilotoni(GameState.GameState):
 
     def SelectNextStory(self):
         self.Sound.StopMusic()
-        return (self.Personagem, self.NextStory, True)
+        return (self.Personagem, "ToBeContinued", True)
     #endfunc
     
     def VerifyEvent(self):

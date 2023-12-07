@@ -105,7 +105,7 @@ class Curitiba(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Soldado Elfo 1"), "Curitiba")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("curitiba")
+            self.Sound.PlayMusic("Curitiba")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -114,7 +114,7 @@ class Curitiba(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Soldado Elfo 2"), "Curitiba")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("curitiba")
+            self.Sound.PlayMusic("Curitiba")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -200,7 +200,7 @@ class Curitiba(GameState.GameState):
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirCuritibaComMusica\n"):
             self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Curitiba.jpg').convert_alpha()
             self.Sound.StopMusic()
-            self.Sound.PlayMusic("curitiba")
+            self.Sound.PlayMusic("Curitiba")
             self.StoryListId += 1
             self.VerifyEvent()
             return
