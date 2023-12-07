@@ -38,7 +38,7 @@ class Florianopolis(GameState.GameState):
     #endfunc
 
     def SelectNextStory(self):
-        # return (self.Personagem, self.NextStory, True)
+        self.Sound.StopMusic()
         return (self.Personagem, "ToBeContinued", True)
     #endfunc
     
@@ -157,63 +157,5 @@ class Florianopolis(GameState.GameState):
             return
         #endif
     #endif
-
-    def Update(self):
-        pygame.display.set_caption("Florianopolis")
-        self.VerifyFirstTimeInWindowToPlayMusic("inn")
-        if(self.Count == 0):
-            self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
-            self.Count+=1
-        #endif
-        self.ScenesManager()
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
-            #endif
-            if (event.type == pygame.KEYDOWN and (event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE)):
-                if(self.StoryListId == len(self.StoryTextList)-1):
-                    if(self.isQuestion):
-                        self.Sound.PlaySFX("cursorError")
-                        print("Ta com pressa irmao? para de pular os dialogos.")
-                    else:
-                        self.Sound.PlaySFX("cursorForward")
-                        self.isQuestion = True
-                        self.StoryIndex += 1 
-                        if(self.StoryIndex == self.MaxStoryIndex):
-                            return self.SelectNextStory()
-                        #endif
-                        self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
-                        self.StoryListId = 0 
-                        self.VerifyEvent()
-                else:
-                    self.Sound.PlaySFX("cursorForward")
-                    self.StoryListId += 1
-                    self.Done = False
-                    self.VerifyEvent()
-                #endif
-            #endif
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
-                self.Sound.PlaySFX("cursorForward")
-                self.Personagem.Good += 1
-                self.SearchAnswerByUserInput(1)
-                self.VerifyEvent()
-            #endif
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
-                self.Sound.PlaySFX("cursorForward")
-                self.Personagem.Neutral += 1
-                self.SearchAnswerByUserInput(2)
-                self.VerifyEvent()
-            #endif
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
-                self.Sound.PlaySFX("cursorForward")
-                self.Personagem.Evil += 1
-                self.SearchAnswerByUserInput(3)
-                self.VerifyEvent()
-            #endif
-        #endfor
-        pygame.display.update()
-        return self.Personagem,'Florianopolis',False
-    #endFunction
 
 #endclass

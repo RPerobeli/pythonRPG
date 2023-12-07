@@ -38,6 +38,7 @@ class SantosBom(GameState.GameState):
     #endfunc
 
     def SelectNextStory(self):
+        self.Sound.StopMusic()
         return (self.Personagem, "RetornoAdLArqueiro", True)
     #endfunc
     

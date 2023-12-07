@@ -76,7 +76,6 @@ class GameStateHandler:
             self.State = "inn"
             # self.krambeckArqueiro = KrambeckArqueiro.KrambeckArqueiro(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
             # self.State = "KrambeckArqueiro"
-
     #endfunc
     def Inn(self):
         print("inn")

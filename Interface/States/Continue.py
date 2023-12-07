@@ -21,7 +21,7 @@ class Continue(GameState.GameState):
     
 
 
-    def Update(self):
+    def Update(self, namestate):
         #Cena tapa na cachorra
         ut.InsertBackground(self.BackgroundImage, self.Screen)
         self.Sound.PlayMusic("continue")
