@@ -44,14 +44,12 @@ class KrambeckArqueiro(GameState.GameState):
     
     def VerifyEvent(self):
         print('verificou possiveis eventos')
+
         if(self.StoryTextList[self.StoryListId]['txt'] == "RemoverAtor1\n"):
-            while(len(self.Actors) >= 2):
-                self.Actors.pop(1)
-                self.StoryListId += 1
-            #endif
+            self.Actors[1] = None
+            self.StoryListId += 1
             self.VerifyEvent()
             return
-        #endif
         #endif
 
         #region NPCs

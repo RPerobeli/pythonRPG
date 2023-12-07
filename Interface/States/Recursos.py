@@ -44,6 +44,12 @@ class Recursos(GameState.GameState):
     
     def VerifyEvent(self):
         print('verificou possiveis eventos')
+        if(self.StoryTextList[self.StoryListId]['txt'] == "RemoverAtor1\n"):
+            self.Actors[1] = None
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneira\n"):
             self.Actors[1] = lib.GetNpc(self.Npcs,"Taverneira")
