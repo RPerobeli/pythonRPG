@@ -4,6 +4,11 @@ from Interface.States import Caravan
 from Interface.States import Florianopolis
 from Interface.States import ViagemTeofilotoni
 from Interface.States import Teofilotoni
+from Interface.States import Recursos
+from Interface.States import Curitiba
+from Interface.States import Continue
+from Interface.States import KrambeckArqueiro
+from Interface.States import SantosBom
 from Interface.States import Title as t
 from Interface import DialogBox
 from Interface import BattleWindow as bw
@@ -33,20 +38,31 @@ class GameStateHandler:
             self.ViagemTeofilotoni()
         if(self.State == "caravana"):
             self.Caravan()
+        if(self.State == "Recursos"):
+            self.Recursos()
         if(self.State == "Florianopolis"):
             self.Florianopolis()
         #endif
         if(self.State == "Teofilotoni"):
             self.Teofilotoni()
         #endif
-        if(self.State == "Krambeck"):
-            self.Krambeck()
+        if(self.State == "Curitiba"):
+            self.Curitiba()
+        #endif
+        if(self.State == "KrambeckArqueiro"):
+            self.KrambeckArqueiro()
+        #endif
+        if(self.State == "SantosBom"):
+            self.SantosBom()
         #endif
         if(self.State == "Felastus"):
             self.Felastus()
         #endif
         if(self.State == "Acre"):
             self.Acre()
+        #endif
+        if(self.State == "ToBeContinued"):
+            self.ToBeContinued()
         #endif
     #endfunc
 
@@ -56,15 +72,15 @@ class GameStateHandler:
         self.Title.RedrawWindow()
         self.Hero = self.Title.Update()
         if(self.Hero!=None):
-            self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
-            self.State = "inn"
-            # self.teofilotoni = Teofilotoni.Teofilotoni(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
-            # self.State = "Teofilotoni"
+            # self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
+            # self.State = "inn"
+            self.santosBom = SantosBom.SantosBom(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+            self.State = "SantosBom"
     #endfunc
     def Inn(self):
         print("inn")
-        self.inn.RedrawWindow()
-        self.Hero,state, continueStory = self.inn.Update()
+        # self.inn.RedrawWindow()
+        self.Hero,state, continueStory = self.inn.Update("inn")
         self.State = state
         if(continueStory):
             if(self.Hero.classe.lower() == "mago"):
@@ -72,14 +88,14 @@ class GameStateHandler:
             elif(self.Hero.classe.lower() == "guerreiro"):
                 self.caminhoTeofilo = ViagemTeofilotoni.ViagemTeofilotoni(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs)
             elif(self.Hero.classe.lower() == "arqueiro"):
-                self.caravan = Caravan.Caravan(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs)
+                self.recursos = Recursos.Recursos(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
             #endif
         #endif
     #endfunc
 
     def Caravan(self):
         print('caravana')
-        self.Hero,state, continueStory = self.caravan.Update()
+        self.Hero,state, continueStory = self.caravan.Update("caravana")
         self.State = state
         if(continueStory):
             self.floripa = Florianopolis.Florianopolis(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -88,7 +104,7 @@ class GameStateHandler:
 
     def ViagemTeofilotoni(self):
         print('caminhoTeofilo')
-        self.Hero,state, continueStory = self.caminhoTeofilo.Update()
+        self.Hero,state, continueStory = self.caminhoTeofilo.Update('caminhoTeofilo')
         self.State = state
         if(continueStory):
             self.teofilotoni = Teofilotoni.Teofilotoni(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -97,34 +113,61 @@ class GameStateHandler:
 
     def Florianopolis(self):
         print('Florianopolis')
-        self.Hero,state, continueStory = self.floripa.Update()
+        self.Hero,state, continueStory = self.floripa.Update('Florianopolis')
         self.State = state
         if(continueStory):
-            print("partiu krambeck ou coliseu")
+            self.tobecontinued = Continue.Continue(self.Screen)
         #endif
     #endfunc
 
     def Teofilotoni(self):
         print('Teofilotoni')
-        self.Hero,state, continueStory = self.teofilotoni.Update()
+        self.Hero,state, continueStory = self.teofilotoni.Update('Teofilotoni')
         self.State = state
         if(continueStory):
-            print("partiu coliseu ou acre")
+            self.tobecontinued = Continue.Continue(self.Screen)
         #endif
     #endfunc
 
-    def Krambeck(self):
-        print('Krambeck')
-        self.Hero,state, continueStory = self.teofilotoni.Update()
+    def Curitiba(self):
+        print('Curitiba')
+        self.Hero,state, continueStory = self.curitiba.Update('Curitiba')
         self.State = state
         if(continueStory):
-            print("...")
+            self.krambeckArqueiro = KrambeckArqueiro.KrambeckArqueiro(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+        #endif
+    #endfunc
+
+    def Recursos(self):
+        print('Recursos')
+        self.Hero,state, continueStory = self.recursos.Update('Recursos')
+        self.State = state
+        if(continueStory):
+            self.curitiba = Curitiba.Curitiba(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+        #endif
+    #endfunc
+
+    def KrambeckArqueiro(self):
+        print('KrambeckArqueiro')
+        self.Hero,state, continueStory = self.krambeckArqueiro.Update('KrambeckArqueiro')
+        self.State = state
+        if(continueStory):
+            self.santosBom = SantosBom.SantosBom(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+        #endif
+    #endfunc
+    
+    def SantosBom(self):
+        print('SantosBom')
+        self.Hero,state, continueStory = self.santosBom.Update('SantosBom')
+        self.State = state
+        if(continueStory):
+            self.tobecontinued = Continue.Continue(self.Screen)
         #endif
     #endfunc
 
     def Felastus(self):
         print('Felastus')
-        self.Hero,state, continueStory = self.teofilotoni.Update()
+        self.Hero,state, continueStory = self.teofilotoni.Update('Felastus')
         self.State = state
         if(continueStory):
             print("...")
@@ -132,11 +175,16 @@ class GameStateHandler:
     #endfunc
     def Acre(self):
         print('Acre')
-        self.Hero,state, continueStory = self.teofilotoni.Update()
+        self.Hero,state, continueStory = self.teofilotoni.Update('Acre')
         self.State = state
         if(continueStory):
             print("...")
         #endif
     #endfunc
     
+    def ToBeContinued(self):
+        print('ToBeContinued')
+        state = self.tobecontinued.Update('ToBeContinued')
+        self.State = state
+    #endfunc
 #endclass

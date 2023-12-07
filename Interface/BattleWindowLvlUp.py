@@ -3,19 +3,21 @@ import pygame
 import Utils.JsonLoader as jsonL
 import Interface.States.GameState as GameState
 import Interacoes as lib
+import Interface.BattleWindowSpec as bwspec
 class BattleWindowLvlUp(GameState.GameState):
     def __init__(self,screen, dialogBox,personagem, monster, bgName):
         super().__init__(screen)
         imagePath =  jsonL.GetImagePath()
         self.DialogBox = dialogBox
         self.BackgroundImage = pygame.image.load(f'{imagePath}/Background/{bgName}.jpg').convert_alpha()
-        self.Actors.append(personagem)
+        self.Actors[0] = personagem
         self.Personagem = personagem
         self.Monster = monster
-        self.Actors.append(monster)
+        self.Actors[1] = monster
         self.Scene = 1
         self.Alpha = 255
         self.BattleText = {}
+        self.BGName = bgName
     #endfunc
 
 
@@ -42,7 +44,6 @@ class BattleWindowLvlUp(GameState.GameState):
             self.OptionsDict["Options"]["PositionOptions"]["x"],self.OptionsDict["Options"]["PositionOptions"]["y"])
     #endfunc
 
-
     def PrintDmg(self, dano, personagem):
         if(personagem.acoes.isCrit):
             self.BattleText = {"txt": f"ACERTO CRÍTICO!!!\n{personagem.name} causou {dano} de dano!\n"}
@@ -62,6 +63,13 @@ class BattleWindowLvlUp(GameState.GameState):
             self.BattleText = {"txt": f"O {self.Monster.name} foi capinado.\nXP: {round(self.Personagem.XP,2)}/100\n"}
             self.Upou = False
             self.Scene = 2
+        #endif
+    #endfunc
+
+    def VerifyLvlForSpecialization(self):
+        if(self.Personagem.lvl == 5):
+            self.SpecWindow = bwspec.BattleWindowSpec(self.Screen,self.DialogBox,self.Personagem,self.Monster,self.BGName)
+            self.SpecWindow.ChooseSpecialization(self.Personagem)
         #endif
     #endfunc
     def LvlUp(self, hero):
@@ -87,18 +95,21 @@ class BattleWindowLvlUp(GameState.GameState):
                     self.Personagem.skills["str"] += 1
                     self.Personagem.AtualizaStatus()
                     self.Sound.StopMusic()
+                    self.VerifyLvlForSpecialization()
                     return self.Personagem
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
                     self.Personagem.skills["agi"] += 1
                     self.Personagem.AtualizaStatus()
                     self.Sound.StopMusic()
+                    self.VerifyLvlForSpecialization()
                     return self.Personagem
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
                     self.Personagem.skills["int"] += 1
                     self.Personagem.AtualizaStatus()
                     self.Sound.StopMusic()
+                    self.VerifyLvlForSpecialization()
                     return self.Personagem
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_4):

@@ -55,6 +55,9 @@
             "txt" : "InserirBackgroundCidade\n"
         },
         {
+            "txt" : "[Narrador]: Você se encontra na Cidade Livre.\n"
+        },
+        {
             "txt" : "[Narrador]: Indo em direção a praça da cidade, você avista, em meio à nevasca,\n o prédio da guilda Asas da Liberdade, uma guilda famosa em todo o continente.\n Após sentar-se em uma mesa na taverna da guilda, a taverneira vem ao seu encontro.\n"
         },
         {
@@ -75,8 +78,14 @@
             "txt" : "perder10hp\n"
         },
         {
-            "txt" : "[Aviso]: Heroi perdeu 10 de HP\n[Taverneira]: Você tem que pagar pela refeição, imbecil.\nSe não pode pagar, pegue uma missão no mural ali e faça dinheiro!\n[Narrador]: Com as costelas doendo, você vai até  o mural e pega a única missão restante.\n"
-        }
+            "txt" : "[Aviso]: Heroi perdeu 10 de HP\n[Taverneira]: Você tem que pagar pela refeição, imbecil.\nSe não pode pagar, pegue uma missão no mural ali e faça dinheiro!\n"
+        },
+        {
+            "txt" : "Temer\n"
+        },
+        {
+            "txt" : "[Narrador]: Com as costelas doendo, você vai até  o mural e pega a única missão restante.\n\n"
+        } 
     ],
     "R2-2":[
         {

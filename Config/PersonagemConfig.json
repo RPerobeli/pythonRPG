@@ -13,5 +13,50 @@
         "Classe": "mago",
         "ImageMultiplier" : 0.8,
         "needFlip" : "False"
+    },
+    {
+        "Classe": "ranger",
+        "ImageMultiplier" : 0.85,
+        "needFlip" : "False"
+    },
+    {
+        "Classe": "cacador",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Classe": "atirador",
+        "ImageMultiplier" : 0.9,
+        "needFlip" : "True"
+    },
+    {
+        "Classe": "lanceiro",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Classe": "barbaro",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Classe": "paladino",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Classe": "arquimago",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Classe": "clerigo",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Classe": "necromante",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
     }
 ]

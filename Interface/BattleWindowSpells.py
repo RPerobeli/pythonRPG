@@ -9,14 +9,18 @@ class BattleWindowSpells(GameState.GameState):
         imagePath =  jsonL.GetImagePath()
         self.DialogBox = dialogBox
         self.BackgroundImage = pygame.image.load(f'{imagePath}/Background/{bgName}.jpg').convert_alpha()
-        self.Actors.append(personagem)
+        self.Actors[1] = personagem
         self.Personagem = personagem
         self.Monster = monster
-        self.Actors.append(monster)
+        self.Actors[1] = monster
         self.Scene = 1
         self.Alpha = 255
         self.BattleText = {}
-        self.SpellsList = jsonL.GetSpells(self.Personagem.classe)
+        if(self.Personagem.Subclass != None):
+            self.SpellsList = jsonL.GetSpells(self.Personagem.Subclass)
+        else:
+            self.SpellsList = jsonL.GetSpells(self.Personagem.classe)
+        #endif
     #endfunc
 
 

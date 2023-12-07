@@ -28,11 +28,15 @@
         "file": "Battle3.wav",
         "volume": 0.2
     },
+    "Battle4": {
+        "file": "Battle4.wav",
+        "volume": 0.2
+    },
     "Victory1": {
         "file": "Victory1.wav",
         "volume": 0.2
     },
-    "florianopolis": {
+    "Florianopolis": {
         "file": "FlorianopolisCity.wav",
         "volume": 0.2
     },
@@ -44,8 +48,44 @@
         "file": "BattleBossCut.wav",
         "volume": 0.2
     },
-    "dwarf": {
+    "Teofilotoni": {
         "file": "DwarfCut.wav",
         "volume": 0.1
+    },
+    "Curitiba": {
+        "file": "Curitiba.wav",
+        "volume": 0.4
+    },
+    "curitibaNight": {
+        "file": "CuritibaNight.wav",
+        "volume": 0.2
+    },
+    "brothel": {
+        "file": "Brothel.wav",
+        "volume": 0.2
+    },
+    "Recursos": {
+        "file": "Forest.wav",
+        "volume": 0.1
+    },
+    "KrambeckArqueiro": {
+        "file": "KrambeckArq.wav",
+        "volume": 0.2
+    },
+    "reggae": {
+        "file": "Reggae.wav",
+        "volume": 0.2
+    },
+    "SantosBom": {
+        "file": "Santos.wav",
+        "volume": 0.2
+    },
+    "SantosMau": {
+        "file": "Santos.wav",
+        "volume": 0.2
+    },
+    "continue": {
+        "file": "To-Be-Continued.wav",
+        "volume": 0.2
     }
 }

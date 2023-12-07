@@ -16,10 +16,10 @@ class BattleWindow(GameState.GameState):
         imagePath =  jsonL.GetImagePath()
         self.DialogBox = dialogBox
         self.BackgroundImage = pygame.image.load(f'{imagePath}/Background/{bgName}.jpg').convert_alpha()
-        self.Actors.append(personagem)
+        self.Actors[0] = personagem
         self.Personagem = personagem
         self.Monster = monster
-        self.Actors.append(monster)
+        self.Actors[1] = monster
         self.Scene = 1
         self.Alpha = 255
         self.BattleText = {}
@@ -105,9 +105,9 @@ class BattleWindow(GameState.GameState):
             print("in battle")
             self.ScenesManager()
             for event in pygame.event.get():
-                isFinished = self.VerifyIfBattleIsFinished()
-                if(isFinished):
-                    return self.Personagem
+                #isFinished = self.VerifyIfBattleIsFinished()
+                # if(isFinished):
+                #     return self.Personagem
                 #endif
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -187,7 +187,7 @@ class BattleWindow(GameState.GameState):
         if(self.Monster.isBoss == "True" and self.Monster.name != "Cao Infernal"):
             self.Sound.PlayMusic("BattleBoss")
         else:
-            val = rnd.randint(1,3)
+            val = rnd.randint(1,4)
             self.Sound.PlayMusic(f"Battle{val}")
         #endif
     #endfunc

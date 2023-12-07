@@ -46,7 +46,7 @@ def CriaArmas():
     for linha in arq:
         valores = linha.split(',')
         listaArmas.append(
-            a.Arma(valores[1], valores[2], valores[3].strip(), valores[0]))
+            a.Arma(valores[1], int(valores[2]), valores[3].strip(), valores[0]))
     return listaArmas
 # endfunc
 

@@ -8,11 +8,9 @@
             "txt": "InserirGuardaExterno\n"
         },
         {
-            "txt": "[Guarda]: Parados aí! A entrada em Teofilotoni de estrangeiros está proibida por ordens do nosso rei!\n[Heroi]: Nós temos um contrado de guilda, guarda.\n[Guardda]: Sinto muito, aventureiro, mas não há exceções.\n"
+            "txt": "[Guarda]: Parados aí! A entrada em Teofilotoni de estrangeiros está proibida por ordens do nosso rei!\n[Heroi]: Nós temos um contrato de guilda, guarda.\n[Guardda]: Sinto muito, aventureiro, mas não há exceções.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
@@ -22,9 +20,7 @@
         {
             "txt": "[Narrador]: A elfa retira de sua bolsa uma safira cósmica e entrega ao guarda.\n[Narrador]: Os olhos do guarda brilham com o vislumbre de tal pedra estrelada.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirGuardaExterno\n"
         },
@@ -32,9 +28,7 @@
             "txt": "[Guarda]: Dada a casualidade, acredito que com essa generosidade, \npossamos chegar a um acordo benéfico para ambas as partes.\n"
             
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
@@ -44,9 +38,7 @@
         {
             "txt": "InserirBackgroundTeofilotoniStreets\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "[Narrador]: Teofilotoni é uma cidade dividida em superior e inferior.\n[Narrador]: A parte superior da cidade é voltada para os campos de agricultura,\njá a parte inferior é onde a verdadeira cidade se encontra.\n[Narrador]: Campos de mineração, comércio... a grandeza da cidade ficava embaixo da terra.\n"
         },
@@ -59,9 +51,7 @@
         {
             "txt": "[Narrador]: A dupla vai até o subúrbio de Teofilotoni, e buscam pelo Recanto do Opala.\n[Narrador]: Enquanto caminhavam, viam muitos cidadãos miseráveis pelas ruas,\ncom guardas por todos os lados.\n[Narrador]: Ao longe era visível a construção que parecia ser o castelo do rei enânico.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirBackgroundTeofilotoniInn\n"
         },
@@ -80,18 +70,14 @@
         {
             "txt": "[Taverneiro]: Meu pai, Opala Barbarruiva, ao fundar esse bar, \nfoi o primeiro a beber 6 canecos da 51 mais forte que temos aqui!\n[Taverneiro]: Todos aqueles que conseguem alcançar ou superar meu pai \nrecebem a honra de serem conhecidos como Opala Seis Canecos por todo o distrito!\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
         {
             "txt": "[The'té]: Heroi, não deveríamos chamar atenção até terminarmos nossa tarefa aqui.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTaverneiro\n"
         },
@@ -108,9 +94,7 @@
         {
             "txt": "[Narrador]: Depois de alguns goles, você sente que o álcool sobe à sua cabeça.\n[Narrador]: Você força mais alguns goles da forte bebida mas é segurado por The'té.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
@@ -120,18 +104,14 @@
         {
             "txt": "[Heroi]: Uma ótima bebida anão! Mas não será hoje que vencerei o desafio. Voltarei outro dia!\n"  
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTaverneiro\n"
         },
         {
             "txt": "[Taverneiro]: Pelo visto temos mais um que fala mais do que bebe senhores! Hahahahaha \nAlguém mais quer tentar?\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "[Narrador]: Você se afasta e assenta ao fundo com The'té para esperar o contato.\n[Narrador]: Após um tempo de espera, um anão armadurado adentra o recinto.\n"
         },
@@ -141,27 +121,21 @@
         {
             "txt": "[Narrador]: The'té faz um sinal com a cabeça e o anão vem até vocês.\n[Contato]: Noite! Percebo que conseguiu chegar aqui sem muitos problemas.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
         {
             "txt": "[The'té]: Teremos tropas para nos ajudar vindos daqui algumas semanas,\nos preparativos estão sendo feitos. A revolução terá o nosso apoio.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
         {
             "txt": "[Contato]: O desgraçado do rei Zé Dassilva IV será morto por nós. \n[Contato]: Temos seguidores o suficiente para causar um alvoroço dentro de Teofilotoni.\n[Contato]: Enquanto o exército real estiver ocupado com a distração élfica, seremos capazes\nde assassinar o rei e atingir os suprimentos do inimigo.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
@@ -171,9 +145,7 @@
         {
             "txt": "[Narrador]: Enquanto conversavam, guardas entram na taverna:\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirGuarda\n"
         },
@@ -192,9 +164,7 @@
         {
             "txt": "[Narrador]: Vocês tentam fugir pela janela do bar, conseguem correr por algumas quadras com flechas ao seu encalço,\nporém, o cerco dos guardas acaba por alcançá-los. \n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "BattleAnaoAtiradorStreet\n"
         },
@@ -210,9 +180,7 @@
         {
             "txt": "[Anão Desconhecido]: Rápido, por aqui!\n\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
@@ -222,18 +190,14 @@
         {
             "txt": "[Narrador]: Vocês, no desespero, acompanham para dentro da casa do anão enquanto ele fecha a porta.\n[Contato]: Por Deus Tik! Era para você ter vigiado o lado de fora para nos avisar se alguém aparecesse.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTik\n"
         },
         {
             "txt": "[Tik]: Uai Tok, me bateu uma fome então vim em casa pegar um docinho de leite, sô.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
@@ -246,9 +210,7 @@
         {
             "txt": "[Narrador]: Vocês buscam uma mesa ao fundo, de onde dava pra olhar todo o bar,\nsem ficarem expostos.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
@@ -261,54 +223,42 @@
         {
             "txt": "[The'té]: Sim... Há décadas os anões se trancaram em Teofilotoni, e como pôde ver,\neles conseguiram muitas riquezas. Mas ninguém além deles tem acesso a tudo isso.\n[The'té]: Porém, isso fica apenas para as casas nobres deles. No fim, a maioria dos anões\ntem como maior esperança de diversão, vir para tavernas como essa.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
         {
             "txt": "[Narrador]: The'té faz um sinal com a cabeça para um anão que acabara de entrar na taverna.\n[Contato]: Noite! Percebo que conseguiu chegar aqui sem muitos problemas.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
         {
             "txt": "[The'té]: Teremos tropas para nos ajudar vindos daqui algumas semanas,\nos preparativos estão sendo feitos. A revolução terá o nosso apoio.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
         {
             "txt": "[Contato]: O desgraçado do rei Zé Dassilva IV será morto por nós. \n[Contato]: Temos seguidores o suficiente para causar um alvoroço dentro de Teofilotoni.\n[Contato]: Enquanto o exército real estiver ocupado com a distração élfica, seremos capazes\nde assassinar o rei e atingir os suprimentos do exército real.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
         {
             "txt": "[The'té]: Os detalhes estão nesse envelope.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
         {
             "txt": "[Narrador]: Após conversarem mais detalhes sobre o plano da revolução vocês saem do Recando do Opala.\n[Contato]: Iremos à minha casa, ficaremos escondidos lá até o dia da ação.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirBackgroundTeofilotoniStreets\n"
         },
@@ -336,18 +286,14 @@
         {
             "txt": "[Narrador]: Com ajuda, os 3 conseguem fugir para uma casa em um beco.\n[Anão Desconhecido]: Tok! Cê ta bem? vamo cuidar desse machucado aí.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
         {
             "txt": "[Tok]: Uai, tô ótimo, Tik! Nem parece que tem duas flechas no meu corpo!\n[Tok]: Aproveita e me ajuda aqui a parar o sangramento.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTik\n"
         },
@@ -357,9 +303,7 @@
     ],
     "R1-3":
     [
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTaverneiro\n"
         },
@@ -372,36 +316,28 @@
         {
             "txt": "[Narrador]: Enquanto você bebe, The'té sinaliza a um anão que entra no bar \ne ambos iniciam a preparação para a revolução.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
         {
             "txt": "[The'té]: Teremos tropas para nos ajudar vindos daqui algumas semanas,\nos preparativos estão sendo feitos. A revolução terá o nosso apoio.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
         {
             "txt": "[Contato]: O desgraçado do rei Zé Dassilva IV será morto por nós.\n[Contato]: Temos seguidores o suficiente para causar um alvoroço dentro de Teofilotoni.\n[Contato]: Enquanto o exército real estiver ocupado com a distração élfica, seremos capazes\nde assassinar o rei e atingir os suprimentos do exército real.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
         {
             "txt": "[The'té]: Os detalhes estão nesse envelope.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTaverneiro\n"
         },
@@ -417,27 +353,21 @@
         {
             "txt": "[Narrador]: Enquanto festejavam, alguns soldados entraram no bar.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirGuarda\n"
         },
         {
             "txt": "[Guarda]: Ficamos sabendo que temos um novo opala 6 canecos no distrito, e que ele é um HUMANO!\n[Taverneiro]: Sim! Cumprimentem o nosso vencedor! \n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
         {
             "txt": "[Narrador]: Uma adaga acerta um dos guardas. \nThe'té rapidamente saca suas espadas enquanto você ainda está cambaleante.\n[The'te]: Anão, segure este maldito alcólatra.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
@@ -456,18 +386,14 @@
         {
             "txt": "InserirBackgroundTeofilotoniStreets\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTik\n"
         },
         {
             "txt": "[Anão Desconhecido]: Rápido, por aqui!\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
@@ -477,18 +403,14 @@
         {
             "txt": "[Narrador]: Vocês, no desespero, acompanham para dentro da casa do anão enquanto ele fecha a porta.\n[Contato]: Por Deus Tik! Era para você ter vigiado o 'trem' para nos avisar se alguém aparecesse.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTik\n"
         },
         {
             "txt": "[Tik]: Uai Tok, me bateu uma fome então vim em casa pegar um docinho de leite, sô.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
@@ -501,9 +423,7 @@
     ],
     
     "Q2":[
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "[Heroi]: Poderiam discutir outra hora? Estamos sendo procurados pelos oficiais.\n"
         },
@@ -516,29 +436,23 @@
         {
             "txt": "[The'té]: Aqui está, mas acredito que uma vez que já foi visto conosco,\nvocê também é um procurado. Não saírá com tranquilidade dessa cidade.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTik\n"
         },
         {
             "txt": "[Tik]: Podem ficar aqui escondidos o quanto precisarem, 'cês' aceitam um cafézim?\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
         {
             "txt": "[Tok]: Tem broa de fubá também.\n"
         },
+        {"txt":"RemoverAtor1\n"},
         {
-            "txt": "RemoverAtor1\n"
-        },
-        {
-            "txt": "[Narrador]: Algumas semanas depois, o dia derradeiro se aprovimava.\n"
+            "txt": "[Narrador]: Algumas semanas depois, o dia derradeiro se aproximava.\n"
         },
         {
             "txt": "InserirThete\n"
@@ -546,9 +460,7 @@
         {
             "txt": "[The'té]: O exército élfico deve estar em vias de se aproximar da cidade.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
 
         {
             "txt": "InserirTok\n"
@@ -556,18 +468,14 @@
         {
             "txt": "[Tok]: Amanhã é o dia combinado. O 'trem' vai começar.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTik\n"
         },
         {
             "txt": "[Tik]: Do nosso lado também ja estamos prontos.\n[Tik]: Todos os esquadrões já tem suas ordens.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "[Narrador]: Enquanto conversavam, o alarme do distrito tocou.\n[Narrador]: Após Tok observar pela janela, alguns guardas foram vistos em movimentação.\n"
         },
@@ -577,9 +485,7 @@
         {
             "txt": "[Tik]: Se os soldados tão em movimentação, eles podem ter noção do exército élfico.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
@@ -593,12 +499,11 @@
 
     "R2-1":
     [
+        {"txt":"RemoverAtor1\n"},
         {
             "txt": "[Narrador]: Vocês aguardam o dia seguinte.\n[Narrador]: Durante a noite, você acorda com um barulho, lentamente olha para o lado e vê um anão no quarto.\n[Narrador]: Um assassino, se digirindo para matar The'té.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
@@ -608,6 +513,7 @@
         {
             "txt": "[The'té]: Nos descobriram... Nossa posição está comprometida.\n[The'té]: Avisarei o Tik e o Tok.\n"
         },
+        {"txt":"RemoverAtor1\n"},
         {
             "txt": "[Narrador]: Após a elfa descer as escadas, outro assassino entra pela janela.\n[Narrador]: Você saca sua arma e se prepara para combate.\n"
         },
@@ -615,14 +521,12 @@
             "txt": "battleAssassino\n"
         },
         {
-            "txt": "[Narrador]: Ao descer as escadas, seus aliados já haviam levado a luta para o lado de fora da casa.[Narrador]: Tik jazia no chão enquanto The'té e Tok continuavam a ceifar vidas de soldados em uma luta desesperada.\n"
+            "txt": "[Narrador]: Ao descer as escadas, seus aliados já haviam levado a luta para o lado de fora da casa.\n[Narrador]: Tik jazia no chão enquanto The'té e Tok continuavam a ceifar vidas de soldados em uma luta desesperada.\n"
         },
         {
             "txt": "InserirBackgroundTeofilotoniStreets\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirNobreAnao\n"
         },
@@ -632,6 +536,7 @@
         {
             "txt": "battleAnaoNobre\n"
         },
+        {"txt":"RemoverAtor1\n"},
         {
             "txt": "[Heroi]: Um ótimo martelo, anão, ficarei com ele.\n"
         },
@@ -647,27 +552,21 @@
     ],
     "R2-2":
     [
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
         {
             "txt": "[The'té]: Eles devem planejar acabar com o exército sulista antes de lidarem conosco...\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
         {
             "txt": "[Tok]: Uma emboscada, talvez?\n[Tok]: Precisamos notificar nossos aliados, rápido.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
@@ -689,9 +588,7 @@
         {
             "txt": "[Narrador]: Enquanto saíam, um anão, no alto da rua aparece.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirNobreAnao\n"
         },
@@ -704,18 +601,14 @@
         {
             "txt": "BattleAnaoPolicialStreet\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
         {
             "txt": "[Narrador]: Após sair do sufoco, você tenta ajudar a The'té a tentar chegar no nobre,\nenquanto ela batalhava contra 2 soldados.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirNobreAnao\n"
         },
@@ -725,9 +618,7 @@
         {
             "txt": "[Narrador]: Você desvia de um golpe do nobre, enquanto rola para o lado.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
@@ -737,18 +628,14 @@
         {
             "txt": "[Narrador]: 2 atiradores em cima do prédio visam a sua vida. \nThe'té atira duas adagas e conseque matar um dos inimigos.[The'té]: Saia daqui! Alguém precisa avisar os outros núcleos!\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirNobreAnao\n"
         },
         {
             "txt": "[Anão Nobre]: Vocês não sairão daqui com vida!\n[Narrador]: Você defende um golpe do martelo do anão, mais uma flecha vem em sua direção.\n[Narrador]: The'té entra na frente da flecha.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
@@ -761,27 +648,21 @@
     ],
     "R2-3":
     [
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
         {
             "txt": "[The'té]: ATAQUE INIMIGO!!\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTik\n"
         },
         {
             "txt": "[Tik]: Arreda que lá vai bomba!\n[Narrador]: Tik arremessa algumas granadas pela janela.\n[Narrador]: Você desce as escadas para sair do prédio mas encontra Tok ateando fogo na casa.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirTok\n"
         },
@@ -794,18 +675,14 @@
         {
             "txt": "[Narrador]: Ao sair da casa, o prédio desaba devido às chamas, com todos dentro.\n[Narrador]: Soldados se encontram por todos os lados.\n[Narrador]: Uma flecha acerta sua perna, impedindo que você corra com velocidade\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirNobreAnao\n"
         },
         {
             "txt": "[Anão Nobre]: Capturem-no com vida.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirThete\n"
         },
@@ -821,9 +698,7 @@
         {
             "txt": "InserirBackgroundDwarvenPalace\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirCampeao\n"
         },
@@ -833,27 +708,21 @@
         {
             "txt": "[Narrador]: Você acorda, acorrentado, e percebe que o local em que está não é uma prisão.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirReiAnao\n"
         },
         {
             "txt": "[Zé Dassilva IV]: Então você é um dos apoiadores dessa tentativa de golpe em cima de mim?\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirCampeao\n"
         },
         {
             "txt": "[Campeão de Teofilotoni]: O rei demanda uma resposta, escória!\n[Heroi]: Sou um aventureiro, fui contratado para uma escolta e acabei envolvido nisso tudo.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirReiAnao\n"
         },
@@ -866,9 +735,7 @@
         {
             "txt": "goAcre\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirReiAnao\n"
         },
@@ -887,9 +754,7 @@
         {
             "txt": "[Zé Dassilva IV]: Para você, aventureiro, tenho um pequeno presente. Gel'ssu, meu campeão, mate-o.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirCampeao\n"
         },
@@ -899,9 +764,7 @@
         {
             "txt": "[Heroi]: O que? Não, calma aí!\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirReiAnao\n"
         },
@@ -921,23 +784,19 @@
             "txt": "goFelastus\n"
         },
         {
-            "txt": "[Heroi]: De fato eu não tenho nada relacionado à essa revoluçao, mas me pedir para ajudar um rei tiranico como você...\n[Heroi]: Está além do meu limite.\n"
+            "txt": "[Heroi]: De fato eu não tenho nada relacionado à essa revoluçao,\n mas me pedir para ajudar um rei tiranico como você...\n[Heroi]: Está além do meu limite.\n"
         },
         {
             "txt": "[Narrador]: Você cospe no rei, enquanto continua ajoelhado.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirReiAnao\n"
         },
         {
             "txt": "[Zé Dassilva IV]: Vejo que não tens desejo pelo diálogo, uma pena.\n[Zé Dassilva IV]: Gel'ssu. Mate-o.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirCampeao\n"
         },
@@ -950,9 +809,7 @@
         {
             "txt": "battleCampeao\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirReiAnao\n"
         },
@@ -966,7 +823,7 @@
             "txt": "[Narrador]: Devido ao choque, você perde suas forças.\n"
         },
         {
-            "txt": "[Zé Dassilva IV]: A tecnologia mágica enânica é demais para vocẽ? Achou mesmo que eu não tomaria precauções?\n[Zé Dassilva IV]: Quanta petulância... Ainda assim, farei dinheiro com você.\n"
+            "txt": "[Zé Dassilva IV]: A tecnologia mágica enânica é demais para vocẽ?\n Achou mesmo que eu não tomaria precauções?\n[Zé Dassilva IV]: Quanta petulância... Ainda assim, farei dinheiro com você.\n"
         }
     ]
 }

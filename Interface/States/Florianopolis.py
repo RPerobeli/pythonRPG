@@ -15,13 +15,13 @@ class Florianopolis(GameState.GameState):
         self.DialogBox = dialogBox
         self.Personagem = personagem
         self.Monstros = monstros
-        self.Actors = []
-        self.Actors.append(personagem)
+        self.Actors = [None]*3
+        self.Actors[0] = personagem
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
         self.Filename = "SoltosEmFloripa"
-        self.MaxStoryIndex = 5
+        self.MaxStoryIndex = 4
         self.Count = 0
         self.Armas = armas
         
@@ -38,43 +38,45 @@ class Florianopolis(GameState.GameState):
     #endfunc
 
     def SelectNextStory(self):
-        return (self.Personagem, 'Teofilotoni', True)
+        self.Sound.StopMusic()
+        return (self.Personagem, "ToBeContinued", True)
     #endfunc
     
     def VerifyEvent(self):
         print('verificou possiveis eventos')
         if(self.StoryTextList[self.StoryListId]['txt'] == "RemoverAtor1\n"):
-            self.Actors.pop(1)
+            self.Actors[1] = None
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
+        
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMagoAnciao\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Mago Anciao"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Mago Anciao")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirDryad\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Dryad"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Dryad")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirGuardaMagico\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Guarda Magico"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Guarda Magico")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirWillhelm\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Willhelm"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Willhelm")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirDemonioInferior\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Demonio Inferior"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Demonio Inferior")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -148,64 +150,18 @@ class Florianopolis(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
-    #endif
-
-    def Update(self):
-        pygame.display.set_caption("Florianopolis")
-        self.VerifyFirstTimeInWindowToPlayMusic("inn")
-        if(self.Count == 0):
-            self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
-            self.Count+=1
+        if(self.StoryTextList[self.StoryListId]['txt'] == "goFelastus\n"):
+            self.NextStory = "Felastus"
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
         #endif
-        self.ScenesManager()
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
-            #endif
-            if (event.type == pygame.KEYDOWN and (event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE)):
-                if(self.StoryListId == len(self.StoryTextList)-1):
-                    if(self.isQuestion):
-                        self.Sound.PlaySFX("cursorError")
-                        print("Ta com pressa irmao? para de pular os dialogos.")
-                    else:
-                        self.Sound.PlaySFX("cursorForward")
-                        self.isQuestion = True
-                        self.StoryIndex += 1 
-                        if(self.StoryIndex == self.MaxStoryIndex):
-                            return self.SelectNextStory()
-                        #endif
-                        self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
-                        self.StoryListId = 0 
-                        self.VerifyEvent()
-                else:
-                    self.Sound.PlaySFX("cursorForward")
-                    self.StoryListId += 1
-                    self.Done = False
-                    self.VerifyEvent()
-                #endif
-            #endif
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
-                self.Sound.PlaySFX("cursorForward")
-                self.Personagem.Good += 1
-                self.SearchAnswerByUserInput(1)
-                self.VerifyEvent()
-            #endif
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
-                self.Sound.PlaySFX("cursorForward")
-                self.Personagem.Neutral += 1
-                self.SearchAnswerByUserInput(2)
-                self.VerifyEvent()
-            #endif
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
-                self.Sound.PlaySFX("cursorForward")
-                self.Personagem.Evil += 1
-                self.SearchAnswerByUserInput(3)
-                self.VerifyEvent()
-            #endif
-        #endfor
-        pygame.display.update()
-        return self.Personagem,'Florianopolis',False
-    #endFunction
+        if(self.StoryTextList[self.StoryListId]['txt'] == "goKrambeck\n"):
+            self.NextStory = "Krambeck"
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+    #endif
 
 #endclass

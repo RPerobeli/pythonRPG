@@ -12,11 +12,12 @@ class GameState():
         self.imagePath =  jsonL.GetImagePath()
         self.Screen = screen
         self.NumberOfBtn = 0
-        self.Actors = []
+        self.Actors = [None] * 3
         self.Filename = ""
         self.StoryIndex = 1
         self.StoryListId = 0
         self.StoryTextList =[]
+        self.MaxStoryIndex = 0
         self.DialogBox = None
         self.isQuestion = True
         self.Alpha = 255
@@ -31,43 +32,23 @@ class GameState():
     #endfunc
 
     def ScenesManager(self):
-        print("não há imagens - método virtual")
+        if (self.Scene == 1):
+            actorPos = self.PlaceActors()
+            self.LoadImages(actorPos)
+            self.LoadTextWithList(self.StoryTextList[self.StoryListId], heroName=self.Personagem.name)
+        else:
+            print("erro ao entrar nas Cenas -> inn.ScenesManager()")
+        #endif
     #endfunc
 
     def LoadImages(self, actorPos):
         ut.InsertBackground(self.BackgroundImage, self.Screen)
-        ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen)
-        if(len(self.Actors) > 1):
-            ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen,self.Alpha)
+        if(self.Actors[0] != None):
+            ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen)
+        if(self.Actors[1] != None):
+            ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen)
         #endif
         ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen)
-        #endif
-    #endfunc
-
-
-    def FadeOut(self, actorPos):
-        ut.InsertBackground(self.BackgroundImage, self.Screen,self.Alpha)
-        ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen,self.Alpha)
-        if(self.Actors[1] != None):
-            ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen,self.Alpha)
-        #endif
-        ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen, self.Alpha)
-        self.Alpha-=1
-        #endif
-    #endfunc
-
-    def FadeIn(self, actorPos, varyAlpha = False):
-        if(varyAlpha):
-            ut.InsertBackground(self.BackgroundImage, self.Screen,self.Alpha)
-        else:
-            ut.InsertBackground(self.BackgroundImage, self.Screen,255)
-        #endif
-        ut.InsertImage(self.Actors[0].Image.File, self.Actors[0].Image.Width, self.Actors[0].Image.Height, actorPos['x0'],actorPos['y0'], self.Screen,self.Alpha)
-        if(len(self.Actors) > 1):
-            ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen,self.Alpha)
-        #endif
-        ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen, self.Alpha)
-        self.Alpha+=1
         #endif
     #endfunc
 
@@ -87,6 +68,9 @@ class GameState():
     def PlaceActors(self):
         returningActPos = {}
         for i in range (0,len(self.Actors)):
+            if(self.Actors[i] == None):
+                continue
+            #endif
             actorPos = jsonL.GetActorPosition(i+1)
             returningActPos[f'x{i}'],returningActPos[f'y{i}'] = ut.TransformCenterCoordIntoBorder(self.Actors[i].Image, actorPos['x'],actorPos['y'])
         #endfor
@@ -136,8 +120,76 @@ class GameState():
     #endfunc
 
     def VerifyFirstTimeInWindowToPlayMusic(self, music):
+        if(music == 'Recuros' or music == 'caminhoTeofilo' or music == 'caravana'):
+            music = 'inn'
+        #endif
         if(self.Count == 0):
             self.Sound.PlayMusic(f"{music}")
         #endif
     #endfunction
+
+
+    def SelectNextStory(self):
+        print(self.NextStory)
+    #endfunc
+
+    def Update(self, nomeState):
+        #Cena tapa na cachorra
+        pygame.display.set_caption(nomeState)
+        self.VerifyFirstTimeInWindowToPlayMusic(nomeState)
+        if(self.Count == 0):
+            self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
+            self.Count += 1
+        #endif
+        self.ScenesManager()
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            #endif
+            if (event.type == pygame.KEYDOWN and (event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE)):
+                if(self.StoryListId == len(self.StoryTextList)-1):
+                    if(self.isQuestion and self.StoryIndex < self.MaxStoryIndex):
+                        self.Sound.PlaySFX("cursorError")
+                        print(self.MaxStoryIndex)
+                        print("Ta com pressa irmao? para de pular os dialogos.")
+                    else:
+                        self.Sound.PlaySFX("cursorForward")
+                        self.isQuestion = True
+                        self.StoryIndex += 1 
+                        if(self.StoryIndex > self.MaxStoryIndex):
+                            return self.SelectNextStory()
+                        #endif
+                        self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
+                        self.StoryListId = 0 
+                        self.VerifyEvent()
+                else:
+                    self.Sound.PlaySFX("cursorForward")
+                    self.StoryListId += 1
+                    self.Done = False
+                    self.VerifyEvent()
+                #endif
+            #endif
+            if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
+                self.Sound.PlaySFX("cursorForward")
+                self.Personagem.Good += 1
+                self.SearchAnswerByUserInput(1)
+                self.VerifyEvent()
+            #endif
+            if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
+                self.Sound.PlaySFX("cursorForward")
+                self.Personagem.Neutral += 1
+                self.SearchAnswerByUserInput(2)
+                self.VerifyEvent()
+            #endif
+            if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
+                self.Sound.PlaySFX("cursorForward")
+                self.Personagem.Evil += 1
+                self.SearchAnswerByUserInput(3)
+                self.VerifyEvent()
+            #endif
+        #endfor
+        pygame.display.update()
+        return self.Personagem,nomeState, False
+    #endFunction
 #endclass

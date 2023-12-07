@@ -58,5 +58,91 @@
         "Nome": "Rei dos Anoes",
         "ImageMultiplier" : 0.8,
         "needFlip" : "False"
+    },
+    {
+        "Nome": "ElfWhore",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Pelegolas",
+        "ImageMultiplier" : 1.2,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Liriel",
+        "ImageMultiplier" : 0.85,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Cultista",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Elfa da Floresta",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo da Floresta",
+        "ImageMultiplier" : 1.2,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo da Floresta2",
+        "ImageMultiplier" : 1.5,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Alto Elfo",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Ferreiro",
+        "ImageMultiplier" : 1.2,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Endilien",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Ferreiro",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Taverneiro2",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Aldea",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Mago",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Arqueiro",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "GolDRoger",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Fendric",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
     }
+    
 ]

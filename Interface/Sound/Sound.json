@@ -1,14 +1,34 @@
 {
     "temer": {
         "file":"maicol Temer.wav",
+        "volume" : 1
+    },
+    "ladrao": {
+        "file":"Ladrao.wav",
+        "volume" : 0.5
+    },
+    "umaMaquina": {
+        "file":"UmaMaquina.wav",
         "volume" : 0.5
     },
     "cursorError": {
         "file":"Cursor1.wav",
-        "volume" : 0.5
+        "volume" : 0.2
     },
     "cursorForward": {
         "file":"Cursor3.wav",
+        "volume" : 0.1
+    },
+    "Aguia": {
+        "file":"Aguia.wav",
         "volume" : 0.5
+    },
+    "Tiro": {
+        "file":"TiroPistola.wav",
+        "volume" : 1
+    },
+    "Barragem": {
+        "file":"CannonBarrage.wav",
+        "volume" : 1
     }
 }

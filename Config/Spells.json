@@ -23,61 +23,33 @@
         },
         {
             "Key" : 4,
-            "Nome": "Brisa",
-            "Cost": 15,
-            "BaseDamage": 8,
-            "Lvl":4
-        },
-        {
-            "Key" : 5,
-            "Nome": "Fio Desencapado",
-            "Cost": 25,
-            "BaseDamage": 15,
-            "Lvl":5
-        },
-        {
-            "Key" : 6,
             "Nome": "Mil flagelos de Emme White",
             "Cost": 30,
             "BaseDamage": 45,
-            "Lvl":6
+            "Lvl":4
         }
     ],
     "arqueiro" : [
         {
             "Key" : 1,
             "Nome": "Flecha de fogo",
-            "Cost": 8,
-            "BaseDamage": 12,
+            "Cost": 10,
+            "BaseDamage": 10,
             "Lvl":1
         },
         {
             "Key" : 2,
             "Nome": "Suruba de flecha",
             "Cost": 12,
-            "BaseDamage": 7,
+            "BaseDamage": 12,
             "Lvl":2
         },
         {
             "Key" : 3,
             "Nome": "Flecha Arcana",
             "Cost": 15,
-            "BaseDamage": 8,
+            "BaseDamage": 15,
             "Lvl":4
-        },
-        {
-            "Key" : 4,
-            "Nome": "Bem no buraco",
-            "Cost": 20,
-            "BaseDamage": 20,
-            "Lvl":5
-        },
-        {
-            "Key" : 5,
-            "Nome": "Flecha profana",
-            "Cost": 30,
-            "BaseDamage": 25,
-            "Lvl":6
         }
     ],
     "guerreiro" : [
@@ -85,36 +57,242 @@
             "Key" : 1,
             "Nome": "Jarrada",
             "Cost": 12,
-            "BaseDamage": 5,
+            "BaseDamage": 10,
             "Lvl":1
         },
         {
             "Key" : 2,
             "Nome": "Avanco",
             "Cost": 8,
-            "BaseDamage": 3,
+            "BaseDamage": 8,
             "Lvl":2
         },
         {
             "Key" : 3,
-            "Nome": "Soco do Feng Shui",
+            "Nome": "Surra de Espada Mole",
             "Cost": 15,
-            "BaseDamage": 8,
+            "BaseDamage": 15,
+            "Lvl":5
+        }
+    ],
+    "necromante" : [
+        {
+            "Key" : 1,
+            "Nome": "Desconjuntar",
+            "Cost": 20,
+            "BaseDamage": 15,
+            "Lvl":3
+        },
+        {
+            "Key" : 2,
+            "Nome": "Mil flagelos de Emme White",
+            "Cost": 30,
+            "BaseDamage": 35,
             "Lvl":4
         },
         {
-            "Key" : 4,
-            "Nome": "Surra de Espada Mole",
-            "Cost": 15,
-            "BaseDamage": 9,
+            "Key" : 3,
+            "Nome": "Thriller",
+            "Cost": 30,
+            "BaseDamage": 35,
             "Lvl":5
         },
         {
+            "Key" : 4,
+            "Nome": "Chorume de Cadáver",
+            "Cost": 30,
+            "BaseDamage": 45,
+            "Lvl":7
+        },
+        {
             "Key" : 5,
-            "Nome": "Tem muita mulher que ja viu essa cena",
+            "Nome": "Mamada de Alma",
+            "Cost": 30,
+            "BaseDamage": 30,
+            "Lvl":8
+        },
+        {
+            "Key" : 6,
+            "Nome": "Ondas do Inferno",
+            "Cost": 30,
+            "BaseDamage": 45,
+            "Lvl":10
+        }
+    ],
+    "arquimago" : [
+        {
+            "Key" : 1,
+            "Nome": "SOU EU BOLA DE FOGO 2",
+            "Cost": 30,
+            "BaseDamage": 35,
+            "Lvl":1
+        },
+        {
+            "Key" : 2,
+            "Nome": "Agua Molhada 2",
+            "Cost": 13,
+            "BaseDamage": 40,
+            "Lvl":2
+        },
+        {
+            "Key" : 3,
+            "Nome": "Tremedeira de Chão",
+            "Cost": 30,
+            "BaseDamage": 45,
+            "Lvl":5
+        },
+        {
+            "Key" : 4,
+            "Nome": "Pilar de Chamas",
+            "Cost": 25,
+            "BaseDamage": 45,
+            "Lvl":7
+        },
+        {
+            "Key" : 5,
+            "Nome": "Lança de Gelo",
+            "Cost": 13,
+            "BaseDamage": 45,
+            "Lvl":8
+        },
+        {
+            "Key" : 6,
+            "Nome": "Meteoro",
+            "Cost": 13,
+            "BaseDamage": 55,
+            "Lvl":10
+        } 
+    ],
+    "clerigo" : [
+        {
+            "Key" : 1,
+            "Nome": "Desconjuntar",
             "Cost": 20,
-            "BaseDamage": 6,
-            "Lvl":6
+            "BaseDamage": 15,
+            "Lvl":3
+        },
+        {
+            "Key" : 2,
+            "Nome": "Penitência",
+            "Cost": 13,
+            "BaseDamage": 40,
+            "Lvl":5
+        },
+        {
+            "Key" : 3,
+            "Nome": "Cura que não cura",
+            "Cost": 30,
+            "BaseDamage": 45,
+            "Lvl":7
+        },
+        {
+            "Key" : 4,
+            "Nome": "Luz RGB Purificadora",
+            "Cost": 25,
+            "BaseDamage": 45,
+            "Lvl":7
+        },
+        {
+            "Key" : 5,
+            "Nome": "Prece do Extermínio",
+            "Cost": 13,
+            "BaseDamage": 45,
+            "Lvl":8
+        },
+        {
+            "Key" : 6,
+            "Nome": "Genocídio Abençoado",
+            "Cost": 13,
+            "BaseDamage": 55,
+            "Lvl":10
+        } 
+    ],
+    "ranger" : [
+        {
+            "Key" : 1,
+            "Nome": "Flecha de fogo  2",
+            "Cost": 20,
+            "BaseDamage": 20,
+            "Lvl":1
+        },
+        {
+            "Key" : 2,
+            "Nome": "Suruba de flecha",
+            "Cost": 22,
+            "BaseDamage": 22,
+            "Lvl":2
+        },
+        {
+            "Key" : 3,
+            "Nome": "Disparo Penetrante",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Lvl":5
+        },
+        {
+            "Key" : 4,
+            "Nome": "Flecha Profana",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Lvl":7
+        },
+        {
+            "Key" : 5,
+            "Nome": "Disparo Duplo",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Lvl":8
+        },
+        {
+            "Key" : 6,
+            "Nome": "Snipe",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Lvl":10
+        }
+    ],
+    "atirador" : [
+        {
+            "Key" : 1,
+            "Nome": "Flecha de fogo  2",
+            "Cost": 20,
+            "BaseDamage": 20,
+            "Lvl":1
+        },
+        {
+            "Key" : 2,
+            "Nome": "Suruba de flecha",
+            "Cost": 22,
+            "BaseDamage": 22,
+            "Lvl":2
+        },
+        {
+            "Key" : 3,
+            "Nome": "Disparo Penetrante",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Lvl":5
+        },
+        {
+            "Key" : 4,
+            "Nome": "Flecha Profana",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Lvl":7
+        },
+        {
+            "Key" : 5,
+            "Nome": "Disparo Duplo",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Lvl":8
+        },
+        {
+            "Key" : 6,
+            "Nome": "Snipe",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Lvl":10
         }
     ]
 }

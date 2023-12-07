@@ -11,17 +11,17 @@ class ViagemTeofilotoni(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None):
         super().__init__(screen)
         self.ImagePath =  jsonL.GetImagePath()
-        self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/SnowyCity.png').convert_alpha()
+        self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/SnowyCity.jpg').convert_alpha()
         self.DialogBox = dialogBox
         self.Personagem = personagem
         self.Monstros = monstros
-        self.Actors = []
-        self.Actors.append(personagem)
+        self.Actors = [None]*3
+        self.Actors[0] = personagem
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
         self.Filename = "ViagemTeofilotoni"
-        self.MaxStoryIndex = 3
+        self.MaxStoryIndex = 2
         self.Count = 0
         
     #endfunc
@@ -43,38 +43,40 @@ class ViagemTeofilotoni(GameState.GameState):
     
     def VerifyEvent(self):
         print('verificou possiveis eventos')
+        
         if(self.StoryTextList[self.StoryListId]['txt'] == "RemoverAtor1\n"):
-            self.Actors.pop(1)
+            self.Actors[1] = None
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
+        
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneira\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Jessie"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Jessie")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirAnaoFalastrao\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Anao Falastrao"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Anao Falastrao")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirAnaoFerido\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Anao Bandido"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Anao Bandido")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirThete\n"):
-            self.Actors.append(lib.GetNpc(self.Npcs,"Thete"))
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Thete")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirAnaBandida\n"):
-            self.Actors.append(lib.GetMonstro(self.Monstros,"Ana Bandida"))
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Ana Bandida")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -121,64 +123,4 @@ class ViagemTeofilotoni(GameState.GameState):
             return
         #endif
     #endif
-
-    
-    def Update(self):
-        self.VerifyFirstTimeInWindowToPlayMusic("inn")
-        pygame.display.set_caption("Caminho para Teofilotoni")
-        if(self.Count == 0):
-            self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
-            self.Count+=1
-        #endif
-        self.ScenesManager()
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
-            #endif
-            if (event.type == pygame.KEYDOWN and (event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE)):
-                if(self.StoryListId == len(self.StoryTextList)-1):
-                    if(self.isQuestion):
-                        self.Sound.PlaySFX("cursorError")
-                        print("Ta com pressa irmao? para de pular os dialogos.")
-                    else:
-                        self.Sound.PlaySFX("cursorForward")
-                        self.isQuestion = True
-                        self.StoryIndex += 1 
-                        if(self.StoryIndex == self.MaxStoryIndex):
-                            return self.SelectNextStory()
-                        #endif
-                        self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
-                        self.StoryListId = 0 
-                        self.VerifyEvent()
-                else:
-                    self.Sound.PlaySFX("cursorForward")
-                    self.StoryListId += 1
-                    self.Done = False
-                    self.VerifyEvent()
-                #endif
-            #endif
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
-                self.Sound.PlaySFX("cursorForward")
-                self.Personagem.Good += 1
-                self.SearchAnswerByUserInput(1)
-                self.VerifyEvent()
-            #endif
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
-                self.Sound.PlaySFX("cursorForward")
-                self.Personagem.Neutral += 1
-                self.SearchAnswerByUserInput(2)
-                self.VerifyEvent()
-            #endif
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
-                self.Sound.PlaySFX("cursorForward")
-                self.Personagem.Evil += 1
-                self.SearchAnswerByUserInput(3)
-                self.VerifyEvent()
-            #endif
-        #endfor
-        pygame.display.update()
-        return self.Personagem,'caminhoTeofilo',False
-    #endFunction
-
 #endclass

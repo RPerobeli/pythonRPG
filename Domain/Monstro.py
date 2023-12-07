@@ -147,7 +147,7 @@ class Monstro():
 
     def AdequaHP(self):
         # dobra o hp dos monstros pra ficar mais interessante
-        if(self.isBoss == "True"):
+        if(self.isBoss == "True" or self.classe.lower() == "mago"):
             self.HP = (0.5*self.lvl+0.75)*self.HP
             self.MP = (0.5*self.lvl+0.75)*self.MP
             self.HPmax = (0.5*self.lvl+0.75)*self.HPmax
