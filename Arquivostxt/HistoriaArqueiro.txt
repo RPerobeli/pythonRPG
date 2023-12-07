@@ -130,7 +130,9 @@ Cena 3: Infiltrando-se no Esconderijo dos Bandidos
 
 [Líder dos Bandidos]: Percebo sua força, estranho. O que quer de mim?
 
-[Narrador]: O líder dos bandidos tenta expulsar o herói, mas o herói insiste em ajudar.
+[Narrador]: Você se assenta.
+
+[Heroi]: Quero que me expliquem o que está aconntecendo para vocês saírem das suas florestas e virem parar aquiu em Curitiba.
 
 
 
