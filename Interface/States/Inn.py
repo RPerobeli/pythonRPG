@@ -16,7 +16,7 @@ class Inn(GameState.GameState):
         self.DialogBox = dialogBox
         self.Personagem = personagem
         self.Monstros = monstros
-        self.Actors = []
+        self.Actors = [None]*3
         self.Actors[0] = personagem
         self.Npcs = npcs
         self.Alpha = 0
@@ -26,20 +26,12 @@ class Inn(GameState.GameState):
         self.Count = 0
         
     #endfunc
-
+    
     def ScenesManager(self):
-        if (self.Scene == 2):
+        if (self.Scene == 1):
             actorPos = self.PlaceActors()
             self.LoadImages(actorPos)
-            self.LoadTextWithList(self.StoryTextList[self.StoryListId])
-        elif ((self.Scene == 1)):          
-            actorPos = self.PlaceActors()
-            if (self.Alpha <= 255):
-                self.FadeIn(actorPos)
-            else:    
-                self.LoadImages(actorPos)
-                self.Scene += 1
-            #endif
+            self.LoadTextWithList(self.StoryTextList[self.StoryListId], heroName=self.Personagem.name)
         else:
             print("erro ao entrar nas Cenas -> inn.ScenesManager()")
         #endif
@@ -83,7 +75,7 @@ class Inn(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "removerCachorra\n"):
             print("removeu a cachorra")
-            self.Actors.pop(1)
+            self.Actors[1] = None
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -103,7 +95,6 @@ class Inn(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneira\n"):
-            print('inserir taverneira')
             self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/guild.jpg').convert_alpha()
             self.Actors[1] = lib.GetNpc(self.Npcs,"Jessie")
             self.StoryListId += 1
@@ -115,69 +106,7 @@ class Inn(GameState.GameState):
             self.StoryListId += 1
             self.VerifyEvent()
             return
-        #endif
-        
+        #endif   
     #endif
-
-    def Update(self):
-        #Cena tapa na cachorra
-        pygame.display.set_caption("Hospedagem")
-        self.VerifyFirstTimeInWindowToPlayMusic("inn")
-        if(self.Scene == 1):
-            self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
-            self.Count += 1
-        #endif
-        self.ScenesManager()
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
-            #endif
-            if (event.type == pygame.KEYDOWN and (event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE)):
-                if(self.StoryListId == len(self.StoryTextList)-1):
-                    if(self.isQuestion):
-                        self.Sound.PlaySFX("cursorError")
-                        print("Ta com pressa irmao? para de pular os dialogos.")
-                    else:
-                        self.Sound.PlaySFX("cursorForward")
-                        self.isQuestion = True
-                        self.StoryIndex += 1 
-                        if(self.StoryIndex == self.MaxStoryIndex):
-                            return self.SelectNextStory()
-                        #endif
-                        self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
-                        self.StoryListId = 0 
-                        self.VerifyEvent()
-                else:
-                    self.Sound.PlaySFX("cursorForward")
-                    self.StoryListId += 1
-                    self.Done = False
-                    self.VerifyEvent()
-                #endif
-            #endif
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
-                self.Sound.PlaySFX("cursorForward")
-                self.Personagem.Good += 1
-                self.SearchAnswerByUserInput(1)
-                self.VerifyEvent()
-            #endif
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
-                self.Sound.PlaySFX("cursorForward")
-                #self.Sound.PlaySFX("cursorForward")
-                #self.Sound.PlaySFX("cursorForward")
-                self.Personagem.Neutral += 1
-                self.SearchAnswerByUserInput(2)
-                self.VerifyEvent()
-            #endif
-            if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
-                self.Sound.PlaySFX("cursorForward")
-                self.Personagem.Evil += 1
-                self.SearchAnswerByUserInput(3)
-                self.VerifyEvent()
-            #endif
-        #endfor
-        pygame.display.update()
-        return self.Personagem,'inn', False
-    #endFunction
 
 #endclass

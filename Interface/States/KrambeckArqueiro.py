@@ -15,7 +15,7 @@ class KrambeckArqueiro(GameState.GameState):
         self.DialogBox = dialogBox
         self.Personagem = personagem
         self.Monstros = monstros
-        self.Actors = []
+        self.Actors = [None]*3
         self.Actors[0] = personagem
         self.Npcs = npcs
         self.Alpha = 255

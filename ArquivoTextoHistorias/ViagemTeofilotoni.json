@@ -9,9 +9,7 @@
         {
             "txt" : "[Narrador]: Após guardar a carta na sua bolsa, você se dirige à saída.\n[Taverneira]: Ei, guerreiro, é meu primeiro dia aqui. Você não disse o seu nome, aliás, me chamo Jessie.\n[Narrador]: Você sorri, diz seu nome, e parte para sua viagem.\n[Jessie]: Volte sempre, Heroi. Que a Deusa da Luz o abençoe.\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "[Narrador]: Ao chegar no local você avista uma aglomeração.\n[Narrador]: Um anão no meio da multidão anunciava, com sua voz sobrepujando os murmúrios das pessoas:\n"
         },
@@ -37,9 +35,7 @@
             "txt" : "[Narrador]: Após o término da batalha, o anão busca a pedra, porém a safira não está mais na mesa.\n[Anão]: Roubaram a minha pedra! ladrões! Guardas!!!\n"
             
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirThete\n"
         },
@@ -51,9 +47,7 @@
         }
     ],  
     "R1-2":[
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "[Narrador]: Você senta ao longe e observa a comoção.\n[Narrador]: Pouco tempo depois você escuta um alvoroço,\nguardas correndo e a multidão pouco depois se dispersa.\n"   
         },
@@ -78,9 +72,7 @@
         {
             "txt" : "battleAnaoFalastrao\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "[Narrador]: Após o término da batalha, você fita a mesa novamente, buscando a safira cósmica,\nporém a pedra não está mais na mesa.\n[Narrador]: Você procura ao redor, mas não a encontra, você perdeu o seu prêmio.\n[Narrador]: Após a comoção, você percebe que ficará sem seu prêmio,\nsenta-se, puto, na praça e uma elfa vem ao seu encontro.\n"
         },
@@ -108,9 +100,7 @@
         {
             "txt" : "[Narrador]: A conversa é interrompida ao verem um anão caído no chão, ferido.\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirAnaoFerido\n"
         },
@@ -126,9 +116,7 @@
         {
             "txt" : "battleAnaoFerido\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirThete\n"
         },
@@ -140,9 +128,7 @@
         {
             "txt" : "[Narrador]: Com sua arma em mãos, vocês cruzam pelo anão enquanto ele agoniza.\n[Anão Ferido]: Ajuda... por favor...\n[Narrador]: Vocês seguem sua viagem.\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirThete\n"
         },
@@ -154,9 +140,7 @@
         {
             "txt" : "[Narrador]: Você desce do cavalo, saca sua espada e antes que o anão pudesse se mover, desfere um golpe letal.\n[Heroi]: Uma morte rápida e indolor para você, meu caro anão.\n[Narrador]: Gritando em fúria, uma anã sai por detrás das rochas e desfere um golpe surpresa em você.\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirAnaBandida\n"
         },
@@ -172,9 +156,7 @@
         {
             "txt" : "battleAnaBandida\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirThete\n"
         },

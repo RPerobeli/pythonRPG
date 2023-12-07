@@ -15,7 +15,7 @@ class Recursos(GameState.GameState):
         self.DialogBox = dialogBox
         self.Personagem = personagem
         self.Monstros = monstros
-        self.Actors = []
+        self.Actors = [None]*3
         self.Actors[0] = personagem
         self.Npcs = npcs
         self.Alpha = 255
@@ -114,9 +114,9 @@ class Recursos(GameState.GameState):
         
     #endif
 
-    def Update(self):
+    def Update(self, nameState):
         self.VerifyFirstTimeInWindowToPlayMusic("inn")
-        pygame.display.set_caption("Recursos")
+        pygame.display.set_caption(nameState)
         if(self.Count == 0):
             self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
             self.Count+=1
@@ -170,7 +170,7 @@ class Recursos(GameState.GameState):
             #endif
         #endfor
         pygame.display.update()
-        return self.Personagem,'Recursos',False
+        return self.Personagem,nameState,False
     #endFunction
 
 #endclass

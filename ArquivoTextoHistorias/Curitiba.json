@@ -21,9 +21,7 @@
         {
             "txt" : "[Liriel]: Para o depósito! Vá na frente, te encontro lá em alguns instantes.\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "[Narrador]: A general apontou o caminho para você e foi conversar com o mensageiro.\n"
         },
@@ -36,9 +34,7 @@
         {
             "txt" : "[Soldado 1]: Devolve minha seda, você sempre me pede, tu tem que arranjar a sua própria seda!!\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirSoldadoElfo2\n"
         },
@@ -48,9 +44,7 @@
         {
             "txt" : "[Heroi]: Com licença, senhores, eu vim entregar esses recursos.\nPoderiam parar de discutir e me auxiliar a descarregá-los?\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "[Narrador]: Os soldados o fitam com desprezo.\n"
         },
@@ -62,9 +56,7 @@
         }
     ],
     "R1-1":[
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "[Narrador]: Os elfos continuam brigando entre eles enquanto você descarrega a carroça.\n"
         },
@@ -82,18 +74,14 @@
         }
     ],
     "R1-2":[
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirSoldadoElfo2\n"
         },
         {
             "txt" : "[Soldado 2]: Bom, se é para a general, não temos muita escolha...\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "[Narrador]: Apos um tempo, Liriel entra no recinto.\n"
         },
@@ -108,9 +96,7 @@
         }
     ],
     "R1-3":[
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "BattleSoldadoElfo1\n"
         },
@@ -129,36 +115,28 @@
         {
             "txt" : "[Narrador]: Rapidamente os soldados se levantam.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirSoldadoElfo2\n"
         },
         {
             "txt": "[Soldados]: NÃO SENHORA!\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirLiriel\n"
         },
         {
             "txt": "[Liriel]: Descarreguem os suprimentos da carroça de Heroi. Tenho assuntos a tratar com ele.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirSoldadoElfo\n"
         },
         {
             "txt" : "[Soldados]: SIM SENHORA!\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirLiriel\n"
         },
@@ -197,9 +175,7 @@
         {
             "txt": "[Liriel]: Esses bandidos são muito perigosos, tenha cuidado.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "[Narrador]: Com o plano em mente, o herói se dirige ao esconderijo dos bandidos.\nEle sabia que precisava ser furtivo para não chamar a atenção.\n[Narrador]: Ao se aproximar do local indicado por Liriel,\nvocê percebe que o esconderijo se trata de um bordel.\n[Narrador]: Você se aproxima de um dos guardas do local, um elfo da floresta.\n"
         },
@@ -221,9 +197,7 @@
         {
             "txt": "[Guarda]: Interessante... Seja bem vindo.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirBackgroundBordel\n"
         },
@@ -242,9 +216,7 @@
         {
             "txt": "[Guarda]: Por favor, aguarde, uma atendente logo virá.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirMeretriz\n"
         },
@@ -310,9 +282,7 @@
         }
     ],
     "Q3": [
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirBackgroundBordel\n"
         },
@@ -331,9 +301,7 @@
         {
             "txt": "[Narrador]: Enquanto dizia isso, se aproveita para se aproximar do guarda. \nRapidamente saca uma flecha de sua aljava e penetra a garganta do guarda.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "[Narrador]: Você abre a porta e 3 elfos armadurados se destacam por estarem em uma reunião.\n[Narrador]: Várias elfas lindas na sala rodeiam os 3 elfos armadurados para serví-los.\n"
         },
@@ -343,9 +311,7 @@
         {
             "txt": "[Líder dos Bandidos]: O que você quer? Não é autorizado ninguém a entrar aqui.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirCriminosoAtirador\n"
         },
@@ -358,9 +324,7 @@
         {
             "txt": "BattleCriminoso\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "[Heroi]: Acredito que agora esteja disposto a me ouvir, senhor?\n"
         },
@@ -370,9 +334,7 @@
         {
             "txt": "[Sylathor]: Hahahahaha, Você aparece no meu bordel, mata meus homens, e quer conversar?\n[Sylathor]: Mys'tral, acabe com ele.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirMystral\n"
         },
@@ -382,9 +344,7 @@
         {
             "txt": "BattleMystral\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirSylathor\n"
         },
@@ -414,9 +374,7 @@
         {
             "txt": "[Heroi]: Ficará na cadeia por um bom tempo.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirCuritibaComMusica\n"
         },
@@ -437,9 +395,7 @@
         {
             "txt": "[Narrador]: Silenciosamente, você finaliza o trabalho matando o meliante.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "InserirCuritibaComMusica\n"
         },

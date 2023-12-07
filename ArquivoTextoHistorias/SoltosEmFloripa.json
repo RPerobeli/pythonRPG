@@ -18,9 +18,7 @@
         {
             "txt" : "battleGuardaMagico\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "[Narrador]: O guarda cai desacordado e você rapidamente sai de cena,\nantes que outros guardas apareçam.\n"
         }
@@ -32,9 +30,7 @@
         {
             "txt" : "[Narrador]: Você deixa cair a carta da missão e o guarda vê o selo de Florianópolis, \nautorizando sua entrada na cidade.\n"            
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "[Guarda]: Peço desculpas pelo infortúnio, pode seguir, jovem.\n"
         }
@@ -44,9 +40,7 @@
         {
             "txt" : "[Narrador]: O guarda valida sua identificação, e o deixa entrar sem mais problemas.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "[Guarda]: Vá em paz.\n"
         }
@@ -122,9 +116,7 @@
         {
             "txt" : "[Willhelm]: Se agir de forma desordeira, irão te jogar ao demônio. Você escutou ele lá embaixo, não?\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirCouncilRoom\n"
         },
@@ -143,9 +135,7 @@
         {
             "txt" : "[Mago Ancião]: Moleque, Você adentra na reunião mais importante do Bonde da Magia\napenas para pedir dinheiro? \n[Mago Ancião]: Guardas! Levem-no para o Demônio!\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "battleDemonioInferior\n"
         },
@@ -175,9 +165,7 @@
         {
             "txt" : "[Narrador]: Você olha para o fim do corredor, e percebe que não há saída.\n[Narrador]: Com isso você se prepara para o pior e fica a postos.\n"
         },
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirDemonioInferior\n"
         },
@@ -187,9 +175,7 @@
         {
             "txt" : "battleDemonioInferior\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt": "[Narrador]: Após a derrota, o demônio se torna cinzas.\n[Narrador]: Devido aos estrondos no corredor, a porta se abre e os conselheiros aparecem.\n"
         },
@@ -199,9 +185,7 @@
         {
             "txt": "[Mago Ancião]: Que barulheira é essa? O que está acontecendo aqui?\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirWillhelm\n"
         },
@@ -214,9 +198,7 @@
         {
             "txt" : "InserirCouncilRoom\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirMagoAnciao\n"
         },
@@ -238,27 +220,21 @@
         {
             "txt" : "[Narrador]: Willhelm, relutante, esboça uma face azeda e acata a sua afirmação.\n[Narrador]: Você entra na sala, O local é escuro, com um objeto luminoso no centro do ambiente,\n5 cadeiras se encontram dispostas na sala sendo 4 ocupadas.\n[Narrador]: Willhelm entra atrás de você e senta na única cadeira vazia.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirMagoAnciao\n"
         },
         {
             "txt" : "[Narrador]: A atenção dos senhores na sala se volta para você, o mais velho dos homens começa a falar:\n[Mago Ancião]: Willhelm, este é o aventureiro o qual você disse que contrataria?\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirWillhelm\n"
         },
         {
             "txt": "[Willhelm]: Exatamente, senhor, ele veio da Asas da Liberdade,\numa guilda de renome, acredito que ele é capaz.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirMagoAnciao\n"
         },
@@ -273,9 +249,7 @@
         }
     ],
     "Q4" : [
-        {
-            "txt" : "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "[Ser Misterioso]: Sente-se, humano.\n[Narrador]: Ramos e galhos são invocados do chão,\nse retorcem e formam algo parecido com uma cadeira para você se assentar.\n"
         },
@@ -306,18 +280,14 @@
         {
             "txt" : "[Dryad]: Esse culto é chamado de Crepúsculo Gélido, e é composto por bruxos, \nque são mestres de demônios.\n[Dryad]: Seus números não são tão extensos,porém cada um invoca lacaios demoníacos \ne isso os tornam numerosos.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirWillhelm\n"
         },
         {
             "txt" : "[Willhelm]: Nossos estudiosos da Universidade vasculharam na nossa biblioteca sobre tal culto,\ne não encontramos nada sobre.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirDryad\n"
         },
@@ -341,36 +311,28 @@
         {
             "txt" : "[Narrador]: O conselho reprova claramente sua conduta.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirMagoAnciao\n"
         },
         {
             "txt" : "[Mago Ancião]: Mesmo após tudo o que aconteceu, ainda assim se comporta como um moleque diante do Bonde?\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirWillhelm\n"
         },
         {
             "txt" : "[Willhelm]: Parece que eu estava errado sobre você, herói.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirDryad\n"
         },
         {
             "txt" : "[Dryad]: Então, mago, não podemos deixar que meu pedido de ajuda saia deste recinto, você sabe demais.\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirMagoAnciao\n"
         },
@@ -380,9 +342,7 @@
         {
             "txt" : "battleGuardaMagicoElite\n"
         },
-        {
-            "txt": "RemoverAtor1\n"
-        },
+        
         {
             "txt" : "InserirDryad\n"
         },

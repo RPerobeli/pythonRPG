@@ -14,7 +14,7 @@ class Caravan(GameState.GameState):
         self.DialogBox = dialogBox
         self.Personagem = personagem
         self.Monstros = monstros
-        self.Actors = []
+        self.Actors = [None]*3
         self.Actors[1] = personagem
         self.Npcs = npcs
         self.Alpha = 255
@@ -25,16 +25,6 @@ class Caravan(GameState.GameState):
         
     #endfunc
 
-    def ScenesManager(self):
-        if (self.Scene == 1):
-            actorPos = self.PlaceActors()
-            self.LoadImages(actorPos)
-            self.LoadTextWithList(self.StoryTextList[self.StoryListId], heroName=self.Personagem.name)
-        else:
-            print("erro ao entrar nas Cenas -> inn.ScenesManager()")
-        #endif
-    #endfunc
-
     def SelectNextStory(self):
         return (self.Personagem, 'Florianopolis', True)
     #endfunc
@@ -42,7 +32,7 @@ class Caravan(GameState.GameState):
     def VerifyEvent(self):
         print('verificou possiveis eventos')
         if(self.StoryTextList[self.StoryListId]['txt'] == "RemoverTaverneira\n"):
-            self.Actors.pop(1)
+            self.Actors[1] = None
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -106,10 +96,10 @@ class Caravan(GameState.GameState):
         
     #endif
 
-    def Update(self):
+    def Update(self, nameState):
         #Cena tapa na cachorra
         self.VerifyFirstTimeInWindowToPlayMusic("inn")
-        pygame.display.set_caption("Caravana")
+        pygame.display.set_caption(nameState)
         if(self.Count == 0):
             self.StoryTextList = lib.SearchText(self.Filename,self.StoryIndex)
             self.Count+=1
@@ -162,7 +152,7 @@ class Caravan(GameState.GameState):
             #endif
         #endfor
         pygame.display.update()
-        return self.Personagem,'caravana',False
+        return self.Personagem,nameState,False
     #endFunction
 
 #endclass

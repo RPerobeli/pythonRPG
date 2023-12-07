@@ -80,8 +80,8 @@ class GameStateHandler:
     #endfunc
     def Inn(self):
         print("inn")
-        self.inn.RedrawWindow()
-        self.Hero,state, continueStory = self.inn.Update()
+        # self.inn.RedrawWindow()
+        self.Hero,state, continueStory = self.inn.Update("inn")
         self.State = state
         if(continueStory):
             if(self.Hero.classe.lower() == "mago"):
@@ -96,7 +96,7 @@ class GameStateHandler:
 
     def Caravan(self):
         print('caravana')
-        self.Hero,state, continueStory = self.caravan.Update()
+        self.Hero,state, continueStory = self.caravan.Update("caravana")
         self.State = state
         if(continueStory):
             self.floripa = Florianopolis.Florianopolis(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -105,7 +105,7 @@ class GameStateHandler:
 
     def ViagemTeofilotoni(self):
         print('caminhoTeofilo')
-        self.Hero,state, continueStory = self.caminhoTeofilo.Update()
+        self.Hero,state, continueStory = self.caminhoTeofilo.Update('caminhoTeofilo')
         self.State = state
         if(continueStory):
             self.teofilotoni = Teofilotoni.Teofilotoni(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -114,7 +114,7 @@ class GameStateHandler:
 
     def Florianopolis(self):
         print('Florianopolis')
-        self.Hero,state, continueStory = self.floripa.Update()
+        self.Hero,state, continueStory = self.floripa.Update('Florianopolis')
         self.State = state
         if(continueStory):
             self.tobecontinued = Continue.Continue(self.Screen)
@@ -123,7 +123,7 @@ class GameStateHandler:
 
     def Teofilotoni(self):
         print('Teofilotoni')
-        self.Hero,state, continueStory = self.teofilotoni.Update()
+        self.Hero,state, continueStory = self.teofilotoni.Update('Teofilotoni')
         self.State = state
         if(continueStory):
             self.tobecontinued = Continue.Continue(self.Screen)
@@ -132,7 +132,7 @@ class GameStateHandler:
 
     def Curitiba(self):
         print('Curitiba')
-        self.Hero,state, continueStory = self.curitiba.Update()
+        self.Hero,state, continueStory = self.curitiba.Update('Curitiba')
         self.State = state
         if(continueStory):
             self.krambeckArqueiro = KrambeckArqueiro.KrambeckArqueiro(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -141,7 +141,7 @@ class GameStateHandler:
 
     def Recursos(self):
         print('Recursos')
-        self.Hero,state, continueStory = self.recursos.Update()
+        self.Hero,state, continueStory = self.recursos.Update('Recursos')
         self.State = state
         if(continueStory):
             self.curitiba = Curitiba.Curitiba(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -150,7 +150,7 @@ class GameStateHandler:
 
     def KrambeckArqueiro(self):
         print('KrambeckArqueiro')
-        self.Hero,state, continueStory = self.krambeckArqueiro.Update()
+        self.Hero,state, continueStory = self.krambeckArqueiro.Update('KrambeckArqueiro')
         self.State = state
         if(continueStory):
             self.santosBom = SantosBom.SantosBom(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -159,7 +159,7 @@ class GameStateHandler:
     
     def SantosBom(self):
         print('SantosBom')
-        self.Hero,state, continueStory = self.santosBom.Update()
+        self.Hero,state, continueStory = self.santosBom.Update('SantosBom')
         self.State = state
         if(continueStory):
             self.tobecontinued = Continue.Continue(self.Screen)
@@ -168,7 +168,7 @@ class GameStateHandler:
 
     def Felastus(self):
         print('Felastus')
-        self.Hero,state, continueStory = self.teofilotoni.Update()
+        self.Hero,state, continueStory = self.teofilotoni.Update('Felastus')
         self.State = state
         if(continueStory):
             print("...")
@@ -176,7 +176,7 @@ class GameStateHandler:
     #endfunc
     def Acre(self):
         print('Acre')
-        self.Hero,state, continueStory = self.teofilotoni.Update()
+        self.Hero,state, continueStory = self.teofilotoni.Update('Acre')
         self.State = state
         if(continueStory):
             print("...")
@@ -185,7 +185,7 @@ class GameStateHandler:
     
     def ToBeContinued(self):
         print('ToBeContinued')
-        state = self.tobecontinued.Update()
+        state = self.tobecontinued.Update('ToBeContinued')
         self.State = state
     #endfunc
 #endclass
