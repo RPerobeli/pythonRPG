@@ -143,6 +143,11 @@
         "Nome": "Fendric",
         "ImageMultiplier" : 1.2,
         "needFlip" : "True"
+    },
+    {
+        "Nome": "Mensageiro",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
     }
     
 ]

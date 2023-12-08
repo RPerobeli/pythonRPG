@@ -260,15 +260,16 @@
         {"txt":"[Acólito]: Vocês nunca poderão ir contra o poderoso...\n"},
         
         {"txt":"[Narrador]: Ao tentar pronunciar o nome do deus, a cabeça do acólito explode instantaneamente.\n"},
+        {"txt" : "RemoverAtor1\n"},
         {"txt":"[Narrador]: Todos a volta se assustam.\n"},
         {"txt":"[Heroi]: Vamos ao santuário, então.\n"},
         {"txt":"[Narrador]: Vocês seguem para o santuário no centro da floresta.\n Até encontrarem uma barreira que impede vocês de passarem.\n"},
         {"txt": "InserirEndilien\n"},
-        {"txt":"[Endílien]: Dois monumentos são responsáveis por gerar essa barreira.\n Uma mais a leste e outro mais a oeste.\n"},
+        {"txt":"[Endílien]: Dois monumentos são responsáveis por gerar essa barreira.\n Um mais a leste e outro mais a oeste.\n"},
         
         {"txt": "InserirPelegolas\n"},
         {"txt":"[Pelégolas]: Teremos que nos dividir para destruir esses monumentos.\n"},
-        {"txt":"[Pelégolas]: Mago, pegue metade da minha compania, encontre e destrua o obelisco do leste.\n Ficaremos com o obelisco oeste, e parte das nossas forças ficará para iniciar\n o ataque assim que a barreira for desfeita.\n"},
+        {"txt":"[Pelégolas]: Mago, pegue metade da minha companhia, encontre e destrua o obelisco do leste.\n Ficaremos com o obelisco oeste, e parte das nossas forças ficará para iniciar\n o ataque assim que a barreira for desfeita.\n"},
         {"txt":"[Heroi]: Endílien, acompanhe o Heroi, suas habilidades o serão úteis.\n"},
         
         {"txt": "InserirEndilien\n"},
@@ -346,7 +347,7 @@
         {"txt": "InserirRhonAldyn\n"},
         {"txt":"[Rhon'Aldyn]: Meu caro, Pelégolas, sua visão é pouco abrangente.\n Falta a ti uma perspectiva diferente. A verdadeira imortalidade é uma dádiva.\n"},
         {"txt":"[Rhon'Aldyn]: A possibilidade de conhecimento infinito, experiências infinitas.\n Sua pessoa mais amada e querida, compartilhando momentos com você eternamente. \n"},
-        {"txt":"[Narrador]: Pelégolas saca seu arco, mas ao mesmo tempo,\n Rhon'Aldyn conjura uma magia que estilhaça energia negra por toda a sala.\n Você o humano arqueiro conseguem desviar.\n Todos os outros são atingidos e morrem instantâneamente, exceto Pelégolas,\n que teve seu  braço ferido.\n"},
+        {"txt":"[Narrador]: Pelégolas saca seu arco, mas ao mesmo tempo,\n Rhon'Aldyn conjura uma magia que estilhaça energia negra por toda a sala.\n Você e o humano mago conseguem desviar.\n Todos os outros são atingidos e morrem instantâneamente, exceto Pelégolas,\n que teve seu  braço ferido.\n"},
         {"txt":"[Rhon'Aldyn]: Tolos!\n"},
         {"txt": "BatalhaRhonAldyn\n"},
         {"txt":"[Rhon'Aldyn]: {cuspindo sangue} Vocês podem ter me derrotado,\n mas meu dever está cumprido.\n"},
@@ -358,7 +359,7 @@
         {"txt":"[Heroi]: Sua influência diminuirá aqui, mas o que já foi corrompido, demorará muito para ser purificado.\n"},
         
         {"txt": "InserirPelegolas\n"},
-        {"txt":"[Pelégolas]: A deturpação a mente de Rhon'Aldyn causou sofrimento para tanta gente\n e ele não conseguiu perceber esse erro...\n"},
+        {"txt":"[Pelégolas]: A deturpação da mente de Rhon'Aldyn causou sofrimento para tanta gente\n e ele não conseguiu perceber esse erro...\n"},
         {"txt":"[Heroi]: Endílien ficou para trás, precisamos ajudá-la ainda.\n"},
         {"txt":"[Pelégolas]: Mago, obrigado pela sua ajuda, foi fundamental.\n Devemos retornar para nossos companheiros,\n eliminar cada traço desse culto na terra de nossos aliados.\n"},
         {"txt":"[Narrador]: Vocês se dirigem até o ponto onde você se separou de Endílien.\n"},
@@ -380,7 +381,7 @@
         {"txt":"[Endílien]: Uma vez que preciso dos meus artefatos de volta,\n considere buscar pistas sobre tal mestre das sombras em Santos.\n A cidade já é governada por foras da lei, certamente algum deles tem relação com Metherax.\n"},
         
         {"txt": "InserirPelegolas\n"},
-        {"txt":"[Pelégolas]: A cidade é dominada por foras da lei, certamente há braços de nosso inimigo no local.\n"},
+        {"txt":"[Pelégolas]: Certamente há braços de nosso inimigo no local.\n"},
         
         {"txt": "InserirEndilien\n"},
         {"txt":"[Endílien]: Heroi, obrigada por tudo o que você fez aqui. Como Pelégolas disse,\n Líriel tinha razão em enviá-lo para nós.\n Por favor, aceite essa benção em seu arco.\n"},

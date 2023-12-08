@@ -76,10 +76,10 @@ class GameStateHandler:
         self.Title.RedrawWindow()
         self.Hero = self.Title.Update()
         if(self.Hero!=None):
-            # self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
-            # self.State = "inn"
-            self.retornoAdLArqueiro = RetornoAdLArqueiro.RetornoAdLArqueiro(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
-            self.State = "RetornoAdLArqueiro"
+            self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
+            self.State = "inn"
+            # self.retornoAdLArqueiro = RetornoAdLArqueiro.RetornoAdLArqueiro(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+            # self.State = "RetornoAdLArqueiro"
     #endfunc
     def Inn(self):
         print("inn")

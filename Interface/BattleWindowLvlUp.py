@@ -116,6 +116,7 @@ class BattleWindowLvlUp(GameState.GameState):
                     self.Personagem.skills["vit"] += 1
                     self.Personagem.AtualizaStatus()
                     self.Sound.StopMusic()
+                    self.VerifyLvlForSpecialization()
                     return self.Personagem
                 #endif
             #endfor

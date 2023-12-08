@@ -397,7 +397,7 @@
         {
             "txt": "[Narrador]: Silenciosamente, você finaliza o trabalho matando o meliante.\n"
         },
-        
+        {"txt" : "RemoverAtor1\n"},
         {
             "txt": "InserirCuritibaComMusica\n"
         },

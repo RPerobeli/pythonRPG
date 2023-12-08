@@ -71,6 +71,12 @@ class RetornoAdLArqueiro(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMensageiro\n"):
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Mensageiro")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         
         #endregion
         
