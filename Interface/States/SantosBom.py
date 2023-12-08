@@ -108,6 +108,18 @@ class SantosBom(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirSoundEspadas\n"):
+            self.Sound.PlaySFX("Espadas")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirSoundBabaca\n"):
+            self.Sound.PlaySFX("Babacas")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         #endregion
 
         #region Battles 

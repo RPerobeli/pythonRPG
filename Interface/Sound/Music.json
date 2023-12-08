@@ -88,6 +88,10 @@
         "file": "Theme1.wav",
         "volume": 0.2
     },
+    "SagaFinal": {
+        "file": "SagaFinal.wav",
+        "volume": 1
+    },
     "continue": {
         "file": "To-Be-Continued.wav",
         "volume": 0.2

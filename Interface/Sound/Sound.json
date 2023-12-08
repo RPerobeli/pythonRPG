@@ -30,5 +30,14 @@
     "Barragem": {
         "file":"CannonBarrage.wav",
         "volume" : 1
+    },
+    "Espadas": {
+        "file":"Warfare.wav",
+        "volume" : 0.5
+    },
+    "Babacas": {
+        "file":"Babaca.wav",
+        "volume" : 0.5
     }
+    
 }

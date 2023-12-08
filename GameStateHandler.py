@@ -10,6 +10,7 @@ from Interface.States import Continue
 from Interface.States import KrambeckArqueiro
 from Interface.States import SantosBom
 from Interface.States import RetornoAdLArqueiro
+from Interface.States import SagaFinal
 from Interface.States import Title as t
 from Interface import DialogBox
 from Interface import BattleWindow as bw
@@ -65,6 +66,9 @@ class GameStateHandler:
         if(self.State == "Acre"):
             self.Acre()
         #endif
+        if(self.State == "SagaFinal"):
+            self.SagaFinal()
+        #endif
         if(self.State == "ToBeContinued"):
             self.ToBeContinued()
         #endif
@@ -76,10 +80,10 @@ class GameStateHandler:
         self.Title.RedrawWindow()
         self.Hero = self.Title.Update()
         if(self.Hero!=None):
-            self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
-            self.State = "inn"
-            # self.retornoAdLArqueiro = RetornoAdLArqueiro.RetornoAdLArqueiro(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
-            # self.State = "RetornoAdLArqueiro"
+            # self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
+            # self.State = "inn"
+            self.sagaFinal = SagaFinal.SagaFinal(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+            self.State = "SagaFinal"
     #endfunc
     def Inn(self):
         print("inn")
@@ -168,12 +172,21 @@ class GameStateHandler:
         #endif
     #endfunc
 
+    def SagaFinal(self):
+        print('SagaFinal')
+        self.Hero,state, continueStory = self.sagaFinal.Update('SagaFinal')
+        self.State = state
+        if(continueStory):
+            self.theEnd = []
+        #endif
+    #endfunc
+
     def RetornoAdLArqueiro(self):
         print('RetornoAdLArqueiro')
         self.Hero,state, continueStory = self.retornoAdLArqueiro.Update('RetornoAdLArqueiro')
         self.State = state
         if(continueStory):
-            self.tobecontinued = Continue.Continue(self.Screen)
+            self.sagaFinal = SagaFinal.SagaFinal(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Arma)
         #endif
     #endfunc
 

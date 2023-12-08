@@ -118,7 +118,7 @@
         
         {"txt":"InserirRoger\n"},
         {"txt":"[Roger]: Não é tão simples assim, rapaz. O Barba Negra é quem controla essa cidade. É um babaca!\n"},
-        {"txt":"LaVemOsBabacas\n"},
+        {"txt":"InserirSoundBabaca\n"},
         
         {"txt":"InserirBecca\n"},
         {"txt":"[Becca]: Santos não é chamada de cidade sem lei atoa. Há algum tempo esse pirata, Edward Thatch,\n já era um famoso pirata nessa região.\n"},
@@ -420,18 +420,20 @@
         {"txt":"InserirRoger\n"},
         {"txt":"[Roger]: Edward! Vou acabar com você!\n"},
         
-        {"txt":"InserirBarbaNegra\n"},
+        {"txt":"InserirBarbaNegra0\n"},
         {"txt":"[Barba Negra]: Tolo Roger! Dentro da MINHA cidade, você achava que eu iria deixar\n você e seus companheiros entrarem no MEU porto e saquear a MINHA carga?\n"},
         {"txt":"[Barba Negra]: Hahuahuahuahua! Agora, como o último bater da asa de um inseto esmagado,\n você vem até mim visando minha vida.\n"},
         {"txt":"[Barba Negra]: Te enfrentarei. Grande Gold Roger, aquele que é uma pedra em meu sapado há anos!\n"},
         {"txt":"[Narrador]: Empunhando seu sabre, Edward avança em direção a Roger e uma batalha se iniciou.\n"},
-        
+        {"txt":"InserirPersonagem\n"},
         {"txt":"InserirImediatoBarbaNegra\n"},
         {"txt":"[Narrador]: Vendo a disputa de espadas, um dos comandantes do Barba Negra visa se juntar à batalha.\n"},
         {"txt":"[Narrador]: Ele tenta atacar Roger pelo flanco enquanto este estava focado no duelo com Barba Negra,\n mas você intervém.\n"},
         {"txt":"[Heroi]: Não deixarei você encostar nesse homem. Sua batalha será comigo.\n"},
         {"txt":"BatalhaImediatoBarbaNegra\n"},
         {"txt" : "RemoverAtor1\n"},
+        {"txt" : "RemoverAtor0\n"},
+        {"txt":"InserirSoundEspadas\n"},
         {"txt":"[Narrador]: A batalha dos capitães é feroz, você continua a proteger Roger\n dos lacaios que tentam interferir na batalha.\n"},
         {"txt":"[Narrador]: Cada contato entre as espadas podia ser sentido por aqueles a volta.\n Um alto nível de habilidades de luta. Um mero detalhe poderia ser fatal.\n"},
         {"txt":"[Narrador]: Quando Roger conseguiu desferir um golpe, raspando no braço de Edward,\n este imediatamente contra atacou cortando a perna daquele.\n"},
@@ -439,13 +441,11 @@
         {"txt":"[Narrador]: Em contraste com Barba Negra, que havia sido protegido\n por toda sua tripulação até aquele momento.\n"},
         {"txt":"[Narrador]: Quando Edward tentou um cutilada por cima, Roger conseguiu defender-se do golpe.\n Porém, no momento do contra ataque, sua perna vacilou. O cansaço era grande.\n"},
         {"txt":"[Narrador]: Nesse instante de tempo, Barba Negra chutou o estômago de Roger,\n que foi jogado até o mastro principal do navio, ficando fora de combate, ainda que consciente.\n"},
-        
+        {"txt":"InserirPersonagem\n"},
         {"txt":"InserirBarbaNegra\n"},
         {"txt":"[Barba Negra]: Roger, graças a você, terei acesso ao meu exército imortal,\n com o qual poderei dominar não só essa cidade mas todo o mar do leste!\n"},
         {"txt":"[Barba Negra]: Tudo que eu precisava era de uma marca de sangue.\n Você e sua tripulação me garantiram essa condição. Hahuahauhauhua!\n"},
         {"txt":"[Barba Negra]: Ó, Grande Metherax, com este amuleto amaldiçoado eu te invoco à nossa presença.\n O sacrifício já fora feito!\n"},
-        
-        {"txt":"InserirAmuleto\n"},
         {"txt":"[Narrador]: O amuleto na posse de Barba Negra começa a emanar uma aura tenebrosa.\n No meio do fogo do porto, as almas daqueles antes vivos começam a sair de seus corpos.\n"},
         {"txt":"[Narrador]: Assombrações começam a vagar pelos céus do porto de Santos.\n Os presentes não conseguiam conter o espanto e o horror gravados em suas faces.\n"},
         {"txt":"[Narrador]: As almas então são absorvidas pelo amuleto do Barba Negra.\n"},
