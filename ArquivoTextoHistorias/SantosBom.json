@@ -19,26 +19,24 @@
         {"txt":"[Pirata Bêbado]: Desgraçado! Você está desafiando os piratas do Barba Negra!\n Isso não vai ficar assim!\n"},
         
         {"txt":"InserirBackgroundCovilPirata\n"},
+        {"txt" : "RemoverAtor0\n"},
         {"txt":"[Narrador]: Mais tarde naquele dia...\n"},
         {"txt": "InserirPirataBebado\n"},
         {"txt":"[Pirata Bêbado]: Foi isso chefe, o cara não nos deu o ouro e nos desafiou na briga!\n Uma afronta ao senhor!\n"},
         
-        {"txt":"InserirBarbaNegra\n"},
+        {"txt":"InserirBarbaNegra0\n"},
         {"txt":"[Barba Negra]: Entendo... Então, Vocês não pegaram o ouro, foram desafiados,\n estavam em maior número e tomaram um pé na bunda de um único sujeito?\n"},
         
-        {"txt":"InserirPirataBebado\n"},
         {"txt":"[Pirata Bêbado]: Olhando por esse lado...\n"},
         
-        {"txt":"InserirBarbaNegra\n"},
         {"txt":"[Barba Negra]: Não tema, esse sujeito só pode estar junto de Roger,\n vamos acabar com todos eles ao mesmo tempo!\n"},
         
-        {"txt":"InserirPirataBebado\n"},
         {"txt":"[Pirata Bêbado]: Obrigado chefe! Com certeza não vai restá ninguém para desafiá-lo.\n"},
         
-        {"txt":"InserirBarbaNegra\n"},
         {"txt":"[Barba Negra]: Agora vá.\n"},
         {"txt":"InserirSoundShot\n"},
         {"txt":"[Narrador]: Enquanto o pirata se virava para sair do local,\n Barba negra atira com seu revólver,\n eliminando a vida do subordinado.\n"},
+        {"txt" : "RemoverAtor1\n"},
         {"txt":"[Barba Negra]: Não há espaços no meu bando para aqueles que desonram meu nome.\n"}
         
     ],
@@ -60,30 +58,25 @@
         {"txt":"[Pirata Bêbado]: Desgraçado! Você está desafiando os piratas do Barba Negra!\n Isso não vai ficar assim!\n"},
         
         {"txt":"InserirBackgroundCovilPirata\n"},
+        {"txt" : "RemoverAtor0\n"},
         {"txt":"[Narrador]: Mais tarde naquele dia...\n"},
         {"txt": "InserirPirataBebado\n"},
         {"txt":"[Pirata Bêbado]: Foi isso chefe, o cara não nos deu o ouro e nos desafiou na briga! Uma afronta ao senhor!\n"},
         
-        {"txt":"InserirBarbaNegra\n"},
+        {"txt":"InserirBarbaNegra0\n"},
         {"txt":"[Barba Negra]: Entendo... Então, Vocês não pegaram o ouro, foram desafiados,\n estavam em maior número e tomaram um pé na bunda de um único sujeito?\n"},
-        
-        {"txt":"InserirPirataBebado\n"},
         {"txt":"[Pirata Bêbado]: Olhando por esse lado...\n"},
-        
-        {"txt":"InserirBarbaNegra\n"},
         {"txt":"[Barba Negra]: Não tema, esse sujeito só pode estar junto de Roger,\n vamos acabar com todos eles ao mesmo tempo!\n"},
-        
-        {"txt":"InserirPirataBebado\n"},
         {"txt":"[Pirata Bêbado]: Obrigado chefe! Com certeza não vai restá ninguém para desafiá-lo.\n"},
-        
-        {"txt":"InserirBarbaNegra\n"},
         {"txt":"[Barba Negra]: Agora vá.\n"},
         {"txt":"InserirSoundShot\n"},
         {"txt":"[Narrador]: Enquanto o pirata se virava para sair do local, Barba negra atira com seu revólver,\n eliminando a vida do subordinado.\n"},
+        {"txt" : "RemoverAtor1\n"},
         {"txt":"[Barba Negra]: Não há espaços no meu bando para aqueles que desonram meu nome.\n"}
         
     ],
     "Q2" : [
+        {"txt" : "InserirPersonagem\n"},
         {"txt" : "RemoverAtor1\n"},
         {"txt":"InserirBackgroundSantos\n"},
         {"txt":"[Narrador]: Avançando pela cidade, você observa a taverna no centro da cidade.\n"},

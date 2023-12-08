@@ -51,6 +51,20 @@ class SantosBom(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "RemoverAtor0\n"):
+            self.Actors[0] = None
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirPersonagem\n"):
+            self.Actors[0] = self.Personagem
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+
+        
 
         #region NPCs
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirRoger\n"):
@@ -208,7 +222,13 @@ class SantosBom(GameState.GameState):
             self.StoryListId += 1
             self.VerifyEvent()
             return
-        #endif            
+        #endif   
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBarbaNegra0\n"):
+            self.Actors[0] = lib.GetMonstro(self.Monstros,"Barba Negra")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif          
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirImediatoBarbaNegra\n"):
             self.Actors[1] = lib.GetMonstro(self.Monstros,"Comandante")
             self.StoryListId += 1
