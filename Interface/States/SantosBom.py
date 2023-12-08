@@ -66,7 +66,7 @@ class SantosBom(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirTaverneiroSantos\n"):
-            self.Actors[1] = lib.GetNpc(self.Npcs,"Taverneiro 2")
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Taverneiro2")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -76,7 +76,6 @@ class SantosBom(GameState.GameState):
         
         #region Sound
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirSoundShot\n"):
-            self.Sound.StopMusic()
             self.Sound.PlaySFX("Tiro")
             self.StoryListId += 1
             self.VerifyEvent()
@@ -98,6 +97,16 @@ class SantosBom(GameState.GameState):
         #endregion
 
         #region Battles 
+        
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaBarbaNegra\n"):
+            self.Sound.StopMusic()
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Barba Negra"), "ShipDeck")
+            self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("SantosBom")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaPirataBebado\n"):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Pirata Bebado"), "Santos")
@@ -202,6 +211,12 @@ class SantosBom(GameState.GameState):
         #endif            
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirImediatoBarbaNegra\n"):
             self.Actors[1] = lib.GetMonstro(self.Monstros,"Comandante")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif 
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMetherax\n"):
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Metherax")
             self.StoryListId += 1
             self.VerifyEvent()
             return

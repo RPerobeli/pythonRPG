@@ -129,7 +129,7 @@ def GetClassePosition():
     return pos
 #endfunc
 def GetBoundaryThickness():
-    f = open("Config/config.json")
+    f = open("Config/Config.json")
     data = json.load(f)
     f.close()
     return data['BoundaryThickness']
@@ -215,7 +215,7 @@ def GetSpells(classe):
 #endfunc
 
 def GetTypewritterDelay():
-    f = open(f"Config/config.json",encoding="utf-8")
+    f = open(f"Config/Config.json",encoding="utf-8")
     data = json.load(f)
     f.close()
     return data["TypewritterDelay"]

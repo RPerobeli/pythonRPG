@@ -326,7 +326,7 @@
         "Nome": "Becca",
         "Classe": "Guerreiro",
         "isBoss": "False",
-        "ImageMultiplier" : 1.0,
+        "ImageMultiplier" : 1,
         "needFlip" : "True"
     },
     {
@@ -340,7 +340,7 @@
         "Nome": "Comandante",
         "Classe": "Guerreiro",
         "isBoss": "False",
-        "ImageMultiplier" : 1.0,
+        "ImageMultiplier" : 1.2,
         "needFlip" : "False"
     },
     {
@@ -354,14 +354,14 @@
         "Nome": "Tripulante 1",
         "Classe": "Guerreiro",
         "isBoss": "False",
-        "ImageMultiplier" : 1.0,
+        "ImageMultiplier" : 2.0,
         "needFlip" : "False"
     },
     {
         "Nome": "Tripulante 2",
         "Classe": "Guerreiro",
         "isBoss": "False",
-        "ImageMultiplier" : 1.0,
+        "ImageMultiplier" : 2.0,
         "needFlip" : "False"
     },
     {
@@ -375,6 +375,13 @@
         "Nome": "Tripulante 4",
         "Classe": "Guerreiro",
         "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Metherax",
+        "Classe": "Mago",
+        "isBoss": "True",
         "ImageMultiplier" : 1.0,
         "needFlip" : "False"
     }

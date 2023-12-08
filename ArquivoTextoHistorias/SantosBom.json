@@ -8,7 +8,7 @@
         {"txt":"[Pirata Bêbado]: Eeei, posso ver que cê num é um qualquer.\n"},
         {"txt":"[Narrador]: O bando do homem se aproxima de você, são cinco marginais.\n"},
         {"txt":"[Pirata Bêbado]: Cê deve sabê 'qui' que tá acontecendo né,\n  passa seu ouro que a gente te deixa ir em paz.\n"},
-        {"txt":"1 - Lutar e interrogá-los.\n2 - Entregar o ouro e perguntar sobre mercenários recém contratados na cidade.\n3 - Entregar o ouro e atacar os ladrões pelas costas."}
+        {"txt":"1 - Lutar e interrogá-los.\n2 - Entregar o ouro e perguntar sobre mercenários recém contratados na cidade.\n3 - Entregar o ouro e atacar os ladrões pelas costas.\n"}
         
         
     ],
@@ -221,9 +221,11 @@
         
         {"txt":"InserirRoger\n"},
         {"txt":"[Roger]: Escondam-se!!!\n"},
+        {"txt":"InserirSoundBarragem\n"},
         
         {"txt":"InserirBecca\n"},
         {"txt":"[Becca]: Corram! Para fora do armazém! Se não seremos eliminados!\n"},
+        {"txt":"InserirSoundBarragem\n"},
         {"txt":"[Narrador]: Nesse momento uma bala atinge uma das caixas de munições causando grandes explosões.\n"},
         {"txt":"InserirBackgroundWarehouseFire\n"},
         {"txt":"[Narrador]: O fogo se alastra atingindo vários da tripulação.\n O pandemônio se alastra com todos tentando correr tentando salvar algumas das caixas com armas.\n"},
@@ -259,6 +261,7 @@
         {"txt":"BatalhaTripulante2Fire\n"},
         {"txt":"BatalhaTripulante1Fire\n"},
         {"txt":"BatalhaTripulante3Fire\n"},
+        {"txt":"InserirBackgroundHarbor\n"},
         {"txt":"[Narrador]: Ao final, pouco restava da emboscada. Roger, sujo de sangue,\n matara quase todos os tripulantes que os aguardavam.\n"},
         {"txt":"[Narrador]: Olhando para o cais do porto, os 3 galeões que Barba Negra usara para matar seus companheiros.\n"},
         {"txt":"[Roger]: Heroi, hoje acabarei com os piratas do Barba Negra. Vem comigo?\n"},
@@ -431,7 +434,7 @@
         {"txt":"[Narrador]: Ele tenta atacar Roger pelo flanco enquanto este estava focado no duelo com Barba Negra, mas você intervém.\n"},
         {"txt":"[Heroi]: Não deixarei você encostar nesse homem. Sua batalha será comigo.\n"},
         {"txt":"BatalhaImediatoBarbaNegra\n"},
-        
+        {"txt" : "RemoverAtor1\n"},
         {"txt":"[Narrador]: A batalha dos capitães é feroz, você continua a proteger Roger\n dos lacaios que tentam interferir na batalha.\n"},
         {"txt":"[Narrador]: Cada contato entre as espadas podia ser sentido por aqueles a volta.\n Um alto nível de habilidades de luta. Um mero detalhe poderia ser fatal.\n"},
         {"txt":"[Narrador]: Quando Roger conseguiu desferir um golpe, raspando no braço de Edward,\n este imediatamente contra atacou cortando a perna daquele.\n"},

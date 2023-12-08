@@ -125,23 +125,23 @@
         "needFlip" : "True"
     },
     {
-        "Nome": "Mago",
+        "Nome": "mago",
         "ImageMultiplier" : 0.8,
         "needFlip" : "True"
     },
     {
-        "Nome": "Arqueiro",
+        "Nome": "arqueiro",
         "ImageMultiplier" : 0.8,
         "needFlip" : "True"
     },
     {
         "Nome": "GolDRoger",
-        "ImageMultiplier" : 0.8,
+        "ImageMultiplier" : 1,
         "needFlip" : "True"
     },
     {
         "Nome": "Fendric",
-        "ImageMultiplier" : 0.8,
+        "ImageMultiplier" : 1.2,
         "needFlip" : "True"
     }
     
