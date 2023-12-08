@@ -382,7 +382,7 @@
         "Nome": "Metherax",
         "Classe": "Mago",
         "isBoss": "True",
-        "ImageMultiplier" : 1.0,
+        "ImageMultiplier" : 1.4,
         "needFlip" : "False"
     }
 ]

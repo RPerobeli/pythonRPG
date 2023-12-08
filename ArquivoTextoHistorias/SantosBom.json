@@ -88,9 +88,9 @@
         {"txt":"InserirBackgroundSantos\n"},
         {"txt":"[Narrador]: Avançando pela cidade, você observa a taverna no centro da cidade.\n"},
         {"txt":"[Narrador]: Ao se aproximar, a porta é destruída, com um corpo voando em sua direção.\n"},
-        {"txt":"[Narrador]: Ambos caem no chão, o corpo desacordado jogado ao lado tomba desacordado com o abdômem rasgado.\n"},
+        {"txt":"[Narrador]: Ambos caem no chão, o corpo desacordado jogado ao lado tomba desacordado com o\n abdômem rasgado.\n"},
         {"txt":"InserirRoger\n"},
-        {"txt":"[Roger]: Gyahahaha! Avisa o seu chefe que vai precisar muito mais do que isso pra me matar!! Gyahahahaha!\n"},
+        {"txt":"[Roger]: Gyahahaha! Avisa o seu chefe que vai precisar muito mais do que isso pra me matar!!\n Gyahahahaha!\n"},
         {"txt":"[Roger]: Opa, me desculpe, rapaz! Está tudo bem?\n"},
         {"txt":"[Heroi]: De certa forma...\n"},
         {"txt":"[Roger]: Desculpa gyahahaha! Venha, deixe-me te pagar uma cerveja.\n"},
@@ -103,10 +103,10 @@
         {"txt":"InserirRoger\n"},
         {"txt":"[Roger]: Gyahahaha! Fique tranquilo. Vou arrumar como nas outras vezes.\n"},
         {"txt":"[Roger]: Traga umas cervejas para nós aí! Vou pagar uma para esse camarada.\n"},
-        {"txt":"[Narrador]: Você se assenta na mesa com o homem. Uma mulher se aproxima e põe uma faca no pescoço de Roger.\n"},
+        {"txt":"[Narrador]: Você se assenta na mesa com o homem.\n Uma mulher se aproxima e põe uma faca no abdômen de Roger.\n"},
         
         {"txt":"InserirBecca\n"},
-        {"txt":"[Mulher]: Aqui seu desgraçado, nossos fundos estão acabando. Trate-se de se segurar quando for espancar os outros.\n"},
+        {"txt":"[Mulher]: Aqui seu desgraçado, nossos fundos estão acabando.\n[Mulher]: Trate-se de se segurar quando for espancar os outros.\n"},
         
         {"txt":"InserirRoger\n"},
         {"txt":"[Roger]: Eieiei! Calma, Becca. Basta saquearmos mais que poderemos pagar tudo que estamos devendo.\n"},
@@ -128,7 +128,7 @@
         
         {"txt":"InserirBecca\n"},
         {"txt":"[Becca]: Santos não é chamada de cidade sem lei atoa. Há algum tempo esse pirata, Edward Thatch,\n já era um famoso pirata nessa região.\n"},
-        {"txt":"[Becca]: Ele juntou uma das tripulações mais fortes antes vistas e tomou o poder do antigo Reino de Santos.\n Colocou a cabeça do rei em uma estaca.\n"},
+        {"txt":"[Becca]: Ele juntou uma das tripulações mais fortes antes vistas e tomou o poder do\n antigo Reino de Santos. Colocou a cabeça do rei em uma estaca.\n"},
         
         {"txt":"InserirRoger\n"},
         {"txt":"[Roger]: Desde a nossa juventude nós lutamos um contra o outro.\n Ambos desejávamos que Santos fosse uma cidade verdadeiramente livre.\n"},
@@ -151,7 +151,7 @@
         
         {"txt":"InserirBecca\n"},
         {"txt":"[Becca]: O povo se juntará a nós e então poderemos equilibrar o jogo para então destroná-lo.\n"},
-        {"txt":"[Becca]: Se os seus tesouros foram trazidos para cá recentemente, certamente podem estar junto com esse carregamento.\n"},
+        {"txt":"[Becca]: Se os seus tesouros foram trazidos para cá recentemente,\n certamente podem estar junto com esse carregamento.\n"},
         {"txt":"[Heroi]: Me juntarei a vocês nessa batalha.\n"},
         
         {"txt":"InserirRoger\n"},
@@ -211,7 +211,7 @@
         {"txt":"[Becca]: Vamos vasculhar tudo.\n"},
         {"txt":"[Narrador]: Você, ao abrir algumas caixas, encontra revólveres e espadas.\n"},
         {"txt":"[Heroi]: Vejam! As armas!\n"},
-        {"txt":"[Roger]: Realmente, há munições aqui também! Chamem todos! Temos que transportar isso para nosso esconderijo!\n"},
+        {"txt":"[Roger]: Realmente, há munições aqui também! Chamem todos!\n Temos que transportar isso para nosso esconderijo!\n"},
         {"txt":"[Narrador]: Um assovio pode ser ouvido ao longe. O armazém é atingido por algo.\n"},
         {"txt":"InserirSoundBarragem\n"},
         
@@ -269,15 +269,16 @@
         {"txt":"[Narrador]: Já no cais, vocês observam os 3 galeões de perto.\n"},
         {"txt":"[Heroi]: O da direita é meu, cuida do da esquerda?\n"},
         {"txt":"[Roger]: Sim...\n"},
-        {"txt":"[Narrador]: Em um movimento de tamanha velocidade, Roger corta o ar e a onda de impacto divide o navio pela metade,\n causando pânico em seus tripulantes.\n"},
-        {"txt":"[Narrador]: De forma semelhante, usando todo o poder de seu arco, invocando o poder adquirido de Elithien,\n você atira três flechas mágicas com um poder gigantesco.\n"},
+        {"txt":"[Narrador]: Em um movimento de tamanha velocidade,\n Roger corta o ar e a onda de impacto divide o navio pela metade,\n causando pânico em seus tripulantes.\n"},
+        {"txt":"[Narrador]: De forma semelhante, usando todo o poder de seu arco,\n invocando o poder adquirido de Endilien,\n você atira três flechas mágicas com um poder gigantesco.\n"},
         {"txt":"[Narrador]: Três crateras na embarcação foram formadas, levando à destruição completa do navio.\n"},
-        {"txt":"[Narrador]: Roger tenta cortar a nau capitânia, porém o próprio Barba Negra impede o golpe com sua espada.\n"},
+        {"txt":"[Narrador]: Roger tenta cortar a nau capitânia,\n porém o próprio Barba Negra impede o golpe com sua espada.\n"},
         
         {"txt":"InserirBarbaNegra\n"},
         {"txt":"[Barba Negra]: Hahauhuahuahuahua! Não será tão fácil assim!\n"},
+        {"txt":"InserirRoger\n"},
         {"txt":"[Heroi]: Vá! Te dou cobertura.\n"},
-        {"txt":"[Narrador]: Roger começa a subir o casco do galeão, enquanto você, com suas flechas atinge aqueles que tentam pará-lo.\n"},
+        {"txt":"[Narrador]: Roger começa a subir o casco do galeão, enquanto você,\n com suas flechas atinge aqueles que tentam pará-lo.\n"},
         {"txt":"[Narrador]: Quando lá em cima, o pirata luta com os lacaios em torno dele,\n impedindo que os tripulantes do Barba Negra atirem enquanto você escala o casco.\n"}
     ],
     "R2-2" : [
@@ -315,7 +316,7 @@
         {"txt":"[Roger]: Homens! Vamos para o próximo armazém!\n"},
         {"txt":"InserirBackgroundHarbor\n"},
         
-        {"txt":"[Narrador]: Você segue seu caminho. Enquanto saía do porto, o som de disparos adentram seus ouvidos. \n"},
+        {"txt":"[Narrador]: Você segue seu caminho. Enquanto saía do porto,\n o som de disparos adentram seus ouvidos. \n"},
         {"txt":"InserirSoundBarragem\n"},
         {"txt":"[Narrador]: Ao se virar para trás, 3 navios no porto estão disparando nos armazéns,\n ateando fogo onde você estava há poucos minutos.\n"},
         {"txt":"[Heroi]: Roger...\n"},
@@ -324,7 +325,7 @@
         {"txt":"[Narrador]: Você corre de volta para o cais, para socorrer a tripulação que o ajudara.\n"},
         {"txt":"InserirBackgroundWarehouseFire\n"},
         {"txt":"InserirRoger\n"},
-        {"txt":"[Narrador]: Ao chegar perto dos armazéns, Roger está lutando contra um número grande de peões do Barba Negra.\n"},
+        {"txt":"[Narrador]: Ao chegar perto dos armazéns,\n Roger está lutando contra um número grande de peões do Barba Negra.\n"},
         {"txt":"BatalhaTripulante1Fire\n"},
         {"txt":"BatalhaTripulante2Fire\n"},
         {"txt":"[Heroi]: Roger! Onde estão os outros?\n"},
@@ -337,14 +338,14 @@
         {"txt":"[Heroi]: O da direita é meu, cuida do da esquerda?\n"},
         {"txt":"[Roger]: Sim...\n"},
         {"txt":"[Narrador]: Em um movimento de tamanha velocidade,\n Roger corta o ar e a onda de impacto divide o navio pela metade,\n causando pânico em seus tripulantes.\n"},
-        {"txt":"[Narrador]: De forma semelhante, usando todo o poder de seu arco, invocando o poder adquirido de Endílien,\n você atira três flechas mágicas com um poder gigantesco.\n"},
-        {"txt":"[Narrador]: Três crateras na embarcação foram formadas, levando à destruição completa do navio.\n"},
-        {"txt":"[Narrador]: Roger tenta cortar a nau capitânia, porém o próprio Barba Negra impede o golpe com sua espada.\n"},
+        {"txt":"[Narrador]: De forma semelhante, usando todo o poder de seu arco,\n invocando o poder adquirido de Endílien,\n você atira três flechas mágicas com um poder gigantesco.\n"},
+        {"txt":"[Narrador]: Três crateras na embarcação foram formadas,\n levando à destruição completa do navio.\n"},
+        {"txt":"[Narrador]: Roger tenta cortar a nau capitânia,\n porém o próprio Barba Negra impede o golpe com sua espada.\n"},
         
         {"txt":"InserirBarbaNegra\n"},
         {"txt":"[Barba Negra]: Hahauhuahuahuahua! Não será tão fácil assim!\n"},
         {"txt":"[Heroi]: Vá! Te dou cobertura.\n"},
-        {"txt":"[Narrador]: Roger começa a subir o casco do galeão, enquanto você, com suas flechas atinge aqueles que tentam pará-lo.\n"},
+        {"txt":"[Narrador]: Roger começa a subir o casco do galeão, enquanto você,\n com suas flechas atinge aqueles que tentam pará-lo.\n"},
         {"txt":"[Narrador]: Quando lá em cima, o pirata luta com os lacaios em torno dele,\n impedindo que os tripulantes do Barba Negra atirem enquanto você escala o casco.\n"}
     ],
     "R2-3" : [
@@ -363,7 +364,7 @@
         
         {"txt":"InserirRoger\n"},
         {"txt":"[Roger]: Vamos revirar esse lugar!\n"},
-        {"txt":"[Narrador]: Após procurarem em todas as caixas, havia muito ouro porém nem sinal das caixas.\n"},
+        {"txt":"[Narrador]: Após procurarem em todas as caixas,\n havia muito ouro porém nem sinal das caixas.\n"},
         {"txt":"[Heroi]: Pelo menos esse frasco de poção virá a calhar.\n"},
         {"txt":"RecuperarHP\n"},
         
@@ -382,7 +383,7 @@
         {"txt":"[Narrador]: Olhando a situação, Becca se aproxima de você, e antes que você perceba,\n a lâmina dela já se encontra na sua cintura.\n"},
         
         {"txt":"InserirBecca\n"},
-        {"txt":"[Becca]: Nós acolhemos você conosco, lutamos juntos, EU encontrei a seus artefatos!\n"},
+        {"txt":"[Becca]: Nós acolhemos você conosco, lutamos juntos, EU encontrei os seus artefatos!\n"},
         {"txt":"[Becca]: E então, no meio do covil inimigo, você decide nos abandonar e seguir com sua vida?\n"},
         
         {"txt":"InserirRoger\n"},
@@ -406,11 +407,11 @@
         {"txt":"[Roger]: Homens! Vamos para o próximo armazém!.\n"},
         {"txt":"InserirBackgroundHarbor\n"},
         
-        {"txt":"[Narrador]: Você segue seu caminho. Enquanto saía do porto, o som de disparos adentram seus ouvidos. \n"},
+        {"txt":"[Narrador]: Você segue seu caminho. Enquanto saía do porto,\n o som de disparos adentram seus ouvidos. \n"},
         {"txt":"InserirSoundBarragem\n"},
         {"txt":"[Narrador]: Ao se virar para trás, 3 navios no porto estão disparando nos armazéns,\n ateando fogo onde você estava há poucos minutos.\n"},
         {"txt":"[Heroi]: Roger...\n"},
-        {"txt":"[Narrador]: Você observa os artefatos em sua posse e se recorda dos camaradas que lutaram ao seu lado.\n"},
+        {"txt":"[Narrador]: Você observa os artefatos em sua posse e se\n recorda dos camaradas que lutaram ao seu lado.\n"},
         {"txt":"[Heroi]: Becca...\n"},
         {"txt":"[Heroi]: Não deixarei que sua luta seja em vão, Gold Roger.\n Usarei esse tempo criado por ti e vou matar o capitão maldito.\n"},
         {"txt":"[Narrador]: Enquanto você se aproximava da nau capitânia nadando pela água,\n oculto nas sombras, um dos navios é cortado em dois e começa a afundar.\n"},
@@ -425,7 +426,7 @@
         
         {"txt":"InserirBarbaNegra\n"},
         {"txt":"[Barba Negra]: Tolo Roger! Dentro da MINHA cidade, você achava que eu iria deixar\n você e seus companheiros entrarem no MEU porto e saquear a MINHA carga?\n"},
-        {"txt":"[Barba Negra]: Hahuahuahuahua! Agora, como o último bater da asa de um inseto esmagado, você vem até mim visando minha vida.\n"},
+        {"txt":"[Barba Negra]: Hahuahuahuahua! Agora, como o último bater da asa de um inseto esmagado,\n você vem até mim visando minha vida.\n"},
         {"txt":"[Barba Negra]: Te enfrentarei. Grande Gold Roger, aquele que é uma pedra em meu sapado há anos!\n"},
         {"txt":"[Narrador]: Empunhando seu sabre, Edward Thatch avançou em direção a Roger e uma batalha se iniciou.\n"},
         
@@ -439,7 +440,7 @@
         {"txt":"[Narrador]: Cada contato entre as espadas podia ser sentido por aqueles a volta.\n Um alto nível de habilidades de luta. Um mero detalhe poderia ser fatal.\n"},
         {"txt":"[Narrador]: Quando Roger conseguiu desferir um golpe, raspando no braço de Edward,\n este imediatamente contra atacou cortando a perna daquele.\n"},
         {"txt":"[Narrador]: A luz das chamas do porto iluminavam o galeão. Roger, mergulhado em sangue,\n após vários embates até aquele ponto, continuava a atacar.\n"},
-        {"txt":"[Narrador]: Em contraste com Barba Negra, que havia sido protegido por toda sua tripulação até aquele momento.\n"},
+        {"txt":"[Narrador]: Em contraste com Barba Negra, que havia sido protegido\n por toda sua tripulação até aquele momento.\n"},
         {"txt":"[Narrador]: Quando Edward tentou um cutilada por cima, Roger conseguiu defender-se do golpe.\n Porém, no momento do contra ataque, sua perna vacilou. O cansaço era grande.\n"},
         {"txt":"[Narrador]: Nesse instante de tempo, Barba Negra chutou o estômago de Roger,\n que foi jogado até o mastro principal do navio, ficando fora de combate, ainda que consciente.\n"},
         
@@ -475,8 +476,8 @@
         {"txt":"[Metherax]: Minha utopia para os mortos vivos é uma questão de tempo... Contemplem meu poder!\n"},
         {"txt":"[Narrador]: Metherax invoca sua magia, sua projeção se torna um raio que segue em direção aos céus.\n Imediatamente nuvens se formam e começa a nevar em Santos.\n"},
         {"txt":"[Narrador]: A aura maligna do lich ainda paira no ar e sua voz ainda pode ser ouvida.\n"},
-        {"txt":"[Metherax]: Edward... Agora você estará sob minha proteção.\n Termine de eliminar aqueles que o ameaçam... e essa cidade se tornará o bastião com um exército imortal.\n"},
-        {"txt":"[Metherax]: Me encontre no oeste, e farei de ti um dos homens mais poderosos que já andaram sobre a terra e mar.\n"},
+        {"txt":"[Metherax]: Edward... Agora você estará sob minha proteção.\n Termine de eliminar aqueles que o ameaçam...\n e essa cidade se tornará o bastião com um exército imortal.\n"},
+        {"txt":"[Metherax]: Me encontre no oeste, e farei de ti um dos homens mais\n poderosos que já andaram sobre a terra e mar.\n"},
         
         {"txt":"InserirBarbaNegra\n"},
         {"txt":"[Barba Negra]: Vocês já viram mais do que deveriam... Chegou a hora de vocês morrerem!\n"},
@@ -514,9 +515,10 @@
         {"txt":"[Roger]: Heroi, você salvou Santos e serei eternamente grato...\n Agora eu e o que resta da minha tripulação acredito que daremos conta por aqui.\n"},
         {"txt":"[Roger]: Você viu o que Metherax disse, ele se encontra no oeste. Alguma ideia de como irá encontrá-lo?\n"},
         {"txt":"[Heroi]: Ainda não, por enquanto retornarei para Krambeck para entregar os artefatos roubados,\n de lá procurarei pistas com os elfos.\n"},
-        {"txt":"[Roger]: Entendo... Boa sorte em sua campanha, heroi. Santos sempre terá as portas abertas para ti.\n"},
+        {"txt":"[Roger]: Entendo... Boa sorte em sua campanha, Heroi. Santos sempre terá as portas abertas para ti.\n"},
         {"txt":"[Roger]: Por favor, leve contigo esse presente. Não é muito, mas te será útil.\n"},
         {"txt":"InserirMosquete\n"},
+        {"txt":"Mosquete Adquirido\n"},
         {"txt":"[Heroi]: Obrigado, Roger. Hei de retornar um dia para uma Santos melhor que a atual.\n"},
         {"txt":"[Roger]: Que a deusa da luz o acompanhe.\n"}
         
