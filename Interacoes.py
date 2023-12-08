@@ -117,7 +117,7 @@ def Combate(Personagem, Monster):
         print("Lanchado, se fodeu.")
         sys.exit()
     elif(Monster.HP <= 0):
-        print("O "+Monster.name+" foi capinado.")
+        print(""+Monster.name+" foi capinado(a).")
         Personagem.XP += XP(Monster.lvl)
         if(Personagem.XP >= 100):
             Personagem.LvlUP()
