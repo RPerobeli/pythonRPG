@@ -20,7 +20,7 @@ class RetornoAdLArqueiro(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
-        self.Filename = "SantosBom"
+        self.Filename = "RetornoAdLArqueiro"
         self.MaxStoryIndex = 3
         self.Count = 0
         self.Armas = armas

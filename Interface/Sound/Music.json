@@ -84,6 +84,10 @@
         "file": "Santos.wav",
         "volume": 0.2
     },
+    "RetornoAdLArqueiro": {
+        "file": "Theme1.wav",
+        "volume": 0.2
+    },
     "continue": {
         "file": "To-Be-Continued.wav",
         "volume": 0.2
