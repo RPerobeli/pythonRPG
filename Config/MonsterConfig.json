@@ -384,5 +384,12 @@
         "isBoss": "True",
         "ImageMultiplier" : 1.2,
         "needFlip" : "False"
+    },
+    {
+        "Nome": "Arqueiro Morto",
+        "Classe": "Arqueiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
     }
 ]

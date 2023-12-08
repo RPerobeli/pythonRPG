@@ -100,7 +100,7 @@ class RetornoAdLArqueiro(GameState.GameState):
         #region Battles 
         if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaUndeadArcher\n"):
             self.Sound.StopMusic()
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Arqueiro Morto"), "SnonwyKrambeck")
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Arqueiro Morto"), "SnowyKrambeck")
             self.Personagem = battleWindow.Battle()
             self.Sound.PlayMusic("RetornoAdLArqueiro")
             self.StoryListId += 1
