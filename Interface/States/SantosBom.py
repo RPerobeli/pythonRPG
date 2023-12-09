@@ -144,7 +144,7 @@ class SantosBom(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaTripulante1\n"):
             self.Sound.StopMusic()
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Tripulante 1"), "PirateWarehouseNotInFire")
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Pirata"), "PirateWarehouseNotInFire")
             self.Personagem = battleWindow.Battle()
             self.Sound.PlayMusic("SantosBom")
             self.StoryListId += 1
@@ -153,7 +153,7 @@ class SantosBom(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaTripulante2\n"):
             self.Sound.StopMusic()
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Tripulante 2"), "PirateWarehouseNotInFire")
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Charlatao"), "PirateWarehouseNotInFire")
             self.Personagem = battleWindow.Battle()
             self.Sound.PlayMusic("SantosBom")
             self.StoryListId += 1
@@ -162,7 +162,7 @@ class SantosBom(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaTripulante3\n"):
             self.Sound.StopMusic()
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Tripulante 3"), "PirateWarehouseNotInFire")
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Tripulante"), "PirateWarehouseNotInFire")
             self.Personagem = battleWindow.Battle()
             self.Sound.PlayMusic("SantosBom")
             self.StoryListId += 1

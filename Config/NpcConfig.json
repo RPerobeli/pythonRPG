@@ -148,6 +148,21 @@
         "Nome": "Mensageiro",
         "ImageMultiplier" : 1.0,
         "needFlip" : "True"
+    },
+    {
+        "Nome": "Aldeao Final 1",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Rainha Valquiria",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo Negro",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
     }
     
 ]

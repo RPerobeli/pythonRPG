@@ -53,26 +53,26 @@ class SagaFinal(GameState.GameState):
         #endif
 
         #region NPCs
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirPelegolas\n"):
-            self.Actors[1] = lib.GetNpc(self.Npcs,"Pelegolas")
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirAldeaoFinal1\n"):
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Aldeao Final 1")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirEndilien\n"):
-            self.Actors[1] = lib.GetNpc(self.Npcs,"Endilien")
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirJessie\n"):
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Jessie")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirLiriel\n"):
-            self.Actors[1] = lib.GetNpc(self.Npcs,"Liriel")
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirValquiriaLuz\n"):
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Rainha Valquiria")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMensageiro\n"):
-            self.Actors[1] = lib.GetNpc(self.Npcs,"Mensageiro")
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirElfoNegro\n"):
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Elfo Negro")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -104,20 +104,97 @@ class SagaFinal(GameState.GameState):
         #endregion
 
         #region Battles 
-        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaUndeadArcher\n"):
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaEspiritoMaldito\n"):
             self.Sound.StopMusic()
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Arqueiro Morto"), "SnowyKrambeck")
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Espirito Maligno"), "SnowyCityNight")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("RetornoAdLArqueiro")
+            self.Sound.PlayMusic("SagaFinal")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaDavion\n"):
+            self.Sound.StopMusic()
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Davion Stormfury"), "guild")
+            self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("SagaFinal")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaValquiria\n"):
+            self.Sound.StopMusic()
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Rainha Valquiria"), "Brasilia")
+            self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("BatalhasFinais")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaSenhordosLobisomens\n"):
+            self.Sound.StopMusic()
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Senhor dos Lobisomens"), "BrasiliaGardens")
+            self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("BatalhasFinais")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaDavion\n"):
+            self.Sound.StopMusic()
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Davion Stormfury"), "guild")
+            self.Personagem = battleWindow.Battle()
+            self.Sound.PlayMusic("SagaFinal")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+
         #endregion
 
         #region Monsters
-                   
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirEspiritoMaldito\n"):
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Espirito Maligno")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMetherax\n"):
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Metherax")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif 
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirDavion\n"):
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Davion Stormfury")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif 
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirValquiria\n"):
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Rainha Valquiria")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif 
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirSenhorDosLobisomens\n"):
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Senhor dos Lobisomens")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif 
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirDemonioSuperior\n"):
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Demonio Superior")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif 
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirEspiritoMaldito\n"):
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Espirito Maligno")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif 
         #endregion      
 
         #region Backgrounds
@@ -127,13 +204,39 @@ class SagaFinal(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundCuritibaNight\n"):
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/CuritibaNight.jpg').convert_alpha()
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundGuild\n"):
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/guild.jpg').convert_alpha()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundBrasilia\n"):
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Brasilia.jpg').convert_alpha()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundBrasiliaGardens\n"):
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/BrasiliaGardens.jpg').convert_alpha()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundBrasiliaDemonRoom\n"):
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/BrasiliaDemonRoom.jpg').convert_alpha()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundGuild\n"):
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/guild.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
         
+
+
         #endregion
 
         #region Weapons and status        
