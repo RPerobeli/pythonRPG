@@ -140,9 +140,9 @@ class SagaFinal(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaDavion\n"):
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaDemonioSuperior\n"):
             self.Sound.StopMusic()
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Davion Stormfury"), "guild")
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Demonio Superior"), "BrasiliaDemonRoom")
             self.Personagem = battleWindow.Battle()
             self.Sound.PlayMusic("SagaFinal")
             self.StoryListId += 1
@@ -228,8 +228,8 @@ class SagaFinal(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundGuild\n"):
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/guild.jpg').convert_alpha()
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundBrasiliaThrone\n"):
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/BrasiliaThrone.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()
             return
