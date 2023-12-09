@@ -149,53 +149,5 @@
         {"txt":"[Metherax]: Não, não, não! Eu estava tão perto... Heroi...\n"},
         {"txt":"SelecionarFinal\n"},
         {"txt":"[Narrador]: Metherax emite seu último suspiro.\n"}
-    ],
-    "BOM" : [
-        {"txt":"RemoverAtor1\n"},
-        {"txt":"[Narrador]: O corpo do lich se desintegra, liberando toda a magia condensada dentro dele. \n"},
-        {"txt":"[Narrador]: A magia negra de dispersa e a nevasca do Inverno Eterno começa a se dissipar\n dando lugar à luz do Sol, nascendo pela manhã, rompendo a noite.\n"},
-        {"txt":"[Narrador]: A luz da bênção da Deusa também se esvai e você cai de joelhos, de cansaço, ofegante.\n"},
-        {"txt":"[Heroi]: Com isso, acredito que meu dever foi cumprido.\n"},
-        {"txt":"[Narrador]: A cidade de Brasília começa a cair uma vez que agora não há o poder de\n Metherax para mantê-la nos céus.\n"},
-        {"txt":"[Narrador]: Em um grande estrondo, a ilha pousa em uma campina perto da Cidade Livre.\n"},
-        {"txt":"[Narrador]: Algumas horas depois você retorna para a Cidade Livre.\n"},
-        {"txt":"[Narrador]: Um dos cidadãos o reconhece.\n"},
-        {"txt":"InserirAldeaoFinal2\n"},
-        {"txt":"[Aldeão]: É o Heroi!!! Ele retornou!!!!\n"},
-        {"txt":"[Narrador]: Os sobreviventes da Cidade Livre o auxiliam em seu retorno,\n e o acompanham durante os dias de sua recuperação.\n"},
-        {"txt":"[Narrador]: Após se recuperar, você vai novamente à Asas da Liberdade.\n"},
-        {"txt":"[Narrador]: Ao entrar na guilda, um aventureiro avisa de sua chegada.\n"},
-        {"txt":"InserirAventureiro\n"},
-        {"txt":"[Aventureiro]: Pessoal!!! O Heroi chegou!!!\n"},
-        {"txt":"[Narrador]: Todos haviam retornado à Cidade Livre após ouvirem as notícias do que ocorrera ali.\n"},
-        {"txt":"InserirAventureira\n"},
-        {"txt":"[Aventureira]: Um brinde ao nosso salvador Heroi! Hahahahahaa!\n"},
-        {"txt":"[Narrador]: E Uma grande festa se deu até que todos perdessem a noção dos dias que se passaram.\n"}
-    ],
-    "NEUTRO" : [
-        {"txt":"[Heroi]: Meu caro, posso te dar meu ouro, mas desejo algumas informações antes.\n"},
-        {"txt":"[Pirata Bêbado]: Nóis que mandamos aqui, arqueiro.\n"},
-        {"txt":"[Heroi]: Estou vendo, por isso estou inclinado a ajudá-lo. Não desejo atrapalhar seus negócios, mas procuro alguns mercenários, recentemente contratados.\n"},
-        {"txt":"[Pirata Bêbado]: Mercenários? A cidade está cheia deles. Vai ser difícil encontrar o seu grupo específico... Mas se deseja alguma começar por algum lugar, é melhor ir na taverna do centro.\n"},
-        {"txt":"[Heroi]: Entendo. Obrigado meu nobre. Fico feliz que pudemos resolver nosso contratempo de forma amigável. Aqui está o ouro.\n"},
-        {"txt":"[Pirata Bêbado]: Hehehe, cê fala bonito. Haha! Agora vaza, pobre\n."}
-    ],
-    "MAU" : [
-        {"txt":"[Heroi]: Aqui está, senhor.\n"},
-        {"txt":"[Pirata Bêbado]: Cê é esperto, fez a melhor escolha Haha! Agora vaza, pobre.\n"},
-        {"txt":"[Narrador]: No momento que o pirata e seu grupo dão as costas você ataca.\n"},
-        {"txt":"--luta pirata bebado\n"},
-        {"txt":"[Narrador]: Com a derrota do aparentemente líder do grupo, os outros ladrões fogem.\n"},
-        {"txt":"[Pirata Bêbado]: Desgraçado! Você está desafiando os piratas do Barba Negra! Isso não vai ficar assim!\n"},
-        {"txt":"[Narrador]: Mais tarde naquele dia...\n"},
-        {"txt":"[Pirata Bêbado]: Foi isso chefe, o cara não nos deu o ouro e nos desafiou na briga! Uma afronta ao senhor!\n"},
-        {"txt":"[Barba Negra]: Entendo... Então, Vocês não pegaram o ouro, foram desafiados, estavam em maior número e tomaram um pé na bunda de um único sujeito?\n"},
-        {"txt":"[Pirata Bêbado]: Olhando por esse lado...\n"},
-        {"txt":"[Barba Negra]: Não tema. Esse sujeito só pode estar junto de Roger, vamos acabar com todos eles ao mesmo tempo!\n"},
-        {"txt":"[Pirata Bêbado]: Obrigado chefe! Com certeza não vai restá ninguém para desafiá-lo.\n"},
-        {"txt":"[Barba Negra]: Agora vá.\n"},
-        {"txt":"--sound Shot\n"},
-        {"txt":"[Narrador]: Enquanto o pirata se virava para sair do local, Barba negra atira com seu revólver, eliminando a vida do subordinado.\n"},
-        {"txt":"[Barba Negra]: Não há espaços no meu bando para aqueles que desonram meu nome.\n"}
     ]
 }
