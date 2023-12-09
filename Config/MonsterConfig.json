@@ -274,14 +274,7 @@
         "needFlip" : "True"
     },
     {
-        "Nome": "Elfo Negro",
-        "Classe": "Guerreiro",
-        "isBoss": "True",
-        "ImageMultiplier" : 1.0,
-        "needFlip" : "True"
-    },
-    {
-        "Nome": "Senhor Dos Lobisomens",
+        "Nome": "Senhor Dos Lobos",
         "Classe": "Guerreiro",
         "isBoss": "True",
         "ImageMultiplier" : 1.0,
@@ -393,11 +386,25 @@
         "needFlip" : "True"
     },
     {
-        "Nome": "Senhor Dos Lobisomens",
+        "Nome": "Senhor Dos Lobos",
         "Classe": "Guerreiro",
         "isBoss": "True",
         "ImageMultiplier" : 1.0,
         "needFlip" : "True"
+    },
+    {
+        "Nome": "Rainha Valquiria",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Demonio Superior",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
     },
     {
         "Nome": "Davion Stormfury",

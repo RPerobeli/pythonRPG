@@ -157,6 +157,12 @@ class Monstro():
             self.MP = (0.25*self.lvl+0.75)*self.MP
             self.HPmax = (0.25*self.lvl+0.75)*self.HPmax
             self.MPmax = (0.25*self.lvl+0.75)*self.MPmax
+        #se for boss final melhora mais ainda
+        if(self.isBoss and self.name == "Metherax"):
+            self.HP = 5*self.HP
+            self.MP = 2*self.MP
+            self.HPmax = 4*self.HPmax
+            self.MPmax = 2*self.MPmax
         #endif
     # endfunc
     def AtualizaSpecialPoints(self, value):

@@ -92,6 +92,14 @@
         "file": "SagaFinal.wav",
         "volume": 1
     },
+    "BatalhasFinais": {
+        "file": "BatalhasFinais.wav",
+        "volume": 1
+    },
+    "Deusa": {
+        "file": "Goddess.wav",
+        "volume": 0.5
+    },
     "continue": {
         "file": "To-Be-Continued.wav",
         "volume": 0.2

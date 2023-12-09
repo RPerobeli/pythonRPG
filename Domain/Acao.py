@@ -101,7 +101,7 @@ class Acao:
             # endif
         elif(personagem.classe.lower() == "mago"):
             if(atkType == 1):
-                dano = 2*personagem.skills["int"] + 1*personagem.skills["str"]
+                dano = personagem.arma.danoBase*personagem.skills["int"] + 1*personagem.skills["str"]
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano

@@ -21,7 +21,7 @@ class SagaFinal(GameState.GameState):
         self.Alpha = 255
         self.Scene = 1
         self.Filename = "SagaFinal"
-        self.MaxStoryIndex = 3
+        self.MaxStoryIndex = 1
         self.Count = 0
         self.Armas = armas
         
@@ -37,20 +37,49 @@ class SagaFinal(GameState.GameState):
         #endif
     #endfunc
 
-    def SelectNextStory(self):
+    def SelectFinal(self):
         self.Sound.StopMusic()
-        return (self.Personagem, "TheEnd", True)
+        lista = [self.Personagem.Good,self.Personagem.Neutral, self.Personagem.Evil]
+        final_id = lista.index(max(lista))
+        if(final_id==0):
+            return "Good"
+        if(final_id==1):
+            return "Neutral"
+        if(final_id==2):
+            return "evil"    
+
+        return 
     #endfunc
     
     def VerifyEvent(self):
         print('verificou possiveis eventos')
         
+        #region status
         if(self.StoryTextList[self.StoryListId]['txt'] == "RemoverAtor1\n"):
             self.Actors[1] = None
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "RemoverAtor0\n"):
+            self.Actors[0] = None
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirPersonagem\n"):
+            self.Actors[0] = self.Personagem
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "SelecionarFinal\n"):
+            self.NextStory = self.SelectFinal()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        #endregion
 
         #region NPCs
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirAldeaoFinal1\n"):
@@ -77,6 +106,12 @@ class SagaFinal(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirDeusa\n"):
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Anjo")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         
         #endregion
         
@@ -88,15 +123,16 @@ class SagaFinal(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMusicaBordel\n"):
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMusicaBatalhaFinal\n"):
             self.Sound.StopMusic()
-            self.Sound.PlayMusic("brothel")
+            self.Sound.PlayMusic("BatalhasFinais")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirSoundBarragem\n"):
-            self.Sound.PlaySFX("Barragem")
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirSoundDeusa\n"):
+            self.Sound.StopMusic()
+            self.Sound.PlayMusic("Deusa")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -133,7 +169,7 @@ class SagaFinal(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaSenhordosLobisomens\n"):
             self.Sound.StopMusic()
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Senhor dos Lobisomens"), "BrasiliaGardens")
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Senhor dos Lobos"), "BrasiliaGardens")
             self.Personagem = battleWindow.Battle()
             self.Sound.PlayMusic("BatalhasFinais")
             self.StoryListId += 1
@@ -144,7 +180,24 @@ class SagaFinal(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Demonio Superior"), "BrasiliaDemonRoom")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("SagaFinal")
+            self.Sound.PlayMusic("BatalhasFinais")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaLich1\n"):
+            self.Sound.StopMusic()
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Metherax"), "BrasiliaThrone")
+            self.Personagem = battleWindow.Battle(isLichFirstBattle=True, danoBase=30)
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaLich2\n"):
+            self.Sound.StopMusic()
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Metherax"), "BrasiliaThrone")
+            self.Personagem = battleWindow.Battle(danoBase=2)
+            self.Sound.PlayMusic("BatalhasFinais")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -178,7 +231,7 @@ class SagaFinal(GameState.GameState):
             return
         #endif 
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirSenhorDosLobisomens\n"):
-            self.Actors[1] = lib.GetMonstro(self.Monstros,"Senhor dos Lobisomens")
+            self.Actors[1] = lib.GetMonstro(self.Monstros,"Senhor dos Lobos")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -188,13 +241,7 @@ class SagaFinal(GameState.GameState):
             self.StoryListId += 1
             self.VerifyEvent()
             return
-        #endif 
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirEspiritoMaldito\n"):
-            self.Actors[1] = lib.GetMonstro(self.Monstros,"Espirito Maligno")
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif 
+        #endif  
         #endregion      
 
         #region Backgrounds
@@ -234,12 +281,15 @@ class SagaFinal(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
-        
-
-
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundTelaPreta\n"):
+            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/TelaPreta.jpg').convert_alpha()
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         #endregion
 
-        #region Weapons and status        
+        #region Weapons        
         if(self.StoryTextList[self.StoryListId]['txt'] == "GameOverEvent\n"):
             self.GameOver = gow.GameOverWindow(self.Screen)
             self.Sound.StopMusic()

@@ -8,6 +8,7 @@ from Interface import BattleWindowSpells as bws
 from Interface import BattleWindowMonsterTurn as bwmt
 from Interface import BattleWindowLvlUp as bwlvl
 from Interface import GameOverWindow as gow
+import Domain.Arma as A
 import Interacoes as lib
 
 class BattleWindow(GameState.GameState):
@@ -31,6 +32,7 @@ class BattleWindow(GameState.GameState):
         self.LvlUpWindow = bwlvl.BattleWindowLvlUp(self.Screen, self.DialogBox, self.Personagem, self.Monster, bgName)
         self.GameOverWindow = gow.GameOverWindow(self.Screen)
         self.Done = True
+        self.DontDie = False
     #endfunc
 
 
@@ -76,13 +78,22 @@ class BattleWindow(GameState.GameState):
     #endfunc
 
     def VerifyIfBattleIsFinished(self):
-        if(self.Personagem.HP <= 0):
-            self.Sound.StopMusic()
-            self.GameOverWindow.GameOver()
-        elif(self.Monster.HP <= 0):
-            self.Sound.StopMusic()
-            self.Personagem = self.LvlUpWindow.LvlUp(self.Personagem)
-            return True
+        if(self.DontDie):
+            if(self.Personagem.HP <= 0):
+                self.Sound.StopMusic()
+                return True
+            elif(self.Monster.HP <= 0):
+                self.Sound.StopMusic()
+                self.Personagem = self.LvlUpWindow.LvlUp(self.Personagem)
+        else:
+            if(self.Personagem.HP <= 0):
+                self.Sound.StopMusic()
+                self.GameOverWindow.GameOver()
+            elif(self.Monster.HP <= 0):
+                self.Sound.StopMusic()
+                self.Personagem = self.LvlUpWindow.LvlUp(self.Personagem)
+                return True
+            #endif
         #endif
     #endfunc
 
@@ -94,8 +105,13 @@ class BattleWindow(GameState.GameState):
         #endif
     #endfunc
 
-    def Battle(self):
+    def Battle(self, isLichFirstBattle = False, danoBase = None):
         self.GetBattleMusic()
+        if(danoBase != None):
+            self.Monster.arma.danoBase = danoBase
+        if(isLichFirstBattle):
+            self.DontDie = True
+        #endif
         self.Monster.AutoLvl(self.Personagem.lvl)
         self.Monster.AdequaHP()
         turnCounter = 1
@@ -105,9 +121,12 @@ class BattleWindow(GameState.GameState):
             print("in battle")
             self.ScenesManager()
             for event in pygame.event.get():
-                #isFinished = self.VerifyIfBattleIsFinished()
-                # if(isFinished):
-                #     return self.Personagem
+                if(isLichFirstBattle):
+                    isFinished = self.VerifyIfBattleIsFinished()
+                    if(isFinished):
+                        self.Personagem.HP = self.Personagem.HPmax
+                        return self.Personagem
+                    #endif
                 #endif
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -124,7 +143,7 @@ class BattleWindow(GameState.GameState):
                         self.MonsterTurnWindow.MonsterTurn()
                         turnCounter -= 1
                         self.isOptions = True
-                        self.VerifyIfBattleIsFinished()
+                        isFinished = self.VerifyIfBattleIsFinished()
                     #endif
 
                 #endif
