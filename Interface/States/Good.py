@@ -7,7 +7,7 @@ import Interface.GameOverWindow as gow
 import Interacoes as lib
 import Interface.States.GameState as GameState
 
-class RetornoAdLArqueiro(GameState.GameState):
+class Good(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None, armas= None):
         super().__init__(screen)
         self.ImagePath =  jsonL.GetImagePath()
