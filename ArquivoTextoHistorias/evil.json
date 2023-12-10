@@ -1,14 +1,14 @@
 {
     "Q1" : [
         {"txt":"RemoverAtor1\n"},
-        {"txt":"[Narrador]: O corpo do lich se desintegra, liberando toda a magia condensada dentro dele. \n"},
+        {"txt":"[Narrador]: O corpo do lich se desintegra, liberando toda a magia condensada dentro dele.\n"},
         {"txt":"[Narrador]: A magia negra paira no ar mas a nevasca do Inverno Eterno não se dissipa.\n"},
         {"txt":"[Narrador]: A luz da bênção da Deusa também se esvai e você cai de joelhos, de cansaço, ofegante.\n"},
         {"txt":"[Narrador]: A própria magia dispersa no ar sussurava aos seus ouvidos\n"},
         {"txt":"[Heroi]: O que foi feito não poderá ser desfeito.\n"},
-        {"txt":"[Narrador]: A cidade de Brasília começa a cair dos céus uma vez que agora não há o poder\n de Metherax para mantê-la nos céus.\n"},
+        {"txt":"[Narrador]: A cidade de Brasília começa a cair dos céus uma vez que agora\n não há o poder de Metherax para mantê-la nos céus.\n"},
         {"txt":"[Heroi]: Então é isso, tudo foi em vão? \n"},
-        {"txt":"[Heroi]: Morrerei aqui sem ninguém para cantar minhas façanhas. A luta contra os mortos continuará.\n"},
+        {"txt":"[Heroi]: Morrerei aqui sem ninguém para cantar minhas façanhas.\n A luta contra os mortos continuará.\n"},
         {"txt":"[Heroi]: Não fui capaz de salvar ninguém.\n"},
         {"txt":"[Heroi]: Morrer como um aventureiro fracassado...\n"},
         {"txt":"[Narrador]: Sozinho, na sala do trono, sussurros ainda entram na sua mente.\n"},
@@ -17,15 +17,15 @@
         {"txt":"[Heroi]: Não... não serei um fracasso...\n"},
         {"txt":"[Narrador]: Você começa a reunir toda a magia que pertencera ao finado lich.\n"},
         {"txt":"[Heroi]: AAAAAAAAAAAARRGH\n"},
-        {"txt":"[Narrador]: Cambaleante, a dor era quase insuportável. Uma batalha incessante em sua consciência.\n"},
+        {"txt":"[Narrador]: Cambaleante, a dor era quase insuportável. Uma batalha\n incessante em sua consciência.\n"},
         {"txt":"[Narrador]: Vozes na sua mente, sussuram: glória... poder...\n"},
         {"txt":"[Narrador]: Seu corpo se contorce e deforma com tamanha energia sendo absorvida de forma tão súbita.\n"},
         {"txt":"InserirFormaSombria\n"},
         {"txt":"[Narrador]: Quando o caos finda, você se levanta.\n"},
-        {"txt":"[Heroi]: Se os mortos se recusam a retornar ao repouso, hão de me obedecer.\n"},
+        {"txt":"[Heroi]: Se os mortos se recusam a retornar ao repouso,\n hão de me obedecer.\n"},
         {"txt":"[Narrador]: Ao sentar-se no trono, você declara seu novo império.\n"},
-        {"txt":"[Heroi]: Aqueles que se opuserem à minha glória hão de receber minha retribuilção.\n"},
+        {"txt":"[Heroi]: Aqueles que se opuserem à minha glória hão de receber\n minha retribuilção.\n"},
         {"txt":"[Heroi]: Meu poder será rival do divino. E ante mim, nenhum se prostará em pé.\n"},
-        {"txt":"[Narrador]: Daquele momento em diante, seu nome seria reverberado por terra como sinônimo de força e terror.\n"}   
+        {"txt":"[Narrador]: Daquele momento em diante, seu nome seria reverberado\n por terra como sinônimo de força e terror.\n"}   
     ]
 }

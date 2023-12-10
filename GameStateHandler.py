@@ -11,6 +11,9 @@ from Interface.States import KrambeckArqueiro
 from Interface.States import SantosBom
 from Interface.States import RetornoAdLArqueiro
 from Interface.States import SagaFinal
+from Interface.States import Good
+from Interface.States import Neutral
+from Interface.States import Evil
 from Interface.States import Title as t
 from Interface import DialogBox
 from Interface import BattleWindow as bw
@@ -68,6 +71,15 @@ class GameStateHandler:
         #endif
         if(self.State == "SagaFinal"):
             self.SagaFinal()
+        #endif
+        if(self.State == "good"):
+            self.Good()
+        #endif
+        if(self.State == "neutral"):
+            self.Neutral()
+        #endif
+        if(self.State == "evil"):
+            self.Evil()
         #endif
         if(self.State == "ToBeContinued"):
             self.ToBeContinued()
@@ -177,7 +189,12 @@ class GameStateHandler:
         self.Hero,state, continueStory = self.sagaFinal.Update('SagaFinal')
         self.State = state
         if(continueStory):
-            self.theEnd = []
+            if(self.State == "good"):
+                self.good = Good.Good(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+            if(self.State == "neutral"):
+                self.neutral = Neutral.Neutral(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+            if(self.State == "evil"):
+                self.evil = Evil.Evil(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
         #endif
     #endfunc
 
@@ -201,6 +218,33 @@ class GameStateHandler:
     def Acre(self):
         print('Acre')
         self.Hero,state, continueStory = self.teofilotoni.Update('Acre')
+        self.State = state
+        if(continueStory):
+            print("...")
+        #endif
+    #endfunc
+
+    def Good(self):
+        print('good')
+        self.Hero,state, continueStory = self.good.Update('good')
+        self.State = state
+        if(continueStory):
+            print("...")
+        #endif
+    #endfunc
+
+    def Neutral(self):
+        print('neutral')
+        self.Hero,state, continueStory = self.neutral.Update('neutral')
+        self.State = state
+        if(continueStory):
+            print("...")
+        #endif
+    #endfunc
+
+    def Evil(self):
+        print('evil')
+        self.Hero,state, continueStory = self.evil.Update('evil')
         self.State = state
         if(continueStory):
             print("...")
