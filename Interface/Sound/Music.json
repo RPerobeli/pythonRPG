@@ -100,6 +100,18 @@
         "file": "Goddess.wav",
         "volume": 0.5
     },
+    "good": {
+        "file": "SagaFinal.wav",
+        "volume": 1
+    },
+    "neutral": {
+        "file": "BatalhasFinais.wav",
+        "volume": 1
+    },
+    "evil": {
+        "file": "Goddess.wav",
+        "volume": 0.5
+    },
     "continue": {
         "file": "To-Be-Continued.wav",
         "volume": 0.2

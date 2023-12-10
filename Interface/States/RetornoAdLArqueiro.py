@@ -21,7 +21,7 @@ class RetornoAdLArqueiro(GameState.GameState):
         self.Alpha = 255
         self.Scene = 1
         self.Filename = "RetornoAdLArqueiro"
-        self.MaxStoryIndex = 3
+        self.MaxStoryIndex = 1
         self.Count = 0
         self.Armas = armas
         

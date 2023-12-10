@@ -42,9 +42,9 @@ class SagaFinal(GameState.GameState):
         lista = [self.Personagem.Good,self.Personagem.Neutral, self.Personagem.Evil]
         final_id = lista.index(max(lista))
         if(final_id==0):
-            return "Good"
+            return "good"
         if(final_id==1):
-            return "Neutral"
+            return "neutral"
         if(final_id==2):
             return "evil"    
 
