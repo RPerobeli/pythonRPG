@@ -9,7 +9,7 @@ class BattleWindowSpells(GameState.GameState):
         imagePath =  jsonL.GetImagePath()
         self.DialogBox = dialogBox
         self.BackgroundImage = pygame.image.load(f'{imagePath}/Background/{bgName}.jpg').convert_alpha()
-        self.Actors[1] = personagem
+        self.Actors[0] = personagem
         self.Personagem = personagem
         self.Monster = monster
         self.Actors[1] = monster

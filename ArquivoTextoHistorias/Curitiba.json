@@ -102,11 +102,14 @@
             "txt": "BattleSoldadoElfo1\n"
         },
         {
+            "txt" : "[Narrador]: O outro soldado vem em sua direção.\n"
+        },
+        {
             "txt": "BattleSoldadoElfo2\n"
         },
         {"txt" : "RemoverAtor1\n"},
         {
-            "txt" : "[Narrador]: Com os soldados no chão, ouve-se o general Liriel entrando no depósito.\n"
+            "txt" : "[Narrador]: Com os soldados no chão, ouve-se a general Liriel entrando no depósito.\n"
         },
         {
             "txt": "InserirLiriel\n"
