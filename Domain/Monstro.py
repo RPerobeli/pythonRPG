@@ -161,7 +161,7 @@ class Monstro():
         if(self.isBoss and self.name == "Metherax"):
             self.HP = 5*self.HP
             self.MP = 2*self.MP
-            self.HPmax = 4*self.HPmax
+            self.HPmax = 5*self.HPmax
             self.MPmax = 2*self.MPmax
         #endif
     # endfunc

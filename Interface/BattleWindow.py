@@ -82,9 +82,6 @@ class BattleWindow(GameState.GameState):
             if(self.Personagem.HP <= 0):
                 self.Sound.StopMusic()
                 return True
-            elif(self.Monster.HP <= 0):
-                self.Sound.StopMusic()
-                self.Personagem = self.LvlUpWindow.LvlUp(self.Personagem)
         else:
             if(self.Personagem.HP <= 0):
                 self.Sound.StopMusic()
@@ -192,7 +189,11 @@ class BattleWindow(GameState.GameState):
                 #endif
                 if (event.type == pygame.KEYDOWN and (event.key == pygame.K_9 or event.key == pygame.K_KP_9)):
                     if(self.isOptions):
-                        atkType = 69
+                        if(self.DontDie):
+                            atkType = 1
+                        else:
+                            atkType = 69
+                        #endif
                         dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster)
                         self.PrintDmg(dano,self.Personagem)
                         turnCounter += 1

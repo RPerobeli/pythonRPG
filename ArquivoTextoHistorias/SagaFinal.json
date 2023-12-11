@@ -135,7 +135,7 @@
         {"txt":"[Narrador]: Uma luz aparece em sua visão. A luz vai aumentando até surgir\n uma silhueta surgir na sua frente.\n"},
         {"txt":"InserirDeusa\n"},
         {"txt":"[Deusa da Luz]: Jovem Heroi, venho acompanhando sua jornada. Muitos oram por ti,\n solicitando que eu o acompanhe.\n"},
-        {"txt":"[Deusa da Luz]: Tu não és perfeito, mas luta de acordo com suas convicções.\n Dar-te-ei minha bênção pois esse momento não deve ser o seu fim, muitos ainda hão de solicitar sua ajuda.\n"},
+        {"txt":"[Deusa da Luz]: Tu não és perfeito, mas luta de acordo com suas convicções.\n Dar-te-ei minha bênção pois esse momento não deve ser o seu fim,\n muitos ainda hão de solicitar sua ajuda.\n"},
         {"txt":"RemoverAtor1\n"},
         {"txt":"InserirBackgroundBrasiliaThrone\n"},
         {"txt":"[Narrador]: Seus olhos se abrem e você sente a força dada pela Deusa a você.\n"},
