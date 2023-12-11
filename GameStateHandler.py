@@ -15,6 +15,7 @@ from Interface.States import Good
 from Interface.States import Neutral
 from Interface.States import Evil
 from Interface.States import Title as t
+from Interface import TheEndWindow as End
 from Interface import DialogBox
 from Interface import BattleWindow as bw
 from Utils import JsonLoader as jsonL
@@ -84,6 +85,9 @@ class GameStateHandler:
         if(self.State == "ToBeContinued"):
             self.ToBeContinued()
         #endif
+        if(self.State == "TheEnd"):
+            self.End()
+        #endif
     #endfunc
 
     #endfunc
@@ -94,8 +98,8 @@ class GameStateHandler:
         if(self.Hero!=None):
             # self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
             # self.State = "inn"
-            self.sagaFinal = SagaFinal.SagaFinal(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
-            self.State = "SagaFinal"
+            self.good = Good.Good(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+            self.State = "good"
     #endfunc
     def Inn(self):
         print("inn")
@@ -229,7 +233,7 @@ class GameStateHandler:
         self.Hero,state, continueStory = self.good.Update('good')
         self.State = state
         if(continueStory):
-            print("...")
+            self.theEnd = End.TheEndWindow(self.Screen)
         #endif
     #endfunc
 
@@ -238,7 +242,7 @@ class GameStateHandler:
         self.Hero,state, continueStory = self.neutral.Update('neutral')
         self.State = state
         if(continueStory):
-            print("...")
+            self.theEnd = End.TheEndWindow(self.Screen)
         #endif
     #endfunc
 
@@ -247,13 +251,18 @@ class GameStateHandler:
         self.Hero,state, continueStory = self.evil.Update('evil')
         self.State = state
         if(continueStory):
-            print("...")
+            self.theEnd = End.TheEndWindow(self.Screen)
         #endif
     #endfunc
     
     def ToBeContinued(self):
         print('ToBeContinued')
         state = self.tobecontinued.Update('ToBeContinued')
+        self.State = state
+    #endfunc
+    def End(self):
+        print('TheEnd')
+        state = self.theEnd.End()
         self.State = state
     #endfunc
 #endclass

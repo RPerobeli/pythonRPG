@@ -54,7 +54,7 @@ class Neutral(GameState.GameState):
 
         #region NPCs
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBardo\n"):
-            self.Actors[1] = lib.GetNpc(self.Npcs,"Bardo")
+            self.Actors[0] = lib.GetNpc(self.Npcs,"Bardo")
             self.StoryListId += 1
             self.VerifyEvent()
             return

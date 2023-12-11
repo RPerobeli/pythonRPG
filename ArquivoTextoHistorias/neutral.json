@@ -1,7 +1,7 @@
 {
     "Q1" : [
-        {"txt":"RemoverAtor1\n"},
         {"txt":"[Narrador]: O corpo do lich se desintegra, liberando toda a magia\n condensada dentro dele.\n"},
+        {"txt":"RemoverAtor1\n"},
         {"txt":"[Narrador]: A magia negra paira no ar mas a nevasca do\n Inverno Eterno não se dissipa.\n"},
         {"txt":"[Narrador]: A luz da bênção da Deusa também se esvai e você cai de joelhos,\n de cansaço, ofegante.\n"},
         {"txt":"[Narrador]: A própria magia dispersa no ar sussurava aos seus ouvidos\n"},
@@ -12,8 +12,8 @@
         {"txt":"[Heroi]: AAAAAAAAAAAARRGH\n"},
         {"txt":"InserirBackgroundGuild\n"},
         {"txt":"InserirBardo\n"},
-        {"txt":"[Narrador]: Cambaleante, com dor urrante. Uma batalha incessante da consciência.\n"},
-        {"txt":"[Narrador]: Assim, o caos presente acalma-se enfim.\n"},
+        {"txt":"[Bardo]: Cambaleante, com dor urrante. Uma batalha incessante da consciência.\n"},
+        {"txt":"[Bardo]: Assim, o caos presente acalma-se enfim.\n"},
         {"txt":"[Bardo]: 'Se os mortos se recusam a retornar ao repouso, em nova vida eu hei de prendê-los.\n Serei o carcereiro desses espíritos.'\n"},
         {"txt":"[Bardo]: Aqueles fora de Brasília nunca entenderiam, apenas chamariam o episódio\n que se sucedeu de 'A Grande Marcha dos Mortos'.\n"},
         {"txt":"[Bardo]: Todos os revividos, sem consciência, retornariam à Brasília sob o comando de Heroi,\n e de lá, jamais sairiam novamente.\n"}

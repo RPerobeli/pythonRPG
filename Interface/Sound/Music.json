@@ -115,5 +115,9 @@
     "continue": {
         "file": "To-Be-Continued.wav",
         "volume": 0.2
+    },
+    "TheEnd": {
+        "file": "TheEnd.wav",
+        "volume": 0.2
     }
 }

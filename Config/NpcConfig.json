@@ -155,6 +155,31 @@
         "needFlip" : "False"
     },
     {
+        "Nome": "Aldeao Final 2",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "NovaTaverneira",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Bardo",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Aventureiro",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Forma Sombria",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
         "Nome": "Rainha Valquiria",
         "ImageMultiplier" : 1.0,
         "needFlip" : "True"

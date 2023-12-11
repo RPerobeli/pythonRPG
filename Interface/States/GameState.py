@@ -130,7 +130,8 @@ class GameState():
 
 
     def SelectNextStory(self):
-        print(self.NextStory)
+        self.Sound.StopMusic()
+        return (self.Personagem, self.NextStory, True)
     #endfunc
 
     def Update(self, nomeState):
