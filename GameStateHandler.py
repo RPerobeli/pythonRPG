@@ -96,10 +96,10 @@ class GameStateHandler:
         self.Title.RedrawWindow()
         self.Hero = self.Title.Update()
         if(self.Hero!=None):
-            self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
-            self.State = "inn"
-            # self.good = Good.Good(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
-            # self.State = "good"
+            # self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
+            # self.State = "inn"
+            self.sagaFinal = SagaFinal.SagaFinal(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+            self.State = "SagaFinal"
     #endfunc
     def Inn(self):
         print("inn")
@@ -207,7 +207,7 @@ class GameStateHandler:
         self.Hero,state, continueStory = self.retornoAdLArqueiro.Update('RetornoAdLArqueiro')
         self.State = state
         if(continueStory):
-            self.sagaFinal = SagaFinal.SagaFinal(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Arma)
+            self.sagaFinal = SagaFinal.SagaFinal(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
         #endif
     #endfunc
 
