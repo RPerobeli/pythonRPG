@@ -150,7 +150,7 @@ class GameState():
             #endif
             if (event.type == pygame.KEYDOWN and (event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE)):
                 if(self.StoryListId == len(self.StoryTextList)-1):
-                    if(self.isQuestion and self.StoryIndex < self.MaxStoryIndex):
+                    if(self.isQuestion and self.StoryIndex <= self.MaxStoryIndex and lib.DoesItHaveAnswer(self.Filename,self.StoryIndex)):
                         self.Sound.PlaySFX("cursorError")
                         print(self.MaxStoryIndex)
                         print("Ta com pressa irmao? para de pular os dialogos.")
