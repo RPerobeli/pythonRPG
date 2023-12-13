@@ -12,6 +12,7 @@ class Acao:
         if(personagem.classe.lower() == "guerreiro"):
             if(atkType == 1):
                 dano = 2*personagem.skills["str"] + personagem.arma.danoBase*2 + personagem.skills["agi"]
+                dano = int(dano)
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
@@ -22,6 +23,7 @@ class Acao:
                     return -2
                 else:
                     dano = danoBaseEspecial + personagem.arma.danoBase*(1.5*personagem.skills["str"]+personagem.skills["agi"])
+                    dano = int(dano)
                     dano = self.AcertoCritico(dano, personagem)
                     if(not personagem.isMonstro):
                         print(personagem.arma.textoAtkEspecial)
@@ -38,6 +40,7 @@ class Acao:
                     dano = 2 * \
                         personagem.skills["int"] + \
                         personagem.skills["str"] + magiaEscolhida["BaseDamage"]
+                    dano = int(dano)
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
@@ -57,6 +60,7 @@ class Acao:
         elif(personagem.classe.lower() == "arqueiro"):
             if(atkType == 1):
                 dano = 2*personagem.skills["agi"] + personagem.arma.danoBase*2 + personagem.skills["int"]
+                dano = int(dano)
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
@@ -67,6 +71,7 @@ class Acao:
                     return -2
                 else:
                     dano = danoBaseEspecial + personagem.arma.danoBase*(1.5*personagem.skills["agi"]+personagem.skills["int"])
+                    dano = int(dano)
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.arma.textoAtkEspecial)
                     print()
@@ -82,6 +87,7 @@ class Acao:
                     dano = personagem.skills["int"] + \
                         2*personagem.skills["agi"] + magiaEscolhida["BaseDamage"]
                     dano = self.AcertoCritico(dano, personagem)
+                    dano = int(dano)
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
                     personagem.MP -= magiaEscolhida["Cost"]
@@ -100,6 +106,7 @@ class Acao:
         elif(personagem.classe.lower() == "mago"):
             if(atkType == 1):
                 dano = 2*personagem.skills["int"] + personagem.arma.danoBase*2 + personagem.skills["str"]
+                dano = int(dano)
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
@@ -110,6 +117,7 @@ class Acao:
                     return -2
                 else:
                     dano = danoBaseEspecial + personagem.arma.danoBase*(1.5*personagem.skills["int"]+personagem.skills["str"])
+                    dano = int(dano)
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.arma.textoAtkEspecial)
                     print()
@@ -125,6 +133,7 @@ class Acao:
                     dano = personagem.arma.danoBase * \
                         personagem.skills["int"] + \
                         magiaEscolhida["BaseDamage"]  
+                    dano = int(dano)
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.name+" causou "+str(dano) + " de dano!")
                     target.HP -= dano
@@ -151,12 +160,12 @@ class Acao:
         multiplicadorCura = rnd.randint(1,2)/10.0
         multiplicadorCuraMonstro = rnd.randint(2,4)/10.0
         if(personagem.isMonstro):
-            personagem.HP += multiplicadorCuraMonstro*personagem.HPmax
-            personagem.MP += multiplicadorCuraMonstro*personagem.MPmax
+            personagem.HP += int(multiplicadorCuraMonstro*personagem.HPmax)
+            personagem.MP += int(multiplicadorCuraMonstro*personagem.MPmax)
         else:
-            personagem.HP += baseHeal + multiplicadorCura*personagem.HPmax + \
-                personagem.skills["str"] + personagem.skills["agi"] + personagem.skills["int"]
-            personagem.MP += 0.4*personagem.MPmax
+            personagem.HP += int(baseHeal + multiplicadorCura*personagem.HPmax + \
+                personagem.skills["str"] + personagem.skills["agi"] + personagem.skills["int"])
+            personagem.MP += int(0.4*personagem.MPmax)
         # endif
         print("Regenerou vida e mana")
         if(personagem.HP > personagem.HPmax):

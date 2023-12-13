@@ -40,7 +40,7 @@ class BattleWindowLvlUp(GameState.GameState):
         self.CapinadoDict = {"txt": f"O {self.Monster.name} foi capinado.\n"}
         self.LoadTextWithList(self.CapinadoDict)
         self.LoadTextWithList({"txt":f"Você chegou ao NIVEL {self.Personagem.lvl}!\n"}, (self.OptionsDict["Options"]["PositionStatus1"]["x"]),self.OptionsDict["Options"]["PositionStatus1"]["y"])
-        self.LoadTextWithList({"txt": "Consuma seu ponto de habilidade\n1 - Força\n2 - Agilidade\n3 - Inteligência\n4 - Vitalidade\n"}, \
+        self.LoadTextWithList({"txt": "Consuma seu ponto de habilidade\n1 - Força\n2 - Agilidade\n3 - Inteligência\n4 - Vitalidade\n5 - Sabedoria\n"}, \
             self.OptionsDict["Options"]["PositionOptions"]["x"],self.OptionsDict["Options"]["PositionOptions"]["y"])
     #endfunc
 
@@ -114,6 +114,13 @@ class BattleWindowLvlUp(GameState.GameState):
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_4):
                     self.Personagem.skills["vit"] += 1
+                    self.Personagem.AtualizaStatus()
+                    self.Sound.StopMusic()
+                    self.VerifyLvlForSpecialization()
+                    return self.Personagem
+                #endif
+                if (event.type == pygame.KEYDOWN and event.key == pygame.K_5):
+                    self.Personagem.skills["sab"] += 1
                     self.Personagem.AtualizaStatus()
                     self.Sound.StopMusic()
                     self.VerifyLvlForSpecialization()
