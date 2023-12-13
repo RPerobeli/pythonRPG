@@ -28,7 +28,8 @@ class Monstro():
             auxImg = pygame.transform.flip(auxImg, True, False)
         #endif
         self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
-
+        self.Statuses = []
+        
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
             self.skills['agi'] = 2
@@ -53,6 +54,8 @@ class Monstro():
             print("Erro no construtor")
         # endif
         self.AtualizaStatus()
+    #endfunc
+
 
     def GetConfigFromList(self, name):
         monsterConfig = jsonL.GetAllMonstersConfig()

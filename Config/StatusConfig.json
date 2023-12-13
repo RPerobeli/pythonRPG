@@ -18,7 +18,8 @@
     },
     "Poison":{
         "TurnsToEnd": 2,
-        "Chance": 0.5
+        "Chance": 0.5,
+        "DamagePerTurn": 10
     },
     "Enrage":{
         "TurnsToEnd": 2,

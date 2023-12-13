@@ -26,6 +26,7 @@ class Personagem:
         self.NeedFlip = imageConfig['needFlip']
         auxImg = self.GetImage()
         self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
+        self.Statuses = []
 
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4

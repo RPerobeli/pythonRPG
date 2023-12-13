@@ -35,7 +35,8 @@
             "Nome": "Flecha de fogo",
             "Cost": 10,
             "BaseDamage": 10,
-            "Lvl":1
+            "Lvl":1,
+            "Status":"Burning"
         },
         {
             "Key" : 2,

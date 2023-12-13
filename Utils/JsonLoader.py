@@ -226,3 +226,17 @@ def GetSpecializationOptions(classe):
     f.close()
     return data[f"{classe.lower()}"]
 #endfunc
+
+def GetStatusDict():
+    f = open(f"Config/StatusConfig.json",encoding="utf-8")
+    data = json.load(f)
+    f.close()
+    return data
+#endfunc
+
+def GetStatus(status):
+    f = open(f"Config/StatusConfig.json",encoding="utf-8")
+    data = json.load(f)
+    f.close()
+    return data[status]
+#endfunc
