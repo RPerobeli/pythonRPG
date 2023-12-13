@@ -2,5 +2,5 @@ arma1mago,Cajado do Bonde,4,Ataque do Passinho do Ritmo Envolvente!!!
 arma1Guerreiro,Marreta de Playboy,4,Peso da Árvore Genealóǵica!
 arma1Arqueiro, Arco Élfico,4, Disparo de Magia Arcana!
 arma2Arqueiro, Arco Élfico Melhorado,5, Barragem de Energia Natural!
-arma3Arqueiro, Arco Élfico Abençoado,7, Barragem de Energia Natural!
-arma4Arqueiro, Mosquete Pirata,9, Disparo Perfurante!
+arma3Arqueiro, Arco Élfico Abençoado,6, Barragem de Energia Natural!
+arma4Arqueiro, Mosquete Pirata,7, Disparo Perfurante!

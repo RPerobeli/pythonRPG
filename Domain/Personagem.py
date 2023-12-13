@@ -80,10 +80,10 @@ class Personagem:
     # endfunc
 
     def AtualizaStatus(self):
-        self.HP = 10*self.skills["vit"]
-        self.MP = 10*self.skills["sab"]
-        self.HPmax = 10*self.skills["vit"]
-        self.MPmax = 10*self.skills["sab"]
+        self.HP = 10*self.skills["vit"] + 4*(self.lvl-1)
+        self.MP = 10*self.skills["sab"] + 4*(self.lvl-1)
+        self.HPmax = 10*self.skills["vit"]+ 4*(self.lvl-1)
+        self.MPmax = 10*self.skills["sab"]+ 4*(self.lvl-1)
     # endfunc
 
     def AtualizaSpecialPoints(self, value):

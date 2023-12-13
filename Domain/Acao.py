@@ -8,10 +8,10 @@ class Acao:
 
     def Atk(self, personagem, atkType, target, magiaEscolhida = None):  # Ribamar == turnCounter
         self.isCrit = False
+        danoBaseEspecial = 30
         if(personagem.classe.lower() == "guerreiro"):
             if(atkType == 1):
-                dano = personagem.arma.danoBase * \
-                    personagem.skills["str"] + 2*personagem.skills["agi"]
+                dano = 2*personagem.skills["str"] + personagem.arma.danoBase*2 + personagem.skills["agi"]
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
@@ -21,8 +21,7 @@ class Acao:
                 if(personagem.SP < 100):
                     return -2
                 else:
-                    dano = personagem.arma.danoBase * \
-                        (personagem.skills["str"] + personagem.skills["vit"])
+                    dano = danoBaseEspecial + personagem.arma.danoBase*(1.5*personagem.skills["str"]+personagem.skills["agi"])
                     dano = self.AcertoCritico(dano, personagem)
                     if(not personagem.isMonstro):
                         print(personagem.arma.textoAtkEspecial)
@@ -57,8 +56,7 @@ class Acao:
             # endif
         elif(personagem.classe.lower() == "arqueiro"):
             if(atkType == 1):
-                dano = 2*personagem.skills["str"] + \
-                    personagem.arma.danoBase*personagem.skills["agi"]
+                dano = 2*personagem.skills["agi"] + personagem.arma.danoBase*2 + personagem.skills["int"]
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
@@ -68,7 +66,7 @@ class Acao:
                 if(personagem.SP < 100):
                     return -2
                 else:
-                    dano = 2.5*personagem.arma.danoBase*personagem.skills["agi"]
+                    dano = danoBaseEspecial + personagem.arma.danoBase*(1.5*personagem.skills["agi"]+personagem.skills["int"])
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.arma.textoAtkEspecial)
                     print()
@@ -101,7 +99,7 @@ class Acao:
             # endif
         elif(personagem.classe.lower() == "mago"):
             if(atkType == 1):
-                dano = personagem.arma.danoBase*(personagem.skills["int"] + 1*personagem.skills["str"])
+                dano = 2*personagem.skills["int"] + personagem.arma.danoBase*2 + personagem.skills["str"]
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
@@ -111,7 +109,7 @@ class Acao:
                 if(personagem.SP < 100):
                     return -2
                 else:
-                    dano = 2*personagem.arma.danoBase*personagem.skills["int"]
+                    dano = danoBaseEspecial + personagem.arma.danoBase*(1.5*personagem.skills["int"]+personagem.skills["str"])
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.arma.textoAtkEspecial)
                     print()

@@ -14,7 +14,7 @@ class Monstro():
         self.SPmax = 100
         self.lvl = 1
         self.classe = classe
-        self.skills = {"str": 0, "agi": 0, "int": 0, "vit": 0}
+        self.skills = {"str": 0, "agi": 0, "int": 0, "vit": 0, "sab":0}
         self.acoes = Acao.Acao()
         self.arma = A.Arma(
             "Arma desgastada", 2, "Ataque Especial da Arma Mais Fraca Do Jogo!!!", "arma0")
@@ -32,22 +32,23 @@ class Monstro():
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
             self.skills['agi'] = 2
-            self.skills['vit'] = 5
+            self.skills['vit'] = 4
             self.skills["int"] = 2
+            self.skills["sab"] = 2
 
         elif(self.classe.lower() == "arqueiro"):
-            self.skills['str'] = 2
+            self.skills['str'] = 1
             self.skills['agi'] = 4
             self.skills['vit'] = 4
             self.skills["int"] = 3
+            self.skills["sab"] = 3
 
         elif(self.classe.lower() == "mago"):
-            self.skills['str'] = 1
+            self.skills['str'] = 2
             self.skills['agi'] = 2
-            self.skills['vit'] = 3
+            self.skills['vit'] = 4
             self.skills["int"] = 4
-            #self.atk = 4
-
+            self.skills["sab"] = 4
         else:
             print("Erro no construtor")
         # endif
@@ -87,10 +88,10 @@ class Monstro():
     # endfunc
 
     def AtualizaStatus(self):
-        self.HP = 10*self.skills["vit"]
-        self.MP = 10*self.skills["int"]
-        self.HPmax = 10*self.skills["vit"]
-        self.MPmax = 10*self.skills["int"]
+        self.HP = 10*self.skills["vit"]+ 4*(self.lvl-1)
+        self.MP = 10*self.skills["sab"]+ 4*(self.lvl-1)
+        self.HPmax = 10*self.skills["vit"]+ 4*(self.lvl-1)
+        self.MPmax = 10*self.skills["sab"]+ 4*(self.lvl-1)
     # endfunc
 
     def AutoLvl(self, level):
@@ -98,45 +99,50 @@ class Monstro():
         self.lvl = level
         skillPoints = self.lvl-lvl_old
         self.AutoLvlUpSKills(skillPoints)
-        # TODO: ESCALAR BALANCEADAMENTE O ATK DO MONSTRO
     # endfunc
 
     def AutoLvlUpSKills(self, sPoints):
-        vet = [0, 0, 0, 0]
+        vet = [0, 0, 0, 0, 0]
         if(self.classe.lower() == "guerreiro"):
             vet[0] = int(sPoints*0.4)
             vet[3] = int(sPoints*0.3)
             vet[2] = int(sPoints*0.1)
-            vet[1] = int(sPoints*0.2)
+            vet[1] = int(sPoints*0.1)
+            vet[4] = int(sPoints*0.1)
             self.skills["str"] += vet[0]
             self.skills["vit"] += vet[3]
             self.skills["int"] += vet[2]
             self.skills["agi"] += vet[1]
+            self.skills["sab"] += vet[4]
             soma = sum(vet)
             extraPoints = sPoints - soma
             self.skills["str"] += extraPoints
         elif(self.classe.lower() == "arqueiro"):
-            vet[0] = int(sPoints*0.2)
-            vet[3] = int(sPoints*0.4)
-            vet[2] = int(sPoints*0.2)
-            vet[1] = int(sPoints*0.2)
+            vet[0] = int(sPoints*0.1)
+            vet[3] = int(sPoints*0.3)
+            vet[2] = int(sPoints*0.1)
+            vet[1] = int(sPoints*0.3)
+            vet[4] = int(sPoints*0.2)
             self.skills["str"] += vet[0]
             self.skills["vit"] += vet[3]
             self.skills["int"] += vet[2]
             self.skills["agi"] += vet[1]
+            self.skills["sab"] += vet[4]
             soma = sum(vet)
             extraPoints = sPoints - soma
             self.skills["agi"] += extraPoints
 
         elif(self.classe.lower() == "mago"):
             vet[0] = int(sPoints*0.1)
-            vet[3] = int(sPoints*0.4)
+            vet[3] = int(sPoints*0.3)
             vet[2] = int(sPoints*0.3)
-            vet[1] = int(sPoints*0.2)
+            vet[1] = int(sPoints*0.1)
+            vet[4] = int(sPoints*0.2)
             self.skills["str"] += vet[0]
             self.skills["vit"] += vet[3]
             self.skills["int"] += vet[2]
             self.skills["agi"] += vet[1]
+            self.skills["sab"] += vet[4]
             soma = sum(vet)
             extraPoints = sPoints - soma
             self.skills["int"] += extraPoints
@@ -159,7 +165,7 @@ class Monstro():
             self.MPmax = (0.25*self.lvl+0.75)*self.MPmax
         #se for boss final melhora mais ainda
         if(self.isBoss and self.name == "Metherax"):
-            self.HP = 5*self.HP
+            self.HP = 3*self.HP
             self.MP = 2*self.MP
             self.HPmax = 5*self.HPmax
             self.MPmax = 2*self.MPmax
