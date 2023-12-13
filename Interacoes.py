@@ -155,6 +155,19 @@ def SearchText(fileName, storyIndex, userInput = None):
     # endwith
 # endfunc
 
+def DoesItHaveAnswer(fileName, storyIndex):
+    try:
+        retorno = jsonL.GetStoryAnswer(storyIndex,fileName, 1)
+    except:
+        retorno = None
+    #endtry
+    if(retorno != None):
+        return True
+    else:
+        return False
+    #endif
+# endfunc
+
 def DrawText(text, screen, x,y):
         text_color = jsonL.GetSpeakerTextColor()
         ut.InsertText(text,text_color, x, y, screen)
