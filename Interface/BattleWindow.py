@@ -54,8 +54,8 @@ class BattleWindow(GameState.GameState):
         self.OptionsDict = jsonL.GetOptions()
         self.CharHealthDict = {"txt": f"{self.Personagem.name}.HP: {self.Personagem.HP}/{self.Personagem.HPmax}\n{self.Personagem.name}.MP: {self.Personagem.MP}/{self.Personagem.MPmax}\n{self.Personagem.name}.SP: {self.Personagem.SP}/{self.Personagem.SPmax}\n"}
         self.MonsterHealthDict = {"txt": f"{self.Monster.name}.HP:  {self.Monster.HP}/{self.Monster.HPmax}\n{self.Monster.name}.MP:  {self.Monster.MP}/{self.Monster.MPmax}\n"}
-        self.StatusDict1 = {"txt": f"Força:        {self.Personagem.skills['str']}\nAgilidade:    {self.Personagem.skills['agi']}\n"}
-        self.StatusDict2 = {"txt": f"Vitalidade:   {self.Personagem.skills['vit']}\nInteligência: {self.Personagem.skills['int']}\n"}
+        self.StatusDict1 = {"txt": f"Força:        {self.Personagem.skills['str']}\nAgilidade:    {self.Personagem.skills['agi']}\nInteligência: {self.Personagem.skills['int']}\n"}
+        self.StatusDict2 = {"txt": f"Vitalidade: {self.Personagem.skills['vit']}\nSabedoria:  {self.Personagem.skills['int']}\n"}
         self.LoadTextWithList(self.CharHealthDict)
         self.LoadTextWithList(self.MonsterHealthDict,self.OptionsDict["Options"]["PositionHealthBarsMonster"]["x"],self.OptionsDict["Options"]["PositionHealthBarsMonster"]["y"])
         self.LoadTextWithList(self.StatusDict1, self.OptionsDict["Options"]["PositionStatus1"]["x"],self.OptionsDict["Options"]["PositionStatus1"]["y"])

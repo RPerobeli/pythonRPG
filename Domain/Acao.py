@@ -101,7 +101,7 @@ class Acao:
             # endif
         elif(personagem.classe.lower() == "mago"):
             if(atkType == 1):
-                dano = personagem.arma.danoBase*personagem.skills["int"] + 1*personagem.skills["str"]
+                dano = personagem.arma.danoBase*(personagem.skills["int"] + 1*personagem.skills["str"])
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
@@ -176,7 +176,7 @@ class Acao:
         #lib.LimpaConsole()
         print("[Narrador]: Sua vez de atacar, escolha uma das opções.")
         atkType = input(
-            "1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status\n6 - Olhar Inventário\n")
+            "1 - Ataque Físico \n2 - Ataque especial  \n3 - Habilidades \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Verificar Status\n6 - Olhar Inventário\n")
         if(atkType == ''):
             print("Ataque inválido, você tem demência? Tente de novo.")
             atkType = self.Opcoes(Personagem)

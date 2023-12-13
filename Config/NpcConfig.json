@@ -121,7 +121,17 @@
     },
     {
         "Nome": "Aldea",
-        "ImageMultiplier" : 0.8,
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Villager1",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Villager2",
+        "ImageMultiplier" : 1,
         "needFlip" : "True"
     },
     {

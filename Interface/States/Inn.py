@@ -22,7 +22,7 @@ class Inn(GameState.GameState):
         self.Alpha = 0
         self.Scene = 1
         self.Filename = "Introducao"
-        self.MaxStoryIndex = 3
+        self.MaxStoryIndex = 2
         self.Count = 0
         
     #endfunc

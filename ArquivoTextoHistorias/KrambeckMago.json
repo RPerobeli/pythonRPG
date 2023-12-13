@@ -56,7 +56,7 @@
         {
             "txt" : "[Narrador]: Ambos estão lutando com uma assombração, porém, um deles está ferido na perna. Vendo a dificuldade dos dois, você engaja na luta para salvá-los.\n"
         },
-        {"txt" : "BatalhaWraith\n"},
+        {"txt" : "BatalhaGhoul\n"},
         {"txt" : "InserirAldeao1\n"},
         {
             "txt" : "[Aldeão 1]: Obrigado, mago, não sei o que seria de nós sem sua ajuda, viemos na floresta para tentar caçar algo para nossa aldeia, que não é muito longe daqui.\n"
@@ -95,7 +95,7 @@
         {"txt" : "RemoverAtor1\n"}
     ],
     "R1-2":[
-        {"txt" : "InserirBackgroundKrambeck\n"},
+        {"txt" : "InserirBackgroundKrambeckNight\n"},
         {
             "txt" : "[Narrador]: Ao entrar na floresta, há uma pressão maligna no ar, no início a floresta não apresenta diferenças de uma floresta normal,\n porém, aos poucos, a paisagem muda para clareiras de arvores mortas e se nota como a floresta está modificada,\n corrompida e mais aterrorizante.\n"
         },

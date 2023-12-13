@@ -22,7 +22,7 @@
             "y": 510
         },
         "OptionsText":{
-            "txt" : "1 - Ataque Físico \n2 - Ataque especial  \n3 - Ataque mágico \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Olhar Inventário"
+            "txt" : "1 - Ataque Físico \n2 - Ataque especial  \n3 - Habilidades \n4 - Passar turno (Recupera parte de HP e MP)\n5 - Olhar Inventário"
         }
     }
 }

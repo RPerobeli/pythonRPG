@@ -15,7 +15,7 @@ class Personagem:
         self.SPmax = 100
         self.lvl = 1
         self.classe = classe
-        self.skills = {"str": 0, "agi": 0, "int": 0, "vit": 0}
+        self.skills = {"str": 0, "agi": 0, "int": 0, "vit": 0, "sab":0}
         self.acoes = Acao.Acao()
         self.arma = A.Arma(
             "Arma desgastada", 2, "Ataque Especial da Arma Mais Fraca Do Jogo!!!", "arma0")
@@ -32,18 +32,21 @@ class Personagem:
             self.skills['agi'] = 2
             self.skills['vit'] = 4
             self.skills["int"] = 2
+            self.skills["sab"] = 2
 
         elif(self.classe.lower() == "arqueiro"):
             self.skills['str'] = 1
             self.skills['agi'] = 4
             self.skills['vit'] = 4
             self.skills["int"] = 3
+            self.skills["sab"] = 3
 
         elif(self.classe.lower() == "mago"):
             self.skills['str'] = 2
             self.skills['agi'] = 2
             self.skills['vit'] = 4
             self.skills["int"] = 4
+            self.skills["sab"] = 4
         else:
             print("Erro no construtor")
         # endif
@@ -78,9 +81,9 @@ class Personagem:
 
     def AtualizaStatus(self):
         self.HP = 10*self.skills["vit"]
-        self.MP = 10*self.skills["int"]
+        self.MP = 10*self.skills["sab"]
         self.HPmax = 10*self.skills["vit"]
-        self.MPmax = 10*self.skills["int"]
+        self.MPmax = 10*self.skills["sab"]
     # endfunc
 
     def AtualizaSpecialPoints(self, value):
