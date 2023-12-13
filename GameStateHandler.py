@@ -96,10 +96,10 @@ class GameStateHandler:
         self.Title.RedrawWindow()
         self.Hero = self.Title.Update()
         if(self.Hero!=None):
-            # self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
-            # self.State = "inn"
-            self.sagaFinal = SagaFinal.SagaFinal(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
-            self.State = "SagaFinal"
+            self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
+            self.State = "inn"
+            # self.sagaFinal = SagaFinal.SagaFinal(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+            # self.State = "SagaFinal"
     #endfunc
     def Inn(self):
         print("inn")

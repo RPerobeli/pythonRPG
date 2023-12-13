@@ -120,7 +120,7 @@ class GameState():
     #endfunc
 
     def VerifyFirstTimeInWindowToPlayMusic(self, music):
-        if(music == 'Recuros' or music == 'caminhoTeofilo' or music == 'caravana'):
+        if(music == 'Recursos' or music == 'caminhoTeofilo' or music == 'caravana'):
             music = 'inn'
         #endif
         if(self.Count == 0):
