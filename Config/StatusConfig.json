@@ -1,0 +1,42 @@
+{
+    "Burning":{
+        "TurnsToEnd": 2,
+        "Chance": 0.5,
+        "DamagePerTurn": 10
+    },
+    "Paralyse":{
+        "TurnsToEnd": 1,
+        "Chance": 1
+    },
+    "Sleep":{
+        "TurnsToEnd": 2,
+        "Chance": 0.5
+    },
+    "Stun":{
+        "TurnsToEnd": 2,
+        "Chance": 0.5
+    },
+    "Poison":{
+        "TurnsToEnd": 2,
+        "Chance": 0.5
+    },
+    "Enrage":{
+        "TurnsToEnd": 2,
+        "Chance": 1
+    },
+    "Regeneration":{
+        "TurnsToEnd": 3,
+        "HealPerTurn": 10,
+        "Chance": 1
+    },
+    "Berserk":{
+        "TurnsToEnd": 3,
+        "Chance": 1,
+        "DamageBuff": 2
+    },
+    "Protection":{
+        "TurnsToEnd": 2,
+        "Chance": 1,
+        "DamageBuff": 0.5 
+    }
+}
