@@ -33,7 +33,7 @@ Q1
 [Heroi]: Entendo, realmente é uma lástima. Estou indo para o quarto.
 [Dono da Estalagem]: Bom descanso, viajante.
 [Narrador]: Você acaba dormindo mais que o esperado, mas se levanta e se arruma para ir para a floresta. Enquanto passa pelas casas do vilarejo, uma senhora se aproxima de você.
-[Senhora]: Mago! Por favor! Meu marido e cunhado saíram para caçar na floresta e conseguir alimentos para a vila. Eles foram bem cedo e ainda não voltaram! A vila está com fome! Pelas bênçãos da deusa da luz, tragam-nos para nós!
+[Senhora]: Mago! Por favor! Meu marido e cunhado saíram para caçar na floresta e conseguir alimentos para a vila. Eles foram bem cedo e ainda não voltaram! A vila está com fome! Pelas bênçãos da Deusa da Luz, tragam-nos para nós!
 1 - Certo, também estou indo para a floresta. Procurarei por eles e caso estejam bem, os enviarei para casa.
 2 - Verei o que posso fazer, caso eu os encontre, os trarei de volta.
 3 - Tenho mais o que fazer, senhora, procure outro para atormentar.
@@ -84,7 +84,7 @@ R1
 [Acólito]: Ha Ha Ha Ha, não importa o que eu diga, os planos de meu mestre já foram um sucesso!
 [Narrador]: Pelégolas dá um chute no acólito, que cai deitado no chão, e ameaça o inimigo com uma adaga em seu pescoço.
 [Pelégolas]: Então, o que vocês pretendem? Desejo ter o prazer de acabar com os seus planos.
-[Acólito]: A floresta já é nossa, nós já destruímos cada traço de seus deuses, elfos inferiores. Suas ervas nunca mais vão crescer aqui seus bardeneiros! Vocês, que não abraçaram nosso único deus, como o mestre Rhon'Aldyn, nunca terão espaço no novo mundo.
+[Acólito]: A floresta já é nossa, nós já destruímos cada traço de seus deuses, elfos inferiores. Suas ervas nunca mais vão crescer aqui seus bardeneiros! Vocês, que não abraçaram nosso único Deus, como o mestre Rhon'Aldyn, nunca terão espaço no novo mundo.
 [Acólito]: A nós foi revelada a verdade e conferido poder para destruir qualquer um que ficar no nosso caminho.
 [Acólito]: Vocês nunca atravessarão a barreira do santuário! ACABOU A MAMATA! 
 [Pelégolas]: E quem seria esse deus de vocês?

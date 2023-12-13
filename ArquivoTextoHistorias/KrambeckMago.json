@@ -34,7 +34,7 @@
         },
         {"txt" : "InserirSenhora\n"},
         {
-            "txt" : "[Senhora]: Mago! Por favor! Meu marido e cunhado saíram para caçar na floresta e conseguir alimentos para a vila.\n Eles foram bem cedo e ainda não voltaram! A vila está com fome! Pelas bênçãos da deusa da luz, tragam-nos para nós!\n"
+            "txt" : "[Senhora]: Mago! Por favor! Meu marido e cunhado saíram para caçar na floresta e conseguir alimentos para a vila.\n Eles foram bem cedo e ainda não voltaram! A vila está com fome! Pelas bênçãos da Deusa da Luz, tragam-nos para nós!\n"
         },
         {
             "txt" : "1 - Certo, também estou indo para a floresta. Procurarei por eles e caso estejam bem, os enviarei para casa.\n2 - Verei o que posso fazer, caso eu os encontre, os trarei de volta.\n3 - Tenho mais o que fazer, senhora, procure outro para atormentar.\n"
@@ -175,7 +175,7 @@
         {"txt" : "RemoverAtor1\n"},
         {"txt" : "InserirAcolito\n"},
         {
-            "txt" : "[Acólito]: A floresta já é nossa, nós já destruímos cada traço de seus deuses, elfos inferiores.\n Suas ervas nunca mais vão crescer aqui seus bardeneiros!\n Vocês, que não abraçaram nosso único deus, como o mestre Rhon'Aldyn, nunca terão espaço no novo mundo.\n"
+            "txt" : "[Acólito]: A floresta já é nossa, nós já destruímos cada traço de seus deuses, elfos inferiores.\n Suas ervas nunca mais vão crescer aqui seus bardeneiros!\n Vocês, que não abraçaram nosso único Deus, como o mestre Rhon'Aldyn, nunca terão espaço no novo mundo.\n"
         },
         {
             "txt" : "[Acólito]: A nós foi revelada a verdade e conferido poder para destruir qualquer um que ficar no nosso caminho.\n"

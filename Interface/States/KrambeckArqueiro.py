@@ -129,6 +129,12 @@ class KrambeckArqueiro(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBlacksmithSound\n"):
+            self.Sound.PlaySFX("Blacksmith")
+            self.StoryListId += 1
+            self.VerifyEvent()
+            return
+        #endif
         #endregion
 
         #region Battles 

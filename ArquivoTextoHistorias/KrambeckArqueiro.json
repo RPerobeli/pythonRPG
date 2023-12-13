@@ -41,6 +41,7 @@
         {"txt":"[Ferreiro]: Ainda resistimos! Fique a vontade para usar as pedras ao fundo.\n"},
         {"txt":"[Heroi]: Muito obrigado.\n"},
         {"txt":"[Narrador]: Enquanto você amola sua adaga, o ferreiro fica concentrado em seus afazeres.\n"},
+        {"txt":"InserirBlacksmithSound\n"},
         {"txt":"[Narrador]: Você observa o semblante inspirado do elfo enquanto a luz do fogo iluminava sua face\n e as faíscas das batidas do martelo saltam pelo ambiente.\n"},
         {"txt":"[Narrador]: A cada descida da ferramenta,\n parecia que parte da alma do ferreiro era posta naquelas espadas.\n"},
         {"txt":"[Narrador]: O elfo então entoava uma canção e uma magia élfica era gravada na espada.\n"},
@@ -48,7 +49,7 @@
         {"txt":"[Ferreiro]: É tudo para reaver nossa floresta. Vejo que você tem um excelente arco,\n gostaria que eu o encantasse também?\n"},
         {"txt":"[Heroi]: Por favor.\n"},
         {"txt":"[Narrador]: O ferreiro executa sua magia élfica e encanta a madeira e a corda de seu arco.\n"},
-        {"txt":"[Ferreiro]: Está pronto, arqueiro. Que a sua deusa da luz te guie.\n"},
+        {"txt":"[Ferreiro]: Está pronto, arqueiro. Que a sua Deusa da Luz te guie.\n"},
         {"txt" :"[Narrador]: Arco Élfico Melhorado adquirido.\n"},
         {"txt":"InserirArcoMelhoradoDosElfos\n"},
         {"txt" : "RemoverAtor1\n"},
@@ -105,7 +106,7 @@
         
         {"txt": "InserirElfoFloresta2\n"},
         {"txt":"[Elfo da Floresta 2]: Essa foi por pouco hahahaha.\n"},
-        {"txt":"[Narrador]: Você olha a volta, e observa o massacre realizado pelo seu grupo de elgos.\n"},
+        {"txt":"[Narrador]: Você olha a volta, e observa o massacre realizado pelo seu grupo de elfos.\n"},
         
         {"txt": "InserirElfaFloresta\n"},
         {"txt":"[Elfa da Floresta]: Parece que eles eram alguns dos remanescentes dos seguidores de Sylathor...\n"},
@@ -249,7 +250,7 @@
         {"txt":"[Pelégolas]: Então, o que vocês pretendem? Desejo ter o prazer de acabar com os seus planos.\n"},
         
         {"txt": "InserirAcolito\n"},
-        {"txt":"[Acólito]: A floresta já é nossa, nós já destruímos cada traço de seus deuses, elfos inferiores.\n Vocês, que não abraçaram nosso único deus,\n como o mestre Rhon'Aldyn, nunca terão espaço no novo mundo. \n"},
+        {"txt":"[Acólito]: A floresta já é nossa, nós já destruímos cada traço de seus deuses, elfos inferiores.\n Vocês, que não abraçaram nosso único Deus,\n como o mestre Rhon'Aldyn, nunca terão espaço no novo mundo. \n"},
         {"txt":"[Acólito]: A nós foi revelada a verdade,\n e conferido poder para destruir qualquer um que ficar no nosso caminho.\n"},
         {"txt":"[Acólito]: Vocês nunca atravessarão a barreira do santuário!\n"},
         

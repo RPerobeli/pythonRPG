@@ -91,7 +91,7 @@
     },
     {
         "Nome": "Elfo da Floresta2",
-        "ImageMultiplier" : 1.5,
+        "ImageMultiplier" : 1.0,
         "needFlip" : "False"
     },
     {

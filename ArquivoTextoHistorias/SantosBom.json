@@ -91,7 +91,7 @@
         {"txt":"[Narrador]: Ambos entram na taverna enquanto o corpo já sem vida continuava a envermelhar o chão da rua.\n"},
         
         {"txt":"InserirTaverneiroSantos\n"},
-        {"txt":"[Taverneiro]: Então, o grande pirata Gold Roger apronta mais uma. Pelos cabelos da Deusa da luz,\n você sabe que vai ter que pagar pela porta ne?\n"},
+        {"txt":"[Taverneiro]: Então, o grande pirata Gold Roger apronta mais uma. Pelos cabelos da Deusa da Luz,\n você sabe que vai ter que pagar pela porta ne?\n"},
         
         {"txt":"InserirRoger\n"},
         {"txt":"[Roger]: Gyahahaha! Fique tranquilo. Vou arrumar como nas outras vezes.\n"},
@@ -134,7 +134,6 @@
         {"txt":"InserirRoger\n"},
         {"txt":"[Roger]: Mas hoje será dado o primeiro passo, homens, Gyahahaha!\n"},
         {"txt":"[Narrador]: Todos no bar se alegram e gritam para o seu capitão.\n"},
-        {"txt":"CheerUpBoys\n"},
         {"txt":"[Heroi]: O que mudará hoje?\n"},
         
         {"txt":"InserirBecca\n"},
@@ -516,7 +515,7 @@
         {"txt":"InserirMosquete\n"},
         {"txt":"Mosquete Adquirido\n"},
         {"txt":"[Heroi]: Obrigado, Roger. Hei de retornar um dia para uma Santos melhor que a atual.\n"},
-        {"txt":"[Roger]: Que a deusa da luz o acompanhe.\n"}
+        {"txt":"[Roger]: Que a Deusa da Luz o acompanhe.\n"}
         
     ]
 }

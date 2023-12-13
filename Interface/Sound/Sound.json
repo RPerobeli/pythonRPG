@@ -21,7 +21,7 @@
     },
     "Aguia": {
         "file":"Aguia.wav",
-        "volume" : 0.5
+        "volume" : 0.2
     },
     "Tiro": {
         "file":"TiroPistola.wav",
@@ -37,6 +37,10 @@
     },
     "Babacas": {
         "file":"Babaca.wav",
+        "volume" : 0.5
+    },
+    "Blacksmith": {
+        "file":"blacksmith.wav",
         "volume" : 0.5
     }
     
