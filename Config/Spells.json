@@ -72,7 +72,7 @@
             "Nome": "Surra de Espada Mole",
             "Cost": 15,
             "BaseDamage": 15,
-            "Lvl":5
+            "Lvl":3
         }
     ],
     "necromante" : [
@@ -102,21 +102,21 @@
             "Nome": "Chorume de Cadáver",
             "Cost": 30,
             "BaseDamage": 45,
-            "Lvl":7
+            "Lvl":6
         },
         {
             "Key" : 5,
             "Nome": "Mamada de Alma",
             "Cost": 30,
             "BaseDamage": 30,
-            "Lvl":8
+            "Lvl":7
         },
         {
             "Key" : 6,
             "Nome": "Ondas do Inferno",
             "Cost": 30,
             "BaseDamage": 45,
-            "Lvl":10
+            "Lvl":8
         }
     ],
     "arquimago" : [
@@ -146,21 +146,21 @@
             "Nome": "Pilar de Chamas",
             "Cost": 25,
             "BaseDamage": 45,
-            "Lvl":7
+            "Lvl":6
         },
         {
             "Key" : 5,
             "Nome": "Lança de Gelo",
-            "Cost": 13,
+            "Cost": 30,
             "BaseDamage": 45,
-            "Lvl":8
+            "Lvl":7
         },
         {
             "Key" : 6,
             "Nome": "Meteoro",
-            "Cost": 13,
+            "Cost": 30,
             "BaseDamage": 55,
-            "Lvl":10
+            "Lvl":8
         } 
     ],
     "clerigo" : [
@@ -176,14 +176,14 @@
             "Nome": "Penitência",
             "Cost": 13,
             "BaseDamage": 40,
-            "Lvl":5
+            "Lvl":4
         },
         {
             "Key" : 3,
             "Nome": "Cura que não cura",
             "Cost": 30,
             "BaseDamage": 45,
-            "Lvl":7
+            "Lvl":6
         },
         {
             "Key" : 4,
@@ -195,73 +195,73 @@
         {
             "Key" : 5,
             "Nome": "Prece do Extermínio",
-            "Cost": 13,
+            "Cost": 28,
             "BaseDamage": 45,
             "Lvl":8
         },
         {
             "Key" : 6,
             "Nome": "Genocídio Abençoado",
-            "Cost": 13,
+            "Cost": 30,
             "BaseDamage": 55,
-            "Lvl":10
+            "Lvl":9
         } 
     ],
     "ranger" : [
         {
             "Key" : 1,
-            "Nome": "Flecha de fogo  2",
-            "Cost": 20,
+            "Nome": "Flecha de fogo 2",
+            "Cost": 15,
             "BaseDamage": 20,
             "Lvl":1
         },
         {
             "Key" : 2,
             "Nome": "Suruba de flecha",
-            "Cost": 22,
+            "Cost": 16,
             "BaseDamage": 22,
             "Lvl":2
         },
         {
             "Key" : 3,
             "Nome": "Disparo Penetrante",
-            "Cost": 25,
+            "Cost": 18,
             "BaseDamage": 25,
             "Lvl":5
         },
         {
             "Key" : 4,
             "Nome": "Flecha Profana",
-            "Cost": 25,
+            "Cost": 20,
             "BaseDamage": 25,
-            "Lvl":7
+            "Lvl":6
         },
         {
             "Key" : 5,
             "Nome": "Disparo Duplo",
-            "Cost": 25,
+            "Cost": 21,
             "BaseDamage": 25,
-            "Lvl":8
+            "Lvl":7
         },
         {
             "Key" : 6,
             "Nome": "Snipe",
             "Cost": 25,
             "BaseDamage": 25,
-            "Lvl":10
+            "Lvl":8
         }
     ],
     "atirador" : [
         {
             "Key" : 1,
-            "Nome": "Flecha de fogo  2",
+            "Nome": "Municao de fogo 2",
             "Cost": 20,
             "BaseDamage": 20,
             "Lvl":1
         },
         {
             "Key" : 2,
-            "Nome": "Suruba de flecha",
+            "Nome": "Suruba de estilhacos",
             "Cost": 22,
             "BaseDamage": 22,
             "Lvl":2
@@ -275,24 +275,68 @@
         },
         {
             "Key" : 4,
-            "Nome": "Flecha Profana",
+            "Nome": "Tiro Explosivo",
             "Cost": 25,
             "BaseDamage": 25,
-            "Lvl":7
+            "Lvl":6
         },
         {
             "Key" : 5,
             "Nome": "Disparo Duplo",
             "Cost": 25,
             "BaseDamage": 25,
-            "Lvl":8
+            "Lvl":7
         },
         {
             "Key" : 6,
             "Nome": "Snipe",
             "Cost": 25,
             "BaseDamage": 25,
-            "Lvl":10
+            "Lvl":8
+        }
+    ],
+    "cacador" : [
+        {
+            "Key" : 1,
+            "Nome": "Flecha de fogo 2",
+            "Cost": 20,
+            "BaseDamage": 20,
+            "Lvl":1
+        },
+        {
+            "Key" : 2,
+            "Nome": "Suruba de flecha",
+            "Cost": 22,
+            "BaseDamage": 22,
+            "Lvl":2
+        },
+        {
+            "Key" : 3,
+            "Nome": "Armadilha Explosiva",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Lvl":5
+        },
+        {
+            "Key" : 4,
+            "Nome": "Comando para Matar",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Lvl":6
+        },
+        {
+            "Key" : 5,
+            "Nome": "Disparo da Naja",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Lvl":7
+        },
+        {
+            "Key" : 6,
+            "Nome": "Ira Bestial",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Lvl":8
         }
     ]
 }

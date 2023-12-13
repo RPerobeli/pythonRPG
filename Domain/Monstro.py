@@ -130,9 +130,9 @@ class Monstro():
 
         elif(self.classe.lower() == "mago"):
             vet[0] = int(sPoints*0.1)
-            vet[3] = int(sPoints*0.2)
-            vet[2] = int(sPoints*0.4)
-            vet[1] = int(sPoints*0.3)
+            vet[3] = int(sPoints*0.4)
+            vet[2] = int(sPoints*0.3)
+            vet[1] = int(sPoints*0.2)
             self.skills["str"] += vet[0]
             self.skills["vit"] += vet[3]
             self.skills["int"] += vet[2]

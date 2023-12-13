@@ -69,15 +69,18 @@ class BattleWindowSpec(GameState.GameState):
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_1):
                     self.Personagem.Subclass = self.SpecOptionsList[0]
                     self.Personagem.UpdateHeroImage()
+                    self.magias = jsonL.GetSpells(self.Subclass)
                     return self.Personagem
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_2):
                     self.Personagem.Subclass = self.SpecOptionsList[1]
+                    self.magias = jsonL.GetSpells(self.Subclass)
                     self.Personagem.UpdateHeroImage()
                     return self.Personagem
                 #endif
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_3):
                     self.Personagem.Subclass = self.SpecOptionsList[2]
+                    self.magias = jsonL.GetSpells(self.Subclass)
                     self.Personagem.UpdateHeroImage()
                     return self.Personagem
                 #endif

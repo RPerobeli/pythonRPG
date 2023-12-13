@@ -15,13 +15,13 @@ class Acao:
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
-                personagem.AtualizaSpecialPoints(dano)
+                personagem.AtualizaSpecialPoints(dano/2)
                 return dano
             elif(atkType == 2):
                 if(personagem.SP < 100):
                     return -2
                 else:
-                    dano = 2*personagem.arma.danoBase * \
+                    dano = personagem.arma.danoBase * \
                         (personagem.skills["str"] + personagem.skills["vit"])
                     dano = self.AcertoCritico(dano, personagem)
                     if(not personagem.isMonstro):
@@ -43,7 +43,7 @@ class Acao:
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
                     personagem.MP -= magiaEscolhida["Cost"]
-                    personagem.AtualizaSpecialPoints(dano)
+                    personagem.AtualizaSpecialPoints(dano/2)
                     return dano
                 # endif
             elif(atkType == 4):
@@ -62,13 +62,13 @@ class Acao:
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
-                personagem.AtualizaSpecialPoints(dano)
+                personagem.AtualizaSpecialPoints(dano/2)
                 return dano
             elif(atkType == 2):
                 if(personagem.SP < 100):
                     return -2
                 else:
-                    dano = 5*personagem.arma.danoBase*personagem.skills["agi"]
+                    dano = 2.5*personagem.arma.danoBase*personagem.skills["agi"]
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.arma.textoAtkEspecial)
                     print()
@@ -87,7 +87,7 @@ class Acao:
                     print(personagem.name + " causou "+str(dano) + " de dano!")
                     target.HP -= dano
                     personagem.MP -= magiaEscolhida["Cost"]
-                    personagem.AtualizaSpecialPoints(dano)
+                    personagem.AtualizaSpecialPoints(dano/2)
                     return dano
                 # endif
             elif(atkType == 4):
@@ -105,13 +105,13 @@ class Acao:
                 dano = self.AcertoCritico(dano, personagem)
                 print(personagem.name + " causou "+str(dano) + " de dano!")
                 target.HP -= dano
-                personagem.AtualizaSpecialPoints(dano)
+                personagem.AtualizaSpecialPoints(dano/2)
                 return dano
             elif(atkType == 2):
                 if(personagem.SP < 100):
                     return -2
                 else:
-                    dano = 4*personagem.arma.danoBase*personagem.skills["int"]
+                    dano = 2*personagem.arma.danoBase*personagem.skills["int"]
                     dano = self.AcertoCritico(dano, personagem)
                     print(personagem.arma.textoAtkEspecial)
                     print()
@@ -131,7 +131,7 @@ class Acao:
                     print(personagem.name+" causou "+str(dano) + " de dano!")
                     target.HP -= dano
                     personagem.MP -= magiaEscolhida["Cost"]
-                    personagem.AtualizaSpecialPoints(dano)
+                    personagem.AtualizaSpecialPoints(dano/2)
                     return dano
                 # endif
             elif(atkType == 4):
