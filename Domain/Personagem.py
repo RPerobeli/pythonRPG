@@ -34,21 +34,21 @@ class Personagem:
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
             self.skills['agi'] = 2
-            self.skills['vit'] = 4
+            self.skills['vit'] = 5
             self.skills["int"] = 2
             self.skills["sab"] = 2
 
         elif(self.classe.lower() == "arqueiro"):
             self.skills['str'] = 1
             self.skills['agi'] = 4
-            self.skills['vit'] = 4
+            self.skills['vit'] = 5
             self.skills["int"] = 3
             self.skills["sab"] = 3
 
         elif(self.classe.lower() == "mago"):
             self.skills['str'] = 2
             self.skills['agi'] = 2
-            self.skills['vit'] = 4
+            self.skills['vit'] = 5
             self.skills["int"] = 4
             self.skills["sab"] = 4
         else:
