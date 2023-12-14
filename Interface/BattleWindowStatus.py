@@ -57,6 +57,7 @@ class BattleWindowStatus(GameState.GameState):
                     if(status["TurnsToEnd"] >= 0):
                         if(rnd.random() < status["Chance"]):
                             self.BattleText["txt"] += f"{personagem.name} está paralisado.\n"
+                            status["TurnsToEnd"] -= 1
                             personagem.canAct = False
                         else:
                             self.BattleText["txt"] += f"{personagem.name} força para se mexer.\n"
@@ -68,6 +69,7 @@ class BattleWindowStatus(GameState.GameState):
                 if(status["Name"] == "Sleep"):
                     if(status["TurnsToEnd"] > 0):
                         self.BattleText["txt"] += f"{personagem.name} está dormindo.\n"
+                        status["TurnsToEnd"] -= 1
                         personagem.canAct = False
                     else:
                         personagem.Status = self.RemoveStatusInList(status, personagem.Status)
@@ -75,6 +77,7 @@ class BattleWindowStatus(GameState.GameState):
                 if(status["Name"] == "Stun"):
                     if(status["TurnsToEnd"] > 0):
                         self.BattleText["txt"] += f"{personagem.name} está atordoado.\n"
+                        status["TurnsToEnd"] -= 1
                         personagem.canAct = False
                     else:
                         personagem.Status = self.RemoveStatusInList(status, personagem.Status)
