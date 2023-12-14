@@ -158,8 +158,6 @@ class BattleWindow(GameState.GameState):
     #endfunc
 
     def Battle(self, isLichFirstBattle = False, danoBase = None):
-        self.Personagem.lvl = 4
-        self.Personagem.HP = 500
         self.GetBattleMusic()
         if(danoBase != None):
             self.Monster.arma.danoBase = danoBase
