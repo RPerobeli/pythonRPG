@@ -7,23 +7,23 @@
     },
     "Paralyse":{
         "Name": "Paralyse",
-        "TurnsToEnd": 1,
-        "Chance": 1
+        "TurnsToEnd": 2,
+        "Chance": 0.5
     },
     "Sleep":{
         "Name": "Sleep",
-        "TurnsToEnd": 2,
-        "Chance": 0.5
+        "TurnsToEnd": 1,
+        "Chance": 1
     },
     "Stun":{
         "Name": "Stun",
         "TurnsToEnd": 2,
-        "Chance": 0.5
+        "Chance": 0.8
     },
     "Poison":{
         "Name": "Poison",
         "TurnsToEnd": 2,
-        "Chance": 0.5,
+        "Chance": 0.8,
         "DamagePerTurn": 10
     },
     "Enrage":{
@@ -40,7 +40,7 @@
     },
     "Berserk":{
         "Name": "Berserk",
-        "TurnsToEnd": 3,
+        "TurnsToEnd": 2,
         "Chance": 1,
         "DamageBuff": 2
     },

@@ -83,7 +83,7 @@ class BattleWindow(GameState.GameState):
     def InsertStatusInList(self, status, listStatus):
         idStatus = [listStatus.index(statusL) for statusL in listStatus if statusL["Name"] == status["Name"]]
         if(len(idStatus) == 1):
-            listStatus.insert(idStatus[0],status)
+            listStatus[idStatus[0]] = status
         else:
             listStatus.append(status)
         #endif
@@ -92,8 +92,8 @@ class BattleWindow(GameState.GameState):
     
     
     def ApplyStatus(self, spell):
-        if(spell["Status"] != None):
-            status = self.BattleStatusDict[spell["Status"]]
+        if(spell["Status"] != ""):
+            status = jsonL.GetStatus(spell["Status"])
             if(rnd.random() < status["Chance"]):
                 #Debuffs no inimigo
                 if(status["Name"] == "Burning"):
@@ -158,6 +158,8 @@ class BattleWindow(GameState.GameState):
     #endfunc
 
     def Battle(self, isLichFirstBattle = False, danoBase = None):
+        self.Personagem.lvl = 4
+        self.Personagem.HP = 500
         self.GetBattleMusic()
         if(danoBase != None):
             self.Monster.arma.danoBase = danoBase
@@ -166,9 +168,13 @@ class BattleWindow(GameState.GameState):
         #endif
         self.Monster.AutoLvl(self.Personagem.lvl)
         self.Monster.AdequaHP()
+        self.Monster.Status = []
+        self.Personagem.Status = []
+
         turnCounter = 1
         pygame.display.set_caption("Batalha")
         inBattle = True
+        isFinished = False
         while inBattle:
             print("in battle")
             self.ScenesManager()
@@ -198,6 +204,10 @@ class BattleWindow(GameState.GameState):
                             self.StatusWindow.StatusApplied(self.Monster)
                         #endif
                         isFinished = self.VerifyIfBattleIsFinished()
+                        if(isFinished):
+                            return self.Personagem
+                        #endif
+
                         if(self.Monster.canAct and not isFinished):
                             self.MonsterTurnWindow.MonsterTurn()
                         #endif

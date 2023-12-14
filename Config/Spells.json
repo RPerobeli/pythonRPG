@@ -5,20 +5,23 @@
             "Nome": "SOU EU BOLA DE FOGO",
             "Cost": 10,
             "BaseDamage": 10,
+            "Status":"Burning",
             "Lvl":1
         },
         {
             "Key" : 2,
-            "Nome": "Agua Molhada",
+            "Nome": "Barreira Arcana",
             "Cost": 13,
-            "BaseDamage": 12,
+            "BaseDamage": -1,
+            "Status":"Protection",
             "Lvl":2
         },
         {
             "Key" : 3,
             "Nome": "Desconjuntar",
             "Cost": 20,
-            "BaseDamage": 15,
+            "BaseDamage": 0,
+            "Status":"Paralyse",
             "Lvl":3
         },
         {
@@ -26,6 +29,7 @@
             "Nome": "Mil flagelos de Emme White",
             "Cost": 30,
             "BaseDamage": 45,
+            "Status":"",
             "Lvl":4
         }
     ],
@@ -43,13 +47,15 @@
             "Nome": "Suruba de flecha",
             "Cost": 12,
             "BaseDamage": 12,
+            "Status":"",
             "Lvl":2
         },
         {
             "Key" : 3,
-            "Nome": "Flecha Arcana",
+            "Nome": "Armadilha de Urso",
             "Cost": 15,
-            "BaseDamage": 15,
+            "BaseDamage": -1,
+            "Status":"Stun",
             "Lvl":4
         }
     ],
@@ -59,13 +65,15 @@
             "Nome": "Jarrada",
             "Cost": 12,
             "BaseDamage": 10,
+            "Status":"",
             "Lvl":1
         },
         {
             "Key" : 2,
-            "Nome": "Avanco",
+            "Nome": "Bater o Mindinho",
             "Cost": 8,
-            "BaseDamage": 8,
+            "BaseDamage": -1,
+            "Status":"Enrage",
             "Lvl":2
         },
         {
@@ -73,6 +81,7 @@
             "Nome": "Surra de Espada Mole",
             "Cost": 15,
             "BaseDamage": 15,
+            "Status":"",
             "Lvl":3
         }
     ],
