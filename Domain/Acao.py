@@ -196,7 +196,7 @@ class Acao:
             personagem.MP += int(multiplicadorCuraMonstro*personagem.MPmax)
         else:
             personagem.HP += int(baseHeal + multiplicadorCura*personagem.HPmax + \
-                personagem.skills["str"] + personagem.skills["agi"] + personagem.skills["int"])
+                personagem.skills["str"] + personagem.skills["agi"] + personagem.skills["int"]+personagem.skills['vit'])
             personagem.MP += int(0.4*personagem.MPmax)
         # endif
         print("Regenerou vida e mana")
