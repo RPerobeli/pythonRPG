@@ -7,6 +7,7 @@ import Interface.States.GameState as GameState
 from Interface import BattleWindowSpells as bws
 from Interface import BattleWindowMonsterTurn as bwmt
 from Interface import BattleWindowLvlUp as bwlvl
+from Interface import BattleWindowStatus as bwstatus
 from Interface import GameOverWindow as gow
 import Domain.Arma as A
 import Interacoes as lib
@@ -30,6 +31,7 @@ class BattleWindow(GameState.GameState):
         self.SpellsWindow = bws.BattleWindowSpells(self.Screen, self.DialogBox, self.Personagem, self.Monster, bgName)
         self.MonsterTurnWindow = bwmt.BattleWindowMonsterTurn(self.Screen, self.DialogBox, self.Personagem, self.Monster, bgName)
         self.LvlUpWindow = bwlvl.BattleWindowLvlUp(self.Screen, self.DialogBox, self.Personagem, self.Monster, bgName)
+        self.StatusWindow = bwstatus.BattleWindowStatus(self.Screen, self.DialogBox, self.Personagem, self.Monster, bgName)
         self.GameOverWindow = gow.GameOverWindow(self.Screen)
         self.Done = True
         self.DontDie = False
@@ -86,11 +88,14 @@ class BattleWindow(GameState.GameState):
             listStatus.append(status)
         #endif
     #endfunc
+
+    
     
     def ApplyStatus(self, spell):
         if(spell["Status"] != None):
             status = self.BattleStatusDict[spell["Status"]]
             if(rnd.random() < status["Chance"]):
+                #Debuffs no inimigo
                 if(status["Name"] == "Burning"):
                     self.BattleText["txt"] += f"{self.Monster.name} está queimando.\n"
                     self.InsertStatusInList(status, self.Monster.Status)
@@ -106,6 +111,7 @@ class BattleWindow(GameState.GameState):
                 if(status["Name"] == "Poison"):
                     self.BattleText["txt"] += f"{self.Monster.name} está envenenado.\n"
                     self.InsertStatusInList(status, self.Monster.Status)
+                #Buffs no personagem
                 if(status["Name"] == "Enrage"):
                     self.BattleText["txt"] += f"{self.Personagem.name} está enraivecido.\n"
                     self.InsertStatusInList(status, self.Personagem.Status)
@@ -118,16 +124,12 @@ class BattleWindow(GameState.GameState):
                 if(status["Name"] == "Protection"):
                     self.BattleText["txt"] += f"{self.Personagem.name} terá dano reduzido.\n"
                     self.InsertStatusInList(status, self.Personagem.Status)
-        #endif
-
-
-            
-                
-            
-            self.PrintStatusApply(status)
-            return
+                #endif
+            #endif
         #endif
     #endfunc
+
+    
 
 
     def VerifyIfBattleIsFinished(self):
@@ -190,12 +192,19 @@ class BattleWindow(GameState.GameState):
                     #endif
 
                     if(turnCounter == 2):
-                        self.MonsterTurnWindow.MonsterTurn()
+                        if(len(self.Personagem.Status) > 0):
+                            self.StatusWindow.StatusApplied(self.Personagem)
+                        elif(len(self.Monster.Status) > 0):
+                            self.StatusWindow.StatusApplied(self.Monster)
+                        #endif
+                        isFinished = self.VerifyIfBattleIsFinished()
+                        if(self.Monster.canAct and not isFinished):
+                            self.MonsterTurnWindow.MonsterTurn()
+                        #endif
                         turnCounter -= 1
                         self.isOptions = True
                         isFinished = self.VerifyIfBattleIsFinished()
-                    #endif
-
+                    
                 #endif
                 if (event.type == pygame.KEYDOWN and (event.key == pygame.K_1 or event.key == pygame.K_KP_1)):
                     if(self.isOptions):

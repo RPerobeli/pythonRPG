@@ -3,7 +3,7 @@ import pygame
 import Utils.JsonLoader as jsonL
 import Interface.States.GameState as GameState
 import Interacoes as lib
-import Interface.BattleWindowSpec as bwspec
+import random as rnd
 class BattleWindowStatus(GameState.GameState):
     def __init__(self,screen, dialogBox,personagem, monster, bgName):
         super().__init__(screen)
@@ -25,7 +25,7 @@ class BattleWindowStatus(GameState.GameState):
         if (self.Scene == 1):
             actorPos = self.PlaceActors()
             self.LoadImages(actorPos)
-            self.LoadLvlUpText()
+            self.LoadTextWithList(self.BattleText)
         elif(self.Scene == 2):
             actorPos = self.PlaceActors()
             self.LoadImages(actorPos)
@@ -35,21 +35,105 @@ class BattleWindowStatus(GameState.GameState):
         #endif
     #endfunc
 
-    def LoadLvlUpText(self):
-        self.OptionsDict = jsonL.GetOptions()
-        self.CapinadoDict = {"txt": f"O {self.Monster.name} foi capinado.\n"}
-        self.LoadTextWithList(self.CapinadoDict)
-        self.LoadTextWithList({"txt":f"Você chegou ao NIVEL {self.Personagem.lvl}!\n"}, (self.OptionsDict["Options"]["PositionStatus1"]["x"]),self.OptionsDict["Options"]["PositionStatus1"]["y"])
-        self.LoadTextWithList({"txt": "Consuma seu ponto de habilidade\n1 - Força\n2 - Agilidade\n3 - Inteligência\n4 - Vitalidade\n5 - Sabedoria\n"}, \
-            self.OptionsDict["Options"]["PositionOptions"]["x"],self.OptionsDict["Options"]["PositionOptions"]["y"])
+    def RemoveStatusInList(self, status :dict, listStatus :list):
+        statusEncontrado = [statusL for statusL in listStatus if statusL["Name"] == status["Name"]]
+        listStatus.remove(statusEncontrado)
     #endfunc
 
+    def ApplyStatusEffects(self, personagem):
+        self.BattleText = {"txt":""}
+        personagem.canAct = True
+        for status in personagem.Status :
+                #Debuffs no inimigo
+                if(status["Name"] == "Burning"):
+                    if(status["TurnsToEnd"] > 0):
+                        personagem.HP -= status["DamagePerTurn"]
+                        status["TurnsToEnd"] -= 1
+                        self.BattleText["txt"] += f"{personagem.name} sofreu {status['DamagePerTurn']} de dano devido às queimaduras.\n"
+                    else:
+                        self.RemoveStatusInList(status, personagem.Status)
+                        self.BattleText["txt"] += f"{personagem.name} não está mais queimando.\n"
+                if(status["Name"] == "Paralyse"):
+                    if(status["TurnsToEnd"] >= 0):
+                        if(rnd.random() < status["Chance"]):
+                            personagem.canAct = False
+                        #endif
+                    else:
+                        self.RemoveStatusInList(status, personagem.Status)
+                        self.BattleText["txt"] += f"{personagem.name} não está mais paralisado.\n"
+                    #endif
+                if(status["Name"] == "Sleep"):
+                    if(status["TurnsToEnd"] > 0):
+                        self.BattleText["txt"] += f"{personagem.name} está dormindo.\n"
+                        personagem.canAct = False
+                    else:
+                        self.RemoveStatusInList(status, personagem.Status)
+                        self.BattleText["txt"] += f"{personagem.name} acordou.\n"
+                if(status["Name"] == "Stun"):
+                    if(status["TurnsToEnd"] > 0):
+                        self.BattleText["txt"] += f"{personagem.name} está atordoado.\n"
+                        personagem.canAct = False
+                    else:
+                        self.RemoveStatusInList(status, personagem.Status)
+                        self.BattleText["txt"] += f"{personagem.name} não está mais atordoado.\n"
+                if(status["Name"] == "Poison"):
+                    if(status["TurnsToEnd"] > 0):
+                        personagem.HP -= {status['DamagePerTurn']}
+                        status["TurnsToEnd"] -= 1
+                        self.BattleText["txt"] += f"{personagem.name} sofreu {status['DamagePerTurn']} de dano devido ao veneno.\n"
+                    else:
+                        self.RemoveStatusInList(status, personagem.Status)
+                        self.BattleText["txt"] += f"{personagem.name} não está mais envenenado.\n"
+                    #endif
+                #Buffs no self.Personagem
+                if(status["Name"] == "Enrage"):
+                    if(status["TurnsToEnd"] > 0):
+                        self.BuffDano = status["DamageBuff"]
+                        status["TurnsToEnd"] -= 1
+                        self.BattleText["txt"] += f"{self.Personagem.name} está enraivecido.\n"
+                    else:
+                        self.RemoveStatusInList(status, self.Personagem.Status)
+                        self.BuffDano = 1
+                        self.BattleText["txt"] += f"{self.Personagem.name} se acalmou.\n"
+                    #endif
+                if(status["Name"] == "Regeneration"):
+                    if(status["TurnsToEnd"] > 0):
+                        self.HP += status["HealPerTurn"]
+                        status["TurnsToEnd"] -= 1
+                        self.BattleText["txt"] += f"{self.Personagem.name} recuperou {status['HealPerTurn']} de vida.\n"
+                    else:
+                        self.RemoveStatusInList(status, self.Personagem.Status)
+                        self.BattleText["txt"] += f"{self.Personagem.name} não está mais regenerando.\n"
+                    #endif
+                if(status["Name"] == "Berserk"):
+                    if(status["TurnsToEnd"] > 0):
+                        self.BuffDano = status["DamageBuff"]
+                        status["TurnsToEnd"] -= 1
+                        self.BattleText["txt"] += f"{self.Personagem.name} está enraivecido.\n"
+                    else:
+                        self.RemoveStatusInList(status, self.Personagem.Status)
+                        self.BuffDano = 1
+                        self.BattleText["txt"] += f"{self.Personagem.name} se acalmou.\n"
+                    #endif
+                if(status["Name"] == "Protection"):
+                    if(status["TurnsToEnd"] > 0):
+                        self.BuffBarreira = status["DamageBuff"]
+                        status["TurnsToEnd"] -= 1
+                        self.BattleText["txt"] += f"{self.Personagem.name} terá dano reduzido.\n"
+                    else:
+                        self.RemoveStatusInList(status, self.Personagem.Status)
+                        self.BuffBarreira = 1
+                        self.BattleText["txt"] += f"{self.Personagem.name} a proteção acabou.\n"
+                    #endif
+                #endif
+            #endif
+        #endif
+    #endfunc
 
-
-    def StatusApplied(self, hero):
-        self.Personagem = hero
-        pygame.display.set_caption("statuses")
+    def StatusApplied(self, character):
+        pygame.display.set_caption("status")
         inBattle = True
+        self.ApplyStatusEffects(character)
         while inBattle:
             self.ScenesManager()
             for event in pygame.event.get():
@@ -57,7 +141,7 @@ class BattleWindowStatus(GameState.GameState):
                      pygame.quit()
                 #endif
                 if (event.type == pygame.KEYDOWN and (event.key == pygame.K_KP_ENTER or event.key == pygame.K_SPACE)):
-                    print("proximo status")
+                        return
                 #endif
             #endfor
             pygame.display.update()

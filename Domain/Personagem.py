@@ -27,6 +27,9 @@ class Personagem:
         auxImg = self.GetImage()
         self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
         self.Status = []
+        self.canAct = True
+        self.BuffDano = 1
+        self.BuffBarreira = 1
 
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4

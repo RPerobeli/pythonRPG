@@ -29,7 +29,8 @@
     "Enrage":{
         "Name": "Enrage",
         "TurnsToEnd": 2,
-        "Chance": 1
+        "Chance": 1,
+        "DamageBuff":1.5
     },
     "Regeneration":{
         "Name": "Regeneration",
