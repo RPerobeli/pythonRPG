@@ -33,6 +33,7 @@ class BattleWindow(GameState.GameState):
         self.GameOverWindow = gow.GameOverWindow(self.Screen)
         self.Done = True
         self.DontDie = False
+        self.BattleStatusDict = jsonL.GetStatusDict()
     #endfunc
 
 
@@ -76,6 +77,58 @@ class BattleWindow(GameState.GameState):
             self.BattleText = {"txt": f"{personagem.name} causou {dano} de dano!\n"}
         #endif
     #endfunc
+
+    def InsertStatusInList(self, status, listStatus):
+        idStatus = [listStatus.index(statusL) for statusL in listStatus if statusL["Name"] == status["Name"]]
+        if(len(idStatus) == 1):
+            listStatus.insert(idStatus[0],status)
+        else:
+            listStatus.append(status)
+        #endif
+    #endfunc
+    
+    def ApplyStatus(self, spell):
+        if(spell["Status"] != None):
+            status = self.BattleStatusDict[spell["Status"]]
+            if(rnd.random() < status["Chance"]):
+                if(status["Name"] == "Burning"):
+                    self.BattleText["txt"] += f"{self.Monster.name} está queimando.\n"
+                    self.InsertStatusInList(status, self.Monster.Status)
+                if(status["Name"] == "Paralyse"):
+                    self.BattleText["txt"] += f"{self.Monster.name} está paralisado.\n"
+                    self.InsertStatusInList(status, self.Monster.Status)
+                if(status["Name"] == "Sleep"):
+                    self.BattleText["txt"] += f"{self.Monster.name} está dormindo.\n"
+                    self.InsertStatusInList(status, self.Monster.Status)
+                if(status["Name"] == "Stun"):
+                    self.BattleText["txt"] += f"{self.Monster.name} está atordoado.\n"
+                    self.InsertStatusInList(status, self.Monster.Status)
+                if(status["Name"] == "Poison"):
+                    self.BattleText["txt"] += f"{self.Monster.name} está envenenado.\n"
+                    self.InsertStatusInList(status, self.Monster.Status)
+                if(status["Name"] == "Enrage"):
+                    self.BattleText["txt"] += f"{self.Personagem.name} está enraivecido.\n"
+                    self.InsertStatusInList(status, self.Personagem.Status)
+                if(status["Name"] == "Regeneration"):
+                    self.BattleText["txt"] += f"{self.Personagem.name} está regenerando.\n"
+                    self.InsertStatusInList(status, self.Personagem.Status)
+                if(status["Name"] == "Berserk"):
+                    self.BattleText["txt"] += f"{self.Personagem.name} se tornou um berserk.\n"
+                    self.InsertStatusInList(status, self.Personagem.Status)
+                if(status["Name"] == "Protection"):
+                    self.BattleText["txt"] += f"{self.Personagem.name} terá dano reduzido.\n"
+                    self.InsertStatusInList(status, self.Personagem.Status)
+        #endif
+
+
+            
+                
+            
+            self.PrintStatusApply(status)
+            return
+        #endif
+    #endfunc
+
 
     def VerifyIfBattleIsFinished(self):
         if(self.DontDie):
@@ -173,6 +226,7 @@ class BattleWindow(GameState.GameState):
                         else:
                             dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster, spell)
                             self.PrintDmg(dano,self.Personagem)
+                            self.ApplyStatus(spell)
                         #endif
                         self.isOptions = False
                         turnCounter += 1

@@ -28,7 +28,7 @@ class Monstro():
             auxImg = pygame.transform.flip(auxImg, True, False)
         #endif
         self.Image = img.Image(auxImg,auxImg.get_width()*self.ImageMultiplier,auxImg.get_height()*self.ImageMultiplier)
-        self.Statuses = []
+        self.Status = []
         
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4

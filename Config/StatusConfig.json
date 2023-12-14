@@ -1,41 +1,50 @@
 {
     "Burning":{
+        "Name": "Burning",
         "TurnsToEnd": 2,
-        "Chance": 0.5,
+        "Chance": 1,
         "DamagePerTurn": 10
     },
     "Paralyse":{
+        "Name": "Paralyse",
         "TurnsToEnd": 1,
         "Chance": 1
     },
     "Sleep":{
+        "Name": "Sleep",
         "TurnsToEnd": 2,
         "Chance": 0.5
     },
     "Stun":{
+        "Name": "Stun",
         "TurnsToEnd": 2,
         "Chance": 0.5
     },
     "Poison":{
+        "Name": "Poison",
         "TurnsToEnd": 2,
         "Chance": 0.5,
         "DamagePerTurn": 10
     },
     "Enrage":{
+        "Name": "Enrage",
         "TurnsToEnd": 2,
         "Chance": 1
     },
     "Regeneration":{
+        "Name": "Regeneration",
         "TurnsToEnd": 3,
         "HealPerTurn": 10,
         "Chance": 1
     },
     "Berserk":{
+        "Name": "Berserk",
         "TurnsToEnd": 3,
         "Chance": 1,
         "DamageBuff": 2
     },
     "Protection":{
+        "Name": "Protection",
         "TurnsToEnd": 2,
         "Chance": 1,
         "DamageBuff": 0.5 
