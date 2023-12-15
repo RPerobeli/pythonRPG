@@ -54,7 +54,7 @@
             "Key" : 3,
             "Nome": "Armadilha de Urso",
             "Cost": 12,
-            "BaseDamage": -1,
+            "BaseDamage": 0,
             "Status":"Paralyse",
             "Lvl":3
         }
