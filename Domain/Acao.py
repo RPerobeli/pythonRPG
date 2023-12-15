@@ -9,6 +9,9 @@ class Acao:
     def Atk(self, personagem, atkType, target, magiaEscolhida = None):  # Ribamar == turnCounter
         self.isCrit = False
         danoBaseEspecial = 30
+        if(self.AplicarEvasao(target)):
+            return -3
+        #endif
         if(personagem.classe.lower() == "guerreiro"):
             if(atkType == 1):
                 dano = 2*personagem.skills["str"] + personagem.BuffDano * personagem.arma.danoBase*2
@@ -247,7 +250,17 @@ class Acao:
             return(dano)
         # endif
     # endfunc
-
+        
+    def AplicarEvasao(self, personagem):
+        crit = rnd.random
+        if(crit < personagem.Evasion):
+            print("O golpe errou o alvo.")
+            return False
+        else:
+            return True
+        # endif
+    # endfunc
+        
     def TipoAtk(self, monstro):
         monster_atkType = 1
         if(monstro.classe == "mago"):

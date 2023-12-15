@@ -32,6 +32,9 @@ class Monstro():
         self.canAct = True
         self.BuffDano = 1
         self.BuffBarreira = 1
+        self.MultiplicadorDanoCritico = 2
+        self.TaxaCritico = 0.2
+        self.Evasion = 0.05
         
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
