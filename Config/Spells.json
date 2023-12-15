@@ -45,18 +45,18 @@
         {
             "Key" : 2,
             "Nome": "Suruba de flecha",
-            "Cost": 12,
-            "BaseDamage": 14,
+            "Cost": 15,
+            "BaseDamage": 16,
             "Status":"",
             "Lvl":2
         },
         {
             "Key" : 3,
             "Nome": "Armadilha de Urso",
-            "Cost": 15,
+            "Cost": 12,
             "BaseDamage": -1,
             "Status":"Paralyse",
-            "Lvl":4
+            "Lvl":3
         }
     ],
     "guerreiro" : [

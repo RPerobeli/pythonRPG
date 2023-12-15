@@ -48,7 +48,7 @@ class Acao:
                     if(magiaEscolhida["BaseDamage"] < 0):
                         dano = 0
                     else:
-                        dano = 2 * personagem.BuffDano * personagem.skills["str"] + magiaEscolhida["BaseDamage"]
+                        dano = 2 * personagem.BuffDano * personagem.skills["str"] + magiaEscolhida["BaseDamage"] + int(0.5*personagem.arma.danoBase)
                     #endif
                     dano = int(dano)
                     if(dano != 0):
@@ -104,7 +104,7 @@ class Acao:
                     if(magiaEscolhida["BaseDamage"] < 0):
                         dano = 0
                     else:
-                        dano = personagem.BuffDano*2*personagem.skills["agi"] + magiaEscolhida["BaseDamage"]
+                        dano = personagem.BuffDano*2*personagem.skills["agi"] + magiaEscolhida["BaseDamage"] + int(0.5*personagem.arma.danoBase)
                     #endif
                     if(dano != 0):
                         dano = self.AcertoCritico(dano, personagem)
@@ -159,7 +159,7 @@ class Acao:
                     if(magiaEscolhida["BaseDamage"] < 0):
                         dano = 0
                     else:
-                        dano = personagem.arma.danoBase * personagem.BuffDano*personagem.skills["int"] + magiaEscolhida["BaseDamage"] 
+                        dano = personagem.arma.danoBase * personagem.BuffDano*personagem.skills["int"] + magiaEscolhida["BaseDamage"]  + int(0.5*personagem.arma.danoBase)
                     #endif 
                     dano = int(dano)
                     if(dano != 0):
