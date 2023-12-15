@@ -7,11 +7,11 @@ import Interface.GameOverWindow as gow
 import Interacoes as lib
 import Interface.States.GameState as GameState
 
-class KrambeckArqueiro(GameState.GameState):
+class KrambeckMago(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None, armas= None):
         super().__init__(screen)
         self.ImagePath =  jsonL.GetImagePath()
-        self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Krambeck.jpg').convert_alpha()
+        self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/PirateTavern.jpg').convert_alpha()
         self.DialogBox = dialogBox
         self.Personagem = personagem
         self.Monstros = monstros
@@ -82,26 +82,14 @@ class KrambeckArqueiro(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirAltoElfo\n"):
-            self.Actors[1] = lib.GetNpc(self.Npcs,"Alto Elfo")
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirArqueiro\n"):
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Arqueiro")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirEndilien\n"):
-            self.Actors[1] = lib.GetNpc(self.Npcs,"Endilien")
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirMago\n"):
-            self.Actors[1] = lib.GetNpc(self.Npcs,"Mago")
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirCultista\n"):
-            self.Actors[1] = lib.GetNpc(self.Npcs,"Cultista")
+        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirDryad\n"):
+            self.Actors[1] = lib.GetNpc(self.Npcs,"Dryad")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -135,23 +123,23 @@ class KrambeckArqueiro(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Ghoul"), "KrambeckNight")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("KrambeckMago")
+            self.Sound.PlayMusic("KrambeckArqueiro")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaCriminosoAtiradorNoDeposito\n"):
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaWraith\n"):
             self.Sound.StopMusic()
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Criminoso Atirador"), "BurningDeposit")
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Wraith"), "KrambeckNight")
             self.Personagem = battleWindow.Battle()
             self.Sound.PlayMusic("KrambeckArqueiro")
             self.StoryListId += 1
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaElfoLarapio\n"):
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaZumbi\n"):
             self.Sound.StopMusic()
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Elfo Larapio"), "KrambeckNight")
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Zumbi"), "KrambeckNight")
             self.Personagem = battleWindow.Battle()
             self.Sound.PlayMusic("KrambeckArqueiro")
             self.StoryListId += 1
@@ -167,9 +155,9 @@ class KrambeckArqueiro(GameState.GameState):
             self.VerifyEvent()
             return
         #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaWraith\n"):
+        if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaImp\n"):
             self.Sound.StopMusic()
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Wraith"), "Krambeck2")
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Imp"), "Krambeck2")
             self.Personagem = battleWindow.Battle()
             self.Sound.PlayMusic("KrambeckArqueiro")
             self.StoryListId += 1
@@ -187,7 +175,7 @@ class KrambeckArqueiro(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "BatalhaHidra\n"):
             self.Sound.StopMusic()
-            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Hydra do Oeste"), "ObeliskKrambeck")
+            battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Hydra do Leste"), "ObeliskKrambeck")
             self.Personagem = battleWindow.Battle()
             self.Sound.PlayMusic("KrambeckArqueiro")
             self.StoryListId += 1
@@ -208,12 +196,6 @@ class KrambeckArqueiro(GameState.GameState):
         #region Monsters
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirAcolito\n"):
             self.Actors[1] = lib.GetMonstro(self.Monstros,"Elfo Acolito")
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirCriminosoAtirador\n"):
-            self.Actors[1] = lib.GetMonstro(self.Monstros,"Criminoso Atirador")
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -259,18 +241,6 @@ class KrambeckArqueiro(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundKrambeck2\n"):
             self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Krambeck2.jpg').convert_alpha()
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundElfEmcampment\n"):
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/ElfEmcampmentDay.jpg').convert_alpha()
-            self.StoryListId += 1
-            self.VerifyEvent()
-            return
-        #endif
-        if(self.StoryTextList[self.StoryListId]['txt'] == "InserirBackgroundDepositoQueimando\n"):
-            self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/BurningDeposit.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()
             return

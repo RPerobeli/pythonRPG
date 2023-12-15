@@ -121,18 +121,18 @@
     },
     {
         "Nome": "Aldea",
-        "ImageMultiplier" : 1,
+        "ImageMultiplier" : 0.8,
         "needFlip" : "True"
     },
     {
         "Nome": "Villager1",
-        "ImageMultiplier" : 1,
-        "needFlip" : "True"
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
     },
     {
         "Nome": "Villager2",
-        "ImageMultiplier" : 1,
-        "needFlip" : "True"
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
     },
     {
         "Nome": "mago",

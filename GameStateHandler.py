@@ -8,6 +8,7 @@ from Interface.States import Recursos
 from Interface.States import Curitiba
 from Interface.States import Continue
 from Interface.States import KrambeckArqueiro
+from Interface.States import KrambeckMago
 from Interface.States import SantosBom
 from Interface.States import RetornoAdLArqueiro
 from Interface.States import SagaFinal
@@ -48,6 +49,12 @@ class GameStateHandler:
             self.Recursos()
         if(self.State == "Florianopolis"):
             self.Florianopolis()
+        #endif
+        if(self.State == "Juazeiro"):
+            self.Juazeiro()
+        #endif
+        if(self.State == "KrambeckMago"):
+            self.KrambeckMago()
         #endif
         if(self.State == "Teofilotoni"):
             self.Teofilotoni()
@@ -98,9 +105,9 @@ class GameStateHandler:
         if(self.Hero!=None):
             self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
             self.State = "inn"
-            # self.sagaFinal = SagaFinal.SagaFinal(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
-            # self.State = "SagaFinal"
-    #endfunc
+    #         self.krambeckMago = KrambeckMago.KrambeckMago(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+    #         self.State = "KrambeckMago"
+    # #endfunc
     def Inn(self):
         print("inn")
         self.Hero,state, continueStory = self.inn.Update("inn")
@@ -137,6 +144,24 @@ class GameStateHandler:
     def Florianopolis(self):
         print('Florianopolis')
         self.Hero,state, continueStory = self.floripa.Update('Florianopolis')
+        self.State = state
+        if(continueStory):
+            self.krambeckMago = KrambeckMago.KrambeckMago(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
+        #endif
+    #endfunc
+
+    def KrambeckMago(self):
+        print('KrambeckMago')
+        self.Hero,state, continueStory = self.krambeckMago.Update('KrambeckMago')
+        self.State = state
+        if(continueStory):
+            self.juazeiro = Continue.Continue(self.Screen)
+        #endif
+    #endfunc
+
+    def Juazeiro(self):
+        print('Juazeiro')
+        self.Hero,state, continueStory = self.juazeiro.Update('Juazeiro')
         self.State = state
         if(continueStory):
             self.tobecontinued = Continue.Continue(self.Screen)

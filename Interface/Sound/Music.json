@@ -72,6 +72,10 @@
         "file": "KrambeckArq.wav",
         "volume": 0.2
     },
+    "KrambeckMago": {
+        "file": "KrambeckMago.wav",
+        "volume": 0.2
+    },
     "reggae": {
         "file": "Reggae.wav",
         "volume": 0.2
