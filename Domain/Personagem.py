@@ -30,6 +30,10 @@ class Personagem:
         self.canAct = True
         self.BuffDano = 1
         self.BuffBarreira = 1
+        self.MultiplicadorDanoCritico = 2
+        self.TaxaCritico = 0.2
+        self.Evasion = 0.05
+
 
         if(self.classe.lower() == "guerreiro"):
             self.skills['str'] = 4
@@ -88,6 +92,25 @@ class Personagem:
         self.MP = 10*self.skills["sab"] + 4*(self.lvl-1)
         self.HPmax = 10*self.skills["vit"]+ 4*(self.lvl-1)
         self.MPmax = 10*self.skills["sab"]+ 4*(self.lvl-1)
+
+        if(self.classe.lower() == "guerreiro"):
+            self.MultiplicadorDanoCritico = 1 + 0.25*self.skills['str']
+            self.Evasion = 0.01 + 0.02*self.skills['agi']
+            self.TaxaCritico = 0.1 + 0.05*self.skills["int"]
+
+        elif(self.classe.lower() == "arqueiro"):
+            self.MultiplicadorDanoCritico = 1 + 1*self.skills['str']
+            self.Evasion = 0.01 + 0.01*self.skills['agi']
+            self.TaxaCritico = 0.1 + 0.035*self.skills["int"]
+
+        elif(self.classe.lower() == "mago"):
+            self.MultiplicadorDanoCritico = 1 + 0.5*self.skills['str']
+            self.Evasion = 0.01 + 0.02*self.skills['agi']
+            self.TaxaCritico = 0.1 + 0.025*self.skills["int"]
+        else:
+            print("Erro no Atualiza status")
+        # endif
+        
     # endfunc
 
     def AtualizaSpecialPoints(self, value):

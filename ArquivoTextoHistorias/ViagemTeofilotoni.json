@@ -9,7 +9,7 @@
         {
             "txt" : "[Narrador]: Após guardar a carta na sua bolsa, você se dirige à saída.\n[Taverneira]: Ei, guerreiro, é meu primeiro dia aqui. Você não disse o seu nome, aliás, me chamo Jessie.\n[Narrador]: Você sorri, diz seu nome, e parte para sua viagem.\n[Jessie]: Volte sempre, Heroi. Que a Deusa da Luz o abençoe.\n"
         },
-        
+        {"txt" : "RemoverAtor1\n"},
         {
             "txt" : "[Narrador]: Ao chegar no local você avista uma aglomeração.\n[Narrador]: Um anão no meio da multidão anunciava, com sua voz sobrepujando os murmúrios das pessoas:\n"
         },

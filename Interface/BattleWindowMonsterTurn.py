@@ -48,6 +48,8 @@ class BattleWindowMonsterTurn(GameState.GameState):
     def PrintDmg(self, dano, personagem):
         if(personagem.acoes.isCrit):
             self.BattleText = {"txt": f"ACERTO CRÍTICO!!!\n{personagem.name} causou {dano} de dano!\n"}
+        elif(dano == -3):
+            self.BattleText = {"txt": "O golpe errou o alvo\n"}
         else:
             self.BattleText = {"txt": f"{personagem.name} causou {dano} de dano!\n"}
         #endif

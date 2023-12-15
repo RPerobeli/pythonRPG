@@ -71,6 +71,8 @@ class BattleWindow(GameState.GameState):
             self.BattleText = {"txt": "Ta sem mana, OTARIO!!\n"}
         elif(dano == -2):
             self.BattleText = {"txt": "Você não está preparado! Falta-lhe Special Points\n"}
+        elif(dano == -3):
+            self.BattleText = {"txt": "O golpe errou o alvo\n"}
         elif(personagem.acoes.isCrit or isCrit == True):
             self.BattleText = {"txt": f"ACERTO CRÍTICO!!!\n{personagem.name} causou {dano} de dano!\n"}
         elif(isSpecial):
