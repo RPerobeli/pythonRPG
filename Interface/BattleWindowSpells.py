@@ -29,6 +29,7 @@ class BattleWindowSpells(GameState.GameState):
             actorPos = self.PlaceActors()
             self.LoadImages(actorPos)
             self.LoadUsableSpells()
+            self.LoadBackText()
         else:
             print("erro ao entrar nas Cenas -> inn.ScenesManager()")
         #endif
@@ -86,6 +87,9 @@ class BattleWindowSpells(GameState.GameState):
                 if (event.type == pygame.KEYDOWN and event.key == pygame.K_6):
                     input = 6
                     return self.GetSpellByUserInput(input)
+                #endif
+                if (event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE):
+                    return -1
                 #endif
             #endfor
             pygame.display.update()

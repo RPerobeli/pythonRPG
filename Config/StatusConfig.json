@@ -7,34 +7,34 @@
     },
     "Paralyse":{
         "Name": "Paralyse",
-        "TurnsToEnd": 2,
+        "TurnsToEnd": 3,
         "Chance": 0.5
     },
     "Sleep":{
         "Name": "Sleep",
-        "TurnsToEnd": 1,
+        "TurnsToEnd": 2,
         "Chance": 1
     },
     "Stun":{
         "Name": "Stun",
         "TurnsToEnd": 2,
-        "Chance": 0.8
+        "Chance": 0.9
     },
     "Poison":{
         "Name": "Poison",
-        "TurnsToEnd": 2,
+        "TurnsToEnd": 3,
         "Chance": 0.8,
         "DamagePerTurn": 10
     },
     "Enrage":{
         "Name": "Enrage",
-        "TurnsToEnd": 2,
+        "TurnsToEnd": 3,
         "Chance": 1,
         "DamageBuff":1.5
     },
     "Regeneration":{
         "Name": "Regeneration",
-        "TurnsToEnd": 3,
+        "TurnsToEnd": 4,
         "HealPerTurn": 10,
         "Chance": 1
     },
@@ -46,7 +46,7 @@
     },
     "Protection":{
         "Name": "Protection",
-        "TurnsToEnd": 2,
+        "TurnsToEnd": 3,
         "Chance": 1,
         "DamageBuff": 0.5 
     }

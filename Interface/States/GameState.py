@@ -25,6 +25,7 @@ class GameState():
         self.Sound = Sound.Sound()
         self.Done = False
         self.Count = 0
+        self.OptionsDict = jsonL.GetOptions()
     #endfunc
 
     def RedrawWindow(self):
@@ -83,6 +84,14 @@ class GameState():
             (x,y) = jsonL.GetSpeakerTextPosition()
         #endif
         ut.InsertText(text,text_color, x, y, self.Screen)
+    #endfunc
+
+    def LoadBackText(self, x = None, y = None):
+        if(x == None or y == None):
+            x = self.OptionsDict["Options"]["PositionBackText"]["x"]
+            y = self.OptionsDict["Options"]["PositionBackText"]["y"]
+        #endif
+        self.LoadText("SPC: Voltar", x,y)
     #endfunc
 
     def LoadTextWithList(self, textDict, x = None, y = None, heroName = "Heroi"):

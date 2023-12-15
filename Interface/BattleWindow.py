@@ -240,15 +240,16 @@ class BattleWindow(GameState.GameState):
                         self.isSelectingSpell = True
                         atkType = 3
                         spell = self.SpellsWindow.SelectSpell()
-                        if(self.VerifyMana(spell["Cost"])== True):
-                            self.BattleText = {"txt": "TA SEM MANA, OTARIO!\n"}
-                        else:
-                            dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster, spell)
-                            self.PrintDmg(dano,self.Personagem)
-                            self.ApplyStatus(spell)
-                        #endif
-                        self.isOptions = False
-                        turnCounter += 1
+                        if(spell != -1):
+                            if(self.VerifyMana(spell["Cost"])== True):
+                                self.BattleText = {"txt": "TA SEM MANA, OTARIO!\n"}
+                            else:
+                                dano = self.Personagem.acoes.Atk(self.Personagem,atkType,self.Monster, spell)
+                                self.PrintDmg(dano,self.Personagem)
+                                self.ApplyStatus(spell)
+                            #endif
+                            self.isOptions = False
+                            turnCounter += 1
                     #endif  
                 #endif
                 if (event.type == pygame.KEYDOWN and (event.key == pygame.K_4 or event.key == pygame.K_KP_4)):
