@@ -36,11 +36,6 @@ class Florianopolis(GameState.GameState):
             print("erro ao entrar nas Cenas -> inn.ScenesManager()")
         #endif
     #endfunc
-
-    def SelectNextStory(self):
-        self.Sound.StopMusic()
-        return (self.Personagem, "ToBeContinued", True)
-    #endfunc
     
     def VerifyEvent(self):
         print('verificou possiveis eventos')
