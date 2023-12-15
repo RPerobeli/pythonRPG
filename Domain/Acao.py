@@ -238,7 +238,7 @@ class Acao:
     # endfunc
 
     def AcertoCritico(self, dano, personagem):
-        crit = rnd.random
+        crit = rnd.random()
         if(crit < personagem.TaxaCritico):
             self.isCrit = True
             print("ACERTO CRÍTICO!!!")
@@ -252,8 +252,8 @@ class Acao:
     # endfunc
         
     def AplicarEvasao(self, personagem):
-        crit = rnd.random
-        if(crit < personagem.Evasion):
+        evasion = rnd.random()
+        if(evasion > personagem.Evasion):
             print("O golpe errou o alvo.")
             return False
         else:
