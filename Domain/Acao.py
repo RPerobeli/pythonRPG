@@ -235,8 +235,8 @@ class Acao:
     # endfunc
 
     def AcertoCritico(self, dano, personagem):
-        crit = rnd.randint(1, 5)
-        if(crit == 1):
+        crit = rnd.random
+        if(crit < personagem.TaxaCritico):
             self.isCrit = True
             print("ACERTO CRÍTICO!!!")
             if(personagem.isMonstro):
