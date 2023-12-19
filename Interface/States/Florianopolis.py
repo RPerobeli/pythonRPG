@@ -152,7 +152,7 @@ class Florianopolis(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "goKrambeck\n"):
-            self.NextStory = "Krambeck"
+            self.NextStory = "KrambeckMago"
             self.StoryListId += 1
             self.VerifyEvent()
             return
