@@ -305,6 +305,7 @@
             "Nome": "Disparo Penetrante",
             "Cost": 25,
             "BaseDamage": 25,
+            "Status":"Paralyse",
             "Lvl":5
         },
         {

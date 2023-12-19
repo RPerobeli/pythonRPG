@@ -196,7 +196,7 @@
         
         {"txt":"InserirRoger\n"},
         {"txt":"[Roger]: Sinalizem aos outros, invadiremos o próximo armazém!\n"},
-        {"txt":"[Roger]: Vem conosco, heroi?\n"},
+        {"txt":"[Roger]: Vem conosco, Heroi?\n"},
         {"txt":"[Heroi]: Ainda tenho uma dívida convosco, vou acompanhá-los.\n"},
         {"txt":"[Narrador]: Seu grupo se dirigem ao outro armazém, ao entrar, são recebidos a tiros por mais guardas.\n"},
         {"txt":"BatalhaTripulante2\n"},
@@ -305,10 +305,11 @@
         
         {"txt":"InserirRoger\n"},
         {"txt":"[Roger]: Sinalizem aos outros, invadiremos o próximo armazém!\n"},
-        {"txt":"[Roger]: Vem conosco, heroi?\n"},
+        {"txt":"[Roger]: Vem conosco, Heroi?\n"},
         {"txt":"[Heroi]: Sua causa é nobre, Roger, mas tenho que seguir meu caminho,\n desejo grande vitória na sua causa.\n"},
         {"txt":"[Roger]: Gyahahahaha, foi um prazer tê-lo ao nosso lado! Quando tudo isso acabar,\n volte para beber conosco novamente!\n"},
         {"txt":"[Roger]: Homens! Vamos para o próximo armazém!\n"},
+        {"txt": "RemoverAtor1\n"},
         {"txt":"InserirBackgroundHarbor\n"},
         
         {"txt":"[Narrador]: Você segue seu caminho. Enquanto saía do porto,\n o som de disparos adentram seus ouvidos. \n"},
@@ -481,7 +482,7 @@
         {"txt":"[Narrador]: Após a derrota de Barba Negra, o restante de seus lacaios presentes no navio se dispersam.\n"},
         
         {"txt":"InserirRoger\n"},
-        {"txt":"[Roger]: Parece que conseguimos, heroi. O pessoal deverá ficar contente...\n"},
+        {"txt":"[Roger]: Parece que conseguimos, Heroi. O pessoal deverá ficar contente...\n"},
         {"txt":"[Heroi]: Roger, por favor, não se mexa muito, vou tratar suas feridas.\n"},
         {"txt":"[Narrador]: Após realizar os primeiros socorros no capitão, ambos saem do navio em direção ao porto.\n Você com Roger em seus ombros.\n"},
         

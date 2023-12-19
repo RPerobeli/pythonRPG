@@ -115,7 +115,7 @@ R2
 [Heroi]: De qualquer forma, obrigado. Consegui algumas informações, pelo menos. Me chamo heroi.
 [Pelégolas]: Pelégolas, ao seu dispor. Inclusive, belo tiro, arqueiro, para um não elfo.
 [Pelégolas]: Impressionante que alguém consiga acertar esse tiro sem a nossa erva.
-[Narrador]: Um humano com seu arco surge das árvores, com o restante da compania.
+[Narrador]: Um humano com seu arco surge das árvores, com o restante da companhia.
 [Arqueiro]: Algum dia você chega no meu nível Haha.
 [Narrador]: Pelégolas olha com desdém para o humano, mas ri, sabendo que se trata de uma implicância amigável.
 [Heroi]: Bom, o que você faz aqui, Pelégolas?
@@ -135,7 +135,7 @@ Q3
 [Heroi]: Esse tipo de barreira costuma ser mantida por símbolos mágicos geradores da barreira.
 [Arqueiro]: Enquanto fazíamos o reconhecimento, eu vi um possível local desses. Um obelisco com runas por toda a sua estrutura emanava magia negra.
 [Pelégolas]: Teremos que nos dividir para destruir esses obeliscos.
-[Pelégolas]: Heroi, pegue metade da minha compania, encontre e destrua o obelisco do leste. Ficaremos com o obelisco oeste e parte das nossas forças ficará para iniciar o ataque assim que a barreira for desfeita.
+[Pelégolas]: Heroi, pegue metade da minha companhia, encontre e destrua o obelisco do leste. Ficaremos com o obelisco oeste e parte das nossas forças ficará para iniciar o ataque assim que a barreira for desfeita.
 [Narrador]: Após procurarem, sua equipe encontra o obelisco.
 [Narrador]: No entanto, no momento em que você iria conjurar a magia para destruí-lo, 2 elfos voam para longe, você olha para o lado e uma poderosa hidra, com alguns acólitos,todos eles colocando pedras em seus caximbos, atacam sua equipe.
 [Heroi]: CUIDEM DOS ACÓLITOS E DOS DEMÔNIOS!
