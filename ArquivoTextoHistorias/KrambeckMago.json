@@ -125,11 +125,12 @@
     ],
     "Q2":[
         {"txt" : "InserirBackgroundKrambeck2\n"},
+        {"txt" : "RemoverAtor1\n"},
         {
             "txt" : "[Narrador]: Você adentra ainda mais na floresta e escuta o som de uma batalha.\n Ao se aproximar, você se esconde e observa uma escaramuça, em uma clareira, entre elfos e o que parecem ser acólitos do dito culto.\n Os elfos lutam ferozmente, mas os bruxos tem a magia negra ao seu lado.\n"
         },
         {
-            "txt" : "1 - Entrar na batalha ao lado dos elfos.\n 2 - Continuar escondido e esperar o desenrolar da batalha.\n"
+            "txt" : "1 - Entrar na batalha ao lado dos elfos.\n2 - Continuar escondido e esperar o desenrolar da batalha.\n"
         }
     ],
     "R2-1":[
