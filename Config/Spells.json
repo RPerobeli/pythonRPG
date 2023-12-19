@@ -263,7 +263,7 @@
             "Key" : 4,
             "Nome": "Flecha Profana",
             "Cost": 20,
-            "BaseDamage": 25,
+            "BaseDamage": 28,
             "Status":"Poison",
             "Lvl":6
         },
@@ -279,7 +279,7 @@
             "Key" : 6,
             "Nome": "Snipe",
             "Cost": 25,
-            "BaseDamage": 25,
+            "BaseDamage": 40,
             "Lvl":8
         }
     ],
@@ -305,7 +305,7 @@
             "Nome": "Disparo Penetrante",
             "Cost": 25,
             "BaseDamage": 25,
-            "Status":"Paralyse",
+            "Status":"",
             "Lvl":5
         },
         {
@@ -328,7 +328,7 @@
             "Key" : 6,
             "Nome": "Snipe",
             "Cost": 25,
-            "BaseDamage": 25,
+            "BaseDamage": 40,
             "Lvl":8
         }
     ],
@@ -350,24 +350,25 @@
         },
         {
             "Key" : 3,
-            "Nome": "Armadilha de Urso",
+            "Nome": "Dardo Tranquilizante",
             "Cost": 25,
             "BaseDamage": -1,
-            "Status":"Paralyse",
+            "Status":"Sleep",
             "Lvl":5
         },
         {
             "Key" : 4,
             "Nome": "Comando para Matar",
             "Cost": 25,
-            "BaseDamage": 25,
+            "BaseDamage": 30,
+            "Status":"",
             "Lvl":6
         },
         {
             "Key" : 5,
             "Nome": "Disparo da Naja",
             "Cost": 25,
-            "BaseDamage": 25,
+            "BaseDamage": 28,
             "Status":"Poison",
             "Lvl":7
         },
@@ -375,7 +376,7 @@
             "Key" : 6,
             "Nome": "Ira Bestial",
             "Cost": 25,
-            "BaseDamage": 25,
+            "BaseDamage": 32,
             "Status":"Berserk",
             "Lvl":8
         }

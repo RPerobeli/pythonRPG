@@ -8,7 +8,7 @@
     "Paralyse":{
         "Name": "Paralyse",
         "TurnsToEnd": 3,
-        "Chance": 0.5
+        "Chance": 0.8
     },
     "Sleep":{
         "Name": "Sleep",
