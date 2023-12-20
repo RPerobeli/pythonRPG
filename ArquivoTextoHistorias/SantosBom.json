@@ -399,7 +399,7 @@
         {"txt":"[Heroi]: Obrigado, Becca.\n"},
         
         {"txt":"InserirRoger\n"},
-        {"txt":"[Roger]: Homens! Vamos para o próximo armazém!.\n"},
+        {"txt":"[Roger]: Homens! Vamos para o próximo armazém!\n"},
         {"txt":"InserirBackgroundHarbor\n"},
         {"txt" : "RemoverAtor1\n"},
         {"txt":"[Narrador]: Você segue seu caminho. Enquanto saía do porto,\n o som de disparos adentram seus ouvidos. \n"},
