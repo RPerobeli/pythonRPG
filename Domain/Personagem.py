@@ -96,17 +96,17 @@ class Personagem:
         if(self.classe.lower() == "guerreiro"):
             self.MultiplicadorDanoCritico = 1 + 0.25*self.skills['str']
             self.Evasion = 0.01 + 0.02*self.skills['agi']
-            self.TaxaCritico = 0.1 + 0.5*self.skills["int"]
+            self.TaxaCritico = 0.1 + 0.05*self.skills["int"]
 
         elif(self.classe.lower() == "arqueiro"):
             self.MultiplicadorDanoCritico = 1 + 1*self.skills['str']
             self.Evasion = 0.01 + 0.01*self.skills['agi']
-            self.TaxaCritico = 0.1 + 0.35*self.skills["int"]
+            self.TaxaCritico = 0.1 + 0.035*self.skills["int"]
 
         elif(self.classe.lower() == "mago"):
             self.MultiplicadorDanoCritico = 1 + 0.5*self.skills['str']
             self.Evasion = 0.01 + 0.02*self.skills['agi']
-            self.TaxaCritico = 0.1 + 0.25*self.skills["int"]
+            self.TaxaCritico = 0.1 + 0.025*self.skills["int"]
         else:
             print("Erro no Atualiza status")
         # endif
