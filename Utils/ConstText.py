@@ -1,0 +1,33 @@
+class StatesText():
+    Title = "intro_title"
+    Inn = "inn"
+    CaminhoTeofilo = "caminhoTeofilo"
+    Caravana = "caravana"
+    Recursos = "Recursos"
+    Florianopolis = "Florianopolis"
+    Juazeiro = "Juazeiro"
+    KrambeckMago = "KrambeckMago"
+    Teofilotoni = "Teofilotoni"
+    Curitiba = "Curitiba"
+    KrambeckArqueiro = "KrambeckArqueiro"
+    SantosBom = "SantosBom"
+    SantosMau = "SantosMau"
+    RetornoAdLArqueiro = "RetornoAdLArqueiro"
+    FelastusGuerreiro  = "FelastusGuerreiro"
+    FelastusMago  = "FelastusMago"
+    AcreArqueiro = "AcreArqueiro"
+    AcreGuerreiro = "AcreGuerreiro"
+    Final = "SagaFinal"
+    Good = "good"
+    Neutral = "neutral"
+    Evil = "evil"
+    Continue =  "ToBeContinued"
+    TheEnd = "TheEnd"
+#endClass
+
+class ClassesText():
+    Guerreiro = "guerreiro"
+    Arqueiro = "arqueiro"
+    Mago = "mago"
+    Druida = "druida"
+#endClass

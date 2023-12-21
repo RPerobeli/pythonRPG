@@ -5,6 +5,7 @@ import Utils.JsonLoader as jsonL
 import Interface.GameOverWindow as gow
 import Interacoes as lib
 import Interface.States.GameState as GameState
+from Utils.ConstText import StatesText as txt
 
 class Good(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None, armas= None):
@@ -19,7 +20,7 @@ class Good(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
-        self.Filename = "good"
+        self.Filename = txt.Good
         self.MaxStoryIndex = 1
         self.Count = 0
         self.Armas = armas

@@ -6,6 +6,7 @@ import Interface.BattleWindow as bw
 import Interface.GameOverWindow as gow
 import Interacoes as lib
 import Interface.States.GameState as GameState
+from Utils.ConstText import StatesText as txt
 
 class SantosBom(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None, armas= None):
@@ -20,7 +21,7 @@ class SantosBom(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
-        self.Filename = "SantosBom"
+        self.Filename = txt.SantosBom
         self.MaxStoryIndex = 3
         self.Count = 0
         self.Armas = armas
@@ -39,7 +40,7 @@ class SantosBom(GameState.GameState):
 
     def SelectNextStory(self):
         self.Sound.StopMusic()
-        return (self.Personagem, "RetornoAdLArqueiro", True)
+        return (self.Personagem, txt.RetornoAdLArqueiro, True)
     #endfunc
     
     def VerifyEvent(self):

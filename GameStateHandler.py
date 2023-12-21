@@ -20,12 +20,14 @@ from Interface import TheEndWindow as End
 from Interface import DialogBox
 from Interface import BattleWindow as bw
 from Utils import JsonLoader as jsonL
+from Utils.ConstText import ClassesText
+from Utils.ConstText import StatesText as txt
 import copy as cp
 import Interacoes as lib
 
 class GameStateHandler:
     def __init__(self, screen):
-        self.State = 'intro_title'
+        self.State = txt.Title
         self.Screen = screen
         self.Title = t.Title(self.Screen)
         self.DialogBox = DialogBox.DialogBox(self.Screen)
@@ -37,95 +39,95 @@ class GameStateHandler:
     #endfunc
 
     def ManageState(self):
-        if(self.State == "intro_title"):
+        if(self.State == txt.Title):
             self.IntroTitle()
-        if(self.State == "inn"):
+        if(self.State == txt.Inn):
             self.Inn()
-        if(self.State == "caminhoTeofilo"):
+        if(self.State == txt.CaminhoTeofilo):
             self.ViagemTeofilotoni()
-        if(self.State == "caravana"):
+        if(self.State == txt.Caravana):
             self.Caravan()
-        if(self.State == "Recursos"):
+        if(self.State == txt.Recursos):
             self.Recursos()
-        if(self.State == "Florianopolis"):
+        if(self.State == txt.Florianopolis):
             self.Florianopolis()
         #endif
-        if(self.State == "Juazeiro"):
+        if(self.State == txt.Juazeiro):
             self.Juazeiro()
         #endif
-        if(self.State == "KrambeckMago"):
+        if(self.State == txt.KrambeckMago):
             self.KrambeckMago()
         #endif
-        if(self.State == "Teofilotoni"):
+        if(self.State == txt.Teofilotoni):
             self.Teofilotoni()
         #endif
-        if(self.State == "Curitiba"):
+        if(self.State == txt.Curitiba):
             self.Curitiba()
         #endif
-        if(self.State == "KrambeckArqueiro"):
+        if(self.State == txt.KrambeckArqueiro):
             self.KrambeckArqueiro()
         #endif
-        if(self.State == "SantosBom"):
+        if(self.State == txt.SantosBom):
             self.SantosBom()
         #endif
-        if(self.State == "RetornoAdLArqueiro"):
+        if(self.State == txt.RetornoAdLArqueiro):
             self.RetornoAdLArqueiro()
         #endif
-        if(self.State == "Felastus"):
+        if(self.State == txt.FelastusGuerreiro):
             self.Felastus()
         #endif
-        if(self.State == "Acre"):
+        if(self.State == txt.AcreArqueiro):
             self.Acre()
         #endif
-        if(self.State == "SagaFinal"):
+        if(self.State == txt.Final):
             self.SagaFinal()
         #endif
-        if(self.State == "good"):
+        if(self.State == txt.Good):
             self.Good()
         #endif
-        if(self.State == "neutral"):
+        if(self.State == txt.Neutral):
             self.Neutral()
         #endif
-        if(self.State == "evil"):
+        if(self.State == txt.Evil):
             self.Evil()
         #endif
-        if(self.State == "ToBeContinued"):
+        if(self.State == txt.Continue):
             self.ToBeContinued()
         #endif
-        if(self.State == "TheEnd"):
+        if(self.State == txt.TheEnd):
             self.End()
         #endif
     #endfunc
 
     #endfunc
     def IntroTitle(self):
-        print("intro_title")
+        print(txt.Title)
         self.Title.RedrawWindow()
         self.Hero = self.Title.Update()
         if(self.Hero!=None):
             self.inn = Inn.Inn(self.Screen,self.DialogBox,self.Hero,self.Monstros, self.Npcs)
-            self.State = "inn"
+            self.State = txt.Inn
     #         self.krambeckMago = KrambeckMago.KrambeckMago(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
-    #         self.State = "KrambeckMago"
+    #         self.State = txt.KrambeckMago
     # #endfunc
     def Inn(self):
-        print("inn")
-        self.Hero,state, continueStory = self.inn.Update("inn")
+        print(txt.Inn)
+        self.Hero,state, continueStory = self.inn.Update(txt.Inn)
         self.State = state
         if(continueStory):
-            if(self.Hero.classe.lower() == "mago"):
+            if(self.Hero.classe.lower() == ClassesText.Mago):
                 self.caravan = Caravan.Caravan(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs)
-            elif(self.Hero.classe.lower() == "guerreiro"):
+            elif(self.Hero.classe.lower() == ClassesText.Guerreiro):
                 self.caminhoTeofilo = ViagemTeofilotoni.ViagemTeofilotoni(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs)
-            elif(self.Hero.classe.lower() == "arqueiro"):
+            elif(self.Hero.classe.lower() == ClassesText.Arqueiro):
                 self.recursos = Recursos.Recursos(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
             #endif
         #endif
     #endfunc
 
     def Caravan(self):
-        print('caravana')
-        self.Hero,state, continueStory = self.caravan.Update("caravana")
+        print(txt.Caravana)
+        self.Hero,state, continueStory = self.caravan.Update(txt.Caravana)
         self.State = state
         if(continueStory):
             self.floripa = Florianopolis.Florianopolis(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -133,8 +135,8 @@ class GameStateHandler:
     #endfunc
 
     def ViagemTeofilotoni(self):
-        print('caminhoTeofilo')
-        self.Hero,state, continueStory = self.caminhoTeofilo.Update('caminhoTeofilo')
+        print(txt.CaminhoTeofilo)
+        self.Hero,state, continueStory = self.caminhoTeofilo.Update(txt.CaminhoTeofilo)
         self.State = state
         if(continueStory):
             self.teofilotoni = Teofilotoni.Teofilotoni(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -142,8 +144,8 @@ class GameStateHandler:
     #endfunc
 
     def Florianopolis(self):
-        print('Florianopolis')
-        self.Hero,state, continueStory = self.floripa.Update('Florianopolis')
+        print(txt.Florianopolis)
+        self.Hero,state, continueStory = self.floripa.Update(txt.Florianopolis)
         self.State = state
         if(continueStory):
             self.krambeckMago = KrambeckMago.KrambeckMago(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -151,8 +153,8 @@ class GameStateHandler:
     #endfunc
 
     def KrambeckMago(self):
-        print('KrambeckMago')
-        self.Hero,state, continueStory = self.krambeckMago.Update('KrambeckMago')
+        print(txt.KrambeckMago)
+        self.Hero,state, continueStory = self.krambeckMago.Update(txt.KrambeckMago)
         self.State = state
         if(continueStory):
             self.juazeiro = Continue.Continue(self.Screen)
@@ -160,8 +162,8 @@ class GameStateHandler:
     #endfunc
 
     def Juazeiro(self):
-        print('Juazeiro')
-        self.Hero,state, continueStory = self.juazeiro.Update('Juazeiro')
+        print(txt.Juazeiro)
+        self.Hero,state, continueStory = self.juazeiro.Update(txt.Juazeiro)
         self.State = state
         if(continueStory):
             self.tobecontinued = Continue.Continue(self.Screen)
@@ -169,8 +171,8 @@ class GameStateHandler:
     #endfunc
 
     def Teofilotoni(self):
-        print('Teofilotoni')
-        self.Hero,state, continueStory = self.teofilotoni.Update('Teofilotoni')
+        print(txt.Teofilotoni)
+        self.Hero,state, continueStory = self.teofilotoni.Update(txt.Teofilotoni)
         self.State = state
         if(continueStory):
             self.tobecontinued = Continue.Continue(self.Screen)
@@ -178,8 +180,8 @@ class GameStateHandler:
     #endfunc
 
     def Curitiba(self):
-        print('Curitiba')
-        self.Hero,state, continueStory = self.curitiba.Update('Curitiba')
+        print(txt.Curitiba)
+        self.Hero,state, continueStory = self.curitiba.Update(txt.Curitiba)
         self.State = state
         if(continueStory):
             self.krambeckArqueiro = KrambeckArqueiro.KrambeckArqueiro(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -187,8 +189,8 @@ class GameStateHandler:
     #endfunc
 
     def Recursos(self):
-        print('Recursos')
-        self.Hero,state, continueStory = self.recursos.Update('Recursos')
+        print(txt.Recursos)
+        self.Hero,state, continueStory = self.recursos.Update(txt.Recursos)
         self.State = state
         if(continueStory):
             self.curitiba = Curitiba.Curitiba(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -196,8 +198,8 @@ class GameStateHandler:
     #endfunc
 
     def KrambeckArqueiro(self):
-        print('KrambeckArqueiro')
-        self.Hero,state, continueStory = self.krambeckArqueiro.Update('KrambeckArqueiro')
+        print(txt.KrambeckArqueiro)
+        self.Hero,state, continueStory = self.krambeckArqueiro.Update(txt.KrambeckArqueiro)
         self.State = state
         if(continueStory):
             self.santosBom = SantosBom.SantosBom(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -205,8 +207,8 @@ class GameStateHandler:
     #endfunc
     
     def SantosBom(self):
-        print('SantosBom')
-        self.Hero,state, continueStory = self.santosBom.Update('SantosBom')
+        print(txt.SantosBom)
+        self.Hero,state, continueStory = self.santosBom.Update(txt.SantosBom)
         self.State = state
         if(continueStory):
             self.retornoAdLArqueiro = RetornoAdLArqueiro.RetornoAdLArqueiro(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
@@ -214,15 +216,15 @@ class GameStateHandler:
     #endfunc
 
     def SagaFinal(self):
-        print('SagaFinal')
-        self.Hero,state, continueStory = self.sagaFinal.Update('SagaFinal')
+        print(txt.Final)
+        self.Hero,state, continueStory = self.sagaFinal.Update(txt.Final)
         self.State = state
         if(continueStory):
-            if(self.State == "good"):
+            if(self.State == txt.Good):
                 self.good = Good.Good(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
-            if(self.State == "neutral"):
+            if(self.State == txt.Neutral):
                 self.neutral = Neutral.Neutral(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
-            if(self.State == "evil"):
+            if(self.State == txt.Evil):
                 self.evil = Evil.Evil(self.Screen,self.DialogBox,self.Hero,self.Monstros,self.Npcs,self.Armas)
         #endif
     #endfunc

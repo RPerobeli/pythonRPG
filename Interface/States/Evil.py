@@ -2,6 +2,7 @@ import pygame
 import sys
 #import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
+from Utils.ConstText import StatesText as txt
 import Interface.BattleWindow as bw
 import Interface.GameOverWindow as gow
 import Interacoes as lib
@@ -20,7 +21,7 @@ class Evil(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
-        self.Filename = "evil"
+        self.Filename = txt.Evil
         self.MaxStoryIndex = 1
         self.Count = 0
         self.Armas = armas

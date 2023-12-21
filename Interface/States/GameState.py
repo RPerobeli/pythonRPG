@@ -6,6 +6,7 @@ from Interface import BattleWindow as bw
 import Interacoes as lib
 import Interface.Button as btn
 import Interface.Sound as Sound
+from Utils.ConstText import StatesText as txt
 
 class GameState():
     def __init__(self, screen):
@@ -21,7 +22,7 @@ class GameState():
         self.DialogBox = None
         self.isQuestion = True
         self.Alpha = 255
-        self.NextStory = "Title"
+        self.NextStory = txt.Title
         self.Sound = Sound.Sound()
         self.Done = False
         self.Count = 0
@@ -129,7 +130,7 @@ class GameState():
     #endfunc
 
     def VerifyFirstTimeInWindowToPlayMusic(self, music):
-        if(music == 'Recursos' or music == 'caminhoTeofilo' or music == 'caravana'):
+        if(music == txt.Recursos or music == txt.CaminhoTeofilo or music == txt.Caravana):
             music = 'inn'
         #endif
         if(self.Count == 0):

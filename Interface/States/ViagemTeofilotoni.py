@@ -38,7 +38,7 @@ class ViagemTeofilotoni(GameState.GameState):
 
     def SelectNextStory(self):
         self.Sound.StopMusic()
-        return (self.Personagem, 'Teofilotoni', True)
+        return (self.Personagem, txt.Teofilotoni, True)
     #endfunc
     
     def VerifyEvent(self):

@@ -2,6 +2,7 @@ import pygame
 import sys
 #import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
+from Utils.ConstText import StatesText as txt
 import Interface.BattleWindow as bw
 import Interface.GameOverWindow as gow
 import Interacoes as lib
@@ -20,7 +21,7 @@ class Curitiba(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
-        self.Filename = "Curitiba"
+        self.Filename = txt.Curitiba
         self.MaxStoryIndex = 4
         self.Count = 0
         self.Armas = armas
@@ -233,7 +234,7 @@ class Curitiba(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "goKrambeck\n"):
-            self.NextStory = "KrambeckArqueiro"
+            self.NextStory = txt.KrambeckArqueiro
             self.StoryListId += 1
             self.VerifyEvent()
             return

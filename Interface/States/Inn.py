@@ -2,6 +2,7 @@ import pygame
 import sys
 import random as rnd
 import Interface.InterfaceUtils as ut
+from Utils.ConstText import StatesText as txt
 import Utils.JsonLoader as jsonL
 import Interface.BattleWindow as bw
 import Interacoes as lib
@@ -40,11 +41,11 @@ class Inn(GameState.GameState):
     def SelectNextStory(self):
         self.Sound.StopMusic()
         if(self.Personagem.classe.lower() == 'guerreiro'):
-            return (self.Personagem, 'caminhoTeofilo',True)
+            return (self.Personagem, txt.CaminhoTeofilo,True)
         elif(self.Personagem.classe.lower() == 'mago'):
-            return (self.Personagem, 'caravana',True)
+            return (self.Personagem, txt.Caravana,True)
         elif(self.Personagem.classe.lower() == 'arqueiro'):
-            return (self.Personagem, 'Recursos',True)
+            return (self.Personagem, txt.Recursos,True)
         else:
             print('erro ao selecionar proxima historia')
         #endif
@@ -56,7 +57,7 @@ class Inn(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Cao Infernal"), "quarto")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("inn")
+            self.Sound.PlayMusic(txt.Inn)
             self.StoryListId += 1
             self.VerifyEvent()
             return

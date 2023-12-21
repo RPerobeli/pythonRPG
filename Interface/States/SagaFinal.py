@@ -6,6 +6,7 @@ import Interface.BattleWindow as bw
 import Interface.GameOverWindow as gow
 import Interacoes as lib
 import Interface.States.GameState as GameState
+from Utils.ConstText import StatesText as txt
 
 class SagaFinal(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None, armas= None):
@@ -20,7 +21,7 @@ class SagaFinal(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
-        self.Filename = "SagaFinal"
+        self.Filename = txt.Final
         self.MaxStoryIndex = 1
         self.Count = 0
         self.Armas = armas
@@ -42,11 +43,11 @@ class SagaFinal(GameState.GameState):
         lista = [self.Personagem.Good,self.Personagem.Neutral, self.Personagem.Evil]
         final_id = lista.index(max(lista))
         if(final_id==0):
-            return "good"
+            return txt.Good
         if(final_id==1):
-            return "neutral"
+            return txt.Neutral
         if(final_id==2):
-            return "evil"    
+            return txt.Evil    
 
         return 
     #endfunc

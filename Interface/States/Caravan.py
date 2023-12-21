@@ -2,6 +2,7 @@ import pygame
 import sys
 #import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
+from Utils.ConstText import StatesText as txt
 import Interface.BattleWindow as bw
 import Interacoes as lib
 import Interface.States.GameState as GameState
@@ -27,7 +28,7 @@ class Caravan(GameState.GameState):
 
     def SelectNextStory(self):
         self.Sound.StopMusic()
-        return (self.Personagem, 'Florianopolis', True)
+        return (self.Personagem, txt.Florianopolis, True)
     #endfunc
     
     def VerifyEvent(self):

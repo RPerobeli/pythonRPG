@@ -6,6 +6,7 @@ import Interface.BattleWindow as bw
 import Interface.GameOverWindow as gow
 import Interacoes as lib
 import Interface.States.GameState as GameState
+from Utils.ConstText import StatesText as txt
 
 class Neutral(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None, armas= None):
@@ -20,7 +21,7 @@ class Neutral(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
-        self.Filename = "neutral"
+        self.Filename = txt.Neutral
         self.MaxStoryIndex = 1
         self.Count = 0
         self.Armas = armas

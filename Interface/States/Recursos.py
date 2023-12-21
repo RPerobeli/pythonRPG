@@ -6,6 +6,7 @@ import Interface.BattleWindow as bw
 import Interface.GameOverWindow as gow
 import Interacoes as lib
 import Interface.States.GameState as GameState
+from Utils.ConstText import StatesText as txt
 
 class Recursos(GameState.GameState):
     def __init__(self, screen, dialogBox, personagem, monstros, npcs = None, armas= None):
@@ -20,7 +21,7 @@ class Recursos(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
-        self.Filename = "ColetaRecursos"
+        self.Filename = txt.Recursos
         self.MaxStoryIndex = 1
         self.Count = 0
         self.Armas = armas
@@ -39,7 +40,7 @@ class Recursos(GameState.GameState):
 
     def SelectNextStory(self):
         self.Sound.StopMusic()
-        return (self.Personagem, "Curitiba", True)
+        return (self.Personagem, txt.Curitiba, True)
     #endfunc
     
     def VerifyEvent(self):
@@ -62,7 +63,7 @@ class Recursos(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Cavaleiro Estatua"), "Forest")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Recursos")
+            self.Sound.PlayMusic(txt.Recursos)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -71,7 +72,7 @@ class Recursos(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Lobo"), "Cave")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Recursos")
+            self.Sound.PlayMusic(txt.Recursos)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -80,7 +81,7 @@ class Recursos(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Treant"), "Forest")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Recursos")
+            self.Sound.PlayMusic(txt.Recursos)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -94,7 +95,7 @@ class Recursos(GameState.GameState):
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "InserirFloresta\n"):
             self.Sound.StopMusic()
-            self.Sound.PlayMusic("Recursos")
+            self.Sound.PlayMusic(txt.Recursos)
             self.BackgroundImage = pygame.image.load(f'{self.ImagePath}/Background/Forest.jpg').convert_alpha()
             self.StoryListId += 1
             self.VerifyEvent()

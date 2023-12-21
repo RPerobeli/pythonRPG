@@ -2,6 +2,7 @@ import pygame
 import sys
 #import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
+from Utils.ConstText import StatesText as txt
 import Interface.BattleWindow as bw
 import Interface.GameOverWindow as gow
 import Interacoes as lib
@@ -20,7 +21,7 @@ class KrambeckArqueiro(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
-        self.Filename = "KrambeckArqueiro"
+        self.Filename = txt.KrambeckArqueiro
         self.MaxStoryIndex = 3
         self.Count = 0
         self.Armas = armas
@@ -142,7 +143,7 @@ class KrambeckArqueiro(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Criminoso Atirador"), "KrambeckNight")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("KrambeckArqueiro")
+            self.Sound.PlayMusic(txt.KrambeckArqueiro)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -151,7 +152,7 @@ class KrambeckArqueiro(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Criminoso Atirador"), "BurningDeposit")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("KrambeckArqueiro")
+            self.Sound.PlayMusic(txt.KrambeckArqueiro)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -160,7 +161,7 @@ class KrambeckArqueiro(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Elfo Larapio"), "KrambeckNight")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("KrambeckArqueiro")
+            self.Sound.PlayMusic(txt.KrambeckArqueiro)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -169,7 +170,7 @@ class KrambeckArqueiro(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Elfo Acolito"), "Krambeck2")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("KrambeckArqueiro")
+            self.Sound.PlayMusic(txt.KrambeckArqueiro)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -178,7 +179,7 @@ class KrambeckArqueiro(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Wraith"), "Krambeck2")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("KrambeckArqueiro")
+            self.Sound.PlayMusic(txt.KrambeckArqueiro)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -187,7 +188,7 @@ class KrambeckArqueiro(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Imp"), "Krambeck2")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("KrambeckArqueiro")
+            self.Sound.PlayMusic(txt.KrambeckArqueiro)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -196,7 +197,7 @@ class KrambeckArqueiro(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Hydra do Oeste"), "ObeliskKrambeck")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("KrambeckArqueiro")
+            self.Sound.PlayMusic(txt.KrambeckArqueiro)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -205,7 +206,7 @@ class KrambeckArqueiro(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Rhon'Aldyn"), "AltarKrambeck")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("KrambeckArqueiro")
+            self.Sound.PlayMusic(txt.KrambeckArqueiro)
             self.StoryListId += 1
             self.VerifyEvent()
             return

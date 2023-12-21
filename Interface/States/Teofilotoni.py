@@ -2,6 +2,7 @@ import pygame
 import sys
 #import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
+from Utils.ConstText import StatesText as txt
 import Interface.BattleWindow as bw
 import Interface.GameOverWindow as gow
 import Interacoes as lib
@@ -20,7 +21,7 @@ class Teofilotoni(GameState.GameState):
         self.Npcs = npcs
         self.Alpha = 255
         self.Scene = 1
-        self.Filename = "Teofilotoni"
+        self.Filename = txt.Teofilotoni
         self.MaxStoryIndex = 3
         self.Count = 0
         self.Armas = armas
@@ -64,7 +65,7 @@ class Teofilotoni(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Atirador"), "TeofilotoniInn")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Teofilotoni")
+            self.Sound.PlayMusic(txt.Teofilotoni)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -73,7 +74,7 @@ class Teofilotoni(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Atirador"), "TeofilotoniStreets")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Teofilotoni")
+            self.Sound.PlayMusic(txt.Teofilotoni)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -82,7 +83,7 @@ class Teofilotoni(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Policial"), "TeofilotoniStreets")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Teofilotoni")
+            self.Sound.PlayMusic(txt.Teofilotoni)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -91,7 +92,7 @@ class Teofilotoni(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Policial"), "TeofilotoniInn")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Teofilotoni")
+            self.Sound.PlayMusic(txt.Teofilotoni)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -100,7 +101,7 @@ class Teofilotoni(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Mago"), "TeofilotoniStreets")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Teofilotoni")
+            self.Sound.PlayMusic(txt.Teofilotoni)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -109,7 +110,7 @@ class Teofilotoni(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Nobre"), "TeofilotoniStreets")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Teofilotoni")
+            self.Sound.PlayMusic(txt.Teofilotoni)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -118,7 +119,7 @@ class Teofilotoni(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Anao Assassino"), "TikTokHouse")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Teofilotoni")
+            self.Sound.PlayMusic(txt.Teofilotoni)
             self.StoryListId += 1
             self.VerifyEvent()
             return
@@ -127,7 +128,7 @@ class Teofilotoni(GameState.GameState):
             self.Sound.StopMusic()
             battleWindow = bw.BattleWindow(self.Screen,self.DialogBox, self.Personagem,lib.GetMonstro(self.Monstros,"Gel'ssu"), "DwarvenPalace")
             self.Personagem = battleWindow.Battle()
-            self.Sound.PlayMusic("Teofilotoni")
+            self.Sound.PlayMusic(txt.Teofilotoni)
             self.StoryListId += 1
             self.VerifyEvent()
             return

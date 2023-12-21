@@ -2,6 +2,7 @@ import pygame
 import sys
 #import Interface.Utils as ut
 import Utils.JsonLoader as jsonL
+from Utils.ConstText import StatesText as txt
 import Interface.BattleWindow as bw
 import Interface.GameOverWindow as gow
 import Interacoes as lib
@@ -152,7 +153,7 @@ class Florianopolis(GameState.GameState):
             return
         #endif
         if(self.StoryTextList[self.StoryListId]['txt'] == "goKrambeck\n"):
-            self.NextStory = "KrambeckMago"
+            self.NextStory = txt.KrambeckMago
             self.StoryListId += 1
             self.VerifyEvent()
             return
