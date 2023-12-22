@@ -5,13 +5,14 @@ import Interface.States.GameState as GameState
 import Interacoes as lib
 import Interface.BattleWindowSpec as bwspec
 
+import BagBox
 class CaracterísticasWindow(GameState.GameState):
     def __init__(self,screen, dialogBox,personagem, monster, bgName):
         super().__init__(screen)
         imagePath =  jsonL.GetImagePath()
         self.DialogBox = dialogBox
         self.BackgroundImage = pygame.image.load(f'{imagePath}/Background/{bgName}.jpg').convert_alpha()
-        #self.BagBox = pygame.image.load(f'{imagePath}/Icones/BagBox.jpg').convert_alpha()
+        self.BagBox = BagBox.BagBox(self.Screen)
         self.Actors[0] = personagem
         self.Personagem = personagem
         self.Monster = monster
@@ -44,7 +45,7 @@ class CaracterísticasWindow(GameState.GameState):
             ut.InsertImage(self.Actors[1].Image.File, self.Actors[1].Image.Width, self.Actors[1].Image.Height, actorPos['x1'],actorPos['y1'], self.Screen,alpha = self.AlphaDisabled)
         #endif
         ut.InsertImage(self.DialogBox.image,self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen, alpha = self.AlphaDisabled)
-        ut.InsertImage()
+        ut.InsertImage(self.BagBox.image, self.DialogBox.Width,self.DialogBox.Height, self.DialogBox.x, self.DialogBox.y, self.Screen)
         #endif
     #endfunc
 
