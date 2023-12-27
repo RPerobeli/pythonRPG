@@ -2,6 +2,7 @@ import pygame
 import sys
 
 #import Interface.Utils as ut
+from Utils.ConstText import StatesText as txt
 import Utils.JsonLoader as jsonL
 import Interface.BattleWindow as bw
 import Interacoes as lib
