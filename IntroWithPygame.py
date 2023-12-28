@@ -6,7 +6,7 @@ import Utils.JsonLoader as jsonL
 
 pygame.init()
 
-SCREEN_WIDTH = 1080 
+SCREEN_WIDTH = 1080
 SCREEN_HEIGHT = 650
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 dialogBox = DialogBox.DialogBox(screen)
