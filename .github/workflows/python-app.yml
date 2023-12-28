@@ -9,13 +9,11 @@ on:
   pull_request:
     branches: [ "pygame","main" ]
 
-# permissions:
-#   contents: read
-
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    permissions: write-all
 
     steps:
     - uses: actions/checkout@v3
@@ -56,8 +54,8 @@ jobs:
         #   name: V1.0.${{ github.run_number }}
         #   prerelease: true
         run: >-
-        gh release create ${{ github.ref_name }}
-        "DDDeepWeb.zip"
-        --generate-notes
-        --title "Version ${{ github.ref_name }}"
+          gh release create ${{ github.ref_name }}
+          "DDDeepWeb.zip"
+          --generate-notes
+          --title "Version ${{ github.ref_name }}"
 
