@@ -53,6 +53,8 @@ jobs:
         #   tag_name: v1.0.${{ github.run_number }}
         #   name: V1.0.${{ github.run_number }}
         #   prerelease: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: >-
           gh release create ${{ github.ref_name }}
           "DDDeepWeb.zip"
