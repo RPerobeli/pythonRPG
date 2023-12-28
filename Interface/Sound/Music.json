@@ -1,0 +1,127 @@
+
+{
+    "opening": {
+        "file": "South America Memes - Chatuba LP Edition.wav",
+        "volume": 0.2
+    },
+    "night": {
+        "file": "Night.wav",
+        "volume": 0.2
+    },
+    "inn": {
+        "file": "Inn.wav",
+        "volume": 0.2
+    },
+    "gameover": {
+        "file": "Gameover1.wav",
+        "volume": 0.2
+    },
+    "Battle1": {
+        "file": "Battle1.wav",
+        "volume": 0.2
+    },
+    "Battle2": {
+        "file": "Battle2.wav",
+        "volume": 0.2
+    },
+    "Battle3": {
+        "file": "Battle3.wav",
+        "volume": 0.2
+    },
+    "Battle4": {
+        "file": "Battle4.wav",
+        "volume": 0.2
+    },
+    "Victory1": {
+        "file": "Victory1.wav",
+        "volume": 0.2
+    },
+    "Florianopolis": {
+        "file": "FlorianopolisCity.wav",
+        "volume": 0.2
+    },
+    "viagemTeofilo": {
+        "file": "ViagemTeofilo.wav",
+        "volume": 0.2
+    },
+    "BattleBoss": {
+        "file": "BattleBossCut.wav",
+        "volume": 0.2
+    },
+    "Teofilotoni": {
+        "file": "DwarfCut.wav",
+        "volume": 0.1
+    },
+    "Curitiba": {
+        "file": "Curitiba.wav",
+        "volume": 0.4
+    },
+    "curitibaNight": {
+        "file": "CuritibaNight.wav",
+        "volume": 0.2
+    },
+    "brothel": {
+        "file": "Brothel.wav",
+        "volume": 0.2
+    },
+    "Recursos": {
+        "file": "Forest.wav",
+        "volume": 0.1
+    },
+    "KrambeckArqueiro": {
+        "file": "KrambeckArq.wav",
+        "volume": 0.2
+    },
+    "KrambeckMago": {
+        "file": "KrambeckMago.wav",
+        "volume": 0.2
+    },
+    "reggae": {
+        "file": "Reggae.wav",
+        "volume": 0.2
+    },
+    "SantosBom": {
+        "file": "Santos.wav",
+        "volume": 0.2
+    },
+    "SantosMau": {
+        "file": "Santos.wav",
+        "volume": 0.2
+    },
+    "RetornoAdLArqueiro": {
+        "file": "Theme1.wav",
+        "volume": 0.2
+    },
+    "SagaFinal": {
+        "file": "SagaFinal.wav",
+        "volume": 1
+    },
+    "BatalhasFinais": {
+        "file": "BatalhasFinais.wav",
+        "volume": 1
+    },
+    "Deusa": {
+        "file": "Goddess.wav",
+        "volume": 0.5
+    },
+    "good": {
+        "file": "Good.wav",
+        "volume": 1
+    },
+    "neutral": {
+        "file": "Neutral.wav",
+        "volume": 1
+    },
+    "evil": {
+        "file": "Evil.wav",
+        "volume": 0.5
+    },
+    "continue": {
+        "file": "To-Be-Continued.wav",
+        "volume": 0.2
+    },
+    "TheEnd": {
+        "file": "TheEnd.wav",
+        "volume": 0.2
+    }
+}

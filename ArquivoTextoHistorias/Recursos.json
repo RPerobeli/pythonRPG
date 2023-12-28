@@ -1,0 +1,106 @@
+{
+    "Q1" : [
+        {
+            "txt" : "[Narrador]:  A missão descrita no anúncio pede que colete recursos e \nos leve à cidade élfica de Curitiba.\n"
+        },
+        {
+            "txt" : "InserirTaverneira\n"
+        },
+        {
+            "txt" : "[Narrador]: Após guardar a carta na sua bolsa, você se dirige à saída.\n[Taverneira]: Ei, arqueiro, é meu primeiro dia aqui. Você não disse o seu nome, aliás, me chamo Jessie.\n[Heroi]: Me chamo Heroi!\n[Jessie]: Volte sempre, Heroi. Que a Deusa da Luz o abençoe.\n"
+        },
+        
+        {
+            "txt" : "InserirBackgroundCidade\n"
+        },
+        {
+            "txt" : "[Narrador]: Ao sair da guilda, você percebe que há membros de uma caravana \ncorrendo atrás de um jovem em um cavalo.\n[Narrador]: Olhando para o que restou da caravana, você lembra que vai precisar transportar os recursos\ne que está sem dinheiro para comprar uma carroça.\n"
+        },
+        {
+            "txt" : "[Narrador]: ...\n"
+        },
+        {
+            "txt" : "Ladrao\n"
+        },
+        {
+            "txt" : "InserirFloresta\n"
+        },
+        {
+            "txt" : "[Narrador]: Após algumas horas de viagem, você desvia da estrada e entra em uma floresta,\ndesce da sua nova carroça e amarra o cavalo em uma árvore.\n"
+        },
+        {
+            "txt" : "[Heroi]: Será mais fácil se eu focar em um tipo de recurso para levar para Curitiba.\n1 - Coletar minérios para a produção de armas élficas.\n2 - Coletar ervas medicinais para primeiros socorros.\n3 - Caçar animais para aumentar o estoque de comida.\n"
+        }
+    ],
+
+    "R1-1":[
+        {
+            "txt" : "[Narrador]: Ao entrar na floresta, você vê diversos tipos de vegetação.\n[Narrador]: Mas uma clareira rochosa, com vários cristais à mostra chama a sua atenção.\n"
+        },
+        {
+            "txt" : "[Heroi]: Bom, minérios garantidos.\n"
+        },
+        {
+            "txt" : "[Narrador]: Chegando perto, você nota várias estátuas, dentro do perímetro da pedreira.\n"
+        },
+        {
+            "txt" : "[Narrador]: No entanto, quando chega ainda mais perto, \num dos cristais no centro da mina começa a brilhar;\n[Narrador]: as estátuas começam a ganhar vida e vem para cima de você.\n"
+        },
+        {
+            "txt" : "BattleEstatua\n"
+        },
+        {
+            "txt" : "[Narrador]: Após se livrar do primeiro inimigo o próximo vem em sua direção.\n"
+        },
+        {
+            "txt" : "BattleEstatua\n"
+        },
+        {
+            "txt" : "[Narrador]: Após abrir caminho, você consegue destruir o cristal e as estátuas ficam imóveis novamente.\n[Narrador]: Você consegue minerar com tranquilidade agora.\n"
+        },
+        {
+            "txt" : "[Narrador]: Após alguns dias minerando, com a carroça cheia, você parte para entregar sua missão.\n"
+        }
+    ],  
+    "R1-2":[
+        {
+            "txt" : "[Narrador]: Ao entrar mais na floresta, você vê diversos tipos de vegetação.\n[Narrador]: Você começa a coletar ervas que encontrava pelo caminho, que pudessem servir para cura.\n"
+        },
+        {
+            "txt" : "[Narrador]: Enquanto colhia, como um chicote, um galho acerta sua lateral.\n"            
+        },
+        {
+            "txt" : "[Aviso]: Você perde 10 de Vida.\n"            
+        },
+        {
+            "txt" : "Lose10HP\n"
+        },
+        {
+            "txt" : "BattleTreant\n"
+        },
+        {
+            "txt" : "[Narrador]: Após a luta, você consegue pegar o restante das ervas e seguir para Curitiba.\n"
+        }
+    ],
+
+    "R1-3":[
+        {
+            "txt" : "[Narrador]: Você adentra uma caverna que encontrara.\n"
+        },
+        {
+            "txt" : "InserirCaverna\n"
+        },
+        {
+            "txt" : "[Narrador]: No momento em que saca sua tocha, um lobo selvagem o ataca, você desvia por pouco.\n"
+        },
+        {
+            "txt" : "BattleLobo\n"
+        },
+        {
+            "txt" : "[Narrador]: Após a luta, o lobo é carregado para a carroça.\n[Narrador]: Como o predador havia sido derrotado,\noutros animais começaram a sair das tocas nos dias que se seguiram,\npossibilitando uma caça bem abundante de comida.\n"
+        },
+        {
+            "txt" : "[Narrador]: Após alguns dias de coleta, você segue viagem para Curitiba para entregar sua missão.\n"
+        }
+    ]
+}

@@ -1,5 +1,6 @@
 import Domain.Personagem as personagem
 import Domain.Bag as B
+import Utils.JsonLoader as jsonL
 
 
 class Heroi(personagem.Personagem):
@@ -8,8 +9,11 @@ class Heroi(personagem.Personagem):
         super().__init__(nome, classe)
         self.bag = B.Bag()
         self.bag.InserirArma(self.arma)
-        self.magias = self.acoes.CriaMagias(self)
+        self.magias = jsonL.GetSpells(self.classe)
         self.isMonstro = False
+        self.Good = 0
+        self.Neutral = 0
+        self.Evil = 0
     # endFunc
 
     def SetArma(self, WeaponAtk, WeaponName):
@@ -21,7 +25,7 @@ class Heroi(personagem.Personagem):
         self.lvl += 1
         print("Você chegou ao NIVEL " + str(self.lvl) + "!")
         skill = input(
-            "Selecione onde alocar seu ponto (força, vitalidade, agilidade ou inteligencia): ")
+            "Selecione onde alocar seu ponto (força, vitalidade, agilidade, inteligencia ou sabedoria): ")
         if(skill.lower() == "forca" or skill.lower() == "força"):
             self.skills["str"] += 1
         elif(skill.lower() == "agilidade"):
@@ -30,6 +34,8 @@ class Heroi(personagem.Personagem):
             self.skills["int"] += 1
         elif(skill.lower() == "vitalidade"):
             self.skills["vit"] += 1
+        elif(skill.lower() == "sabedoria"):
+            self.skills["sab"] += 1
         else:
             print("Atributo inválido, digite novamente")
             self.lvl -= 1

@@ -1,0 +1,7 @@
+{
+    "frameRate":60,
+    "ImagePath":"Interface/Img",
+    "SoundPath":"Interface/Sound",
+    "BoundaryThickness": 2,
+    "TypewritterDelay": 50
+}

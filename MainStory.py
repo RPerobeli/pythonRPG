@@ -5,6 +5,7 @@ import Interacoes as lib
 import Historias as h
 import os
 
+
 ###############INTRODUCAO ###############################################################################
 classesDisponiveis = ("Guerreiro", "Arqueiro", "Mago")
 print("Bem vindo ao D&D da Deepweb, aqui você vai encontrar diversas aventuras(nem todas vão ser divertidas).")

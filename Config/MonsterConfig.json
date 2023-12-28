@@ -1,0 +1,416 @@
+
+[
+    {
+        "Nome": "erro",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Cao Infernal",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Javali",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Orc Guerreiro",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Orc Besteiro",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Orc Bruxo",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo Bandido",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo Larapio",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.2,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo Acolito",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Bandido",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.6,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Bandido Atirador",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.6,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Guarda Magico",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Guarda de Elite",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Demonio Inferior",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 2,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Willhelm",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Falastrao",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 0.6,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Bandido",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 0.5,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Ana Bandida",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 0.7,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Policial",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Anao Atirador",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Mago",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Tenente",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Nobre",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Tok",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Assassino",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.5,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Gel'ssu",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Lobo",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.4,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Criminoso Atirador",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Criminoso Lanceiro",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Mystral",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Sylathor",
+        "Classe": "Arqueiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Soldado Elfo 1",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Soldado Elfo 2",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Cavaleiro Estatua",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.4,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Treant",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.4,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Rhon'Aldyn",
+        "Classe": "Mago",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Ghoul",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Hydra do Leste",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.3,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Hydra do Oeste",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.3,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Senhor Dos Lobos",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Wraith",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 2.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Zombie",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Demon",
+        "Classe": "Mago",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Espirito Maligno",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Imp",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 2.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Becca",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Barba Negra",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Comandante",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.2,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Pirata Bebado",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Anao Pirata",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 2.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Charlatao",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 2.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Tripulante",
+        "Classe": "Arqueiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Tripulante 4",
+        "Classe": "Guerreiro",
+        "isBoss": "False",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Metherax",
+        "Classe": "Mago",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.2,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Arqueiro Morto",
+        "Classe": "Arqueiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Senhor Dos Lobos",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Rainha Valquiria",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Demonio Superior",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Davion Stormfury",
+        "Classe": "Guerreiro",
+        "isBoss": "True",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    }
+]

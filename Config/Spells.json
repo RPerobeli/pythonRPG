@@ -1,0 +1,384 @@
+{
+    "mago" : [
+        {
+            "Key" : 1,
+            "Nome": "SOU EU BOLA DE FOGO",
+            "Cost": 10,
+            "BaseDamage": 10,
+            "Status":"Burning",
+            "Lvl":1
+        },
+        {
+            "Key" : 2,
+            "Nome": "Barreira Arcana",
+            "Cost": 13,
+            "BaseDamage": -1,
+            "Status":"Protection",
+            "Lvl":2
+        },
+        {
+            "Key" : 3,
+            "Nome": "Desconjuntar",
+            "Cost": 20,
+            "BaseDamage": 0,
+            "Status":"Paralyse",
+            "Lvl":3
+        },
+        {
+            "Key" : 4,
+            "Nome": "Mil flagelos de Emme White",
+            "Cost": 25,
+            "BaseDamage": 35,
+            "Status":"",
+            "Lvl":4
+        }
+    ],
+    "arqueiro" : [
+        {
+            "Key" : 1,
+            "Nome": "Flecha de fogo",
+            "Cost": 10,
+            "BaseDamage": 12,
+            "Lvl":1,
+            "Status":"Burning"
+        },
+        {
+            "Key" : 2,
+            "Nome": "Suruba de flecha",
+            "Cost": 15,
+            "BaseDamage": 16,
+            "Status":"",
+            "Lvl":2
+        },
+        {
+            "Key" : 3,
+            "Nome": "Armadilha de Urso",
+            "Cost": 12,
+            "BaseDamage": 0,
+            "Status":"Paralyse",
+            "Lvl":4
+        }
+    ],
+    "guerreiro" : [
+        {
+            "Key" : 1,
+            "Nome": "Jarrada",
+            "Cost": 12,
+            "BaseDamage": 10,
+            "Status":"",
+            "Lvl":1
+        },
+        {
+            "Key" : 2,
+            "Nome": "Bater o Mindinho",
+            "Cost": 8,
+            "BaseDamage": -1,
+            "Status":"Enrage",
+            "Lvl":2
+        },
+        {
+            "Key" : 3,
+            "Nome": "Surra de Espada Mole",
+            "Cost": 15,
+            "BaseDamage": 15,
+            "Status":"",
+            "Lvl":3
+        }
+    ],
+    "necromante" : [
+        {
+            "Key" : 1,
+            "Nome": "Desconjuntar",
+            "Cost": 20,
+            "BaseDamage": 0,
+            "Status":"Paralyse",
+            "Lvl":3
+        },
+        {
+            "Key" : 2,
+            "Nome": "Mil flagelos de Emme White",
+            "Cost": 25,
+            "BaseDamage": 35,
+            "Lvl":4
+        },
+        {
+            "Key" : 3,
+            "Nome": "Thriller",
+            "Cost": 30,
+            "BaseDamage": 35,
+            "Status":"",
+            "Lvl":5
+        },
+        {
+            "Key" : 4,
+            "Nome": "Chorume de Cadáver",
+            "Cost": 30,
+            "BaseDamage": 45,
+            "Status":"Poison",
+            "Lvl":6
+        },
+        {
+            "Key" : 5,
+            "Nome": "Mamada de Alma",
+            "Cost": 30,
+            "BaseDamage": 20,
+            "Status":"Regeneration",
+            "Lvl":7
+        },
+        {
+            "Key" : 6,
+            "Nome": "Ondas do Inferno",
+            "Cost": 30,
+            "BaseDamage": 45,
+            "Status":"",
+            "Lvl":8
+        }
+    ],
+    "arquimago" : [
+        {
+            "Key" : 1,
+            "Nome": "SOU EU BOLA DE FOGO 2",
+            "Cost": 30,
+            "BaseDamage": 35,
+            "Status":"Burning",
+            "Lvl":1
+        },
+        {
+            "Key" : 2,
+            "Nome": "Agua Molhada 2",
+            "Cost": 13,
+            "BaseDamage": 40,
+            "Status":"",
+            "Lvl":2
+        },
+        {
+            "Key" : 3,
+            "Nome": "Tremedeira de Chão",
+            "Cost": 30,
+            "BaseDamage": 45,
+            "Status":"Paralyze",
+            "Lvl":5
+        },
+        {
+            "Key" : 4,
+            "Nome": "Pilar de Chamas",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Status":"Burning",
+            "Lvl":6
+        },
+        {
+            "Key" : 5,
+            "Nome": "Lança de Gelo",
+            "Cost": 30,
+            "BaseDamage": 45,
+            "Status":"",
+            "Lvl":7
+        },
+        {
+            "Key" : 6,
+            "Nome": "Meteoro",
+            "Cost": 30,
+            "BaseDamage": 55,
+            "Status":"Stun",
+            "Lvl":8
+        } 
+    ],
+    "clerigo" : [
+        {
+            "Key" : 1,
+            "Nome": "Desconjuntar",
+            "Cost": 20,
+            "BaseDamage": 15,
+            "Status":"Paralyse",
+            "Lvl":3
+        },
+        {
+            "Key" : 2,
+            "Nome": "Escudo Divino",
+            "Cost": 13,
+            "BaseDamage": 40,
+            "Status":"Protection",
+            "Lvl":4
+        },
+        {
+            "Key" : 3,
+            "Nome": "Cura que não cura",
+            "Cost": 30,
+            "BaseDamage": -1,
+            "Status":"Regeneration",
+            "Lvl":6
+        },
+        {
+            "Key" : 4,
+            "Nome": "Luz RGB Purificadora",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Status":"Regeneration", 
+            "Lvl":7
+        },
+        {
+            "Key" : 5,
+            "Nome": "Intimidacao de Deus",
+            "Cost": 28,
+            "BaseDamage": 35,
+            "Status":"Paralyse",
+            "Lvl":8
+        },
+        {
+            "Key" : 6,
+            "Nome": "Genocídio Abençoado",
+            "Cost": 30,
+            "BaseDamage": 55,
+            "Status":"Restoration",
+            "Lvl":9
+        } 
+    ],
+    "ranger" : [
+        {
+            "Key" : 1,
+            "Nome": "Flecha de fogo 2",
+            "Cost": 15,
+            "BaseDamage": 20,
+            "Status":"Burning",
+            "Lvl":1
+        },
+        {
+            "Key" : 2,
+            "Nome": "Armadilha de Urso",
+            "Cost": 16,
+            "BaseDamage": -1,
+            "Status":"Paralyse",
+            "Lvl":2
+        },
+        {
+            "Key" : 3,
+            "Nome": "Disparo Penetrante",
+            "Cost": 18,
+            "BaseDamage": 25,
+            "Status":"",
+            "Lvl":5
+        },
+        {
+            "Key" : 4,
+            "Nome": "Flecha Profana",
+            "Cost": 20,
+            "BaseDamage": 28,
+            "Status":"Poison",
+            "Lvl":6
+        },
+        {
+            "Key" : 5,
+            "Nome": "Disparo Concussivo",
+            "Cost": 21,
+            "BaseDamage": 25,
+            "Status":"Stun",
+            "Lvl":7
+        },
+        {
+            "Key" : 6,
+            "Nome": "Snipe",
+            "Cost": 25,
+            "BaseDamage": 40,
+            "Lvl":8
+        }
+    ],
+    "atirador" : [
+        {
+            "Key" : 1,
+            "Nome": "Municao de fogo",
+            "Cost": 20,
+            "BaseDamage": 20,
+            "Status":"Burninig",
+            "Lvl":1
+        },
+        {
+            "Key" : 2,
+            "Nome": "Suruba de estilhacos",
+            "Cost": 22,
+            "BaseDamage": 22,
+            "Status":"",
+            "Lvl":2
+        },
+        {
+            "Key" : 3,
+            "Nome": "Disparo Penetrante",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Status":"",
+            "Lvl":5
+        },
+        {
+            "Key" : 4,
+            "Nome": "Tiro Explosivo",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Status":"Burning",
+            "Lvl":6
+        },
+        {
+            "Key" : 5,
+            "Nome": "Disparo Concussivo",
+            "Cost": 25,
+            "BaseDamage": 25,
+            "Status":"Stun",
+            "Lvl":7
+        },
+        {
+            "Key" : 6,
+            "Nome": "Snipe",
+            "Cost": 25,
+            "BaseDamage": 40,
+            "Lvl":8
+        }
+    ],
+    "cacador" : [
+        {
+            "Key" : 1,
+            "Nome": "Flecha de fogo 2",
+            "Cost": 20,
+            "BaseDamage": 20,
+            "Status":"Burninig",
+            "Lvl":1
+        },
+        {
+            "Key" : 2,
+            "Nome": "Suruba de flecha",
+            "Cost": 22,
+            "BaseDamage": 22,
+            "Lvl":2
+        },
+        {
+            "Key" : 3,
+            "Nome": "Dardo Tranquilizante",
+            "Cost": 25,
+            "BaseDamage": -1,
+            "Status":"Sleep",
+            "Lvl":5
+        },
+        {
+            "Key" : 4,
+            "Nome": "Comando para Matar",
+            "Cost": 25,
+            "BaseDamage": 30,
+            "Status":"",
+            "Lvl":6
+        },
+        {
+            "Key" : 5,
+            "Nome": "Disparo da Naja",
+            "Cost": 25,
+            "BaseDamage": 28,
+            "Status":"Poison",
+            "Lvl":7
+        },
+        {
+            "Key" : 6,
+            "Nome": "Ira Bestial",
+            "Cost": 25,
+            "BaseDamage": 32,
+            "Status":"Berserk",
+            "Lvl":8
+        }
+    ]
+}

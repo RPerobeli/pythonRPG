@@ -1,0 +1,105 @@
+{
+    "Q1" : [
+        {
+            "txt" : "[Narrador]:  A missão descrita no anúncio pede que você vá até a capital da magia, Florianópolis,\nentregar uma carta ao professor Willhelm, na universidade da cidade.\n[Narrador]:  Você suspeita da recompensa, um pouco alta para uma simples entrega,\nmas aceita de qualquer maneira.\n"
+        },
+        {
+            "txt" : "InserirTaverneira\n"
+        },
+        {
+            "txt" : "[Narrador]: Após guardar a carta na sua bolsa, você se dirige à saída.\n[Taverneira]: Ei, mago, é meu primeiro dia aqui. Você não disse o seu nome, aliás, me chamo Jessie.\n[Narrador]: Você sorri, diz seu nome, e parte para sua viagem.\n[Jessie]: Volte sempre, Heroi. Que a Deusa da Luz o abençoe.\n"
+        },
+        {
+            "txt" : "RemoverTaverneira\n"
+        },
+        {
+            "txt" : "[Narrador]: Enquanto saía de Asas da Liberdade, você notou uma caravana que estava de partida,\no líder da caravana te oferece uma carona até Florianópolis, você:\n1 - Aceita acompanhar a caravana.\n2 - Prefere seguir sozinho sua viagem.\n3 - Rouba um cavalo da caravana e sai correndo.\n"
+        }
+    ],
+
+    "R1-1":[
+        {
+            "txt" : "InserirFloresta\n"
+        },
+        {
+            "txt" : "[Narrador]: Após alguns dias, ao cair da noite, a caravana monta o último acampamento antes de chegarem em Florianópolis.\n[Narrador]: Enquanto comiam em volta da fogueira, você escuta murmúrios advindos da floresta...\n"
+        },
+        {
+            "txt" : "[Narrador]: Um dos guardas da caravana adentra nos arbustos. Ouve-se um grito, e o ataque começa.\n[Narrador]: Um grupo de bandidos ataca a caravana, os guardas já se encontram em combate, \n2 dos bandidos vêm em sua direção.\n"
+        },
+        {
+            "txt" : "battleBandido1\n"
+        },
+        {
+            "txt" : "[Narrador]: O segundo bandido avança em sua direção.\n"
+        },
+        {
+            "txt" : "battleBandido2\n"
+        },
+        {
+            "txt" : "[Narrador]: Ao olhar em volta, percebe-se que todos os guardas pereceram em batalha,\nlevando consigo seus adversários.\n[Narrador]: Os únicos restantes são o líder da caravana e os mercadores. Nesse momento, \no líder se aproxima de você, agradece seus grandes feitos e \nte presenteia com um elixir revigorante.\n"
+        },
+        {
+            "txt" : "RestoreMP\n"
+        },
+        {
+            "txt" : "[Aviso]: Seus pontos de mana foram restaurados\n"
+        }
+    ],  
+    "R1-2":[
+        {
+            "txt" : "InserirFloresta\n"
+        },
+        {
+            "txt" : "[Narrador]: Já está anoitecendo e a fome volta a te assombrar,\nolhando à volta, você vê um pequeno filhote de javali.\n[Narrador]: Antes mesmo que você mate o pequeno filhote, a javali mãe te ataca rapidamente.\n"            
+        },
+        {
+            "txt" : "BattleJavali\n"
+        },
+        {
+            "txt" : "[Narrador]: Após matar a família suína, você nota que terá refeições para alguns dias.\n"
+        },
+        {
+            "txt" : "[Narrador]: Alguns dias depois, você encontra a mesma caravana que encontrara anteriormente,\neles parecem em apuros, lutando com um grupo de ladrões,\nvocê escolhe ajudá-los e parte para cima do inimigo mais próximo.\n"
+        },
+        {
+            "txt" : "battleBandido1\n"
+        },
+        {
+            "txt" : "[Narrador]: Ao olhar em volta, percebe-se que todos os guardas pereceram em batalha,\n levando consigo seus adversários.\n[Narrador]: Os únicos restantes são o líder da caravana e os mercadores.\nNesse momento, o líder se aproxima de você, \nagradece seus grandes feitos e te presenteia com um elixir revigorante.\n"
+        },
+        {
+            "txt" : "RestoreMP\n"
+        },
+        {
+            "txt" : "[Aviso]: Seus pontos de mana foram restaurados\n"
+        }
+    ],
+
+    "R1-3":[
+        {
+            "txt" : "InserirFloresta\n"
+        },
+        {
+            "txt" : "[Narrador]: Já está anoitecendo e a fome volta a te assombrar,\nolhando à volta, você percebe uma fogueira ao longe.\n[Narrador]: Após se aproximar, percebe que há um ensopado sendo cozido, sem ninguém por perto,\nvocê se aproxima do caldeirão e escuta um zumbido.\n[Narrador]: Por puro reflexo, você desvia de uma flecha, e em sua direção vem o Orc o qual atirou.\n"
+        },
+        {
+            "txt" : "BattleOrcBesteiro\n"
+        },
+        {
+            "txt" : "[Narrador]: Olhando o corpo à sua frente, você decide que comerá carne de orc nos próximos dias.\n"
+        },
+        {
+            "txt" : "[Narrador]: Alguns dias depois, você encontra a mesma caravana que encontrara anteriormente,\neles parecem em apuros, lutando com um grupo de ladrões, \nvocê decide ficar de fora da ação, e acaba presenciando uma chacina, de onde ninguém saíra vivo.\n"
+        },
+        {
+            "txt" : "[Narrador]: No meio dos corpos, estava o cadáver do líder da caravana.\n[Narrador]: Você vasculha o corpo e encontra um elixir, após tomá-lo, se sente revigorado.\n"
+        },
+        {
+            "txt" : "RestoreMP\n"
+        },
+        {
+            "txt" : "[Aviso]: Seus pontos de mana foram restaurados.\n"
+        }
+    ]
+}

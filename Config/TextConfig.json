@@ -1,0 +1,8 @@
+{
+    "SpeakerFont": "Interface/Fonts/mplus1mregular.ttf",
+    "TextSize": 20,
+    "Speaker_x": 40,
+    "Speaker_y": 510,
+    "Speaker_textcolor" : "255,255,255",
+    "TextVerticalSpace" : 20
+}

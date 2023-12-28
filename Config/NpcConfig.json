@@ -1,0 +1,208 @@
+[
+    {
+        "Nome": "erro",
+        "ImageMultiplier" : 0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Jessie",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Dryad",
+        "ImageMultiplier" : 1.3,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Guarda Magico",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Willhelm",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Mago Anciao",
+        "ImageMultiplier" : 1.2,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Thete",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Guarda Anao",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Taverneiro",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Tik",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Tok",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Rei dos Anoes",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "ElfWhore",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Pelegolas",
+        "ImageMultiplier" : 1.2,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Liriel",
+        "ImageMultiplier" : 0.85,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Cultista",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Elfa da Floresta",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo da Floresta",
+        "ImageMultiplier" : 1.2,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo da Floresta2",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Alto Elfo",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Ferreiro",
+        "ImageMultiplier" : 1.2,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Endilien",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Ferreiro",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Taverneiro2",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Aldea",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Villager1",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Villager2",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "mago",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "arqueiro",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "GolDRoger",
+        "ImageMultiplier" : 1,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Fendric",
+        "ImageMultiplier" : 1.2,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Mensageiro",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Aldeao Final 1",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Aldeao Final 2",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "NovaTaverneira",
+        "ImageMultiplier" : 0.8,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Bardo",
+        "ImageMultiplier" : 1,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Aventureiro",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Forma Sombria",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    },
+    {
+        "Nome": "Rainha Valquiria",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Elfo Negro",
+        "ImageMultiplier" : 1.2,
+        "needFlip" : "True"
+    },
+    {
+        "Nome": "Anjo",
+        "ImageMultiplier" : 1.0,
+        "needFlip" : "False"
+    }
+    
+]
