@@ -41,7 +41,7 @@ jobs:
       
     steps:
       - name: Create Release 
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/pygame'
         # uses: actions/create-release@v1
         uses: softprops/action-gh-release@v1
         env:
