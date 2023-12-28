@@ -14,8 +14,8 @@ jobs:
 
     runs-on: ubuntu-latest
     permissions: 
-      actions: write-all
-      contents: write
+      actions: write | read
+      contents: write | read
 
     steps:
     - uses: actions/checkout@v3
