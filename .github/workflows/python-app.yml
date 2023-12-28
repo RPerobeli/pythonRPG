@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "pygame" ]
+    branches: [ "pygame","main" ]
   pull_request:
-    branches: [ "pygame" ]
+    branches: [ "pygame","main" ]
 
 permissions:
   contents: read
