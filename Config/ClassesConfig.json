@@ -1,5 +1,5 @@
 {
     "guerreiro" : ["Paladino", "Necromante", "Clerigo"],
-    "arqueiro" : ["Ranger", "Atirador", "Caçador"],
+    "arqueiro" : ["Ranger", "Atirador", "Cacador"],
     "mago" : ["Arquimago", "Necromante", "Clerigo"]
 }

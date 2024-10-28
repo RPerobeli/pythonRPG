@@ -25,7 +25,7 @@ class Title(GameState.GameState):
     def ScenesManager(self, alpha = 255):
         ut.InsertBackground(self.BackgroundImage, self.Screen, alpha)
         if(self.count==1):
-            self.LoadTitle("D&D DA DEEPWEP")
+            self.LoadTitle("D&D DA DEEPWEB")
             pos = jsonL.GetNameTextPosition()
             ut.InsertText("Nome:", jsonL.GetTitleTextColor(),pos['x'], pos['y'],self.Screen,textSize = jsonL.GetTextSize()*2)
             self.LoadEditBox()
